@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "optimizer_updates": 0,
+  "steps": 651,
+  "source_bound": true,
+  "observer_rng_unchanged": true,
+  "extra_observation_reads": 0
+}

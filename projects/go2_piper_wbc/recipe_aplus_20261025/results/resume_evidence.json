@@ -1,0 +1,18 @@
+{
+  "actor_bitwise_equal": true,
+  "critic_bitwise_equal": true,
+  "distribution_in_actor_state": true,
+  "adam_bitwise_equal": true,
+  "adam_step_min": 24000.0,
+  "adam_step_max": 24000.0,
+  "learning_rate": 6.584362139917695e-05,
+  "next_zero_based_runner_iteration": 1200,
+  "first_new_completed_update": 1201,
+  "cpu_rng_sha256": "731464c63535979cbdb2f2a2fda9d5d713dd1b281a84e7455b34e759d040190b",
+  "cuda_rng_sha256": [
+    "becab8e1099d96403f3f3781c2f621739fa59a2cdbfb4a9be75e278095d23a84"
+  ],
+  "saved_rng_replay_passed": true,
+  "rng_restored_after_probe": true,
+  "limitation": "V1 contains Torch CPU/CUDA RNG, not PhysX/env/history or Python/NumPy RNG; physical env is reset, not bitwise resumed"
+}

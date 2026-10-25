@@ -1,0 +1,9 @@
+{
+  "inspected_inventory_files": 7253,
+  "video_model_rollout_files": 302,
+  "logical_bytes": 1013232641,
+  "publication": "no video, render, checkpoint, rollout tensor or model geometry in this release",
+  "reason": "Z1 visuals contain team assets; Go2 policy/asset redistribution not established. Numerical results and original code are preserved instead.",
+  "private_per_file_inventory": "held locally outside the repository; every path, size and exclusion decision recorded",
+  "large_file_threshold_bytes": 1100000
+}

@@ -1,0 +1,35 @@
+{
+  "completed": true,
+  "common_additional_updates": 100,
+  "transitions_per_arm": 9830400,
+  "paired_downstairs_deltas": [
+    {
+      "seed": 456,
+      "B1_minus_A_height_mean_m": 0.010927787109674791,
+      "B1_minus_A_calf_fraction": -0.03634052735287696,
+      "B1_minus_A_calf_peak_N": 17.2298583984375,
+      "B1_minus_A_force_norm_integral_Ns": -88.41894197463989,
+      "B1_minus_A_strict_count": 0
+    },
+    {
+      "seed": 789,
+      "B1_minus_A_height_mean_m": 0.010989528142166638,
+      "B1_minus_A_calf_fraction": -0.02789344044867903,
+      "B1_minus_A_calf_peak_N": -279.59014892578125,
+      "B1_minus_A_force_norm_integral_Ns": -79.31145000457764,
+      "B1_minus_A_strict_count": 0
+    },
+    {
+      "seed": 2026,
+      "B1_minus_A_height_mean_m": 0.010125067640416041,
+      "B1_minus_A_calf_fraction": -0.03427456982899457,
+      "B1_minus_A_calf_peak_N": -178.47515869140625,
+      "B1_minus_A_force_norm_integral_Ns": -88.569589138031,
+      "B1_minus_A_strict_count": 0
+    }
+  ],
+  "height_manipulation_check_half_of_011m": true,
+  "limits": "One learning seed42, three paired evaluation seeds16trials each downstairs, single16-trial regression seed.50Hz. Force-norm integral is approximate cumulative load, not vertical impulse; no generalization or hardware qualification.",
+  "source_sha256": "c560d3dce4596d3d535e366661b321eaed02b06d639bddbd3ab05f2e8954eb0c",
+  "publication_note": "Selected numerical measurements only; team geometry, renders and raw trajectories excluded."
+}

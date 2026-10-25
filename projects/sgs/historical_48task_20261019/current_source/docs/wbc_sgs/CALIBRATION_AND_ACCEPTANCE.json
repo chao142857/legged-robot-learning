@@ -1,0 +1,149 @@
+{
+  "calibration": {
+    "label": "mature_calibration",
+    "n": 48,
+    "locomotion": 0.8958333333333334,
+    "manipulation": 0.9375,
+    "safety": 1.0,
+    "joint_success": 0.8333333333333334,
+    "mean_rmse": [
+      0.10615539108154265,
+      0.053074391972036165,
+      0.034405325369256654,
+      0.01903580057333203
+    ]
+  },
+  "calibration_wall_s": 22.98997196101118,
+  "thresholds_unchanged_after_calibration": true,
+  "protocol_sha256": "41f33c7dd4da5c85014ecc5bba24f9ad0369d8ed1393da603b4637480af7f3b4",
+  "pool_sha256": "68d65401a2beae53ae15d33946427e5546a10ebc8e41dd788ebd4c41902f9681",
+  "unit_tests": 8,
+  "interface": {
+    "status": "PASS",
+    "both_real_sources_fixed": true,
+    "forced_timer_expiry_ignored": true,
+    "longer_than_10_seconds_verified": true,
+    "subset_reset_correspondence": true,
+    "terminal_old_task_credit": true,
+    "physical_fault_record": {
+      "locomotion": false,
+      "manipulation": false,
+      "safety": false,
+      "joint_success": false,
+      "full_horizon": false,
+      "terminated": true,
+      "scored_samples": 401,
+      "control_steps": 551,
+      "good_fractions": {
+        "locomotion": 0.9725685785536159,
+        "manipulation": 0.9675810473815462,
+        "simultaneous": 0.942643391521197
+      },
+      "rmse": [
+        0.10282218068879656,
+        0.06599120882915466,
+        0.03889106620833225,
+        0.020673867132536553
+      ],
+      "rmse_units": [
+        "m/s",
+        "rad/s",
+        "m",
+        "rad"
+      ],
+      "peak_nonfoot_contact_N": 150.49522399902344,
+      "episode": 1,
+      "env_id": 0,
+      "task_id": 12,
+      "sampler": "uniform",
+      "context": "train",
+      "control_step": 551,
+      "velocity": [
+        0.32,
+        -0.12,
+        0.15
+      ],
+      "ee_pose": [
+        0.62,
+        0.22,
+        0.6,
+        0.9847937371763373,
+        0.03463408132144104,
+        -0.1082460431454716,
+        0.1313947098350281
+      ],
+      "pool_sha256": "68d65401a2beae53ae15d33946427e5546a10ebc8e41dd788ebd4c41902f9681",
+      "protocol_sha256": "41f33c7dd4da5c85014ecc5bba24f9ad0369d8ed1393da603b4637480af7f3b4"
+    },
+    "completed_counts_match_episode_log": true
+  },
+  "smoke": {
+    "completed_updates": 3,
+    "additional_updates": 3,
+    "transitions": 2304,
+    "training_wall_s": 2.459656682010973,
+    "mean_iteration_s": 0.8173595370026305,
+    "output_weight_change_by_joint": [
+      0.009417524561285973,
+      0.008128553628921509,
+      0.00812594871968031,
+      0.009275324642658234,
+      0.009401836432516575,
+      0.008344612084329128,
+      0.010737249627709389,
+      0.009993289597332478,
+      0.008809244260191917,
+      0.010054397396743298,
+      0.010324772447347641,
+      0.007753861136734486,
+      0.010052820667624474,
+      0.009820588864386082,
+      0.009663215838372707,
+      0.008154339157044888,
+      0.008903690613806248,
+      0.009823157452046871
+    ],
+    "actor_changed": true,
+    "leg_and_arm_gradients_nonzero": true,
+    "final_checkpoint": "private-runtime/go2_piper_runs/20261019_wbc_sgs/smoke_v2/checkpoint_0003.pt",
+    "completed_episodes": 0,
+    "terminal_success_rate": null,
+    "resume_verified": false,
+    "resume_semantics": "Optimizer/sampler/RNG resume; partial physical episodes restart same task, not bitwise simulator replay"
+  },
+  "resume": {
+    "completed_updates": 4,
+    "additional_updates": 1,
+    "transitions": 768,
+    "training_wall_s": 1.1721274970041122,
+    "mean_iteration_s": 1.16383687601774,
+    "output_weight_change_by_joint": [
+      0.009100493043661118,
+      0.00874958373606205,
+      0.0082089276984334,
+      0.009293720126152039,
+      0.009836322627961636,
+      0.010325855575501919,
+      0.011346733197569847,
+      0.009614946320652962,
+      0.010650326497852802,
+      0.010507260449230671,
+      0.011693972162902355,
+      0.008639025501906872,
+      0.011115160770714283,
+      0.00971479993313551,
+      0.009155706502497196,
+      0.009099087677896023,
+      0.009641840122640133,
+      0.009745582938194275
+    ],
+    "actor_changed": true,
+    "leg_and_arm_gradients_nonzero": true,
+    "final_checkpoint": "private-runtime/go2_piper_runs/20261019_wbc_sgs/resume/checkpoint_0004.pt",
+    "completed_episodes": 0,
+    "terminal_success_rate": null,
+    "resume_verified": true,
+    "resume_semantics": "Optimizer/sampler/RNG resume; partial physical episodes restart same task, not bitwise simulator replay"
+  },
+  "note": "Smoke has zero terminal episodes because only72 control steps; it verifies PPO gradients, not benchmark success. Real old-task outcome credit separately verified via physical fault."
+}

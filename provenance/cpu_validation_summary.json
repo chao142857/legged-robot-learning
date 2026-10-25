@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "python": "3.11.16 (main, Aug 12 2026, 23:03:19) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "unittest_cases": 75,
+  "passed_cases": 74,
+  "skipped_cases": 1,
+  "simulator_started": false,
+  "gpu_training_started": false,
+  "groups": [
+    {
+      "name": "publication",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "sgs_lifecycle",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "z1_standing_sampler",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "task_metrics",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "tracking_metrics",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "b2_common",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "b3_mapping",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "gradient",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "component_probe",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "native_ppo_microscope",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "z1_entry",
+      "status": "passed",
+      "returncode": 0
+    },
+    {
+      "name": "go2_entry",
+      "status": "passed",
+      "returncode": 0
+    }
+  ],
+  "rsl_source_files_verified": 29,
+  "real_checkpoint_parity": "skipped; external private checkpoint absent",
+  "asset_dependent_ik": "not executed; geometry excluded"
+}

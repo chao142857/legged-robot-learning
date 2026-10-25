@@ -1,0 +1,9 @@
+{
+  "reason": "Isaac initialization stalled before main, no output dir or optimizer update",
+  "new_updates": 0,
+  "elapsed_s": 583.9499714374542,
+  "pid": 112560,
+  "command": "private-runtime/go2_piper_env/bin/python private-runtime/LeggedManip_Lab_recipe_aplus_20261025/task_suite_experiment/tools/run_aplus.py --mode train --out private-runtime/go2_piper_recipe_aplus_20261025/train_seed21 --admission private-runtime/go2_piper_recipe_v1_20261025/p0_admission_final.json --interface-audit private-runtime/go2_piper_recipe_aplus_20261025/resume_interface_audit_v1 --num_envs 4096 --additional-updates 600 --seed 21 --headless --device cuda:0 ",
+  "kit_log": "private-runtime/go2_piper_env/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261025_220824.log",
+  "bounded_initialization_retry_allowed_once": true
+}

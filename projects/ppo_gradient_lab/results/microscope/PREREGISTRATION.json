@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-22",
+  "checkpoint": "CP100",
+  "collection_seeds": [
+    8201,
+    8202,
+    8203
+  ],
+  "roles": "cyclic disjoint update / probe-fit / heldout, one seed each",
+  "primary_window": [
+    0,
+    24
+  ],
+  "secondary_starts": [
+    120,
+    240,
+    360
+  ],
+  "timeout_window": [
+    376,
+    400
+  ],
+  "calibration_starts": "0,24,...,360 plus overlapping boundary probe 376",
+  "partitions": "four deterministic random minibatches per update window; whole-window native normalization",
+  "candidates": "native one minibatch optimizer step and 0.1 learning rate; each restores original CP100 and Adam; 120 isolated steps maximum",
+  "estimators": [
+    "finite complete MC",
+    "MC minus independent probe",
+    "24-step probe GAE finite timeout",
+    "24-step probe GAE native current-value timeout"
+  ],
+  "primary_component_estimator": "24-step probe GAE finite timeout; raw and centered common native std",
+  "uncertainty": "heldout episode bootstrap stratified by task, candidate conditional; seed range, no claim of independent training-seed replication",
+  "decision": "Compare actual heldout loss change to g_hold dot delta and nonlinear remainder; smaller absolute damage alone is not H2d evidence",
+  "forbidden": [
+    "formal training",
+    "GPU or simulation",
+    "checkpoint overwrite",
+    "surgery",
+    "claiming historical minibatch recovery"
+  ]
+}

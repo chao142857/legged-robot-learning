@@ -1,0 +1,130 @@
+{
+  "schema": "go2_piper_recipe_aplus_pretrain_v1",
+  "parent_checkpoint": "private-runtime/go2_piper_recipe_v1_20261025/pilot_A_seed21/cp_1200.pt",
+  "parent_sha256": "cd081d0350783f656656dc81dc6143b6f0a9b4b553bfa47d2053c19d9bb9b069",
+  "parent_completed_updates": 1200,
+  "maximum_additional_updates": 600,
+  "cumulative_checkpoints": [
+    1400,
+    1600,
+    1800
+  ],
+  "num_envs": 4096,
+  "rollout": 24,
+  "seed": 21,
+  "sampling": {
+    "zero_probability": 0.1,
+    "low_probability_given_nonzero": 0.2,
+    "medium_probability_given_nonzero": 0.8,
+    "medium_linear_abs_mps": [
+      0.35,
+      0.55
+    ],
+    "medium_yaw_abs_radps": [
+      0.35,
+      0.55
+    ],
+    "low_linear_abs_mps": 0.2,
+    "low_yaw_abs_radps": 0.15,
+    "direction_balance": "shuffled four-direction strata per resampling batch; random rotation for small batches",
+    "segment_s": [
+      8.0,
+      12.0
+    ],
+    "fixed_ee_hold_s": [
+      8.0,
+      12.0
+    ],
+    "linear_slew_mps2": 0.4,
+    "yaw_slew_radps2": 0.6
+  },
+  "unchanged": [
+    "all V1 rewards",
+    "V1 soft-limit position target constraint",
+    "PD",
+    "robot model",
+    "physical randomization",
+    "18 actions",
+    "210/102 observations",
+    "native network",
+    "adaptive PPO",
+    "fixed EE pool and hold timing"
+  ],
+  "evaluation": {
+    "protocols": [
+      "A",
+      "T1"
+    ],
+    "seeds": [
+      8101,
+      8102,
+      8103
+    ],
+    "environments": 64,
+    "episode_s": 20.0,
+    "same_frozen_V1_gates": true,
+    "two_consecutive_nodes_required": true,
+    "retention_relative_to_parent": {
+      "A_completion_drop_max": 0.05,
+      "A_ee_rmse_increase_max_m": 0.01,
+      "A_direction_gain_absolute_change_max": 0.15
+    },
+    "full_episode_original_safety_gate": true
+  },
+  "startup_study": {
+    "frozen_checkpoint": "V1 CP1200 only",
+    "ramp_tau_s": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "blend": "smoothstep from actual initial q clamped to existing target bounds; final targets always inside same bounds",
+    "protocols": [
+      "T1"
+    ],
+    "seeds": [
+      8101,
+      8102,
+      8103
+    ],
+    "environments": 64,
+    "episode_s": 20.0,
+    "no_ignore_window_in_strict_safety": true,
+    "not_applied_to_Aplus_training": true,
+    "candidate_gate": {
+      "overspeed_episode_reduction_min": 0.5,
+      "completion_drop_max": 0.0,
+      "ee_after1s_rmse_increase_max_m": 0.005,
+      "direction_gain_absolute_change_max": 0.1,
+      "processed_target_excess_max_rad": 1e-06,
+      "hard_joint_violation_fraction_max": 0.001
+    }
+  },
+  "B_first_round": {
+    "maximum_additional_updates": 400,
+    "requires_Aplus_gate": true,
+    "requires_dynamic_X_physical_admission": true,
+    "requires_new_preregistered_protocol_before_training": true,
+    "amplitude_candidates_m": [
+      0.005,
+      0.01,
+      0.015,
+      0.02
+    ],
+    "period_s": 8.0,
+    "fixed_sample_fraction_min": 0.8,
+    "required_metrics": [
+      "target/actual amplitude",
+      "lag",
+      "demeaned RMSE",
+      "absolute RMSE",
+      "response gain",
+      "correlation",
+      "mathematical center comparison",
+      "full safety"
+    ],
+    "C_authorized": false
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "go2_piper_recipe_v1_A_pretrain_v1",
+  "control": {
+    "target_margin_rad": 0.02
+  },
+  "health": {
+    "penalty_height_m": 0.2,
+    "penalty_scale_m": 0.1,
+    "penalty_weight": -2.0,
+    "termination_height_m": 0.16,
+    "termination_dwell_s": 0.5,
+    "reset_grace_s": 1.0
+  },
+  "rewards": {
+    "linear_std_mps": 0.25,
+    "yaw_std_radps": 0.25,
+    "ee_wide_weight": 4.5,
+    "ee_wide_denominator_m2": 0.1,
+    "ee_precision_std_m": 0.05,
+    "ee_precision_max_weight": 1.5,
+    "base_height_weight": 1.0,
+    "raw_tail_threshold": 4.0,
+    "raw_tail_weight_candidate": -0.0001
+  },
+  "stage_A": {
+    "linear_speed_abs_range_mps": [
+      0.35,
+      0.55
+    ],
+    "yaw_rate_abs_range_radps": [
+      0.35,
+      0.55
+    ],
+    "zero_fraction": 0.1,
+    "segment_s": [
+      8.0,
+      12.0
+    ],
+    "fixed_ee_hold_s": [
+      8.0,
+      12.0
+    ],
+    "linear_slew_mps2": 0.4,
+    "yaw_slew_radps2": 0.6,
+    "episode_s": 20.0,
+    "ee_pool": "must_be_filled_from_P0_physics_admission",
+    "precision_weight": 0.0
+  },
+  "pilot": {
+    "seed": 21,
+    "max_updates": 1200,
+    "num_envs": 4096,
+    "rollout": 24,
+    "checkpoints": [
+      0,
+      200,
+      500,
+      800,
+      1200
+    ],
+    "evaluation_seeds": [
+      8101,
+      8102,
+      8103
+    ],
+    "evaluation_envs": 64,
+    "evaluate_after_training_serially": true
+  },
+  "p0_control_gate": {
+    "native_completion_loss_max_fraction": 0.05,
+    "native_direction_gain_absolute_change_max": 0.15,
+    "native_ee_rmse_increase_max_m": 0.01,
+    "native_shadow_low_termination_max_fraction": 0.01,
+    "processed_target_excess_max_rad": 1e-06
+  },
+  "A_to_B_gate": {
+    "all_evaluation_seeds_required": true,
+    "both_stage_A_and_formal_T1_required": true,
+    "direction_gain_min": 0.5,
+    "direction_gain_max": 1.5,
+    "direction_correct_sign_min": 0.9,
+    "linear_rmse_max_mps": 0.15,
+    "yaw_rmse_max_radps": 0.18,
+    "ee_after_1s_rmse_max_m": 0.075,
+    "complete_fraction_min": 0.9,
+    "low_height_time_fraction_max": 0.01,
+    "nonfoot_failure_fraction_max": 0.05,
+    "actual_joint_hard_limit_violation_fraction_max": 0.001,
+    "target_clipping_element_fraction_max": 0.2,
+    "actuator_saturation_element_fraction_max": 0.1,
+    "two_consecutive_saved_nodes_required": true,
+    "base_clearance_p05_min_m": 0.2,
+    "base_clearance_median_min_m": 0.24,
+    "body_abs_roll_pitch_p95_max_rad": 0.4,
+    "arm_pd_abs_error_mean_max_rad": 0.2
+  },
+  "automatic_B_or_C": false,
+  "PPO": "exact native resolved algorithm/network/observations; adaptive LR remains unchanged",
+  "stage_B_plan": {
+    "levels": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "ee_amplitude_at_level": "alpha * (0.02,0.03,0.02) m",
+    "precision_weight_at_level": "1.5 * alpha",
+    "dynamic_sample_fraction_at_level": "0.8 * alpha",
+    "fixed_sample_fraction": "remainder; keep all four medium velocity directions and 10% zero commands",
+    "upgrade": "only after two consecutive frozen evaluation nodes pass current-level health/direction gates and dynamic EE improvement >=0.1 vs mathematical center",
+    "requires_new_dynamic_physical_admission": true,
+    "automatic_start": false
+  },
+  "stage_C_plan": {
+    "formal_T1_fraction": 0.8,
+    "medium_velocity_fixed_EE_fraction": 0.1,
+    "zero_velocity_fixed_EE_fraction": 0.1,
+    "formal_linear_speed_mps": 0.2,
+    "formal_yaw_rate_radps": 0.15,
+    "formal_segment_s": 6.0,
+    "formal_ee_period_s": 8.0,
+    "precision_weight": 1.5,
+    "requires_frozen_gate": true,
+    "automatic_start": false
+  }
+}

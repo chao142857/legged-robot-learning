@@ -1,0 +1,18 @@
+{
+  "state": "blocked_simulator_initialization_and_cleanup",
+  "additional_completed_updates": 0,
+  "cumulative_completed_updates": 1200,
+  "parent_cp_sha256": "cd081d0350783f656656dc81dc6143b6f0a9b4b553bfa47d2053c19d9bb9b069",
+  "attempted_training_pid": 112560,
+  "supervisor_exited": true,
+  "child_still_present": true,
+  "no_training_output_created": true,
+  "no_second_simulator_started": true,
+  "failure_evidence": "private-runtime/go2_piper_recipe_aplus_20261025/initialization_failure.json",
+  "kit_tail": "private-runtime/go2_piper_recipe_aplus_20261025/initialization_kit_tail.txt",
+  "kit_tail_sha256": "5e2410ab9f710c2f7f71f2cd0aa139f26c03c2c1ee779089d5c9c2824e1117e4",
+  "runtime_error_log": "private-runtime/go2_piper_recipe_aplus_20261025/supervisor.log",
+  "runtime_error_log_sha256": "914a2da9847916b1a1ac0a7ed6db553d49ad38aefcbf9ff4feddfac2ba25c262",
+  "no_driver_network_reboot_changes": true,
+  "created_unix": 1792938348.3299243
+}

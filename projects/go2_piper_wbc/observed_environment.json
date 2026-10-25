@@ -1,0 +1,22 @@
+{
+  "source_kind": "historical observed environment; not an install lock",
+  "source_sha256": "e04d8429c2d9faf4daabcb7a2bed29cf04b6163c7d67c2155dd2f93e6df58f20",
+  "python": "3.11.16",
+  "leggedmanip_revision": "4e12109d1eccb1d9da2e4a35f189fabea3f13677",
+  "isaaclab_source_revision": "b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8",
+  "versions": {
+    "torch": "2.7.0+cu128",
+    "rsl-rl-lib": "5.0.1",
+    "tensordict": "0.8.3",
+    "numpy": "1.26.0",
+    "gymnasium": "1.2.1",
+    "isaacsim": "5.1.0.0",
+    "isaaclab": "0.54.4",
+    "isaaclab-rl": null,
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.3",
+    "PyYAML": "6.0.2"
+  },
+  "physics": "PhysX dt=0.005 s; decimation=4; 50 Hz control",
+  "note": "Package metadata and pinned checkout are different fields. Asset redistribution is excluded."
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "method": "uniform",
+    "update": 0,
+    "transitions": 0,
+    "n": 48,
+    "joint_success": 40,
+    "locomotion": 46,
+    "manipulation": 41,
+    "safety": 48
+  },
+  {
+    "method": "uniform",
+    "update": 32,
+    "transitions": 98304,
+    "n": 48,
+    "joint_success": 0,
+    "locomotion": 18,
+    "manipulation": 0,
+    "safety": 45
+  },
+  {
+    "method": "uniform",
+    "update": 64,
+    "transitions": 196608,
+    "n": 48,
+    "joint_success": 0,
+    "locomotion": 23,
+    "manipulation": 0,
+    "safety": 44
+  },
+  {
+    "method": "uniform",
+    "update": 128,
+    "transitions": 393216,
+    "n": 48,
+    "joint_success": 0,
+    "locomotion": 9,
+    "manipulation": 1,
+    "safety": 35
+  },
+  {
+    "method": "sgs",
+    "update": 0,
+    "transitions": 0,
+    "n": 48,
+    "joint_success": 40,
+    "locomotion": 46,
+    "manipulation": 41,
+    "safety": 48
+  },
+  {
+    "method": "sgs",
+    "update": 32,
+    "transitions": 98304,
+    "n": 48,
+    "joint_success": 0,
+    "locomotion": 13,
+    "manipulation": 0,
+    "safety": 46
+  },
+  {
+    "method": "sgs",
+    "update": 64,
+    "transitions": 196608,
+    "n": 48,
+    "joint_success": 0,
+    "locomotion": 16,
+    "manipulation": 0,
+    "safety": 44
+  },
+  {
+    "method": "sgs",
+    "update": 128,
+    "transitions": 393216,
+    "n": 48,
+    "joint_success": 0,
+    "locomotion": 21,
+    "manipulation": 2,
+    "safety": 38
+  }
+]

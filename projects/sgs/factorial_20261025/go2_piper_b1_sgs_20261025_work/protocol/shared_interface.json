@@ -1,0 +1,55 @@
+{
+  "status": "implementation_and_CPU_preparation_complete; formal/native binding pending",
+  "owner": "B1",
+  "shared_sgs_path": "local-collection/go2_piper_b1_sgs_20261025_work/shared_sgs",
+  "import_root": "local-collection/go2_piper_b1_sgs_20261025_work",
+  "version": "1.0.0-rc1",
+  "feedback_rule_version": "latest_joint_success_5cm_v1",
+  "support_sha256": "f3663a1e46438a78156c9d347cad2ea22a130479a7de221994d124e60d457bf5",
+  "task_ids": [
+    "task:50ec1d7865cbfd2a7fe94b281b827c4b69cc7a509d3d41d92658914a784661f3",
+    "task:5e7f9f6379b0269837a399824d11903a897e060375d64fa49fef3e53b215a6de",
+    "task:780b3543fe959d41ce220fdf710c51d1152d15bba8a9ea739bdcaa094d8a071b",
+    "task:0c3a27efa8c72ad7b7a68c36d86d835c70bfa8ee0d4f6a117934bf5d6fd38613"
+  ],
+  "API": {
+    "TaskPool": "TaskPool([TaskSpec.from_content(c) for c in task_support[content]], task_support[support_version]); .ids/.index/.by_id/.tasks/.support_sha256",
+    "session": "SamplerSession(pool,run_id=unique_run,seed=independent_int,feedback_rule_version=latest_joint_success_5cm_v1,mode=sgs|uniform)",
+    "assign": "assign(env_ids, initial_task_ids={env_id:task_id} only at CP0 optional) -> list[EpisodeAssignment] sorted env_id",
+    "advance": "advance_all(steps=1) O(number tasks) every actual pre-reset transition; advance(env_ids,steps) for partial stepping",
+    "terminal": "TerminalFeedback(assignment,terminated,timeout,success,steps,feedback_rule_version,metrics,termination_reasons=()); observe_terminal(list) validates entire batch before recording; duplicate exact last token is no-op, stale/conflicting rejects",
+    "feedback": "t1_episode_labels(metrics,terminated=bool,timeout=bool,max_steps=1000) -> all original labels; select joint_success_5cm",
+    "censor": "censor_active(reason,env_ids=None); reason=training_cutoff|manual_reset|interruption|resume_without_physics; no success history",
+    "state": "deep-copy state_dict(); atomic load_state_dict(state), validates same run_id/seed/mode/support/rule/parameters; JSON compatible",
+    "eval": "FixedEvaluation(pool).assignments(env_ids); .observe_terminal raises; training session untouched"
+  },
+  "initial_assignment_proposal": "accepted into common v1.1 design: balanced env%4 CP0, later per-reset Uniform/SGS; still pending review/native binding",
+  "resolved_latest_yaml_sha256": {
+    "env.yaml": {
+      "remote_path": "private-runtime/go2_piper_t1_scratch5000_20261023_v2/train_seed21/env.yaml",
+      "sha256": "4716a185c2ff3ffb3c6c8667190b64617b732ccca70dba6bc7df86a478ddbd4c",
+      "bytes": 46847,
+      "access": "read-only existing SSH; no simulator or checkpoint access"
+    },
+    "agent.yaml": {
+      "remote_path": "private-runtime/go2_piper_t1_scratch5000_20261023_v2/train_seed21/agent.yaml",
+      "sha256": "5fda080d493aaba9075bcd5e3c4ff78933e0bf625465d124ef5373d8a4014909",
+      "bytes": 1200,
+      "access": "read-only existing SSH; no simulator or checkpoint access"
+    }
+  },
+  "pending": "B0 review, phase4 reset protocol/label acceptance, native physical hook verification; no GPU or formal train this round",
+  "module_manifest_path": "local-collection/go2_piper_b1_sgs_20261025_work/module_manifest.json",
+  "module_manifest_sha256": "ab55d227da6eae86490d57cc792ee5e16ae58a749762c5f5649e013f7609e481",
+  "source_manifest_path": "local-collection/go2_piper_b1_sgs_20261025_work/source_manifest.json",
+  "source_manifest_sha256": "e6354f84a0ca1da66f669d6e38427321a2a12ff2f8eeca7790f98fd93fdbbb8b",
+  "CPU_report_path": "local-collection/go2_piper_b1_sgs_20261025_work/audit/cpu_native_validation.json",
+  "CPU_report_sha256": "255808491c69ff829129de92ac7011b9754fb9dad5ac18237c84dfa996458c20",
+  "CPU_tests_passed": 14,
+  "common_protocol_sha256": "4f79c8aece6f3e1674c0c49b6b121a50a1277474b6d27344bc823bab66178033",
+  "task_support_file_sha256": "44749d2d825bbf485730a0a6c0727be75f8b40e0604ebe870c7b0f953451c0d6",
+  "observer_path": "local-collection/go2_piper_b1_sgs_20261025_work/integration/pre_reset.py",
+  "observer_API": "PreResetObserver(env,session,metrics,physical,log=None); reward pre-reset capture and whole batch observe before assign/bind/original reset",
+  "formal_commands_path": "local-collection/go2_piper_b1_sgs_20261025_work/docs/COMMANDS.md",
+  "GPU_or_formal_training_executed": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "pending_common_review_and_native_physical_interface; no_formal_run_this_round",
+  "baseline_review_bound": false,
+  "phase4_and_label_bound": false,
+  "native_boundary_verified": false,
+  "formal_run_authorized": false,
+  "common_protocol_sha256": "4f79c8aece6f3e1674c0c49b6b121a50a1277474b6d27344bc823bab66178033",
+  "source_files": [],
+  "binding_instruction": "Populate execution-host source hashes and actual review/interface records after those exist; CPU results do not satisfy native_boundary_verified"
+}

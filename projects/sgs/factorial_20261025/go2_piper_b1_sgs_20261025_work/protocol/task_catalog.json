@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "support_version": "t1_phase4_v1",
+  "tasks": [
+    {
+      "task_id": "task:50ec1d7865cbfd2a7fe94b281b827c4b69cc7a509d3d41d92658914a784661f3",
+      "content_sha256": "50ec1d7865cbfd2a7fe94b281b827c4b69cc7a509d3d41d92658914a784661f3",
+      "content": {
+        "base_sequence_phase_offset": 0,
+        "command_content_version": "t1_phase4_content_v1",
+        "command_sequence": [
+          "forward",
+          "backward",
+          "left_turn",
+          "right_turn"
+        ],
+        "control_dt_s": 0.02,
+        "difficulty": "easy",
+        "ee_frame": "xy in link0; z world with support-height offset; quaternion relative link0",
+        "ee_mode": "smooth",
+        "ee_phase_reset_rad": 0,
+        "family": "T1",
+        "horizon_s": 20,
+        "params": {
+          "base_linear_speed": 0.2,
+          "base_segment_s": 6,
+          "base_slew_linear": 0.2,
+          "base_slew_yaw": 0.3,
+          "base_yaw_rate": 0.15,
+          "ee_amplitude": [
+            0.02,
+            0.03,
+            0.02
+          ],
+          "ee_center": [
+            0.45,
+            0,
+            0.5
+          ],
+          "ee_orientation_offset_rpy": [
+            0,
+            0.6,
+            0
+          ],
+          "ee_period_s": 8,
+          "episode_s_flat": 20
+        },
+        "phase_rule": "(base_sequence_phase_offset + floor(episode_age_s / base_segment_s)) % 4",
+        "schema_version": 1,
+        "terrain": "plane"
+      }
+    },
+    {
+      "task_id": "task:5e7f9f6379b0269837a399824d11903a897e060375d64fa49fef3e53b215a6de",
+      "content_sha256": "5e7f9f6379b0269837a399824d11903a897e060375d64fa49fef3e53b215a6de",
+      "content": {
+        "base_sequence_phase_offset": 1,
+        "command_content_version": "t1_phase4_content_v1",
+        "command_sequence": [
+          "forward",
+          "backward",
+          "left_turn",
+          "right_turn"
+        ],
+        "control_dt_s": 0.02,
+        "difficulty": "easy",
+        "ee_frame": "xy in link0; z world with support-height offset; quaternion relative link0",
+        "ee_mode": "smooth",
+        "ee_phase_reset_rad": 0,
+        "family": "T1",
+        "horizon_s": 20,
+        "params": {
+          "base_linear_speed": 0.2,
+          "base_segment_s": 6,
+          "base_slew_linear": 0.2,
+          "base_slew_yaw": 0.3,
+          "base_yaw_rate": 0.15,
+          "ee_amplitude": [
+            0.02,
+            0.03,
+            0.02
+          ],
+          "ee_center": [
+            0.45,
+            0,
+            0.5
+          ],
+          "ee_orientation_offset_rpy": [
+            0,
+            0.6,
+            0
+          ],
+          "ee_period_s": 8,
+          "episode_s_flat": 20
+        },
+        "phase_rule": "(base_sequence_phase_offset + floor(episode_age_s / base_segment_s)) % 4",
+        "schema_version": 1,
+        "terrain": "plane"
+      }
+    },
+    {
+      "task_id": "task:780b3543fe959d41ce220fdf710c51d1152d15bba8a9ea739bdcaa094d8a071b",
+      "content_sha256": "780b3543fe959d41ce220fdf710c51d1152d15bba8a9ea739bdcaa094d8a071b",
+      "content": {
+        "base_sequence_phase_offset": 2,
+        "command_content_version": "t1_phase4_content_v1",
+        "command_sequence": [
+          "forward",
+          "backward",
+          "left_turn",
+          "right_turn"
+        ],
+        "control_dt_s": 0.02,
+        "difficulty": "easy",
+        "ee_frame": "xy in link0; z world with support-height offset; quaternion relative link0",
+        "ee_mode": "smooth",
+        "ee_phase_reset_rad": 0,
+        "family": "T1",
+        "horizon_s": 20,
+        "params": {
+          "base_linear_speed": 0.2,
+          "base_segment_s": 6,
+          "base_slew_linear": 0.2,
+          "base_slew_yaw": 0.3,
+          "base_yaw_rate": 0.15,
+          "ee_amplitude": [
+            0.02,
+            0.03,
+            0.02
+          ],
+          "ee_center": [
+            0.45,
+            0,
+            0.5
+          ],
+          "ee_orientation_offset_rpy": [
+            0,
+            0.6,
+            0
+          ],
+          "ee_period_s": 8,
+          "episode_s_flat": 20
+        },
+        "phase_rule": "(base_sequence_phase_offset + floor(episode_age_s / base_segment_s)) % 4",
+        "schema_version": 1,
+        "terrain": "plane"
+      }
+    },
+    {
+      "task_id": "task:0c3a27efa8c72ad7b7a68c36d86d835c70bfa8ee0d4f6a117934bf5d6fd38613",
+      "content_sha256": "0c3a27efa8c72ad7b7a68c36d86d835c70bfa8ee0d4f6a117934bf5d6fd38613",
+      "content": {
+        "base_sequence_phase_offset": 3,
+        "command_content_version": "t1_phase4_content_v1",
+        "command_sequence": [
+          "forward",
+          "backward",
+          "left_turn",
+          "right_turn"
+        ],
+        "control_dt_s": 0.02,
+        "difficulty": "easy",
+        "ee_frame": "xy in link0; z world with support-height offset; quaternion relative link0",
+        "ee_mode": "smooth",
+        "ee_phase_reset_rad": 0,
+        "family": "T1",
+        "horizon_s": 20,
+        "params": {
+          "base_linear_speed": 0.2,
+          "base_segment_s": 6,
+          "base_slew_linear": 0.2,
+          "base_slew_yaw": 0.3,
+          "base_yaw_rate": 0.15,
+          "ee_amplitude": [
+            0.02,
+            0.03,
+            0.02
+          ],
+          "ee_center": [
+            0.45,
+            0,
+            0.5
+          ],
+          "ee_orientation_offset_rpy": [
+            0,
+            0.6,
+            0
+          ],
+          "ee_period_s": 8,
+          "episode_s_flat": 20
+        },
+        "phase_rule": "(base_sequence_phase_offset + floor(episode_age_s / base_segment_s)) % 4",
+        "schema_version": 1,
+        "terrain": "plane"
+      }
+    }
+  ],
+  "support_sha256": "f3663a1e46438a78156c9d347cad2ea22a130479a7de221994d124e60d457bf5"
+}

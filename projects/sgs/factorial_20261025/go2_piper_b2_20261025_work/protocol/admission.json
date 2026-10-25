@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "preparation_only_not_a_formal_admission",
+  "baseline_review_bound": false,
+  "phase4_and_label_bound": false,
+  "native_boundary_verified": false,
+  "shared_ik_mapping_verified": false,
+  "formal_run_authorized": false,
+  "dynamic_tracking_verified": null,
+  "dynamic_tracking_note": "Separate later physical question; random leg-policy task competence is not required as a pretraining gate.",
+  "common_protocol_sha256": "4f79c8aece6f3e1674c0c49b6b121a50a1277474b6d27344bc823bab66178033",
+  "dependency_lock_sha256": "24f5e7009d0a0a0c9a7de0fc6dbeb16f13d6427992c378263c0dfcaff22289ac",
+  "native_source_commit": "4e12109d1eccb1d9da2e4a35f189fabea3f13677",
+  "pair_sha256": "7246d5f2e48193788b2cb87c0fc5db4ce564d294bfa2622bba815f2956a54f8f",
+  "source_files": []
+}

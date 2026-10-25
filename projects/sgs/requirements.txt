@@ -1,0 +1,2 @@
+# shared_sgs core and its lifecycle tests use only the Python standard library.
+# Historical simulator integration uses the independent Go2 environment.

@@ -1,0 +1,6 @@
+# Historical Go2 CPU replay interface. Obtain a matching Torch wheel for your platform.
+# Original robot training used torch 2.7.0+cu128; this file does not install Isaac.
+torch==2.7.0
+numpy==1.26.0
+tensordict==0.8.3
+rsl-rl-lib==5.0.1

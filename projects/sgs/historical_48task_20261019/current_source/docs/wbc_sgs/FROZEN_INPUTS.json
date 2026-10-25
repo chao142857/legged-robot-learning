@@ -1,0 +1,653 @@
+{
+  "wbc_source": {
+    "base_commit": "db8c0a864430f4cd22d64741668dd30be05fd7ae",
+    "files": {
+      "source/LeggedManip_Lab/LeggedManip_Lab/ui_extension_example.py": {
+        "bytes": 2112,
+        "sha256": "92ae5980b8799efe1cf443f119953ca4ebe502d95556509bb74997bad252cab4"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/__init__.py": {
+        "bytes": 763,
+        "sha256": "93313aeb237d8b118bd3854978c57f706b8dcde9652f7f3b334f88ea657d83e9"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/assets/ago_z1/ago_z1_articulation_cfg.py": {
+        "bytes": 4246,
+        "sha256": "fa83ad65e34d91950c20a14d2e503f1974ca8b2adb8f803dc012a944ee680244"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/assets/go1_arx5/go1_arx5_articulation_cfg.py": {
+        "bytes": 4669,
+        "sha256": "9c5de028c1dcade9e0e4f6bc9125bad75fccdb20af1e97893f2bee059b92a63e"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/assets/b1_z1/b1_z1_articulation_cfg.py": {
+        "bytes": 4658,
+        "sha256": "8740acf89c120262d8bacb532ec56137ec52c279478f0f4a2786be9d644cf270"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/assets/go1_wx250s/go1_wx250s_articulation_cfg.py": {
+        "bytes": 4677,
+        "sha256": "597323ebd0c6d1ce8ba6ff2ddb4e95a390cde8c52d350a27500a396c63db821a"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/assets/go2_arx5/go2_arx5_articulation_cfg.py": {
+        "bytes": 4668,
+        "sha256": "800135dc118b8785f00c8c0541031c8befa952a6ab587a7b9476733dddfd9e1c"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/assets/go2_piper/go2_piper_articulation_cfg.py": {
+        "bytes": 4672,
+        "sha256": "b4528af223a7ad9081a1dca7e3a47ca8f2a875672702613d9c73c146cc3549c5"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/assets/b2_z1/b2_z1_articulation_cfg.py": {
+        "bytes": 4658,
+        "sha256": "ac92daf9ce723c86c0e75b40b40ceb1f6214d316d2390659e79452caae88e309"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/__init__.py": {
+        "bytes": 925,
+        "sha256": "fc406ce68ff7f76bdb53aba8ecb758e157d9befd6ae17628dc1336e824c3899d"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/__init__.py": {
+        "bytes": 624,
+        "sha256": "df22e2b5788c6251ceb903a77e9e71dd7f44c58c315d018464fc63767bf63826"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/leggedmanip_lab_env_cfg.py": {
+        "bytes": 17011,
+        "sha256": "dd73ab305ad875fc5a9c83f3b60dd93c89e994e739481f9a2a222695f9e851e7"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/__init__.py": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/__init__.py": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/ago_z1/flat_env_cfg.py": {
+        "bytes": 2353,
+        "sha256": "caae0c8c2fe76bab7b619d2a2d789b5b04ad75a35b71e7987a56958aec0bef0c"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/ago_z1/wbc_env_cfg.py": {
+        "bytes": 4570,
+        "sha256": "523d24b54df1cd25a6c4ead8b797ae8f3f60c68769aeccfaa55d360db1334371"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/ago_z1/__init__.py": {
+        "bytes": 1303,
+        "sha256": "4043dad79b52ae026de3eba4b636561345a704f0ea8b8e4785572362127a42fa"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/ago_z1/agents/rsl_rl_ppo_cfg.py": {
+        "bytes": 2827,
+        "sha256": "f97276b91845677fc53190ddda33abc7245ffd8848d4473baae2fe9c27f72fdf"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/ago_z1/agents/__init__.py": {
+        "bytes": 585,
+        "sha256": "abdcb0bbd29604a73b97e6911a73db8106b1d83313bace28acae0c2e439e8812"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_arx5/flat_env_cfg.py": {
+        "bytes": 2311,
+        "sha256": "54e4cd3861a81a9345725eb7a22349ab55dad592cbacd183b6f52072b2c1dfb8"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_arx5/wbc_env_cfg.py": {
+        "bytes": 4422,
+        "sha256": "7f14fc3c3ac3caf784e7bd2e1f2d21d6c70d4f1261ca058808c51e24ffecfaa3"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_arx5/__init__.py": {
+        "bytes": 1327,
+        "sha256": "5bf7462d68f26f5b0ebed0eaf5ef8cfdbfedea81ac3414b7e1de36b093ad6e1a"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_arx5/agents/rsl_rl_ppo_cfg.py": {
+        "bytes": 2822,
+        "sha256": "01a49988872dd4e6493d5d05bc6b304913f0323629c58e3db1eefb093ab395af"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_arx5/agents/__init__.py": {
+        "bytes": 584,
+        "sha256": "5a462dc326450167e5047cb70858fa0b6a332d712c3c90c506a92f8edce37813"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b1_z1/flat_env_cfg.py": {
+        "bytes": 2339,
+        "sha256": "23953ae6aad2d950c670a915874eeeb5aa90f214c8352d67a90b7d0788f7ad7b"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b1_z1/wbc_env_cfg.py": {
+        "bytes": 4503,
+        "sha256": "444a502f395c7458cee0e225471246ef12757d79fc9835a4fcbe927556ec615e"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b1_z1/__init__.py": {
+        "bytes": 1291,
+        "sha256": "be32c3f588d09d17f8b68d5827cebd6f4204818556ba7828961710218357c83d"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b1_z1/agents/rsl_rl_ppo_cfg.py": {
+        "bytes": 2824,
+        "sha256": "922954415f23fbf345be8894bebaf13c33e2cc324f359f5986f615855295cf36"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b1_z1/agents/__init__.py": {
+        "bytes": 585,
+        "sha256": "abdcb0bbd29604a73b97e6911a73db8106b1d83313bace28acae0c2e439e8812"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_wx250s/flat_env_cfg.py": {
+        "bytes": 2317,
+        "sha256": "93876f6f5aba343cdcb2dc7f2ecf173336f2f8d49f30f9049dd7da1d72c51b41"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_wx250s/wbc_env_cfg.py": {
+        "bytes": 4387,
+        "sha256": "a816165bf03468302c8866ee69de49205afc3f809f0570b7bba1db7a6608fc3a"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_wx250s/__init__.py": {
+        "bytes": 1351,
+        "sha256": "1e85f6a581d9052252772861609bb8e415e65d357a01a0791707e85bf04b495d"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_wx250s/agents/rsl_rl_ppo_cfg.py": {
+        "bytes": 2841,
+        "sha256": "a816369e11d98b1544448bbbaefe99529c93cc0474f7a3782dde973c92d758d0"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go1_wx250s/agents/__init__.py": {
+        "bytes": 584,
+        "sha256": "5a462dc326450167e5047cb70858fa0b6a332d712c3c90c506a92f8edce37813"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_arx5/flat_env_cfg.py": {
+        "bytes": 2482,
+        "sha256": "90b460407d84eaf6817bf1e6ec42afc9c96db9ccc9c74bde4149026424853c1a"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_arx5/wbc_env_cfg.py": {
+        "bytes": 4365,
+        "sha256": "547ef5c5f1c762895ae06249c844c461d304c52835a608dd6178686973230d41"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_arx5/__init__.py": {
+        "bytes": 1327,
+        "sha256": "76f0a7af75442e781f08f034a71a6eeaf87f093f9bc9a45253d21013bc8e1eb9"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_arx5/agents/rsl_rl_ppo_cfg.py": {
+        "bytes": 2835,
+        "sha256": "d916f02827406fd082798bdd40ffbcf53a029323419cae3295e9c2d44b039bdb"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_arx5/agents/__init__.py": {
+        "bytes": 585,
+        "sha256": "abdcb0bbd29604a73b97e6911a73db8106b1d83313bace28acae0c2e439e8812"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_piper/flat_env_cfg.py": {
+        "bytes": 2501,
+        "sha256": "1585b2464e35f24c22646f252cadbd36b8912087de89667f846d6ee68627b3f5"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_piper/wbc_env_cfg.py": {
+        "bytes": 4627,
+        "sha256": "5399b7432bb3ec1679a1329bccb11c9b4007989a0ab5072a3cf7ed525717dce2"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_piper/__init__.py": {
+        "bytes": 1339,
+        "sha256": "e6a35e6de591be6f4bfbf37347b7bfa43e4aab04d165d1e26c121ace10970e87"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_piper/agents/rsl_rl_ppo_cfg.py": {
+        "bytes": 2839,
+        "sha256": "3b6005b958ea3a82f0711ab50c7142c4b0f1ef79baa25da1fde701039fb96919"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/go2_piper/agents/__init__.py": {
+        "bytes": 585,
+        "sha256": "abdcb0bbd29604a73b97e6911a73db8106b1d83313bace28acae0c2e439e8812"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b2_z1/flat_env_cfg.py": {
+        "bytes": 2339,
+        "sha256": "9e8bcbe2767b3560d43d1556b5fb40f65ac72416ac0cdb8bf99c3ef3721aee4d"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b2_z1/wbc_env_cfg.py": {
+        "bytes": 4546,
+        "sha256": "e488a69260940f74ab2f3af1dcb1d331819c03748657c4bc6b55e45704dfe258"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b2_z1/__init__.py": {
+        "bytes": 1291,
+        "sha256": "94782c0321c9df55d5f70e7648c1a70e653deb576a33bd245f31c440b60734a9"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b2_z1/agents/rsl_rl_ppo_cfg.py": {
+        "bytes": 2813,
+        "sha256": "8c4b32b9dcde5fd50c289bbe1a01c6b64033f97cde90f59567d974b0827c1930"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/config/b2_z1/agents/__init__.py": {
+        "bytes": 585,
+        "sha256": "abdcb0bbd29604a73b97e6911a73db8106b1d83313bace28acae0c2e439e8812"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/mdp/events.py": {
+        "bytes": 3292,
+        "sha256": "ab65d22168ee3b9618637846b72dab2f33623e8d76c6c344dfb49bb5b59ef95d"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/mdp/curriculums.py": {
+        "bytes": 8987,
+        "sha256": "0d94404ce0f7fcec4daadf732f97b8e0de690788eab7ad27ac52f0acf40af7cb"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/mdp/observations.py": {
+        "bytes": 7187,
+        "sha256": "23ed2f1e86bea46618efdc6fbcf2bd66251291dd7c978d2dad7c9af704df9ade"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/mdp/pose_command_wbc.py": {
+        "bytes": 10214,
+        "sha256": "9266a53093084c437edcc88a3ab166be69fbc9535a5678cb2a4182d028d20249"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/mdp/rewards.py": {
+        "bytes": 15142,
+        "sha256": "d48f23ed9a571d3b23fc24399e4933136e0bd14f07c56761a6dd59b796f091db"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/mdp/__init__.py": {
+        "bytes": 1095,
+        "sha256": "3f15f30a48946511c3fae996747f094958a676b4eb686a281e6b1262b127a357"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/mdp/pose_command_b.py": {
+        "bytes": 7305,
+        "sha256": "225caa2b1825864f4f1d82828c73ca1dd2e6fd3acfa2541f34157eb6c562c2aa"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/mdp/cfg/command_cfg.py": {
+        "bytes": 2208,
+        "sha256": "05f84e2a2ecda7d208d606810f948b4dfad53021c0999e2e8f52bc370d64c5d4"
+      },
+      "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/leggedmanip_lab/mdp/cfg/__init__.py": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "scripts/rsl_rl/train.py": {
+        "bytes": 9630,
+        "sha256": "9fe24e7a3decd04a364d597c4894bb0212769ae8305415755101a8ffd2de7073"
+      },
+      "tools/run_python.sh": {
+        "bytes": 494,
+        "sha256": "910bad61d6aaf0a64cd14cabf0c6f8b6520ea9758d4f94b5160a040b8838a4aa"
+      }
+    }
+  },
+  "previous_frozen": {
+    "benchmarks/go2_piper/v03/__init__.py": {
+      "bytes": 190,
+      "sha256": "d5d4f303d98bd9cd9d12f49649cccc013f17be3d9f4963d1f5a60cbf51fd6aa4"
+    },
+    "benchmarks/go2_piper/v03/controllers.py": {
+      "bytes": 2975,
+      "sha256": "5164034c23da275ff9af225a1408d703a560ae90e19b7f6e0b1d67d2cf7b1bf9"
+    },
+    "benchmarks/go2_piper/v03/env.py": {
+      "bytes": 15260,
+      "sha256": "76a0bf25182304fb0dc5c8a82ca344e61bddc8c0ad3931832d742fc76d1e28a3"
+    },
+    "benchmarks/go2_piper/v03/geometry.py": {
+      "bytes": 5865,
+      "sha256": "d7f6c7649fbeedecebe02fe6a3d4c0993a28177f8164c2467c5f8e6c79e119c9"
+    },
+    "benchmarks/go2_piper/v03/rsl_env.py": {
+      "bytes": 1291,
+      "sha256": "0b7687acc66cf1d5427e073e50729e616b016c0496946388d56a48ddecde8b5d"
+    },
+    "benchmarks/go2_piper/v03/initial_states.json": {
+      "bytes": 1745,
+      "sha256": "aaf61f0eacd7c13144a589398337bca91ba3ca9bb1ad1807f3c601c29e609e4d"
+    },
+    "benchmarks/go2_piper/v03/tasks.json": {
+      "bytes": 4900,
+      "sha256": "15c366aabca39fe76d338fd02828ffa2a5e83531d6249ec82bd68ab10c182796"
+    },
+    "tools/run_carry_v03.py": {
+      "bytes": 5376,
+      "sha256": "d39f043078c0a6ab7e2baa4590d696343f267b1ea728dbf8cb95277e201fd0f8"
+    },
+    "benchmarks/go2_piper/carry_benchmark.py": {
+      "bytes": 16236,
+      "sha256": "801fafae68ef9f7661b10536a69e4b6b44a27b53c97fdaddd427b36d6294a4cd"
+    },
+    "tools/wbc_mature_eval.py": {
+      "bytes": 9185,
+      "sha256": "803df7b04bee965d9cb4d8d36231845afb9c9cb3e8d65f3cdecd0bace06bceb3"
+    },
+    "mujoco/robots/go2_piper/assets/base_0.obj": {
+      "bytes": 1330465,
+      "sha256": "8cdc53719002a5ee737d867904e534a6d6fa930b616bdcc1b3131e577d4e46c0"
+    },
+    "mujoco/robots/go2_piper/assets/base_0.stl": {
+      "bytes": 506584,
+      "sha256": "87222772abd459c0d1069e97c1881c28a17b22475ba05172f581f8014bca7bf5"
+    },
+    "mujoco/robots/go2_piper/assets/base_1.obj": {
+      "bytes": 811791,
+      "sha256": "39d2f4724ff64dd5a0640c308fd98902a2946660a8d033ec8dbf368fd5af0dd6"
+    },
+    "mujoco/robots/go2_piper/assets/base_1.stl": {
+      "bytes": 198184,
+      "sha256": "0b48e2976c050925c22d0646f35f3365425ac74c45f60ab72680b300ad5e3afd"
+    },
+    "mujoco/robots/go2_piper/assets/base_2.obj": {
+      "bytes": 294090,
+      "sha256": "29cae463f95d678e4ede863c36c9b19b0d356b8340412add10670d70bdcc3095"
+    },
+    "mujoco/robots/go2_piper/assets/base_2.stl": {
+      "bytes": 100334,
+      "sha256": "4891b21d9623561212ebd270ff40f4de6e18338d260cd7eac45a539adaa0fcb5"
+    },
+    "mujoco/robots/go2_piper/assets/base_3.obj": {
+      "bytes": 379093,
+      "sha256": "f51ba43bf300e68957a0c1aa83eaf3e4926f4ac7e64a0d6c33ae5d21fcbcf5f6"
+    },
+    "mujoco/robots/go2_piper/assets/base_3.stl": {
+      "bytes": 116084,
+      "sha256": "22b6e33c72eb92384cc1ccce6adb0705dea006c51b8a7235da55f310a8e37728"
+    },
+    "mujoco/robots/go2_piper/assets/base_4.obj": {
+      "bytes": 7776234,
+      "sha256": "49ddec0129546e5dd2075d5beacf7f207baa2860aeff7626818e64d2efbf3821"
+    },
+    "mujoco/robots/go2_piper/assets/base_4.stl": {
+      "bytes": 2975634,
+      "sha256": "f4d80b3ab978f4f8637e7afe8cceca45f10b3caab1bf74b2b0b19ee675e8e7ca"
+    },
+    "mujoco/robots/go2_piper/assets/base_link.STL": {
+      "bytes": 607384,
+      "sha256": "fd4a3d6d0266205fe3f725f048645be66592c23564db22e08b0807d5569b2c64"
+    },
+    "mujoco/robots/go2_piper/assets/calf_0.obj": {
+      "bytes": 877174,
+      "sha256": "4a818cd563c5b7e2a271504442d05fd777d38cbaa028d4a10ad29c9f87bb355e"
+    },
+    "mujoco/robots/go2_piper/assets/calf_0.stl": {
+      "bytes": 325684,
+      "sha256": "5d1aaeebaedaa7814d090f91dfadef36cef26c8dcad8b627403c5b59b2dc24ab"
+    },
+    "mujoco/robots/go2_piper/assets/calf_1.obj": {
+      "bytes": 326865,
+      "sha256": "51950c3a153ae3208592df86ea11c9d6756f8f645ebca5caf6910c61aeb03817"
+    },
+    "mujoco/robots/go2_piper/assets/calf_1.stl": {
+      "bytes": 102734,
+      "sha256": "8a5dc28f87af8f4751ec21d9c03dda11640800fa096fa4c976844d1f297156c5"
+    },
+    "mujoco/robots/go2_piper/assets/calf_mirror_0.obj": {
+      "bytes": 876538,
+      "sha256": "6dc0406207a1c08a5953fd5962aca1a270fd06593d30d100205e05c1b32d4af2"
+    },
+    "mujoco/robots/go2_piper/assets/calf_mirror_0.stl": {
+      "bytes": 325684,
+      "sha256": "022c3ccbcedc2176a98b76cac981b3ca88f7494678b8b064bde77492f9e2ce06"
+    },
+    "mujoco/robots/go2_piper/assets/calf_mirror_1.obj": {
+      "bytes": 327261,
+      "sha256": "f84f5af90b914633165beb3a5493ee499169144c5797dcf04c6eb5842f74b31a"
+    },
+    "mujoco/robots/go2_piper/assets/calf_mirror_1.stl": {
+      "bytes": 102734,
+      "sha256": "39d49f89b684af5fe0a0540e5f1bb2832e804049677bc44e83d1af1c4e109913"
+    },
+    "mujoco/robots/go2_piper/assets/foot.obj": {
+      "bytes": 1144729,
+      "sha256": "df9e78a7c0110d02557439010f2a5f11f0ec4fd907b32704145dbd6aa7affc0b"
+    },
+    "mujoco/robots/go2_piper/assets/foot.stl": {
+      "bytes": 220284,
+      "sha256": "7e18167ac25502b6b95caa1bd49c8119bdf66bf4153b971d2627d213b0c872fb"
+    },
+    "mujoco/robots/go2_piper/assets/gripper_base.STL": {
+      "bytes": 649484,
+      "sha256": "2895bfa6f1eef2d0ad2cb9dfdedd5f6c760ec07388bcde2b4d1e412e1189c9cb"
+    },
+    "mujoco/robots/go2_piper/assets/hip_0.obj": {
+      "bytes": 2863864,
+      "sha256": "cc29932ab4d251ce3f72389ec4c1f757e44eee138b87e772b648c2bc76b506cd"
+    },
+    "mujoco/robots/go2_piper/assets/hip_0.stl": {
+      "bytes": 902884,
+      "sha256": "232ae5a0fbfc36737eb0c169a19b0804e560541aa4da3be801508ab1ebd880be"
+    },
+    "mujoco/robots/go2_piper/assets/hip_1.obj": {
+      "bytes": 2767918,
+      "sha256": "3fd5bd9b2ef6abe622c0739d3c67eaa1679b19b47132951972c4892a779ea7cf"
+    },
+    "mujoco/robots/go2_piper/assets/hip_1.stl": {
+      "bytes": 948684,
+      "sha256": "670d389fcd321cfb96e2ee00c0649b4299dfd02c3ada5ca3ddfd5e9397a80d77"
+    },
+    "mujoco/robots/go2_piper/assets/link1.STL": {
+      "bytes": 447784,
+      "sha256": "9ee6e1d67c0241f42a0dbaf5c676d19230375ed078ee1943bb8c4c37ab303d14"
+    },
+    "mujoco/robots/go2_piper/assets/link2.STL": {
+      "bytes": 3658384,
+      "sha256": "0d37675b699b643f2e15348de99aed535fac10dc5f09a79b8e4b0acfaf4e0378"
+    },
+    "mujoco/robots/go2_piper/assets/link3.STL": {
+      "bytes": 1845784,
+      "sha256": "e8ae51f17c0c7f6d67b753922e2cc269f5e8372a65734f859231639a64fe8fad"
+    },
+    "mujoco/robots/go2_piper/assets/link4.STL": {
+      "bytes": 877984,
+      "sha256": "efa33022976218f246f736a6133494b5d0e5486e8b50b52900c42f285ae85558"
+    },
+    "mujoco/robots/go2_piper/assets/link5.STL": {
+      "bytes": 833684,
+      "sha256": "a1c69d1c7f6f8c60e2c82331c0f444725200ed4053d3e5ec23aa82cb5db5b29f"
+    },
+    "mujoco/robots/go2_piper/assets/link6.STL": {
+      "bytes": 58884,
+      "sha256": "88374973bc3bd9e7389b5853cd6e555af9731c30b658b1ee6f85be34a126cb92"
+    },
+    "mujoco/robots/go2_piper/assets/link7.STL": {
+      "bytes": 104384,
+      "sha256": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d"
+    },
+    "mujoco/robots/go2_piper/assets/link8.STL": {
+      "bytes": 104384,
+      "sha256": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606"
+    },
+    "mujoco/robots/go2_piper/assets/thigh_0.obj": {
+      "bytes": 2841868,
+      "sha256": "bb3edfe6a7b04f4f4dff1ce7b05d426ddce941e276cc6372fb542055893c71ec"
+    },
+    "mujoco/robots/go2_piper/assets/thigh_0.stl": {
+      "bytes": 921334,
+      "sha256": "a9befe7f77a590300d512bb3e5c0b7eaca29bd24dd24a324293228e0f7db579c"
+    },
+    "mujoco/robots/go2_piper/assets/thigh_1.obj": {
+      "bytes": 1491320,
+      "sha256": "3a631822f9f7d2114b1b79dcdff5abf95103630abb7d91d1f3b8b18117132ed2"
+    },
+    "mujoco/robots/go2_piper/assets/thigh_1.stl": {
+      "bytes": 585484,
+      "sha256": "e72e81b7d0ca37ea09118734f19415be02fc067d6fd6d2978c893c3a1e97bb0c"
+    },
+    "mujoco/robots/go2_piper/assets/thigh_mirror_0.obj": {
+      "bytes": 2817674,
+      "sha256": "07abaedce761f1dd48647384ac14ba1959276bc78d5a2a62051e8f1c6093933b"
+    },
+    "mujoco/robots/go2_piper/assets/thigh_mirror_0.stl": {
+      "bytes": 920934,
+      "sha256": "1fd36e481c54a62425b5b1742ea9b360f74c5164c8ffabc6900a6d57d99cd301"
+    },
+    "mujoco/robots/go2_piper/assets/thigh_mirror_1.obj": {
+      "bytes": 1482261,
+      "sha256": "db984a3e983eabbc9b38183427cca9ab0bb3bdb049f9eab030e06edda36579d6"
+    },
+    "mujoco/robots/go2_piper/assets/thigh_mirror_1.stl": {
+      "bytes": 585484,
+      "sha256": "46163937eea7d3fa764a0f9c49c2f017aa699d3e2f4066a0dc2188914faf3a29"
+    },
+    "mujoco/robots/go2_piper/go2piper.xml": {
+      "bytes": 22310,
+      "sha256": "e36f01b3dafa1d7d2820b200993f5e0a3a1c4bef948a5eb77141cb5686808c40"
+    },
+    "mujoco/robots/go2_piper/scene.xml": {
+      "bytes": 1107,
+      "sha256": "8c3d4e1c6ea9b354cb99fdda6a45aec8344127cc4d1b7020e00284dd81761e81"
+    },
+    "benchmarks/go2_piper/v03/README.txt": {
+      "bytes": 8057,
+      "sha256": "ae6aa27d99b2ce041d9fa2e5292897b73b74fb8cc7f5716fd942af16d2dd55df"
+    },
+    "mujoco/deploy/deploy_mujoco/go2_piper/go2_piper.py": {
+      "bytes": 13521,
+      "sha256": "d702998b5c095d7676ad79fc981b085c892145eff4cf9acd0b6628c70b19ec53"
+    },
+    "mujoco/deploy/deploy_mujoco/go2_piper/config_wbc.yaml": {
+      "bytes": 1491,
+      "sha256": "6caaba479e25c02fca8371124e7c026ea7baedb01a3ca6d34ca3c53d70faaeff"
+    },
+    "mujoco/deploy/policy/go2_piper/wbc/policy.pt": {
+      "bytes": 1111510,
+      "sha256": "c5f57c79bc01d8b8f2c0846163b149e3f53de39291770a1ccb230ef3be6b800e"
+    }
+  },
+  "previous_evidence": [
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_goal/episodes.jsonl",
+      "bytes": 90763,
+      "sha256": "2c4370f64ac57276d990810ce883c42a4eb85bf8b69eddb1470c5b11e68568cd"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_goal/results.json",
+      "bytes": 138446,
+      "sha256": "190731850986af6027505c8b2809d00b991081e67c2d0c08d1c579d6ca5c451c"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_goal/startup_states.json",
+      "bytes": 83493,
+      "sha256": "0e18c47dcf55d0c84f85f74be87ab038fe8a0f386fc6b8748a3dc82087d14959"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_goal/trace.jsonl",
+      "bytes": 9128521,
+      "sha256": "be2e14af0738514e14fc5017a87d4fa6cbd5a11391e0be93f45d6130e3381d70"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_geometric/episodes.jsonl",
+      "bytes": 99824,
+      "sha256": "e4e54fa226f80305a9ee8924f85bb72e47f053add4ba6da1b56ec99fb63e63ea"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_geometric/results.json",
+      "bytes": 154359,
+      "sha256": "463aee4e6cfc5a86593368fa732e1bd008652e850397703d1096453ede942fd1"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_geometric/startup_states.json",
+      "bytes": 83493,
+      "sha256": "0e18c47dcf55d0c84f85f74be87ab038fe8a0f386fc6b8748a3dc82087d14959"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_geometric/trace.jsonl",
+      "bytes": 38518991,
+      "sha256": "662a0b648169cd8880b167d478c1bdc76891163c184116044ce5521e0d36d929"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_zero/episodes.jsonl",
+      "bytes": 18249,
+      "sha256": "061ec89d2793e56fe8260710f9819092b566b834b53cde16ef83ba41df19ec02"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_zero/results.json",
+      "bytes": 33117,
+      "sha256": "77e8aac9962acdd72461ffed3f2d31ff5332f00a52e6a9b0beb134d2bcb64ab3"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_zero/startup_states.json",
+      "bytes": 20853,
+      "sha256": "55e96ac666e25fed5af3e08d2f09cdf7b881d9727d5f04138253a3852ffe7b31"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_zero/trace.jsonl",
+      "bytes": 10530185,
+      "sha256": "316db1c03675d782ab453278de317b97ba580f14a5d8fabc60d15c17e3976452"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/repeat_geometric/episodes.jsonl",
+      "bytes": 24944,
+      "sha256": "92403ca6bd2650465040a65dd99392c6a050fef2f5b88c990b36245d1a32ae19"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/repeat_geometric/results.json",
+      "bytes": 44617,
+      "sha256": "4a6180762197206c531b10dec0fc463cb695dccd4f9c914f1ebe41f66a2c3fc7"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/repeat_geometric/startup_states.json",
+      "bytes": 20853,
+      "sha256": "55e96ac666e25fed5af3e08d2f09cdf7b881d9727d5f04138253a3852ffe7b31"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/repeat_geometric/trace.jsonl",
+      "bytes": 9447284,
+      "sha256": "0f7a1ded44bbdcb243f9f35976601f7ff90726818cb49ad8be28439e8c3fa514"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/final_checks/results.json",
+      "bytes": 54564,
+      "sha256": "4f9555507d772e3f18cd94b6c1273271dc3db3fc3c1784718eae3fcbadf83ba5"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/final_feasibility/kinematic_path.jsonl",
+      "bytes": 5111840,
+      "sha256": "9c333d38fbe7dc56a71a55d9f411fdbfb0b4949227d0e9279530f9dfa9181e1d"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/final_feasibility/results.json",
+      "bytes": 36852,
+      "sha256": "f8d1a001e22f8e255d641f30ace1b7a0733aa4762eabbe4f1f194372d1fea84c"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_goal_process/run.json",
+      "bytes": 1796,
+      "sha256": "2b3fad48bef7adf80f13790fbf893a5734a77fbb5c53d6c7c672322c7594b315"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_goal_process/stdout.log",
+      "bytes": 5184,
+      "sha256": "61d76273db166ab3911a5c90df3eadc0116da02e9b82b149bdab576788eaae2c"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_geometric_process/run.json",
+      "bytes": 4062,
+      "sha256": "5320af01713f43260c43e6257984f4af4f938f8621aefd0a2d23f378efecff94"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_geometric_process/stdout.log",
+      "bytes": 5253,
+      "sha256": "bbb4e3ae0d1556c82aa8dba270839278fc56ce7b71753d45a8c99aeb8412cc97"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_zero_process/run.json",
+      "bytes": 1652,
+      "sha256": "e570a0a17d130a444a75f94e429e64d39d92b80339311ffb118ef29d477130fe"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/eval_zero_process/stdout.log",
+      "bytes": 1274,
+      "sha256": "427becc4718000ffd8007e3a10486294282296a125d2ffe137acd674cd890140"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/repeat_geometric_process/run.json",
+      "bytes": 1458,
+      "sha256": "a46401438d6fce253a881d6543414c5b8ab7a737457a667eae4caa556d0e2d2b"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/repeat_geometric_process/stdout.log",
+      "bytes": 1317,
+      "sha256": "a814fb51e3ab5b418106b7c2656e5de200b938c8e15ce40505e68d85554627a8"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/final_checks_process/run.json",
+      "bytes": 877,
+      "sha256": "aaffaa865edf9ad30eb6454928a46ac645fac4b13d045b068a29e4524a1669af"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/final_checks_process/stdout.log",
+      "bytes": 1315,
+      "sha256": "b83c4c6972da66e7b319bc90286221c60b4295273d252017ca28a50388430267"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/final_feasibility_process/run.json",
+      "bytes": 781,
+      "sha256": "492b489c5c6d5e2a6a6b4a9fdc4d505a47f853bcdf0548c135dbc795cb6ecfc6"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/final_feasibility_process/stdout.log",
+      "bytes": 682,
+      "sha256": "a33d364d4b114c9d948e5cfae721c3ffb08254f64f307179ac9adfcdb974d3c4"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/supplemental_checks/results.json",
+      "bytes": 23010,
+      "sha256": "ecaf369cae7f2aa9f533fef3c7dc7e831c4038373a9ebfed4e454215cdf60c69"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/supplemental_checks_process/run.json",
+      "bytes": 578,
+      "sha256": "d1cf01d04808e09c3f9afb477e808360ffd8de91945bb5609c4dd03f9d7c86d3"
+    },
+    {
+      "path": "private-runtime/go2_piper_runs/20261019_carry_v03/supplemental_checks_process/stdout.log",
+      "bytes": 484,
+      "sha256": "376641d39d7a510a6bb868d5857f8b54a06fc09e0a6d443b505599319be2fc36"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "kind": "read-only exact-source verification; no history/asset/model transfer",
+  "remote_source_revision": "de1ea48b4f8c7adc6bc7df8f493b5e1b80ffb2dc",
+  "transferred_source_bytes": 74805,
+  "result": "all nine original source hashes equal the selected local support snapshot",
+  "files": [
+    {
+      "path": "task_suite/config.py",
+      "bytes": 7496,
+      "sha256": "64a0cb477790bc25e70c6fddddff05dcaf4d6cfd84f52e35cbac25d627ced56e"
+    },
+    {
+      "path": "task_suite/mdp.py",
+      "bytes": 8793,
+      "sha256": "e5b1206233efd404d5c206054b7a1ff6ba6afee6776178f9620944d67fce2c85"
+    },
+    {
+      "path": "task_suite/__init__.py",
+      "bytes": 86,
+      "sha256": "3c1e97153c0581cafddea394646ca399f56898727d46b10065ab6909b8bfa920"
+    },
+    {
+      "path": "task_suite/profiles.json",
+      "bytes": 4509,
+      "sha256": "01cee38b06c476f731d039dea965c086d3f92073ce5cb3695d3bef4ed5b5f0a3"
+    },
+    {
+      "path": "tools/telemetry.py",
+      "bytes": 16567,
+      "sha256": "499aa0998bd331e15b584cdc47862c48f0bd4daa36b3ff7f867ced6d69a89bde"
+    },
+    {
+      "path": "tools/scratch_observer.py",
+      "bytes": 12014,
+      "sha256": "b64d3613265373f44e0e5fbd1db9a44d5b8b5ca7fc07867fdc38c82a2b921684"
+    },
+    {
+      "path": "tools/scratch_evaluation_core.py",
+      "bytes": 8389,
+      "sha256": "c5cb161c95f7ca33e2fd9ad837b16d31fb7ad2a28a773b616ce3b2e2009e6756"
+    },
+    {
+      "path": "tools/t1_tracking_metrics.py",
+      "bytes": 3503,
+      "sha256": "b83423a71008e3b12063a8aae7b1d48679c6e71cfe3193a69679f8d92c113b98"
+    },
+    {
+      "path": "tools/audit_geometry_runtime.py",
+      "bytes": 13448,
+      "sha256": "039f5b2b69f166556dfd1a436fcddd4045588e7ff7774ad343dcc0a9453d00b7"
+    }
+  ],
+  "training_observations": [
+    {
+      "source": "go2_piper_recipe_v1_20261025/interface_audit_v1/summary.json",
+      "sha256": "3a17e83bed37f2b3e057cd96cd7b1efc70abf1b34d1e562ca555c8ed511c447a",
+      "completed_updates": 0,
+      "optimizer_updates": null,
+      "state": null,
+      "status": null
+    },
+    {
+      "source": "go2_piper_recipe_v1_20261025/pilot_A_seed21/summary.json",
+      "sha256": "d02048a61914a33f036163153b08a1868823ca061c032bc297e3de5fd57364a6",
+      "completed_updates": 1200,
+      "optimizer_updates": null,
+      "state": null,
+      "status": null
+    },
+    {
+      "source": "go2_piper_recipe_aplus_20261025/resume_interface_audit_v1/summary.json",
+      "sha256": "22acacb6319e3cb6b3399abb2c0c758e1f43568ee00ede2a9e745d4c11edd849",
+      "completed_updates": null,
+      "optimizer_updates": 0,
+      "state": null,
+      "status": null
+    }
+  ]
+}

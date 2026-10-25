@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETE",
+  "restored_learning_rate": 1e-05,
+  "resumed_historical_episodes": 641,
+  "restored_actor_sha256": "3a9d0622fa0bd248a8a2b2043e0bb201a6e3193abee59d42f4a2073c4f5c44fd",
+  "result": {
+    "completed_updates": 129,
+    "additional_updates": 1,
+    "transitions": 3072,
+    "training_wall_s": 1.2212181619834155,
+    "mean_iteration_s": 1.2122966049937531,
+    "output_weight_change_by_joint": [
+      0.0008023004629649222,
+      0.0004760234151035547,
+      0.0004850521800108254,
+      0.0005717611056752503,
+      0.0009136538137681782,
+      0.0005083808209747076,
+      0.0005071271443739533,
+      0.00045398357906378806,
+      0.0005584780010394752,
+      0.0007141855312511325,
+      0.0006066247005946934,
+      0.00044279018766246736,
+      0.0005751206772401929,
+      0.0005335862515494227,
+      0.0005027022561989725,
+      0.0005171432858332992,
+      0.0003617001639213413,
+      0.0005103595904074609
+    ],
+    "actor_changed": true,
+    "leg_and_arm_gradients_nonzero": true,
+    "final_checkpoint": "private-runtime/go2_piper_runs/20261019_wbc_sgs/resume_with_history/checkpoint_0129.pt",
+    "completed_episodes": 0,
+    "resumed_historical_episodes": 641,
+    "terminal_success_rate": null,
+    "resume_verified": true,
+    "resume_semantics": "Optimizer/sampler/RNG resume; partial physical episodes restart same task, not bitwise simulator replay"
+  },
+  "scope": "Verification only. Update129 is excluded from all pilot/evaluation results. Uninterrupted pilot uses committed1ae85a9; original locked plan is retained."
+}

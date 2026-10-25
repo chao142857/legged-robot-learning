@@ -1,0 +1,36 @@
+{
+  "frozen_gate": {
+    "all_evaluation_seeds_required": true,
+    "both_stage_A_and_formal_T1_required": true,
+    "direction_gain_min": 0.5,
+    "direction_gain_max": 1.5,
+    "direction_correct_sign_min": 0.9,
+    "linear_rmse_max_mps": 0.15,
+    "yaw_rmse_max_radps": 0.18,
+    "ee_after_1s_rmse_max_m": 0.075,
+    "complete_fraction_min": 0.9,
+    "low_height_time_fraction_max": 0.01,
+    "nonfoot_failure_fraction_max": 0.05,
+    "actual_joint_hard_limit_violation_fraction_max": 0.001,
+    "target_clipping_element_fraction_max": 0.2,
+    "actuator_saturation_element_fraction_max": 0.1,
+    "two_consecutive_saved_nodes_required": true,
+    "base_clearance_p05_min_m": 0.2,
+    "base_clearance_median_min_m": 0.24,
+    "body_abs_roll_pitch_p95_max_rad": 0.4,
+    "arm_pd_abs_error_mean_max_rad": 0.2
+  },
+  "node_pass": {
+    "0": false,
+    "200": false,
+    "500": false,
+    "800": false,
+    "1200": false
+  },
+  "passed_consecutive_pairs": [],
+  "evidence_for_B": false,
+  "automatic_B_C_started": false,
+  "training_seeds": 1,
+  "reproducibility_proven": false,
+  "rule": "all 3 evaluation seeds and both A/T1, at two consecutive saved nodes; missing directions fail"
+}

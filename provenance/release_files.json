@@ -1,0 +1,1340 @@
+{
+  "self_excluded": "This file is excluded to avoid a recursive self hash. Git commit/tree and the pre-push audit cover it.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 342,
+      "sha256": "5745d6e8bd3421c3b380feaed1c1a1cb70aac899620f7f85ce96dfa3ffad889d"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11346,
+      "sha256": "bc336eaf96b801e1a6618c63d50542b615b5bed555e2c53c8b5d0995c510b144"
+    },
+    {
+      "path": "LICENSES/IIT-DLS-BSD-3-Clause.txt",
+      "bytes": 1536,
+      "sha256": "036f13c31abacb402f81ad8af971b6014b382c9fb742b9f1c68b74bddf344577"
+    },
+    {
+      "path": "LICENSES/IsaacLab-BSD-3-Clause.txt",
+      "bytes": 1630,
+      "sha256": "df351ebfa8af317bf5a9ad83df63a8b68e4f5c04b71f30767cdb27aa434eac62"
+    },
+    {
+      "path": "LICENSES/LeggedManip_Lab-Apache-2.0.txt",
+      "bytes": 11351,
+      "sha256": "23e2301250e57ee3d2cdd4535768fd00ca37cf3f5c43fc4ea2482c8665b7559d"
+    },
+    {
+      "path": "LICENSES/RSL-RL-BSD-3-Clause.txt",
+      "bytes": 1632,
+      "sha256": "3f58bb6b9272e416b8ccbe65889463f75a2fdf66e0e5722513f8622fb23dc778"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 1231,
+      "sha256": "021454d3e4bbf5822169bfd9b61c6aebc71c5e2011a0a50a9133268a507f4bd3"
+    },
+    {
+      "path": "PUBLICATION_AUDIT.md",
+      "bytes": 5704,
+      "sha256": "687fd9bf76842f763a411f95a4ed130faa9cc30bae97d8461058644c573a8c74"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7827,
+      "sha256": "0fa7e9197eaa26ab3dfc26327c34643b9390c7f80ae08384267625917b26c496"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 8069,
+      "sha256": "379f9b327c9905d26cbc639d4a91c2b6db1d8cae9c6a02c961a8615fa3be0e08"
+    },
+    {
+      "path": "SOURCE_MAP.md",
+      "bytes": 10659,
+      "sha256": "be1dc6fac368cc1e363ebb235ea3f9b433cd86fd8ff6312c743eafa5590c31bc"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 2992,
+      "sha256": "65efc0141e80ad06cdc642cc5ef99d79d4f8700f1777af2356d2fe56c98c7a3c"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 4243,
+      "sha256": "e204e2bd95817ca91630a6e6fec9c95600ae4b39e767f7e5624bbacf5d51ca50"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 8950,
+      "sha256": "1fd74fcce11b431cc1d2145ef0830f1f9c78d09938789aa11cc48255254768df"
+    },
+    {
+      "path": "docs/figures/simulation_results.svg",
+      "bytes": 24015,
+      "sha256": "9c8fb7c77f1fcf05073921781ab56e6947931e6b162b21071048cd023fa3b5c8"
+    },
+    {
+      "path": "projects/go2_piper_wbc/README.md",
+      "bytes": 1744,
+      "sha256": "bcc75e6e71b61f6ede9165fc34b141de2a6d0e53f33508c4cb41ce752f791d5a"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/results/evaluation_by_seed_group.csv",
+      "bytes": 143136,
+      "sha256": "0de642aaac6f96395c05186abb3783e7aea8b3858ff7f2b1db98c8020b81010d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/results/evaluation_pooled.json",
+      "bytes": 86673,
+      "sha256": "294a9fc42fb689101c170c474cadf5b6d96b00b1b6db7c0503a396179d5e4ce1"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/results/final_physics_details.json",
+      "bytes": 54118,
+      "sha256": "1e6c7f8b052aafb356ab1c3f261955dbd1d75ee5a0ca21dd6002e51a515d144c"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/results/report_tables.json",
+      "bytes": 4052,
+      "sha256": "03a9d43757ed57ffecc1aba019553a628e4029bca7b4ac80db2ef1c44c940ec3"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/results/training_summary.json",
+      "bytes": 7941,
+      "sha256": "b1fa0665d2cf8efe0af7a6ecbdbd5b09d7695f119930aedd2539324e6e4d3143"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/tools/analyze_results.py",
+      "bytes": 15271,
+      "sha256": "6e1667ab64a3033a1b379e753ae958d5e720a464e16098aca0a4dd37a4f0be9f"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/tools/audit_results.py",
+      "bytes": 8369,
+      "sha256": "d065080363937219ee557b89a3df4788b1cb7b8710e6ce436e5e06eabfb259a4"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/tools/compare_configs.py",
+      "bytes": 2081,
+      "sha256": "8a64d9a6bd1d0d26c24057babd4544ed2bef83e8cc57626b564627a9f1e208fa"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/tools/diagnose_final.py",
+      "bytes": 9872,
+      "sha256": "979e13bd34a6c46b76568301155d7c380af04b6b6aca7b2523d11a189493d68b"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/tools/evaluate_native.py",
+      "bytes": 11704,
+      "sha256": "2ebcc866c7ebaa1827bd7a0fadc85b60050c8b22ca2ab32e891c60054980d993"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/tools/native_observer.py",
+      "bytes": 12532,
+      "sha256": "69741a249049d172faada38c652f4984abb6e66064bb0029b877374d96d64a8a"
+    },
+    {
+      "path": "projects/go2_piper_wbc/native_20261023/tools/observer_bootstrap.py",
+      "bytes": 1310,
+      "sha256": "172fcd8049722e7641b42b0fe64fd8637eb1930bec432dd6762ad936d505b57e"
+    },
+    {
+      "path": "projects/go2_piper_wbc/observed_environment.json",
+      "bytes": 801,
+      "sha256": "5ab8033928de6882b4e85cadafbc08e75bcb938cb118f46514ca8e441a995b75"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/__init__.py",
+      "bytes": 81,
+      "sha256": "704784bd1e1a174d308ab5f2b2947ba6c75531f16c6b2c890e0f58613e4c1e60"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/config.py",
+      "bytes": 2385,
+      "sha256": "0f07af2110c9956a883f4e20220f461852287592e101ad55418149eb1fb1f1fb"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/spec.json",
+      "bytes": 3189,
+      "sha256": "38919a51e5281fddcc10a4dc237d519ff27e1329a8cc3d5ca4d40a2fc9d6fece"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/startup.py",
+      "bytes": 1744,
+      "sha256": "4d7b484d6000cf735aa83405589a887eb6bbd26ea394ee4ec0c9366563d6553f"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/state.py",
+      "bytes": 2824,
+      "sha256": "f276fb2e3f295062782739565945a787c8634d19bda6e16c2141aacdf544f47d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/telemetry.py",
+      "bytes": 2644,
+      "sha256": "dd67ee1df5263c2f5134bc929eae35c3999a573a0f0731c40096ca6fc6c98ce1"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/results/execution_blocked.json",
+      "bytes": 954,
+      "sha256": "43eb85f6bbae7533b47947dc3db32f3cae2f5e5cbffffb14c943de06cabe28e7"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/results/initialization_failure.json",
+      "bytes": 837,
+      "sha256": "3a350e1eca892c77dfb652b083e83568fda1e1aa1d43f1590f76a3763e634f57"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/results/resume_evidence.json",
+      "bytes": 710,
+      "sha256": "d4133ecc95b9bc259ee694616eaa5a05dc02907d35b0e27d04df187de2b13252"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/results/sampling_audit.json",
+      "bytes": 319,
+      "sha256": "659c4a9f18e11f0552b1d70d309ba16317e0a9f16f8ce6c825c6f41f1b2325bb"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/results/summary.json",
+      "bytes": 153,
+      "sha256": "22acacb6319e3cb6b3399abb2c0c758e1f43568ee00ede2a9e745d4c11edd849"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/tools/evaluate_startup.py",
+      "bytes": 12035,
+      "sha256": "2cb88723577a8741a53ca1596a0c55b8f7f519d4631a7f98a9d811765894e2ae"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/tools/report_aplus.py",
+      "bytes": 4835,
+      "sha256": "e424416e1fc44e904276c6ab0100ca9030bedf6edb6c00d2051e6525746ad246"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/tools/report_startup.py",
+      "bytes": 5337,
+      "sha256": "fb432220ac0d453420c7a03d4c4fc559d1e2dc3287360aff365a34ae4e59df87"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_aplus_20261025/tools/run_aplus.py",
+      "bytes": 8122,
+      "sha256": "7140a718b1efbd2188db597b1654f9f4cc7432fac91a0741b0fa6272c5ab6a49"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/__init__.py",
+      "bytes": 77,
+      "sha256": "c4ff0334ff6b307f5f4d5049ef72e4f67c1771188fdf517273334f18d2214f42"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/commands.py",
+      "bytes": 5786,
+      "sha256": "93955e94f105d6ad42fb56d5d0e53fb3ff1704052d69b7bab04f872760ab285c"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/config.py",
+      "bytes": 3532,
+      "sha256": "2d030404affd8b4d979773e33dad703b81c97fb39cc795be302c9481406c46f1"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/control.py",
+      "bytes": 5249,
+      "sha256": "0def5ae3f0a37115c6bcdbc8fabc67e30d2e226937d25bc3e3454aedad2482bf"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/kinematics.py",
+      "bytes": 5445,
+      "sha256": "39964cda072c884b90270558fbcac1fa3a3b920eea753c358f760562e5eededf"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/provenance.py",
+      "bytes": 751,
+      "sha256": "b9c937ecfaa941e83c245b39e5a96d49ce807b450014cf684f318eb7bd9f5045"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/spec.json",
+      "bytes": 3564,
+      "sha256": "b2bffe1ccff368ff1ad2f6b210af5bfcdb431d37f395a13ff0556775842d60b7"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/telemetry.py",
+      "bytes": 4021,
+      "sha256": "71da2a68ed2f8ec1b8e75a3e3de8b4f0931399960bc1a4a0148b6553ca17875f"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/gate_decision.json",
+      "bytes": 1186,
+      "sha256": "75baaeeeeb084a32e573193532123631db5919d5a43e1e2b39c6f5f220846b73"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/interface.json",
+      "bytes": 1064,
+      "sha256": "f00e2783cfd79ae5b568f04b8c4bb40dd44b6a746673a62a2f60588837375992"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/observer_rng_audit.json",
+      "bytes": 102,
+      "sha256": "80eb89b55b3796ee022aa3ba10ba78369706129053602f50f9529f252ccdedf4"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/optimization_summary.json",
+      "bytes": 1045,
+      "sha256": "eb6ba08f11bb8366f92d7c973915819056bb43c8b0642d40cbf8fcd8f1843541"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/physical_results.csv",
+      "bytes": 19468,
+      "sha256": "943b2c4a2318157f6ef8561522aaf4150e3af6829c1beaa6ee6aa561c13f8b76"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/physical_results.json",
+      "bytes": 351035,
+      "sha256": "92f798dbcd10ee3f0224ae1666ba5f69270fdaecd7ce99b8807c1b0c2a08f1c7"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/reward_rates_T1.csv",
+      "bytes": 1578,
+      "sha256": "2c07cddc52ad18d447fb52fd31c75517d7b6e61dcd305f7bf2b1c61f50212e76"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/safety_joint_attribution.json",
+      "bytes": 8064,
+      "sha256": "eb1dbbb38c88f3e81acbcdd41a8222fc39d583926c35ae9afcfebad495099d06"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/safety_transient_analysis.json",
+      "bytes": 8471,
+      "sha256": "2f2be2febd523bb11ff93aa846c683c2d68232c37e60428d1b9f189f62303551"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/t0_side_metrics.json",
+      "bytes": 2017,
+      "sha256": "ef6ee82243661ae0e8e9aab196d5526c72899cc607517cb60589bf8a72ea5b9b"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/training_curve.csv",
+      "bytes": 565438,
+      "sha256": "4840d88bd77f8096912ebfa07c26045b41e7b8a6f86ad44a254d8567a973d211"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/training_validation_v1.json",
+      "bytes": 1990,
+      "sha256": "71477ba9062ad5916aa0fa30e5b54024d47b9adbca811427c479d38ee0e87cbc"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/results/training_verified.json",
+      "bytes": 1962,
+      "sha256": "4fbfba943add809b65189a119ffbc3564333f481068862a7184a8de2713335f4"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/tools/finalize_p0.py",
+      "bytes": 4795,
+      "sha256": "57ad0ba3cb47160c8bd938a2b3d126afe296ba5faf94dd4f9aa1744c0ba0dd6b"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/tools/p0_frozen.py",
+      "bytes": 11108,
+      "sha256": "939234706ee3575dd6ebbea96abb5c342ca08296a23e3ce8c33d863564b8f3de"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/tools/p0_inventory.py",
+      "bytes": 4263,
+      "sha256": "86a14af930102b8f4ef7853f9e2deffc21667f92f7e12895165dac32381d44bf"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/tools/recover_workspace_screening.py",
+      "bytes": 4506,
+      "sha256": "0c23fc4efcb23952ca30c0f33f55d86ae24f060d3f406e306879c18b0b633a7d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/tools/report_recipe_a.py",
+      "bytes": 16310,
+      "sha256": "24e39f3f3a4064a19acc2a9359a591ad4bb13b3b1cc9bbecdb9940a3150bdc09"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/tools/report_recipe_p0.py",
+      "bytes": 4088,
+      "sha256": "336e11e6492e772eb94eb310843306ead405c60fa086682cf7e5cda8c186e7ef"
+    },
+    {
+      "path": "projects/go2_piper_wbc/recipe_v1_20261025/tools/run_recipe_a.py",
+      "bytes": 9571,
+      "sha256": "d231dc0fcfb723d91a0437462785894dabde00743cd1cdcb99f039d42d860200"
+    },
+    {
+      "path": "projects/go2_piper_wbc/release_support.py",
+      "bytes": 463,
+      "sha256": "7bfa26a2305003c3115b8f97bc349592e16cc4ee99d843a1f746e19aa5c3cfe3"
+    },
+    {
+      "path": "projects/go2_piper_wbc/run.py",
+      "bytes": 4970,
+      "sha256": "e812d93480f163cf1c77c174548a46d789db7b7722c95f1cfce400570a746006"
+    },
+    {
+      "path": "projects/go2_piper_wbc/scratch_t1_20261025/results/frozen_evaluation.csv",
+      "bytes": 10873,
+      "sha256": "1347f2a53a58729aa4f5d6c1db3f14bbc4fd4f979e1a797114138855085a4978"
+    },
+    {
+      "path": "projects/go2_piper_wbc/scratch_t1_20261025/results/verification_summary.json",
+      "bytes": 5824,
+      "sha256": "3c4d1926b934ddb50e923aa0927edebd1e92a98cf762ee4968f3c3cdc8686d1b"
+    },
+    {
+      "path": "projects/go2_piper_wbc/scratch_t1_20261025/tools/evaluate_t1_scratch.py",
+      "bytes": 7781,
+      "sha256": "8b1a0c2d0d77c99a79b864c30bea6c53484fca8202d60e4075aecf5750b643c2"
+    },
+    {
+      "path": "projects/go2_piper_wbc/scratch_t1_20261025/tools/report_t1_scratch.py",
+      "bytes": 11144,
+      "sha256": "ec29bccca78c874c8e2f78d9f4daa1b1e3865b64762e88ad0997d4099f3f5677"
+    },
+    {
+      "path": "projects/go2_piper_wbc/scratch_t1_20261025/tools/run_t1_scratch.py",
+      "bytes": 11999,
+      "sha256": "52d0cac19b551944b185e2e7e62446fc6f1bde6fdedddd8f1a8b39afa34690cd"
+    },
+    {
+      "path": "projects/go2_piper_wbc/scratch_t1_20261025/tools/scratch_evaluation_core.py",
+      "bytes": 8389,
+      "sha256": "c5cb161c95f7ca33e2fd9ad837b16d31fb7ad2a28a773b616ce3b2e2009e6756"
+    },
+    {
+      "path": "projects/go2_piper_wbc/scratch_t1_20261025/tools/scratch_observer.py",
+      "bytes": 12014,
+      "sha256": "b64d3613265373f44e0e5fbd1db9a44d5b8b5ca7fc07867fdc38c82a2b921684"
+    },
+    {
+      "path": "projects/go2_piper_wbc/scratch_t1_20261025/tools/t1_tracking_metrics.py",
+      "bytes": 3503,
+      "sha256": "b83423a71008e3b12063a8aae7b1d48679c6e71cfe3193a69679f8d92c113b98"
+    },
+    {
+      "path": "projects/go2_piper_wbc/scratch_t1_20261025/tools/test_t1_tracking_metrics.py",
+      "bytes": 2260,
+      "sha256": "19748ce13d8f4c209063f1e657367f32b1f27fcb03a00bc5dd3513c9c7aa0e89"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/__init__.py",
+      "bytes": 86,
+      "sha256": "3c1e97153c0581cafddea394646ca399f56898727d46b10065ab6909b8bfa920"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/config.py",
+      "bytes": 7496,
+      "sha256": "64a0cb477790bc25e70c6fddddff05dcaf4d6cfd84f52e35cbac25d627ced56e"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/mdp.py",
+      "bytes": 8793,
+      "sha256": "e5b1206233efd404d5c206054b7a1ff6ba6afee6776178f9620944d67fce2c85"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/profiles.json",
+      "bytes": 4509,
+      "sha256": "01cee38b06c476f731d039dea965c086d3f92073ce5cb3695d3bef4ed5b5f0a3"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/tools/analyze_suite.py",
+      "bytes": 30185,
+      "sha256": "e3141332e8c439dc0828e1d7dc5cfa9b32df0a4409c5374cec6a2ebde50e3762"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/tools/audit_geometry_runtime.py",
+      "bytes": 13448,
+      "sha256": "039f5b2b69f166556dfd1a436fcddd4045588e7ff7774ad343dcc0a9453d00b7"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/tools/ppo_smoke_gate.py",
+      "bytes": 11319,
+      "sha256": "f49152d79af150d788c02e67edc11f4f5f3356a6707a7df7e008b1808a41aaa9"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/tools/run_bounded_ppo.py",
+      "bytes": 4822,
+      "sha256": "e1dabfbb084358823b2a30caf2f7bffc1392e9d558851a499d4cc153264b8e2d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/tools/task_identity.py",
+      "bytes": 3130,
+      "sha256": "90a5206f2481d37d16760b8ac90490d07ad229a63c3eefcc33614655ee6d5f1e"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/tools/telemetry.py",
+      "bytes": 16567,
+      "sha256": "499aa0998bd331e15b584cdc47862c48f0bd4daa36b3ff7f867ced6d69a89bde"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/tools/test_analyze_suite.py",
+      "bytes": 6797,
+      "sha256": "c9ff2c4b584aa49cbc9b389fbb1a294c4c15ff0ec1b501e17f7709401f185329"
+    },
+    {
+      "path": "projects/go2_piper_wbc/task_suite_20261023/tools/test_ppo_smoke_gate.py",
+      "bytes": 7309,
+      "sha256": "8d9969ce531e9ffba13006e8ae05fb7c4dbbd32fdbe98847abd7b0bbc45eca2f"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/README.md",
+      "bytes": 1898,
+      "sha256": "f2400d6b281ef4a263311df7babcbf5bace69656f0302068369dd395f2005089"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/protocol/REWARD_GROUPS.json",
+      "bytes": 2422,
+      "sha256": "704dbe919270ea85ec2b7476f2a645ea75b63f1e31c48b260c05b78c1cfc41af"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/requirements.txt",
+      "bytes": 235,
+      "sha256": "242620cd749e753c8b1befa9246f387b54794f8bff7119cb406e41ced43f6ca4"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/results/microscope/CALIBRATION.json",
+      "bytes": 107041,
+      "sha256": "e0c53417203647d8c421c2644050cf915284c87b1a8c54f7b4eedcf48a620736"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/results/microscope/CLIP_DECOMPOSITION.json",
+      "bytes": 57958,
+      "sha256": "16368a33f60e1be3f063a7b566d68ecae1a9201b38fa1644f0c3f5122107cf34"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/results/microscope/CROSS_SEED.json",
+      "bytes": 5676,
+      "sha256": "7af0a34acdfdca8d7392231f8bafb42cf81664f025a64e9893d604938ca48b54"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/results/microscope/PAIRED_TABLE.md",
+      "bytes": 1199,
+      "sha256": "7b170262b4b27b271b39c6d481d60e3964db735772b6be834155541c5d57e31f"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/results/microscope/PREREGISTRATION.json",
+      "bytes": 1391,
+      "sha256": "aee195dd5505873f3675fbafae800fb79bfa32810f6d48b8343f3e299fdc0e0a"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/results/microscope/SUMMARY.json",
+      "bytes": 74708,
+      "sha256": "c5f754088a41af84fc5791402dbfd770cbe2939b7cbead95bd5d22877f90035d"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/results/microscope/VALUE_PROBES.json",
+      "bytes": 2668,
+      "sha256": "fa31e06c4b8b13746bd010192e617d054a4fbe6c33bfb63e6fbab22c21a401ab"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/tests/test_go2_gradient_probe.py",
+      "bytes": 3995,
+      "sha256": "f81e7b9d0e0b4859e71ebfb3a6fbc01cec16e4dcd596ead674fbef5e39b7a1cd"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/tests/test_go2_piper_gradients.py",
+      "bytes": 11130,
+      "sha256": "820cc33853df71c5238c8db1429db6ee14bababd9df558eac7e341644a2c36b8"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/tests/test_ppo_update_microscope.py",
+      "bytes": 16763,
+      "sha256": "adb9e7ea65f7c2331609f7ebca6069111b090b0db0e10fb4a04f1f9e4e9c8fc4"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/tools/analyze_go2_gradient_probe.py",
+      "bytes": 15556,
+      "sha256": "e10f74ab5c7764646819f4970a4f861c9fa099f5e519f8dba28db65e39b7fd59"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/tools/build_go2_gradient_bundle.py",
+      "bytes": 2534,
+      "sha256": "943b59da1341ce8bfdafe4dd0ebd38b824994b52c592913deaa1596ac42d8c6b"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/tools/decompose_ppo_microscope_clip.py",
+      "bytes": 4047,
+      "sha256": "71de364a9cd01a07e68b79e9d00f6257c96098083bb5fc757684270f47813aea"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/tools/diagnose_go2_piper_gradients.py",
+      "bytes": 17251,
+      "sha256": "bcbe24bbb7ff6e3d96d9e075659c0eb70d039354009ef58ba2edfb24665e92bc"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/tools/ppo_update_microscope.py",
+      "bytes": 28836,
+      "sha256": "98e32942955576940b35fe77b34dc78e869426751b27c240bbac1905550e9f7d"
+    },
+    {
+      "path": "projects/ppo_gradient_lab/tools/summarize_ppo_microscope.py",
+      "bytes": 7229,
+      "sha256": "cde8a69df1c7b3774037e8868baec74ee4034356f05badca6c9fb37dfdb61724"
+    },
+    {
+      "path": "projects/sgs/README.md",
+      "bytes": 2174,
+      "sha256": "fd8b426f4304875215eeb18d152a7bfd7b427166e62f71752ab51a3b4bcdc46a"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/integration/__init__.py",
+      "bytes": 70,
+      "sha256": "336d70cbdaf518eab34e1a0fee7bdd745b631952d553428540ad236cb16c8f1e"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/integration/pre_reset.py",
+      "bytes": 5200,
+      "sha256": "dda64a9dc2a269c0b374dbf6f0261deb4ecc7fdffb580839685738627556ef20"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/protocol/admission.json",
+      "bytes": 550,
+      "sha256": "a864d9bf23b5cffffb48111fb42e9436e4bf5433f63ce46c55d10609e8b4e80f"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/protocol/shared_interface.json",
+      "bytes": 4291,
+      "sha256": "a559831f6ae3d8a8953bc31bae39341a48ffe355907484a71af7e4238061cd34"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/protocol/task_catalog.json",
+      "bytes": 5820,
+      "sha256": "d0be523840e1b022704db24b2e5b2522c5dde64aaebd3c81e439a3cbff987393"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/__init__.py",
+      "bytes": 86,
+      "sha256": "3c1e97153c0581cafddea394646ca399f56898727d46b10065ab6909b8bfa920"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/config.py",
+      "bytes": 7496,
+      "sha256": "64a0cb477790bc25e70c6fddddff05dcaf4d6cfd84f52e35cbac25d627ced56e"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/mdp.py",
+      "bytes": 8793,
+      "sha256": "e5b1206233efd404d5c206054b7a1ff6ba6afee6776178f9620944d67fce2c85"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/profiles.json",
+      "bytes": 4509,
+      "sha256": "01cee38b06c476f731d039dea965c086d3f92073ce5cb3695d3bef4ed5b5f0a3"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/analyze_suite.py",
+      "bytes": 30185,
+      "sha256": "e3141332e8c439dc0828e1d7dc5cfa9b32df0a4409c5374cec6a2ebde50e3762"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_candidate_levels.py",
+      "bytes": 9782,
+      "sha256": "5e52ca1eba2fb606c0aef974cbed07927ee81da22d979c010755433e0c312155"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_geometry_runtime.py",
+      "bytes": 13448,
+      "sha256": "039f5b2b69f166556dfd1a436fcddd4045588e7ff7774ad343dcc0a9453d00b7"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_reachability.py",
+      "bytes": 5895,
+      "sha256": "216591cd48b909c87c051fd8b3c83efa61372276dfc6a6251d94e97deac95e8f"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_suite_static.py",
+      "bytes": 4588,
+      "sha256": "2a8539cb6ac69f86a8b31981125089044a034bf70277fe31b868e67650311af4"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/build_admission.py",
+      "bytes": 18019,
+      "sha256": "44b3cfd67dd3b356c0cf23f357eb69759cd9a0c0a34e54707fd29dbedfd7f160"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/build_admission_v2.py",
+      "bytes": 18790,
+      "sha256": "7a740518a6f06a68a6aa582adcc11c22792e29ab3b05d143ae9cfa2796624890"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/check_input_migration.py",
+      "bytes": 12566,
+      "sha256": "84707ba94a1bec2c4297ff30d3f026e2a9e8a60c2bf1ba2c336c10d232763072"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/evaluate_t1_scratch.py",
+      "bytes": 7781,
+      "sha256": "8b1a0c2d0d77c99a79b864c30bea6c53484fca8202d60e4075aecf5750b643c2"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/export_delivery_manifest.py",
+      "bytes": 3159,
+      "sha256": "1c68098e9bf7ceb90e1ea7358ef1c194dcebafd50f87c95baffbdbf0a1b96ddb"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/ppo_smoke_gate.py",
+      "bytes": 11319,
+      "sha256": "f49152d79af150d788c02e67edc11f4f5f3356a6707a7df7e008b1808a41aaa9"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/prepare_candidate_smoke.py",
+      "bytes": 5839,
+      "sha256": "5e483f2f600c6b7e990f91a1923a4bdf59de74b421c5b63e862d24d0c198f407"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/probe_first_update.py",
+      "bytes": 12360,
+      "sha256": "2f65271379d6f9bf15f3b2180482d1f078a7482a7b72987137eac6440c9c978f"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_acceptance_stage.py",
+      "bytes": 2456,
+      "sha256": "7daf6b52f838d72886dd61d856dbc77fba638bc8379b799abb4d60ef1b2984ce"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_bounded_ppo.py",
+      "bytes": 4848,
+      "sha256": "397b698c46e8585b47c748e15c4e6c6453f5c855069acb95da586f30720d0b66"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_candidate_smoke.py",
+      "bytes": 3920,
+      "sha256": "031ea5a542f1686f0b92ccb0693ca88c12c7663c0806fbe348780b7589e2ad20"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_smoke_posteval.py",
+      "bytes": 1859,
+      "sha256": "5a1e5f745e78a4e40e3301251196bd55681e8d72a4c97dac17acb2da47138c70"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_suite.py",
+      "bytes": 17957,
+      "sha256": "cae4e47343c815dd4db11218a8a1f24e58f4ad79e1edbc32ff6f019cea7075f1"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_t1_comparison.py",
+      "bytes": 3318,
+      "sha256": "b79671e3a376bb899a753a91a9d23ab474cf6e53cf173f851cd000e619321f20"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_t1_scratch.py",
+      "bytes": 12275,
+      "sha256": "a724319cc179c5fd2e5d4bbbe53105fda0f52c0edbeb5e73aa7ae3f409aff4f4"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/scratch_evaluation_core.py",
+      "bytes": 8389,
+      "sha256": "c5cb161c95f7ca33e2fd9ad837b16d31fb7ad2a28a773b616ce3b2e2009e6756"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/scratch_observer.py",
+      "bytes": 12014,
+      "sha256": "b64d3613265373f44e0e5fbd1db9a44d5b8b5ca7fc07867fdc38c82a2b921684"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/t1_tracking_metrics.py",
+      "bytes": 3503,
+      "sha256": "b83423a71008e3b12063a8aae7b1d48679c6e71cfe3193a69679f8d92c113b98"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/task_identity.py",
+      "bytes": 3130,
+      "sha256": "90a5206f2481d37d16760b8ac90490d07ad229a63c3eefcc33614655ee6d5f1e"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/telemetry.py",
+      "bytes": 16567,
+      "sha256": "499aa0998bd331e15b584cdc47862c48f0bd4daa36b3ff7f867ced6d69a89bde"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_analyze_suite.py",
+      "bytes": 6797,
+      "sha256": "c9ff2c4b584aa49cbc9b389fbb1a294c4c15ff0ec1b501e17f7709401f185329"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_build_admission.py",
+      "bytes": 10957,
+      "sha256": "2996138ae2bf659dd40a6a4ed31dad57a9e3305da819019197b48e5530c5cbe8"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_ppo_smoke_gate.py",
+      "bytes": 7309,
+      "sha256": "8d9969ce531e9ffba13006e8ae05fb7c4dbbd32fdbe98847abd7b0bbc45eca2f"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_t1_tracking_metrics.py",
+      "bytes": 2260,
+      "sha256": "19748ce13d8f4c209063f1e657367f32b1f27fcb03a00bc5dd3513c9c7aa0e89"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/resolved/agent.yaml",
+      "bytes": 1200,
+      "sha256": "5fda080d493aaba9075bcd5e3c4ff78933e0bf625465d124ef5373d8a4014909"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/resolved/env.yaml",
+      "bytes": 46849,
+      "sha256": "ff11b58dc7c0b0ead7406bba3618ea8240340c0be7aa936ea27942e51b59b7f2"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/resolved/provenance.json",
+      "bytes": 594,
+      "sha256": "99bfe26f70b97dec4f2a793955d323be87251241caba66cd9828b1c18dc6d06a"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/__init__.py",
+      "bytes": 439,
+      "sha256": "b0954f158878a383da1a614368033829648e9ec6543d88756a63659fff38caf0"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/catalog.py",
+      "bytes": 2861,
+      "sha256": "6200d0842c904e1e6595453a20e0ea27634cf43da600c418059e3da094e46764"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/feedback.py",
+      "bytes": 2515,
+      "sha256": "a017bf4742d85bb82bfbb8463791690cee0afd0823a370d943fb3f9f512ca74f"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/session.py",
+      "bytes": 16968,
+      "sha256": "7eecce52934bcd5a39e2bd04ef706d015ed08f0513fa9824c669a668858ff54a"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/vendor/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/vendor/sampler.py",
+      "bytes": 4514,
+      "sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/tests/test_shared_sgs.py",
+      "bytes": 11211,
+      "sha256": "fbb9a1f4b961ead87436391aea966c14504aaa7638372579a611cd4839bab64b"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/tools/run_b1.py",
+      "bytes": 9891,
+      "sha256": "79134153a92868ca9fab49ae39e20ecc8ebd92c064b83b1ef9ed6e193037c37d"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/__init__.py",
+      "bytes": 79,
+      "sha256": "f0fbd549b3dfc3b43a90106722619665d1e81dc32ea73249cd672d4460da69e2"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/dependencies.py",
+      "bytes": 2240,
+      "sha256": "cd644e33ccf59835dea526d771f0468401b5e34dfa951781aca1ab1a12d2ec21"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/logging.py",
+      "bytes": 536,
+      "sha256": "dc60accdc6664febcdfdc53ba151379f141cee7f722f282a751b8430aa3ff831"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/metrics.py",
+      "bytes": 4955,
+      "sha256": "e858c0935cd5d6f6b05ccff2f0f1b1a9b5b5391fd34d7e95fee9b73bc1fbaf2f"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/runtime.py",
+      "bytes": 6340,
+      "sha256": "1820f9c0faaedb3a0d8aa2e67ccf01e571fd8b6d9dad69ebb3fa134f66dcff01"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/state.py",
+      "bytes": 1472,
+      "sha256": "75b3b631d61ae9e81ae33eedaf02ae7ec129751065f6bb566e91c46dc5185a51"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/task_commands.py",
+      "bytes": 3636,
+      "sha256": "251d0d9a461681df0df28ff06c5d7d109489965c79eb525f0fe7057c83ddc3f5"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/protocol/admission.json",
+      "bytes": 803,
+      "sha256": "30a0ff5f10a05ae23f9d757558cd838222879fb600377dfe319c2a36811d4cf0"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/protocol/common_protocol.json",
+      "bytes": 11512,
+      "sha256": "66a7e67e3786302e27c3c03966b2893571a909370e6486c3031c1e8e384ceb5a"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/protocol/task_support.json",
+      "bytes": 5329,
+      "sha256": "44749d2d825bbf485730a0a6c0727be75f8b40e0604ebe870c7b0f953451c0d6"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/tests/test_common_cpu.py",
+      "bytes": 4851,
+      "sha256": "e6746db3177c3b084a4b1d7b7b7d39a6a4acd853b71768fc908ec90ef53a1db0"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/tests/test_real_composition_cpu.py",
+      "bytes": 7254,
+      "sha256": "3530202e00e34637f8afe2e412ae6c95abf6f38e311778e0c16ca55d85e8dc72"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/tools/evaluate_b2.py",
+      "bytes": 428,
+      "sha256": "754c386bae22adcce66e849a0256f04262fe222aa6539da16453a67655824df5"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/tools/run_b2.py",
+      "bytes": 5253,
+      "sha256": "209470fd9dd22c060c9c0d51fa5d3853eaf133a15e752e0d333d41143c8c639f"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/frozen/latest_resolved_summary.json",
+      "bytes": 39866,
+      "sha256": "6b3f4d6ffa703583d5f447c9048eb88a31710f84a7afe6788507e1d05c0de13b"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/frozen/native_binding_fixture.json",
+      "bytes": 1673,
+      "sha256": "3a2406dd45a858d1626dd6d6cff018f028e0ed44becf27dd2eec938fca236861"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/frozen/native_joint_actions.py.txt",
+      "bytes": 10959,
+      "sha256": "6bbf0f7837636eb7d6b17db3e8d25a433e8a69ba671dde0e993b0a0b2025cf55"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/frozen/native_runner_cfg.json",
+      "bytes": 1644,
+      "sha256": "e87e0acf36ff94fa628c7bea8afa529d9abca8656a3a52c11bcfb23298f073b5"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/__init__.py",
+      "bytes": 279,
+      "sha256": "4708a2045ea156975fe7deea9e42d7967d1a45d2041b4cbbbcf1be6e5dbc9d08"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/controller.py",
+      "bytes": 7742,
+      "sha256": "4a309509ac7bac3d5d7aa137696db943eba8d0b316c8efeb0f28b521ae0d5eb7"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/initialization.py",
+      "bytes": 1849,
+      "sha256": "ef82553144be27f0693d19ae2c8966b22026f35ff3d794e949c2dedc5e5d2a09"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/mapping.py",
+      "bytes": 5502,
+      "sha256": "43121060843d34245eb101ba61c31ac50d40944712e7995141f1cf6949c8d9ac"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/model.py",
+      "bytes": 6615,
+      "sha256": "d7d817c251564c49f8f5949a434eeafec19c97d181f10dc1cb9702b4beddc1a8"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/runtime.py",
+      "bytes": 6123,
+      "sha256": "b02dd041cda550b9c06b7100acd9d59ff49736f85ab55232fc041c5170229a79"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/settings.py",
+      "bytes": 657,
+      "sha256": "1b2f95d177887889b0133d9967892df3e1c600df1b01a284c4512bcc26f421ce"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/trace.py",
+      "bytes": 2284,
+      "sha256": "69237e974c539678e47f4493d784543e02e0db4db842d1c4067afe1060d47494"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/tests/test_shared_ik.py",
+      "bytes": 11222,
+      "sha256": "93b4dbd2c048231dd1548b98c2cd425e7511409b2906fcfff16193aec638c4a8"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/tools/evaluate_b3.py",
+      "bytes": 5671,
+      "sha256": "3c908e5f47174d07ecf047f65487eaa82b51a5ff84916b8c1d16dc400b72d059"
+    },
+    {
+      "path": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/tools/run_b3.py",
+      "bytes": 450,
+      "sha256": "a141f203f86b5ca16c6f0a6f7d47cf0c7c81a8c04bfd72a390d494fedd916143"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/__init__.py",
+      "bytes": 82,
+      "sha256": "33be23a3a2887c8870487f14eea4b51a4367fae2dc3eabf490ac917c1ea15e4e"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/calibration_pool.json",
+      "bytes": 46099,
+      "sha256": "c2cc36c18f7863320ae6f9b4081045006a00a7e8dc55fc6e8a8f468114655478"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/metrics.py",
+      "bytes": 3080,
+      "sha256": "b00471b1a709c41b96ee56591bd1797c6f8d7db91ebb102d297bc7c97c949d02"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/sampler.py",
+      "bytes": 4514,
+      "sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/success_protocol.json",
+      "bytes": 988,
+      "sha256": "41f33c7dd4da5c85014ecc5bba24f9ad0369d8ed1393da603b4637480af7f3b4"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/task_pool.json",
+      "bytes": 46082,
+      "sha256": "68d65401a2beae53ae15d33946427e5546a10ebc8e41dd788ebd4c41902f9681"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/CALIBRATION_AND_ACCEPTANCE.json",
+      "bytes": 4644,
+      "sha256": "0123a635741a119d1ea9cc0ef7a9805e0eba6ebde5f554ecd11b8fc35eaa136d"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/FROZEN_INPUTS.json",
+      "bytes": 30402,
+      "sha256": "cf17c8dc884dc40946d7f81965491b266c87dc1e12f4471af7aeca8b6894e055"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/ORIGINAL_WBC_COMPATIBILITY.json",
+      "bytes": 205,
+      "sha256": "69c99ed25337fb1cc571d5b973d3bd3b31ed049ebecbaf4d97bebe26d09560b1"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/PILOT_PLAN.json",
+      "bytes": 2076,
+      "sha256": "de212f342ca057468a2576d151fef8920145ccacb7febd24a90ee3cb7c514192"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/RESUME_REPAIR_ACCEPTANCE.json",
+      "bytes": 1568,
+      "sha256": "ea48a1ed270ddad78e91a9f5057f488352a3d3d7419355bbe14f5da1b4b14e52"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/fixed_learning_curve.json",
+      "bytes": 1402,
+      "sha256": "2ec3aece93283d05ba3247eb25775f919a60ac1caedb00cf85db71ea9172692d"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/results.json",
+      "bytes": 18776,
+      "sha256": "54450f6ce248aa8a574135ac8d2186a54cc43902faf9813d869882a71118b88d"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/__init__.py",
+      "bytes": 451,
+      "sha256": "cd5634354aeb49f169c6bdb3446a6ab59c43fd44dc4ef4aab11176f0819defcf"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/commands.py",
+      "bytes": 1388,
+      "sha256": "fc92b1a67675a801c017524e34f4c6ecea60cff9ffcbbff19977d234c30cc4d6"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env.py",
+      "bytes": 8889,
+      "sha256": "29dd62939d08b5027e80d6d1d6d41bbc1cdb8220df258225ed127fd0026b52ee"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env_cfg.py",
+      "bytes": 1964,
+      "sha256": "257efab7be75656735791943fc586a41f11b83f0160c302bbccc7939d211c929"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/tests/test_wbc_sgs.py",
+      "bytes": 4156,
+      "sha256": "6b88cf4bad7e9fd0d706f3a3054294ecbdebd6855a406b710fab81eafeb5e8b8"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/tools/make_wbc_sgs_pool.py",
+      "bytes": 2501,
+      "sha256": "757e36355d30631ae822cefbcfcffc82abe5d093b3230797b05696eb07192ed3"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/tools/report_wbc_sgs.py",
+      "bytes": 13421,
+      "sha256": "33124daab80266fefda8de6686de6912b28e30fb6eb318e2a886bcf896ac4bae"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/current_source/tools/wbc_sgs_experiment.py",
+      "bytes": 19223,
+      "sha256": "323bce36cb78f09c2f103b03be3a3cb3fc6ae7d188bf556409ccecbbc8741795"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/executed_source/benchmarks/go2_piper/wbc_sgs/__init__.py",
+      "bytes": 82,
+      "sha256": "33be23a3a2887c8870487f14eea4b51a4367fae2dc3eabf490ac917c1ea15e4e"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/executed_source/benchmarks/go2_piper/wbc_sgs/metrics.py",
+      "bytes": 3080,
+      "sha256": "b00471b1a709c41b96ee56591bd1797c6f8d7db91ebb102d297bc7c97c949d02"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/executed_source/benchmarks/go2_piper/wbc_sgs/sampler.py",
+      "bytes": 4514,
+      "sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/__init__.py",
+      "bytes": 451,
+      "sha256": "cd5634354aeb49f169c6bdb3446a6ab59c43fd44dc4ef4aab11176f0819defcf"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/commands.py",
+      "bytes": 1388,
+      "sha256": "fc92b1a67675a801c017524e34f4c6ecea60cff9ffcbbff19977d234c30cc4d6"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env.py",
+      "bytes": 8889,
+      "sha256": "29dd62939d08b5027e80d6d1d6d41bbc1cdb8220df258225ed127fd0026b52ee"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env_cfg.py",
+      "bytes": 1964,
+      "sha256": "257efab7be75656735791943fc586a41f11b83f0160c302bbccc7939d211c929"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/executed_source/tools/wbc_sgs_experiment.py",
+      "bytes": 18318,
+      "sha256": "0b81c3129ca0fca6177c54a5d1d67cc91d2824c5d313a29a0b7318edc19cc64b"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/results/fixed_learning_curve.json",
+      "bytes": 1402,
+      "sha256": "2ec3aece93283d05ba3247eb25775f919a60ac1caedb00cf85db71ea9172692d"
+    },
+    {
+      "path": "projects/sgs/historical_48task_20261019/results/results.json",
+      "bytes": 18776,
+      "sha256": "54450f6ce248aa8a574135ac8d2186a54cc43902faf9813d869882a71118b88d"
+    },
+    {
+      "path": "projects/sgs/requirements.txt",
+      "bytes": 153,
+      "sha256": "ea9cf074ce15c6548e6749764dee4c9f4730f82b55e1ce0f86e0dc207d6ff7d5"
+    },
+    {
+      "path": "projects/z1_locomotion/README.md",
+      "bytes": 1426,
+      "sha256": "93ab2ea70fc617e869349a76e5b96ff09d7abb991d961abebf53607d81894535"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/checkpoint_utils.py",
+      "bytes": 1586,
+      "sha256": "92bd0532c9d2800c80841367e579e750e810799bbc40a1b7fb4fcba5d67ee181"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/evaluate_z1_rough_crossing.py",
+      "bytes": 3829,
+      "sha256": "dba5245ae75f3f9146727c9b8bc7a80a09527c963a3fabee3d727905337bba14"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/evaluate_z1_stairs.py",
+      "bytes": 23371,
+      "sha256": "41686f7a18b7430982da8a3f5197d6a4d93e96836a4bc66f940a9bb7ee16f732"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/experiment_cfg.py",
+      "bytes": 2876,
+      "sha256": "cf12afb46c6d484d58e017d1d0218b39925e8b6834377369d6de23ebeeccf75a"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/inspect_training_terrain.py",
+      "bytes": 6688,
+      "sha256": "aed194ad5716a9938a16ef554428c1183424596714d10054ccab7bad8ec1922a"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/register_tasks.py",
+      "bytes": 214,
+      "sha256": "5fca46da43a3eed303ca4d328ac23cfbf18c97259f61eb76711fd3065266e013"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/saved_config.py",
+      "bytes": 855,
+      "sha256": "e117dba47ac57a40fc1c3959e4fa7ced880fd9c059258b0075c1e0c660cd62b7"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/stair_terrain.py",
+      "bytes": 1270,
+      "sha256": "661d64ac0acb0acd9679c561fabcdab0abc4fcdba861615c13a1112f720b94f2"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/z1_cfg.py",
+      "bytes": 5139,
+      "sha256": "a5b3c429421ab3a4700a5bfaacfe1e5631480eb0c1987e7103849974bb9ff532"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/z1_stairs_demo_cfg.py",
+      "bytes": 4690,
+      "sha256": "b92d7f7713ea001caf24121230028175dc2b75360272938059a774e32eb2fac8"
+    },
+    {
+      "path": "projects/z1_locomotion/legacy_20261010/z1_team_cfg.py",
+      "bytes": 1001,
+      "sha256": "ce30915ad3036a3cb972990bd6aa47386e1e4b29577ef921556bea53c7283216"
+    },
+    {
+      "path": "projects/z1_locomotion/observed_environment.json",
+      "bytes": 1161,
+      "sha256": "8911267dbc41121980548cc11cbf63a4d910ef6dcc3d6cf04110d460770628e2"
+    },
+    {
+      "path": "projects/z1_locomotion/results/downstairs_contact_summary.json",
+      "bytes": 2003,
+      "sha256": "3fd6ffb3956d734c0353641a98a88f829f95ab2c12be5cc5ef8fc60933d03715"
+    },
+    {
+      "path": "projects/z1_locomotion/results/height_reward_ab_summary.json",
+      "bytes": 1512,
+      "sha256": "e7094007450b14a821e1274d0140b3f4105f3a4b2b1167505e110bc9f8a0ffbb"
+    },
+    {
+      "path": "projects/z1_locomotion/run.py",
+      "bytes": 2736,
+      "sha256": "f0f0d7fecade8c9a545501b6df8e2a2e7eb8c0b08656d896aaae79b471131a3b"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261014/evaluate_short.py",
+      "bytes": 5394,
+      "sha256": "a27c4cd079ce1a1f53ea481893e6f60e0e0061bd9600e30c2ceb942b1d576096"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261014/local_gate.py",
+      "bytes": 1634,
+      "sha256": "42e446cf60e3d9f4793bb9045a89e27e4154809c37f3455f53e3a54ac4784501"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261014/register_short.py",
+      "bytes": 853,
+      "sha256": "36afeddbc2418f6dc0e54b9a4c47bcaed14240a535c48c3fd4d489965784ce56"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261014/sampler_audit.py",
+      "bytes": 1881,
+      "sha256": "31b7c3b1b13582da11827a132dbb03089fa363dd6990cd8187184e9524074155"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261014/sampling_5060.py",
+      "bytes": 2307,
+      "sha256": "b592b35adf967a30010e64f9d2701445016b9fa96d7c48edcd4e1626c6cb2186"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261014/sampling_short.py",
+      "bytes": 1776,
+      "sha256": "627535bfa4ca633239bc0b5f453c73e6b52e5149a041de33632d6f6162b4c854"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261014/test_sampling.py",
+      "bytes": 2374,
+      "sha256": "9bded095fda85040dc4321ea8cc755024c754d5c2f6cce3fff0d069d9c6f98e3"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261014/test_short_sampler.py",
+      "bytes": 1796,
+      "sha256": "33984cc385b09bcd3afddc95a2b7c79c2dd523c585212bf35b9a2653ed5815b6"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261014/train_short.py",
+      "bytes": 11757,
+      "sha256": "7b2862de55d98d3a21aa929b89727d0c13be73e3aebd908986dfae6fa1859273"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261016/height_reward_ab/evaluate_height_ab.py",
+      "bytes": 5442,
+      "sha256": "74911ad8f1bd9b41aa5f39527f9c820a0646172e9d3bd19d03627e5cdf5395a5"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261016/height_reward_ab/plot_height_ab.py",
+      "bytes": 3384,
+      "sha256": "a88829692849f969017687a52b63e834e3e814197b934faa908762849cc17648"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261016/height_reward_ab/register_stance.py",
+      "bytes": 1448,
+      "sha256": "2572dabb7f42859677942bcbe894b498d98748231f5d0e583510f65b0e435b42"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261016/height_reward_ab/results/effective_config_diff.json",
+      "bytes": 500,
+      "sha256": "06ea80b11d7fa55ca7d32618f0b0081c0e41fb572d6f7f4e72b377f9b8893ee1"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261016/height_reward_ab/sampler_audit.py",
+      "bytes": 1881,
+      "sha256": "31b7c3b1b13582da11827a132dbb03089fa363dd6990cd8187184e9524074155"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261016/height_reward_ab/sampling_short.py",
+      "bytes": 1776,
+      "sha256": "627535bfa4ca633239bc0b5f453c73e6b52e5149a041de33632d6f6162b4c854"
+    },
+    {
+      "path": "projects/z1_locomotion/studies_20261016/height_reward_ab/train_height_ab.py",
+      "bytes": 13553,
+      "sha256": "6ea4163772de7bcd7fa8eed82e4399e5b3b8b5e5fe55e83c15238e664d4451c5"
+    },
+    {
+      "path": "provenance/cpu_validation_summary.json",
+      "bytes": 1531,
+      "sha256": "e9074a3b505b8737102faa8a17764cf735207584a787d896763b3a548cf55351"
+    },
+    {
+      "path": "provenance/exclusions.csv",
+      "bytes": 828,
+      "sha256": "6743954c43cb4e43e004bf5994e024ed641569fc270413a1999c18998ad3e9ab"
+    },
+    {
+      "path": "provenance/files.json",
+      "bytes": 126228,
+      "sha256": "ac3dbf5feb596a6a9db0b629d495d10d3207061c688743e9b44d902f0b5bc6cf"
+    },
+    {
+      "path": "provenance/media_policy.json",
+      "bytes": 523,
+      "sha256": "53c26d3789ed44c8acc360aa279aa8fd073f7c0b18a571e65433912a1d3674a4"
+    },
+    {
+      "path": "provenance/shared_support_verification.json",
+      "bytes": 2621,
+      "sha256": "77468404fe706f44f49caf41bc01b3766521f5e5f3aae4d71439366fee2074d4"
+    },
+    {
+      "path": "publication_paths.py",
+      "bytes": 1101,
+      "sha256": "9732f05061cc4e87b9a22bfeffc5480898ff77b69c832eccf8b86c4ec62ae353"
+    },
+    {
+      "path": "requirements-analysis.txt",
+      "bytes": 121,
+      "sha256": "d51b8389fc83cb943816a3f0f53894ea6b4fa0d1113effa604541845172c44ad"
+    },
+    {
+      "path": "tools/audit_publication.py",
+      "bytes": 4895,
+      "sha256": "4f9375e850189b64b33d65621bdcbdb2406f60f8b1bc2c6e0c9532fdd5730595"
+    },
+    {
+      "path": "tools/cpu_smoke.py",
+      "bytes": 3837,
+      "sha256": "243e254a1c3798b1e55aed8254856968b56977c961d02e87a04f1fb78bd88e12"
+    },
+    {
+      "path": "tools/plot_results.py",
+      "bytes": 2699,
+      "sha256": "70ca6f26f963ad522fc2fc39c719c113ecd99fae7019c1b85d9764a78934a7cc"
+    }
+  ]
+}

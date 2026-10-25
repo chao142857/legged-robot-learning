@@ -1,0 +1,14 @@
+{
+  "env.yaml": {
+    "remote_path": "private-runtime/go2_piper_t1_scratch5000_20261023_v2/train_seed21/env.yaml",
+    "sha256": "4716a185c2ff3ffb3c6c8667190b64617b732ccca70dba6bc7df86a478ddbd4c",
+    "bytes": 46847,
+    "access": "read-only existing SSH; no simulator or checkpoint access"
+  },
+  "agent.yaml": {
+    "remote_path": "private-runtime/go2_piper_t1_scratch5000_20261023_v2/train_seed21/agent.yaml",
+    "sha256": "5fda080d493aaba9075bcd5e3c4ff78933e0bf625465d124ef5373d8a4014909",
+    "bytes": 1200,
+    "access": "read-only existing SSH; no simulator or checkpoint access"
+  }
+}

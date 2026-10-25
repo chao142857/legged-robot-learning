@@ -1,0 +1,51 @@
+{
+  "completed_updates": 1200,
+  "transitions": 117964800,
+  "load_calls": 0,
+  "checkpoint_audits": [
+    {
+      "path": "private-runtime/go2_piper_recipe_v1_20261025/pilot_A_seed21/cp_0.pt",
+      "sha256": "259ec661291d28480918f24ef2b3a735249e10e9976ec49d1d326bb5605e629f",
+      "finite": true,
+      "completed_updates": 0,
+      "adam_step_min": 0,
+      "adam_step_max": 0
+    },
+    {
+      "path": "private-runtime/go2_piper_recipe_v1_20261025/pilot_A_seed21/cp_200.pt",
+      "sha256": "bf518d48c60ecd1fd0735db78f59aba03efb462b2f4318bb64ea93d6c598f80e",
+      "finite": true,
+      "completed_updates": 200,
+      "adam_step_min": 4000.0,
+      "adam_step_max": 4000.0
+    },
+    {
+      "path": "private-runtime/go2_piper_recipe_v1_20261025/pilot_A_seed21/cp_500.pt",
+      "sha256": "0adcd448f39b132d67e6670e2369dada91bd08039d961163c16440faeb80b72a",
+      "finite": true,
+      "completed_updates": 500,
+      "adam_step_min": 10000.0,
+      "adam_step_max": 10000.0
+    },
+    {
+      "path": "private-runtime/go2_piper_recipe_v1_20261025/pilot_A_seed21/cp_800.pt",
+      "sha256": "329cbbafe0f9582de2cb479f1585408beae7e6f0d6a95d8c1aa2d8cf1a0d2e33",
+      "finite": true,
+      "completed_updates": 800,
+      "adam_step_min": 16000.0,
+      "adam_step_max": 16000.0
+    },
+    {
+      "path": "private-runtime/go2_piper_recipe_v1_20261025/pilot_A_seed21/cp_1200.pt",
+      "sha256": "cd081d0350783f656656dc81dc6143b6f0a9b4b553bfa47d2053c19d9bb9b069",
+      "finite": true,
+      "completed_updates": 1200,
+      "adam_step_min": 24000.0,
+      "adam_step_max": 24000.0
+    }
+  ],
+  "continuous_log": "private-runtime/go2_piper_recipe_v1_20261025/pilot_A_seed21/updates.jsonl",
+  "log_sha256": "b254aee6b248b9c800e51d3ed6174748d464535478afef7029ee19d2b902bc37",
+  "native_checkpoint_sha256": "600a2dab9caf18289bb6ec558f86c4e6e86c352b621f9a6d83ff73f209cc08b6",
+  "initialization": "new actor/critic/distribution/Adam/counters; no weights loaded"
+}

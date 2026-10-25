@@ -1,0 +1,30 @@
+{
+  "steps_checked": 651,
+  "max_abs_errors": {
+    "policy/velocity_commands": 0.0,
+    "policy/pos_commands": 0.0,
+    "critic/velocity_commands": 0.0,
+    "critic/pos_commands": 0.0,
+    "reward_command/base_velocity": 0.0,
+    "reward_command/ee_pose": 0.0,
+    "reward_value/end_effector_position_tracking_exp": 9.5367431640625e-07,
+    "reward_value/end_effector_orientation_tracking": 9.5367431640625e-07,
+    "reward_value/track_lin_vel_xy_exp": 2.384185791015625e-07,
+    "reward_value/track_ang_vel_z_exp": 2.384185791015625e-07,
+    "reward_value/low_height_l2": 7.450580596923828e-09,
+    "reward_value/raw_action_tail_l2": 1.4210854715202004e-14,
+    "termination_or_timeout": 0.0,
+    "done_mask": 0.0,
+    "timeout_mask": 0.0
+  },
+  "termination_counts": {
+    "time_out": 1,
+    "base_contact": 44,
+    "bad_orientation": 4,
+    "nonfoot_contact": 176,
+    "sustained_low_height": 0
+  },
+  "passed": true,
+  "failures": [],
+  "scope": "actual actor input/command/reward values and pre-reset done masks; observer itself performs no policy update"
+}

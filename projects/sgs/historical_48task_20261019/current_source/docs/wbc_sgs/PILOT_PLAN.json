@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "seed": 13,
+  "num_envs": 128,
+  "updates": 128,
+  "num_steps_per_env": 24,
+  "transitions_per_arm": 393216,
+  "evaluation_updates": [
+    0,
+    32,
+    64,
+    128
+  ],
+  "evaluation_cases_per_checkpoint": 48,
+  "total_budget_s": 1800,
+  "process_budget_s": 600,
+  "pool_sha256": "68d65401a2beae53ae15d33946427e5546a10ebc8e41dd788ebd4c41902f9681",
+  "protocol_sha256": "41f33c7dd4da5c85014ecc5bba24f9ad0369d8ed1393da603b4637480af7f3b4",
+  "source_sha256": {
+    "benchmarks/go2_piper/wbc_sgs/__init__.py": "33be23a3a2887c8870487f14eea4b51a4367fae2dc3eabf490ac917c1ea15e4e",
+    "benchmarks/go2_piper/wbc_sgs/metrics.py": "b00471b1a709c41b96ee56591bd1797c6f8d7db91ebb102d297bc7c97c949d02",
+    "benchmarks/go2_piper/wbc_sgs/sampler.py": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+    "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/__init__.py": "cd5634354aeb49f169c6bdb3446a6ab59c43fd44dc4ef4aab11176f0819defcf",
+    "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/commands.py": "fc92b1a67675a801c017524e34f4c6ecea60cff9ffcbbff19977d234c30cc4d6",
+    "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env.py": "29dd62939d08b5027e80d6d1d6d41bbc1cdb8220df258225ed127fd0026b52ee",
+    "source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env_cfg.py": "257efab7be75656735791943fc586a41f11b83f0160c302bbccc7939d211c929",
+    "tools/wbc_sgs_experiment.py": "0b81c3129ca0fca6177c54a5d1d67cc91d2824c5d313a29a0b7318edc19cc64b"
+  },
+  "smoke_mean_iteration_s": 0.8173595370026305,
+  "conservative_training_estimate_s": 836.9761658906937,
+  "calibration_48_case_wall_s": 22.98997196101118,
+  "conservative_fixed_eval_estimate_s": 183.91977568808943,
+  "stopping": "Single bounded pilot only; no automatic continuation if both zero/saturated; differences require >=3-seed plan with SFL, not execution",
+  "evaluation": "All48 known tasks equally weighted, deterministic policy, frozen initial states/protocol; never use training sampling rate as primary comparison"
+}

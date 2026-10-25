@@ -1,0 +1,118 @@
+{
+  "diagnostic_gate_failures": {
+    "deterministic": {
+      "episodes": 768,
+      "diagnostic_success": 0,
+      "failed_ee_position": 768,
+      "failed_ee_orientation": 3,
+      "failed_xy": 177,
+      "failed_yaw": 17,
+      "failed_height": 0,
+      "failed_contact": 38,
+      "native_failure": 0
+    },
+    "stochastic": {
+      "episodes": 768,
+      "diagnostic_success": 0,
+      "failed_ee_position": 768,
+      "failed_ee_orientation": 16,
+      "failed_xy": 373,
+      "failed_yaw": 540,
+      "failed_height": 0,
+      "failed_contact": 68,
+      "native_failure": 6
+    }
+  },
+  "training_milestones": [
+    {
+      "completed_updates": "1",
+      "elapsed_s": "4.620248019000428",
+      "kl_mean": "0.009464363567531109",
+      "learning_rate": "0.00075",
+      "value": "0.24832176491618158",
+      "entropy": "25.529666709899903",
+      "std_min": "0.9939604997634888",
+      "std_max": "1.0036081075668335",
+      "native/Train/mean_reward": "-1.3122127056121826",
+      "native/Train/mean_episode_length": "20.020000457763672",
+      "xy_mse": "0.4657197594642639",
+      "yaw_mse": "1.024239420890808",
+      "ee_position_mse": "0.25009894371032715"
+    },
+    {
+      "completed_updates": "250",
+      "elapsed_s": "915.3345764749974",
+      "kl_mean": "0.012822763994336128",
+      "learning_rate": "0.00033333333333333327",
+      "value": "0.06874838098883629",
+      "entropy": "17.664809036254884",
+      "std_min": "0.4334738850593567",
+      "std_max": "0.8738402724266052",
+      "native/Train/mean_reward": "64.11225891113281",
+      "native/Train/mean_episode_length": "963.8300170898438",
+      "xy_mse": "0.058999203145504",
+      "yaw_mse": "0.10522185266017914",
+      "ee_position_mse": "0.2361745536327362"
+    },
+    {
+      "completed_updates": "500",
+      "elapsed_s": "1841.3613846529988",
+      "kl_mean": "0.012580704875290394",
+      "learning_rate": "0.00022222222222222218",
+      "value": "0.1361181765794754",
+      "entropy": "15.242125749588013",
+      "std_min": "0.3281974196434021",
+      "std_max": "0.8592482805252075",
+      "native/Train/mean_reward": "110.81825256347656",
+      "native/Train/mean_episode_length": "992.6199951171875",
+      "xy_mse": "0.04582547768950462",
+      "yaw_mse": "0.08735349029302597",
+      "ee_position_mse": "0.03152605518698692"
+    },
+    {
+      "completed_updates": "1000",
+      "elapsed_s": "3694.0621675770017",
+      "kl_mean": "0.014554893597960472",
+      "learning_rate": "0.00014814814814814812",
+      "value": "0.07297047097235917",
+      "entropy": "12.409041213989259",
+      "std_min": "0.24708682298660278",
+      "std_max": "0.7044294476509094",
+      "native/Train/mean_reward": "143.0560760498047",
+      "native/Train/mean_episode_length": "995.3800048828125",
+      "xy_mse": "0.03476794809103012",
+      "yaw_mse": "0.05639348551630974",
+      "ee_position_mse": "0.016384106129407883"
+    },
+    {
+      "completed_updates": "2000",
+      "elapsed_s": "7401.627118431003",
+      "kl_mean": "0.01194059383124113",
+      "learning_rate": "4.38957475994513e-05",
+      "value": "0.059588218852877614",
+      "entropy": "11.10494122505188",
+      "std_min": "0.22243280708789825",
+      "std_max": "0.6517649292945862",
+      "native/Train/mean_reward": "152.21829223632812",
+      "native/Train/mean_episode_length": "1000.0",
+      "xy_mse": "0.027722496539354324",
+      "yaw_mse": "0.048302724957466125",
+      "ee_position_mse": "0.011562934145331383"
+    },
+    {
+      "completed_updates": "3000",
+      "elapsed_s": "11099.515008149",
+      "kl_mean": "0.011825865134596825",
+      "learning_rate": "7.593750000000004e-05",
+      "value": "0.059674641489982604",
+      "entropy": "10.904505252838135",
+      "std_min": "0.2175794392824173",
+      "std_max": "0.6184478402137756",
+      "native/Train/mean_reward": "158.66238403320312",
+      "native/Train/mean_episode_length": "1000.0",
+      "xy_mse": "0.024562612175941467",
+      "yaw_mse": "0.047972433269023895",
+      "ee_position_mse": "0.009894639253616333"
+    }
+  ]
+}

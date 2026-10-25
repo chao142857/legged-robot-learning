@@ -1,0 +1,2437 @@
+[
+  {
+    "source": "ops/z1_cfg.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/z1_cfg.py",
+    "source_sha256": "0d01bee35df9cf31a7b78503f7f89c191990d55028203e215abcb426d38db10b",
+    "published_sha256": "a5b3c429421ab3a4700a5bfaacfe1e5631480eb0c1987e7103849974bb9ff532",
+    "source_bytes": 5235,
+    "published_bytes": 5139,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes"
+    ]
+  },
+  {
+    "source": "ops/z1_team_cfg.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/z1_team_cfg.py",
+    "source_sha256": "102d5c081c6b3317308fa83414773db2e134f5033ac0d60384f05f79fb4863ab",
+    "published_sha256": "ce30915ad3036a3cb972990bd6aa47386e1e4b29577ef921556bea53c7283216",
+    "source_bytes": 1077,
+    "published_bytes": 1001,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes"
+    ]
+  },
+  {
+    "source": "ops/experiment_cfg.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/experiment_cfg.py",
+    "source_sha256": "cf12afb46c6d484d58e017d1d0218b39925e8b6834377369d6de23ebeeccf75a",
+    "published_sha256": "cf12afb46c6d484d58e017d1d0218b39925e8b6834377369d6de23ebeeccf75a",
+    "source_bytes": 2876,
+    "published_bytes": 2876,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "ops/stair_terrain.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/stair_terrain.py",
+    "source_sha256": "661d64ac0acb0acd9679c561fabcdab0abc4fcdba861615c13a1112f720b94f2",
+    "published_sha256": "661d64ac0acb0acd9679c561fabcdab0abc4fcdba861615c13a1112f720b94f2",
+    "source_bytes": 1270,
+    "published_bytes": 1270,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "ops/z1_stairs_demo_cfg.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/z1_stairs_demo_cfg.py",
+    "source_sha256": "b92d7f7713ea001caf24121230028175dc2b75360272938059a774e32eb2fac8",
+    "published_sha256": "b92d7f7713ea001caf24121230028175dc2b75360272938059a774e32eb2fac8",
+    "source_bytes": 4690,
+    "published_bytes": 4690,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "ops/register_tasks.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/register_tasks.py",
+    "source_sha256": "0cec04cd08944cc61a1a41d907775ece98bcacb34b4a187bffcd96357d1bbc0e",
+    "published_sha256": "5fca46da43a3eed303ca4d328ac23cfbf18c97259f61eb76711fd3065266e013",
+    "source_bytes": 236,
+    "published_bytes": 214,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes"
+    ]
+  },
+  {
+    "source": "ops/saved_config.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/saved_config.py",
+    "source_sha256": "e117dba47ac57a40fc1c3959e4fa7ced880fd9c059258b0075c1e0c660cd62b7",
+    "published_sha256": "e117dba47ac57a40fc1c3959e4fa7ced880fd9c059258b0075c1e0c660cd62b7",
+    "source_bytes": 855,
+    "published_bytes": 855,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "ops/evaluate_z1_stairs.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/evaluate_z1_stairs.py",
+    "source_sha256": "41686f7a18b7430982da8a3f5197d6a4d93e96836a4bc66f940a9bb7ee16f732",
+    "published_sha256": "41686f7a18b7430982da8a3f5197d6a4d93e96836a4bc66f940a9bb7ee16f732",
+    "source_bytes": 23371,
+    "published_bytes": 23371,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "ops/evaluate_z1_rough_crossing.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/evaluate_z1_rough_crossing.py",
+    "source_sha256": "dba5245ae75f3f9146727c9b8bc7a80a09527c963a3fabee3d727905337bba14",
+    "published_sha256": "dba5245ae75f3f9146727c9b8bc7a80a09527c963a3fabee3d727905337bba14",
+    "source_bytes": 3829,
+    "published_bytes": 3829,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "ops/checkpoint_utils.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/checkpoint_utils.py",
+    "source_sha256": "92bd0532c9d2800c80841367e579e750e810799bbc40a1b7fb4fcba5d67ee181",
+    "published_sha256": "92bd0532c9d2800c80841367e579e750e810799bbc40a1b7fb4fcba5d67ee181",
+    "source_bytes": 1586,
+    "published_bytes": 1586,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "ops/inspect_training_terrain.py",
+    "destination": "projects/z1_locomotion/legacy_20261010/inspect_training_terrain.py",
+    "source_sha256": "b7df7e50705b47d40125077dbc724f0afaa58fd0fd7369d4fe35226de0a7776c",
+    "published_sha256": "aed194ad5716a9938a16ef554428c1183424596714d10054ccab7bad8ec1922a",
+    "source_bytes": 6648,
+    "published_bytes": 6688,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "artifacts/ubuntu-robot-z1-short-20261014/sampling_short.py",
+    "destination": "projects/z1_locomotion/studies_20261014/sampling_short.py",
+    "source_sha256": "627535bfa4ca633239bc0b5f453c73e6b52e5149a041de33632d6f6162b4c854",
+    "published_sha256": "627535bfa4ca633239bc0b5f453c73e6b52e5149a041de33632d6f6162b4c854",
+    "source_bytes": 1776,
+    "published_bytes": 1776,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/ubuntu-robot-z1-short-20261014/test_short_sampler.py",
+    "destination": "projects/z1_locomotion/studies_20261014/test_short_sampler.py",
+    "source_sha256": "5a39ee10f0e382f80ba0bed850dd010930e61ba61be04da41b40a72712ce4f77",
+    "published_sha256": "33984cc385b09bcd3afddc95a2b7c79c2dd523c585212bf35b9a2653ed5815b6",
+    "source_bytes": 2481,
+    "published_bytes": 1796,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver",
+      "CPU core test retains RNG/reset/fraction assertions; external native-command execution and private audit writes removed; schedule test explicitly not claimed"
+    ]
+  },
+  {
+    "source": "artifacts/ubuntu-robot-z1-short-20261014/register_short.py",
+    "destination": "projects/z1_locomotion/studies_20261014/register_short.py",
+    "source_sha256": "36afeddbc2418f6dc0e54b9a4c47bcaed14240a535c48c3fd4d489965784ce56",
+    "published_sha256": "36afeddbc2418f6dc0e54b9a4c47bcaed14240a535c48c3fd4d489965784ce56",
+    "source_bytes": 853,
+    "published_bytes": 853,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/ubuntu-robot-z1-short-20261014/evaluate_short.py",
+    "destination": "projects/z1_locomotion/studies_20261014/evaluate_short.py",
+    "source_sha256": "a27c4cd079ce1a1f53ea481893e6f60e0e0061bd9600e30c2ceb942b1d576096",
+    "published_sha256": "a27c4cd079ce1a1f53ea481893e6f60e0e0061bd9600e30c2ceb942b1d576096",
+    "source_bytes": 5394,
+    "published_bytes": 5394,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/ubuntu-robot-z1-short-20261014/train_short.py",
+    "destination": "projects/z1_locomotion/studies_20261014/train_short.py",
+    "source_sha256": "7b2862de55d98d3a21aa929b89727d0c13be73e3aebd908986dfae6fa1859273",
+    "published_sha256": "7b2862de55d98d3a21aa929b89727d0c13be73e3aebd908986dfae6fa1859273",
+    "source_bytes": 11757,
+    "published_bytes": 11757,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/ubuntu-robot-z1-restore-20261014/sampler_audit.py",
+    "destination": "projects/z1_locomotion/studies_20261014/sampler_audit.py",
+    "source_sha256": "31b7c3b1b13582da11827a132dbb03089fa363dd6990cd8187184e9524074155",
+    "published_sha256": "31b7c3b1b13582da11827a132dbb03089fa363dd6990cd8187184e9524074155",
+    "source_bytes": 1881,
+    "published_bytes": 1881,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/ubuntu-robot-z1-restore-20261014/sampling_5060.py",
+    "destination": "projects/z1_locomotion/studies_20261014/sampling_5060.py",
+    "source_sha256": "b592b35adf967a30010e64f9d2701445016b9fa96d7c48edcd4e1626c6cb2186",
+    "published_sha256": "b592b35adf967a30010e64f9d2701445016b9fa96d7c48edcd4e1626c6cb2186",
+    "source_bytes": 2307,
+    "published_bytes": 2307,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/ubuntu-robot-z1-restore-20261014/test_sampling.py",
+    "destination": "projects/z1_locomotion/studies_20261014/test_sampling.py",
+    "source_sha256": "2702d34130a9e11ccae113e5e380423134ee2e9d12518a5a94d4bcb8ab280687",
+    "published_sha256": "9bded095fda85040dc4321ea8cc755024c754d5c2f6cce3fff0d069d9c6f98e3",
+    "source_bytes": 2330,
+    "published_bytes": 2374,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "artifacts/z1-height-reward-ab-20261016/results/source/train_height_ab.py",
+    "destination": "projects/z1_locomotion/studies_20261016/height_reward_ab/train_height_ab.py",
+    "source_sha256": "6ea4163772de7bcd7fa8eed82e4399e5b3b8b5e5fe55e83c15238e664d4451c5",
+    "published_sha256": "6ea4163772de7bcd7fa8eed82e4399e5b3b8b5e5fe55e83c15238e664d4451c5",
+    "source_bytes": 13553,
+    "published_bytes": 13553,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/z1-height-reward-ab-20261016/results/source/evaluate_height_ab.py",
+    "destination": "projects/z1_locomotion/studies_20261016/height_reward_ab/evaluate_height_ab.py",
+    "source_sha256": "74911ad8f1bd9b41aa5f39527f9c820a0646172e9d3bd19d03627e5cdf5395a5",
+    "published_sha256": "74911ad8f1bd9b41aa5f39527f9c820a0646172e9d3bd19d03627e5cdf5395a5",
+    "source_bytes": 5442,
+    "published_bytes": 5442,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/z1-height-reward-ab-20261016/results/source/register_stance.py",
+    "destination": "projects/z1_locomotion/studies_20261016/height_reward_ab/register_stance.py",
+    "source_sha256": "2572dabb7f42859677942bcbe894b498d98748231f5d0e583510f65b0e435b42",
+    "published_sha256": "2572dabb7f42859677942bcbe894b498d98748231f5d0e583510f65b0e435b42",
+    "source_bytes": 1448,
+    "published_bytes": 1448,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/z1-height-reward-ab-20261016/results/source/sampling_short.py",
+    "destination": "projects/z1_locomotion/studies_20261016/height_reward_ab/sampling_short.py",
+    "source_sha256": "627535bfa4ca633239bc0b5f453c73e6b52e5149a041de33632d6f6162b4c854",
+    "published_sha256": "627535bfa4ca633239bc0b5f453c73e6b52e5149a041de33632d6f6162b4c854",
+    "source_bytes": 1776,
+    "published_bytes": 1776,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/z1-height-reward-ab-20261016/results/source/sampler_audit.py",
+    "destination": "projects/z1_locomotion/studies_20261016/height_reward_ab/sampler_audit.py",
+    "source_sha256": "31b7c3b1b13582da11827a132dbb03089fa363dd6990cd8187184e9524074155",
+    "published_sha256": "31b7c3b1b13582da11827a132dbb03089fa363dd6990cd8187184e9524074155",
+    "source_bytes": 1881,
+    "published_bytes": 1881,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/z1-height-reward-ab-20261016/plot_height_ab.py",
+    "destination": "projects/z1_locomotion/studies_20261016/height_reward_ab/plot_height_ab.py",
+    "source_sha256": "96860eacb4d4c9fb0a1e9fcbc9e42eb45bb675403f08161e614bf39930fc7811",
+    "published_sha256": "a88829692849f969017687a52b63e834e3e814197b934faa908762849cc17648",
+    "source_bytes": 3340,
+    "published_bytes": 3384,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "artifacts/z1-height-reward-ab-20261016/results/effective-config-diff.audit.json",
+    "destination": "projects/z1_locomotion/studies_20261016/height_reward_ab/results/effective_config_diff.json",
+    "source_sha256": "a72c39c3069759cd24d9ef14c04ea712f6710a8af98e6c1bbd8ffef99e4c6ffe",
+    "published_sha256": "06ea80b11d7fa55ca7d32618f0b0081c0e41fb572d6f7f4e72b377f9b8893ee1",
+    "source_bytes": 497,
+    "published_bytes": 500,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators",
+      "Normalized JSON and sanitized decoded machine paths; numerical values preserved"
+    ]
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/tools/native_observer.py",
+    "destination": "projects/go2_piper_wbc/native_20261023/tools/native_observer.py",
+    "source_sha256": "69741a249049d172faada38c652f4984abb6e66064bb0029b877374d96d64a8a",
+    "published_sha256": "69741a249049d172faada38c652f4984abb6e66064bb0029b877374d96d64a8a",
+    "source_bytes": 12532,
+    "published_bytes": 12532,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/tools/evaluate_native.py",
+    "destination": "projects/go2_piper_wbc/native_20261023/tools/evaluate_native.py",
+    "source_sha256": "2ebcc866c7ebaa1827bd7a0fadc85b60050c8b22ca2ab32e891c60054980d993",
+    "published_sha256": "2ebcc866c7ebaa1827bd7a0fadc85b60050c8b22ca2ab32e891c60054980d993",
+    "source_bytes": 11704,
+    "published_bytes": 11704,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/tools/analyze_results.py",
+    "destination": "projects/go2_piper_wbc/native_20261023/tools/analyze_results.py",
+    "source_sha256": "3c656ac789db14ce73883075b6783c48f477f009a0cdc089912a4e5baea175fe",
+    "published_sha256": "6e1667ab64a3033a1b379e753ae958d5e720a464e16098aca0a4dd37a4f0be9f",
+    "source_bytes": 15227,
+    "published_bytes": 15271,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/tools/compare_configs.py",
+    "destination": "projects/go2_piper_wbc/native_20261023/tools/compare_configs.py",
+    "source_sha256": "fdfb4a31fba49c2d80bbf3fd2ac21e3bc32c4ab0311f71f226137b350e1c2205",
+    "published_sha256": "8a64d9a6bd1d0d26c24057babd4544ed2bef83e8cc57626b564627a9f1e208fa",
+    "source_bytes": 2037,
+    "published_bytes": 2081,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/tools/audit_results.py",
+    "destination": "projects/go2_piper_wbc/native_20261023/tools/audit_results.py",
+    "source_sha256": "d38d87d24cf91074489a81a41e69ff21656e23d2178580eb77af8d727ca416a9",
+    "published_sha256": "d065080363937219ee557b89a3df4788b1cb7b8710e6ce436e5e06eabfb259a4",
+    "source_bytes": 8325,
+    "published_bytes": 8369,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/tools/diagnose_final.py",
+    "destination": "projects/go2_piper_wbc/native_20261023/tools/diagnose_final.py",
+    "source_sha256": "1e7db7d2a33dabc97414e5e8a9e56a322edceca3b74df9a10f648ce9bf6e77ce",
+    "published_sha256": "979e13bd34a6c46b76568301155d7c380af04b6b6aca7b2523d11a189493d68b",
+    "source_bytes": 9828,
+    "published_bytes": 9872,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/results/analysis/evaluation_pooled.json",
+    "destination": "projects/go2_piper_wbc/native_20261023/results/evaluation_pooled.json",
+    "source_sha256": "294a9fc42fb689101c170c474cadf5b6d96b00b1b6db7c0503a396179d5e4ce1",
+    "published_sha256": "294a9fc42fb689101c170c474cadf5b6d96b00b1b6db7c0503a396179d5e4ce1",
+    "source_bytes": 86673,
+    "published_bytes": 86673,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/results/analysis/evaluation_by_seed_group.csv",
+    "destination": "projects/go2_piper_wbc/native_20261023/results/evaluation_by_seed_group.csv",
+    "source_sha256": "0de642aaac6f96395c05186abb3783e7aea8b3858ff7f2b1db98c8020b81010d",
+    "published_sha256": "0de642aaac6f96395c05186abb3783e7aea8b3858ff7f2b1db98c8020b81010d",
+    "source_bytes": 143136,
+    "published_bytes": 143136,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/results/analysis/training_summary.json",
+    "destination": "projects/go2_piper_wbc/native_20261023/results/training_summary.json",
+    "source_sha256": "f69b5bae758cf8e64c8c2a16c90a3f1473c6b2b8ba56d022fc25e16ea7ce1214",
+    "published_sha256": "b1fa0665d2cf8efe0af7a6ecbdbd5b09d7695f119930aedd2539324e6e4d3143",
+    "source_bytes": 7940,
+    "published_bytes": 7941,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/results/analysis/report_tables.json",
+    "destination": "projects/go2_piper_wbc/native_20261023/results/report_tables.json",
+    "source_sha256": "03a9d43757ed57ffecc1aba019553a628e4029bca7b4ac80db2ef1c44c940ec3",
+    "published_sha256": "03a9d43757ed57ffecc1aba019553a628e4029bca7b4ac80db2ef1c44c940ec3",
+    "source_bytes": 4052,
+    "published_bytes": 4052,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/results/analysis/final_physics_details.json",
+    "destination": "projects/go2_piper_wbc/native_20261023/results/final_physics_details.json",
+    "source_sha256": "1e6c7f8b052aafb356ab1c3f261955dbd1d75ee5a0ca21dd6002e51a515d144c",
+    "published_sha256": "1e6c7f8b052aafb356ab1c3f261955dbd1d75ee5a0ca21dd6002e51a515d144c",
+    "source_bytes": 54118,
+    "published_bytes": 54118,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/task_suite/__init__.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/task_suite/__init__.py",
+    "source_sha256": "3c1e97153c0581cafddea394646ca399f56898727d46b10065ab6909b8bfa920",
+    "published_sha256": "3c1e97153c0581cafddea394646ca399f56898727d46b10065ab6909b8bfa920",
+    "source_bytes": 86,
+    "published_bytes": 86,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/task_suite/config.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/task_suite/config.py",
+    "source_sha256": "64a0cb477790bc25e70c6fddddff05dcaf4d6cfd84f52e35cbac25d627ced56e",
+    "published_sha256": "64a0cb477790bc25e70c6fddddff05dcaf4d6cfd84f52e35cbac25d627ced56e",
+    "source_bytes": 7496,
+    "published_bytes": 7496,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/task_suite/mdp.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/task_suite/mdp.py",
+    "source_sha256": "e5b1206233efd404d5c206054b7a1ff6ba6afee6776178f9620944d67fce2c85",
+    "published_sha256": "e5b1206233efd404d5c206054b7a1ff6ba6afee6776178f9620944d67fce2c85",
+    "source_bytes": 8793,
+    "published_bytes": 8793,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/task_suite/profiles.json",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/task_suite/profiles.json",
+    "source_sha256": "01cee38b06c476f731d039dea965c086d3f92073ce5cb3695d3bef4ed5b5f0a3",
+    "published_sha256": "01cee38b06c476f731d039dea965c086d3f92073ce5cb3695d3bef4ed5b5f0a3",
+    "source_bytes": 4509,
+    "published_bytes": 4509,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_task_suite_20261023_work/tools/telemetry.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/tools/telemetry.py",
+    "source_sha256": "499aa0998bd331e15b584cdc47862c48f0bd4daa36b3ff7f867ced6d69a89bde",
+    "published_sha256": "499aa0998bd331e15b584cdc47862c48f0bd4daa36b3ff7f867ced6d69a89bde",
+    "source_bytes": 16567,
+    "published_bytes": 16567,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_task_suite_20261023_work/tools/task_identity.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/tools/task_identity.py",
+    "source_sha256": "90a5206f2481d37d16760b8ac90490d07ad229a63c3eefcc33614655ee6d5f1e",
+    "published_sha256": "90a5206f2481d37d16760b8ac90490d07ad229a63c3eefcc33614655ee6d5f1e",
+    "source_bytes": 3130,
+    "published_bytes": 3130,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_task_suite_20261023_work/tools/analyze_suite.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/tools/analyze_suite.py",
+    "source_sha256": "e3141332e8c439dc0828e1d7dc5cfa9b32df0a4409c5374cec6a2ebde50e3762",
+    "published_sha256": "e3141332e8c439dc0828e1d7dc5cfa9b32df0a4409c5374cec6a2ebde50e3762",
+    "source_bytes": 30185,
+    "published_bytes": 30185,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_task_suite_20261023_work/tools/ppo_smoke_gate.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/tools/ppo_smoke_gate.py",
+    "source_sha256": "109d52e74743d679a93e8d7b626edfbeddcfb8284a47fb6745951b214407f868",
+    "published_sha256": "f49152d79af150d788c02e67edc11f4f5f3356a6707a7df7e008b1808a41aaa9",
+    "source_bytes": 11275,
+    "published_bytes": 11319,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_task_suite_20261023_work/tools/test_analyze_suite.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/tools/test_analyze_suite.py",
+    "source_sha256": "c9ff2c4b584aa49cbc9b389fbb1a294c4c15ff0ec1b501e17f7709401f185329",
+    "published_sha256": "c9ff2c4b584aa49cbc9b389fbb1a294c4c15ff0ec1b501e17f7709401f185329",
+    "source_bytes": 6797,
+    "published_bytes": 6797,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_task_suite_20261023_work/tools/test_ppo_smoke_gate.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/tools/test_ppo_smoke_gate.py",
+    "source_sha256": "8d9969ce531e9ffba13006e8ae05fb7c4dbbd32fdbe98847abd7b0bbc45eca2f",
+    "published_sha256": "8d9969ce531e9ffba13006e8ae05fb7c4dbbd32fdbe98847abd7b0bbc45eca2f",
+    "source_bytes": 7309,
+    "published_bytes": 7309,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/tools/scratch_observer.py",
+    "destination": "projects/go2_piper_wbc/scratch_t1_20261025/tools/scratch_observer.py",
+    "source_sha256": "b64d3613265373f44e0e5fbd1db9a44d5b8b5ca7fc07867fdc38c82a2b921684",
+    "published_sha256": "b64d3613265373f44e0e5fbd1db9a44d5b8b5ca7fc07867fdc38c82a2b921684",
+    "source_bytes": 12014,
+    "published_bytes": 12014,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/tools/evaluate_t1_scratch.py",
+    "destination": "projects/go2_piper_wbc/scratch_t1_20261025/tools/evaluate_t1_scratch.py",
+    "source_sha256": "8b1a0c2d0d77c99a79b864c30bea6c53484fca8202d60e4075aecf5750b643c2",
+    "published_sha256": "8b1a0c2d0d77c99a79b864c30bea6c53484fca8202d60e4075aecf5750b643c2",
+    "source_bytes": 7781,
+    "published_bytes": 7781,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/tools/run_t1_scratch.py",
+    "destination": "projects/go2_piper_wbc/scratch_t1_20261025/tools/run_t1_scratch.py",
+    "source_sha256": "a7cb6278fba86a2eba70a6c4575d47526c7ae7611678966ce5d98a873bcce87d",
+    "published_sha256": "52d0cac19b551944b185e2e7e62446fc6f1bde6fdedddd8f1a8b39afa34690cd",
+    "source_bytes": 12231,
+    "published_bytes": 11999,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes"
+    ]
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/tools/t1_tracking_metrics.py",
+    "destination": "projects/go2_piper_wbc/scratch_t1_20261025/tools/t1_tracking_metrics.py",
+    "source_sha256": "b83423a71008e3b12063a8aae7b1d48679c6e71cfe3193a69679f8d92c113b98",
+    "published_sha256": "b83423a71008e3b12063a8aae7b1d48679c6e71cfe3193a69679f8d92c113b98",
+    "source_bytes": 3503,
+    "published_bytes": 3503,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/tools/test_t1_tracking_metrics.py",
+    "destination": "projects/go2_piper_wbc/scratch_t1_20261025/tools/test_t1_tracking_metrics.py",
+    "source_sha256": "19748ce13d8f4c209063f1e657367f32b1f27fcb03a00bc5dd3513c9c7aa0e89",
+    "published_sha256": "19748ce13d8f4c209063f1e657367f32b1f27fcb03a00bc5dd3513c9c7aa0e89",
+    "source_bytes": 2260,
+    "published_bytes": 2260,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/tools/report_t1_scratch.py",
+    "destination": "projects/go2_piper_wbc/scratch_t1_20261025/tools/report_t1_scratch.py",
+    "source_sha256": "ec29bccca78c874c8e2f78d9f4daa1b1e3865b64762e88ad0997d4099f3f5677",
+    "published_sha256": "ec29bccca78c874c8e2f78d9f4daa1b1e3865b64762e88ad0997d4099f3f5677",
+    "source_bytes": 11144,
+    "published_bytes": 11144,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/tools/scratch_evaluation_core.py",
+    "destination": "projects/go2_piper_wbc/scratch_t1_20261025/tools/scratch_evaluation_core.py",
+    "source_sha256": "c5cb161c95f7ca33e2fd9ad837b16d31fb7ad2a28a773b616ce3b2e2009e6756",
+    "published_sha256": "c5cb161c95f7ca33e2fd9ad837b16d31fb7ad2a28a773b616ce3b2e2009e6756",
+    "source_bytes": 8389,
+    "published_bytes": 8389,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/results/verification_summary.json",
+    "destination": "projects/go2_piper_wbc/scratch_t1_20261025/results/verification_summary.json",
+    "source_sha256": "8bdf3f7af43dd6baf70c29396b10b4013311c13ec70c6bfa8579c8b8f22d191c",
+    "published_sha256": "3c4d1926b934ddb50e923aa0927edebd1e92a98cf762ee4968f3c3cdc8686d1b",
+    "source_bytes": 5812,
+    "published_bytes": 5824,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_t1_scratch5000_20261023_work/results/frozen_evaluation.csv",
+    "destination": "projects/go2_piper_wbc/scratch_t1_20261025/results/frozen_evaluation.csv",
+    "source_sha256": "1347f2a53a58729aa4f5d6c1db3f14bbc4fd4f979e1a797114138855085a4978",
+    "published_sha256": "1347f2a53a58729aa4f5d6c1db3f14bbc4fd4f979e1a797114138855085a4978",
+    "source_bytes": 10873,
+    "published_bytes": 10873,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/recipe_v1/__init__.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/__init__.py",
+    "source_sha256": "c4ff0334ff6b307f5f4d5049ef72e4f67c1771188fdf517273334f18d2214f42",
+    "published_sha256": "c4ff0334ff6b307f5f4d5049ef72e4f67c1771188fdf517273334f18d2214f42",
+    "source_bytes": 77,
+    "published_bytes": 77,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/recipe_v1/commands.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/commands.py",
+    "source_sha256": "93955e94f105d6ad42fb56d5d0e53fb3ff1704052d69b7bab04f872760ab285c",
+    "published_sha256": "93955e94f105d6ad42fb56d5d0e53fb3ff1704052d69b7bab04f872760ab285c",
+    "source_bytes": 5786,
+    "published_bytes": 5786,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/recipe_v1/config.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/config.py",
+    "source_sha256": "2d030404affd8b4d979773e33dad703b81c97fb39cc795be302c9481406c46f1",
+    "published_sha256": "2d030404affd8b4d979773e33dad703b81c97fb39cc795be302c9481406c46f1",
+    "source_bytes": 3532,
+    "published_bytes": 3532,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/recipe_v1/control.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/control.py",
+    "source_sha256": "0def5ae3f0a37115c6bcdbc8fabc67e30d2e226937d25bc3e3454aedad2482bf",
+    "published_sha256": "0def5ae3f0a37115c6bcdbc8fabc67e30d2e226937d25bc3e3454aedad2482bf",
+    "source_bytes": 5249,
+    "published_bytes": 5249,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/recipe_v1/kinematics.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/kinematics.py",
+    "source_sha256": "39964cda072c884b90270558fbcac1fa3a3b920eea753c358f760562e5eededf",
+    "published_sha256": "39964cda072c884b90270558fbcac1fa3a3b920eea753c358f760562e5eededf",
+    "source_bytes": 5445,
+    "published_bytes": 5445,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/recipe_v1/provenance.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/provenance.py",
+    "source_sha256": "b9c937ecfaa941e83c245b39e5a96d49ce807b450014cf684f318eb7bd9f5045",
+    "published_sha256": "b9c937ecfaa941e83c245b39e5a96d49ce807b450014cf684f318eb7bd9f5045",
+    "source_bytes": 751,
+    "published_bytes": 751,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/recipe_v1/spec.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/spec.json",
+    "source_sha256": "b2bffe1ccff368ff1ad2f6b210af5bfcdb431d37f395a13ff0556775842d60b7",
+    "published_sha256": "b2bffe1ccff368ff1ad2f6b210af5bfcdb431d37f395a13ff0556775842d60b7",
+    "source_bytes": 3564,
+    "published_bytes": 3564,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/recipe_v1/telemetry.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/recipe_v1/telemetry.py",
+    "source_sha256": "71da2a68ed2f8ec1b8e75a3e3de8b4f0931399960bc1a4a0148b6553ca17875f",
+    "published_sha256": "71da2a68ed2f8ec1b8e75a3e3de8b4f0931399960bc1a4a0148b6553ca17875f",
+    "source_bytes": 4021,
+    "published_bytes": 4021,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/tools/run_recipe_a.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/tools/run_recipe_a.py",
+    "source_sha256": "96c860be134d735c7ebd6930d62f3ed3182ac36469ec46a674ab4395affddf0a",
+    "published_sha256": "d231dc0fcfb723d91a0437462785894dabde00743cd1cdcb99f039d42d860200",
+    "source_bytes": 9674,
+    "published_bytes": 9571,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/tools/p0_frozen.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/tools/p0_frozen.py",
+    "source_sha256": "1ced345f1b243a6eef1776127b883e470eaf7964e5d97585aebb4b4fe2debe0d",
+    "published_sha256": "939234706ee3575dd6ebbea96abb5c342ca08296a23e3ce8c33d863564b8f3de",
+    "source_bytes": 11176,
+    "published_bytes": 11108,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/tools/report_recipe_a.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/tools/report_recipe_a.py",
+    "source_sha256": "3c0df26e04da3e41ce7b627f69b6ecdda92fc205099ee0e8acc1e78549a7bdf1",
+    "published_sha256": "24e39f3f3a4064a19acc2a9359a591ad4bb13b3b1cc9bbecdb9940a3150bdc09",
+    "source_bytes": 16266,
+    "published_bytes": 16310,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/tools/report_recipe_p0.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/tools/report_recipe_p0.py",
+    "source_sha256": "336e11e6492e772eb94eb310843306ead405c60fa086682cf7e5cda8c186e7ef",
+    "published_sha256": "336e11e6492e772eb94eb310843306ead405c60fa086682cf7e5cda8c186e7ef",
+    "source_bytes": 4088,
+    "published_bytes": 4088,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/report_A_recovery_v2/physical_results.csv",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/physical_results.csv",
+    "source_sha256": "943b2c4a2318157f6ef8561522aaf4150e3af6829c1beaa6ee6aa561c13f8b76",
+    "published_sha256": "943b2c4a2318157f6ef8561522aaf4150e3af6829c1beaa6ee6aa561c13f8b76",
+    "source_bytes": 19468,
+    "published_bytes": 19468,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/report_A_recovery_v2/physical_results.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/physical_results.json",
+    "source_sha256": "879d425903d3c6eb8076ac6810b2e546390cc133ef05a8a3a942944d45d9b09c",
+    "published_sha256": "92f798dbcd10ee3f0224ae1666ba5f69270fdaecd7ce99b8807c1b0c2a08f1c7",
+    "source_bytes": 350993,
+    "published_bytes": 351035,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/report_A_recovery_v2/gate_decision.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/gate_decision.json",
+    "source_sha256": "75baaeeeeb084a32e573193532123631db5919d5a43e1e2b39c6f5f220846b73",
+    "published_sha256": "75baaeeeeb084a32e573193532123631db5919d5a43e1e2b39c6f5f220846b73",
+    "source_bytes": 1186,
+    "published_bytes": 1186,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/report_A_recovery_v2/t0_side_metrics.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/t0_side_metrics.json",
+    "source_sha256": "ef6ee82243661ae0e8e9aab196d5526c72899cc607517cb60589bf8a72ea5b9b",
+    "published_sha256": "ef6ee82243661ae0e8e9aab196d5526c72899cc607517cb60589bf8a72ea5b9b",
+    "source_bytes": 2017,
+    "published_bytes": 2017,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/report_A_recovery_v2/training_verified.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/training_verified.json",
+    "source_sha256": "a335fb25ab2cc10dfa663e45a8eb78dfbac0af5550237042619d728097fa807d",
+    "published_sha256": "4fbfba943add809b65189a119ffbc3564333f481068862a7184a8de2713335f4",
+    "source_bytes": 1956,
+    "published_bytes": 1962,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/report_A_recovery_v2/safety_transient_analysis.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/safety_transient_analysis.json",
+    "source_sha256": "2f2be2febd523bb11ff93aa846c683c2d68232c37e60428d1b9f189f62303551",
+    "published_sha256": "2f2be2febd523bb11ff93aa846c683c2d68232c37e60428d1b9f189f62303551",
+    "source_bytes": 8471,
+    "published_bytes": 8471,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/report_A_recovery_v2/safety_joint_attribution.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/safety_joint_attribution.json",
+    "source_sha256": "eb1dbbb38c88f3e81acbcdd41a8222fc39d583926c35ae9afcfebad495099d06",
+    "published_sha256": "eb1dbbb38c88f3e81acbcdd41a8222fc39d583926c35ae9afcfebad495099d06",
+    "source_bytes": 8064,
+    "published_bytes": 8064,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/delivery_v1/training_curve.csv",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/training_curve.csv",
+    "source_sha256": "4840d88bd77f8096912ebfa07c26045b41e7b8a6f86ad44a254d8567a973d211",
+    "published_sha256": "4840d88bd77f8096912ebfa07c26045b41e7b8a6f86ad44a254d8567a973d211",
+    "source_bytes": 565438,
+    "published_bytes": 565438,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/delivery_v1/reward_rates_T1.csv",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/reward_rates_T1.csv",
+    "source_sha256": "2c07cddc52ad18d447fb52fd31c75517d7b6e61dcd305f7bf2b1c61f50212e76",
+    "published_sha256": "2c07cddc52ad18d447fb52fd31c75517d7b6e61dcd305f7bf2b1c61f50212e76",
+    "source_bytes": 1578,
+    "published_bytes": 1578,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/delivery_v1/optimization_summary.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/optimization_summary.json",
+    "source_sha256": "eb6ba08f11bb8366f92d7c973915819056bb43c8b0642d40cbf8fcd8f1843541",
+    "published_sha256": "eb6ba08f11bb8366f92d7c973915819056bb43c8b0642d40cbf8fcd8f1843541",
+    "source_bytes": 1045,
+    "published_bytes": 1045,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/audit/observer_rng_audit.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/observer_rng_audit.json",
+    "source_sha256": "80eb89b55b3796ee022aa3ba10ba78369706129053602f50f9529f252ccdedf4",
+    "published_sha256": "80eb89b55b3796ee022aa3ba10ba78369706129053602f50f9529f252ccdedf4",
+    "source_bytes": 102,
+    "published_bytes": 102,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/audit/training_validation_v1.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/training_validation_v1.json",
+    "source_sha256": "b5224855058a357f9340ee3f497f7861ae36c67c592b743737e97e8db65546d3",
+    "published_sha256": "71477ba9062ad5916aa0fa30e5b54024d47b9adbca811427c479d38ee0e87cbc",
+    "source_bytes": 1984,
+    "published_bytes": 1990,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/audit/interface.json",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/results/interface.json",
+    "source_sha256": "f00e2783cfd79ae5b568f04b8c4bb40dd44b6a746673a62a2f60588837375992",
+    "published_sha256": "f00e2783cfd79ae5b568f04b8c4bb40dd44b6a746673a62a2f60588837375992",
+    "source_bytes": 1064,
+    "published_bytes": 1064,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/recipe_aplus/__init__.py",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/__init__.py",
+    "source_sha256": "704784bd1e1a174d308ab5f2b2947ba6c75531f16c6b2c890e0f58613e4c1e60",
+    "published_sha256": "704784bd1e1a174d308ab5f2b2947ba6c75531f16c6b2c890e0f58613e4c1e60",
+    "source_bytes": 81,
+    "published_bytes": 81,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/recipe_aplus/config.py",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/config.py",
+    "source_sha256": "0f07af2110c9956a883f4e20220f461852287592e101ad55418149eb1fb1f1fb",
+    "published_sha256": "0f07af2110c9956a883f4e20220f461852287592e101ad55418149eb1fb1f1fb",
+    "source_bytes": 2385,
+    "published_bytes": 2385,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/recipe_aplus/spec.json",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/spec.json",
+    "source_sha256": "099011935b775c68b9aa6022391e6e03d85d4f1abeeba0f7634b2451d0350e58",
+    "published_sha256": "38919a51e5281fddcc10a4dc237d519ff27e1329a8cc3d5ca4d40a2fc9d6fece",
+    "source_bytes": 2861,
+    "published_bytes": 3189,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Normalized JSON and sanitized decoded machine paths; numerical values preserved"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/recipe_aplus/startup.py",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/startup.py",
+    "source_sha256": "4d7b484d6000cf735aa83405589a887eb6bbd26ea394ee4ec0c9366563d6553f",
+    "published_sha256": "4d7b484d6000cf735aa83405589a887eb6bbd26ea394ee4ec0c9366563d6553f",
+    "source_bytes": 1744,
+    "published_bytes": 1744,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/recipe_aplus/state.py",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/state.py",
+    "source_sha256": "f276fb2e3f295062782739565945a787c8634d19bda6e16c2141aacdf544f47d",
+    "published_sha256": "f276fb2e3f295062782739565945a787c8634d19bda6e16c2141aacdf544f47d",
+    "source_bytes": 2824,
+    "published_bytes": 2824,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/recipe_aplus/telemetry.py",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/recipe_aplus/telemetry.py",
+    "source_sha256": "dd67ee1df5263c2f5134bc929eae35c3999a573a0f0731c40096ca6fc6c98ce1",
+    "published_sha256": "dd67ee1df5263c2f5134bc929eae35c3999a573a0f0731c40096ca6fc6c98ce1",
+    "source_bytes": 2644,
+    "published_bytes": 2644,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/tools/run_aplus.py",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/tools/run_aplus.py",
+    "source_sha256": "bd07e56297df7041499bf0e2c94a82e1e6242cecb029a9d0a5481aebe3c5e505",
+    "published_sha256": "7140a718b1efbd2188db597b1654f9f4cc7432fac91a0741b0fa6272c5ab6a49",
+    "source_bytes": 8393,
+    "published_bytes": 8122,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/tools/evaluate_startup.py",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/tools/evaluate_startup.py",
+    "source_sha256": "2cb88723577a8741a53ca1596a0c55b8f7f519d4631a7f98a9d811765894e2ae",
+    "published_sha256": "2cb88723577a8741a53ca1596a0c55b8f7f519d4631a7f98a9d811765894e2ae",
+    "source_bytes": 12035,
+    "published_bytes": 12035,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/tools/report_aplus.py",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/tools/report_aplus.py",
+    "source_sha256": "04570752263c1765f9722d62f268d4a386468145b302a3d90f46670ae8d299df",
+    "published_sha256": "e424416e1fc44e904276c6ab0100ca9030bedf6edb6c00d2051e6525746ad246",
+    "source_bytes": 4791,
+    "published_bytes": 4835,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/tools/report_startup.py",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/tools/report_startup.py",
+    "source_sha256": "fb432220ac0d453420c7a03d4c4fc559d1e2dc3287360aff365a34ae4e59df87",
+    "published_sha256": "fb432220ac0d453420c7a03d4c4fc559d1e2dc3287360aff365a34ae4e59df87",
+    "source_bytes": 5337,
+    "published_bytes": 5337,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/audit/sampling_audit.json",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/results/sampling_audit.json",
+    "source_sha256": "659c4a9f18e11f0552b1d70d309ba16317e0a9f16f8ce6c825c6f41f1b2325bb",
+    "published_sha256": "659c4a9f18e11f0552b1d70d309ba16317e0a9f16f8ce6c825c6f41f1b2325bb",
+    "source_bytes": 319,
+    "published_bytes": 319,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/audit/summary.json",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/results/summary.json",
+    "source_sha256": "22acacb6319e3cb6b3399abb2c0c758e1f43568ee00ede2a9e745d4c11edd849",
+    "published_sha256": "22acacb6319e3cb6b3399abb2c0c758e1f43568ee00ede2a9e745d4c11edd849",
+    "source_bytes": 153,
+    "published_bytes": 153,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/audit/resume_evidence.json",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/results/resume_evidence.json",
+    "source_sha256": "d4133ecc95b9bc259ee694616eaa5a05dc02907d35b0e27d04df187de2b13252",
+    "published_sha256": "d4133ecc95b9bc259ee694616eaa5a05dc02907d35b0e27d04df187de2b13252",
+    "source_bytes": 710,
+    "published_bytes": 710,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/audit/execution_blocked.json",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/results/execution_blocked.json",
+    "source_sha256": "aa6cce60102b856fd1727d7dc32c12b56629682db4173d5705e714bd83f14880",
+    "published_sha256": "43eb85f6bbae7533b47947dc3db32f3cae2f5e5cbffffb14c943de06cabe28e7",
+    "source_bytes": 951,
+    "published_bytes": 954,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_aplus_20261025_work/audit/initialization_failure.json",
+    "destination": "projects/go2_piper_wbc/recipe_aplus_20261025/results/initialization_failure.json",
+    "source_sha256": "40903ac36996ea3006513ecb5e547ddc8ea194af72de93b1750644d05c90286d",
+    "published_sha256": "3a350e1eca892c77dfb652b083e83568fda1e1aa1d43f1590f76a3763e634f57",
+    "source_bytes": 831,
+    "published_bytes": 837,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/executed_source/benchmarks/go2_piper/wbc_sgs/__init__.py",
+    "destination": "projects/sgs/historical_48task_20261019/executed_source/benchmarks/go2_piper/wbc_sgs/__init__.py",
+    "source_sha256": "33be23a3a2887c8870487f14eea4b51a4367fae2dc3eabf490ac917c1ea15e4e",
+    "published_sha256": "33be23a3a2887c8870487f14eea4b51a4367fae2dc3eabf490ac917c1ea15e4e",
+    "source_bytes": 82,
+    "published_bytes": 82,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/executed_source/benchmarks/go2_piper/wbc_sgs/metrics.py",
+    "destination": "projects/sgs/historical_48task_20261019/executed_source/benchmarks/go2_piper/wbc_sgs/metrics.py",
+    "source_sha256": "b00471b1a709c41b96ee56591bd1797c6f8d7db91ebb102d297bc7c97c949d02",
+    "published_sha256": "b00471b1a709c41b96ee56591bd1797c6f8d7db91ebb102d297bc7c97c949d02",
+    "source_bytes": 3080,
+    "published_bytes": 3080,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/executed_source/benchmarks/go2_piper/wbc_sgs/sampler.py",
+    "destination": "projects/sgs/historical_48task_20261019/executed_source/benchmarks/go2_piper/wbc_sgs/sampler.py",
+    "source_sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+    "published_sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+    "source_bytes": 4514,
+    "published_bytes": 4514,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/__init__.py",
+    "destination": "projects/sgs/historical_48task_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/__init__.py",
+    "source_sha256": "cd5634354aeb49f169c6bdb3446a6ab59c43fd44dc4ef4aab11176f0819defcf",
+    "published_sha256": "cd5634354aeb49f169c6bdb3446a6ab59c43fd44dc4ef4aab11176f0819defcf",
+    "source_bytes": 451,
+    "published_bytes": 451,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/commands.py",
+    "destination": "projects/sgs/historical_48task_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/commands.py",
+    "source_sha256": "fc92b1a67675a801c017524e34f4c6ecea60cff9ffcbbff19977d234c30cc4d6",
+    "published_sha256": "fc92b1a67675a801c017524e34f4c6ecea60cff9ffcbbff19977d234c30cc4d6",
+    "source_bytes": 1388,
+    "published_bytes": 1388,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env.py",
+    "destination": "projects/sgs/historical_48task_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env.py",
+    "source_sha256": "29dd62939d08b5027e80d6d1d6d41bbc1cdb8220df258225ed127fd0026b52ee",
+    "published_sha256": "29dd62939d08b5027e80d6d1d6d41bbc1cdb8220df258225ed127fd0026b52ee",
+    "source_bytes": 8889,
+    "published_bytes": 8889,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env_cfg.py",
+    "destination": "projects/sgs/historical_48task_20261019/executed_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env_cfg.py",
+    "source_sha256": "257efab7be75656735791943fc586a41f11b83f0160c302bbccc7939d211c929",
+    "published_sha256": "257efab7be75656735791943fc586a41f11b83f0160c302bbccc7939d211c929",
+    "source_bytes": 1964,
+    "published_bytes": 1964,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/executed_source/tools/wbc_sgs_experiment.py",
+    "destination": "projects/sgs/historical_48task_20261019/executed_source/tools/wbc_sgs_experiment.py",
+    "source_sha256": "0b81c3129ca0fca6177c54a5d1d67cc91d2824c5d313a29a0b7318edc19cc64b",
+    "published_sha256": "0b81c3129ca0fca6177c54a5d1d67cc91d2824c5d313a29a0b7318edc19cc64b",
+    "source_bytes": 18318,
+    "published_bytes": 18318,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/benchmarks/go2_piper/wbc_sgs/__init__.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/__init__.py",
+    "source_sha256": "33be23a3a2887c8870487f14eea4b51a4367fae2dc3eabf490ac917c1ea15e4e",
+    "published_sha256": "33be23a3a2887c8870487f14eea4b51a4367fae2dc3eabf490ac917c1ea15e4e",
+    "source_bytes": 82,
+    "published_bytes": 82,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/benchmarks/go2_piper/wbc_sgs/calibration_pool.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/calibration_pool.json",
+    "source_sha256": "c2cc36c18f7863320ae6f9b4081045006a00a7e8dc55fc6e8a8f468114655478",
+    "published_sha256": "c2cc36c18f7863320ae6f9b4081045006a00a7e8dc55fc6e8a8f468114655478",
+    "source_bytes": 46099,
+    "published_bytes": 46099,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/benchmarks/go2_piper/wbc_sgs/metrics.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/metrics.py",
+    "source_sha256": "b00471b1a709c41b96ee56591bd1797c6f8d7db91ebb102d297bc7c97c949d02",
+    "published_sha256": "b00471b1a709c41b96ee56591bd1797c6f8d7db91ebb102d297bc7c97c949d02",
+    "source_bytes": 3080,
+    "published_bytes": 3080,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/benchmarks/go2_piper/wbc_sgs/sampler.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/sampler.py",
+    "source_sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+    "published_sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+    "source_bytes": 4514,
+    "published_bytes": 4514,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/benchmarks/go2_piper/wbc_sgs/success_protocol.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/success_protocol.json",
+    "source_sha256": "41f33c7dd4da5c85014ecc5bba24f9ad0369d8ed1393da603b4637480af7f3b4",
+    "published_sha256": "41f33c7dd4da5c85014ecc5bba24f9ad0369d8ed1393da603b4637480af7f3b4",
+    "source_bytes": 988,
+    "published_bytes": 988,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/benchmarks/go2_piper/wbc_sgs/task_pool.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/benchmarks/go2_piper/wbc_sgs/task_pool.json",
+    "source_sha256": "68d65401a2beae53ae15d33946427e5546a10ebc8e41dd788ebd4c41902f9681",
+    "published_sha256": "68d65401a2beae53ae15d33946427e5546a10ebc8e41dd788ebd4c41902f9681",
+    "source_bytes": 46082,
+    "published_bytes": 46082,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/docs/wbc_sgs/CALIBRATION_AND_ACCEPTANCE.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/CALIBRATION_AND_ACCEPTANCE.json",
+    "source_sha256": "c10b7a2f62d00a520c7f5aa066d9f3f8a3c63987cc18cd864b76924242fb9a9d",
+    "published_sha256": "0123a635741a119d1ea9cc0ef7a9805e0eba6ebde5f554ecd11b8fc35eaa136d",
+    "source_bytes": 4642,
+    "published_bytes": 4644,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Normalized JSON and sanitized decoded machine paths; numerical values preserved"
+    ]
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/docs/wbc_sgs/FROZEN_INPUTS.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/FROZEN_INPUTS.json",
+    "source_sha256": "e5d296d0b74a428aa6469b076c7b224545a7ee6060f6bd2ceda86830c22df849",
+    "published_sha256": "cf17c8dc884dc40946d7f81965491b266c87dc1e12f4471af7aeca8b6894e055",
+    "source_bytes": 30368,
+    "published_bytes": 30402,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Normalized JSON and sanitized decoded machine paths; numerical values preserved"
+    ]
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/docs/wbc_sgs/ORIGINAL_WBC_COMPATIBILITY.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/ORIGINAL_WBC_COMPATIBILITY.json",
+    "source_sha256": "69c99ed25337fb1cc571d5b973d3bd3b31ed049ebecbaf4d97bebe26d09560b1",
+    "published_sha256": "69c99ed25337fb1cc571d5b973d3bd3b31ed049ebecbaf4d97bebe26d09560b1",
+    "source_bytes": 205,
+    "published_bytes": 205,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/docs/wbc_sgs/PILOT_PLAN.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/PILOT_PLAN.json",
+    "source_sha256": "de212f342ca057468a2576d151fef8920145ccacb7febd24a90ee3cb7c514192",
+    "published_sha256": "de212f342ca057468a2576d151fef8920145ccacb7febd24a90ee3cb7c514192",
+    "source_bytes": 2076,
+    "published_bytes": 2076,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/docs/wbc_sgs/RESUME_REPAIR_ACCEPTANCE.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/RESUME_REPAIR_ACCEPTANCE.json",
+    "source_sha256": "d8875d1ca9071399cde6d64d4489542113c10dfdca06049268caabcbc50bd26c",
+    "published_sha256": "ea48a1ed270ddad78e91a9f5057f488352a3d3d7419355bbe14f5da1b4b14e52",
+    "source_bytes": 1567,
+    "published_bytes": 1568,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Normalized JSON and sanitized decoded machine paths; numerical values preserved"
+    ]
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/docs/wbc_sgs/fixed_learning_curve.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/fixed_learning_curve.json",
+    "source_sha256": "2ec3aece93283d05ba3247eb25775f919a60ac1caedb00cf85db71ea9172692d",
+    "published_sha256": "2ec3aece93283d05ba3247eb25775f919a60ac1caedb00cf85db71ea9172692d",
+    "source_bytes": 1402,
+    "published_bytes": 1402,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/docs/wbc_sgs/results.json",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/docs/wbc_sgs/results.json",
+    "source_sha256": "54450f6ce248aa8a574135ac8d2186a54cc43902faf9813d869882a71118b88d",
+    "published_sha256": "54450f6ce248aa8a574135ac8d2186a54cc43902faf9813d869882a71118b88d",
+    "source_bytes": 18776,
+    "published_bytes": 18776,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/__init__.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/__init__.py",
+    "source_sha256": "cd5634354aeb49f169c6bdb3446a6ab59c43fd44dc4ef4aab11176f0819defcf",
+    "published_sha256": "cd5634354aeb49f169c6bdb3446a6ab59c43fd44dc4ef4aab11176f0819defcf",
+    "source_bytes": 451,
+    "published_bytes": 451,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/commands.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/commands.py",
+    "source_sha256": "fc92b1a67675a801c017524e34f4c6ecea60cff9ffcbbff19977d234c30cc4d6",
+    "published_sha256": "fc92b1a67675a801c017524e34f4c6ecea60cff9ffcbbff19977d234c30cc4d6",
+    "source_bytes": 1388,
+    "published_bytes": 1388,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env.py",
+    "source_sha256": "29dd62939d08b5027e80d6d1d6d41bbc1cdb8220df258225ed127fd0026b52ee",
+    "published_sha256": "29dd62939d08b5027e80d6d1d6d41bbc1cdb8220df258225ed127fd0026b52ee",
+    "source_bytes": 8889,
+    "published_bytes": 8889,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env_cfg.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/source/LeggedManip_Lab/LeggedManip_Lab/tasks/manager_based/wbc_sgs/env_cfg.py",
+    "source_sha256": "257efab7be75656735791943fc586a41f11b83f0160c302bbccc7939d211c929",
+    "published_sha256": "257efab7be75656735791943fc586a41f11b83f0160c302bbccc7939d211c929",
+    "source_bytes": 1964,
+    "published_bytes": 1964,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/tests/test_wbc_sgs.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/tests/test_wbc_sgs.py",
+    "source_sha256": "6b88cf4bad7e9fd0d706f3a3054294ecbdebd6855a406b710fab81eafeb5e8b8",
+    "published_sha256": "6b88cf4bad7e9fd0d706f3a3054294ecbdebd6855a406b710fab81eafeb5e8b8",
+    "source_bytes": 4156,
+    "published_bytes": 4156,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/tools/make_wbc_sgs_pool.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/tools/make_wbc_sgs_pool.py",
+    "source_sha256": "757e36355d30631ae822cefbcfcffc82abe5d093b3230797b05696eb07192ed3",
+    "published_sha256": "757e36355d30631ae822cefbcfcffc82abe5d093b3230797b05696eb07192ed3",
+    "source_bytes": 2501,
+    "published_bytes": 2501,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/tools/report_wbc_sgs.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/tools/report_wbc_sgs.py",
+    "source_sha256": "33124daab80266fefda8de6686de6912b28e30fb6eb318e2a886bcf896ac4bae",
+    "published_sha256": "33124daab80266fefda8de6686de6912b28e30fb6eb318e2a886bcf896ac4bae",
+    "source_bytes": 13421,
+    "published_bytes": 13421,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/current_source/tools/wbc_sgs_experiment.py",
+    "destination": "projects/sgs/historical_48task_20261019/current_source/tools/wbc_sgs_experiment.py",
+    "source_sha256": "323bce36cb78f09c2f103b03be3a3cb3fc6ae7d188bf556409ccecbbc8741795",
+    "published_sha256": "323bce36cb78f09c2f103b03be3a3cb3fc6ae7d188bf556409ccecbbc8741795",
+    "source_bytes": 19223,
+    "published_bytes": 19223,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/results.json",
+    "destination": "projects/sgs/historical_48task_20261019/results/results.json",
+    "source_sha256": "54450f6ce248aa8a574135ac8d2186a54cc43902faf9813d869882a71118b88d",
+    "published_sha256": "54450f6ce248aa8a574135ac8d2186a54cc43902faf9813d869882a71118b88d",
+    "source_bytes": 18776,
+    "published_bytes": 18776,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_wbc_sgs_20261019/fixed_learning_curve.json",
+    "destination": "projects/sgs/historical_48task_20261019/results/fixed_learning_curve.json",
+    "source_sha256": "2ec3aece93283d05ba3247eb25775f919a60ac1caedb00cf85db71ea9172692d",
+    "published_sha256": "2ec3aece93283d05ba3247eb25775f919a60ac1caedb00cf85db71ea9172692d",
+    "source_bytes": 1402,
+    "published_bytes": 1402,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/shared_sgs/__init__.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/__init__.py",
+    "source_sha256": "b0954f158878a383da1a614368033829648e9ec6543d88756a63659fff38caf0",
+    "published_sha256": "b0954f158878a383da1a614368033829648e9ec6543d88756a63659fff38caf0",
+    "source_bytes": 439,
+    "published_bytes": 439,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/shared_sgs/catalog.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/catalog.py",
+    "source_sha256": "6200d0842c904e1e6595453a20e0ea27634cf43da600c418059e3da094e46764",
+    "published_sha256": "6200d0842c904e1e6595453a20e0ea27634cf43da600c418059e3da094e46764",
+    "source_bytes": 2861,
+    "published_bytes": 2861,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/shared_sgs/feedback.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/feedback.py",
+    "source_sha256": "a017bf4742d85bb82bfbb8463791690cee0afd0823a370d943fb3f9f512ca74f",
+    "published_sha256": "a017bf4742d85bb82bfbb8463791690cee0afd0823a370d943fb3f9f512ca74f",
+    "source_bytes": 2515,
+    "published_bytes": 2515,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/shared_sgs/session.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/session.py",
+    "source_sha256": "7eecce52934bcd5a39e2bd04ef706d015ed08f0513fa9824c669a668858ff54a",
+    "published_sha256": "7eecce52934bcd5a39e2bd04ef706d015ed08f0513fa9824c669a668858ff54a",
+    "source_bytes": 16968,
+    "published_bytes": 16968,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/shared_sgs/vendor/__init__.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/vendor/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_bytes": 0,
+    "published_bytes": 0,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/shared_sgs/vendor/sampler.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/vendor/sampler.py",
+    "source_sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+    "published_sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+    "source_bytes": 4514,
+    "published_bytes": 4514,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/integration/__init__.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/integration/__init__.py",
+    "source_sha256": "336d70cbdaf518eab34e1a0fee7bdd745b631952d553428540ad236cb16c8f1e",
+    "published_sha256": "336d70cbdaf518eab34e1a0fee7bdd745b631952d553428540ad236cb16c8f1e",
+    "source_bytes": 70,
+    "published_bytes": 70,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/integration/pre_reset.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/integration/pre_reset.py",
+    "source_sha256": "dda64a9dc2a269c0b374dbf6f0261deb4ecc7fdffb580839685738627556ef20",
+    "published_sha256": "dda64a9dc2a269c0b374dbf6f0261deb4ecc7fdffb580839685738627556ef20",
+    "source_bytes": 5200,
+    "published_bytes": 5200,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/tests/test_shared_sgs.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/tests/test_shared_sgs.py",
+    "source_sha256": "fbb9a1f4b961ead87436391aea966c14504aaa7638372579a611cd4839bab64b",
+    "published_sha256": "fbb9a1f4b961ead87436391aea966c14504aaa7638372579a611cd4839bab64b",
+    "source_bytes": 11211,
+    "published_bytes": 11211,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/__init__.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/__init__.py",
+    "source_sha256": "3c1e97153c0581cafddea394646ca399f56898727d46b10065ab6909b8bfa920",
+    "published_sha256": "3c1e97153c0581cafddea394646ca399f56898727d46b10065ab6909b8bfa920",
+    "source_bytes": 86,
+    "published_bytes": 86,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/config.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/config.py",
+    "source_sha256": "64a0cb477790bc25e70c6fddddff05dcaf4d6cfd84f52e35cbac25d627ced56e",
+    "published_sha256": "64a0cb477790bc25e70c6fddddff05dcaf4d6cfd84f52e35cbac25d627ced56e",
+    "source_bytes": 7496,
+    "published_bytes": 7496,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/mdp.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/mdp.py",
+    "source_sha256": "e5b1206233efd404d5c206054b7a1ff6ba6afee6776178f9620944d67fce2c85",
+    "published_sha256": "e5b1206233efd404d5c206054b7a1ff6ba6afee6776178f9620944d67fce2c85",
+    "source_bytes": 8793,
+    "published_bytes": 8793,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/profiles.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/task_suite/profiles.json",
+    "source_sha256": "01cee38b06c476f731d039dea965c086d3f92073ce5cb3695d3bef4ed5b5f0a3",
+    "published_sha256": "01cee38b06c476f731d039dea965c086d3f92073ce5cb3695d3bef4ed5b5f0a3",
+    "source_bytes": 4509,
+    "published_bytes": 4509,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/analyze_suite.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/analyze_suite.py",
+    "source_sha256": "e3141332e8c439dc0828e1d7dc5cfa9b32df0a4409c5374cec6a2ebde50e3762",
+    "published_sha256": "e3141332e8c439dc0828e1d7dc5cfa9b32df0a4409c5374cec6a2ebde50e3762",
+    "source_bytes": 30185,
+    "published_bytes": 30185,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_candidate_levels.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_candidate_levels.py",
+    "source_sha256": "5e52ca1eba2fb606c0aef974cbed07927ee81da22d979c010755433e0c312155",
+    "published_sha256": "5e52ca1eba2fb606c0aef974cbed07927ee81da22d979c010755433e0c312155",
+    "source_bytes": 9782,
+    "published_bytes": 9782,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_geometry_runtime.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_geometry_runtime.py",
+    "source_sha256": "039f5b2b69f166556dfd1a436fcddd4045588e7ff7774ad343dcc0a9453d00b7",
+    "published_sha256": "039f5b2b69f166556dfd1a436fcddd4045588e7ff7774ad343dcc0a9453d00b7",
+    "source_bytes": 13448,
+    "published_bytes": 13448,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_reachability.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_reachability.py",
+    "source_sha256": "216591cd48b909c87c051fd8b3c83efa61372276dfc6a6251d94e97deac95e8f",
+    "published_sha256": "216591cd48b909c87c051fd8b3c83efa61372276dfc6a6251d94e97deac95e8f",
+    "source_bytes": 5895,
+    "published_bytes": 5895,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_suite_static.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/audit_suite_static.py",
+    "source_sha256": "2a8539cb6ac69f86a8b31981125089044a034bf70277fe31b868e67650311af4",
+    "published_sha256": "2a8539cb6ac69f86a8b31981125089044a034bf70277fe31b868e67650311af4",
+    "source_bytes": 4588,
+    "published_bytes": 4588,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/build_admission.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/build_admission.py",
+    "source_sha256": "44b3cfd67dd3b356c0cf23f357eb69759cd9a0c0a34e54707fd29dbedfd7f160",
+    "published_sha256": "44b3cfd67dd3b356c0cf23f357eb69759cd9a0c0a34e54707fd29dbedfd7f160",
+    "source_bytes": 18019,
+    "published_bytes": 18019,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/build_admission_v2.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/build_admission_v2.py",
+    "source_sha256": "7a740518a6f06a68a6aa582adcc11c22792e29ab3b05d143ae9cfa2796624890",
+    "published_sha256": "7a740518a6f06a68a6aa582adcc11c22792e29ab3b05d143ae9cfa2796624890",
+    "source_bytes": 18790,
+    "published_bytes": 18790,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/check_input_migration.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/check_input_migration.py",
+    "source_sha256": "84707ba94a1bec2c4297ff30d3f026e2a9e8a60c2bf1ba2c336c10d232763072",
+    "published_sha256": "84707ba94a1bec2c4297ff30d3f026e2a9e8a60c2bf1ba2c336c10d232763072",
+    "source_bytes": 12566,
+    "published_bytes": 12566,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/evaluate_t1_scratch.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/evaluate_t1_scratch.py",
+    "source_sha256": "8b1a0c2d0d77c99a79b864c30bea6c53484fca8202d60e4075aecf5750b643c2",
+    "published_sha256": "8b1a0c2d0d77c99a79b864c30bea6c53484fca8202d60e4075aecf5750b643c2",
+    "source_bytes": 7781,
+    "published_bytes": 7781,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/export_delivery_manifest.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/export_delivery_manifest.py",
+    "source_sha256": "1c68098e9bf7ceb90e1ea7358ef1c194dcebafd50f87c95baffbdbf0a1b96ddb",
+    "published_sha256": "1c68098e9bf7ceb90e1ea7358ef1c194dcebafd50f87c95baffbdbf0a1b96ddb",
+    "source_bytes": 3159,
+    "published_bytes": 3159,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/ppo_smoke_gate.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/ppo_smoke_gate.py",
+    "source_sha256": "109d52e74743d679a93e8d7b626edfbeddcfb8284a47fb6745951b214407f868",
+    "published_sha256": "f49152d79af150d788c02e67edc11f4f5f3356a6707a7df7e008b1808a41aaa9",
+    "source_bytes": 11275,
+    "published_bytes": 11319,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/prepare_candidate_smoke.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/prepare_candidate_smoke.py",
+    "source_sha256": "38b44d6ec030bd1c0bfec947cc0b4418a8865f8d53156e7cb3aef374bc3fb689",
+    "published_sha256": "5e483f2f600c6b7e990f91a1923a4bdf59de74b421c5b63e862d24d0c198f407",
+    "source_bytes": 5795,
+    "published_bytes": 5839,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/probe_first_update.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/probe_first_update.py",
+    "source_sha256": "6ffc3c8797ad291422b7186615b219051e22acf8af86255210c7742d585fb32f",
+    "published_sha256": "2f65271379d6f9bf15f3b2180482d1f078a7482a7b72987137eac6440c9c978f",
+    "source_bytes": 12316,
+    "published_bytes": 12360,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_acceptance_stage.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_acceptance_stage.py",
+    "source_sha256": "727eb4b6d6b88e580d696c15968c55eb219a8ff8acce219871554a14539fbc91",
+    "published_sha256": "7daf6b52f838d72886dd61d856dbc77fba638bc8379b799abb4d60ef1b2984ce",
+    "source_bytes": 2412,
+    "published_bytes": 2456,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_bounded_ppo.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_bounded_ppo.py",
+    "source_sha256": "0cdee9f2ca26afdc318f57a84fd710c535f1a98acf4bcfcf1e4d29ea3e6687ff",
+    "published_sha256": "397b698c46e8585b47c748e15c4e6c6453f5c855069acb95da586f30720d0b66",
+    "source_bytes": 4804,
+    "published_bytes": 4848,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_candidate_smoke.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_candidate_smoke.py",
+    "source_sha256": "031ea5a542f1686f0b92ccb0693ca88c12c7663c0806fbe348780b7589e2ad20",
+    "published_sha256": "031ea5a542f1686f0b92ccb0693ca88c12c7663c0806fbe348780b7589e2ad20",
+    "source_bytes": 3920,
+    "published_bytes": 3920,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_smoke_posteval.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_smoke_posteval.py",
+    "source_sha256": "5a1e5f745e78a4e40e3301251196bd55681e8d72a4c97dac17acb2da47138c70",
+    "published_sha256": "5a1e5f745e78a4e40e3301251196bd55681e8d72a4c97dac17acb2da47138c70",
+    "source_bytes": 1859,
+    "published_bytes": 1859,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_suite.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_suite.py",
+    "source_sha256": "cae4e47343c815dd4db11218a8a1f24e58f4ad79e1edbc32ff6f019cea7075f1",
+    "published_sha256": "cae4e47343c815dd4db11218a8a1f24e58f4ad79e1edbc32ff6f019cea7075f1",
+    "source_bytes": 17957,
+    "published_bytes": 17957,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_t1_comparison.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_t1_comparison.py",
+    "source_sha256": "f3078e2f23e7c0d87bba78b26c5f9f6f6a2e419bdda0ce8d4e74719fc4f14af2",
+    "published_sha256": "b79671e3a376bb899a753a91a9d23ab474cf6e53cf173f851cd000e619321f20",
+    "source_bytes": 3274,
+    "published_bytes": 3318,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_t1_scratch.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/run_t1_scratch.py",
+    "source_sha256": "a7cb6278fba86a2eba70a6c4575d47526c7ae7611678966ce5d98a873bcce87d",
+    "published_sha256": "a724319cc179c5fd2e5d4bbbe53105fda0f52c0edbeb5e73aa7ae3f409aff4f4",
+    "source_bytes": 12231,
+    "published_bytes": 12275,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replaced historical absolute paths by explicit external-input environment resolver"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/scratch_evaluation_core.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/scratch_evaluation_core.py",
+    "source_sha256": "c5cb161c95f7ca33e2fd9ad837b16d31fb7ad2a28a773b616ce3b2e2009e6756",
+    "published_sha256": "c5cb161c95f7ca33e2fd9ad837b16d31fb7ad2a28a773b616ce3b2e2009e6756",
+    "source_bytes": 8389,
+    "published_bytes": 8389,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/scratch_observer.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/scratch_observer.py",
+    "source_sha256": "b64d3613265373f44e0e5fbd1db9a44d5b8b5ca7fc07867fdc38c82a2b921684",
+    "published_sha256": "b64d3613265373f44e0e5fbd1db9a44d5b8b5ca7fc07867fdc38c82a2b921684",
+    "source_bytes": 12014,
+    "published_bytes": 12014,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/t1_tracking_metrics.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/t1_tracking_metrics.py",
+    "source_sha256": "b83423a71008e3b12063a8aae7b1d48679c6e71cfe3193a69679f8d92c113b98",
+    "published_sha256": "b83423a71008e3b12063a8aae7b1d48679c6e71cfe3193a69679f8d92c113b98",
+    "source_bytes": 3503,
+    "published_bytes": 3503,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/task_identity.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/task_identity.py",
+    "source_sha256": "90a5206f2481d37d16760b8ac90490d07ad229a63c3eefcc33614655ee6d5f1e",
+    "published_sha256": "90a5206f2481d37d16760b8ac90490d07ad229a63c3eefcc33614655ee6d5f1e",
+    "source_bytes": 3130,
+    "published_bytes": 3130,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/telemetry.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/telemetry.py",
+    "source_sha256": "499aa0998bd331e15b584cdc47862c48f0bd4daa36b3ff7f867ced6d69a89bde",
+    "published_sha256": "499aa0998bd331e15b584cdc47862c48f0bd4daa36b3ff7f867ced6d69a89bde",
+    "source_bytes": 16567,
+    "published_bytes": 16567,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_analyze_suite.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_analyze_suite.py",
+    "source_sha256": "c9ff2c4b584aa49cbc9b389fbb1a294c4c15ff0ec1b501e17f7709401f185329",
+    "published_sha256": "c9ff2c4b584aa49cbc9b389fbb1a294c4c15ff0ec1b501e17f7709401f185329",
+    "source_bytes": 6797,
+    "published_bytes": 6797,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_build_admission.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_build_admission.py",
+    "source_sha256": "2996138ae2bf659dd40a6a4ed31dad57a9e3305da819019197b48e5530c5cbe8",
+    "published_sha256": "2996138ae2bf659dd40a6a4ed31dad57a9e3305da819019197b48e5530c5cbe8",
+    "source_bytes": 10957,
+    "published_bytes": 10957,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_ppo_smoke_gate.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_ppo_smoke_gate.py",
+    "source_sha256": "8d9969ce531e9ffba13006e8ae05fb7c4dbbd32fdbe98847abd7b0bbc45eca2f",
+    "published_sha256": "8d9969ce531e9ffba13006e8ae05fb7c4dbbd32fdbe98847abd7b0bbc45eca2f",
+    "source_bytes": 7309,
+    "published_bytes": 7309,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_t1_tracking_metrics.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/executed/tools/test_t1_tracking_metrics.py",
+    "source_sha256": "19748ce13d8f4c209063f1e657367f32b1f27fcb03a00bc5dd3513c9c7aa0e89",
+    "published_sha256": "19748ce13d8f4c209063f1e657367f32b1f27fcb03a00bc5dd3513c9c7aa0e89",
+    "source_bytes": 2260,
+    "published_bytes": 2260,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/resolved/agent.yaml",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/resolved/agent.yaml",
+    "source_sha256": "5fda080d493aaba9075bcd5e3c4ff78933e0bf625465d124ef5373d8a4014909",
+    "published_sha256": "5fda080d493aaba9075bcd5e3c4ff78933e0bf625465d124ef5373d8a4014909",
+    "source_bytes": 1200,
+    "published_bytes": 1200,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/resolved/env.yaml",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/resolved/env.yaml",
+    "source_sha256": "4716a185c2ff3ffb3c6c8667190b64617b732ccca70dba6bc7df86a478ddbd4c",
+    "published_sha256": "ff11b58dc7c0b0ead7406bba3618ea8240340c0be7aa936ea27942e51b59b7f2",
+    "source_bytes": 46847,
+    "published_bytes": 46849,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/reference/resolved/provenance.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/reference/resolved/provenance.json",
+    "source_sha256": "df957ea32723731e9e7dc2457340f0862c982699286cb45610f12a9bbe6c2545",
+    "published_sha256": "99bfe26f70b97dec4f2a793955d323be87251241caba66cd9828b1c18dc6d06a",
+    "source_bytes": 592,
+    "published_bytes": 594,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/tools/run_b1.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/tools/run_b1.py",
+    "source_sha256": "79134153a92868ca9fab49ae39e20ecc8ebd92c064b83b1ef9ed6e193037c37d",
+    "published_sha256": "79134153a92868ca9fab49ae39e20ecc8ebd92c064b83b1ef9ed6e193037c37d",
+    "source_bytes": 9891,
+    "published_bytes": 9891,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/protocol/task_catalog.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/protocol/task_catalog.json",
+    "source_sha256": "d0be523840e1b022704db24b2e5b2522c5dde64aaebd3c81e439a3cbff987393",
+    "published_sha256": "d0be523840e1b022704db24b2e5b2522c5dde64aaebd3c81e439a3cbff987393",
+    "source_bytes": 5820,
+    "published_bytes": 5820,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/protocol/shared_interface.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/protocol/shared_interface.json",
+    "source_sha256": "cf31d6e61b95c3cee718b723a6cae67e3c8e0f8ed9579460be0d78507400cb92",
+    "published_sha256": "a559831f6ae3d8a8953bc31bae39341a48ffe355907484a71af7e4238061cd34",
+    "source_bytes": 4457,
+    "published_bytes": 4291,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators",
+      "Normalized JSON and sanitized decoded machine paths; numerical values preserved"
+    ]
+  },
+  {
+    "source": "go2_piper_b1_sgs_20261025_work/protocol/admission.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/protocol/admission.json",
+    "source_sha256": "a864d9bf23b5cffffb48111fb42e9436e4bf5433f63ce46c55d10609e8b4e80f",
+    "published_sha256": "a864d9bf23b5cffffb48111fb42e9436e4bf5433f63ce46c55d10609e8b4e80f",
+    "source_bytes": 550,
+    "published_bytes": 550,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/b2/__init__.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/__init__.py",
+    "source_sha256": "f0fbd549b3dfc3b43a90106722619665d1e81dc32ea73249cd672d4460da69e2",
+    "published_sha256": "f0fbd549b3dfc3b43a90106722619665d1e81dc32ea73249cd672d4460da69e2",
+    "source_bytes": 79,
+    "published_bytes": 79,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/b2/dependencies.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/dependencies.py",
+    "source_sha256": "cd644e33ccf59835dea526d771f0468401b5e34dfa951781aca1ab1a12d2ec21",
+    "published_sha256": "cd644e33ccf59835dea526d771f0468401b5e34dfa951781aca1ab1a12d2ec21",
+    "source_bytes": 2240,
+    "published_bytes": 2240,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/b2/logging.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/logging.py",
+    "source_sha256": "dc60accdc6664febcdfdc53ba151379f141cee7f722f282a751b8430aa3ff831",
+    "published_sha256": "dc60accdc6664febcdfdc53ba151379f141cee7f722f282a751b8430aa3ff831",
+    "source_bytes": 536,
+    "published_bytes": 536,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/b2/metrics.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/metrics.py",
+    "source_sha256": "e858c0935cd5d6f6b05ccff2f0f1b1a9b5b5391fd34d7e95fee9b73bc1fbaf2f",
+    "published_sha256": "e858c0935cd5d6f6b05ccff2f0f1b1a9b5b5391fd34d7e95fee9b73bc1fbaf2f",
+    "source_bytes": 4955,
+    "published_bytes": 4955,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/b2/runtime.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/runtime.py",
+    "source_sha256": "1820f9c0faaedb3a0d8aa2e67ccf01e571fd8b6d9dad69ebb3fa134f66dcff01",
+    "published_sha256": "1820f9c0faaedb3a0d8aa2e67ccf01e571fd8b6d9dad69ebb3fa134f66dcff01",
+    "source_bytes": 6340,
+    "published_bytes": 6340,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/b2/state.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/state.py",
+    "source_sha256": "75b3b631d61ae9e81ae33eedaf02ae7ec129751065f6bb566e91c46dc5185a51",
+    "published_sha256": "75b3b631d61ae9e81ae33eedaf02ae7ec129751065f6bb566e91c46dc5185a51",
+    "source_bytes": 1472,
+    "published_bytes": 1472,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/b2/task_commands.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/b2/task_commands.py",
+    "source_sha256": "251d0d9a461681df0df28ff06c5d7d109489965c79eb525f0fe7057c83ddc3f5",
+    "published_sha256": "251d0d9a461681df0df28ff06c5d7d109489965c79eb525f0fe7057c83ddc3f5",
+    "source_bytes": 3636,
+    "published_bytes": 3636,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/tests/test_common_cpu.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/tests/test_common_cpu.py",
+    "source_sha256": "e6746db3177c3b084a4b1d7b7b7d39a6a4acd853b71768fc908ec90ef53a1db0",
+    "published_sha256": "e6746db3177c3b084a4b1d7b7b7d39a6a4acd853b71768fc908ec90ef53a1db0",
+    "source_bytes": 4851,
+    "published_bytes": 4851,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/tests/test_real_composition_cpu.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/tests/test_real_composition_cpu.py",
+    "source_sha256": "2d10e52ff4365d149fd24840941856bcdbe6ba78468ab474a014a20b3915d746",
+    "published_sha256": "3530202e00e34637f8afe2e412ae6c95abf6f38e311778e0c16ca55d85e8dc72",
+    "source_bytes": 7086,
+    "published_bytes": 7254,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Explicitly skip model-dependent test class when excluded authorized geometry is unavailable"
+    ]
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/protocol/common_protocol.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/protocol/common_protocol.json",
+    "source_sha256": "4f79c8aece6f3e1674c0c49b6b121a50a1277474b6d27344bc823bab66178033",
+    "published_sha256": "66a7e67e3786302e27c3c03966b2893571a909370e6486c3031c1e8e384ceb5a",
+    "source_bytes": 11565,
+    "published_bytes": 11512,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators"
+    ]
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/protocol/task_support.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/protocol/task_support.json",
+    "source_sha256": "44749d2d825bbf485730a0a6c0727be75f8b40e0604ebe870c7b0f953451c0d6",
+    "published_sha256": "44749d2d825bbf485730a0a6c0727be75f8b40e0604ebe870c7b0f953451c0d6",
+    "source_bytes": 5329,
+    "published_bytes": 5329,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/protocol/admission.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/protocol/admission.json",
+    "source_sha256": "30a0ff5f10a05ae23f9d757558cd838222879fb600377dfe319c2a36811d4cf0",
+    "published_sha256": "30a0ff5f10a05ae23f9d757558cd838222879fb600377dfe319c2a36811d4cf0",
+    "source_bytes": 803,
+    "published_bytes": 803,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/tools/run_b2.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/tools/run_b2.py",
+    "source_sha256": "209470fd9dd22c060c9c0d51fa5d3853eaf133a15e752e0d333d41143c8c639f",
+    "published_sha256": "209470fd9dd22c060c9c0d51fa5d3853eaf133a15e752e0d333d41143c8c639f",
+    "source_bytes": 5253,
+    "published_bytes": 5253,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b2_20261025_work/tools/evaluate_b2.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b2_20261025_work/tools/evaluate_b2.py",
+    "source_sha256": "754c386bae22adcce66e849a0256f04262fe222aa6539da16453a67655824df5",
+    "published_sha256": "754c386bae22adcce66e849a0256f04262fe222aa6539da16453a67655824df5",
+    "source_bytes": 428,
+    "published_bytes": 428,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/shared_ik/__init__.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/__init__.py",
+    "source_sha256": "4708a2045ea156975fe7deea9e42d7967d1a45d2041b4cbbbcf1be6e5dbc9d08",
+    "published_sha256": "4708a2045ea156975fe7deea9e42d7967d1a45d2041b4cbbbcf1be6e5dbc9d08",
+    "source_bytes": 279,
+    "published_bytes": 279,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/shared_ik/controller.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/controller.py",
+    "source_sha256": "4a309509ac7bac3d5d7aa137696db943eba8d0b316c8efeb0f28b521ae0d5eb7",
+    "published_sha256": "4a309509ac7bac3d5d7aa137696db943eba8d0b316c8efeb0f28b521ae0d5eb7",
+    "source_bytes": 7742,
+    "published_bytes": 7742,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/shared_ik/initialization.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/initialization.py",
+    "source_sha256": "ef82553144be27f0693d19ae2c8966b22026f35ff3d794e949c2dedc5e5d2a09",
+    "published_sha256": "ef82553144be27f0693d19ae2c8966b22026f35ff3d794e949c2dedc5e5d2a09",
+    "source_bytes": 1849,
+    "published_bytes": 1849,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/shared_ik/mapping.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/mapping.py",
+    "source_sha256": "43121060843d34245eb101ba61c31ac50d40944712e7995141f1cf6949c8d9ac",
+    "published_sha256": "43121060843d34245eb101ba61c31ac50d40944712e7995141f1cf6949c8d9ac",
+    "source_bytes": 5502,
+    "published_bytes": 5502,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/shared_ik/model.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/model.py",
+    "source_sha256": "a496c67395280062f9e351c72274d51b67e10f51d6c0569000047d59d02947fb",
+    "published_sha256": "d7d817c251564c49f8f5949a434eeafec19c97d181f10dc1cb9702b4beddc1a8",
+    "source_bytes": 6376,
+    "published_bytes": 6615,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes"
+    ]
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/shared_ik/runtime.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/runtime.py",
+    "source_sha256": "b02dd041cda550b9c06b7100acd9d59ff49736f85ab55232fc041c5170229a79",
+    "published_sha256": "b02dd041cda550b9c06b7100acd9d59ff49736f85ab55232fc041c5170229a79",
+    "source_bytes": 6123,
+    "published_bytes": 6123,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/shared_ik/settings.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/settings.py",
+    "source_sha256": "1b2f95d177887889b0133d9967892df3e1c600df1b01a284c4512bcc26f421ce",
+    "published_sha256": "1b2f95d177887889b0133d9967892df3e1c600df1b01a284c4512bcc26f421ce",
+    "source_bytes": 657,
+    "published_bytes": 657,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/shared_ik/trace.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/shared_ik/trace.py",
+    "source_sha256": "69237e974c539678e47f4493d784543e02e0db4db842d1c4067afe1060d47494",
+    "published_sha256": "69237e974c539678e47f4493d784543e02e0db4db842d1c4067afe1060d47494",
+    "source_bytes": 2284,
+    "published_bytes": 2284,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/tests/test_shared_ik.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/tests/test_shared_ik.py",
+    "source_sha256": "48bbb889adda365ff09e6829dcb5248a3a5fc7af631d6fbf55fee23c19c5ae83",
+    "published_sha256": "93b4dbd2c048231dd1548b98c2cd425e7511409b2906fcfff16193aec638c4a8",
+    "source_bytes": 11054,
+    "published_bytes": 11222,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Explicitly skip model-dependent test class when excluded authorized geometry is unavailable"
+    ]
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/tools/run_b3.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/tools/run_b3.py",
+    "source_sha256": "a141f203f86b5ca16c6f0a6f7d47cf0c7c81a8c04bfd72a390d494fedd916143",
+    "published_sha256": "a141f203f86b5ca16c6f0a6f7d47cf0c7c81a8c04bfd72a390d494fedd916143",
+    "source_bytes": 450,
+    "published_bytes": 450,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/tools/evaluate_b3.py",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/tools/evaluate_b3.py",
+    "source_sha256": "3c908e5f47174d07ecf047f65487eaa82b51a5ff84916b8c1d16dc400b72d059",
+    "published_sha256": "3c908e5f47174d07ecf047f65487eaa82b51a5ff84916b8c1d16dc400b72d059",
+    "source_bytes": 5671,
+    "published_bytes": 5671,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/frozen/native_binding_fixture.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/frozen/native_binding_fixture.json",
+    "source_sha256": "1840abeec73a64ce8fd9128bc382494307bb7ed00835b1443d93c2c590f3805e",
+    "published_sha256": "3a2406dd45a858d1626dd6d6cff018f028e0ed44becf27dd2eec938fca236861",
+    "source_bytes": 1697,
+    "published_bytes": 1673,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Normalized JSON and sanitized decoded machine paths; numerical values preserved"
+    ]
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/frozen/native_runner_cfg.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/frozen/native_runner_cfg.json",
+    "source_sha256": "e87e0acf36ff94fa628c7bea8afa529d9abca8656a3a52c11bcfb23298f073b5",
+    "published_sha256": "e87e0acf36ff94fa628c7bea8afa529d9abca8656a3a52c11bcfb23298f073b5",
+    "source_bytes": 1644,
+    "published_bytes": 1644,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/frozen/latest_resolved_summary.json",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/frozen/latest_resolved_summary.json",
+    "source_sha256": "6add5618240ace2f9a7240eeced981ed2611b44a13f63aa88713a4cb46f9254a",
+    "published_sha256": "6b3f4d6ffa703583d5f447c9048eb88a31710f84a7afe6788507e1d05c0de13b",
+    "source_bytes": 39913,
+    "published_bytes": 39866,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Private machine paths replaced by logical locators",
+      "Normalized JSON and sanitized decoded machine paths; numerical values preserved"
+    ]
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/tools/diagnose_go2_piper_gradients.py",
+    "destination": "projects/ppo_gradient_lab/tools/diagnose_go2_piper_gradients.py",
+    "source_sha256": "bcbe24bbb7ff6e3d96d9e075659c0eb70d039354009ef58ba2edfb24665e92bc",
+    "published_sha256": "bcbe24bbb7ff6e3d96d9e075659c0eb70d039354009ef58ba2edfb24665e92bc",
+    "source_bytes": 17251,
+    "published_bytes": 17251,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/tools/build_go2_gradient_bundle.py",
+    "destination": "projects/ppo_gradient_lab/tools/build_go2_gradient_bundle.py",
+    "source_sha256": "943b59da1341ce8bfdafe4dd0ebd38b824994b52c592913deaa1596ac42d8c6b",
+    "published_sha256": "943b59da1341ce8bfdafe4dd0ebd38b824994b52c592913deaa1596ac42d8c6b",
+    "source_bytes": 2534,
+    "published_bytes": 2534,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/tools/analyze_go2_gradient_probe.py",
+    "destination": "projects/ppo_gradient_lab/tools/analyze_go2_gradient_probe.py",
+    "source_sha256": "e10f74ab5c7764646819f4970a4f861c9fa099f5e519f8dba28db65e39b7fd59",
+    "published_sha256": "e10f74ab5c7764646819f4970a4f861c9fa099f5e519f8dba28db65e39b7fd59",
+    "source_bytes": 15556,
+    "published_bytes": 15556,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/tools/ppo_update_microscope.py",
+    "destination": "projects/ppo_gradient_lab/tools/ppo_update_microscope.py",
+    "source_sha256": "98e32942955576940b35fe77b34dc78e869426751b27c240bbac1905550e9f7d",
+    "published_sha256": "98e32942955576940b35fe77b34dc78e869426751b27c240bbac1905550e9f7d",
+    "source_bytes": 28836,
+    "published_bytes": 28836,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/tools/summarize_ppo_microscope.py",
+    "destination": "projects/ppo_gradient_lab/tools/summarize_ppo_microscope.py",
+    "source_sha256": "cde8a69df1c7b3774037e8868baec74ee4034356f05badca6c9fb37dfdb61724",
+    "published_sha256": "cde8a69df1c7b3774037e8868baec74ee4034356f05badca6c9fb37dfdb61724",
+    "source_bytes": 7229,
+    "published_bytes": 7229,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/tools/decompose_ppo_microscope_clip.py",
+    "destination": "projects/ppo_gradient_lab/tools/decompose_ppo_microscope_clip.py",
+    "source_sha256": "71de364a9cd01a07e68b79e9d00f6257c96098083bb5fc757684270f47813aea",
+    "published_sha256": "71de364a9cd01a07e68b79e9d00f6257c96098083bb5fc757684270f47813aea",
+    "source_bytes": 4047,
+    "published_bytes": 4047,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/tests/test_go2_gradient_probe.py",
+    "destination": "projects/ppo_gradient_lab/tests/test_go2_gradient_probe.py",
+    "source_sha256": "f81e7b9d0e0b4859e71ebfb3a6fbc01cec16e4dcd596ead674fbef5e39b7a1cd",
+    "published_sha256": "f81e7b9d0e0b4859e71ebfb3a6fbc01cec16e4dcd596ead674fbef5e39b7a1cd",
+    "source_bytes": 3995,
+    "published_bytes": 3995,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/tests/test_go2_piper_gradients.py",
+    "destination": "projects/ppo_gradient_lab/tests/test_go2_piper_gradients.py",
+    "source_sha256": "820cc33853df71c5238c8db1429db6ee14bababd9df558eac7e341644a2c36b8",
+    "published_sha256": "820cc33853df71c5238c8db1429db6ee14bababd9df558eac7e341644a2c36b8",
+    "source_bytes": 11130,
+    "published_bytes": 11130,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/tests/test_ppo_update_microscope.py",
+    "destination": "projects/ppo_gradient_lab/tests/test_ppo_update_microscope.py",
+    "source_sha256": "adb9e7ea65f7c2331609f7ebca6069111b090b0db0e10fb4a04f1f9e4e9c8fc4",
+    "published_sha256": "adb9e7ea65f7c2331609f7ebca6069111b090b0db0e10fb4a04f1f9e4e9c8fc4",
+    "source_bytes": 16763,
+    "published_bytes": 16763,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/docs/go2_piper_gradient_audit/REWARD_GROUPS.json",
+    "destination": "projects/ppo_gradient_lab/protocol/REWARD_GROUPS.json",
+    "source_sha256": "704dbe919270ea85ec2b7476f2a645ea75b63f1e31c48b260c05b78c1cfc41af",
+    "published_sha256": "704dbe919270ea85ec2b7476f2a645ea75b63f1e31c48b260c05b78c1cfc41af",
+    "source_bytes": 2422,
+    "published_bytes": 2422,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/docs/go2_piper_gradient_audit/evidence_microscope/SUMMARY.json",
+    "destination": "projects/ppo_gradient_lab/results/microscope/SUMMARY.json",
+    "source_sha256": "c5f754088a41af84fc5791402dbfd770cbe2939b7cbead95bd5d22877f90035d",
+    "published_sha256": "c5f754088a41af84fc5791402dbfd770cbe2939b7cbead95bd5d22877f90035d",
+    "source_bytes": 74708,
+    "published_bytes": 74708,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/docs/go2_piper_gradient_audit/evidence_microscope/CALIBRATION.json",
+    "destination": "projects/ppo_gradient_lab/results/microscope/CALIBRATION.json",
+    "source_sha256": "e0c53417203647d8c421c2644050cf915284c87b1a8c54f7b4eedcf48a620736",
+    "published_sha256": "e0c53417203647d8c421c2644050cf915284c87b1a8c54f7b4eedcf48a620736",
+    "source_bytes": 107041,
+    "published_bytes": 107041,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/docs/go2_piper_gradient_audit/evidence_microscope/CLIP_DECOMPOSITION.json",
+    "destination": "projects/ppo_gradient_lab/results/microscope/CLIP_DECOMPOSITION.json",
+    "source_sha256": "16368a33f60e1be3f063a7b566d68ecae1a9201b38fa1644f0c3f5122107cf34",
+    "published_sha256": "16368a33f60e1be3f063a7b566d68ecae1a9201b38fa1644f0c3f5122107cf34",
+    "source_bytes": 57958,
+    "published_bytes": 57958,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/docs/go2_piper_gradient_audit/evidence_microscope/VALUE_PROBES.json",
+    "destination": "projects/ppo_gradient_lab/results/microscope/VALUE_PROBES.json",
+    "source_sha256": "fa31e06c4b8b13746bd010192e617d054a4fbe6c33bfb63e6fbab22c21a401ab",
+    "published_sha256": "fa31e06c4b8b13746bd010192e617d054a4fbe6c33bfb63e6fbab22c21a401ab",
+    "source_bytes": 2668,
+    "published_bytes": 2668,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/docs/go2_piper_gradient_audit/evidence_microscope/PREREGISTRATION.json",
+    "destination": "projects/ppo_gradient_lab/results/microscope/PREREGISTRATION.json",
+    "source_sha256": "2c242cef11564d6f06ade29e62ea71497b09c271e1ea03c4a6c6977f096fe32f",
+    "published_sha256": "aee195dd5505873f3675fbafae800fb79bfa32810f6d48b8343f3e299fdc0e0a",
+    "source_bytes": 1285,
+    "published_bytes": 1391,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Normalized JSON and sanitized decoded machine paths; numerical values preserved"
+    ]
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/docs/go2_piper_gradient_audit/evidence_microscope/CROSS_SEED.json",
+    "destination": "projects/ppo_gradient_lab/results/microscope/CROSS_SEED.json",
+    "source_sha256": "7af0a34acdfdca8d7392231f8bafb42cf81664f025a64e9893d604938ca48b54",
+    "published_sha256": "7af0a34acdfdca8d7392231f8bafb42cf81664f025a64e9893d604938ca48b54",
+    "source_bytes": 5676,
+    "published_bytes": 5676,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_gradient_audit_work/docs/go2_piper_gradient_audit/evidence_microscope/PAIRED_TABLE.md",
+    "destination": "projects/ppo_gradient_lab/results/microscope/PAIRED_TABLE.md",
+    "source_sha256": "7b170262b4b27b271b39c6d481d60e3964db735772b6be834155541c5d57e31f",
+    "published_sha256": "7b170262b4b27b271b39c6d481d60e3964db735772b6be834155541c5d57e31f",
+    "source_bytes": 1199,
+    "published_bytes": 1199,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "artifacts/z1-height-reward-ab-20261016/results/comparison.summary.json",
+    "destination": "projects/z1_locomotion/results/height_reward_ab_summary.json",
+    "source_sha256": "c560d3dce4596d3d535e366661b321eaed02b06d639bddbd3ab05f2e8954eb0c",
+    "published_sha256": "e7094007450b14a821e1274d0140b3f4105f3a4b2b1167505e110bc9f8a0ffbb",
+    "source_bytes": 543279,
+    "published_bytes": 1512,
+    "license": "Apache-2.0 (research measurements)",
+    "changes": [
+      "Selected non-geometric summary fields; added provenance and limitation note"
+    ]
+  },
+  {
+    "source": "artifacts/z1-downstairs-contact-20261016/final/summary.json",
+    "destination": "projects/z1_locomotion/results/downstairs_contact_summary.json",
+    "source_sha256": "2fc4dc6b0c94f7b0c2316b1ef8b7571fd05a1768a0f50b02440dc02856783f36",
+    "published_sha256": "3fd6ffb3956d734c0353641a98a88f829f95ab2c12be5cc5ef8fc60933d03715",
+    "source_bytes": 13461,
+    "published_bytes": 2003,
+    "license": "Apache-2.0 (research measurements)",
+    "changes": [
+      "Selected non-geometric summary fields; added provenance and limitation note"
+    ]
+  },
+  {
+    "source": "go2_piper_task_suite_20261023_work/tools/audit_geometry_runtime.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/tools/audit_geometry_runtime.py",
+    "source_sha256": "039f5b2b69f166556dfd1a436fcddd4045588e7ff7774ad343dcc0a9453d00b7",
+    "published_sha256": "039f5b2b69f166556dfd1a436fcddd4045588e7ff7774ad343dcc0a9453d00b7",
+    "source_bytes": 13448,
+    "published_bytes": 13448,
+    "license": "Apache-2.0 with applicable retained upstream BSD notices",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_upstream_wbc_20261023_work/tools/sitecustomize.py",
+    "destination": "projects/go2_piper_wbc/native_20261023/tools/observer_bootstrap.py",
+    "source_sha256": "172fcd8049722e7641b42b0fe64fd8637eb1930bec432dd6762ad936d505b57e",
+    "published_sha256": "172fcd8049722e7641b42b0fe64fd8637eb1930bec432dd6762ad936d505b57e",
+    "source_bytes": 1310,
+    "published_bytes": 1310,
+    "license": "Apache-2.0 with applicable retained upstream BSD notices",
+    "changes": []
+  },
+  {
+    "source": "artifacts/ubuntu-robot-z1-restore-20261014/local_gate.py",
+    "destination": "projects/z1_locomotion/studies_20261014/local_gate.py",
+    "source_sha256": "97e632a1339c411687336ea51cbde28fe0d8d2ab22b115288cba57e72d5313a4",
+    "published_sha256": "42e446cf60e3d9f4793bb9045a89e27e4154809c37f3455f53e3a54ac4784501",
+    "source_bytes": 1622,
+    "published_bytes": 1634,
+    "license": "Apache-2.0 with applicable retained upstream BSD notices",
+    "changes": [
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes",
+      "Publication portability: explicit external inputs or source binding adapted to independent directory layout; no algorithm changes"
+    ]
+  },
+  {
+    "source": "go2_piper_b3_20261025_work/frozen/native_joint_actions.py.txt",
+    "destination": "projects/sgs/factorial_20261025/go2_piper_b3_20261025_work/frozen/native_joint_actions.py.txt",
+    "source_sha256": "6bbf0f7837636eb7d6b17db3e8d25a433e8a69ba671dde0e993b0a0b2025cf55",
+    "published_sha256": "6bbf0f7837636eb7d6b17db3e8d25a433e8a69ba671dde0e993b0a0b2025cf55",
+    "source_bytes": 10959,
+    "published_bytes": 10959,
+    "license": "BSD-3-Clause (Isaac Lab Project Developers; original header retained)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_task_suite_20261023_work/tools/run_bounded_ppo.py",
+    "destination": "projects/go2_piper_wbc/task_suite_20261023/tools/run_bounded_ppo.py",
+    "source_sha256": "0cdee9f2ca26afdc318f57a84fd710c535f1a98acf4bcfcf1e4d29ea3e6687ff",
+    "published_sha256": "e1dabfbb084358823b2a30caf2f7bffc1392e9d558851a499d4cc153264b8e2d",
+    "source_bytes": 4804,
+    "published_bytes": 4822,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Replace private checkpoint default with explicit external input; retained for CPU guard tests, not a published full simulation launcher"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/tools/p0_inventory.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/tools/p0_inventory.py",
+    "source_sha256": "f76542983e8c8d391a8334e86785bcf31c7955f569c20e8f982ff74540466b1d",
+    "published_sha256": "86a14af930102b8f4ef7853f9e2deffc21667f92f7e12895165dac32381d44bf",
+    "source_bytes": 4234,
+    "published_bytes": 4263,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": [
+      "Bind verified shared support path in the independent publication layout"
+    ]
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/tools/finalize_p0.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/tools/finalize_p0.py",
+    "source_sha256": "57ad0ba3cb47160c8bd938a2b3d126afe296ba5faf94dd4f9aa1744c0ba0dd6b",
+    "published_sha256": "57ad0ba3cb47160c8bd938a2b3d126afe296ba5faf94dd4f9aa1744c0ba0dd6b",
+    "source_bytes": 4795,
+    "published_bytes": 4795,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  },
+  {
+    "source": "go2_piper_recipe_v1_20261025_work/tools/recover_workspace_screening.py",
+    "destination": "projects/go2_piper_wbc/recipe_v1_20261025/tools/recover_workspace_screening.py",
+    "source_sha256": "0c23fc4efcb23952ca30c0f33f55d86ae24f060d3f406e306879c18b0b633a7d",
+    "published_sha256": "0c23fc4efcb23952ca30c0f33f55d86ae24f060d3f406e306879c18b0b633a7d",
+    "source_bytes": 4506,
+    "published_bytes": 4506,
+    "license": "Apache-2.0 (original research implementation)",
+    "changes": []
+  }
+]

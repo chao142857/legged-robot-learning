@@ -1,0 +1,9 @@
+category,file_count,decision
+Archive/history/mixed payload; use selected inspected text source only,91,excluded; retained at source
+Checkpoint/rollout/raw tensor; rights or raw-data suitability not cleared,146,excluded; retained at source
+"Historical, duplicate or nonselected source/evidence; indexed and retained privately",5969,excluded; retained at source
+Machine-generated metadata/cache,24,excluded; retained at source
+Model visualization or unreviewed media; rights/content not cleared,300,excluded; retained at source
+Model-derived geometry or helper; authorization not inferred,13,excluded; retained at source
+Private operation/environment automation or machine-specific artifact,136,excluded; retained at source
+Robot/team model asset; no redistribution authorization assumed,343,excluded; retained at source

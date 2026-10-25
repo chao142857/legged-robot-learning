@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "protocol_version": "go2_piper_factorial_20261025_v1.1",
+  "status": "design_and_cpu_preparation; formal_run_not_authorized_this_round",
+  "owners": {
+    "common_protocol": "B2",
+    "SGS_and_feedback": "B1",
+    "IK_and_action_composition": "B3"
+  },
+  "baseline": {
+    "run": "private-runtime/go2_piper_t1_scratch5000_20261023_v2",
+    "training_source_commit": "83ae363fe3b5e8b0ac58fb23abaefba390a24cbc",
+    "upstream_commit": "4e12109d1eccb1d9da2e4a35f189fabea3f13677",
+    "initial_runtime_path": "local-collection/go2_piper_t1_scratch5000_20261023_work/audit/launch_evidence/v2/train_seed21/initialization.json",
+    "initial_runtime_sha256": "e026714516f8a7c6f7f0853903e98bb6e0b28d27da4b9a63e88515fa5dd6ec1f",
+    "review_verdict": "pending; integrity is not task-learning acceptance"
+  },
+  "factorial": {
+    "B0": {
+      "controller": "joint_wbc_18d",
+      "sampler": "uniform"
+    },
+    "B1": {
+      "controller": "joint_wbc_18d",
+      "sampler": "sgs"
+    },
+    "B3": {
+      "controller": "leg_ppo_12d_fixed_arm_ik_6d",
+      "sampler": "uniform"
+    },
+    "B2": {
+      "controller": "leg_ppo_12d_fixed_arm_ik_6d",
+      "sampler": "sgs"
+    }
+  },
+  "task_support_file": "task_support.json",
+  "sampling": {
+    "moment": "reset only; terminal batch feedback before any new assignment",
+    "initial_assignment": "CP0 balanced phase=env_id modulo4 for every group, explicit assignments without sampler RNG draws, bound before environment construction; after CP0 every reset samples Uniform/SGS",
+    "terminal_order": [
+      "snapshot metrics before reset",
+      "close old assignments sorted by env_id/episode_id",
+      "observe whole terminal batch",
+      "reset controller states for done env_ids",
+      "assign new tasks sorted by env_id",
+      "bind commands before reset observation"
+    ],
+    "time_limit": "20 s completion counts normally; hard budget partial episode is censored and never labelled failure",
+    "evaluation": "fixed env_id modulo 4, no training sampler call or feedback",
+    "task_id": "content SHA256 through B1 implementation; content hash and support version mandatory in logs"
+  },
+  "feedback": {
+    "owner": "B1",
+    "feedback_rule_version": "latest_joint_success_5cm_v1",
+    "label_field": "joint_success_5cm",
+    "selection_status": "common design proposal for review; no threshold tuning",
+    "required_fields": [
+      "run_id",
+      "env_id",
+      "episode_id",
+      "task_id",
+      "content_sha256",
+      "support_version",
+      "steps",
+      "terminated",
+      "truncated",
+      "termination_reasons",
+      "metrics",
+      "feedback_rule_version"
+    ],
+    "metrics_fields": [
+      "complete",
+      "failure",
+      "safe",
+      "contact_safe",
+      "overspeed",
+      "joint_limit_violation",
+      "nonfoot_contact",
+      "ee_position_rmse",
+      "ee_orientation_mean",
+      "xy_rmse",
+      "yaw_rmse",
+      "base_clearance_min",
+      "joint_velocity_limit_ratio_max",
+      "joint_position_limit_excess_max_rad",
+      "ee_success_5cm",
+      "ee_success_10cm",
+      "movement_success",
+      "joint_success_5cm",
+      "joint_success_10cm"
+    ],
+    "label_semantics": "joint_success_5cm = safe AND complete AND ee_position_rmse < .05 AND ee_orientation_mean < .2 AND xy_rmse < .15 AND yaw_rmse < .2",
+    "safe_semantics": "complete AND no nonfoot force>1N event AND min base clearance>=.15m AND max velocity limit ratio<=1.0001 AND max joint limit excess<=.001rad",
+    "safety_termination": "retain native base_contact .5N, bad_orientation 1rad, nonfoot_contact 5N after .5s; overlap preserved",
+    "tracking_limitation": "historical success gates permit near-zero motion; report direction response gains and improvements against zero/fixed-center mathematical references separately"
+  },
+  "action": {
+    "policy_action_dim": 12,
+    "robot_action_manager_dim": 18,
+    "arm_ik_dim": 6,
+    "joint_binding": "B3 action_joint_names/action_joint_ids and articulation_joint_names are distinct; verify runtime instead of slicing articulation order",
+    "mapping": "leg raw12 and absolute arm q_ref6 => native action_manager a_exec18, using per-joint native scale/default offset and native clip",
+    "last_action_observation": "native action_manager.action18, previous completed command; all arm entries kept",
+    "action_rate_reward": "native sum((action_manager.action18 - prev_action18)^2); weight -.01 inherited",
+    "ppo_storage": "raw sampled12 and 12d Gaussian logprob; no IK dimensions in policy likelihood",
+    "required_logs": [
+      "raw_policy_action12",
+      "q_IK6",
+      "q_ref6",
+      "a_composed18",
+      "action_manager.action18",
+      "processed_target18",
+      "measured_q18",
+      "applied_torque18",
+      "ee_error",
+      "action_name_order",
+      "articulation_name_order"
+    ],
+    "reset_semantics": "native action/prev_action zeros on reset retained; IK state reset per env and lazily seeded from next actual noisy actor-input joint sample; do not read extra simulator truth or replace observed actions with q_ref"
+  },
+  "observations": {
+    "actor_dim": 210,
+    "critic_dim": 102,
+    "policy_terms": "inherit native full observation, including 18d last action and history; no arm padding/deletion",
+    "ik_information_boundary": "B3 must declare measured joints, command/frame transforms, nominal model and limits; no undeclared privileged simulator state"
+  },
+  "initialization": {
+    "pairs": [
+      [
+        "B0",
+        "B1",
+        18
+      ],
+      [
+        "B2",
+        "B3",
+        12
+      ]
+    ],
+    "procedure": "within each pair construct once with native seed21 architecture then clone exact actor/critic/distribution/normalizers; fresh Adam with zero state; save untrained pair checkpoint and hashes",
+    "training_checkpoint_load_allowed": false,
+    "cross_dimension_bitwise_identity_claim_allowed": false,
+    "cpu_native_initialization_verification": "pending native torch/rsl_rl runtime; mock initialization is not proof"
+  },
+  "recipe": {
+    "seed": 21,
+    "device": "cuda:0",
+    "num_steps_per_env": 24,
+    "max_iterations": 5000,
+    "empirical_normalization": {},
+    "obs_groups": {
+      "actor": [
+        "policy"
+      ],
+      "critic": [
+        "critic"
+      ]
+    },
+    "clip_actions": null,
+    "check_for_nan": true,
+    "save_interval": 5000,
+    "experiment_name": "go2_piper_wbc",
+    "run_name": "",
+    "logger": "tensorboard",
+    "neptune_project": "isaaclab",
+    "wandb_project": "isaaclab",
+    "resume": false,
+    "load_run": ".*",
+    "load_checkpoint": "model_.*.pt",
+    "class_name": "OnPolicyRunner",
+    "actor": {
+      "class_name": "MLPModel",
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "activation": "elu",
+      "obs_normalization": false,
+      "distribution_cfg": {
+        "class_name": "GaussianDistribution",
+        "init_std": 1.0,
+        "std_type": "log"
+      }
+    },
+    "critic": {
+      "class_name": "MLPModel",
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "activation": "elu",
+      "obs_normalization": false,
+      "distribution_cfg": {
+        "class_name": "GaussianDistribution",
+        "init_std": 1.0,
+        "std_type": "log"
+      }
+    },
+    "algorithm": {
+      "class_name": "PPO",
+      "num_learning_epochs": 5,
+      "num_mini_batches": 4,
+      "learning_rate": 0.0005,
+      "schedule": "adaptive",
+      "gamma": 0.99,
+      "lam": 0.95,
+      "entropy_coef": 0.005,
+      "desired_kl": 0.01,
+      "max_grad_norm": 1.0,
+      "optimizer": "adam",
+      "value_loss_coef": 1.0,
+      "use_clipped_value_loss": true,
+      "clip_param": 0.2,
+      "normalize_advantage_per_mini_batch": false,
+      "share_cnn_encoders": false,
+      "rnd_cfg": null,
+      "symmetry_cfg": null
+    },
+    "policy": {},
+    "multi_gpu": null
+  },
+  "resolved_configuration": {
+    "agent_path": "local-collection/go2_piper_b1_sgs_20261025_work/reference/resolved/agent.yaml",
+    "agent_sha256": "5fda080d493aaba9075bcd5e3c4ff78933e0bf625465d124ef5373d8a4014909",
+    "env_path": "local-collection/go2_piper_b1_sgs_20261025_work/reference/resolved/env.yaml",
+    "env_sha256": "4716a185c2ff3ffb3c6c8667190b64617b732ccca70dba6bc7df86a478ddbd4c",
+    "note": "native runtime resolved obs_groups retained; actual YAML supplies model/algorithm class names omitted by snapshot plain()"
+  },
+  "budget": {
+    "updates": 5000,
+    "num_envs": 4096,
+    "rollout_steps": 24,
+    "transitions": 491520000,
+    "budget_unit": "environment transitions, not episodes/SGS draws/wall time",
+    "control_dt_s": 0.02,
+    "simulation_dt_s": 0.005,
+    "checkpoints": [
+      0,
+      500,
+      1000,
+      2000,
+      3000,
+      5000
+    ],
+    "cutoff": "finish exact 5000 updates; unfinished episodes censored; evaluation transitions excluded",
+    "training_seeds": [
+      21
+    ],
+    "additional_seed_replication": "common amendment required before launch; evaluation seeds are not training replicates"
+  },
+  "evaluation": {
+    "protocol_base": "t1_scratch_comparison_v1",
+    "seeds": [
+      7101,
+      7102,
+      7103
+    ],
+    "num_envs": 64,
+    "phase_assignment": "env_id modulo4, 16 episodes/task/seed",
+    "horizon_s": 20,
+    "max_steps": 1000,
+    "deterministic_actor": true,
+    "observation_noise": true,
+    "first_episode_only": true,
+    "failures_in_denominator": true,
+    "primary": "final checkpoint at matched transitions; macro average four task rates and report each task",
+    "secondary": "fixed planned checkpoints; T0 final-checkpoint side test for all groups, separately labelled",
+    "no_best_checkpoint_selection": true,
+    "frozen_sampler": true,
+    "direction_metrics": "log actual desired group from assigned phase, avoid legacy env_id-only reconstruction in training metrics",
+    "action_metrics": "split by B3 action joint names; verify ordering before reusing legacy [:12]/[12:] diagnostics",
+    "statistics": "paired evaluation seeds/nuisance realizations; three eval seeds represent evaluation variability, not independent training-seed CI"
+  },
+  "checkpoint": {
+    "required": [
+      "protocol_hash",
+      "support_hash",
+      "dependency_hashes",
+      "run_id",
+      "actor",
+      "critic",
+      "distribution",
+      "optimizer",
+      "normalizers",
+      "ppo_counters",
+      "python_numpy_torch_rng",
+      "sampler_state",
+      "controller_state",
+      "episode_assignments",
+      "episode_metric_accumulators",
+      "native_action18_and_prev18",
+      "command_state",
+      "environment_state_or_reset_boundary"
+    ],
+    "restore_scope": "CPU replay proves module state only; native physics replay needs saved simulator state or documented reset-boundary resume; no claim of bitwise full-run resume"
+  },
+  "pending_bindings": [
+    "baseline external review verdict",
+    "B1 fixed SGS source manifest/API",
+    "B3 fixed IK/composition source manifest/API",
+    "native 12d pair initialization artifact and empty optimizer proof",
+    "exact execution-host dependency versions and future B2 resolved runtime config (actual historical env/agent now in B1 reference/resolved)",
+    "common phase4/reset assignment and selected legacy feedback label review",
+    "native environment reset/terminal hooks and later physical validation"
+  ],
+  "change_control": "one B2 protocol version + hash for task/feedback/eval amendments; B1/B3 must acknowledge same hash; no window-private task modifications"
+}

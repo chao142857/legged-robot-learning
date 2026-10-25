@@ -1,0 +1,72 @@
+{
+  "completed": true,
+  "policy_summary": {
+    "original": {
+      "trials": 48,
+      "strict": 0,
+      "reason_trial_counts": {
+        "base": 0,
+        "hip": 0,
+        "thigh": 0,
+        "calf": 48,
+        "q_position": 0,
+        "q_velocity": 0,
+        "torque": 0,
+        "dc_envelope": 0
+      },
+      "mean_calf_fraction": 0.08783318837194821,
+      "mean_calf_event_count_per_trial": 11.916666666666666,
+      "calf_event_duration_p10_p50_p90_s": [
+        0.02,
+        0.04,
+        0.2
+      ]
+    },
+    "A": {
+      "trials": 48,
+      "strict": 0,
+      "reason_trial_counts": {
+        "base": 0,
+        "hip": 0,
+        "thigh": 0,
+        "calf": 48,
+        "q_position": 0,
+        "q_velocity": 0,
+        "torque": 0,
+        "dc_envelope": 0
+      },
+      "mean_calf_fraction": 0.10166575021896597,
+      "mean_calf_event_count_per_trial": 14.375,
+      "calf_event_duration_p10_p50_p90_s": [
+        0.02,
+        0.04,
+        0.2
+      ]
+    },
+    "B1": {
+      "trials": 48,
+      "strict": 0,
+      "reason_trial_counts": {
+        "base": 0,
+        "hip": 0,
+        "thigh": 0,
+        "calf": 48,
+        "q_position": 0,
+        "q_velocity": 0,
+        "torque": 0,
+        "dc_envelope": 0
+      },
+      "mean_calf_fraction": 0.06882957104620889,
+      "mean_calf_event_count_per_trial": 9.354166666666666,
+      "calf_event_duration_p10_p50_p90_s": [
+        0.02,
+        0.04,
+        0.2
+      ]
+    }
+  },
+  "paired_trial_count": 48,
+  "limits": "One learningseed42,three evaluationseedsx16 firsttrials. Trials share seeded terrain; PPO outcomes and resets are non-deterministic. Pairing is protocol-level, not exact replay. No instantaneous impact/contact-point velocity, no actor260 history saved. No policy observability ceiling proof.",
+  "source_sha256": "2fc4dc6b0c94f7b0c2316b1ef8b7571fd05a1768a0f50b02440dc02856783f36",
+  "publication_note": "Selected numerical measurements only; team geometry, renders and raw trajectories excluded."
+}

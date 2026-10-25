@@ -1,0 +1,78 @@
+{
+  "seed": 21,
+  "device": "cpu",
+  "num_steps_per_env": 24,
+  "max_iterations": 5000,
+  "empirical_normalization": {},
+  "obs_groups": {
+    "actor": [
+      "policy"
+    ],
+    "critic": [
+      "critic"
+    ]
+  },
+  "clip_actions": null,
+  "check_for_nan": true,
+  "save_interval": 5000,
+  "experiment_name": "go2_piper_wbc",
+  "run_name": "",
+  "logger": "tensorboard",
+  "neptune_project": "isaaclab",
+  "wandb_project": "isaaclab",
+  "resume": false,
+  "load_run": ".*",
+  "load_checkpoint": "model_.*.pt",
+  "class_name": "OnPolicyRunner",
+  "actor": {
+    "hidden_dims": [
+      512,
+      256,
+      128
+    ],
+    "activation": "elu",
+    "obs_normalization": false,
+    "distribution_cfg": {
+      "init_std": 1.0,
+      "std_type": "log",
+      "class_name": "GaussianDistribution"
+    },
+    "class_name": "MLPModel"
+  },
+  "critic": {
+    "hidden_dims": [
+      512,
+      256,
+      128
+    ],
+    "activation": "elu",
+    "obs_normalization": false,
+    "distribution_cfg": {
+      "init_std": 1.0,
+      "std_type": "log",
+      "class_name": "GaussianDistribution"
+    },
+    "class_name": "MLPModel"
+  },
+  "algorithm": {
+    "num_learning_epochs": 5,
+    "num_mini_batches": 4,
+    "learning_rate": 0.0005,
+    "schedule": "adaptive",
+    "gamma": 0.99,
+    "lam": 0.95,
+    "entropy_coef": 0.005,
+    "desired_kl": 0.01,
+    "max_grad_norm": 1.0,
+    "optimizer": "adam",
+    "value_loss_coef": 1.0,
+    "use_clipped_value_loss": true,
+    "clip_param": 0.2,
+    "normalize_advantage_per_mini_batch": false,
+    "rnd_cfg": null,
+    "symmetry_cfg": null,
+    "class_name": "PPO"
+  },
+  "policy": {},
+  "multi_gpu": null
+}

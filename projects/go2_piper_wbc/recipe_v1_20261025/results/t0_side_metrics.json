@@ -1,0 +1,62 @@
+[
+  {
+    "label": "cp_1200",
+    "seed": 8101,
+    "base_drift_final_m_mean": 0.030525046473485418,
+    "base_drift_max_m_mean": 0.046490476524923,
+    "xy_rmse_mps": 0.021807435899972916,
+    "yaw_rmse_radps": 0.05476557835936546,
+    "actual_xy_speed_mean": 0.01924273371696472,
+    "actual_abs_yaw_mean": 0.0443761833012104
+  },
+  {
+    "label": "cp_1200",
+    "seed": 8102,
+    "base_drift_final_m_mean": 0.028894134920847137,
+    "base_drift_max_m_mean": 0.048295482236426324,
+    "xy_rmse_mps": 0.021525705233216286,
+    "yaw_rmse_radps": 0.055385772138834,
+    "actual_xy_speed_mean": 0.018908683210611343,
+    "actual_abs_yaw_mean": 0.04472717270255089
+  },
+  {
+    "label": "cp_1200",
+    "seed": 8103,
+    "base_drift_final_m_mean": 0.02608633776617353,
+    "base_drift_max_m_mean": 0.04434269742341712,
+    "xy_rmse_mps": 0.021664515137672424,
+    "yaw_rmse_radps": 0.054462678730487823,
+    "actual_xy_speed_mean": 0.019140787422657013,
+    "actual_abs_yaw_mean": 0.044130004942417145
+  },
+  {
+    "label": "native_cp3000",
+    "seed": 8101,
+    "base_drift_final_m_mean": 0.28995698678772897,
+    "base_drift_max_m_mean": 0.29256993893068284,
+    "xy_rmse_mps": 0.04254870489239693,
+    "yaw_rmse_radps": 0.09078463912010193,
+    "actual_xy_speed_mean": 0.03753479942679405,
+    "actual_abs_yaw_mean": 0.07309123128652573
+  },
+  {
+    "label": "native_cp3000",
+    "seed": 8102,
+    "base_drift_final_m_mean": 0.2826607115275692,
+    "base_drift_max_m_mean": 0.2857911813771352,
+    "xy_rmse_mps": 0.042477916926145554,
+    "yaw_rmse_radps": 0.09184809029102325,
+    "actual_xy_speed_mean": 0.03736570104956627,
+    "actual_abs_yaw_mean": 0.07401014119386673
+  },
+  {
+    "label": "native_cp3000",
+    "seed": 8103,
+    "base_drift_final_m_mean": 0.22964724639314227,
+    "base_drift_max_m_mean": 0.23336941859452054,
+    "xy_rmse_mps": 0.041433919221162796,
+    "yaw_rmse_radps": 0.09174683690071106,
+    "actual_xy_speed_mean": 0.0364966094493866,
+    "actual_abs_yaw_mean": 0.07375852763652802
+  }
+]

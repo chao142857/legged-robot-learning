@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "admission": "All ranges are candidates. Only exact parameters with signed geometry, kinematics, and physics evidence may enter training. Never infer interval validity from endpoint tests.",
+  "easy": {
+    "ee_center": [
+      0.45,
+      0.0,
+      0.5
+    ],
+    "ee_amplitude": [
+      0.02,
+      0.03,
+      0.02
+    ],
+    "ee_period_s": 8.0,
+    "ee_orientation_offset_rpy": [
+      0.0,
+      0.6,
+      0.0
+    ],
+    "base_linear_speed": 0.2,
+    "base_yaw_rate": 0.15,
+    "base_segment_s": 6.0,
+    "base_slew_linear": 0.2,
+    "base_slew_yaw": 0.3,
+    "terrain_speed": 0.15,
+    "stairs_height": 0.03,
+    "stairs_tread": 0.5,
+    "stones_width": 0.8,
+    "stones_gap": 0.08,
+    "stones_height": 0.01,
+    "route_distance": 3.5,
+    "episode_s_flat": 20.0,
+    "episode_s_terrain": 32.0,
+    "status": "unvalidated_candidate"
+  },
+  "candidate_ranges": {
+    "T0": {
+      "beginner": {
+        "ee_amplitude_m": [
+          0.0,
+          0.03
+        ],
+        "ee_period_s": [
+          8.0,
+          12.0
+        ],
+        "ee_center_x_m": [
+          0.43,
+          0.47
+        ],
+        "ee_center_z_m": [
+          0.47,
+          0.53
+        ],
+        "orientation_offset_rad": [
+          0.0,
+          0.05
+        ]
+      },
+      "intermediate": {
+        "ee_amplitude_m": [
+          0.03,
+          0.08
+        ],
+        "ee_period_s": [
+          6.0,
+          10.0
+        ],
+        "ee_center_x_m": [
+          0.4,
+          0.52
+        ],
+        "ee_center_z_m": [
+          0.42,
+          0.58
+        ],
+        "orientation_offset_rad": [
+          0.05,
+          0.15
+        ]
+      },
+      "advanced": {
+        "ee_amplitude_m": [
+          0.08,
+          0.12
+        ],
+        "ee_period_s": [
+          4.0,
+          8.0
+        ],
+        "ee_center_x_m": [
+          0.38,
+          0.56
+        ],
+        "ee_center_z_m": [
+          0.38,
+          0.62
+        ],
+        "orientation_offset_rad": [
+          0.15,
+          0.3
+        ]
+      }
+    },
+    "T1": {
+      "beginner": {
+        "linear_speed_mps": [
+          0.1,
+          0.25
+        ],
+        "yaw_rate_radps": [
+          0.1,
+          0.2
+        ],
+        "segment_s": [
+          6.0,
+          10.0
+        ]
+      },
+      "intermediate": {
+        "linear_speed_mps": [
+          0.25,
+          0.5
+        ],
+        "yaw_rate_radps": [
+          0.2,
+          0.5
+        ],
+        "segment_s": [
+          4.0,
+          8.0
+        ]
+      },
+      "advanced": {
+        "linear_speed_mps": [
+          0.5,
+          0.8
+        ],
+        "yaw_rate_radps": [
+          0.5,
+          0.8
+        ],
+        "segment_s": [
+          3.0,
+          6.0
+        ]
+      }
+    },
+    "T2": {
+      "beginner": {
+        "step_height_m": [
+          0.02,
+          0.05
+        ],
+        "tread_m": [
+          0.45,
+          0.6
+        ],
+        "stone_width_m": [
+          0.7,
+          0.9
+        ],
+        "gap_m": [
+          0.05,
+          0.1
+        ],
+        "height_variation_m": [
+          0.0,
+          0.02
+        ],
+        "route_distance_m": [
+          2.0,
+          3.5
+        ],
+        "linear_speed_mps": [
+          0.1,
+          0.2
+        ]
+      },
+      "intermediate": {
+        "step_height_m": [
+          0.05,
+          0.1
+        ],
+        "tread_m": [
+          0.3,
+          0.45
+        ],
+        "stone_width_m": [
+          0.5,
+          0.7
+        ],
+        "gap_m": [
+          0.1,
+          0.18
+        ],
+        "height_variation_m": [
+          0.02,
+          0.05
+        ],
+        "route_distance_m": [
+          3.0,
+          5.0
+        ],
+        "linear_speed_mps": [
+          0.15,
+          0.3
+        ]
+      },
+      "advanced": {
+        "step_height_m": [
+          0.1,
+          0.15
+        ],
+        "tread_m": [
+          0.25,
+          0.35
+        ],
+        "stone_width_m": [
+          0.35,
+          0.5
+        ],
+        "gap_m": [
+          0.18,
+          0.25
+        ],
+        "height_variation_m": [
+          0.05,
+          0.1
+        ],
+        "route_distance_m": [
+          4.0,
+          6.0
+        ],
+        "linear_speed_mps": [
+          0.2,
+          0.4
+        ]
+      }
+    }
+  },
+  "orientation_range_semantics": "Candidate orientation_offset_rad ranges are deviations around the IK-checked nominal pointing offset RPY=(0,0.6,0), not around zero. Zero pitch offset was rejected by bounded IK."
+}

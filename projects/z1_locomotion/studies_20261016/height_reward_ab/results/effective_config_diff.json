@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "differences": [
+    {
+      "path": ".log_dir",
+      "A": "private-runtime/z1_cp5700_isaaclab_5060/workspace/basic-locomotion-isaaclab/logs/rsl_rl/z1_height_ab_20261016_A/2026-10-16_14-57-04_cp5700_height_A",
+      "B1": "private-runtime/z1_cp5700_isaaclab_5060/workspace/basic-locomotion-isaaclab/logs/rsl_rl/z1_height_ab_20261016_B1/2026-10-16_15-01-23_cp5700_height_B1"
+    },
+    {
+      "path": ".desired_base_height",
+      "A": "0.373",
+      "B1": "0.384"
+    }
+  ]
+}

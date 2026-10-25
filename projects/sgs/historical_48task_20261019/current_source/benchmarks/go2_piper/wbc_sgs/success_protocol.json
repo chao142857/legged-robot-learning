@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "episode_s": 12.0,
+  "settling_s": 3.0,
+  "minimum_scored_samples": 449,
+  "xy_velocity_mps": 0.2,
+  "yaw_rate_rps": 0.15,
+  "ee_position_m": 0.06,
+  "ee_orientation_rad": 0.2,
+  "tracking_fraction": 0.8,
+  "nonfoot_contact_N": 5.0,
+  "max_tilt_rad": 1.0,
+  "min_base_height_m": 0.15,
+  "semantics": "At least 80% of scored 50Hz states must SIMULTANEOUSLY meet locomotion and manipulation bounds; full horizon and whole-episode observable safety also required.",
+  "calibration_basis": "Pre-comparison mature Isaac WBC errors: XY RMSE about 0.11-0.17m/s, yaw 0.04-0.06rad/s, EE 0.01-0.05m, angle 0.01-0.04rad. Bounds chosen before either training arm; independent calibration rollout must be recorded before lock.",
+  "safety_scope": "50Hz contact history/height/tilt/finite-state proxy plus original terminations. Original asset self collision disabled; no self-collision, obstacle or sim-to-real safety claim. Foot contacts are allowed. Safety includes first 3s."
+}

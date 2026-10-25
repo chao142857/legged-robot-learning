@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "python": "3.12.14 (main, Aug 14 2026, 15:34:45) [Clang 22.1.3 ]",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "rsl-rl-lib": "5.4.1",
+    "newton": "1.5.2",
+    "warp-lang": "1.16.0",
+    "mujoco": "3.11.0",
+    "mujoco-warp": "3.11.0",
+    "usd-exchange": "2.3.0",
+    "isaaclab": "17.0.2",
+    "open3d": "0.19.0",
+    "triton": "3.6.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "cuda": "12.8",
+  "imports": [
+    "isaaclab",
+    "isaaclab_rl",
+    "basic_locomotion_isaaclab",
+    "newton",
+    "warp",
+    "mujoco",
+    "torch"
+  ],
+  "full_isaacsim_installed": false,
+  "original_lock_unmodified": true,
+  "artifact_mirror_note": "OnlyOpen3D andTriton installed from local mirror downloads whose fullwheel SHA equals originaluv.lock; all otherpackages frozen/offline",
+  "source_sha256": "ff26c3d24831849f9f4d8a7d418e444ec9af9d2bb755cfdb818dee4ae8a320d5",
+  "source_kind": "historical observed environment; not an install lock",
+  "isaaclab_source_generation": "v3.0.0-EA",
+  "isaaclab_source_revision": "ae37b028ea415c91ea2bc32609efcd759ed2b974",
+  "iit_source_revision": "8bda7c7df8b223acf649e0b212635a92c8528900"
+}

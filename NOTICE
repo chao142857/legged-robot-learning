@@ -1,0 +1,21 @@
+Legged Robot Learning
+Copyright (c) 2026 chao142857.
+
+Original research implementations, experiment protocols and results are distributed
+under Apache-2.0, except material carrying a different retained license notice.
+
+This research builds on LeggedManip_Lab (Junjie Zhu, Apache-2.0), IIT DLS Lab
+basic-locomotion-isaaclab (BSD-3-Clause), Isaac Lab (BSD-3-Clause), and RSL-RL
+(ETH Zurich and NVIDIA, BSD-3-Clause). Their notices and license texts are retained
+in LICENSES/. Upstream robot assets, pretrained policies and simulator binaries
+are not redistributed or covered by the license of this research collection.
+
+SGS is Success Guided Sampling by Octi Zhang, Mateo Guaman Castro, Patrick Yin,
+Ignacio Dagnino, Abhishek Gupta, Rosario Scalise and Byron Boots,
+A Balanced Data Diet, arXiv:2610.12465v1 (2026). This repository provides local
+implementations, lifecycle adaptations and controlled experiments, not invention
+of the underlying SGS method. No paper text or figures are redistributed.
+
+Publication adaptations: historical machine paths replaced by explicit external
+inputs; asset loading made opt-in; new launchers and documentation added.
+Original-to-publication SHA256 mapping is recorded in provenance/files.json.

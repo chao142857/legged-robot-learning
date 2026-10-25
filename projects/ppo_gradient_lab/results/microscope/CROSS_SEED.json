@@ -1,0 +1,227 @@
+[
+  {
+    "window": 0,
+    "seeds": [
+      8201,
+      8202
+    ],
+    "native_policy_cosine": 0.11168085297795491,
+    "native_actor_cosine": 0.10921361286876345,
+    "component_probe_cosines": [
+      0.4744218826767874,
+      0.45857527690074495,
+      0.5547860931181804
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 0,
+    "seeds": [
+      8201,
+      8203
+    ],
+    "native_policy_cosine": 0.23176445970029586,
+    "native_actor_cosine": 0.22962836059838435,
+    "component_probe_cosines": [
+      0.3883416978215401,
+      0.3910939251570251,
+      0.3401148826740398
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 0,
+    "seeds": [
+      8202,
+      8203
+    ],
+    "native_policy_cosine": 0.2996209444243656,
+    "native_actor_cosine": 0.29691399499170806,
+    "component_probe_cosines": [
+      0.38759410253534216,
+      0.37133338853348946,
+      0.4362762262470439
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 120,
+    "seeds": [
+      8201,
+      8202
+    ],
+    "native_policy_cosine": 0.11944732322857353,
+    "native_actor_cosine": 0.11688023082387793,
+    "component_probe_cosines": [
+      0.5984935030625094,
+      0.19806276401541204,
+      0.7004035718143209
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 120,
+    "seeds": [
+      8201,
+      8203
+    ],
+    "native_policy_cosine": 0.10517442585371954,
+    "native_actor_cosine": 0.10316536366766828,
+    "component_probe_cosines": [
+      0.47844661598351385,
+      0.34582177464848324,
+      0.5771625029935399
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 120,
+    "seeds": [
+      8202,
+      8203
+    ],
+    "native_policy_cosine": -0.1454295262088118,
+    "native_actor_cosine": -0.14882922921504446,
+    "component_probe_cosines": [
+      0.5157646598237452,
+      0.1665318586815055,
+      0.6478910152347879
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 240,
+    "seeds": [
+      8201,
+      8202
+    ],
+    "native_policy_cosine": 0.25076824581369117,
+    "native_actor_cosine": 0.24944876555253473,
+    "component_probe_cosines": [
+      0.5962898505330435,
+      0.24564871425419968,
+      0.6957047069107469
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 240,
+    "seeds": [
+      8201,
+      8203
+    ],
+    "native_policy_cosine": 0.05551406807590307,
+    "native_actor_cosine": 0.053754590722398986,
+    "component_probe_cosines": [
+      0.39881475711686065,
+      0.43764605243030236,
+      0.627545656456767
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 240,
+    "seeds": [
+      8202,
+      8203
+    ],
+    "native_policy_cosine": 0.11745518885574169,
+    "native_actor_cosine": 0.11573625381787063,
+    "component_probe_cosines": [
+      0.25525190050560786,
+      0.16011041890283564,
+      0.5577634985244333
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 360,
+    "seeds": [
+      8201,
+      8202
+    ],
+    "native_policy_cosine": 0.21413966464196646,
+    "native_actor_cosine": 0.21234533823049112,
+    "component_probe_cosines": [
+      0.20679059600113966,
+      0.2046289505186579,
+      0.256540691744771
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 360,
+    "seeds": [
+      8201,
+      8203
+    ],
+    "native_policy_cosine": 0.21248455631374502,
+    "native_actor_cosine": 0.2100738505228413,
+    "component_probe_cosines": [
+      0.40457098246806117,
+      0.4330862034599432,
+      0.5059887335030708
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 360,
+    "seeds": [
+      8202,
+      8203
+    ],
+    "native_policy_cosine": 0.4466408400430578,
+    "native_actor_cosine": 0.4449889578780604,
+    "component_probe_cosines": [
+      0.26800633055033074,
+      0.3043358487315856,
+      0.29742923805962984
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 376,
+    "seeds": [
+      8201,
+      8202
+    ],
+    "native_policy_cosine": 0.11747198745207951,
+    "native_actor_cosine": 0.11692102705033339,
+    "component_probe_cosines": [
+      0.10825036119306518,
+      0.12209823043782111,
+      0.12305206936479135
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 376,
+    "seeds": [
+      8201,
+      8203
+    ],
+    "native_policy_cosine": 0.1410024575837592,
+    "native_actor_cosine": 0.13950455629770372,
+    "component_probe_cosines": [
+      -0.18633703180217048,
+      -0.22859472682492482,
+      -0.20579044113389625
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  },
+  {
+    "window": 376,
+    "seeds": [
+      8202,
+      8203
+    ],
+    "native_policy_cosine": 0.07289945411782131,
+    "native_actor_cosine": 0.0714070370406945,
+    "component_probe_cosines": [
+      -0.058124568650085355,
+      -0.1045719650299418,
+      -0.06784932478046789
+    ],
+    "component_caveat": "Different disjoint fit seeds; includes baseline-fit sensitivity"
+  }
+]
