@@ -1,74 +1,47 @@
 # Legged Robot Learning
 
-**Reinforcement Learning for Legged Locomotion and Whole-Body Control**
+**Reinforcement Learning for Legged Locomotion & Whole-Body Control**
 
-An independent research collection by [chao142857](https://github.com/chao142857), covering quadruped locomotion, mobile manipulation, adaptive task sampling, and PPO update diagnostics. The research implementations, experiment design, and analyses are organized here with explicit upstream attribution and evidence boundaries.
+[![English](https://img.shields.io/badge/English-2563eb?style=for-the-badge)](README.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-64748b?style=for-the-badge)](README_CN.md)
 
-**All reported robot experiments are simulation results. This release establishes no real-robot validation and no stable SGS advantage over Uniform sampling.**
+A collection of my robot learning projects, from quadruped locomotion to whole-body control and reinforcement learning optimization. I'm interested in **how robots learn coordinated movement and manipulation**, and how training objectives, task distributions, and PPO updates affect their performance.
 
-## Research Overview
+## Research Interests
 
-The work studies how task distributions, reward design, reset semantics, and policy updates affect learned control. It includes successful learning runs, failed baselines, controlled interventions, and tools for examining why an apparently reasonable PPO update can behave poorly.
-
-The projects retain their original framework generations and experimental identities. A fixed-task warm-start pilot, a native-distribution scratch baseline, and a constrained recipe are different experiments; their scores are not combined into a single leaderboard.
+- **Legged Locomotion:** learning to traverse stairs and challenging terrain, with contact-aware control and reward design.
+- **Whole-Body Control (WBC):** coordinating quadruped locomotion and robotic-arm manipulation within a learned policy.
+- **Reinforcement Learning Methods:** task sampling, training stability, gradient analysis, and PPO optimization.
 
 ## Projects
 
-| Project | Research content | Current evidence |
+| Project | What I've built | Selected progress |
 |---|---|---|
-| [Z1 Locomotion](projects/z1_locomotion/README.md) | Training configurations, stairs curriculum, contact-aware rewards, standing sampling, height-reward A/B study, evaluation | Simulated traversal and contact diagnostics; strict downstairs safety remains unresolved |
-| [Go2 + Piper WBC](projects/go2_piper_wbc/README.md) | Native WBC baseline, fixed task suite, T1 scratch study, Recipe v1 and A+ preparation | Native learning demonstrated; formal Recipe v1 T1 gate remains false |
-| [SGS](projects/sgs/README.md) | Success Guided Sampling implementation, reset/feedback lifecycle, fixed evaluation isolation, historical pilot, factorial preparation | Tested sampler contracts; historical pilot gives no joint-success benefit |
-| [PPO Gradient Lab](projects/ppo_gradient_lab/README.md) | Frozen-policy gradients, component value probes, native GAE, KL, clipping, Adam and held-out surrogate diagnostics | CPU diagnostic evidence; no demonstrated control-performance improvement |
+| [**Z1 Locomotion**](projects/z1_locomotion/README.md) | Quadruped training tasks, stair curricula, contact/height reward studies, and evaluation tools | **32/32** simulated ascending-stair trials with the CP5700 policy (eight 10 cm risers); later studied downstairs contact behavior |
+| [**Go2 + Piper WBC**](projects/go2_piper_wbc/README.md) | Native WBC baseline, leg–arm task suite, T1 scratch training, and reward/control recipes | Native CP3000: **768/768** deterministic 20 s survival. Recipe v1 T1: **192/192** task completions, **2.42 cm** mean EE position RMSE |
+| [**Success Guided Sampling**](projects/sgs/README.md) | Local SGS implementation, episode-feedback handling, Uniform comparisons, and factorial-study preparation | Completed a fixed-task SGS/Uniform pilot; investigating when success feedback provides a useful sampling signal |
+| [**PPO Gradient Lab**](projects/ppo_gradient_lab/README.md) | Tools for native GAE, KL, clipping, Adam updates, and frozen-policy gradient diagnostics | Analyzed **120** distinct single-minibatch update candidates to examine PPO update behavior |
 
-## Methods
+*Robot results above are from simulation. Task completion and survival are not strict safety acceptance; detailed metrics, unsuccessful runs, and experimental protocols are in [RESULTS.md](RESULTS.md).*
 
-- **Locomotion and WBC:** PPO through the native RSL-RL/Isaac training stacks; independent task adapters and explicit reset, action, contact, and observation checks.
-- **Controlled interventions:** matched initialization and budgets where the protocol supports them; reward-height intervention, command-sampling changes, and native-distribution references. Differences in task, reset, action dimension, or controller priors remain visible.
-- **Adaptive sampling:** a local implementation of SGS from [Zhang et al., *A Balanced Data Diet*](https://arxiv.org/abs/2610.12465v1), with episode ownership, censored-outcome handling, isolated RNG, state validation, and evaluation separation. The unvisited-task prior of 0.5 is a documented local choice.
-- **Update analysis:** native total-advantage calibration and isolated PPO/Adam steps, with frozen held-out surrogate measurements. Component probes are diagnostic approximations, not an exact decomposition of native PPO.
+## Current Focus
 
-## Experimental Results
+I'm currently investigating **dynamic end-effector tracking, stable locomotion–manipulation training, and controlled comparisons of task sampling strategies**. The goal is to understand which design choices improve learning—and why some seemingly reasonable ones do not.
 
-| Experiment | Selected observation | Interpretation |
-|---|---|---|
-| Z1, October 16 height/contact study | Downstairs strict safety: **0/48** for the original policy and both continuations; calf-contact fraction A 10.17%, B1 6.88% | Lower contact exposure did not establish safe downstairs control; early foot loading also increased |
-| Go2 + Piper, native WBC CP3000 | Deterministic survival **768/768**; XY RMSE **0.1189 m/s**, EE position RMSE **8.07 cm** | Learned simulated locomotion and pose tracking; not high-precision or complete safety acceptance |
-| Recipe v1 CP1200, formal T1 | Completion **192/192**, EE RMSE **2.42 cm**, original full-episode strict safety **15/192** | Different task distribution from native WBC; turning, startup overspeed and dynamic X tracking remain limitations |
-| SGS fixed-48-task pilot | Both methods: **40/48** joint success at initialization, **0/48** after 32, 64 and 128 updates | No observed SGS joint-success gain; degenerate success feedback limits the comparison |
-| PPO microscope | 120 distinct isolated candidates; smaller LR reduced held-out clipped-surrogate deviation in the main window | Surrogate evidence, not improved robot return or a proven cause of historical training failure |
+## Code & Experiments
 
-Native WBC errors use valid first-episode samples after the first second. Recipe values use equal averaging over three evaluation seeds. These are different aggregation rules and protocols. Each cited learning study has one training seed; evaluation seeds do not establish training-seed reproducibility. Full definitions and result links are in [RESULTS.md](RESULTS.md).
+The four project directories contain selected implementations, experiment configurations, evaluation tools, and numerical results. Start with a project README, or use the CPU-only checks below:
 
-![Numerical simulation results from two separate protocols](docs/figures/simulation_results.svg)
-
-## Reproducibility
-
-Start with the [environment and entry-point guide](docs/REPRODUCIBILITY.md). CPU checks use synthetic inputs and published numerical summaries:
-
-```bash
+~~~bash
 python tools/audit_publication.py
 python tools/cpu_smoke.py
-```
+~~~
 
-`cpu_smoke.py --require-ml` requires the optional Torch/RSL dependencies. Missing dependencies and the real-checkpoint parity test are reported explicitly. Simulator-free `--check` entry points are provided for both robot projects. No training starts during these checks.
+Full simulator runs require their respective external frameworks and robot assets.
 
-Full simulation reproduction requires independently obtained upstream software, compatible Linux/GPU environments, and authorized robot assets. Model geometry, pretrained policies, checkpoints, and raw rollouts are excluded. Historical continuation studies additionally require the original source-bound inputs; public summaries cannot reconstruct them.
+**Documentation:** [Results](RESULTS.md) · [Reproducibility](docs/REPRODUCIBILITY.md) · [Validation](VALIDATION.md) · [Source Map](SOURCE_MAP.md)
 
-The [source map](SOURCE_MAP.md), [publication audit](PUBLICATION_AUDIT.md), [per-file provenance](provenance/files.json), and [validation report](VALIDATION.md) separate historical observations from checks executed for this release. This repository starts with new Git history; it does not expose the private source repository.
+## Credits
 
-## Limitations
+Built on [IIT DLS Lab's basic-locomotion-isaaclab](https://github.com/iit-DLSLab/basic-locomotion-isaaclab), [LeggedManip_Lab](https://github.com/zzzJie-Robot/LeggedManip_Lab), [Isaac Lab](https://github.com/isaac-sim/IsaacLab), and [RSL-RL](https://github.com/leggedrobotics/rsl_rl). SGS follows the method studied in [*A Balanced Data Diet*](https://arxiv.org/abs/2610.12465v1). The collaborating team provided the Z1 robot model; its assets are not included.
 
-- No hardware validation, sim-to-real guarantee, or continuous-time safety claim.
-- Z1 actuator parameters are provisional simulation settings. Team-supplied model assets and their visualizations are not redistributed.
-- The native WBC baseline and Recipe v1 retain distinct task domains and safety statistics; their error values are not a matched algorithm comparison.
-- SGS has no demonstrated stable gain here. B1/B2/B3 are preparation candidates, not trained or physically admitted baselines.
-- Recipe A+ has **0 additional completed updates** in the inspected snapshot; its planned continuation is not a result.
-- CPU smoke tests cover imports, numerical contracts, and entry-point checks. Isaac/PhysX/Newton execution and long GPU training were not rerun for publication.
-- Selected numerical summaries are available; withheld raw trajectories, weights, and geometry limit independent end-to-end recomputation.
-
-## Acknowledgements
-
-The experiments build on [IIT DLS Lab's basic-locomotion-isaaclab](https://github.com/iit-DLSLab/basic-locomotion-isaaclab), [LeggedManip_Lab](https://github.com/zzzJie-Robot/LeggedManip_Lab), [Isaac Lab](https://github.com/isaac-sim/IsaacLab), and [RSL-RL](https://github.com/leggedrobotics/rsl_rl). SGS is credited to its original authors. The collaborating team supplied the Z1 robot model; model ownership is distinct from the independent algorithm/training work presented here.
-
-Original contributions use Apache-2.0. Applicable upstream notices are retained in [NOTICE](NOTICE), [LICENSES](LICENSES/), and [THIRD_PARTY.md](THIRD_PARTY.md). Source-code licenses do not confer redistribution rights to excluded assets or policies.
+Original contributions are under **Apache-2.0**; see [third-party attribution and licenses](THIRD_PARTY.md).
