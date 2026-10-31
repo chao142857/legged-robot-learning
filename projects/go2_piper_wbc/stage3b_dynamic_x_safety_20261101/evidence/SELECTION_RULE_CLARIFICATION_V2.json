@@ -1,0 +1,14 @@
+{
+  "version": "consecutive_original_gates_priority_v2",
+  "UTC": "2026-10-31T21:35:34.027992+00:00",
+  "reason": "Original two-consecutive-node acceptance already mandatory. Make development selection prefer a known qualifying pair before single-node gain; no formal gate relaxed.",
+  "old_source_sha256": "dc15d915193f46ada906fd948ac02a3a58d298e0bd0f3615a9e0123c648a841e",
+  "new_source_sha256": "524b1890cce7344cf9a368c031e6cae1945c1ad6d89b2806696dce50110cc4a9",
+  "formal_seeds_unopened": true,
+  "no_candidate_frozen_yet": true,
+  "unchanged_actual_current_winner": "c3865d9731638917c1d8902546b4d190e873d856c5967edeb4ea057b1324deff",
+  "CPU_fixture_only": true,
+  "fixture": "Higher-gain B200 with a failing B100 predecessor loses to fully passing A100/A200; adjacent remains exact same recipe/seed lineage.",
+  "training_optimization_actor_anchor_rewards_physics_and_all_formal_checks_unchanged": true,
+  "finalizer_not_restarted": true
+}

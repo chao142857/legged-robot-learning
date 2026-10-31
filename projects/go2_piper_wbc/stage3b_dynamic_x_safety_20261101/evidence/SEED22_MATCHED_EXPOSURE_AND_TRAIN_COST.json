@@ -1,0 +1,53 @@
+{
+  "groups": {
+    "old/synergy": {
+      "PPO_updates": 600,
+      "training_transitions": 58982400,
+      "dynamic_transition_slots": 17748999,
+      "fixed_transition_slots": 41233401,
+      "native_loop_seconds": 3270.577004362829,
+      "GPU_train_container_SUM_seconds": 3383.605477333069,
+      "runs": [
+        "20261101T004346-synergy2-seed22",
+        "20261101T004506-synergy100-seed22",
+        "20261101T011717-synergy200-seed22",
+        "20261101T015052-synergy400-seed22",
+        "20261101T021558-synergy600-seed22"
+      ],
+      "realized_dynamic_fraction": 0.3009202575683594
+    },
+    "old/nativePPO": {
+      "PPO_updates": 200,
+      "training_transitions": 19660800,
+      "dynamic_transition_slots": 5953239,
+      "fixed_transition_slots": 13707561,
+      "native_loop_seconds": 1075.506559773814,
+      "GPU_train_container_SUM_seconds": 1143.1131148338318,
+      "runs": [
+        "20261101T004426-matchedNative2-seed22",
+        "20261101T005420-matchedNative100-seed22",
+        "20261101T012701-matchedNative200-seed22"
+      ],
+      "realized_dynamic_fraction": 0.30279739379882814
+    },
+    "new/synergy/legKL0.01": {
+      "PPO_updates": 600,
+      "training_transitions": 58982400,
+      "dynamic_transition_slots": 17745640,
+      "fixed_transition_slots": 41236760,
+      "native_loop_seconds": 3157.9507474720012,
+      "GPU_train_container_SUM_seconds": 3270.2232739925385,
+      "runs": [
+        "20261101T034048-legKL001-seed22-window-to2",
+        "20261101T034125-legKL001-seed22-window-to100",
+        "20261101T035633-legKL001-seed22-window-to200",
+        "20261101T041159-legKL001-seed22-window-to400",
+        "20261101T043612-legKL001-seed22-window-to600"
+      ],
+      "realized_dynamic_fraction": 0.30086330837673614
+    }
+  },
+  "scope": "Actual cached native PPO rollouts; original episode-membership Uniform30/70 unchanged. Realized transition exposure, updates, loop and complete container duration distinguished. Historical control cost read-only and not recharged to Stage3b; not a throughput superiority claim.",
+  "common_parent_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "old_unconstrained600_is_unsafe_not_a_successful_control": true
+}

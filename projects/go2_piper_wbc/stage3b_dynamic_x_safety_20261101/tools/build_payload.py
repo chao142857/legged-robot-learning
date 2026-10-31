@@ -9,7 +9,7 @@ def digest(raw):return hashlib.sha256(raw).hexdigest()
 def assemble(base):
     base=pathlib.Path(base);reuse=json.loads((PROJECT/'SOURCE_REUSE.json').read_text());tools={}
     for f in (PROJECT/'tools').glob('*.py'):
-        if f.name in ('build_payload.py','test_budget_cpu.py'):continue
+        if f.name=='build_payload.py' or f.name.startswith('test_'):continue
         source=f.read_text();compile(source,f.name,'exec')
         tools[f.name]=dict(source=source,sha256=digest(source.encode()))
     for item in reuse['transforms']:
