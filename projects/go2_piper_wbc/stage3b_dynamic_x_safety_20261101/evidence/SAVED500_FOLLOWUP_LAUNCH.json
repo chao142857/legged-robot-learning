@@ -1,0 +1,12 @@
+{
+  "pid": 2425407,
+  "source_sha256": "74858242bea187fb64f22b8a3a6c0e92365c257a66946423c4351cf7e9012f10",
+  "plan_sha256": "6ed329bd82733a228d132eff7c8314263538c94644a381455a0df5c02519b409",
+  "CPU_preflight": {
+    "iter": 2299,
+    "completed": 2300,
+    "optimizer_states": 19,
+    "CUDA_initialized": false
+  },
+  "state": "Waiting for existing two-seed learner; no training or concurrent GPU launched"
+}

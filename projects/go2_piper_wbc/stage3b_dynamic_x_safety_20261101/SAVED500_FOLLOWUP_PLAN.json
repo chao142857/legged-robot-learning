@@ -1,0 +1,17 @@
+{
+  "recipe_id": "arm_synergy_fixed_legKL_002",
+  "training_seeds": [
+    21,
+    22
+  ],
+  "additional_saved_updates": 500,
+  "native_checkpoint_iteration": 2300,
+  "new_training_updates": 0,
+  "common_parent_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "source_sha256": "74858242bea187fb64f22b8a3a6c0e92365c257a66946423c4351cf7e9012f10",
+  "hypothesis": "Safe400 and unsafe600 can bracket a safe native saved500 optimum. Test one fixed pre-existing intermediate checkpoint, do not extend unsafe weights or search many earlier nodes.",
+  "timing": "Preregistered during seed21 unsafe600 development, before any500 evaluation or formal seed; existing two-seed .02 coordinator finishes first, no GPU competition.",
+  "evaluation": "Both training seeds, full A/T0/T1/X x6181031/6281031, same original masks/rewards/physics/safety. Fixed400/500 pair must pass both seeds; prior600 failures remain included.",
+  "formal_selection": "Existing selectorv3 and original formal gates unchanged; admit repaired002 recipe only if both fixed400/500 pairs pass. All final seeds remain sealed until candidate frozen.",
+  "budget": "Same independent28800 GPU-container SUM seconds, final3600 reserved; no new grant or counter reset."
+}

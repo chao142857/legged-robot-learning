@@ -6,7 +6,7 @@ sys.modules['stage3_pipeline'] = types.SimpleNamespace(report=lambda *_: None)
 import stage3b_selection as selector
 
 
-def fixture(entries, hard_labels=(), admitted=None):
+def fixture(entries, hard_labels=(), admitted=None, contact_labels=()):
     nodes=[]; rows=[]
     for label, experiment, seed, recipe, count, gain, passed in entries:
         cp=dict(checkpoint='/CPU_FIXTURE/'+label+'.pt', checkpoint_sha256=label)
@@ -18,7 +18,7 @@ def fixture(entries, hard_labels=(), admitted=None):
             for protocol in ('A','T0','T1','X'):
                 rows.append(dict(label=label+'-'+protocol+'-'+str(dev), protocol=protocol,
                     seed=dev, checkpoint_sha256=label, joint_limit=int(label in hard_labels),
-                    nonfoot=0, strict_safe=64, n=64, complete=64,
+                    nonfoot=int(label in contact_labels), strict_safe=64, n=64, complete=64,
                     retention_checks=dict(original_health=True), X_after1s=dict(synchronous_gain=gain)))
     selector.read=lambda path:dict(recipe_ids=admitted) if path.name=='FINAL_RECIPE_ADMISSION.json' else nodes
     selector.report=lambda *_:dict(rows=rows)
@@ -52,4 +52,12 @@ for changed in [('different_seed',42,'recipe'),('different_recipe',41,'other')]:
 selected=fixture(qualified+[
     ('B100','B',42,'repaired',100,.35,True),('B200','B',42,'repaired',200,.45,True)],admitted=['repaired'])
 assert selected['candidate']['labels']==['B200'] and selected['adjacent']['labels']==['B100']
+
+# A newly evaluated intervening native saved node must use its true iteration,
+# not append order. A later unsafe600 never wins or becomes500's predecessor.
+selected=fixture([('N400','N',21,'repaired',400,.47,True),
+    ('N600','N',21,'repaired',600,.60,True),
+    ('N500','N',21,'repaired',500,.53,True)],contact_labels=('N600',),admitted=['repaired'])
+assert selected['candidate']['labels']==['N500'] and selected['adjacent']['labels']==['N400']
+assert selected['candidate']['actual_checkpoint_iteration']==2300
 print('CPU selection contract PASS: consecutive gates, actual hard exclusion, same seed/recipe and explicit recipe admission; no GPU or real-study writes')
