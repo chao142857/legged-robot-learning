@@ -1,7 +1,7 @@
 {
   "file": "STAGE3B_PHYSICAL_LEARNING.svg",
-  "sha256": "1f021b813b213d2c1098e543cfafaa7c6db92e0dacc3d348af9501135224c395",
-  "bytes": 232908,
+  "sha256": "53f33a453069723358b80de2121b49dfbb282e7805f34f4c36622edfc7160472",
+  "bytes": 242988,
   "points": [
     {
       "family": "Matched native PPO",
@@ -18,6 +18,15 @@
       "additional_updates": 100,
       "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
       "hard_nonfoot_events": 1,
+      "original_retention": true,
+      "worst_strict_safe_fraction": 0.96875
+    },
+    {
+      "family": "arm_synergy_fixed_legKL_001",
+      "training_seed": 21,
+      "additional_updates": 100,
+      "checkpoint_sha256": "d175615e178eb53a608a722e4bc8e56825a15493998513e2fb186a8dbc4b9afa",
+      "hard_nonfoot_events": 0,
       "original_retention": true,
       "worst_strict_safe_fraction": 0.96875
     },
@@ -112,5 +121,6 @@
       "worst_strict_safe_fraction": 0.96875
     }
   ],
+  "source_sha256": "3f9b443c6f7e6b3f35f481c70de53df32b6a34d501432440697769e1db1b005b",
   "scope": "Separate training seeds and physics seeds; no frozen-composition diagnostic scores; no extrapolation beyond evaluated native control checkpoints."
 }

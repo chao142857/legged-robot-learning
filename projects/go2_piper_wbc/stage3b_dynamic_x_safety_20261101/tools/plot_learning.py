@@ -45,11 +45,12 @@ def main(root,out):
                 if dev==6181031:axes[rowno,3].plot([n for n,r,w in series],safety,color=colors[fi%len(colors)],marker=marker,label=family)
         for ax,label,gate in zip(axes[rowno],['X synchronous gain','Real X amplitude (mm)','X correlation','Worst full-matrix strict-safe fraction'],[.35,8,.5,.95]):
             ax.axhline(gate,c='#ae5a37',ls=':',lw=1);ax.set(xlabel='Additional common-parent PPO updates',ylabel=label);ax.grid(alpha=.2)
-        axes[rowno,0].set_title('Independent continuation trainingseed'+str(training),fontsize=10);axes[rowno,0].legend(fontsize=5.5)
-        axes[rowno,3].set_ylim(.8,1.01)
+        axes[rowno,0].set_title('Independent continuation training seed '+str(training),fontsize=10);axes[rowno,0].legend(fontsize=5.5)
+        observed_safety=[r['strict_safe']/r['n'] for k,rows in groups.items() if k[1]==training for r in rows]
+        axes[rowno,3].set_ylim(max(0.,min(.8,min(observed_safety,default=.85)-.05)),1.01)
     fig.suptitle('Original20s physics: red rings=actual hard/contact; amber=retention failure. Tracking uses original after1s mask; safety includes startup.',fontsize=10)
     target=out/'STAGE3B_PHYSICAL_LEARNING.svg';fig.savefig(target,metadata=dict(Date=None));plt.close(fig)
-    record=dict(file=target.name,sha256=hashlib.sha256(target.read_bytes()).hexdigest(),bytes=target.stat().st_size,points=points,
+    record=dict(file=target.name,sha256=hashlib.sha256(target.read_bytes()).hexdigest(),bytes=target.stat().st_size,points=points,source_sha256=hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest(),
         scope='Separate training seeds and physics seeds; no frozen-composition diagnostic scores; no extrapolation beyond evaluated native control checkpoints.')
     target.with_suffix('.json').write_text(json.dumps(record,indent=2)+'\n')
 
