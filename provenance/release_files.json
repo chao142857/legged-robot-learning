@@ -603,13 +603,18 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/README.md",
-      "bytes": 7360,
-      "sha256": "d1f72f82de2898fd6554a8c6bb70b20a31585b0411a099723407c3476c6226f0"
+      "bytes": 8949,
+      "sha256": "dd469a87230fefaac093b13947f342baf43b7a6c952f7f2a3ef50542b22fe266"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/RESOURCE_PLAN.json",
       "bytes": 2679,
       "sha256": "6c20564848b364abae7904f9c7cb7c7627971afe27dc4313b9e4ca7af4c700f0"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/CPU_LEG_FUNCTION_DRIFT.json",
+      "bytes": 34561,
+      "sha256": "0cbd21ecde4339d3d1cb36c19c87fcb48d0a86fadc5bce8eec4876ebfa15889f"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/CPU_POLICY_SENSITIVITY_1900.json",
@@ -630,6 +635,11 @@
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/DEVELOPMENT_SEED22_200.json",
       "bytes": 68510,
       "sha256": "79bc72236cac92f273f9f4047a906eeb4bd2e1933d630cde1dfdb4d42c108700"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/DEVELOPMENT_SEED22_400.json",
+      "bytes": 26617,
+      "sha256": "fd8bef364518d76cdffcbb94ab74ee61b0097f847f4416f34c8dc3272d084b84"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/NETWORK_BLOCK_AT_DEPLOYMENT.json",
@@ -657,6 +667,16 @@
       "sha256": "9b07944ff10ab92c0426835db92ac1e3711015520989bd897f89645316462767"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/figures/LEARNING-64rows.json",
+      "bytes": 135,
+      "sha256": "480e55e004c036e0515504a78847b045bd9d2ecf9ade1cd0d54e6fcb1ca64f25"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/figures/LEARNING-64rows.svg",
+      "bytes": 159560,
+      "sha256": "15db7322d9a7ddc53bfa93008d1c7f8ec83f7b19ff992185a7c6fcd696da1ee7"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/figures/P1_PHYSICS-v1.svg",
       "bytes": 74419,
       "sha256": "87b270dcdf19fcc3b0fbeb928919c8c9a330352bea2dd69d3905f78df1211309"
@@ -675,6 +695,16 @@
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/build_synergy_recipe.py",
       "bytes": 3527,
       "sha256": "67012bd35f64bfaef84ee84f2c3d25c55b43cc2e78fda8d994fbb5a766dc4fbf"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/close_on_registered_stop.py",
+      "bytes": 2858,
+      "sha256": "d9c79de50e2d8b015a26673247f39674455afc80c944901570a23812ac87c5e3"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/cpu_leg_function_drift.py",
+      "bytes": 4037,
+      "sha256": "2c81e4f4bd56269c054433aa58788c27402453b8056f00d3654fd6cd8e7b54c0"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/cpu_policy_sensitivity.py",
@@ -718,8 +748,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/plot_stage3.py",
-      "bytes": 5230,
-      "sha256": "d2824876a9782e15acd08e759c80cb91c7452ba5cb1f5ded49bff3b3f1db6423"
+      "bytes": 5647,
+      "sha256": "fa437c4a028a5808471e5181327c02e0871b4d8bc216fefb8eff06ff6a6da3a6"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/probe_entry.py",

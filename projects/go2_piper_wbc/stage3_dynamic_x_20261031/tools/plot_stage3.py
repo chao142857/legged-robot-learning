@@ -46,10 +46,13 @@ def main(p,out):
                             if hard and seed==6181031:
                                 y=r['X_after1s'][key]*factor;ax.scatter([update],[y],s=100,facecolors='none',edgecolors='#c14949',zorder=5)
                                 if key=='synchronous_gain':ax.annotate('hard/contact '+str(hard),(update,y),xytext=(3,8),textcoords='offset points',fontsize=6,color='#a73434')
+                            elif seed==6181031 and any(not all(v.get('retention_checks',{}).values()) for v in whole):
+                                y=r['X_after1s'][key]*factor;ax.scatter([update],[y],s=65,marker='^',color='#d29527',zorder=5)
+                                if key=='synchronous_gain':ax.annotate('retention FAIL',(update,y),xytext=(3,8),textcoords='offset points',fontsize=6,color='#986711')
             for ax,title,gate in zip(axes[row_index],['X synchronous gain','Real X amplitude (mm)','X correlation'],[.35,8,.5]):
                 ax.axhline(gate,c='#c66338',ls=':',lw=1);ax.set(xlabel='Additional warm-start PPO updates',ylabel=title);ax.grid(alpha=.2)
             axes[row_index,0].set_title('Continuation trainingseed'+str(training_seed)+'; same CP1800',fontsize=10);axes[row_index,0].legend(fontsize=6)
-        fig.suptitle('Actual original20s X physics; red rings mark any full-matrix hard/contact failure',fontsize=11)
+        fig.suptitle('Actual original20s X physics; red: hard/contact, amber: full-matrix retention failure',fontsize=11)
         fig.savefig(out/('LEARNING-'+str(len(rows))+'rows.svg'),metadata=dict(Date=None));plt.close(fig)
     for f in out.glob('*.svg'):
         meta=dict(file=f.name,bytes=f.stat().st_size,sha256=hashlib.sha256(f.read_bytes()).hexdigest())
