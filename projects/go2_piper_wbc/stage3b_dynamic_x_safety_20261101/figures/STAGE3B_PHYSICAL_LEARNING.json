@@ -1,0 +1,98 @@
+{
+  "file": "STAGE3B_PHYSICAL_LEARNING.svg",
+  "sha256": "c4c9f9ad26eab3f55766ba9308163f03d730f469e28f946246a08f8831b4e286",
+  "bytes": 230919,
+  "points": [
+    {
+      "family": "Matched native PPO",
+      "training_seed": 21,
+      "additional_updates": 100,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "hard_nonfoot_events": 0,
+      "original_retention": true,
+      "worst_strict_safe_fraction": 0.96875
+    },
+    {
+      "family": "Old unconstrained synergy",
+      "training_seed": 21,
+      "additional_updates": 100,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "hard_nonfoot_events": 1,
+      "original_retention": true,
+      "worst_strict_safe_fraction": 0.96875
+    },
+    {
+      "family": "Matched native PPO",
+      "training_seed": 22,
+      "additional_updates": 100,
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "hard_nonfoot_events": 0,
+      "original_retention": true,
+      "worst_strict_safe_fraction": 0.984375
+    },
+    {
+      "family": "Matched native PPO",
+      "training_seed": 22,
+      "additional_updates": 200,
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "hard_nonfoot_events": 1,
+      "original_retention": true,
+      "worst_strict_safe_fraction": 0.96875
+    },
+    {
+      "family": "Old unconstrained synergy",
+      "training_seed": 22,
+      "additional_updates": 100,
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "hard_nonfoot_events": 0,
+      "original_retention": true,
+      "worst_strict_safe_fraction": 0.953125
+    },
+    {
+      "family": "Old unconstrained synergy",
+      "training_seed": 22,
+      "additional_updates": 200,
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "hard_nonfoot_events": 0,
+      "original_retention": true,
+      "worst_strict_safe_fraction": 0.96875
+    },
+    {
+      "family": "Old unconstrained synergy",
+      "training_seed": 22,
+      "additional_updates": 400,
+      "checkpoint_sha256": "19834dd18342cb008f9a67a2b760f7163a1fe78a39b462602f3d72ad2427593c",
+      "hard_nonfoot_events": 0,
+      "original_retention": false,
+      "worst_strict_safe_fraction": 0.953125
+    },
+    {
+      "family": "Old unconstrained synergy",
+      "training_seed": 22,
+      "additional_updates": 600,
+      "checkpoint_sha256": "50bf1a57d6e04e453867fb97bf9346ee8c4e87ce533c52dedbdff6816303ba7a",
+      "hard_nonfoot_events": 3,
+      "original_retention": false,
+      "worst_strict_safe_fraction": 0.875
+    },
+    {
+      "family": "arm_synergy_fixed_legKL_001",
+      "training_seed": 22,
+      "additional_updates": 100,
+      "checkpoint_sha256": "12eedd7921ec698e7111431e173496caaf759a7da592a3c2e13049f699233525",
+      "hard_nonfoot_events": 0,
+      "original_retention": true,
+      "worst_strict_safe_fraction": 0.984375
+    },
+    {
+      "family": "arm_synergy_fixed_legKL_001",
+      "training_seed": 22,
+      "additional_updates": 200,
+      "checkpoint_sha256": "93f5fb99e6c3ec27af1ab41e46a81a41c86a794699611bf01cf35a7e57f3adc3",
+      "hard_nonfoot_events": 0,
+      "original_retention": true,
+      "worst_strict_safe_fraction": 0.984375
+    }
+  ],
+  "scope": "Separate training seeds and physics seeds; no frozen-composition diagnostic scores; no extrapolation beyond evaluated native control checkpoints."
+}

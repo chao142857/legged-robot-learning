@@ -1,0 +1,1226 @@
+{
+  "CPU_only": true,
+  "functions": [
+    {
+      "label": "parent",
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "groups": {
+        "all": {
+          "n": 608,
+          "leg_raw_mean_RMS": 0.0,
+          "arm_raw_mean_RMS": 0.0,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backward": {
+          "n": 128,
+          "leg_raw_mean_RMS": 0.0,
+          "arm_raw_mean_RMS": 0.0,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "label": "old/synergy100-seed21",
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "groups": {
+        "all": {
+          "n": 608,
+          "leg_raw_mean_RMS": 0.09581993520259857,
+          "arm_raw_mean_RMS": 0.14949554204940796,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.014234175905585289,
+            0.024012502282857895,
+            0.02332955040037632,
+            0.013462727889418602,
+            0.02084595523774624,
+            0.031063174828886986,
+            0.009182721376419067,
+            0.022412527352571487,
+            0.027544880285859108,
+            0.02755538932979107,
+            0.01923695206642151,
+            0.03882230073213577,
+            0.009614289738237858,
+            0.03057326376438141,
+            0.04623721167445183,
+            0.053448665887117386,
+            0.03828684240579605,
+            0.02988584153354168
+          ]
+        },
+        "backward": {
+          "n": 128,
+          "leg_raw_mean_RMS": 0.11393865942955017,
+          "arm_raw_mean_RMS": 0.2099025398492813,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.023104587569832802,
+            0.03479504585266113,
+            0.020714234560728073,
+            0.01582997478544712,
+            0.028092587366700172,
+            0.018591711297631264,
+            0.015699166804552078,
+            0.025407910346984863,
+            0.03571617603302002,
+            0.04605413228273392,
+            0.03072313219308853,
+            0.03073953278362751,
+            0.013089243322610855,
+            0.020879456773400307,
+            0.055782053619623184,
+            0.08829168230295181,
+            0.055732786655426025,
+            0.0436081662774086
+          ]
+        }
+      }
+    },
+    {
+      "label": "old/synergy100-seed22",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "groups": {
+        "all": {
+          "n": 608,
+          "leg_raw_mean_RMS": 0.07597073912620544,
+          "arm_raw_mean_RMS": 0.15606577694416046,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.01253561768680811,
+            0.018507475033402443,
+            0.023770539090037346,
+            0.01284991204738617,
+            0.018393950536847115,
+            0.01915583573281765,
+            0.010110856033861637,
+            0.02132381871342659,
+            0.017849089577794075,
+            0.022594794631004333,
+            0.02385873906314373,
+            0.020934799686074257,
+            0.013313905335962772,
+            0.03647083789110184,
+            0.039384376257658005,
+            0.0583961047232151,
+            0.0374336838722229,
+            0.03554998338222504
+          ]
+        },
+        "backward": {
+          "n": 128,
+          "leg_raw_mean_RMS": 0.10011754930019379,
+          "arm_raw_mean_RMS": 0.2399085909128189,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.016045518219470978,
+            0.023316141217947006,
+            0.026316413655877113,
+            0.016139404848217964,
+            0.02532787248492241,
+            0.02016611397266388,
+            0.017659951001405716,
+            0.02510828897356987,
+            0.021469367668032646,
+            0.042457833886146545,
+            0.03234095871448517,
+            0.02152896113693714,
+            0.026171861216425896,
+            0.028543837368488312,
+            0.04962553828954697,
+            0.09936784207820892,
+            0.061007309705019,
+            0.06344511359930038
+          ]
+        }
+      }
+    },
+    {
+      "label": "old/synergy200-seed22",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "groups": {
+        "all": {
+          "n": 608,
+          "leg_raw_mean_RMS": 0.127558633685112,
+          "arm_raw_mean_RMS": 0.24549096822738647,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.014265459962189198,
+            0.030763015151023865,
+            0.03444470837712288,
+            0.01910598762333393,
+            0.029106227681040764,
+            0.03444543480873108,
+            0.01758810319006443,
+            0.02901512384414673,
+            0.029345709830522537,
+            0.041403453797101974,
+            0.04596630483865738,
+            0.040359191596508026,
+            0.023977499455213547,
+            0.03986460715532303,
+            0.0558943934738636,
+            0.1034325435757637,
+            0.044956665486097336,
+            0.06776430457830429
+          ]
+        },
+        "backward": {
+          "n": 128,
+          "leg_raw_mean_RMS": 0.17915895581245422,
+          "arm_raw_mean_RMS": 0.4057151973247528,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.010422502644360065,
+            0.03809824585914612,
+            0.03209065645933151,
+            0.02486918680369854,
+            0.04452948272228241,
+            0.03378215432167053,
+            0.034963104873895645,
+            0.03975063934922218,
+            0.039433181285858154,
+            0.07354692369699478,
+            0.07483194023370743,
+            0.048728544265031815,
+            0.04415925219655037,
+            0.03842707350850105,
+            0.06836564093828201,
+            0.19062325358390808,
+            0.0463678240776062,
+            0.12304094433784485
+          ]
+        }
+      }
+    },
+    {
+      "label": "old/synergy400-seed22",
+      "checkpoint_sha256": "19834dd18342cb008f9a67a2b760f7163a1fe78a39b462602f3d72ad2427593c",
+      "groups": {
+        "all": {
+          "n": 608,
+          "leg_raw_mean_RMS": 0.22626526653766632,
+          "arm_raw_mean_RMS": 0.4421837031841278,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.033153485506772995,
+            0.046221449971199036,
+            0.04764585942029953,
+            0.037981390953063965,
+            0.06022173911333084,
+            0.053384073078632355,
+            0.03239443898200989,
+            0.05026833713054657,
+            0.05441896244883537,
+            0.08520995080471039,
+            0.08209038525819778,
+            0.06659486889839172,
+            0.031637925654649734,
+            0.07408780604600906,
+            0.10730528831481934,
+            0.17163637280464172,
+            0.09938003867864609,
+            0.12642225623130798
+          ]
+        },
+        "backward": {
+          "n": 128,
+          "leg_raw_mean_RMS": 0.3376966416835785,
+          "arm_raw_mean_RMS": 0.8254148960113525,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.02098168060183525,
+            0.06037716940045357,
+            0.03043467178940773,
+            0.03694679215550423,
+            0.09518121927976608,
+            0.039966996759176254,
+            0.06192746013402939,
+            0.07843660563230515,
+            0.08621861040592194,
+            0.1501963585615158,
+            0.14712633192539215,
+            0.08288196474313736,
+            0.055495262145996094,
+            0.09738793969154358,
+            0.18015944957733154,
+            0.34741321206092834,
+            0.1450706124305725,
+            0.26216059923171997
+          ]
+        }
+      }
+    },
+    {
+      "label": "old/synergy600-seed22",
+      "checkpoint_sha256": "50bf1a57d6e04e453867fb97bf9346ee8c4e87ce533c52dedbdff6816303ba7a",
+      "groups": {
+        "all": {
+          "n": 608,
+          "leg_raw_mean_RMS": 0.3168802261352539,
+          "arm_raw_mean_RMS": 0.5573719143867493,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.042817119508981705,
+            0.07293873280286789,
+            0.06842156499624252,
+            0.05913545936346054,
+            0.08991144597530365,
+            0.07647453248500824,
+            0.041052162647247314,
+            0.07165655493736267,
+            0.06879068166017532,
+            0.1263837367296219,
+            0.09680815786123276,
+            0.09564902633428574,
+            0.04068871587514877,
+            0.10140520334243774,
+            0.10916883498430252,
+            0.23265019059181213,
+            0.08309594541788101,
+            0.1777956783771515
+          ]
+        },
+        "backward": {
+          "n": 128,
+          "leg_raw_mean_RMS": 0.4803992807865143,
+          "arm_raw_mean_RMS": 1.104352355003357,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.03590122610330582,
+            0.10017731785774231,
+            0.03832010552287102,
+            0.056734587997198105,
+            0.15233613550662994,
+            0.0700419545173645,
+            0.07506586611270905,
+            0.09948492795228958,
+            0.12193388491868973,
+            0.2159489244222641,
+            0.1632409244775772,
+            0.15900400280952454,
+            0.06845739483833313,
+            0.14939230680465698,
+            0.19479554891586304,
+            0.48870792984962463,
+            0.10735800862312317,
+            0.37687772512435913
+          ]
+        }
+      }
+    },
+    {
+      "label": "new/legKL001-n100-seed22",
+      "checkpoint_sha256": "12eedd7921ec698e7111431e173496caaf759a7da592a3c2e13049f699233525",
+      "groups": {
+        "all": {
+          "n": 608,
+          "leg_raw_mean_RMS": 0.046115484088659286,
+          "arm_raw_mean_RMS": 0.1438431441783905,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.00497426837682724,
+            0.012832681648433208,
+            0.012883679941296577,
+            0.0088949054479599,
+            0.014468184672296047,
+            0.011278902180492878,
+            0.007288665510714054,
+            0.011936197988688946,
+            0.010819172486662865,
+            0.014077210798859596,
+            0.013161702081561089,
+            0.011826089583337307,
+            0.010743252001702785,
+            0.03992445766925812,
+            0.03513060882687569,
+            0.05270187556743622,
+            0.028611063957214355,
+            0.03492060676217079
+          ]
+        },
+        "backward": {
+          "n": 128,
+          "leg_raw_mean_RMS": 0.054482970386743546,
+          "arm_raw_mean_RMS": 0.19362682104110718,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.007170388009399176,
+            0.01428851205855608,
+            0.012078258208930492,
+            0.011588835157454014,
+            0.012374358251690865,
+            0.009040691889822483,
+            0.012091425247490406,
+            0.016017140820622444,
+            0.008943142369389534,
+            0.016570430248975754,
+            0.024125127121806145,
+            0.010786258615553379,
+            0.019719459116458893,
+            0.029809193685650826,
+            0.030934009701013565,
+            0.08305879682302475,
+            0.0332685261964798,
+            0.061800792813301086
+          ]
+        }
+      }
+    },
+    {
+      "label": "new/legKL001-n200-seed22",
+      "checkpoint_sha256": "93f5fb99e6c3ec27af1ab41e46a81a41c86a794699611bf01cf35a7e57f3adc3",
+      "groups": {
+        "all": {
+          "n": 608,
+          "leg_raw_mean_RMS": 0.06029153987765312,
+          "arm_raw_mean_RMS": 0.22383466362953186,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.007018075790256262,
+            0.021075760945677757,
+            0.01481281965970993,
+            0.012683305889368057,
+            0.012660428881645203,
+            0.015147902071475983,
+            0.00978268962353468,
+            0.015476004220545292,
+            0.011200236156582832,
+            0.02261439524590969,
+            0.009562027640640736,
+            0.019983334466814995,
+            0.016671407967805862,
+            0.035926975309848785,
+            0.047765981405973434,
+            0.09761141240596771,
+            0.03604825586080551,
+            0.06411316990852356
+          ]
+        },
+        "backward": {
+          "n": 128,
+          "leg_raw_mean_RMS": 0.08983080834150314,
+          "arm_raw_mean_RMS": 0.38081100583076477,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.006670354399830103,
+            0.03208151087164879,
+            0.018584098666906357,
+            0.01857750117778778,
+            0.0173333827406168,
+            0.008135524578392506,
+            0.017391905188560486,
+            0.026216188445687294,
+            0.012658392079174519,
+            0.04119357094168663,
+            0.017252640798687935,
+            0.027870632708072662,
+            0.03048785775899887,
+            0.04323701187968254,
+            0.050106231123209,
+            0.18350160121917725,
+            0.0345882885158062,
+            0.11917468905448914
+          ]
+        }
+      }
+    }
+  ],
+  "physical": [
+    {
+      "origin": "old",
+      "label": "frozen1800-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "actual_FL_hip_q_max": 0.9914076328277588,
+      "actual_FL_hip_abs_qd_peak": 10.934148788452148,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.05579221248626709,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.021660156548023224,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "frozen1800-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "actual_FL_hip_q_max": 0.8646480441093445,
+      "actual_FL_hip_abs_qd_peak": 9.845294952392578,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.1825518012046814,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0008125000167638063,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "frozen1800-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "actual_FL_hip_q_max": 0.9390949010848999,
+      "actual_FL_hip_abs_qd_peak": 9.840587615966797,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.10810494422912598,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.028449218720197678,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "frozen1800-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "actual_FL_hip_q_max": 0.8682877421379089,
+      "actual_FL_hip_abs_qd_peak": 10.991308212280273,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.17891210317611694,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0008476562215946615,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy100-seed21-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "actual_FL_hip_q_max": 1.0482473373413086,
+      "actual_FL_hip_abs_qd_peak": 11.466160774230957,
+      "actual_FL_hip_nominal_limit_margin_min_rad": -0.0010474920272827148,
+      "actual_FL_hip_hard_excess_max_rad": 0.0010474920272827148,
+      "FL_hip_applied_torque_saturation_fraction": 0.04698828235268593,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy100-seed21-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "actual_FL_hip_q_max": 0.896759033203125,
+      "actual_FL_hip_abs_qd_peak": 9.61414909362793,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.15044081211090088,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0033554688561707735,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy100-seed21-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "actual_FL_hip_q_max": 0.9970903992652893,
+      "actual_FL_hip_abs_qd_peak": 10.9982271194458,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.05010944604873657,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.06329687684774399,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy100-seed21-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "actual_FL_hip_q_max": 0.8691088557243347,
+      "actual_FL_hip_abs_qd_peak": 10.574310302734375,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.17809098958969116,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0030156250577419996,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative100-seed21-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "actual_FL_hip_q_max": 1.0444742441177368,
+      "actual_FL_hip_abs_qd_peak": 11.042945861816406,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.0027256011962890625,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0367421880364418,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative100-seed21-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "actual_FL_hip_q_max": 0.8780957460403442,
+      "actual_FL_hip_abs_qd_peak": 10.40001392364502,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.16910409927368164,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0020039062947034836,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative100-seed21-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "actual_FL_hip_q_max": 0.9876523017883301,
+      "actual_FL_hip_abs_qd_peak": 10.582117080688477,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.0595475435256958,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.05069921910762787,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative100-seed21-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "actual_FL_hip_q_max": 0.8564102053642273,
+      "actual_FL_hip_abs_qd_peak": 10.473222732543945,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.19078963994979858,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0019374999683350325,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy100-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "actual_FL_hip_q_max": 1.0376240015029907,
+      "actual_FL_hip_abs_qd_peak": 11.60557746887207,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.009575843811035156,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.036671873182058334,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy100-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "actual_FL_hip_q_max": 0.8876817226409912,
+      "actual_FL_hip_abs_qd_peak": 9.013078689575195,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.15951812267303467,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0027304687537252903,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy100-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "actual_FL_hip_q_max": 0.9601410627365112,
+      "actual_FL_hip_abs_qd_peak": 9.91918659210205,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.08705878257751465,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.04716796800494194,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy100-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "actual_FL_hip_q_max": 0.8638843297958374,
+      "actual_FL_hip_abs_qd_peak": 10.246659278869629,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.18331551551818848,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0022812499664723873,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative100-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "actual_FL_hip_q_max": 1.0328147411346436,
+      "actual_FL_hip_abs_qd_peak": 12.51755428314209,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.014385104179382324,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.04309765622019768,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative100-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "actual_FL_hip_q_max": 0.8833335041999817,
+      "actual_FL_hip_abs_qd_peak": 9.315356254577637,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.1638663411140442,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.002902343636378646,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative100-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "actual_FL_hip_q_max": 0.9608107805252075,
+      "actual_FL_hip_abs_qd_peak": 13.0123291015625,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.08638906478881836,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.05791015550494194,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative100-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "actual_FL_hip_q_max": 0.8649120330810547,
+      "actual_FL_hip_abs_qd_peak": 10.43271541595459,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.1822878122329712,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0026914062909781933,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy200-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "actual_FL_hip_q_max": 1.0455995798110962,
+      "actual_FL_hip_abs_qd_peak": 10.919659614562988,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.0016002655029296875,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.038468748331069946,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy200-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "actual_FL_hip_q_max": 0.9182849526405334,
+      "actual_FL_hip_abs_qd_peak": 10.879423141479492,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.12891489267349243,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0038906249683350325,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy200-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "actual_FL_hip_q_max": 0.9719845056533813,
+      "actual_FL_hip_abs_qd_peak": 9.678400993347168,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.07521533966064453,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.05075390636920929,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy200-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "actual_FL_hip_q_max": 0.8722561597824097,
+      "actual_FL_hip_abs_qd_peak": 13.478475570678711,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.1749436855316162,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.00341796875,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative200-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "actual_FL_hip_q_max": 1.048417091369629,
+      "actual_FL_hip_abs_qd_peak": 13.132039070129395,
+      "actual_FL_hip_nominal_limit_margin_min_rad": -0.0012172460556030273,
+      "actual_FL_hip_hard_excess_max_rad": 0.0012172460556030273,
+      "FL_hip_applied_torque_saturation_fraction": 0.052742186933755875,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative200-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "actual_FL_hip_q_max": 0.9119540452957153,
+      "actual_FL_hip_abs_qd_peak": 12.502081871032715,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.13524580001831055,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.004671874921768904,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative200-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "actual_FL_hip_q_max": 1.0025831460952759,
+      "actual_FL_hip_abs_qd_peak": 11.29976749420166,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.04461669921875,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.06497656553983688,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "matchedNative200-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "actual_FL_hip_q_max": 0.8708269000053406,
+      "actual_FL_hip_abs_qd_peak": 10.634982109069824,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.1763729453086853,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.004398437682539225,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy400-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "19834dd18342cb008f9a67a2b760f7163a1fe78a39b462602f3d72ad2427593c",
+      "actual_FL_hip_q_max": 1.0442479848861694,
+      "actual_FL_hip_abs_qd_peak": 11.051128387451172,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.0029518604278564453,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.05680468678474426,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy400-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "19834dd18342cb008f9a67a2b760f7163a1fe78a39b462602f3d72ad2427593c",
+      "actual_FL_hip_q_max": 0.9429986476898193,
+      "actual_FL_hip_abs_qd_peak": 11.364455223083496,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.10420119762420654,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.009234375320374966,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy400-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "19834dd18342cb008f9a67a2b760f7163a1fe78a39b462602f3d72ad2427593c",
+      "actual_FL_hip_q_max": 1.01749587059021,
+      "actual_FL_hip_abs_qd_peak": 11.789408683776855,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.029703974723815918,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.06746484339237213,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy400-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "19834dd18342cb008f9a67a2b760f7163a1fe78a39b462602f3d72ad2427593c",
+      "actual_FL_hip_q_max": 0.8864526748657227,
+      "actual_FL_hip_abs_qd_peak": 11.090741157531738,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.16074717044830322,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.00881640613079071,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy600-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "50bf1a57d6e04e453867fb97bf9346ee8c4e87ce533c52dedbdff6816303ba7a",
+      "actual_FL_hip_q_max": 1.0500946044921875,
+      "actual_FL_hip_abs_qd_peak": 13.494012832641602,
+      "actual_FL_hip_nominal_limit_margin_min_rad": -0.002894759178161621,
+      "actual_FL_hip_hard_excess_max_rad": 0.002894759178161621,
+      "FL_hip_applied_torque_saturation_fraction": 0.06519140303134918,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy600-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "50bf1a57d6e04e453867fb97bf9346ee8c4e87ce533c52dedbdff6816303ba7a",
+      "actual_FL_hip_q_max": 0.9207698702812195,
+      "actual_FL_hip_abs_qd_peak": 10.716597557067871,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.1264299750328064,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.010710937902331352,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy600-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "50bf1a57d6e04e453867fb97bf9346ee8c4e87ce533c52dedbdff6816303ba7a",
+      "actual_FL_hip_q_max": 1.0388230085372925,
+      "actual_FL_hip_abs_qd_peak": 15.319634437561035,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.008376836776733398,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.07228906452655792,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "old",
+      "label": "synergy600-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "50bf1a57d6e04e453867fb97bf9346ee8c4e87ce533c52dedbdff6816303ba7a",
+      "actual_FL_hip_q_max": 0.8984374403953552,
+      "actual_FL_hip_abs_qd_peak": 11.902328491210938,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.14876240491867065,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.010897324420511723,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "frozen1800-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "actual_FL_hip_q_max": 0.9914076328277588,
+      "actual_FL_hip_abs_qd_peak": 10.934148788452148,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.05579221248626709,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.021660156548023224,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "frozen1800-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "actual_FL_hip_q_max": 0.8646480441093445,
+      "actual_FL_hip_abs_qd_peak": 9.845294952392578,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.1825518012046814,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0008125000167638063,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "frozen1800-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "actual_FL_hip_q_max": 0.9390949010848999,
+      "actual_FL_hip_abs_qd_peak": 9.840587615966797,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.10810494422912598,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.028449218720197678,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "frozen1800-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "actual_FL_hip_q_max": 0.8682877421379089,
+      "actual_FL_hip_abs_qd_peak": 10.991308212280273,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.17891210317611694,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0008476562215946615,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n100-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "12eedd7921ec698e7111431e173496caaf759a7da592a3c2e13049f699233525",
+      "actual_FL_hip_q_max": 1.0219109058380127,
+      "actual_FL_hip_abs_qd_peak": 11.734453201293945,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.025288939476013184,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.02803906239569187,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n100-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "12eedd7921ec698e7111431e173496caaf759a7da592a3c2e13049f699233525",
+      "actual_FL_hip_q_max": 0.8775937557220459,
+      "actual_FL_hip_abs_qd_peak": 10.187847137451172,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.16960608959197998,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.001500000013038516,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n100-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "12eedd7921ec698e7111431e173496caaf759a7da592a3c2e13049f699233525",
+      "actual_FL_hip_q_max": 0.9514262676239014,
+      "actual_FL_hip_abs_qd_peak": 11.41091537475586,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.09577357769012451,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.03983202949166298,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n100-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "12eedd7921ec698e7111431e173496caaf759a7da592a3c2e13049f699233525",
+      "actual_FL_hip_q_max": 0.8684937953948975,
+      "actual_FL_hip_abs_qd_peak": 11.99911880493164,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.17870604991912842,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0014218749711290002,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n200-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "93f5fb99e6c3ec27af1ab41e46a81a41c86a794699611bf01cf35a7e57f3adc3",
+      "actual_FL_hip_q_max": 1.0105369091033936,
+      "actual_FL_hip_abs_qd_peak": 11.613399505615234,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.036662936210632324,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.031714845448732376,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n200-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "93f5fb99e6c3ec27af1ab41e46a81a41c86a794699611bf01cf35a7e57f3adc3",
+      "actual_FL_hip_q_max": 0.8715920448303223,
+      "actual_FL_hip_abs_qd_peak": 9.792228698730469,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.1756078004837036,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0017539062537252903,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n200-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "93f5fb99e6c3ec27af1ab41e46a81a41c86a794699611bf01cf35a7e57f3adc3",
+      "actual_FL_hip_q_max": 0.9594970345497131,
+      "actual_FL_hip_abs_qd_peak": 14.21878433227539,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.08770281076431274,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.04451953247189522,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n200-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "93f5fb99e6c3ec27af1ab41e46a81a41c86a794699611bf01cf35a7e57f3adc3",
+      "actual_FL_hip_q_max": 0.8384855389595032,
+      "actual_FL_hip_abs_qd_peak": 9.604419708251953,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.2087143063545227,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.001960937399417162,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    }
+  ],
+  "common_mechanical_limits_verified_across_measured_DR_realizations": true,
+  "source_sha256": "c224c7810410cacad9199ce5a01b8fe2a663f84b61364810cbda5acbc651077d",
+  "scope": "Frozen functions on identical actual P1 inputs are distinct from native closed-loop q/qd/torque measurements. Nominal target deltas precede soft/ramp/delay; not actual EE predictions. Native1mrad hard-event tolerance is unchanged. No final seeds or PPO updates."
+}
