@@ -617,6 +617,11 @@
       "sha256": "5fe89fbee058ddd749b5b9f2543e7d16d08577ee08d1f9fe44c8608e24ccb67c"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/NETWORK_BLOCK_AT_DEPLOYMENT.json",
+      "bytes": 1211,
+      "sha256": "dc01c5ba53b11825ff0e1753976bf3a300e60d9210134aade1fda769a7cb3c97"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/analyze_physics.py",
       "bytes": 8422,
       "sha256": "0eb54ad62176d1c0897bf7b9d643f9e4481d6affa9793945a6d1d3bbc2ff029d"
