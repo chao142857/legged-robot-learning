@@ -823,8 +823,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/README.md",
-      "bytes": 15588,
-      "sha256": "46a2c340e009250c8fb566c1f56fc3b5bb001b9d0bdd0801dc168feb17243bcc"
+      "bytes": 16635,
+      "sha256": "bd5efdbf236cadb22349be7c89ca39ef5f8c9e04719f3588d43d16494b41aba6"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/RESOURCE_PLAN.json",
@@ -882,14 +882,24 @@
       "sha256": "1b9049f5906d121d51bb833f9c07d2cca2d1553050cc5b1298d1eaf0e76b0880"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT_LEGKL002_N100_SEED21.json",
+      "bytes": 122725,
+      "sha256": "f13e95adcf3e3bf785aa1859f2d494ea555a62cf511ac78956bb77e26ac87885"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT_LEGKL002_N200_SEED21.json",
+      "bytes": 122704,
+      "sha256": "9dd0ddb57b0c392deb2a85d68505ccae4f10439d53fe810e72f2e92927f4095f"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FINAL_TRACE_PREREGISTRATION.json",
       "bytes": 428,
       "sha256": "8a67de55638448c8549462c776c48366475cf0efefd69264242c9863b765073d"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FUNCTION_AND_LEG_MARGIN_AUDIT.json",
-      "bytes": 66275,
-      "sha256": "59c3935707908b26d2f95e94dfd77058b6447c9b1a9c36d82697bb2dcfa062b5"
+      "bytes": 74961,
+      "sha256": "ef5c7da51bcf8acdbbde53b6efd49e6cd48dfa16fc35d44319fa2e1c2ad8cd4e"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/GPU_INITIALIZATION_AND_NATIVE_PPO.json",
@@ -922,6 +932,11 @@
       "sha256": "1f0e8ccb7cd520cfee63ff080791f5a70428c1a6fe3b79497475461186489324"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/REPAIR1_FAILED_STATE_FUNCTION_PROJECTIONS.json",
+      "bytes": 2640,
+      "sha256": "3efad51d3f843d2c80909ea378aeb55065a548326ec165ebeb024cab7717b6f7"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/REPAIR1_LEG_FUNCTION_CAUSAL_COMPARISON.json",
       "bytes": 1211,
       "sha256": "2bcb42637878bcb1cb4d95ea8361d7b50f07035375b92b210ead6e47eedf2166"
@@ -943,13 +958,13 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.json",
-      "bytes": 5254,
-      "sha256": "b1ad887c720d61fb1a9c07a6501dba7ab4d3717b32bbb5bc88ddfe225aef9e14"
+      "bytes": 5905,
+      "sha256": "3272aefb2988b29bfa166b3cfb805eede453373c2e9d4090f014b5483a919524"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.svg",
-      "bytes": 246605,
-      "sha256": "eb1923d115f7047c1e20684c9931b6ab27d6a8eb1162dd277fc1c637518fab9e"
+      "bytes": 258051,
+      "sha256": "92308e9959316bdb4c30c53826b4ce8c7addd35954c171fdb4ecc635fe7864ad"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/patches/finalize_stage3.py.patch",

@@ -1,0 +1,58 @@
+{
+  "CPU_only": true,
+  "actual_original_probe_env": 56,
+  "precontact_window_s": [
+    17.0,
+    18.18
+  ],
+  "same_recorded_input_count": 60,
+  "current400_CPU_forward_matches_recorded_GPU": true,
+  "rows": [
+    {
+      "label": "CP1800",
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "leg_raw_mean_delta_RMS": 0.0,
+      "arm_raw_mean_delta_RMS": 0.0,
+      "RL_calf_mean_before_contact": 2.2368316650390625,
+      "RL_calf_raw_delta_vs_anchor_before_contact": 0.0,
+      "RL_calf_nominal_target_delta_vs_anchor_rad": 0.0
+    },
+    {
+      "label": "legKL001-n200-seed21",
+      "checkpoint_sha256": "2ae9a996617b585115e8ac29f1d9a40312db045d0663a6a02be5998c474d0b5a",
+      "leg_raw_mean_delta_RMS": 0.17783844470977783,
+      "arm_raw_mean_delta_RMS": 0.537690281867981,
+      "RL_calf_mean_before_contact": 2.8490543365478516,
+      "RL_calf_raw_delta_vs_anchor_before_contact": 0.6122226715087891,
+      "RL_calf_nominal_target_delta_vs_anchor_rad": 0.15305566787719727
+    },
+    {
+      "label": "legKL001-n400-seed21",
+      "checkpoint_sha256": "4733fbde446fdd70d05fdc840511727a8d79788db85c6902774c47f9f13a7df0",
+      "leg_raw_mean_delta_RMS": 0.203653946518898,
+      "arm_raw_mean_delta_RMS": 1.0498586893081665,
+      "RL_calf_mean_before_contact": 2.817112922668457,
+      "RL_calf_raw_delta_vs_anchor_before_contact": 0.5802812576293945,
+      "RL_calf_nominal_target_delta_vs_anchor_rad": 0.14507031440734863
+    },
+    {
+      "label": "legKL002-n100-seed21",
+      "checkpoint_sha256": "12cd3a989f2592108b8f697d6e8f4159f06203e63e1b62c63e4297a5665789bc",
+      "leg_raw_mean_delta_RMS": 0.08296740055084229,
+      "arm_raw_mean_delta_RMS": 0.24131366610527039,
+      "RL_calf_mean_before_contact": 2.506211519241333,
+      "RL_calf_raw_delta_vs_anchor_before_contact": 0.2693798542022705,
+      "RL_calf_nominal_target_delta_vs_anchor_rad": 0.06734496355056763
+    },
+    {
+      "label": "legKL002-n200-seed21",
+      "checkpoint_sha256": "c52124bec904ab630d48afbc0447e19f22307e9d79333bffa53aaa2844e24b2f",
+      "leg_raw_mean_delta_RMS": 0.10567738860845566,
+      "arm_raw_mean_delta_RMS": 0.5466891527175903,
+      "RL_calf_mean_before_contact": 2.5488204956054688,
+      "RL_calf_raw_delta_vs_anchor_before_contact": 0.31198883056640625,
+      "RL_calf_nominal_target_delta_vs_anchor_rad": 0.07799720764160156
+    }
+  ],
+  "scope": "Frozen policies on identical real failed-trajectory inputs. Nominal target is before soft/ramp/delay. These are functional projections, not new-policy physical trajectories, safety success or exact per-reward PPO gradients."
+}
