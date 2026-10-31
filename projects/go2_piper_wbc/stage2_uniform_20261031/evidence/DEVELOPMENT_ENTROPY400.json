@@ -1,0 +1,105 @@
+{
+  "status": "DEVELOPMENT_ONLY_NOT_BASELINE_PASS",
+  "asof_local": "2026-10-31T17:09:00+08:00",
+  "protocol": "Historical B0-X original A/T0/T1/X full20s, seeds8101/8102, startup and strict safety retained",
+  "training_seed": 21,
+  "initialization_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "original_control400": {
+    "X_gain": [
+      0.14226563,
+      0.12948451
+    ],
+    "X_correlation": [
+      0.318411,
+      0.295452
+    ],
+    "X_amplitude_mm": [
+      3.40595,
+      3.12183
+    ],
+    "A_strict_safe": [
+      63,
+      58
+    ],
+    "A_n": [
+      64,
+      64
+    ],
+    "checkpoint_sha256": "f9d350283ecdda83fdaaee5f64589ea758952349c29bfd340bf130f8e326c414"
+  },
+  "coverage400": {
+    "X_gain": [
+      0.12352757,
+      0.11380159
+    ],
+    "X_correlation": [
+      0.313824,
+      0.2999
+    ],
+    "X_amplitude_mm": [
+      3.10193,
+      2.84677
+    ],
+    "A_strict_safe": [
+      61,
+      61
+    ],
+    "A_n": [
+      64,
+      64
+    ]
+  },
+  "entropyLow400": {
+    "X_gain": [
+      0.14092075,
+      0.12029563
+    ],
+    "X_correlation": [
+      0.3488207,
+      0.3134919
+    ],
+    "X_amplitude_mm": [
+      3.61157,
+      3.18615
+    ],
+    "strict_safe": 507,
+    "complete": 512,
+    "n": 512,
+    "checkpoint_sha256": "f217f8c235b2ccc8c8c9fe82be7259024fec5f7810a0e669633a801c53c16d0c",
+    "arm_std_reduction_vs_control400": 0.14524481861888883,
+    "original_registered_retention": false
+  },
+  "direction_diagnostic": {
+    "protocol": "T1",
+    "direction": "left",
+    "initial_gain": [
+      0.7513354957123156,
+      0.7455164274106164
+    ],
+    "entropy400_gain": [
+      0.9322992315058193,
+      0.9135502616519409
+    ],
+    "original_absolute_change_check": [
+      false,
+      false
+    ],
+    "interpretation": "Improved toward gain=1; keep original check results and report independent quality diagnosis."
+  },
+  "last_actual_run": {
+    "run_name": "20261031T170546-entropyLow800",
+    "mode": "native PPO full-state resume of own safe entropy400",
+    "status_at_observation": "Docker Running; no error receipt",
+    "CPU_controller_pid": 2080146
+  },
+  "GPU_SUM_seconds_at_observation": 8850.88047838211,
+  "GPU_cap_seconds": 14400,
+  "final_reserve_seconds": 1800,
+  "final_seeds_opened_at_observation": false,
+  "limitations": [
+    "One training seed only. Development seeds are not final tests.",
+    "Later SSH failures prevent claiming a newer live state.",
+    "Native 5cm joint success is not dynamic-X gate success.",
+    "Prepared finalizer-v2 selection and reward-audit patch have not yet been verified deployed."
+  ]
+}

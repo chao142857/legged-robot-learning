@@ -8,5 +8,12 @@
   "native_PPO_reimplemented": false,
   "optional_entropy_status": "CONDITIONAL_SOURCE_PREPARED; real activation/run receipts required, not asserted here",
   "source_scope": "Frozen per-run source and launch hashes are authoritative; accounting/cohort observers do not change native PPO objective or RNG. Optional trial changes exactly declared native entropy coefficient after plateau admission.",
-  "first_staged_entropy_entry_sha256": "ec5a7faf964fc6b111cc05788df567653adb2b18b2dc0f58ba3667b90089400d"
+  "first_staged_entropy_entry_sha256": "ec5a7faf964fc6b111cc05788df567653adb2b18b2dc0f58ba3667b90089400d",
+  "actual_entropy_activated_entry_sha256": "ec5a7faf964fc6b111cc05788df567653adb2b18b2dc0f58ba3667b90089400d",
+  "entropy_status_asof_1615": "EXECUTING:99 completed native PPO updates, physical evaluation pending",
+  "entropy400_status": "Completed native200 + resumed200; 512 complete and507 strict-safe across full A/T0/T1/X development. X gate FAIL.",
+  "entropy800_start_verified": "2026-10-31T17:09+08:00, frozen finish_entropy source, actual Docker Running; later state requires fresh verification",
+  "prepared_finalizer_selection_v2_sha256": "27e4bc87b8e922a96cafb7701fe9da5f0fd9601ba3e4863435d2a7e36ed34e5a",
+  "prepared_finalizer_selection_v2_deployed": false,
+  "finish_entropy_cpu_source_sha256": "f5507f39ad690e5dbd27b179f2aa24f8463cb8bca7c33c1ff68bffff07d995f6"
 }

@@ -11,6 +11,13 @@ def final_eval(b,cfg,label):
     wait(b,r);s=read(r/'evaluation/summary.json');assert s['num_episodes']==64 and s['complete_episode_evaluation'] and s['actor_unchanged'] and s['critic_unchanged']
 
 def select(curve,initial):
+    """Choose on development physics; keep original registration as a separate result.
+
+    An absolute change from a weak parent can flag a direction that improved
+    toward gain=1. This is not a reason to hide that candidate from final tests.
+    Neither this selection rule nor its diagnostic rewrites the registered gate.
+    """
+    baseline={(r['protocol'],r['seed']):r for r in curve['rows'] if r['label'].startswith('frozen1800-')}
     groups={}
     for r in curve['rows']:
         if r['label'].startswith('final-') or r['label'].startswith('frozen1800-'):continue
@@ -21,11 +28,25 @@ def select(curve,initial):
         if len(xs)<2:continue
         safety=min(r['strict_safe']/r['n'] for r in rows)
         retained=all(all(r.get('retention_checks',{}).values()) for r in rows)
+        quality_checks=[];direction_diagnostics=[]
+        for r in rows:
+            check=dict(r.get('retention_checks',{}));old=baseline.get((r['protocol'],r['seed']))
+            if not check or old is None:quality_checks.append(False);continue
+            for name in ('forward','backward','left','right'):
+                if name not in check:continue
+                parent_gain=old['directions'][name]['gain'];gain=r['directions'][name]['gain']
+                diagnostic=parent_gain is not None and gain is not None and abs(gain-1)<=abs(parent_gain-1)+.15
+                direction_diagnostics.append(dict(label=r['label'],direction=name,parent_gain=parent_gain,current_gain=gain,original_registered_check=check[name],distance_to_ideal_diagnostic=diagnostic))
+                check[name]=diagnostic
+            quality_checks.append(all(check.values()) and r['complete']/r['n']>=.95)
         score=min(r['X_after1s']['synchronous_gain'] for r in xs)
-        candidates.append(dict(checkpoint=xs[0]['checkpoint'],checkpoint_sha256=sha,min_safe_fraction=safety,retained=retained,min_X_gain=score,development_labels=[r['label'] for r in rows]))
-    acceptable=[x for x in candidates if x['retained'] and x['min_safe_fraction']>=.95]
+        full_development=all({r['protocol'] for r in rows if r['seed']==seed}=={'A','T0','T1','X'} for seed in (8101,8102))
+        candidates.append(dict(checkpoint=xs[0]['checkpoint'],checkpoint_sha256=sha,min_safe_fraction=safety,retained=retained,development_physical_quality=all(quality_checks),complete_development_matrix=full_development,direction_diagnostics=direction_diagnostics,min_X_gain=score,development_labels=[r['label'] for r in rows]))
+    acceptable=[x for x in candidates if x['development_physical_quality'] and x['complete_development_matrix'] and x['min_safe_fraction']>=.95]
     chosen=max(acceptable,key=lambda x:x['min_X_gain']) if acceptable else dict(initial,reason='No trained candidate retained frozen original health/safety; preserve initialization')
-    return dict(candidate=chosen,all_development_candidates=candidates,selection_used_final_seeds=False)
+    return dict(candidate=chosen,all_development_candidates=candidates,selection_used_final_seeds=False,
+        selection_rule='Best worst-seed X gain among full A/T0/T1/X development matrices with strict safety and physical-quality checks. Absolute parent-relative direction change remains an independent original registered gate.',
+        registered_final_gates_unchanged=True,rule_version='development_selection_v2_before_final_seeds')
 
 def main(b,source):
     write(b.p/'FINALIZER_PROCESS.json',dict(pid=os.getpid()))

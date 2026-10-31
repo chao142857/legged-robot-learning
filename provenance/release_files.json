@@ -433,8 +433,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/README.md",
-      "bytes": 4417,
-      "sha256": "d126a0e5062ed0b24509fb2243efaa83a5f1a9a88b6fcd316f6a382ad380eb1c"
+      "bytes": 5764,
+      "sha256": "e2a3280ef71d7e3f9d2c7e0a51406ec84a70a02456dd72c6b6049f7e6340e963"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/ACTIVE_EXECUTION.json",
@@ -448,13 +448,18 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CONTINUATION_SOURCE_VERSIONS.json",
-      "bytes": 1063,
-      "sha256": "a549d6c9aecd20e3ede7c9d601111b9089a0ec7dc0b53e3d62390a683c2a56c9"
+      "bytes": 1840,
+      "sha256": "2d1ce3e2338d88d667298e89d465486c96f1ab3e6ff128392f710e630ab347de"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CPU_STARTING_POINT.json",
       "bytes": 1672,
       "sha256": "d2fd9e25698dd59efa8623594936a4ad40345a6a3e8af3e3f1f42e19414e6b31"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/DEVELOPMENT_ENTROPY400.json",
+      "bytes": 2624,
+      "sha256": "98c0655227b495d4dd746238e9dcc555154d187d5019a476e59bbc271f31dc71"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/GITHUB_READINESS.json",
@@ -467,6 +472,11 @@
       "sha256": "9b772a2b08fdd024f60af3e5624e00a46621499e1bd8bb11b602108cbc258781"
     },
     {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/PRELIMINARY_PHYSICS.json",
+      "bytes": 162824,
+      "sha256": "a472c316070cb6a1ec4967f8e1423c723d6e01a940f94242e85488b3e74ffbf2"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/RECOVERED_SOURCE_MANIFEST.json",
       "bytes": 4681,
       "sha256": "d71c9d689dcf27e565f9d4ac88dd7e4add90aa78f55264d1b3f7c1d3e5ea4988"
@@ -475,6 +485,11 @@
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/SOURCE_INDEX.json",
       "bytes": 1755,
       "sha256": "b7ad880a553161cc01591b998bb2d1846567d5fc358fbd2fb469dc7e87963cd0"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/figures/development_400.svg",
+      "bytes": 166437,
+      "sha256": "7c30338af0981cbdc84828592a921b13e133356b64eee0473a5b3c63e9befb1d"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/analyze_physics.py",
@@ -498,8 +513,13 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/finalize_stage2.py",
-      "bytes": 7875,
-      "sha256": "c0f40e64301feadd2793e475921668c821943259ede9827f723a424906696019"
+      "bytes": 9864,
+      "sha256": "27e4bc87b8e922a96cafb7701fe9da5f0fd9601ba3e4863435d2a7e36ed34e5a"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/finish_entropy.py",
+      "bytes": 5225,
+      "sha256": "f5507f39ad690e5dbd27b179f2aa24f8463cb8bca7c33c1ff68bffff07d995f6"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/gpu_budget.py",
@@ -507,9 +527,19 @@
       "sha256": "b3b9890adb78ebbcf5ac55f68a88a238b7544a3cf2c643f23eed541060f17a0f"
     },
     {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/local_reward_audit.py",
+      "bytes": 6077,
+      "sha256": "ee82fa7e63c5e2433d17540e96e67e645381ccfc3e4c4d66e7dc35ef45dad5a8"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/pipeline.py",
       "bytes": 3346,
       "sha256": "56e7ee2f6df54c84802d9bbe88b7a25d2917587316642121a5f239b2bdb2be8d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/plot_physics.py",
+      "bytes": 2614,
+      "sha256": "0916ac23f48effbcf21521414258c69549beaa0776aefacff2acde895558aad5"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/recover_original_wbc.py",
