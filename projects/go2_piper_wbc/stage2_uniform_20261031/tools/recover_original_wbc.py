@@ -3,18 +3,18 @@ Does not import a simulator, load a policy, launch training, or alter remote fil
 """
 import argparse,datetime,hashlib,json,pathlib,shlex,subprocess
 REMOTE = r'''
-import pathlib,subprocess,json,hashlib,datetime
+import pathlib,subprocess,json,hashlib,datetime,sys
 
 def cmd(argv,timeout=15,limit=12000):
  try:
   r=subprocess.run(argv,capture_output=True,text=True,timeout=timeout)
   return dict(returncode=r.returncode,stdout=r.stdout[:limit],stderr=r.stderr[:1000])
  except Exception as e:return dict(error=repr(e))
-root=pathlib.Path('/home/alex/dog')
+root=pathlib.Path(json.loads(sys.stdin.read())['root'])
 out=dict(host=cmd(['hostname']),time_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),GPU=cmd(['nvidia-smi','--query-gpu=name,memory.total,memory.used,utilization.gpu','--format=csv,noheader']),GPU_compute=cmd(['nvidia-smi','--query-compute-apps=pid,process_name,used_memory','--format=csv,noheader']),docker=cmd(['docker','ps','--format','{{.Names}} {{.Status}}']))
 worktrees=['LeggedManip_Lab_B0_20261026','LeggedManip_Lab_recipe_aplus_20261025','LeggedManip_Lab_B0_jointScratch_20261027','LeggedManip_Lab_scheduledMix_safetyDiag_20261028']
 out['instructions']={};out['worktrees']=[]
-for q in [pathlib.Path('/home/alex/AGENTS.md'),root/'AGENTS.md']:
+for q in [root.parent/'AGENTS.md',root/'AGENTS.md']:
  if q.exists():out['instructions'][str(q)]=q.read_text()
 for name in worktrees:
  w=root/name;s=w/'task_suite_experiment'
@@ -45,10 +45,10 @@ print(json.dumps(out))
 '''
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--host',default='ubuntu-robot');p.add_argument('--out',type=pathlib.Path,default=pathlib.Path(__file__).resolve().parents[1]/'evidence');a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--host',default='ubuntu-robot');p.add_argument('--remote-root',required=True,help='Existing original WBC runtime directory; no files are modified');p.add_argument('--out',type=pathlib.Path,required=True,help='External diagnostic output, not the publication checkout');a=p.parse_args()
  started=datetime.datetime.now(datetime.timezone.utc);out=dict(time_utc=started.isoformat(),host=a.host,read_only=True)
  try:
-  r=subprocess.run(['ssh','-o','BatchMode=yes','-o','ConnectTimeout=60','-o','ServerAliveInterval=20','-o','ServerAliveCountMax=3',a.host,'python3 -u -c '+shlex.quote(REMOTE)],capture_output=True,text=True,timeout=150)
+  r=subprocess.run(['ssh','-o','BatchMode=yes','-o','ConnectTimeout=60','-o','ServerAliveInterval=20','-o','ServerAliveCountMax=3',a.host,'python3 -u -c '+shlex.quote(REMOTE)],input=json.dumps({'root':a.remote_root}),capture_output=True,text=True,timeout=150)
   out['returncode']=r.returncode
   if r.returncode==0:out['status']='CONNECTED';out['inventory']=json.loads(r.stdout)
   else:out.update(status='SSH_FAILED',stderr=r.stderr[-2000:])

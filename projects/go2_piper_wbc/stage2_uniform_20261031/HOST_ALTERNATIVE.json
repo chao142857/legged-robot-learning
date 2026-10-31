@@ -1,0 +1,36 @@
+{
+  "status": "APPROVED_AND_EXECUTING_ORIGINAL_PPO",
+  "original_host": "ubuntu-robot_user_confirmed_offline",
+  "alternative_host": "yanglab_existing_RTX3060",
+  "budget_seconds": 14400,
+  "final_reserve_seconds": 1800,
+  "new_budget_requested": false,
+  "project": "Original PPO+Uniform, separate source/output/ledger and Docker from all SuperMimic studies",
+  "available_checkpoint": {
+    "label": "Original own A+CP1800",
+    "sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+    "match": "EXACT_original_input_SHA",
+    "bytes": 5941198
+  },
+  "available_runtime": {
+    "image_id": "sha256:8ee9b2bb8e6aae08dace71ee1e2141a4d62bcc63e4cf0eac28b347111a486a87",
+    "GPU": "RTX3060_12GiB",
+    "GPU_utilization_observed": 0,
+    "GPU_compute_processes_observed": 0,
+    "running_Docker_observed": 0,
+    "original_B0_source_mirror": true
+  },
+  "GitHub_main": {
+    "sha": "1004d858859fcc17d46d80b7a7e522d3e41fc962",
+    "has_B0X_entry": false,
+    "has_weights": false,
+    "has_robot_assets": false,
+    "releases": []
+  },
+  "still_required": [
+    "User clarification permitting this alternative host; approved request had excluded YangLab usage.",
+    "Independent original PPO live source/config/checkpoint restore and physical parity checks in new Stage2 directory; no Stage3e CP2000/2200 substitution."
+  ],
+  "GPU_started": 1,
+  "approval": "允许，作为独立原PPO项目执行"
+}

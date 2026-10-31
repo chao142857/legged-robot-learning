@@ -20,7 +20,7 @@
     "candidates": [
       {
         "label": "A+CP1800",
-        "path": "/home/alex/dog/go2_piper_recipe_aplus_20261025/initialization_retry_v1/train_seed21/cp_1800.pt",
+        "path": "${ORIGINAL_WBC_RUNTIME_ROOT}/go2_piper_recipe_aplus_20261025/initialization_retry_v1/train_seed21/cp_1800.pt",
         "sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
         "reason": "Prior same-domain full20s strict safety191/192 per original protocol with .5s startup"
       },
@@ -36,7 +36,7 @@
   "milestones": "Frozen development at update0/200/400/800 if reached within time; save every100. Normal nonmonotonic fluctuations allowed. Candidate decision uses development only; separate unseen final seeds frozen before training.",
   "protocol": "A/T0/T1/X, full20s including startup; all failures retain denominator; original dynamic amplitude±.02m and period8s unchanged",
   "frozen_gates_source": {
-    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_B0_20261026_work/source/recipe_b0/spec.json",
+    "path": "${SOURCE_CACHE_ROOT}/go2_piper_B0_20261026_work/source/recipe_b0/spec.json",
     "sha256": "765f3bd7df04d7f5446ddd9f77a02c94d7787e97386e56d5c59c0c91a210586a",
     "learning_gate": {
       "all_three_seeds_required": true,

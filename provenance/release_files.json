@@ -1,5 +1,5 @@
 {
-  "self_excluded": "This file is excluded to avoid a recursive self hash. Git commit/tree and the pre-push audit cover it.",
+  "self_excluded": true,
   "files": [
     {
       "path": ".gitignore",
@@ -415,6 +415,86 @@
       "path": "projects/go2_piper_wbc/scratch_t1_20261025/tools/test_t1_tracking_metrics.py",
       "bytes": 2260,
       "sha256": "19748ce13d8f4c209063f1e657367f32b1f27fcb03a00bc5dd3513c9c7aa0e89"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/AUTHORIZATION.json",
+      "bytes": 1115,
+      "sha256": "195b9d697a8a680f4fb7d7d419617fa46268434627fc85a5e0bd44106266f9bc"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/BUDGET_REQUEST.json",
+      "bytes": 4614,
+      "sha256": "6973def919e781203597babb93df6eda9a6500c6c80641ee4f5183fc23d675eb"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/HOST_ALTERNATIVE.json",
+      "bytes": 1424,
+      "sha256": "1ebe1e32e6ee74c76807f2f920dcc995a1667ac266449b82a7b29b44aa9e49ac"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/ACTIVE_EXECUTION.json",
+      "bytes": 2536,
+      "sha256": "a3ee52632aff95ff6acd83f43caf8414ec437d2a2e34d0fe17e0abbf39c46f34"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CONNECTIVITY.json",
+      "bytes": 378,
+      "sha256": "84423e0c1979958c938a4465ff102ac1428781909e091bb87e678979fb96b418"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CPU_STARTING_POINT.json",
+      "bytes": 1672,
+      "sha256": "d2fd9e25698dd59efa8623594936a4ad40345a6a3e8af3e3f1f42e19414e6b31"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/GITHUB_READINESS.json",
+      "bytes": 981,
+      "sha256": "0cb161534f70bdeada2eea65520be3d4acca6fee4fa2b39e8046410754584f0b"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/NATIVE_WRAPPER_PROVENANCE.json",
+      "bytes": 781,
+      "sha256": "9b772a2b08fdd024f60af3e5624e00a46621499e1bd8bb11b602108cbc258781"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/RECOVERED_SOURCE_MANIFEST.json",
+      "bytes": 4681,
+      "sha256": "d71c9d689dcf27e565f9d4ac88dd7e4add90aa78f55264d1b3f7c1d3e5ea4988"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/SOURCE_INDEX.json",
+      "bytes": 1755,
+      "sha256": "b7ad880a553161cc01591b998bb2d1846567d5fc358fbd2fb469dc7e87963cd0"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/evaluate_entry.py",
+      "bytes": 927,
+      "sha256": "9850a3daea4cd5421dd0f4ef39cb1496ca630502addfffa0e550c4eb29054697"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/gpu_budget.py",
+      "bytes": 4748,
+      "sha256": "b3b9890adb78ebbcf5ac55f68a88a238b7544a3cf2c643f23eed541060f17a0f"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/pipeline.py",
+      "bytes": 3346,
+      "sha256": "56e7ee2f6df54c84802d9bbe88b7a25d2917587316642121a5f239b2bdb2be8d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/recover_original_wbc.py",
+      "bytes": 4682,
+      "sha256": "c7eeddc9f85c3b4116b24efcabc6671087afe190295bedb99fd3c9e97a82fb29"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/recover_source_bundle.py",
+      "bytes": 1848,
+      "sha256": "68812cfb7fac5fe335f0884600b10b46b7f5e4b4d4921e0ed70a2ee279918d67"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/train_entry.py",
+      "bytes": 24808,
+      "sha256": "04a22e75b4c35d1c47d7e6781b5489a44a1e229791eacd641638063f37909469"
     },
     {
       "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/__init__.py",

@@ -1,0 +1,26 @@
+{
+  "repository": "chao142857/legged-robot-learning",
+  "default_branch": "main",
+  "branches": [
+    {
+      "name": "docs/bilingual-readme-20261025",
+      "sha": "ab14b4e08d4c8c9a6e936c33e1f4e1216b9b2e75"
+    },
+    {
+      "name": "main",
+      "sha": "1004d858859fcc17d46d80b7a7e522d3e41fc962"
+    },
+    {
+      "name": "research/stage2-uniform-wbc-20261031",
+      "sha": "4eb1e43e05505dfad721df55097b6b68880dcc52"
+    }
+  ],
+  "main_tree_truncated": false,
+  "main_blob_count": 268,
+  "main_weights_assets": [],
+  "main_B0X_entries": [],
+  "release_count": 0,
+  "conclusion": "Usable code and CPU-validation base; not a full live B0-X training backup. Exact original task-suite source33 and matching original PPO CP1800 recovered separately from authorized existing caches; no alternate policy substituted.",
+  "approved_GPU_seconds": 14400,
+  "current_backend": "User approved YangLab existing RTX3060 for isolated ORIGINAL PPO Stage2; no SuperMimic learner or weights"
+}

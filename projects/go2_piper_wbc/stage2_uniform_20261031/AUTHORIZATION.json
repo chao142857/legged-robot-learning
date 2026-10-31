@@ -1,0 +1,18 @@
+{
+  "approved": true,
+  "approved_GPU_seconds_SUM": 14400,
+  "final_reserve_seconds": 1800,
+  "budget_sha256": "09551dfe3cc4a437f37f9f9ddb97f13800310f86ab2ae8e83fdd1bffa25e51e2",
+  "recorded_time_utc": "2026-10-31T06:13:48.286719+00:00",
+  "user_approval": "批准240分钟并自主执行",
+  "host_update": "用户确认ubuntu-robot离线无法使用，要求检查GitHub仓库是否可用",
+  "GPU_seconds_used": 0,
+  "old_ledgers_reopened": false,
+  "compute_host_selection": "YangLab existing RTX3060, original PPO isolated Stage2 only",
+  "public_budget_view_sha256": "6973def919e781203597babb93df6eda9a6500c6c80641ee4f5183fc23d675eb",
+  "approved_original_request": "${STAGE2_PRIVATE_ROOT}/BUDGET_REQUEST.approved.json",
+  "publication_note": "Public request view replaces machine-specific path prefixes only; approved original bytes preserved externally; resource cap and gates unchanged.",
+  "host_change_approved": true,
+  "host_change_approval": "允许，作为独立原PPO项目执行",
+  "scope": "Original native PPO+Uniform; separate repository/source/output/ledger/Docker; no SuperMimic training"
+}

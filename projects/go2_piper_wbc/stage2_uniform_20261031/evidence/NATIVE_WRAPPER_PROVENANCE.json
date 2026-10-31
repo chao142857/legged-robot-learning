@@ -1,0 +1,13 @@
+{
+  "parent_observer_sha256": "046fa3b813e37da5fc29564d3371d551cace8c1ac55a9299068d2f17133a0511",
+  "current_observer_sha256": "04a22e75b4c35d1c47d7e6781b5489a44a1e229791eacd641638063f37909469",
+  "native_PPO_optimizer_loss_network_reimplemented": false,
+  "entry_calls": "Installed rsl_rl.OnPolicyRunner.learn and native alg.update / Adam.step",
+  "changes": [
+    "Parameterize bounded slice/restore metadata; no old400-only restriction",
+    "Only treatment factor: original Uniform dynamic episode fraction .30 -> .70",
+    "Passive reward-time physical diagnostics and original severe actual hard-limit stop",
+    "Record all18 output-row parameter changes; native KL and Adam accounting retained"
+  ],
+  "original_source_commit": "ae1054046f792df8da6362c36ee168ded6b2ebcd"
+}
