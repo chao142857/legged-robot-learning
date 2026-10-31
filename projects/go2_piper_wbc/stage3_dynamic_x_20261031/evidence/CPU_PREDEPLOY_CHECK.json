@@ -1,0 +1,28 @@
+{
+  "CPU_only": true,
+  "Isaac_or_PhysX_executed": false,
+  "all_wrapper_syntax_passed": true,
+  "original_evaluator_overlay_compiles": true,
+  "P1_diagnostic_only": true,
+  "independent_phase_caps_sum": 21600,
+  "final_reserve_seconds": 3600,
+  "final_seeds_found_only_in_new_resource_plan": true,
+  "budget_only_SUM_phase_and_reserve_tests_passed": true,
+  "budget_test_no_Docker_or_GPU_executed": true,
+  "prepared_source_sha256": {
+    "analyze_physics.py": "0eb54ad62176d1c0897bf7b9d643f9e4481d6affa9793945a6d1d3bbc2ff029d",
+    "dynamic_x_probe.py": "3de99ee90b5d62d4974ba8a9da14c8db2ec987d9141f0bd4c65905054233fe35",
+    "evaluate_entry.py": "9850a3daea4cd5421dd0f4ef39cb1496ca630502addfffa0e550c4eb29054697",
+    "gpu_budget.py": "36430df66bf40365b7d90d4139beae2f402f0fb602288a25320d3a35671fe8cb",
+    "native_gradient_audit.py": "e69a3f1045d150fa9094c12d2f79e7d1b90b4330be63dd058fb8001894e4178f",
+    "p1_pipeline.py": "cd6985d7c4824644c40a2930aeccb8b4a8894745f340425759c92e2a9302feaa",
+    "plot_physics.py": "6877af914035dd939d09a7e5533c7f44d4dc29e56c108c0e2d3cb89fdbea0b5b",
+    "probe_entry.py": "92620831a660dbf30701779d70d6f4b4a3268fb8658130f736c9ce76c7abba0f",
+    "reduce_p1.py": "e8cf2df0bdea2c3a3731184041f5d6f9b79c983bcbf6537df00dad281ad4d018",
+    "response_breakdown.py": "87daf508a4f80bf3912e3341389718e2f916f70277ec350ff0f7455eae56e9cf",
+    "response_tap.py": "0596d18c40bdfcf548a7fbde3838e3309c7c430b1eb48875439dcfc5c84d7a02",
+    "safety_breakdown.py": "65473b3b29d0153d9aae815a52b99274a95a2fd564b3390c50d5ecc7985fd04d",
+    "train_entry.py": "0742cb0436cca5f8ac388115c123d4f31f1caef6077a45fa090c7cc0e29e904b"
+  },
+  "new_PhysX_result": false
+}

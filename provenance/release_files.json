@@ -597,6 +597,91 @@
       "sha256": "17e46cf95a745b9e2a11a9f2254487d64aebbc4f1419ac5c548aee49a02d1ffb"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/AUTHORIZATION.json",
+      "bytes": 586,
+      "sha256": "dd695644e66863ca3db43758ad4c3a929cd7b3aa684a9462fc634705efdb1437"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/README.md",
+      "bytes": 3921,
+      "sha256": "066f86a2982634c4dd25c1ebadc0f7bd1297bfc1359b5ce30d0eb7e0f9b11e32"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/RESOURCE_PLAN.json",
+      "bytes": 2679,
+      "sha256": "6c20564848b364abae7904f9c7cb7c7627971afe27dc4313b9e4ca7af4c700f0"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/CPU_PREDEPLOY_CHECK.json",
+      "bytes": 1672,
+      "sha256": "5fe89fbee058ddd749b5b9f2543e7d16d08577ee08d1f9fe44c8608e24ccb67c"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/analyze_physics.py",
+      "bytes": 8422,
+      "sha256": "0eb54ad62176d1c0897bf7b9d643f9e4481d6affa9793945a6d1d3bbc2ff029d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/dynamic_x_probe.py",
+      "bytes": 12012,
+      "sha256": "3de99ee90b5d62d4974ba8a9da14c8db2ec987d9141f0bd4c65905054233fe35"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/evaluate_entry.py",
+      "bytes": 927,
+      "sha256": "9850a3daea4cd5421dd0f4ef39cb1496ca630502addfffa0e550c4eb29054697"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/gpu_budget.py",
+      "bytes": 5802,
+      "sha256": "36430df66bf40365b7d90d4139beae2f402f0fb602288a25320d3a35671fe8cb"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/native_gradient_audit.py",
+      "bytes": 3785,
+      "sha256": "e69a3f1045d150fa9094c12d2f79e7d1b90b4330be63dd058fb8001894e4178f"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/p1_pipeline.py",
+      "bytes": 4208,
+      "sha256": "cd6985d7c4824644c40a2930aeccb8b4a8894745f340425759c92e2a9302feaa"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/plot_physics.py",
+      "bytes": 2612,
+      "sha256": "6877af914035dd939d09a7e5533c7f44d4dc29e56c108c0e2d3cb89fdbea0b5b"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/probe_entry.py",
+      "bytes": 2124,
+      "sha256": "92620831a660dbf30701779d70d6f4b4a3268fb8658130f736c9ce76c7abba0f"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/reduce_p1.py",
+      "bytes": 7971,
+      "sha256": "e8cf2df0bdea2c3a3731184041f5d6f9b79c983bcbf6537df00dad281ad4d018"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/response_breakdown.py",
+      "bytes": 2494,
+      "sha256": "87daf508a4f80bf3912e3341389718e2f916f70277ec350ff0f7455eae56e9cf"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/response_tap.py",
+      "bytes": 4889,
+      "sha256": "0596d18c40bdfcf548a7fbde3838e3309c7c430b1eb48875439dcfc5c84d7a02"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/safety_breakdown.py",
+      "bytes": 2682,
+      "sha256": "65473b3b29d0153d9aae815a52b99274a95a2fd564b3390c50d5ecc7985fd04d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/train_entry.py",
+      "bytes": 29712,
+      "sha256": "0742cb0436cca5f8ac388115c123d4f31f1caef6077a45fa090c7cc0e29e904b"
+    },
+    {
       "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/__init__.py",
       "bytes": 86,
       "sha256": "3c1e97153c0581cafddea394646ca399f56898727d46b10065ab6909b8bfa920"
@@ -1503,8 +1588,8 @@
     },
     {
       "path": "tools/audit_publication.py",
-      "bytes": 4895,
-      "sha256": "4f9375e850189b64b33d65621bdcbdb2406f60f8b1bc2c6e0c9532fdd5730595"
+      "bytes": 4921,
+      "sha256": "095f45666e4a51ec58c25c2a0c6700037f10583c810277e1dbd972ee7baae7bc"
     },
     {
       "path": "tools/cpu_smoke.py",

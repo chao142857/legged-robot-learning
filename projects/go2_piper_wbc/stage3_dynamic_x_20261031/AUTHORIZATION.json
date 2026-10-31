@@ -1,0 +1,16 @@
+{
+  "approved": true,
+  "host_change_approved": true,
+  "approved_GPU_seconds_SUM": 21600,
+  "final_reserve_seconds": 3600,
+  "phase_seconds_caps": {
+    "P1": 2400,
+    "P2": 6600,
+    "P3": 9000,
+    "P4": 3600
+  },
+  "plan_sha256": "6c20564848b364abae7904f9c7cb7c7627971afe27dc4313b9e4ca7af4c700f0",
+  "user_authorization": "Stage3\u6279\u51c6\u6700\u591a6\u5c0f\u65f6GPU\u5bb9\u5668\u7d2f\u8ba1\u65f6\u95f421600\u79d2\uff0c\u5e38\u89c4\u64cd\u4f5c\u81ea\u4e3b\u6267\u884c\uff1b\u4e0d\u590d\u7528Stage2\u3002",
+  "old_ledgers_reopened": false,
+  "update_and_transition_caps": null
+}

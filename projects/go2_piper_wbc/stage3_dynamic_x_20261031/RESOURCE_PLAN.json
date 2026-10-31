@@ -1,0 +1,41 @@
+{
+  "project": "Original PPO+Uniform B0-X dynamic X only",
+  "source_baseline_commit": "52e0bfa959bd129930ce577c46c56d0cc1564831",
+  "original_task_commit": "ae1054046f792df8da6362c36ee168ded6b2ebcd",
+  "GPU_container_SUM_seconds_cap": 21600,
+  "final_reserve_seconds": 3600,
+  "phase_seconds_caps": {
+    "P1": 2400,
+    "P2": 6600,
+    "P3": 9000,
+    "P4": 3600
+  },
+  "update_and_transition_caps": null,
+  "execution_host": "YangLab existing RTX3060 and verified native PPO Docker",
+  "old_Stage2_ledger_read_only": true,
+  "formal_seeds": [
+    511031,
+    521031,
+    531031
+  ],
+  "development_seeds": [
+    6181031,
+    6281031
+  ],
+  "training_seeds": [
+    21,
+    22
+  ],
+  "common_parent_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "diagnostic_checkpoint_sha256": "ecb802d9ff186fa40208a7197265904444cea4a68b8fd2ceb14a6ea60b825f6e",
+  "P1": "Paired cold-start frozen actor counterfactual and bounded Jacobian action intervention; intervention is not policy success",
+  "training_admission": "Evidence from P1 before one mechanism; native Uniform .3/.7, original task/PD/DR/safety/evaluator retained. Changed recipe explicitly named.",
+  "formal_gates": "All historical B0-X original learning/retention/health gates; full20s startup, all failures counted. Dynamic Xgain>=.35,corr>=.5,amplitude>=8mm are necessary but not sufficient.",
+  "safety_stop": "Stop branch on real FL_hip hard-limit violation, nonfoot contact or severe directional degradation; preserve evidence. No blanket prohibition on normal simulation training resets.",
+  "termination": "Stop unchanged recipe after two physics milestones without substantive X progress; never reopen closed ledger or use final seeds to tune.",
+  "counting": "Every GPU container including startup/failure/eval/pause/render, SUM; independent watcher. Native PPO/Adam/GAE unchanged.",
+  "P1_native_learning_audit": "50 unmodified native PPO diagnostic updates, all saved native GAE and total actor-gradient observer; these weights never become the P2 parent. Counts and GPU time included in P1.",
+  "deployment_state_at_plan_freeze": "Prepared locally; SSH/Tailscale data plane currently unreachable. Actual remote root and GPU start require receipts.",
+  "formal_seed_scope": "Checked accessible original WBC archive and Stage2 indices; the offline original host latest tree remains unverified. Final seeds are never used for selection.",
+  "P1_bounded_intervention_followup": "Strength.5 first; strength1 only if weaker response is incomplete and per-case safety/complete/nonfoot/joint-limit counts do not worsen against its paired baseline. Both are diagnostic, never policy PASS."
+}

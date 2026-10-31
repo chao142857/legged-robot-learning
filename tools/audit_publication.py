@@ -23,7 +23,7 @@ PATTERNS = {
 
 def files():
     return sorted(p for p in ROOT.rglob('*') if '.git' not in p.relative_to(ROOT).parts
-                  and '__pycache__' not in p.parts and p.is_file())
+                  and '__pycache__' not in p.parts and p.name != '.DS_Store' and p.is_file())
 
 
 def audit(history=False):
