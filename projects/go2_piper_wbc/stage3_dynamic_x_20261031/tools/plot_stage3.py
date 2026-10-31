@@ -25,20 +25,31 @@ def main(p,out):
     fig.savefig(out/'P1_PHYSICS-v1.svg',metadata=dict(Date=None));plt.close(fig)
     curve=p/'PHYSICAL_CURVE.json'
     if curve.exists():
-        rows=read(curve)['rows'];fig,axes=plt.subplots(1,3,figsize=(13,3.7),layout='constrained')
-        for branch,color in [('synergy','#2a8f87'),('matchedNative','#50687d')]:
-            for seed,marker in [(6181031,'o'),(6281031,'s')]:
-                data=[]
-                for r in rows:
-                    m=re.match(r'^'+branch+r'([0-9]+)-seed21-X-'+str(seed)+r'$',r['label'])
-                    if m:data.append((int(m.group(1)),r))
-                    elif r['label']=='frozen1800-X-'+str(seed):data.append((0,r))
-                data.sort(key=lambda q:q[0])
-                for ax,key,factor in zip(axes,['synchronous_gain','actual_fitted_amplitude_m','correlation'],[1,1000,1]):
-                    ax.plot([q[0] for q in data],[q[1]['X_after1s'][key]*factor for q in data],marker=marker,color=color,ls='-' if seed==6181031 else '--',label=branch+' dev'+str(seed))
-        for ax,title,gate in zip(axes,['X synchronous gain','Real X amplitude (mm)','X correlation'],[.35,8,.5]):
-            ax.axhline(gate,c='#c66338',ls=':',lw=1);ax.set(xlabel='Additional warm-start PPO updates',ylabel=title);ax.grid(alpha=.2)
-        axes[0].legend(fontsize=6);fig.suptitle('Actual original20s X physics; unchanged original safety gates reported separately',fontsize=11)
+        rows=read(curve)['rows'];training_seeds=sorted({int(m.group(1)) for r in rows if (m:=re.match(r'^(?:synergy|matchedNative)[0-9]+-seed([0-9]+)-',r['label']))}) or [21]
+        fig,axes=plt.subplots(len(training_seeds),3,figsize=(13,3.6*len(training_seeds)),squeeze=False,layout='constrained')
+        for row_index,training_seed in enumerate(training_seeds):
+            for branch,color in [('synergy','#2a8f87'),('matchedNative','#50687d')]:
+                for seed,marker in [(6181031,'o'),(6281031,'s')]:
+                    data=[]
+                    for r in rows:
+                        m=re.match(r'^'+branch+r'([0-9]+)-seed'+str(training_seed)+r'-X-'+str(seed)+r'$',r['label'])
+                        if m:data.append((int(m.group(1)),r))
+                        elif r['label']=='frozen1800-X-'+str(seed):data.append((0,r))
+                    data.sort(key=lambda q:q[0])
+                    for ax,key,factor in zip(axes[row_index],['synchronous_gain','actual_fitted_amplitude_m','correlation'],[1,1000,1]):
+                        ax.plot([q[0] for q in data],[q[1]['X_after1s'][key]*factor for q in data],marker=marker,color=color,ls='-' if seed==6181031 else '--',label=branch+' dev'+str(seed))
+                        for update,r in data:
+                            if update==0:continue
+                            prefix=branch+str(update)+'-seed'+str(training_seed)+'-'
+                            whole=[v for v in rows if v['label'].startswith(prefix)]
+                            hard=sum(v['joint_limit']+v['nonfoot'] for v in whole)
+                            if hard and seed==6181031:
+                                y=r['X_after1s'][key]*factor;ax.scatter([update],[y],s=100,facecolors='none',edgecolors='#c14949',zorder=5)
+                                if key=='synchronous_gain':ax.annotate('hard/contact '+str(hard),(update,y),xytext=(3,8),textcoords='offset points',fontsize=6,color='#a73434')
+            for ax,title,gate in zip(axes[row_index],['X synchronous gain','Real X amplitude (mm)','X correlation'],[.35,8,.5]):
+                ax.axhline(gate,c='#c66338',ls=':',lw=1);ax.set(xlabel='Additional warm-start PPO updates',ylabel=title);ax.grid(alpha=.2)
+            axes[row_index,0].set_title('Continuation trainingseed'+str(training_seed)+'; same CP1800',fontsize=10);axes[row_index,0].legend(fontsize=6)
+        fig.suptitle('Actual original20s X physics; red rings mark any full-matrix hard/contact failure',fontsize=11)
         fig.savefig(out/('LEARNING-'+str(len(rows))+'rows.svg'),metadata=dict(Date=None));plt.close(fig)
     for f in out.glob('*.svg'):
         meta=dict(file=f.name,bytes=f.stat().st_size,sha256=hashlib.sha256(f.read_bytes()).hexdigest())

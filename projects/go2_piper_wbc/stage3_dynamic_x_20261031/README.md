@@ -42,6 +42,16 @@ The true native control and treatment use the same CP1800, trainingseed21 and2/1
 
 This is real partial learning, not baseline PASS. Seed21's A test had one actual FL_hip event at7.16s:1.047mrad hard-limit excess, with a valid requested target and saturated return torque. Neither frozen parent nor matched control had that hard event. The branch was stopped; its checkpoint is preserved as an unsafe diagnostic, never the next initialization. The preregistered independent continuationseed22 started from common CP1800 with the same mechanism and paired native control. These are shared-parent continuation seeds, not full from-scratch seeds.
 
+Seed22 reproduced the effect without that hard/contact failure at100 and200:
+
+| Additional updates / seed22 | X gain6181031 /6281031 | Actual X amplitude | Complete / strict-safe, full8-cell matrix |
+|---|---|---|---|
+| Synergy100 | .242 / .220 | 5.14 /4.73mm | 512/512 complete; no actual hard/nonfoot event |
+| Synergy200 | .343 / .319 | 7.05 /6.61mm | 512/512 complete;506/512 strict-safe; no actual hard/nonfoot event |
+| Matched native200 | .122 / .096 | 3.27 /2.96mm | One actual FL_hip hard-limit event in A6181031 |
+
+Original retention checks pass at both seed22 synergy nodes. The200-update X task still fails the original8mm gate. T0/T1 amplitudes above8mm cannot substitute for the independent X task. Native PPO also consumes leg safety margin; these results do not establish increased arm movement as the unique cause of seed21's failure. The safe200 checkpoint is `cp_2000.pt`, SHA256 `43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476`. Full lightweight matrix: `evidence/DEVELOPMENT_SEED22_200.json`.
+
 Evidence: `evidence/DEVELOPMENT100_ALL_PROTOCOLS.json`, `evidence/SEED21_FL_HIP_COUPLING.json`, and `evidence/CPU_POLICY_SENSITIVITY_1900.json`. The CPU counterfactual/Jacobian projection is separate from real physical scores. Figures: `evidence/figures/P1_PHYSICS-v1.svg` (amplitude follows original after1s metric; safety covers all20s) and `evidence/figures/LEARNING-24rows.svg`.
 
 Formal511031/521031/531031 seeds remain unopened until frozen development selection. Original gates, including continuous saved-node stability, remain unchanged. Large weights and full trajectories stay on YangLab. The current result is not a qualified Uniform baseline for SGS.

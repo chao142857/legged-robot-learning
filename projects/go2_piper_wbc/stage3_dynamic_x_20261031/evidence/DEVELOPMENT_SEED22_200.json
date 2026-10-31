@@ -1,0 +1,2121 @@
+{
+  "kind": "Derived original native full20s physics, strict/startup unchanged",
+  "rows": [
+    {
+      "label": "synergy100-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T004506-synergy100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.028960231691598892,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06062072515487671,
+          "after1s": 0.04341746121644974
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06062072515487671,
+          "after1s": 0.04341746121644974
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.1669370567149193,
+        "X_demeaned_RMSE_delta_m": -0.002121963615596408,
+        "EE_after1s_delta_m": -0.005394607782363892,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.2157806690528541,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.42593152895377523,
+        "demeaned_rmse_m": 0.009253145030980563,
+        "absolute_rmse_m": 0.014754149508071447
+      }
+    },
+    {
+      "label": "synergy100-seed22-T0-6181031",
+      "protocol": "T0",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T004506-synergy100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.017228519544005394,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04693176969885826,
+          "after1s": 0.02091837301850319
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04693176969885826,
+          "after1s": 0.02091837488114834
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.16583541169256188,
+        "X_demeaned_RMSE_delta_m": -0.0024069167188111775,
+        "EE_after1s_delta_m": -0.002423180267214775,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.3244870678344063,
+        "actual_fitted_amplitude_m": 0.006670307629293336,
+        "correlation": 0.8556314398044951,
+        "demeaned_rmse_m": 0.00997578824031243,
+        "absolute_rmse_m": 0.012438647287266236
+      }
+    },
+    {
+      "label": "synergy100-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T004506-synergy100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.022028325125575066,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.058489032089710236,
+          "after1s": 0.04117485135793686
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.058489035815000534,
+          "after1s": 0.04117485508322716
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.1510931473766318,
+        "X_demeaned_RMSE_delta_m": -0.0029069230148234815,
+        "EE_after1s_delta_m": -0.005080888047814369,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.3043808961438461,
+        "actual_fitted_amplitude_m": 0.0064849960826167345,
+        "correlation": 0.6058727360879778,
+        "demeaned_rmse_m": 0.0114034106431877,
+        "absolute_rmse_m": 0.012952034670030515
+      }
+    },
+    {
+      "label": "synergy100-seed22-X-6181031",
+      "protocol": "X",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T004506-synergy100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.0231744684278965,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": true,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true
+      },
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05727923661470413,
+          "after1s": 0.04074697196483612
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05727924406528473,
+          "after1s": 0.04074697196483612
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.1322700792744757,
+        "X_demeaned_RMSE_delta_m": -0.0025777586926821333,
+        "EE_after1s_delta_m": -0.003974243998527527,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.24152689194263358,
+        "actual_fitted_amplitude_m": 0.005142496809325276,
+        "correlation": 0.5198819620261566,
+        "demeaned_rmse_m": 0.011959545656687415,
+        "absolute_rmse_m": 0.014262342751514522
+      }
+    },
+    {
+      "label": "synergy100-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T004506-synergy100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 61,
+      "nonfoot": 0,
+      "overspeed": 3,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.02843824401497841,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.0597023107111454,
+          "after1s": 0.04323817044496536
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.0597023107111454,
+          "after1s": 0.04323817044496536
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.13595871246448682,
+        "X_demeaned_RMSE_delta_m": -0.002239333389970108,
+        "EE_after1s_delta_m": -0.005459573119878769,
+        "strict_safe_delta": -2
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.2286735797640329,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.5048474649159458,
+        "demeaned_rmse_m": 0.009324365153093733,
+        "absolute_rmse_m": 0.014656497734593293
+      }
+    },
+    {
+      "label": "synergy100-seed22-T0-6281031",
+      "protocol": "T0",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T004506-synergy100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.01649419404566288,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04692978784441948,
+          "after1s": 0.02038291096687317
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04692978784441948,
+          "after1s": 0.02038291096687317
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.16887211797911358,
+        "X_demeaned_RMSE_delta_m": -0.00243110653260702,
+        "EE_after1s_delta_m": -0.0022947881370782852,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.3293097268115856,
+        "actual_fitted_amplitude_m": 0.0067750876589819055,
+        "correlation": 0.8630864155806752,
+        "demeaned_rmse_m": 0.009901745201191595,
+        "absolute_rmse_m": 0.011793200927527435
+      }
+    },
+    {
+      "label": "synergy100-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T004506-synergy100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.021096020936965942,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.057758230715990067,
+          "after1s": 0.03988765552639961
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.057758230715990067,
+          "after1s": 0.03988765552639961
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.15431052717060126,
+        "X_demeaned_RMSE_delta_m": -0.003015841093730688,
+        "EE_after1s_delta_m": -0.00520160049200058,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.3089642264400701,
+        "actual_fitted_amplitude_m": 0.006507018357390112,
+        "correlation": 0.6183107154998836,
+        "demeaned_rmse_m": 0.011280906156599343,
+        "absolute_rmse_m": 0.012261228703799875
+      }
+    },
+    {
+      "label": "synergy100-seed22-X-6281031",
+      "protocol": "X",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T004506-synergy100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.02246294915676117,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true
+      },
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05665271729230881,
+          "after1s": 0.03944508731365204
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05665271729230881,
+          "after1s": 0.03944508731365204
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.13671085102363914,
+        "X_demeaned_RMSE_delta_m": -0.002674600032688731,
+        "EE_after1s_delta_m": -0.0040724873542785645,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.21952140868232561,
+        "actual_fitted_amplitude_m": 0.00472609117743195,
+        "correlation": 0.4859194226235729,
+        "demeaned_rmse_m": 0.012191725244985904,
+        "absolute_rmse_m": 0.013838330819958403
+      }
+    },
+    {
+      "label": "matchedNative100-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T005420-matchedNative100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.030258582904934883,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06149623915553093,
+          "after1s": 0.04482994228601456
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06149623915553093,
+          "after1s": 0.04482994228601456
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.024461898595057027,
+        "X_demeaned_RMSE_delta_m": -0.0008827440052304979,
+        "EE_after1s_delta_m": -0.004096256569027901,
+        "strict_safe_delta": -1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.07330551093299183,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.15963356257782205,
+        "demeaned_rmse_m": 0.010492364641346473,
+        "absolute_rmse_m": 0.016200362617647686
+      }
+    },
+    {
+      "label": "matchedNative100-seed22-T0-6181031",
+      "protocol": "T0",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T005420-matchedNative100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.01804937794804573,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.047339338809251785,
+          "after1s": 0.021845132112503052
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.047339338809251785,
+          "after1s": 0.02184513583779335
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.04282467761364636,
+        "X_demeaned_RMSE_delta_m": -0.0007570547176444925,
+        "EE_after1s_delta_m": -0.0016023218631744385,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.20147633375549076,
+        "actual_fitted_amplitude_m": 0.004130329211781499,
+        "correlation": 0.7343171411650866,
+        "demeaned_rmse_m": 0.011625650241479116,
+        "absolute_rmse_m": 0.013516348091943598
+      }
+    },
+    {
+      "label": "matchedNative100-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T005420-matchedNative100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.024182135239243507,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.057616930454969406,
+          "after1s": 0.03989429399371147
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.057616934180259705,
+          "after1s": 0.03989429399371147
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.010319582547425765,
+        "X_demeaned_RMSE_delta_m": -0.0009740933458325697,
+        "EE_after1s_delta_m": -0.0029270779341459274,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.1636073313146401,
+        "actual_fitted_amplitude_m": 0.0037923192444887467,
+        "correlation": 0.36220734420415773,
+        "demeaned_rmse_m": 0.013336240312178612,
+        "absolute_rmse_m": 0.014711486487084176
+      }
+    },
+    {
+      "label": "matchedNative100-seed22-X-6181031",
+      "protocol": "X",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T005420-matchedNative100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.025124670937657356,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "demeaned_RMSE": false,
+        "absolute_RMSE": true
+      },
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.056524936109781265,
+          "after1s": 0.039608925580978394
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.056524939835071564,
+          "after1s": 0.03960892930626869
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.006762753149671341,
+        "X_demeaned_RMSE_delta_m": -0.0008135481844515832,
+        "EE_after1s_delta_m": -0.0020240414887666702,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.11601956581782921,
+        "actual_fitted_amplitude_m": 0.0029912566972359026,
+        "correlation": 0.26243406339310915,
+        "demeaned_rmse_m": 0.013723756164917965,
+        "absolute_rmse_m": 0.01584335350419199
+      }
+    },
+    {
+      "label": "matchedNative100-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T005420-matchedNative100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.029595669358968735,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06088685616850853,
+          "after1s": 0.04496091231703758
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06088685989379883,
+          "after1s": 0.04496091231703758
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.007634255216098396,
+        "X_demeaned_RMSE_delta_m": -0.0010386355289712674,
+        "EE_after1s_delta_m": -0.004302147775888443,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.10034912251564448,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.26547853651702097,
+        "demeaned_rmse_m": 0.010525063014092574,
+        "absolute_rmse_m": 0.015902714268805865
+      }
+    },
+    {
+      "label": "matchedNative100-seed22-T0-6281031",
+      "protocol": "T0",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T005420-matchedNative100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.0173100084066391,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.047224417328834534,
+          "after1s": 0.02092759683728218
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.047224417328834534,
+          "after1s": 0.02092759683728218
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.04493943681813348,
+        "X_demeaned_RMSE_delta_m": -0.0007624962993710519,
+        "EE_after1s_delta_m": -0.001478973776102066,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.2053770456506055,
+        "actual_fitted_amplitude_m": 0.004201535079574071,
+        "correlation": 0.7485536218789571,
+        "demeaned_rmse_m": 0.011570355434427563,
+        "absolute_rmse_m": 0.012891423953384547
+      }
+    },
+    {
+      "label": "matchedNative100-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T005420-matchedNative100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.02338298223912716,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05700217932462692,
+          "after1s": 0.03865789994597435
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05700217932462692,
+          "after1s": 0.03865789994597435
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.008769495483264916,
+        "X_demeaned_RMSE_delta_m": -0.0010074905639697856,
+        "EE_after1s_delta_m": -0.002914639189839363,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.16342319475273376,
+        "actual_fitted_amplitude_m": 0.0037800928828947413,
+        "correlation": 0.3632110297934945,
+        "demeaned_rmse_m": 0.013289256686360246,
+        "absolute_rmse_m": 0.014158018627766285
+      }
+    },
+    {
+      "label": "matchedNative100-seed22-X-6281031",
+      "protocol": "X",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T005420-matchedNative100-seed22/ppo/checkpoints/cp_1900.pt",
+      "checkpoint_sha256": "d625f113faf7fcaed5af7ba2c125f592ef0baef33a2a8a6424d64f49fa36be00",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.024372179061174393,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "demeaned_RMSE": false,
+        "absolute_RMSE": true
+      },
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05595637112855911,
+          "after1s": 0.03828123211860657
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05595637112855911,
+          "after1s": 0.038281235843896866
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.01568243057697702,
+        "X_demeaned_RMSE_delta_m": -0.000965949791810557,
+        "EE_after1s_delta_m": -0.002163257449865341,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.09849298823566349,
+        "actual_fitted_amplitude_m": 0.0027323859635382344,
+        "correlation": 0.23020105602248617,
+        "demeaned_rmse_m": 0.013900375485864078,
+        "absolute_rmse_m": 0.015432941246435369
+      }
+    },
+    {
+      "label": "synergy200-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T011717-synergy200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.027057722210884094,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.07045314460992813,
+          "after1s": 0.057017628103494644
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.07045314460992813,
+          "after1s": 0.05701763555407524
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.2843079620839727,
+        "X_demeaned_RMSE_delta_m": -0.0029615028585624863,
+        "EE_after1s_delta_m": -0.00729711726307869,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.3331515744219075,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.591367588697494,
+        "demeaned_rmse_m": 0.008413605788014485,
+        "absolute_rmse_m": 0.013284233005970607
+      }
+    },
+    {
+      "label": "synergy200-seed22-T0-6181031",
+      "protocol": "T0",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T011717-synergy200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.016544438898563385,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.047365400940179825,
+          "after1s": 0.02234097570180893
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.047365400940179825,
+          "after1s": 0.02234097756445408
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.2802321066038814,
+        "X_demeaned_RMSE_delta_m": -0.0039711437749122246,
+        "EE_after1s_delta_m": -0.003107260912656784,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.4388837627457258,
+        "actual_fitted_amplitude_m": 0.008942987346130013,
+        "correlation": 0.9155240775323004,
+        "demeaned_rmse_m": 0.008411561184211384,
+        "absolute_rmse_m": 0.011629579130991687
+      }
+    },
+    {
+      "label": "synergy200-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T011717-synergy200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.020112011581659317,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.0660039559006691,
+          "after1s": 0.05182258039712906
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.0660039559006691,
+          "after1s": 0.05182258039712906
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.24654946173247297,
+        "X_demeaned_RMSE_delta_m": -0.004231826978323314,
+        "EE_after1s_delta_m": -0.006997201591730118,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.3998372104996873,
+        "actual_fitted_amplitude_m": 0.008279603307249413,
+        "correlation": 0.7272382423947517,
+        "demeaned_rmse_m": 0.010078506679687868,
+        "absolute_rmse_m": 0.011816478590971936
+      }
+    },
+    {
+      "label": "synergy200-seed22-X-6181031",
+      "protocol": "X",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T011717-synergy200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.021485770121216774,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": true,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": true,
+        "correlation": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true
+      },
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06515707075595856,
+          "after1s": 0.05178650841116905
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06515707075595856,
+          "after1s": 0.05178651213645935
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.23372174382099328,
+        "X_demeaned_RMSE_delta_m": -0.00396773791789534,
+        "EE_after1s_delta_m": -0.0056629423052072525,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.34297855648915115,
+        "actual_fitted_amplitude_m": 0.007046701214636589,
+        "correlation": 0.6802797742999027,
+        "demeaned_rmse_m": 0.010569566431474208,
+        "absolute_rmse_m": 0.013042268465478664
+      }
+    },
+    {
+      "label": "synergy200-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T011717-synergy200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.026614870876073837,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06958450376987457,
+          "after1s": 0.056723374873399734
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06958450376987457,
+          "after1s": 0.056723374873399734
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.25169750240148686,
+        "X_demeaned_RMSE_delta_m": -0.003203134351864839,
+        "EE_after1s_delta_m": -0.0072829462587833405,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.34441236970103295,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.6313990997189047,
+        "demeaned_rmse_m": 0.008360564191199002,
+        "absolute_rmse_m": 0.01295679333877035
+      }
+    },
+    {
+      "label": "synergy200-seed22-T0-6281031",
+      "protocol": "T0",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T011717-synergy200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 62,
+      "nonfoot": 0,
+      "overspeed": 2,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.015400022268295288,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04714156687259674,
+          "after1s": 0.021439922973513603
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04714156687259674,
+          "after1s": 0.0214399266988039
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.2818812124470962,
+        "X_demeaned_RMSE_delta_m": -0.003989580244402442,
+        "EE_after1s_delta_m": -0.003388959914445877,
+        "strict_safe_delta": -1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.4423188212795682,
+        "actual_fitted_amplitude_m": 0.009028943475440853,
+        "correlation": 0.9213023048508766,
+        "demeaned_rmse_m": 0.008343271489396172,
+        "absolute_rmse_m": 0.010745068135260247
+      }
+    },
+    {
+      "label": "synergy200-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T011717-synergy200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 62,
+      "nonfoot": 0,
+      "overspeed": 2,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.0192667655646801,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06508100777864456,
+          "after1s": 0.05044258385896683
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06508100777864456,
+          "after1s": 0.05044258385896683
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.24381677902563467,
+        "X_demeaned_RMSE_delta_m": -0.0042550635990991955,
+        "EE_after1s_delta_m": -0.007030855864286423,
+        "strict_safe_delta": -1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.3984704782951035,
+        "actual_fitted_amplitude_m": 0.00824268454056272,
+        "correlation": 0.7298333477649973,
+        "demeaned_rmse_m": 0.010041683651230836,
+        "absolute_rmse_m": 0.011198375235062395
+      }
+    },
+    {
+      "label": "synergy200-seed22-X-6281031",
+      "protocol": "X",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T011717-synergy200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.02077469415962696,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": true,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": true,
+        "correlation": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true
+      },
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06429297477006912,
+          "after1s": 0.0503571517765522
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06429298222064972,
+          "after1s": 0.0503571555018425
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.23581237320806006,
+        "X_demeaned_RMSE_delta_m": -0.004049453946104927,
+        "EE_after1s_delta_m": -0.005760742351412773,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.31862293086674653,
+        "actual_fitted_amplitude_m": 0.006605148379571078,
+        "correlation": 0.6511675779323671,
+        "demeaned_rmse_m": 0.010816871331569708,
+        "absolute_rmse_m": 0.012600527327540672
+      }
+    },
+    {
+      "label": "matchedNative200-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T012701-matchedNative200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 62,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 1,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.027601856738328934,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.07390574365854263,
+          "after1s": 0.061505842953920364
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.07390574365854263,
+          "after1s": 0.061505842953920364
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.03258474201460107,
+        "X_demeaned_RMSE_delta_m": -0.0010657327797960643,
+        "EE_after1s_delta_m": -0.00675298273563385,
+        "strict_safe_delta": -2
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.08142835435253587,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.1777592175241263,
+        "demeaned_rmse_m": 0.010309375866780907,
+        "absolute_rmse_m": 0.016101854623373747
+      }
+    },
+    {
+      "label": "matchedNative200-seed22-T0-6181031",
+      "protocol": "T0",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T012701-matchedNative200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.017767563462257385,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04793279245495796,
+          "after1s": 0.023652439936995506
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04793279245495796,
+          "after1s": 0.023652445524930954
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.04400523273301843,
+        "X_demeaned_RMSE_delta_m": -0.0007797710274475844,
+        "EE_after1s_delta_m": -0.0018841363489627838,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.20265688887486283,
+        "actual_fitted_amplitude_m": 0.004163415233412741,
+        "correlation": 0.741004869086787,
+        "demeaned_rmse_m": 0.011602933931676024,
+        "absolute_rmse_m": 0.013561305187536076
+      }
+    },
+    {
+      "label": "matchedNative200-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T012701-matchedNative200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.022786935791373253,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06601171940565109,
+          "after1s": 0.0519881509244442
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06601171940565109,
+          "after1s": 0.0519881509244442
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.014906946931213721,
+        "X_demeaned_RMSE_delta_m": -0.0010270184727459997,
+        "EE_after1s_delta_m": -0.004322277382016182,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.16819469569842804,
+        "actual_fitted_amplitude_m": 0.004231190191821775,
+        "correlation": 0.3685116045966935,
+        "demeaned_rmse_m": 0.013283315185265182,
+        "absolute_rmse_m": 0.014777171069474546
+      }
+    },
+    {
+      "label": "matchedNative200-seed22-X-6181031",
+      "protocol": "X",
+      "seed": 6181031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T012701-matchedNative200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.023886630311608315,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "demeaned_RMSE": false,
+        "absolute_RMSE": true
+      },
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06527303159236908,
+          "after1s": 0.05204549804329872
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06527303159236908,
+          "after1s": 0.05204549804329872
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.012340807065873441,
+        "X_demeaned_RMSE_delta_m": -0.0008926148487181269,
+        "EE_after1s_delta_m": -0.003262082114815712,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.12159761973403131,
+        "actual_fitted_amplitude_m": 0.0032712117042323387,
+        "correlation": 0.2678694147207571,
+        "demeaned_rmse_m": 0.013644689500651421,
+        "absolute_rmse_m": 0.015995131249443566
+      }
+    },
+    {
+      "label": "matchedNative200-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T012701-matchedNative200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.027028238400816917,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.07327064126729965,
+          "after1s": 0.061482805758714676
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.07327064871788025,
+          "after1s": 0.061482809484004974
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.022474968075839694,
+        "X_demeaned_RMSE_delta_m": -0.0013747145894077925,
+        "EE_after1s_delta_m": -0.00686957873404026,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.11518983537538578,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.2960307280734503,
+        "demeaned_rmse_m": 0.010188983953656049,
+        "absolute_rmse_m": 0.015744373372956873
+      }
+    },
+    {
+      "label": "matchedNative200-seed22-T0-6281031",
+      "protocol": "T0",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T012701-matchedNative200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.01701482944190502,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.0479251854121685,
+          "after1s": 0.023177966475486755
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.0479251854121685,
+          "after1s": 0.023177968338131905
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.04513407420772214,
+        "X_demeaned_RMSE_delta_m": -0.0007666681597280067,
+        "EE_after1s_delta_m": -0.0017741527408361435,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.20557168304019416,
+        "actual_fitted_amplitude_m": 0.004225709273511125,
+        "correlation": 0.7498165758167927,
+        "demeaned_rmse_m": 0.011566183574070608,
+        "absolute_rmse_m": 0.012919738803235697
+      }
+    },
+    {
+      "label": "matchedNative200-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T012701-matchedNative200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.02202407456934452,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "absolute_X_gate": null,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06517758220434189,
+          "after1s": 0.05069306492805481
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06517758965492249,
+          "after1s": 0.05069306492805481
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.01599683946284977,
+        "X_demeaned_RMSE_delta_m": -0.0010532746822267645,
+        "EE_after1s_delta_m": -0.004273546859622002,
+        "strict_safe_delta": 0
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.1706505387323186,
+        "actual_fitted_amplitude_m": 0.004133564473752165,
+        "correlation": 0.37295692585309753,
+        "demeaned_rmse_m": 0.013243472568103267,
+        "absolute_rmse_m": 0.014188816387077167
+      }
+    },
+    {
+      "label": "matchedNative200-seed22-X-6281031",
+      "protocol": "X",
+      "seed": 6281031,
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T012701-matchedNative200-seed22/ppo/checkpoints/cp_2000.pt",
+      "checkpoint_sha256": "6948e60d00377e085b8149f54bfc49ff6b9aeec9a9abaf4ede4f55437e1186a4",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.023225177079439163,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "demeaned_RMSE": false,
+        "absolute_RMSE": true
+      },
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06441007554531097,
+          "after1s": 0.05059152841567993
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06441007554531097,
+          "after1s": 0.050591520965099335
+        }
+      },
+      "relative_to_original": {
+        "X_gain_delta": 0.012776463343957406,
+        "X_demeaned_RMSE_delta_m": -0.0009142740492431925,
+        "EE_after1s_delta_m": -0.0033102594316005707,
+        "strict_safe_delta": 1
+      },
+      "X_after1s": {
+        "synchronous_gain": 0.09558702100264388,
+        "actual_fitted_amplitude_m": 0.002963051051725525,
+        "correlation": 0.21816495097908584,
+        "demeaned_rmse_m": 0.013952051228431442,
+        "absolute_rmse_m": 0.015638006150641974
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "label": "synergy100-seed22",
+      "checkpoint_sha256": "c576bb909fd5a38708db8d605b070fefdf07dddf14611cc84327ac11cd8fe93d",
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T004506-synergy100-seed22/ppo/checkpoints/cp_1900.pt",
+      "decision": {
+        "worst_seed_X_gain": 0.21952140868232561,
+        "worst_seed_X_amplitude_m": 0.00472609117743195,
+        "worst_seed_X_correlation": 0.4859194226235729,
+        "original_all_development_gates": false,
+        "original_retention": true,
+        "severe_physical_failures": [],
+        "learning_change": null,
+        "engineering_gate_not_formal_PASS": true,
+        "rows": [
+          {
+            "label": "synergy100-seed22-A-6181031",
+            "strict_safe": 64,
+            "complete": 64,
+            "X_gain": 0.2157806690528541,
+            "amplitude_m": null
+          },
+          {
+            "label": "synergy100-seed22-T0-6181031",
+            "strict_safe": 64,
+            "complete": 64,
+            "X_gain": 0.3244870678344063,
+            "amplitude_m": 0.006670307629293336
+          },
+          {
+            "label": "synergy100-seed22-T1-6181031",
+            "strict_safe": 64,
+            "complete": 64,
+            "X_gain": 0.3043808961438461,
+            "amplitude_m": 0.0064849960826167345
+          },
+          {
+            "label": "synergy100-seed22-X-6181031",
+            "strict_safe": 64,
+            "complete": 64,
+            "X_gain": 0.24152689194263358,
+            "amplitude_m": 0.005142496809325276
+          },
+          {
+            "label": "synergy100-seed22-A-6281031",
+            "strict_safe": 61,
+            "complete": 64,
+            "X_gain": 0.2286735797640329,
+            "amplitude_m": null
+          },
+          {
+            "label": "synergy100-seed22-T0-6281031",
+            "strict_safe": 63,
+            "complete": 64,
+            "X_gain": 0.3293097268115856,
+            "amplitude_m": 0.0067750876589819055
+          },
+          {
+            "label": "synergy100-seed22-T1-6281031",
+            "strict_safe": 63,
+            "complete": 64,
+            "X_gain": 0.3089642264400701,
+            "amplitude_m": 0.006507018357390112
+          },
+          {
+            "label": "synergy100-seed22-X-6281031",
+            "strict_safe": 63,
+            "complete": 64,
+            "X_gain": 0.21952140868232561,
+            "amplitude_m": 0.00472609117743195
+          }
+        ],
+        "matched_native_control": {
+          "worst_seed_X_gain": 0.09849298823566349,
+          "worst_seed_X_amplitude_m": 0.0027323859635382344,
+          "worst_seed_X_correlation": 0.23020105602248617,
+          "original_all_development_gates": false,
+          "original_retention": true,
+          "severe_physical_failures": [],
+          "learning_change": null,
+          "engineering_gate_not_formal_PASS": true,
+          "rows": [
+            {
+              "label": "matchedNative100-seed22-A-6181031",
+              "strict_safe": 63,
+              "complete": 64,
+              "X_gain": 0.07330551093299183,
+              "amplitude_m": null
+            },
+            {
+              "label": "matchedNative100-seed22-T0-6181031",
+              "strict_safe": 64,
+              "complete": 64,
+              "X_gain": 0.20147633375549076,
+              "amplitude_m": 0.004130329211781499
+            },
+            {
+              "label": "matchedNative100-seed22-T1-6181031",
+              "strict_safe": 64,
+              "complete": 64,
+              "X_gain": 0.1636073313146401,
+              "amplitude_m": 0.0037923192444887467
+            },
+            {
+              "label": "matchedNative100-seed22-X-6181031",
+              "strict_safe": 64,
+              "complete": 64,
+              "X_gain": 0.11601956581782921,
+              "amplitude_m": 0.0029912566972359026
+            },
+            {
+              "label": "matchedNative100-seed22-A-6281031",
+              "strict_safe": 63,
+              "complete": 64,
+              "X_gain": 0.10034912251564448,
+              "amplitude_m": null
+            },
+            {
+              "label": "matchedNative100-seed22-T0-6281031",
+              "strict_safe": 63,
+              "complete": 64,
+              "X_gain": 0.2053770456506055,
+              "amplitude_m": 0.004201535079574071
+            },
+            {
+              "label": "matchedNative100-seed22-T1-6281031",
+              "strict_safe": 63,
+              "complete": 64,
+              "X_gain": 0.16342319475273376,
+              "amplitude_m": 0.0037800928828947413
+            },
+            {
+              "label": "matchedNative100-seed22-X-6281031",
+              "strict_safe": 63,
+              "complete": 64,
+              "X_gain": 0.09849298823566349,
+              "amplitude_m": 0.0027323859635382344
+            }
+          ]
+        },
+        "gain_vs_matched_native": 0.12102842044666212,
+        "amplitude_vs_matched_native_m": 0.001993705213893716
+      }
+    },
+    {
+      "label": "synergy200-seed22",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T011717-synergy200-seed22/ppo/checkpoints/cp_2000.pt",
+      "decision": {
+        "worst_seed_X_gain": 0.31862293086674653,
+        "worst_seed_X_amplitude_m": 0.006605148379571078,
+        "worst_seed_X_correlation": 0.6511675779323671,
+        "original_all_development_gates": false,
+        "original_retention": true,
+        "severe_physical_failures": [],
+        "learning_change": 0.09910152218442092,
+        "engineering_gate_not_formal_PASS": true,
+        "rows": [
+          {
+            "label": "synergy200-seed22-A-6181031",
+            "strict_safe": 64,
+            "complete": 64,
+            "X_gain": 0.3331515744219075,
+            "amplitude_m": null
+          },
+          {
+            "label": "synergy200-seed22-T0-6181031",
+            "strict_safe": 64,
+            "complete": 64,
+            "X_gain": 0.4388837627457258,
+            "amplitude_m": 0.008942987346130013
+          },
+          {
+            "label": "synergy200-seed22-T1-6181031",
+            "strict_safe": 64,
+            "complete": 64,
+            "X_gain": 0.3998372104996873,
+            "amplitude_m": 0.008279603307249413
+          },
+          {
+            "label": "synergy200-seed22-X-6181031",
+            "strict_safe": 64,
+            "complete": 64,
+            "X_gain": 0.34297855648915115,
+            "amplitude_m": 0.007046701214636589
+          },
+          {
+            "label": "synergy200-seed22-A-6281031",
+            "strict_safe": 63,
+            "complete": 64,
+            "X_gain": 0.34441236970103295,
+            "amplitude_m": null
+          },
+          {
+            "label": "synergy200-seed22-T0-6281031",
+            "strict_safe": 62,
+            "complete": 64,
+            "X_gain": 0.4423188212795682,
+            "amplitude_m": 0.009028943475440853
+          },
+          {
+            "label": "synergy200-seed22-T1-6281031",
+            "strict_safe": 62,
+            "complete": 64,
+            "X_gain": 0.3984704782951035,
+            "amplitude_m": 0.00824268454056272
+          },
+          {
+            "label": "synergy200-seed22-X-6281031",
+            "strict_safe": 63,
+            "complete": 64,
+            "X_gain": 0.31862293086674653,
+            "amplitude_m": 0.006605148379571078
+          }
+        ],
+        "matched_native_control": {
+          "worst_seed_X_gain": 0.09558702100264388,
+          "worst_seed_X_amplitude_m": 0.002963051051725525,
+          "worst_seed_X_correlation": 0.21816495097908584,
+          "original_all_development_gates": false,
+          "original_retention": true,
+          "severe_physical_failures": [
+            {
+              "protocol": "A",
+              "seed": 6181031,
+              "nonfoot": 0,
+              "hard_joint": 1,
+              "strict_safe": 62,
+              "complete": 64
+            }
+          ],
+          "learning_change": null,
+          "engineering_gate_not_formal_PASS": true,
+          "rows": [
+            {
+              "label": "matchedNative200-seed22-A-6181031",
+              "strict_safe": 62,
+              "complete": 64,
+              "X_gain": 0.08142835435253587,
+              "amplitude_m": null
+            },
+            {
+              "label": "matchedNative200-seed22-T0-6181031",
+              "strict_safe": 64,
+              "complete": 64,
+              "X_gain": 0.20265688887486283,
+              "amplitude_m": 0.004163415233412741
+            },
+            {
+              "label": "matchedNative200-seed22-T1-6181031",
+              "strict_safe": 64,
+              "complete": 64,
+              "X_gain": 0.16819469569842804,
+              "amplitude_m": 0.004231190191821775
+            },
+            {
+              "label": "matchedNative200-seed22-X-6181031",
+              "strict_safe": 64,
+              "complete": 64,
+              "X_gain": 0.12159761973403131,
+              "amplitude_m": 0.0032712117042323387
+            },
+            {
+              "label": "matchedNative200-seed22-A-6281031",
+              "strict_safe": 63,
+              "complete": 64,
+              "X_gain": 0.11518983537538578,
+              "amplitude_m": null
+            },
+            {
+              "label": "matchedNative200-seed22-T0-6281031",
+              "strict_safe": 63,
+              "complete": 64,
+              "X_gain": 0.20557168304019416,
+              "amplitude_m": 0.004225709273511125
+            },
+            {
+              "label": "matchedNative200-seed22-T1-6281031",
+              "strict_safe": 63,
+              "complete": 64,
+              "X_gain": 0.1706505387323186,
+              "amplitude_m": 0.004133564473752165
+            },
+            {
+              "label": "matchedNative200-seed22-X-6281031",
+              "strict_safe": 63,
+              "complete": 64,
+              "X_gain": 0.09558702100264388,
+              "amplitude_m": 0.002963051051725525
+            }
+          ]
+        },
+        "gain_vs_matched_native": 0.22303590986410265,
+        "amplitude_vs_matched_native_m": 0.0036420973278455527
+      }
+    }
+  ],
+  "warning": "Native joint_5cm is not dynamic X success. Truncated RMSE retains native valid mask; complete/safety and all failure denominators remain separate. One training seed does not certify cross-training-seed repeatability.",
+  "formal_seeds_unopened": true,
+  "not_baseline_PASS": true
+}

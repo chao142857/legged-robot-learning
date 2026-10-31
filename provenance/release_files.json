@@ -603,8 +603,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/README.md",
-      "bytes": 6327,
-      "sha256": "5d7043791a95a24bba124ba4064673ec670ec9ce36ed7ab9ff61341fc1dc330d"
+      "bytes": 7360,
+      "sha256": "d1f72f82de2898fd6554a8c6bb70b20a31585b0411a099723407c3476c6226f0"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/RESOURCE_PLAN.json",
@@ -625,6 +625,11 @@
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/DEVELOPMENT100_ALL_PROTOCOLS.json",
       "bytes": 99320,
       "sha256": "61107004cdc690057f8603ea562e2c03cff606508e1ed3694120af1d4ba7a89d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/DEVELOPMENT_SEED22_200.json",
+      "bytes": 68510,
+      "sha256": "79bc72236cac92f273f9f4047a906eeb4bd2e1933d630cde1dfdb4d42c108700"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/NETWORK_BLOCK_AT_DEPLOYMENT.json",
@@ -713,8 +718,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/plot_stage3.py",
-      "bytes": 4025,
-      "sha256": "2b8c38f771279aab8c614c9ede678dda802c644006467a6ee70a9eec53c457a4"
+      "bytes": 5230,
+      "sha256": "d2824876a9782e15acd08e759c80cb91c7452ba5cb1f5ded49bff3b3f1db6423"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/probe_entry.py",
