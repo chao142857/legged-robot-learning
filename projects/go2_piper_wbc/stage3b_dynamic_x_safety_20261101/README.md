@@ -51,3 +51,5 @@ python3 tools/test_budget_cpu.py
 ```
 
 The current root is already active; resume its existing coordinators/receipts rather than rerunning bootstrap. A new reproduction after this grant closes requires a new authorization. Large checkpoints, full trajectories and environment assets remain on the execution host.
+
+`collect_delivery.py --root "$STAGE3B_ROOT" --wait` is a CPU-only final audit. It waits for actual completion, checks frozen-run and closed-Stage3 SHAs, real Docker SUM duration, unchanged formal checks, complete learner restoration and counter consistency. It does not select a model, open evaluation seeds, launch GPU or modify a closed ledger. Final audit results are stored in a new delivery subdirectory.

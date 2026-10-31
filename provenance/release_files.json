@@ -813,8 +813,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/README.md",
-      "bytes": 9345,
-      "sha256": "92cbaf114b00e77338a7dae6ee0a61accc9fafc9c14ee7d70e1cc7010fb539ad"
+      "bytes": 9756,
+      "sha256": "f7808ff14a8ce0853e26487f5d5c6c652815579207f95fdc90d0e738929fd612"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/RESOURCE_PLAN.json",
@@ -915,6 +915,11 @@
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/causal_pipeline.py",
       "bytes": 5687,
       "sha256": "0333898c9f8e552846e8ea89f1cd3f269e75f6f04288e849200c257781eb49f5"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/collect_delivery.py",
+      "bytes": 6874,
+      "sha256": "464ec11c26a34c152768271c842b9ff30edee72feb24b73b1c37aa780fa8e0d3"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/component_probe.py",
