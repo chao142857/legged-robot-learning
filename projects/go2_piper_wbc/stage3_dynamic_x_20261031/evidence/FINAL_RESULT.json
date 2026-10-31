@@ -1,0 +1,659 @@
+{
+  "stage": "Stage3 original PPO Uniform dynamicX",
+  "closed": true,
+  "original_baseline_PASS": false,
+  "SGS_ready": false,
+  "GPU_container_SUM_seconds": 11537.230027675629,
+  "approved_cap_seconds": 21600,
+  "unused_seconds_not_transferred": 10062.769972324371,
+  "selected_checkpoint": {
+    "checkpoint": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T015052-synergy400-seed22/ppo/checkpoints/cp_2200.pt",
+    "checkpoint_sha256": "19834dd18342cb008f9a67a2b760f7163a1fe78a39b462602f3d72ad2427593c"
+  },
+  "root_parent_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "formal_candidate_rows": [
+    {
+      "label": "final-candidate-A-511031",
+      "seed": 511031,
+      "protocol": "A",
+      "n": 64,
+      "strict_safe": 63,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.42793640450459475,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.5538704119590313
+      },
+      "EE_RMSE_m": 0.025971194729208946
+    },
+    {
+      "label": "final-candidate-T0-511031",
+      "seed": 511031,
+      "protocol": "T0",
+      "n": 64,
+      "strict_safe": 62,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.6663535697622388,
+        "actual_fitted_amplitude_m": 0.013350798353090368,
+        "correlation": 0.971708170978861
+      },
+      "EE_RMSE_m": 0.016126498579978943
+    },
+    {
+      "label": "final-candidate-T1-511031",
+      "seed": 511031,
+      "protocol": "T1",
+      "n": 64,
+      "strict_safe": 62,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.5618513355351251,
+        "actual_fitted_amplitude_m": 0.011479629185856571,
+        "correlation": 0.8200177326357647
+      },
+      "EE_RMSE_m": 0.017981089651584625
+    },
+    {
+      "label": "final-candidate-X-511031",
+      "seed": 511031,
+      "protocol": "X",
+      "n": 64,
+      "strict_safe": 61,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.5079242150530562,
+        "actual_fitted_amplitude_m": 0.010329288419460639,
+        "correlation": 0.7928030483469364
+      },
+      "EE_RMSE_m": 0.019299443811178207
+    },
+    {
+      "label": "final-candidate-A-521031",
+      "seed": 521031,
+      "protocol": "A",
+      "n": 64,
+      "strict_safe": 64,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.5207990962684961,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.7070260526438773
+      },
+      "EE_RMSE_m": 0.024556787684559822
+    },
+    {
+      "label": "final-candidate-T0-521031",
+      "seed": 521031,
+      "protocol": "T0",
+      "n": 64,
+      "strict_safe": 61,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.6737513708354844,
+        "actual_fitted_amplitude_m": 0.013494502045900966,
+        "correlation": 0.9731069401023055
+      },
+      "EE_RMSE_m": 0.01649652235209942
+    },
+    {
+      "label": "final-candidate-T1-521031",
+      "seed": 521031,
+      "protocol": "T1",
+      "n": 64,
+      "strict_safe": 63,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.5663647739036161,
+        "actual_fitted_amplitude_m": 0.011556082579294517,
+        "correlation": 0.818229705813318
+      },
+      "EE_RMSE_m": 0.01814914494752884
+    },
+    {
+      "label": "final-candidate-X-521031",
+      "seed": 521031,
+      "protocol": "X",
+      "n": 64,
+      "strict_safe": 62,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.517813582771127,
+        "actual_fitted_amplitude_m": 0.010532164817482672,
+        "correlation": 0.8013065926828904
+      },
+      "EE_RMSE_m": 0.019274679943919182
+    },
+    {
+      "label": "final-candidate-A-531031",
+      "seed": 531031,
+      "protocol": "A",
+      "n": 64,
+      "strict_safe": 64,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.4802862578002519,
+        "actual_fitted_amplitude_m": null,
+        "correlation": 0.6358444806970556
+      },
+      "EE_RMSE_m": 0.025408413261175156
+    },
+    {
+      "label": "final-candidate-T0-531031",
+      "seed": 531031,
+      "protocol": "T0",
+      "n": 64,
+      "strict_safe": 63,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.6640357752065245,
+        "actual_fitted_amplitude_m": 0.01329636106820125,
+        "correlation": 0.9724403066712219
+      },
+      "EE_RMSE_m": 0.0164533331990242
+    },
+    {
+      "label": "final-candidate-T1-531031",
+      "seed": 531031,
+      "protocol": "T1",
+      "n": 64,
+      "strict_safe": 62,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.5614909029092685,
+        "actual_fitted_amplitude_m": 0.011466768215877013,
+        "correlation": 0.8146721906742813
+      },
+      "EE_RMSE_m": 0.018304351717233658
+    },
+    {
+      "label": "final-candidate-X-531031",
+      "seed": 531031,
+      "protocol": "X",
+      "n": 64,
+      "strict_safe": 61,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "X": {
+        "synchronous_gain": 0.49617611930663963,
+        "actual_fitted_amplitude_m": 0.010138512179101052,
+        "correlation": 0.785046053496218
+      },
+      "EE_RMSE_m": 0.019515683874487877
+    }
+  ],
+  "formal_checks": [
+    {
+      "protocol": "A",
+      "seed": 511031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T0",
+      "seed": 511031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "drift_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T1",
+      "seed": 511031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "YZ_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "X",
+      "seed": 511031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "gain": true,
+        "correlation": true,
+        "amplitude": true,
+        "EE": true,
+        "gain_improvement": true,
+        "correlation_improvement": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "A",
+      "seed": 521031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T0",
+      "seed": 521031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "drift_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T1",
+      "seed": 521031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": false,
+        "YZ_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": false
+    },
+    {
+      "protocol": "X",
+      "seed": 521031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "gain": true,
+        "correlation": true,
+        "amplitude": true,
+        "EE": true,
+        "gain_improvement": true,
+        "correlation_improvement": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "A",
+      "seed": 531031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T0",
+      "seed": 531031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "drift_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T1",
+      "seed": 531031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": false,
+        "YZ_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": false
+    },
+    {
+      "protocol": "X",
+      "seed": 531031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "gain": true,
+        "correlation": true,
+        "amplitude": true,
+        "EE": true,
+        "gain_improvement": true,
+        "correlation_improvement": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    }
+  ],
+  "adjacent_checks": [
+    {
+      "protocol": "A",
+      "seed": 511031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T0",
+      "seed": 511031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "drift_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T1",
+      "seed": 511031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "YZ_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "X",
+      "seed": 511031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "gain": false,
+        "correlation": true,
+        "amplitude": false,
+        "EE": true,
+        "gain_improvement": true,
+        "correlation_improvement": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": false
+    },
+    {
+      "protocol": "A",
+      "seed": 521031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T0",
+      "seed": 521031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "drift_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T1",
+      "seed": 521031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "YZ_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "X",
+      "seed": 521031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "gain": false,
+        "correlation": true,
+        "amplitude": false,
+        "EE": true,
+        "gain_improvement": true,
+        "correlation_improvement": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": false
+    },
+    {
+      "protocol": "A",
+      "seed": 531031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T0",
+      "seed": 531031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "drift_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "T1",
+      "seed": 531031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "direction_retained": true,
+        "YZ_retained": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": true
+    },
+    {
+      "protocol": "X",
+      "seed": 531031,
+      "checks": {
+        "full20": true,
+        "strict_safety": true,
+        "EE_retained": true,
+        "native_health": true,
+        "gain": false,
+        "correlation": true,
+        "amplitude": false,
+        "EE": true,
+        "gain_improvement": true,
+        "correlation_improvement": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true,
+        "user_zero_actual_hard_events": true,
+        "user_zero_actual_nonfoot_events": true
+      },
+      "passed": false
+    }
+  ],
+  "resource_totals": {
+    "PPO_updates": 1052,
+    "Adam_calls": 21040,
+    "training_transitions_used": 103415808,
+    "eval_transition_slots": 6912000,
+    "probe_transition_slots": 384000,
+    "restore_inference_transition_slots": 98304,
+    "training_or_restore_reset_transition_slots": 0
+  },
+  "unmeasured_partial_evaluations": [
+    {
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261031T194859-P1-parent-X-s0.0",
+      "mode": "probe",
+      "GPU_cost_included": true,
+      "partial_transition_count": "Not recorded reliably by failed native evaluator; not silently counted as zero"
+    }
+  ],
+  "complete_restore": {
+    "passed": true,
+    "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T031248-final-native-learner-restore",
+    "PPO_updates": 0,
+    "Adam_steps_changed": false,
+    "inference_transition_slots": 98304,
+    "restore_evidence": {
+      "actor_bitwise_equal": true,
+      "critic_bitwise_equal": true,
+      "adam_bitwise_equal": true,
+      "step_groups": {
+        "native": {
+          "actual": 44000.0,
+          "expected": 44000
+        },
+        "new_head": {
+          "actual": 8000.0,
+          "expected": 8000
+        }
+      },
+      "new_head_not_falsely_aged_as_parent": true,
+      "physx_state_restored": false,
+      "all_rng_streams": {
+        "torch_cpu_equal": true,
+        "torch_cuda_equal": true,
+        "python_equal": true,
+        "numpy_equal": true,
+        "python_numpy_replay": true,
+        "restored_after_probe": true
+      },
+      "loaded_checkpoint_sha256": "19834dd18342cb008f9a67a2b760f7163a1fe78a39b462602f3d72ad2427593c",
+      "new_container_process": true,
+      "environment_reset_required": true
+    }
+  },
+  "closed_files_sha256": {
+    "LEDGER.json": "73850d37463a8fff7902071c090eba92ac520921c19994620891f9a56bc00ce1",
+    "GPU_CLOCK.json": "7c2fde1a1885535676c94bfce5bc709bda7565ba38acbc8ed35438591c64cb41",
+    "COMPLETED.json": "2c1a7b30e5f9edf593c8e5b525dcedaf743675ae4ccda2efc41ed756724a0caa",
+    "FROZEN_SELECTION.json": "0acb07c1c26db16a6876d1d44c95a1a9de57fe40fcccc862a17fdb84fa2efbe4",
+    "FINAL_MATRIX.json": "ad413c612d058183200548d172fe1ebe4f14ab992714e37b1ceb263f84940f6f",
+    "CONSECUTIVE_NODE_FINAL.json": "56b4128746f88da5be68aa2ea9407c3f5397efee4db2360e5f6253d23992343e",
+    "RESOURCES_FINAL.json": "12e47d26e18a2084e31ad44912e643c8ffd664073ab130aa620d3d87bbf8130d",
+    "FINAL_RESTORE_RUN.json": "52aea6365709c6d3fe9069b8f3ae0cadd44504b69130740edd82cec28a45f0b4"
+  },
+  "interpretation": "Real repeatable dynamicX learning, full original Uniform baseline FAIL: two final T1 direction-retention cells and adjacent saved-node X amplitude. Unsafe600 branch never resumed; Stage3b has an independent authorization and ledger."
+}

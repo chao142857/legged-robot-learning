@@ -603,8 +603,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/README.md",
-      "bytes": 8949,
-      "sha256": "7dfbb32d869024a64ef66c15427152cfa4a0b37b2abbffe1b8115958e8a49d9f"
+      "bytes": 9763,
+      "sha256": "c40bfdcac637103cb836cb45b75124e8bb7c36efd1d509f96a728fe2c5c661c3"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/RESOURCE_PLAN.json",
@@ -640,6 +640,11 @@
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/DEVELOPMENT_SEED22_400.json",
       "bytes": 26617,
       "sha256": "fd8bef364518d76cdffcbb94ab74ee61b0097f847f4416f34c8dc3272d084b84"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/FINAL_RESULT.json",
+      "bytes": 18154,
+      "sha256": "50b7e9c411208bbb93cdad0d8ea7b69ff51ca9e547de45fb04e2613fb928461e"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/NETWORK_BLOCK_AT_DEPLOYMENT.json",
