@@ -14,6 +14,15 @@
   "entropy400_status": "Completed native200 + resumed200; 512 complete and507 strict-safe across full A/T0/T1/X development. X gate FAIL.",
   "entropy800_start_verified": "2026-10-31T17:09+08:00, frozen finish_entropy source, actual Docker Running; later state requires fresh verification",
   "prepared_finalizer_selection_v2_sha256": "27e4bc87b8e922a96cafb7701fe9da5f0fd9601ba3e4863435d2a7e36ed34e5a",
-  "prepared_finalizer_selection_v2_deployed": false,
-  "finish_entropy_cpu_source_sha256": "f5507f39ad690e5dbd27b179f2aa24f8463cb8bca7c33c1ff68bffff07d995f6"
+  "prepared_finalizer_selection_v2_deployed": true,
+  "finish_entropy_cpu_source_sha256": "f5507f39ad690e5dbd27b179f2aa24f8463cb8bca7c33c1ff68bffff07d995f6",
+  "finalizer_selection_v2_activation": {
+    "unix": 1793439873.407629,
+    "source_sha256": "27e4bc87b8e922a96cafb7701fe9da5f0fd9601ba3e4863435d2a7e36ed34e5a",
+    "no_final_seeds_opened": true,
+    "original_registered_checks_unchanged": true
+  },
+  "entropy800_status": "400 additional native updates completed; branch total800/global2600, strict431/512, complete488/512. Stopped for physical degradation; not selected.",
+  "final_selection": "Original control200 CP2000, SHAecb802d9ff186fa40208a7197265904444cea4a68b8fd2ceb14a6ea60b825f6e; registered development retention true; frozen before final seeds.",
+  "final_seeds_opened": true
 }

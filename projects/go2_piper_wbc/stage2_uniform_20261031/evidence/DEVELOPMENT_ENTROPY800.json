@@ -1,0 +1,306 @@
+{
+  "status": "FAILED_DEVELOPMENT_BRANCH_STOPPED_NO_FURTHER_TRAINING",
+  "original_registered_gates_unchanged": true,
+  "complete": 488,
+  "strict_safe": 431,
+  "n": 512,
+  "additional_PPO_updates": 800,
+  "global_checkpoint_iteration": 2600,
+  "checkpoint_sha256": "9c93c9550f29ff414d12c3b5d50500fe17612fbdd37af0b994fc5507a2dbccde",
+  "physics": [
+    {
+      "case": "entropyLow800-A-8101",
+      "n": 64,
+      "strict_safe": 40,
+      "complete": 64,
+      "nonfoot": 0,
+      "overspeed": 4,
+      "joint_limit": 23,
+      "X_after1s": {
+        "target_mean_m": 0.449506577300398,
+        "actual_mean_m": 0.4419282812880058,
+        "bias_m": -0.00757829601239217,
+        "absolute_rmse_m": 0.01837391495968311,
+        "demeaned_rmse_m": 0.012500786452141789,
+        "target_std_m": 0.009205970524304795,
+        "actual_std_m": 0.007948918060386195,
+        "synchronous_gain": 0.0703994747363166,
+        "correlation": 0.09988254902985089,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.5812980219871938,
+        "episodes_measured": 64
+      },
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": false,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      }
+    },
+    {
+      "case": "entropyLow800-T0-8101",
+      "n": 64,
+      "strict_safe": 64,
+      "complete": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.44548657449403484,
+        "bias_m": -0.006808763484127428,
+        "absolute_rmse_m": 0.012447247329116333,
+        "demeaned_rmse_m": 0.00944717676736866,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.005552789790711903,
+        "synchronous_gain": 0.35514514301641564,
+        "correlation": 0.9083228919150816,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.5566224430961497,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.0071580272531984075,
+        "phase_lag_s": -0.10349027118825474,
+        "episodes_measured": 64
+      },
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": false,
+        "base_drift_p95": true
+      }
+    },
+    {
+      "case": "entropyLow800-T1-8101",
+      "n": 64,
+      "strict_safe": 57,
+      "complete": 58,
+      "nonfoot": 6,
+      "overspeed": 0,
+      "joint_limit": 1,
+      "X_after1s": {
+        "target_mean_m": 0.4520613388083843,
+        "actual_mean_m": 0.4456055578863949,
+        "bias_m": -0.006455780921989401,
+        "absolute_rmse_m": 0.014654163040190907,
+        "demeaned_rmse_m": 0.012596054481332388,
+        "target_std_m": 0.014239415508558478,
+        "actual_std_m": 0.0072460772408939784,
+        "synchronous_gain": 0.23893014395598464,
+        "correlation": 0.47802880399089703,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.21002844236929724,
+        "target_fitted_amplitude_m": 0.01999999875122741,
+        "actual_fitted_amplitude_m": 0.005547100241251027,
+        "phase_lag_s": 0.2915217195381438,
+        "episodes_measured": 64
+      },
+      "retention_checks": {
+        "complete": false,
+        "strict_safe": false,
+        "EE": true,
+        "native_health": false,
+        "forward": true,
+        "backward": true,
+        "left": false,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      }
+    },
+    {
+      "case": "entropyLow800-X-8101",
+      "n": 64,
+      "strict_safe": 57,
+      "complete": 58,
+      "nonfoot": 6,
+      "overspeed": 0,
+      "joint_limit": 1,
+      "X_after1s": {
+        "target_mean_m": 0.4501674105199802,
+        "actual_mean_m": 0.4456356858135454,
+        "bias_m": -0.004531724706434818,
+        "absolute_rmse_m": 0.015097054327983249,
+        "demeaned_rmse_m": 0.013654786469350458,
+        "target_std_m": 0.014027485935581924,
+        "actual_std_m": 0.006717291836856086,
+        "synchronous_gain": 0.1424369163625221,
+        "correlation": 0.3002501623074051,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.04121679710800692,
+        "target_fitted_amplitude_m": 0.01999999952941694,
+        "actual_fitted_amplitude_m": 0.003928655477346006,
+        "phase_lag_s": 0.29288642865431946,
+        "episodes_measured": 64
+      },
+      "retention_checks": {
+        "complete": false,
+        "strict_safe": false,
+        "EE": true,
+        "native_health": false
+      }
+    },
+    {
+      "case": "entropyLow800-A-8102",
+      "n": 64,
+      "strict_safe": 37,
+      "complete": 63,
+      "nonfoot": 1,
+      "overspeed": 5,
+      "joint_limit": 26,
+      "X_after1s": {
+        "target_mean_m": 0.45083795083550626,
+        "actual_mean_m": 0.4420274472451005,
+        "bias_m": -0.008810503590405729,
+        "absolute_rmse_m": 0.018469960966787408,
+        "demeaned_rmse_m": 0.011638495436653455,
+        "target_std_m": 0.009177946901969158,
+        "actual_std_m": 0.008007185785791564,
+        "synchronous_gain": 0.13885412567901687,
+        "correlation": 0.24427860694832987,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.340594613113522,
+        "episodes_measured": 64
+      },
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": false,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      }
+    },
+    {
+      "case": "entropyLow800-T0-8102",
+      "n": 64,
+      "strict_safe": 63,
+      "complete": 64,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.44481480130239537,
+        "bias_m": -0.007480536675766895,
+        "absolute_rmse_m": 0.012687953073136058,
+        "demeaned_rmse_m": 0.00937821366721651,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.005601957668492436,
+        "synchronous_gain": 0.35958284610422947,
+        "correlation": 0.9115771328900204,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.5630535309217071,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.007238115009510768,
+        "phase_lag_s": -0.07803336599529412,
+        "episodes_measured": 64
+      },
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      }
+    },
+    {
+      "case": "entropyLow800-T1-8102",
+      "n": 64,
+      "strict_safe": 56,
+      "complete": 58,
+      "nonfoot": 6,
+      "overspeed": 1,
+      "joint_limit": 1,
+      "X_after1s": {
+        "target_mean_m": 0.45208801499718443,
+        "actual_mean_m": 0.44536455074299186,
+        "bias_m": -0.006723464254192643,
+        "absolute_rmse_m": 0.014557571912414986,
+        "demeaned_rmse_m": 0.01229319012901159,
+        "target_std_m": 0.014234450048969567,
+        "actual_std_m": 0.007128941973521035,
+        "synchronous_gain": 0.2526324130091717,
+        "correlation": 0.507594393429311,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.2474920062914666,
+        "target_fitted_amplitude_m": 0.01999999875202282,
+        "actual_fitted_amplitude_m": 0.005652784942440624,
+        "phase_lag_s": 0.24463369839681948,
+        "episodes_measured": 64
+      },
+      "retention_checks": {
+        "complete": false,
+        "strict_safe": false,
+        "EE": true,
+        "native_health": false,
+        "forward": true,
+        "backward": true,
+        "left": false,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      }
+    },
+    {
+      "case": "entropyLow800-X-8102",
+      "n": 64,
+      "strict_safe": 57,
+      "complete": 59,
+      "nonfoot": 5,
+      "overspeed": 2,
+      "joint_limit": 0,
+      "X_after1s": {
+        "target_mean_m": 0.450488527579737,
+        "actual_mean_m": 0.44543158022539536,
+        "bias_m": -0.0050569473543416905,
+        "absolute_rmse_m": 0.015303801370411641,
+        "demeaned_rmse_m": 0.013759830451121328,
+        "target_std_m": 0.014007994916143796,
+        "actual_std_m": 0.00641888029038298,
+        "synchronous_gain": 0.12183812516588513,
+        "correlation": 0.27563169123991826,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.02488697669525338,
+        "target_fitted_amplitude_m": 0.01999999935609756,
+        "actual_fitted_amplitude_m": 0.0034224032649686708,
+        "phase_lag_s": -0.2275031131894198,
+        "episodes_measured": 64
+      },
+      "retention_checks": {
+        "complete": false,
+        "strict_safe": false,
+        "EE": true,
+        "native_health": false
+      }
+    }
+  ],
+  "stop_decision": {
+    "additional_updates": 800,
+    "gain": 0.1321375207642036,
+    "gain_delta_vs_previous": 0.0015293284609519953,
+    "physical_training_entry": false,
+    "registered_retention": false,
+    "full_X_gate": false
+  },
+  "selected_before_final_seeds": {
+    "checkpoint_name": "cp_2000.pt",
+    "checkpoint_sha256": "ecb802d9ff186fa40208a7197265904444cea4a68b8fd2ceb14a6ea60b825f6e",
+    "branch": "original native control +200 updates",
+    "registered_development_retention": true,
+    "minimum_development_strict_safety": 0.984375,
+    "selection_source_sha256": "27e4bc87b8e922a96cafb7701fe9da5f0fd9601ba3e4863435d2a7e36ed34e5a"
+  },
+  "experiment_completed_training": {
+    "new_PPO_updates": 1600,
+    "new_PPO_rollout_transitions": 157286400,
+    "Adam_minibatches": 32000,
+    "training_seeds": [
+      21
+    ]
+  },
+  "final_test_status_at_last_observation": "Initial/candidate full20s A/T0/T1/X, frozen seeds381031/391031/401031 in progress; no final conclusion yet",
+  "reason": "Longer unchanged-mechanism window did not improve X meaningfully and produced FL_hip joint-limit failures plus real nonfoot terminations; branch not continued or selected.",
+  "delivery_receipt_snapshot_sha256": "6d8220524ed42f848b2e393f7de74cb82422272e74619a3e93df0474674f04cd",
+  "physics_snapshot_sha256": "b21cd24a3f1fa0c1649fb9798b0b45adb3f7888b400735ecc401370d0de986eb"
+}

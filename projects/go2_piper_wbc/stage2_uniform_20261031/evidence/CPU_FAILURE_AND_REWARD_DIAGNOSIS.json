@@ -1,0 +1,842 @@
+{
+  "local_reward_audit": {
+    "full_receipt_sha256": "d3f4ca4f8e6da79f244bcebbaa7bb682dd3fc71882cd31b348540947539b06a2",
+    "summary": {
+      "kind": "Saved-state local geometry only; no simulated rollout, policy gradient or full-return claim",
+      "sources": {
+        "original_fk": "39964cda072c884b90270558fbcac1fa3a3b920eea753c358f760562e5eededf",
+        "original_jacobian": "ccf115903f01685cc9c3d823cfad57df59cdf0d3ca36b7f7b4b8e0f262544de0"
+      },
+      "results": [
+        {
+          "label": "frozen1800-X-8101",
+          "samples": 138,
+          "excluded_near_limits_or_near_zero_X_error_or_bad_direction": 14,
+          "position_formula_max_error": 8.175492256512484e-07,
+          "arm_formula_validated": true,
+          "arm_formula_max_error": 6.631016735703099e-08,
+          "arm_weight": -0.1,
+          "positive_position_fraction": 1.0,
+          "positive_position_plus_arm_fraction": 1.0,
+          "mean_position_rate_delta": 0.009878890117550554,
+          "mean_arm_posture_rate_delta": -7.442945200854799e-06,
+          "mean_abs_X_correction_m": 0.0007338676714384297,
+          "max_orientation_change_rad": 4.2377450075065426e-07,
+          "max_held_YZ_residual_m": 8.773529066951035e-07
+        },
+        {
+          "label": "control400-X-8101",
+          "samples": 135,
+          "excluded_near_limits_or_near_zero_X_error_or_bad_direction": 17,
+          "position_formula_max_error": 7.402215693730341e-07,
+          "arm_formula_validated": true,
+          "arm_formula_max_error": 6.407499314464715e-08,
+          "arm_weight": -0.1,
+          "positive_position_fraction": 1.0,
+          "positive_position_plus_arm_fraction": 1.0,
+          "mean_position_rate_delta": 0.010246597650296771,
+          "mean_arm_posture_rate_delta": 0.00011458920072191638,
+          "mean_abs_X_correction_m": 0.0007242655522908666,
+          "max_orientation_change_rad": 1.5900508971891032e-06,
+          "max_held_YZ_residual_m": 9.607365176044099e-07
+        },
+        {
+          "label": "entropyLow200-X-8101",
+          "samples": 132,
+          "excluded_near_limits_or_near_zero_X_error_or_bad_direction": 20,
+          "position_formula_max_error": 6.784225128342314e-07,
+          "arm_formula_validated": true,
+          "arm_formula_max_error": 5.364418026454487e-08,
+          "arm_weight": -0.1,
+          "positive_position_fraction": 1.0,
+          "positive_position_plus_arm_fraction": 1.0,
+          "mean_position_rate_delta": 0.01046768899288551,
+          "mean_arm_posture_rate_delta": 0.00013027585066481803,
+          "mean_abs_X_correction_m": 0.000729735556012234,
+          "max_orientation_change_rad": 7.806060466719662e-07,
+          "max_held_YZ_residual_m": 9.232932671935203e-07
+        }
+      ],
+      "limitations": "Bounds from recorded native soft margins. Native position kernels and arm L1 checked numerically. Other dynamic penalties and future base/arm coupling not evaluated; these virtual corrections are never executed by the actor."
+    }
+  },
+  "entropy800_safety": {
+    "full_receipt_sha256": "8df4632e4eca34209c76d62cd4def5695d6ec9bcba6aeb683b86363c9be7aeb5",
+    "rows": [
+      {
+        "label": "entropyLow800-A-8101",
+        "strict_safe": 40,
+        "complete": 64,
+        "n": 64,
+        "native_score_reproduced": 64,
+        "failures": [
+          {
+            "env": 0,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 12.92,
+                "last_s": 19.86,
+                "frames": 33,
+                "duration_s": 0.66,
+                "after1s_frames": 33
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.9995129704475403,
+            "max_hard_excess_rad": 0.006124258041381836,
+            "min_clearance_m": 0.24781577289104462
+          },
+          {
+            "env": 1,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 2.44,
+                "last_s": 10.34,
+                "frames": 21,
+                "duration_s": 0.42,
+                "after1s_frames": 21
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.0000330209732056,
+            "max_hard_excess_rad": 0.0027158260345458984,
+            "min_clearance_m": 0.24830150604248047
+          },
+          {
+            "env": 4,
+            "complete": true,
+            "issues": {
+              "overspeed": {
+                "first_s": 11.6,
+                "last_s": 11.6,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 1.000336766242981,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.2482275366783142
+          },
+          {
+            "env": 5,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 2.48,
+                "last_s": 9.98,
+                "frames": 13,
+                "duration_s": 0.26,
+                "after1s_frames": 13
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.0000165700912476,
+            "max_hard_excess_rad": 0.0027430057525634766,
+            "min_clearance_m": 0.23970644176006317
+          },
+          {
+            "env": 8,
+            "complete": true,
+            "issues": {
+              "overspeed": {
+                "first_s": 11.6,
+                "last_s": 11.6,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              },
+              "hard_position": {
+                "first_s": 13.16,
+                "last_s": 19.78,
+                "frames": 19,
+                "duration_s": 0.38,
+                "after1s_frames": 19
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.0002317428588867,
+            "max_hard_excess_rad": 0.004029393196105957,
+            "min_clearance_m": 0.24598796665668488
+          },
+          {
+            "env": 12,
+            "complete": true,
+            "issues": {
+              "overspeed": {
+                "first_s": 11.700000000000001,
+                "last_s": 11.700000000000001,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              },
+              "hard_position": {
+                "first_s": 12.6,
+                "last_s": 19.740000000000002,
+                "frames": 23,
+                "duration_s": 0.46,
+                "after1s_frames": 23
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.0002549886703491,
+            "max_hard_excess_rad": 0.004866838455200195,
+            "min_clearance_m": 0.2461414635181427
+          },
+          {
+            "env": 16,
+            "complete": true,
+            "issues": {
+              "overspeed": {
+                "first_s": 11.6,
+                "last_s": 11.6,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              },
+              "hard_position": {
+                "first_s": 12.74,
+                "last_s": 19.82,
+                "frames": 28,
+                "duration_s": 0.56,
+                "after1s_frames": 28
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.000106930732727,
+            "max_hard_excess_rad": 0.0054547786712646484,
+            "min_clearance_m": 0.2543512284755707
+          },
+          {
+            "env": 17,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 2.5,
+                "last_s": 10.5,
+                "frames": 28,
+                "duration_s": 0.56,
+                "after1s_frames": 28
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.0000321865081787,
+            "max_hard_excess_rad": 0.00599980354309082,
+            "min_clearance_m": 0.24730737507343292
+          },
+          {
+            "env": 21,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 3.3000000000000003,
+                "last_s": 6.04,
+                "frames": 2,
+                "duration_s": 0.04,
+                "after1s_frames": 2
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.9999082088470459,
+            "max_hard_excess_rad": 0.0018534660339355469,
+            "min_clearance_m": 0.25549352169036865
+          },
+          {
+            "env": 24,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 12.88,
+                "last_s": 19.92,
+                "frames": 30,
+                "duration_s": 0.6,
+                "after1s_frames": 30
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.9998425841331482,
+            "max_hard_excess_rad": 0.0038529634475708008,
+            "min_clearance_m": 0.24847137928009033
+          },
+          {
+            "env": 25,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 6.92,
+                "last_s": 6.92,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.0000346899032593,
+            "max_hard_excess_rad": 0.0013240575790405273,
+            "min_clearance_m": 0.2490258663892746
+          },
+          {
+            "env": 32,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 12.68,
+                "last_s": 19.98,
+                "frames": 30,
+                "duration_s": 0.6,
+                "after1s_frames": 30
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.999985933303833,
+            "max_hard_excess_rad": 0.0050553083419799805,
+            "min_clearance_m": 0.23910121619701385
+          },
+          {
+            "env": 33,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 5.76,
+                "last_s": 9.06,
+                "frames": 5,
+                "duration_s": 0.1,
+                "after1s_frames": 5
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.999904453754425,
+            "max_hard_excess_rad": 0.0036139488220214844,
+            "min_clearance_m": 0.24683894217014313
+          },
+          {
+            "env": 36,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 12.4,
+                "last_s": 19.78,
+                "frames": 29,
+                "duration_s": 0.58,
+                "after1s_frames": 29
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.999915599822998,
+            "max_hard_excess_rad": 0.0059299468994140625,
+            "min_clearance_m": 0.24056416749954224
+          },
+          {
+            "env": 37,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 1.58,
+                "last_s": 10.26,
+                "frames": 30,
+                "duration_s": 0.6,
+                "after1s_frames": 30
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.0000070333480835,
+            "max_hard_excess_rad": 0.004604458808898926,
+            "min_clearance_m": 0.25282302498817444
+          },
+          {
+            "env": 41,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 1.8,
+                "last_s": 10.28,
+                "frames": 29,
+                "duration_s": 0.58,
+                "after1s_frames": 29
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.9999858736991882,
+            "max_hard_excess_rad": 0.004756808280944824,
+            "min_clearance_m": 0.24808552861213684
+          },
+          {
+            "env": 44,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 12.540000000000001,
+                "last_s": 19.52,
+                "frames": 16,
+                "duration_s": 0.32,
+                "after1s_frames": 16
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.999989926815033,
+            "max_hard_excess_rad": 0.003292083740234375,
+            "min_clearance_m": 0.23799848556518555
+          },
+          {
+            "env": 48,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 16.740000000000002,
+                "last_s": 16.86,
+                "frames": 2,
+                "duration_s": 0.04,
+                "after1s_frames": 2
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.9998059272766113,
+            "max_hard_excess_rad": 0.0031818151473999023,
+            "min_clearance_m": 0.24283729493618011
+          },
+          {
+            "env": 52,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 12.58,
+                "last_s": 19.28,
+                "frames": 21,
+                "duration_s": 0.42,
+                "after1s_frames": 21
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.9999216794967651,
+            "max_hard_excess_rad": 0.004536867141723633,
+            "min_clearance_m": 0.24899904429912567
+          },
+          {
+            "env": 53,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 2.06,
+                "last_s": 10.16,
+                "frames": 31,
+                "duration_s": 0.62,
+                "after1s_frames": 31
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.9999393820762634,
+            "max_hard_excess_rad": 0.004975676536560059,
+            "min_clearance_m": 0.24087052047252655
+          },
+          {
+            "env": 56,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 12.66,
+                "last_s": 20.0,
+                "frames": 25,
+                "duration_s": 0.5,
+                "after1s_frames": 25
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.9999866485595703,
+            "max_hard_excess_rad": 0.005675077438354492,
+            "min_clearance_m": 0.24900184571743011
+          },
+          {
+            "env": 57,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 2.32,
+                "last_s": 10.3,
+                "frames": 25,
+                "duration_s": 0.5,
+                "after1s_frames": 25
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.0000431537628174,
+            "max_hard_excess_rad": 0.0037407875061035156,
+            "min_clearance_m": 0.23633921146392822
+          },
+          {
+            "env": 60,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 13.24,
+                "last_s": 20.0,
+                "frames": 20,
+                "duration_s": 0.4,
+                "after1s_frames": 20
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.9998425841331482,
+            "max_hard_excess_rad": 0.004282712936401367,
+            "min_clearance_m": 0.24104438722133636
+          },
+          {
+            "env": 61,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 2.66,
+                "last_s": 10.22,
+                "frames": 32,
+                "duration_s": 0.64,
+                "after1s_frames": 32
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 1.000004768371582,
+            "max_hard_excess_rad": 0.00590825080871582,
+            "min_clearance_m": 0.2460332214832306
+          }
+        ],
+        "note": "Full20s and original startup retained. after1s is attribution only. Velocity joint identity is not inferred from a scalar maximum ratio."
+      },
+      {
+        "label": "entropyLow800-T1-8101",
+        "strict_safe": 57,
+        "complete": 58,
+        "n": 64,
+        "native_score_reproduced": 64,
+        "failures": [
+          {
+            "env": 1,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 8.18,
+                "last_s": 8.18,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.9594829082489014,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.24471230804920197
+          },
+          {
+            "env": 5,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 7.9,
+                "last_s": 7.9,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.8947126269340515,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.23888368904590607
+          },
+          {
+            "env": 11,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 19.22,
+                "last_s": 19.22,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.8429478406906128,
+            "max_hard_excess_rad": 0.0015174150466918945,
+            "min_clearance_m": 0.25156107544898987
+          },
+          {
+            "env": 13,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 8.32,
+                "last_s": 8.32,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.9989979863166809,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.22698505222797394
+          },
+          {
+            "env": 20,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 14.44,
+                "last_s": 14.44,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.9970075488090515,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.24340595304965973
+          },
+          {
+            "env": 24,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 14.48,
+                "last_s": 14.48,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.999713122844696,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.21936926245689392
+          },
+          {
+            "env": 48,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 14.72,
+                "last_s": 14.72,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.9997870922088623,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.23557955026626587
+          }
+        ],
+        "note": "Full20s and original startup retained. after1s is attribution only. Velocity joint identity is not inferred from a scalar maximum ratio."
+      },
+      {
+        "label": "entropyLow800-X-8101",
+        "strict_safe": 57,
+        "complete": 58,
+        "n": 64,
+        "native_score_reproduced": 64,
+        "failures": [
+          {
+            "env": 1,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 8.14,
+                "last_s": 8.14,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.9200186729431152,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.2363332062959671
+          },
+          {
+            "env": 5,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 7.88,
+                "last_s": 7.88,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.921175479888916,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.23917169868946075
+          },
+          {
+            "env": 11,
+            "complete": true,
+            "issues": {
+              "hard_position": {
+                "first_s": 19.2,
+                "last_s": 19.2,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [
+              "FL_hip_joint"
+            ],
+            "peak_velocity_limit_ratio": 0.8388607501983643,
+            "max_hard_excess_rad": 0.002023458480834961,
+            "min_clearance_m": 0.24872435629367828
+          },
+          {
+            "env": 13,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 8.040000000000001,
+                "last_s": 8.040000000000001,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.9633045792579651,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.2188584804534912
+          },
+          {
+            "env": 20,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 14.540000000000001,
+                "last_s": 14.540000000000001,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.9234427809715271,
+            "max_hard_excess_rad": 0.00012111663818359375,
+            "min_clearance_m": 0.2506622076034546
+          },
+          {
+            "env": 24,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 14.34,
+                "last_s": 14.34,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.9996890425682068,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.22608694434165955
+          },
+          {
+            "env": 48,
+            "complete": false,
+            "issues": {
+              "nonfoot": {
+                "first_s": 14.56,
+                "last_s": 14.56,
+                "frames": 1,
+                "duration_s": 0.02,
+                "after1s_frames": 1
+              }
+            },
+            "hard_position_joints": [],
+            "peak_velocity_limit_ratio": 0.9888836741447449,
+            "max_hard_excess_rad": 0.0,
+            "min_clearance_m": 0.23009496927261353
+          }
+        ],
+        "note": "Full20s and original startup retained. after1s is attribution only. Velocity joint identity is not inferred from a scalar maximum ratio."
+      },
+      {
+        "label": "entropyLow400-A-8101",
+        "strict_safe": 64,
+        "complete": 64,
+        "n": 64,
+        "native_score_reproduced": 64,
+        "failures": [],
+        "note": "Full20s and original startup retained. after1s is attribution only. Velocity joint identity is not inferred from a scalar maximum ratio."
+      },
+      {
+        "label": "entropyLow400-T1-8101",
+        "strict_safe": 64,
+        "complete": 64,
+        "n": 64,
+        "native_score_reproduced": 64,
+        "failures": [],
+        "note": "Full20s and original startup retained. after1s is attribution only. Velocity joint identity is not inferred from a scalar maximum ratio."
+      },
+      {
+        "label": "frozen1800-A-8101",
+        "strict_safe": 64,
+        "complete": 64,
+        "n": 64,
+        "native_score_reproduced": 64,
+        "failures": [],
+        "note": "Full20s and original startup retained. after1s is attribution only. Velocity joint identity is not inferred from a scalar maximum ratio."
+      }
+    ]
+  }
+}

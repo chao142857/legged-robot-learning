@@ -433,8 +433,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/README.md",
-      "bytes": 5764,
-      "sha256": "e2a3280ef71d7e3f9d2c7e0a51406ec84a70a02456dd72c6b6049f7e6340e963"
+      "bytes": 6515,
+      "sha256": "f893f793707939f7776ad39591eb7bddaa3a91d96d4f5b67ebfb7dae8ba4a2ac"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/ACTIVE_EXECUTION.json",
@@ -448,8 +448,13 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CONTINUATION_SOURCE_VERSIONS.json",
-      "bytes": 1840,
-      "sha256": "2d1ce3e2338d88d667298e89d465486c96f1ab3e6ff128392f710e630ab347de"
+      "bytes": 2481,
+      "sha256": "72c26a832ed1aa37641b912ecec4d85dec15d528d9c07687021572f40b2314db"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CPU_FAILURE_AND_REWARD_DIAGNOSIS.json",
+      "bytes": 27426,
+      "sha256": "4b0875241deb835f43c75be51c8339c638487b2a61956796b656446e3903b65d"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CPU_STARTING_POINT.json",
@@ -460,6 +465,11 @@
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/DEVELOPMENT_ENTROPY400.json",
       "bytes": 2624,
       "sha256": "98c0655227b495d4dd746238e9dcc555154d187d5019a476e59bbc271f31dc71"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/DEVELOPMENT_ENTROPY800.json",
+      "bytes": 10361,
+      "sha256": "73c5dddae136b31d645d7d9ec10bb8f5807d170537448750268387395e363f60"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/GITHUB_READINESS.json",
@@ -473,8 +483,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/PRELIMINARY_PHYSICS.json",
-      "bytes": 162824,
-      "sha256": "a472c316070cb6a1ec4967f8e1423c723d6e01a940f94242e85488b3e74ffbf2"
+      "bytes": 403191,
+      "sha256": "ebaf196e1108319fed8c4bf8b65ff0a9233c3e5ea2993bc42a8543e37c75c22e"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/RECOVERED_SOURCE_MANIFEST.json",
