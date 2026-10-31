@@ -604,7 +604,7 @@
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/README.md",
       "bytes": 8949,
-      "sha256": "dd469a87230fefaac093b13947f342baf43b7a6c952f7f2a3ef50542b22fe266"
+      "sha256": "7dfbb32d869024a64ef66c15427152cfa4a0b37b2abbffe1b8115958e8a49d9f"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/RESOURCE_PLAN.json",
@@ -723,8 +723,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/finalize_stage3.py",
-      "bytes": 13997,
-      "sha256": "e79153311cf852a07549558a61accaf1f6c08f378f938ec1b412ddc4fc0ec99b"
+      "bytes": 14774,
+      "sha256": "50503cf3eafde9a8e7809465dea4e44e0a254a79976c81226ff9105c147abfaf"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/gpu_budget.py",
@@ -793,8 +793,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/train_entry.py",
-      "bytes": 31967,
-      "sha256": "f17475de28698585f15e44e15901908e7c8880d581711bdf8dfb7d09d066558a"
+      "bytes": 32328,
+      "sha256": "cef42d36f28c9cbcddb9688d959a5e1fb0c5fcbee97807ce476f44b41600014c"
     },
     {
       "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/__init__.py",

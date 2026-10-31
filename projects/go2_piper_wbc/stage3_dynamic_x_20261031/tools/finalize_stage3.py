@@ -101,7 +101,7 @@ def main(b):
         else:run=b.launch(cfg,'final-native-learner-restore',purpose='final',timeout=180);write(receipt,dict(run=str(run)))
         wait(b,run);assert read(run/'ppo/result.json')['passed']
     actual_slots={r['run']:r['simulator_transition_slots'] for r in report(b,'resource_counts')['rows']}
-    resources=[];unmeasured_partial=[];totals=dict(PPO_updates=0,Adam_calls=0,training_transitions_used=0,eval_transition_slots=0,probe_transition_slots=0)
+    resources=[];unmeasured_partial=[];totals=dict(PPO_updates=0,Adam_calls=0,training_transitions_used=0,eval_transition_slots=0,probe_transition_slots=0,restore_inference_transition_slots=0,training_or_restore_reset_transition_slots=0)
     for j in read(b.p/'LEDGER.json')['jobs']:
         run=pathlib.Path(j['run']);row=dict(run=str(run),mode=j['mode'],phase=j['phase'],cid=j['cid'],state=read_state(j['cid']))
         updates=[json.loads(x) for x in (run/'ppo/updates.jsonl').read_text().splitlines()] if (run/'ppo/updates.jsonl').exists() else []
@@ -109,6 +109,14 @@ def main(b):
         calls=err['optimizer_calls_observed'] if err else sum(r['optimizer_steps_this_update'] for r in updates)
         totals['PPO_updates']+=len(updates);totals['Adam_calls']+=calls;totals['training_transitions_used']+=sum(r['transitions'] for r in updates)
         row.update(PPO_updates=len(updates),Adam_calls=calls,training_transitions_used=sum(r['transitions'] for r in updates),error=err)
+        if (run/'ppo/result.json').exists():
+            result=read(run/'ppo/result.json');n=read(run/'config.json')['num_envs']
+            row['reset_reward_compute_transition_slots']=result.get('reset_control_steps',0)*n
+            totals['training_or_restore_reset_transition_slots']+=row['reset_reward_compute_transition_slots']
+            if result.get('kind')=='final_checkpoint_restore_zero_updates':
+                assert result['updates']==0
+                row['restore_inference_transition_slots']=result.get('restore_inference_transition_slots',result['inference_steps']*n)
+                totals['restore_inference_transition_slots']+=row['restore_inference_transition_slots']
         s=run/'evaluation/summary.json'
         if s.exists():
             s=read(s);row.update(evaluation_episodes=s['num_episodes'],evaluation_requested_steps=s['requested_steps'])

@@ -206,7 +206,11 @@ try:
             write_json(OUT/'result.json',dict(passed=True,kind='final_checkpoint_restore_zero_updates',identity=identity,updates=0,optimizer_steps=0,
                        completed_updates=parent_updates,loaded_native_iter=cp['iter'],next_runner_iteration=runner.current_learning_iteration,
                        loaded_checkpoint_sha256=sha(cp_path),adam_step=adam_steps(alg),learner_adam_unchanged=True,restore_evidence=evidence,
-                       inference_steps=24,physx=physx_proof(cfg),physx_state_restored=False,new_training_transitions=0))
+                       inference_steps=24,restore_inference_transition_slots=24*a.num_envs,
+                       physical_control_steps=physical_control_steps,reset_control_steps=reset_control_steps,
+                       reset_transition_slots=reset_control_steps*a.num_envs,
+                       physical_transition_slots_including_reset=physical_control_steps*a.num_envs,
+                       physx=physx_proof(cfg),physx_state_restored=False,new_training_transitions=0))
             print('STAGE2_RESTORE_PASS',flush=True);time.sleep(2);raise SystemExit(0)
         rows=[];kl_values=[];grad_norms=[];optimizer_calls=0;rollout_steps=0;rollout_start=None;rollout_seconds=None;gae_seconds=None
         reward_means=[];done_counts=[];checkpoint_records=[];phase_start=None;train_start_unix=None
