@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_B0_20261026_work/CURRENT_RUN.json",
+    "sha256": "a4f5c1f591e467f93cbc36fc0cde6e40ce3469109eb988f12432e093aecea7a0",
+    "bytes": 3939
+  },
+  {
+    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_recipe_aplus_20261025_work/CURRENT_RUN.json",
+    "sha256": "b48da576406d510c95082010b4ada66b7ce150fdee44954af92e0b92b7381ced",
+    "bytes": 3363
+  },
+  {
+    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_B0_precision_20261026_work/CURRENT_RUN.json",
+    "sha256": "228bbb9e71df36eeb866bd532dbb27e2f82f8570bafc4354ff45e519249990fb",
+    "bytes": 1700
+  },
+  {
+    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_B0_20261026_work/response_diagnostic_20261026/delivery_v2/response_summary.json",
+    "sha256": "3b6342db5c2cd1130a897e0efa9330cff0bc29f3830e4303d43df5605915e407",
+    "bytes": 5596
+  },
+  {
+    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_B0_20261026_work/response_diagnostic_20261026/delivery_v2/named_joint_response_aggregate.csv",
+    "sha256": "5f4c9b62dc0dbeeb32907bf9acb163af80fa89d2a165c832aa595c61bd792de5",
+    "bytes": 37340
+  },
+  {
+    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_B0_jointScratch_20261027_work/final_delivery_v1/analysis/failure_audit/analysis_summary.json",
+    "sha256": "2f625d3fe0a01317836ddabc31b008980a456e9545838428d1539942d4bafae9",
+    "bytes": 1088988
+  },
+  {
+    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_scheduledMix_safetyDiag_20261028_work/CURRENT_RUN.json",
+    "sha256": "f3510f120ee0409430518b54147e2ece439f53dec17c1e58a1da701e4e9e52c3",
+    "bytes": 1981
+  },
+  {
+    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_physx_controlDiag_20261028_work/final_delivery_v1/REPORT_ZH.txt",
+    "sha256": "6624670c536a279e4c05f30d88c9f66e6d2b27f0964800cfa7ff8c3b5dae6bd9",
+    "bytes": 12310
+  }
+]

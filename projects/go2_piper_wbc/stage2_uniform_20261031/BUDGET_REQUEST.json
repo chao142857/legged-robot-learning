@@ -1,0 +1,81 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "project": "Original LeggedManip_Lab PPO+Uniform only",
+  "host": "ubuntu-robot",
+  "GPU_current_inventory": "PENDING_actual_host_offline",
+  "GPU_seconds_SUM_cap": 14400,
+  "final_reserve_seconds": 1800,
+  "allocation_seconds": {
+    "targeted_frozen_diagnostics": 1200,
+    "bounded_PPO_training_and_repairs": 9600,
+    "development_physics_evaluation": 1800,
+    "final_evaluation_and_close": 1800
+  },
+  "update_and_transition_limits": null,
+  "counts": "PPO updates, Adam minibatches, training/evaluation transitions, GPU/wall time separately recorded",
+  "resource": "Existing original WBC GPU after live inventory; no foreign compute contention, no YangLab/SuperMimic usage",
+  "time_accounting": "All stage-specific GPU processes including failed starts, initialization, collection, training, pauses, evaluation and rendering; simultaneous GPU process durations summed; independent persistent supervisor; old ledgers never reopened",
+  "start_checkpoint": {
+    "status": "CANDIDATES_ONLY_PENDING_LIVE_SHA_AND_PHYSICS",
+    "candidates": [
+      {
+        "label": "A+CP1800",
+        "path": "/home/alex/dog/go2_piper_recipe_aplus_20261025/initialization_retry_v1/train_seed21/cp_1800.pt",
+        "sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+        "reason": "Prior same-domain full20s strict safety191/192 per original protocol with .5s startup"
+      },
+      {
+        "label": "B0CP2000",
+        "reason": "Diagnostic reference with somewhat stronger X response, safety/retention requires paired recheck; path/SHA pending live inspection"
+      }
+    ]
+  },
+  "training": "Native installed PPO and original18D/210-102 ABI; full learner/optimizer/RNG restoration; explicitly warm-start; no new learner or hidden teacher",
+  "single_factor": "Chosen only after paired diagnostics: command-to-joint coordination, native PPO realized KL/parameter displacement, reward sensitivity. Previously failed reward-std-only recipe excluded from blind repetition.",
+  "sampler": "Original B0-X Uniform: dynamic30% / fixed27-anchor70%, original A+ velocity sampler. Any training-distribution repair must be an explicit single-factor branch; final evaluation unchanged.",
+  "milestones": "Frozen development at update0/200/400/800 if reached within time; save every100. Normal nonmonotonic fluctuations allowed. Candidate decision uses development only; separate unseen final seeds frozen before training.",
+  "protocol": "A/T0/T1/X, full20s including startup; all failures retain denominator; original dynamic amplitude±.02m and period8s unchanged",
+  "frozen_gates_source": {
+    "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_B0_20261026_work/source/recipe_b0/spec.json",
+    "sha256": "765f3bd7df04d7f5446ddd9f77a02c94d7787e97386e56d5c59c0c91a210586a",
+    "learning_gate": {
+      "all_three_seeds_required": true,
+      "X_sync_gain_min": 0.35,
+      "X_sync_gain_max": 1.5,
+      "X_gain_improvement_vs_CP1800_min": 0.15,
+      "X_correlation_min": 0.5,
+      "X_correlation_improvement_min": 0.15,
+      "X_fitted_amplitude_min_m": 0.008,
+      "X_fitted_amplitude_max_m": 0.035,
+      "X_demeaned_RMSE_fraction_of_parent_max": 0.9,
+      "X_absolute_RMSE_increase_max_m": 0.005,
+      "EE_absolute_RMSE_max_m": 0.05
+    },
+    "retention_gate": {
+      "old_V1_A_to_B_health_and_direction_gates_unchanged": true,
+      "all_seeds_A_T1_required": true,
+      "completion_fraction_min": 0.95,
+      "strict_safe_fraction_min": 0.95,
+      "strict_safe_fraction_drop_vs_parent_max": 0.05,
+      "A_T0_T1_EE_RMSE_increase_max_m": 0.01,
+      "A_T1_direction_gain_change_max": 0.15,
+      "T1_YZ_sync_gain_drop_max": 0.15,
+      "T0_base_drift_mean_increase_max_m": 0.05,
+      "T0_base_drift_p95_increase_max_m": 0.1
+    }
+  },
+  "stop": "NaN/semantic error stops branch. Original severe physical hard-limit gate and true terminal events preserved; sustained multi-checkpoint safety/performance deterioration triggers diagnosis. Time cap stops all stage GPU processes; final reserve cannot be consumed by training.",
+  "phase_gate": "No GPU long training until this new total budget is approved and actual host/source/checkpoint/identity are verified",
+  "next_stage": "No SuperMimic, SGS or scratch expansion",
+  "final_evaluation_seeds": [
+    381031,
+    391031,
+    401031
+  ],
+  "legacy_regression_seeds": [
+    8101,
+    8102,
+    8103
+  ],
+  "seed_isolation": "Final seeds unused for selection; same frozen parent and selected checkpoint evaluated under original protocol; legacy seeds remain regression/development."
+}

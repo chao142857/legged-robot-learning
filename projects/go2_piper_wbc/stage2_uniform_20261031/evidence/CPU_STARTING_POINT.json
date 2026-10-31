@@ -1,0 +1,26 @@
+{
+  "scope": "Derived CPU synthesis of existing original-PPO evidence only; no new physical result",
+  "actual_host_status": "OFFLINE_UNVERIFIED",
+  "starting_candidate": "Own A+CP1800 preferred for safety; B0CP2000 retained as paired diagnostic reference. Neither certified baseline.",
+  "response": {
+    "zero_static_endpoint_gain": 0.06822096322607607,
+    "zero_dynamic_gain": 0.12572647161629452,
+    "moving_dynamic_gain": 0.11171490144386802,
+    "local_J_requested_amplitude_m": 0.0022283076280208724,
+    "actual_dynamic_amplitude_m": 0.0026019504219969717
+  },
+  "supported": "At8-second command frequency the policy produces weak effective X joint coordination; historical actuator response preserved dynamic components. Does not prove PPO credit assignment, reward or sampling uniquely caused it.",
+  "excluded_blind_repetition": [
+    "Narrowing precision kernel .05m to .02m alone already failed dynamics and retention.",
+    "Explicit FK error alone did not produce a safe full mobile baseline.",
+    "Scheduled advantage mixing severe hard-limit branches are not default warm-start or Vanilla PPO baselines."
+  ],
+  "next_required_evidence": [
+    "Live source/checkpoint/resource identity; validate cached candidate paths and SHA.",
+    "Same-state command perturbations and effective Jacobian projection using actual original policy; preserve target orientation coupling.",
+    "Native rollout PPO old/new Gaussian KL per leg/arm, realized optimizer parameter displacement and correlation with physical deterioration.",
+    "Full20s original A/T0/T1/X paired physics including actual terminal and startup."
+  ],
+  "GPU_started": 0,
+  "PPO_updates": 0
+}
