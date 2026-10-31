@@ -1,4 +1,4 @@
-"""Inactive candidate: fixed-anchor leg Gaussian KL inside installed native PPO.
+"""Declared fixed-anchor leg Gaussian KL inside installed native PPO.
 
 Used only after a physical causal diagnosis supports leg-function drift. This
 does not change observations, Gaussian sampling/log-prob, rewards, GAE, native

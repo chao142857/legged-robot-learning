@@ -66,6 +66,7 @@ def main(root):
     assert not torch.cuda.is_initialized()
     write(p/'FUNCTION_AND_LEG_MARGIN_AUDIT.json',dict(CPU_only=True,functions=functions,physical=physical,
         common_mechanical_limits_verified_across_measured_DR_realizations=True,source_sha256=sha(__file__),
+        sampling='q/qd geometric margins use recorded50Hz control samples; hard-excess and applied-torque saturation taps include physics substeps. Control-sample minimum margin is not an assertion about every5ms state.',
         scope='Frozen functions on identical actual P1 inputs are distinct from native closed-loop q/qd/torque measurements. Nominal target deltas precede soft/ramp/delay; not actual EE predictions. Native1mrad hard-event tolerance is unchanged. No final seeds or PPO updates.'))
 
 if __name__=='__main__':

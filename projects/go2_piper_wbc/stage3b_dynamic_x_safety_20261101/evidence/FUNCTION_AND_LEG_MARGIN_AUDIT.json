@@ -448,6 +448,62 @@
           ]
         }
       }
+    },
+    {
+      "label": "new/legKL001-n400-seed22",
+      "checkpoint_sha256": "60832742811af936192cc337d0d11714d7eccb0f97a317128c97cde09e36e1b8",
+      "groups": {
+        "all": {
+          "n": 608,
+          "leg_raw_mean_RMS": 0.0778498575091362,
+          "arm_raw_mean_RMS": 0.3916427791118622,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.01051849965006113,
+            0.027729298919439316,
+            0.016341689974069595,
+            0.01576612889766693,
+            0.019579418003559113,
+            0.014234058558940887,
+            0.015902996063232422,
+            0.022340551018714905,
+            0.01631721667945385,
+            0.02691112458705902,
+            0.021044855937361717,
+            0.019466951489448547,
+            0.029340218752622604,
+            0.05665886402130127,
+            0.06365842372179031,
+            0.17372891306877136,
+            0.058065786957740784,
+            0.12586569786071777
+          ]
+        },
+        "backward": {
+          "n": 128,
+          "leg_raw_mean_RMS": 0.13883721828460693,
+          "arm_raw_mean_RMS": 0.7714947462081909,
+          "nominal_target_delta_RMS_rad_per_action": [
+            0.01494686957448721,
+            0.04763184115290642,
+            0.02379038743674755,
+            0.030296169221401215,
+            0.029842369258403778,
+            0.01306197140365839,
+            0.030290022492408752,
+            0.044334039092063904,
+            0.027506181970238686,
+            0.05501372367143631,
+            0.041966941207647324,
+            0.031500592827796936,
+            0.06128400191664696,
+            0.08799182623624802,
+            0.10023514926433563,
+            0.35379698872566223,
+            0.08788102120161057,
+            0.26222285628318787
+          ]
+        }
+      }
     }
   ],
   "physical": [
@@ -1218,9 +1274,74 @@
         -1.0471998453140259,
         1.0471998453140259
       ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n400-seed22-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "60832742811af936192cc337d0d11714d7eccb0f97a317128c97cde09e36e1b8",
+      "actual_FL_hip_q_max": 1.0084468126296997,
+      "actual_FL_hip_abs_qd_peak": 11.667848587036133,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.03875303268432617,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.03798828274011612,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n400-seed22-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "60832742811af936192cc337d0d11714d7eccb0f97a317128c97cde09e36e1b8",
+      "actual_FL_hip_q_max": 0.8991346955299377,
+      "actual_FL_hip_abs_qd_peak": 10.765054702758789,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.14806514978408813,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0032968749292194843,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n400-seed22-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "60832742811af936192cc337d0d11714d7eccb0f97a317128c97cde09e36e1b8",
+      "actual_FL_hip_q_max": 0.9581257104873657,
+      "actual_FL_hip_abs_qd_peak": 12.61422348022461,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.08907413482666016,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.04856640473008156,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
+    },
+    {
+      "origin": "new",
+      "label": "legKL001-n400-seed22-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "60832742811af936192cc337d0d11714d7eccb0f97a317128c97cde09e36e1b8",
+      "actual_FL_hip_q_max": 0.8674397468566895,
+      "actual_FL_hip_abs_qd_peak": 10.894243240356445,
+      "actual_FL_hip_nominal_limit_margin_min_rad": 0.17976009845733643,
+      "actual_FL_hip_hard_excess_max_rad": 0.0,
+      "FL_hip_applied_torque_saturation_fraction": 0.0033320311922580004,
+      "actual_mechanical_bounds_rad": [
+        -1.0471998453140259,
+        1.0471998453140259
+      ]
     }
   ],
   "common_mechanical_limits_verified_across_measured_DR_realizations": true,
-  "source_sha256": "c224c7810410cacad9199ce5a01b8fe2a663f84b61364810cbda5acbc651077d",
+  "source_sha256": "be246a5fe58c34e43ce4fb1f73351fb33f2eaccfe5e7261fe982bdbc8d3de22c",
+  "sampling": "q/qd geometric margins use recorded50Hz control samples; hard-excess and applied-torque saturation taps include physics substeps. Control-sample minimum margin is not an assertion about every5ms state.",
   "scope": "Frozen functions on identical actual P1 inputs are distinct from native closed-loop q/qd/torque measurements. Nominal target deltas precede soft/ramp/delay; not actual EE predictions. Native1mrad hard-event tolerance is unchanged. No final seeds or PPO updates."
 }
