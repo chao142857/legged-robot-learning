@@ -813,8 +813,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/README.md",
-      "bytes": 10464,
-      "sha256": "506cfd8787da209b6568306701ecd1e86994a6c63f834d4fc92c777e0731599a"
+      "bytes": 11059,
+      "sha256": "6d27b10a1a762a248ce3c30546b61e236474dff6e49297cdff4de2f646449ee4"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/RESOURCE_PLAN.json",
@@ -852,9 +852,14 @@
       "sha256": "1db935a838aed55edb2c6988915e3fe45b8cc40e18770b932d29fef6010a7284"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT600_SEED22.json",
+      "bytes": 119417,
+      "sha256": "1b9049f5906d121d51bb833f9c07d2cca2d1553050cc5b1298d1eaf0e76b0880"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FUNCTION_AND_LEG_MARGIN_AUDIT.json",
-      "bytes": 48969,
-      "sha256": "826aa2796ec201105fdf8b333acd4315388a42baab5fc22bc4e9d53f8ce830cc"
+      "bytes": 53288,
+      "sha256": "e162f321ef66d0743c6b049660d56428c24def39b4ffa2047f62dce7047b0334"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/GPU_INITIALIZATION_AND_NATIVE_PPO.json",
@@ -873,13 +878,13 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.json",
-      "bytes": 3867,
-      "sha256": "79630db05c523288158a99ca9a70a3ef72f07abe1f3047c8d6130ee741b158dc"
+      "bytes": 4192,
+      "sha256": "82dc083759cf1b475bf2dd8bc3a27db5dda8d656e9b06ce5e85eaef0d1436a54"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.svg",
-      "bytes": 231915,
-      "sha256": "25043d6527babb6029be2a4b8e289c483a7bee8b789aeb0a299c14fffa8b796a"
+      "bytes": 232908,
+      "sha256": "1f021b813b213d2c1098e543cfafaa7c6db92e0dacc3d348af9501135224c395"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/patches/finalize_stage3.py.patch",
