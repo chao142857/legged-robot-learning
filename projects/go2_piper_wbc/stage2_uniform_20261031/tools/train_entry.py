@@ -1,5 +1,5 @@
-"""Stage2 original native PPO continuation; one declared Uniform-mixture factor.
-Native PPO loss, network, rewards, LR, PD and final evaluator are unchanged.
+"""Stage2 native PPO: isolated Uniform-coverage or entropy-only contrasts.
+Native loss implementation, network, task rewards, LR, PD and evaluator retained.
 """
 import argparse
 import hashlib
@@ -22,6 +22,9 @@ OUT=Path('/runs/ppo');OUT.mkdir(exist_ok=False)
 IMAGE='sha256:8ee9b2bb8e6aae08dace71ee1e2141a4d62bcc63e4cf0eac28b347111a486a87'
 CP1800_SHA='16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091'
 app=None
+class PlannedTimeStop(Exception):pass
+physical_control_steps=0
+optimizer_calls=0
 try:
     from isaacsim import SimulationApp
     SimulationApp.DEFAULT_LAUNCHER_CONFIG=dict(SimulationApp.DEFAULT_LAUNCHER_CONFIG,disable_viewport_updates=True,enable_crashreporter=False)
@@ -104,8 +107,16 @@ try:
     agent=handle_deprecated_rsl_rl_cfg(load_cfg_from_registry('GO2-PIPER-WBC','rsl_rl_cfg_entry_point'),importlib.metadata.version('rsl-rl-lib'))
     agent.seed=21;agent.device='cuda:0';agent.max_iterations=1000000;agent.save_interval=1200;agent.resume=False
     parent_agent=yaml.safe_load((original_cp.parent/'agent.yaml').read_text())
+    entropy_trial=CONFIG.get('entropy_coef')
+    if entropy_trial is not None:
+        assert fraction==.3 and float(entropy_trial) in (.005,.001),'Declared original-Uniform entropy-only contrast'
+        assert parent_agent['algorithm']['entropy_coef']==.005
+        agent.algorithm.entropy_coef=float(entropy_trial)
     resolved=plain(agent)
-    for field in ['actor','critic','algorithm','num_steps_per_env','clip_actions','check_for_nan']:assert resolved[field]==parent_agent[field],field
+    for field in ['actor','critic','algorithm','num_steps_per_env','clip_actions','check_for_nan']:
+        expected=parent_agent[field]
+        if field=='algorithm' and entropy_trial is not None:expected=dict(expected,entropy_coef=float(entropy_trial))
+        assert resolved[field]==expected,field
     assert agent.num_steps_per_env==24 and agent.algorithm.num_learning_epochs==5 and agent.algorithm.num_mini_batches==4
     canonical=lambda x:hashlib.sha256(json.dumps(plain(x),sort_keys=True,separators=(',',':')).encode()).hexdigest()
     identity=dict(node_id='yanglab3060',purpose='stage2_original_uniform_PPO',dynamic_fraction=fraction,image_id=IMAGE,
@@ -119,13 +130,20 @@ try:
         runner=OnPolicyRunner(env,agent.to_dict(),log_dir=None,device=agent.device);alg=runner.alg
         from telemetry import physical_suite
         original_reward=env.unwrapped.reward_manager.compute
-        physical_rows=[]
+        physical_rows=[];dynamic_masks=[]
         def observed_physical_reward(*args,**kwargs):
+            global physical_control_steps
             result=original_reward(*args,**kwargs)
+            physical_control_steps+=1
             raw=env.unwrapped;p=physical_suite(raw)
             with torch.no_grad():
                 row=dict(xy_mse=p['xy_error_sq'].mean(),yaw_mse=p['yaw_error_sq'].mean(),ee_mse=p['ee_position_error'].square().mean(),ee_angle=p['ee_orientation_error'].mean(),nonfoot_fraction=(p['nonfoot_max_force']>1).float().mean(),overspeed_fraction=(p['joint_velocity_limit_ratio']>1.0001).float().mean(),hard_excess_max=p['joint_position_limit_excess'].max())
                 row.update({'reward_rate/'+name:raw.reward_manager._step_reward[:,i].mean() for i,name in enumerate(raw.reward_manager.active_terms)})
+                pose=raw.command_manager.get_term('ee_pose');dynamic=pose.is_dynamic.detach().clone();dynamic_masks.append(dynamic)
+                for label,mask in [('dynamic',dynamic),('fixed',~dynamic)]:
+                    row[label+'_samples']=mask.float().sum()
+                    row[label+'_EE_squared_error_sum']=p['ee_position_error'].square()[mask].sum()
+                    row[label+'_reward_sum']=result[mask].sum()
                 physical_rows.append({k:v.detach() for k,v in row.items()})
                 if float(row['hard_excess_max'])>=.02:
                     torch.save(dict(q=raw.scene['robot'].data.joint_pos,qd=raw.scene['robot'].data.joint_vel,limits=raw.scene['robot'].data.joint_pos_limits,action=raw.action_manager.action,episode_step=raw.episode_length_buf),OUT/'severe_actual_joint_event.pt')
@@ -147,9 +165,15 @@ try:
         assert plain(env.unwrapped.observation_manager.group_obs_dim)=={'policy':[210],'critic':[102]}
         finite(alg.actor.state_dict(),'initial actor');finite(alg.critic.state_dict(),'initial critic');finite(alg.optimizer.state_dict(),'initial Adam')
         initial_adam_step=adam_steps(alg);assert initial_adam_step==parent_updates*20
+        assert float(alg.entropy_coef)==float(agent.algorithm.entropy_coef),'Runtime entropy coefficient overridden during restore'
+        write_json(OUT/'runtime-algorithm.json',dict(entropy_coef=float(alg.entropy_coef),new_entropy_trial=entropy_trial is not None,
+            task_reward_unchanged=True,network_LR_KL_unchanged=True,dynamic_fraction=fraction,
+            sampler_matches_original_parent=(fraction==.3),optimizer_fully_restored=True))
         write_json(OUT/'restore-evidence.json',evidence)
         # The saved learner/RNG is checked before an explicit new physical reset.
         restore_rng(cp['infos']);env.reset()
+        reset_control_steps=physical_control_steps
+        physical_rows.clear();dynamic_masks.clear()
         if a.updates==0:
             runner.alg.eval_mode();obs=env.get_observations()
             with torch.inference_mode():
@@ -171,6 +195,7 @@ try:
         def observed_act(obs):
             global rollout_start
             if rollout_steps==0:
+                if Path('/runs/TIME_STOP').exists():raise PlannedTimeStop('Independent GPU time reserve reached at rollout boundary')
                 torch.cuda.synchronize();rollout_start=time.perf_counter()
             actions=original_act(obs);finite(actions,'actions');return actions
 
@@ -217,9 +242,10 @@ try:
         def save_periodic(completed):
             cpdir=OUT/'checkpoints';cpdir.mkdir(exist_ok=True);target=cpdir/('cp_'+str(completed)+'.pt');assert not target.exists()
             infos=dict(completed_updates=completed,method=spec['method'],initialization='Stage2 warm-start own original A+CP1800; full native learner restore',
-                       parent_checkpoint_sha256=CP1800_SHA,root_parent_sha256=CP1800_SHA,additional_completed_updates=completed-1800,
-                       environment_steps=int(cp['infos']['environment_steps'])+(completed-1800)*4096*24,
+                       parent_checkpoint_sha256=sha(cp_path),root_parent_sha256=CP1800_SHA,additional_completed_updates=completed-1800,
+                       environment_steps=int(cp['infos']['environment_steps'])+(completed-parent_updates)*4096*24,
                        stage2_new_transitions=(completed-1800)*4096*24,learning_rate=alg.learning_rate,
+                       accounting_version=2,parent_completed_updates=parent_updates,
                        rng_cpu=torch.get_rng_state(),rng_cuda=torch.cuda.get_rng_state_all(),rng_python=random.getstate(),rng_numpy=np.random.get_state(),
                        stage2_identity=identity,physx_state_saved=False,environment_state_saved=False,rollout_boundary=True)
             state=alg.save();state.update(iter=completed-1,infos=infos)
@@ -246,6 +272,7 @@ try:
             row=dict(local_update=len(rows)+1,completed_updates=parent_updates+len(rows)+1,transitions=a.num_envs*24,
                      rollout_seconds=rollout_seconds,gae_seconds=gae_seconds,ppo_update_seconds=elapsed,
                      losses=loss,kl_mean=float(kl.mean()),kl_max=float(kl.max()),learning_rate=alg.learning_rate,
+                     entropy_coef=float(alg.entropy_coef),
                      actor_parameter_delta=parameter_delta(alg.actor,before_actor),critic_parameter_delta=parameter_delta(alg.critic,before_critic),
                      adam_step=adam_steps(alg),optimizer_steps_this_update=20,finite_checks_passed=True,physx=physx_proof(cfg),
                      torch_peak_allocated_bytes=torch.cuda.max_memory_allocated(),torch_peak_reserved_bytes=torch.cuda.max_memory_reserved())
@@ -256,7 +283,17 @@ try:
                        action_std=alg.actor.output_std.detach().mean(0).cpu().tolist())
             row['physical_reward_time']={k:float(torch.stack([v[k] for v in physical_rows]).mean()) for k in physical_rows[0]}
             row['physical_reward_time']['hard_excess_max']=max(float(v['hard_excess_max']) for v in physical_rows)
+            assert len(dynamic_masks)==24 and len(physical_rows)==24
+            cohort={}
+            masks=torch.stack(dynamic_masks)
+            # Native update cleared storage; cohort reward/count remains directly observable.
+            for label in ('dynamic','fixed'):
+                count=sum(int(v[label+'_samples']) for v in physical_rows)
+                cohort[label]=dict(samples=count,EE_mse=sum(float(v[label+'_EE_squared_error_sum']) for v in physical_rows)/count if count else None,
+                    mean_native_reward=sum(float(v[label+'_reward_sum']) for v in physical_rows)/count if count else None)
+            row['Uniform_coverage']=dict(cohorts=cohort,episode_membership_draws_fixed_dynamic=env.unwrapped.command_manager.get_term('ee_pose').membership_draws.cpu().tolist(),mask_shape=list(masks.shape),sampling_mechanism_unchanged=True)
             physical_rows.clear()
+            dynamic_masks.clear()
             rows.append(row)
             with (OUT/'updates.jsonl').open('a') as f:f.write(json.dumps(row)+'\n')
             print('STAGE2_UPDATE '+json.dumps({k:row[k] for k in ['local_update','completed_updates','rollout_seconds','gae_seconds','ppo_update_seconds','kl_mean','learning_rate','adam_step']}),flush=True)
@@ -279,15 +316,21 @@ try:
         alg.act=observed_act;alg.process_env_step=observed_process;alg.compute_returns=observed_returns
         alg.update=observed_update;alg.actor.get_kl_divergence=observed_kl;alg.optimizer.step=observed_step
         torch.cuda.synchronize();torch.cuda.reset_peak_memory_stats();start=time.perf_counter();training_start=start;phase_start=start;train_start_unix=time.time()
-        runner.learn(num_learning_iterations=a.updates,init_at_random_ep_len=False)
+        time_stopped=False
+        try:runner.learn(num_learning_iterations=a.updates,init_at_random_ep_len=False)
+        except PlannedTimeStop:
+            time_stopped=True
+            write_json(OUT/'time_stop.json',dict(reason='Independent time reserve',completed_local_updates=len(rows),rollout_boundary=True))
         torch.cuda.synchronize();loop_seconds=time.perf_counter()-start
-        completed=parent_updates+a.updates
-        assert len(rows)==a.updates and optimizer_calls==a.updates*20
-        assert runner.current_learning_iteration==completed-1 and adam_steps(alg)==completed*20
+        actual_updates=len(rows);completed=parent_updates+actual_updates
+        assert actual_updates>0 and (actual_updates==a.updates or time_stopped)
+        assert optimizer_calls==actual_updates*20 and adam_steps(alg)==completed*20
+        assert runner.current_learning_iteration in (completed-1,completed)
         assert not equal_tree(alg.actor.state_dict(),cp['actor_state_dict']) and not equal_tree(alg.critic.state_dict(),cp['critic_state_dict'])
         assert not equal_tree(alg.optimizer.state_dict(),cp['optimizer_state_dict'])
-        new_transitions=a.num_envs*24*a.updates
-        assert len(checkpoint_records)==a.updates//100
+        new_transitions=a.num_envs*24*actual_updates
+        if actual_updates%100:save_periodic(completed)
+        assert len(checkpoint_records)==(actual_updates+99)//100
         target=OUT/'checkpoints'/('cp_'+str(completed)+'.pt');checkpoint_seconds=sum(r['save_seconds'] for r in checkpoint_records)
         infos=torch.load(target,map_location='cpu',weights_only=False)['infos']
         saved=torch.load(target,map_location='cpu',weights_only=False)
@@ -297,8 +340,10 @@ try:
         assert saved['infos']['stage2_identity']==identity
         evidence_after_save=rng_proof(saved)
         result=dict(passed=True,kind='stage2_native_PPO_window',identity=identity,
-                    updates=a.updates,parent_completed_updates=parent_updates,completed_updates=completed,optimizer_steps=optimizer_calls,
+                    updates=actual_updates,requested_slice_updates=a.updates,time_stopped=time_stopped,parent_completed_updates=parent_updates,completed_updates=completed,optimizer_steps=optimizer_calls,
                     initial_adam_step=initial_adam_step,final_adam_step=adam_steps(alg),new_transitions=new_transitions,
+                    physical_control_steps=physical_control_steps,reset_control_steps=reset_control_steps,
+                    collected_training_transition_slots=(physical_control_steps-reset_control_steps)*a.num_envs,
                     total_environment_steps=infos['environment_steps'],stage2_new_transitions=infos['stage2_new_transitions'],
                     native_runner_learn_called=True,learner_iteration=runner.current_learning_iteration,
                     training_loop_seconds=loop_seconds,full_ppo_loop_transitions_per_second=new_transitions/loop_seconds,
@@ -319,7 +364,7 @@ try:
 except SystemExit:
     raise
 except BaseException as exc:
-    (OUT/'error.json').write_text(json.dumps(dict(error=repr(exc),traceback=traceback.format_exc()),indent=2))
+    (OUT/'error.json').write_text(json.dumps(dict(error=repr(exc),traceback=traceback.format_exc(),physical_control_steps=physical_control_steps,physical_transition_slots_including_reset=physical_control_steps*a.num_envs,optimizer_calls_observed=optimizer_calls,reset_control_steps=globals().get('reset_control_steps'),complete_PPO_transitions=sum(r['transitions'] for r in globals().get('rows',[])),partial_rollout_steps=globals().get('rollout_steps'),note='Real reward-compute control steps; reset and incomplete rollout separately identified. Not all collected slots entered PPO updates.'),indent=2))
     print(traceback.format_exc(),flush=True)
     raise
 finally:

@@ -1,0 +1,12 @@
+{
+  "first_paired200_training_entry_sha256": "04a22e75b4c35d1c47d7e6781b5489a44a1e229791eacd641638063f37909469",
+  "resume_accounting_v2_sha256": "8fbed39738ff240467c6550f4ecc2c1de2026559d8962e3812010b5b8cce0a53",
+  "paired400_cohort_observer_v3_sha256": "0a7779c9627f58e1fec6fd0d5371a437a148984dd07193f797055855f03a9be9",
+  "current_prepared_entropy_optional_entry_sha256": "17e46cf95a745b9e2a11a9f2254487d64aebbc4f1419ac5c548aee49a02d1ffb",
+  "initial_native_task_source_commit": "ae1054046f792df8da6362c36ee168ded6b2ebcd",
+  "task_files_changed": false,
+  "native_PPO_reimplemented": false,
+  "optional_entropy_status": "CONDITIONAL_SOURCE_PREPARED; real activation/run receipts required, not asserted here",
+  "source_scope": "Frozen per-run source and launch hashes are authoritative; accounting/cohort observers do not change native PPO objective or RNG. Optional trial changes exactly declared native entropy coefficient after plateau admission.",
+  "first_staged_entropy_entry_sha256": "ec5a7faf964fc6b111cc05788df567653adb2b18b2dc0f58ba3667b90089400d"
+}

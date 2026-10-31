@@ -432,6 +432,11 @@
       "sha256": "1ebe1e32e6ee74c76807f2f920dcc995a1667ac266449b82a7b29b44aa9e49ac"
     },
     {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/README.md",
+      "bytes": 4417,
+      "sha256": "d126a0e5062ed0b24509fb2243efaa83a5f1a9a88b6fcd316f6a382ad380eb1c"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/ACTIVE_EXECUTION.json",
       "bytes": 2536,
       "sha256": "a3ee52632aff95ff6acd83f43caf8414ec437d2a2e34d0fe17e0abbf39c46f34"
@@ -440,6 +445,11 @@
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CONNECTIVITY.json",
       "bytes": 378,
       "sha256": "84423e0c1979958c938a4465ff102ac1428781909e091bb87e678979fb96b418"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CONTINUATION_SOURCE_VERSIONS.json",
+      "bytes": 1063,
+      "sha256": "a549d6c9aecd20e3ede7c9d601111b9089a0ec7dc0b53e3d62390a683c2a56c9"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/evidence/CPU_STARTING_POINT.json",
@@ -467,9 +477,29 @@
       "sha256": "b7ad880a553161cc01591b998bb2d1846567d5fc358fbd2fb469dc7e87963cd0"
     },
     {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/analyze_physics.py",
+      "bytes": 8422,
+      "sha256": "0eb54ad62176d1c0897bf7b9d643f9e4481d6affa9793945a6d1d3bbc2ff029d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/continue_pipeline.py",
+      "bytes": 7020,
+      "sha256": "6151bf2ca324e2527e33239a327e3b4968b067fa226058846e919eedf9b23a2d"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/entropy_trial.py",
+      "bytes": 8618,
+      "sha256": "5f257f5bb39d1f5411ac55a6097e73790de3c5a8baae7cd2f2d64ac92abe537c"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/evaluate_entry.py",
       "bytes": 927,
       "sha256": "9850a3daea4cd5421dd0f4ef39cb1496ca630502addfffa0e550c4eb29054697"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/finalize_stage2.py",
+      "bytes": 7875,
+      "sha256": "c0f40e64301feadd2793e475921668c821943259ede9827f723a424906696019"
     },
     {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/gpu_budget.py",
@@ -492,9 +522,19 @@
       "sha256": "68812cfb7fac5fe335f0884600b10b46b7f5e4b4d4921e0ed70a2ee279918d67"
     },
     {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/response_breakdown.py",
+      "bytes": 2494,
+      "sha256": "87daf508a4f80bf3912e3341389718e2f916f70277ec350ff0f7455eae56e9cf"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/safety_breakdown.py",
+      "bytes": 2682,
+      "sha256": "65473b3b29d0153d9aae815a52b99274a95a2fd564b3390c50d5ecc7985fd04d"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage2_uniform_20261031/tools/train_entry.py",
-      "bytes": 24808,
-      "sha256": "04a22e75b4c35d1c47d7e6781b5489a44a1e229791eacd641638063f37909469"
+      "bytes": 28819,
+      "sha256": "17e46cf95a745b9e2a11a9f2254487d64aebbc4f1419ac5c548aee49a02d1ffb"
     },
     {
       "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/__init__.py",
