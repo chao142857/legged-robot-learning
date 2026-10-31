@@ -59,7 +59,8 @@ class ResponseTap:
         fields=dict(diag_actor_obs=self.input,diag_actor_network_input=self.network_input,diag_cmd_input=self.input_cmd,
                     diag_velocity_input=self.input_vel,diag_q_pre=self.q_pre,diag_qd_pre=self.qd_pre)
         for kind in ('position','velocity','effort','q','qd','torque','delay'):
-            result=torch.empty((self.raw.num_envs,4,len(self.robot.joint_names)),device=self.raw.device)
+            first=next(iter(self.rows.values()))[kind][0]
+            result=torch.empty((self.raw.num_envs,4,len(self.robot.joint_names)),device=self.raw.device,dtype=first.dtype)
             for name,act in self.robot.actuators.items():
                 values=self.rows[name][kind]
                 assert len(values)==4,(name,kind,len(values))

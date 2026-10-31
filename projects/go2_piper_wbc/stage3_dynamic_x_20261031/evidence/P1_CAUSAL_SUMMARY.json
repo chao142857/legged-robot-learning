@@ -1,0 +1,66 @@
+{
+  "stage": "P1 completed; P2 integration smoke in progress",
+  "causal_evidence_sha256": "9fd585619553aa45a1e0db5e31ba61d12a555b58365c70a2d4f1208b6c3d298e",
+  "physical_pairing": {
+    "protocols": [
+      "X",
+      "T0",
+      "T1"
+    ],
+    "episodes_each": 32,
+    "initial_realized_state_DR_equal": true,
+    "cold_prefix_seconds": 4.0,
+    "cold_prefix_max_errors_all_fields": 0.0,
+    "hidden_PhysX_state_restore_claim": false
+  },
+  "usable_real_control": {
+    "strict_safe_episodes_with_gain_at_least_035_corr_at_least_05_amplitude_at_least_8mm": {
+      "X": 32,
+      "T0": 32,
+      "T1": 32
+    },
+    "diagnostic_intervention_not_PPO_success": true
+  },
+  "original_total_native_reward_rate_change": {
+    "X": 0.15189151465892792,
+    "T0": 0.15391384065151215,
+    "T1": 0.16123870015144348,
+    "scope": "After5s common-live paired frames, all27 original terms; not a PPO gradient"
+  },
+  "baseline_X_transfer": {
+    "requested_local_J_amplitude_m": 0.0032909831486519683,
+    "delayed_local_J_amplitude_m": 0.003292723922782765,
+    "actual_joint_local_J_amplitude_m": 0.0035482228633730946,
+    "real_EE_amplitude_m": 0.004087827168874025,
+    "scope": "Mean per-environment after5s harmonics; not native all20 or after1 aggregate"
+  },
+  "actor_counterfactual": {
+    "protocol": "X parent",
+    "coherent_target_history_cancellation_ratio_median": 0.18447419808087462,
+    "sum_individual_absolute_X_contribution_m": 0.008747429393679947,
+    "effective_absolute_sum_X_contribution_m": 0.0021759963280761005,
+    "scope": "Same actual state, observed target counterfactual; local Jacobian, not simulated physical outcome"
+  },
+  "native_learning_audit": {
+    "PPO_updates": 50,
+    "Adam_calls": 1000,
+    "transitions": 4915200,
+    "native_GAE_total_gradient_unmodified": true,
+    "diagnostic_weights_not_P2_parent": true
+  },
+  "decision": {
+    "mechanism": "A: zero-initialized task-conditioned arm synergy in native Gaussian mean",
+    "reward_changed": false,
+    "Uniform_changed": false,
+    "learning_rate_changed": false,
+    "causal_unique_root_cause_claim": false
+  },
+  "P1_GPU_container_SUM_seconds": 1057.5602946281433,
+  "preserved_failures": [
+    "Delay-lag tap dtype mismatch: no physics result,10.13GPU seconds",
+    "Three initial intervention treatments pre-clipped raw action before registered4s: retained as unpaired diagnostics, not causal pairs",
+    "First P2 smoke: native MLP slice incompatible;0 physical control steps and0 Adam calls"
+  ],
+  "formal_seeds_opened": false,
+  "formal_baseline_PASS": false
+}

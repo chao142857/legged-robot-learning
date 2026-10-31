@@ -75,7 +75,8 @@ try:
         return dict(torch_cpu_equal=True,torch_cuda_equal=True,python_equal=True,numpy_equal=True,python_numpy_replay=True,restored_after_probe=True)
 
     def adam_steps(alg):
-        values=[float(s['step']) for s in alg.optimizer.state.values() if 'step' in s]
+        head=set(alg.actor.synergy_head.parameters()) if hasattr(alg.actor,'synergy_head') else set()
+        values=[float(s['step']) for p,s in alg.optimizer.state.items() if p not in head and 'step' in s]
         assert values and min(values)==max(values)
         return int(values[0])
 
@@ -96,7 +97,9 @@ try:
     source=Path(CONFIG['native_source'])
     spec=json.loads((source/'recipe_b0/spec.json').read_text());original_cp=Path(spec['parent_checkpoint'])
     assert sha(original_cp)==CP1800_SHA==spec['parent_sha256']
-    cfg=build_b0(admission=CONFIG['admission'],num_envs=a.num_envs,seed=21)
+    training_seed=int(CONFIG.get('training_seed',21));assert training_seed in (21,22)
+    recipe=CONFIG.get('actor_recipe')
+    cfg=build_b0(admission=CONFIG['admission'],num_envs=a.num_envs,seed=training_seed)
     cfg.sim.device='cuda:0';cfg.log_dir=str(OUT)
     fraction=float(CONFIG['dynamic_fraction']);assert fraction in (.3,.7)
     cfg.recipe_b0['sampling'].update(dynamic_fraction=fraction,fixed_fraction=1-fraction)
@@ -105,7 +108,7 @@ try:
     cfg.task_suite_signature=profile_signature(cfg.task_suite)
 
     agent=handle_deprecated_rsl_rl_cfg(load_cfg_from_registry('GO2-PIPER-WBC','rsl_rl_cfg_entry_point'),importlib.metadata.version('rsl-rl-lib'))
-    agent.seed=21;agent.device='cuda:0';agent.max_iterations=1000000;agent.save_interval=1200;agent.resume=False
+    agent.seed=training_seed;agent.device='cuda:0';agent.max_iterations=1000000;agent.save_interval=1200;agent.resume=False
     parent_agent=yaml.safe_load((original_cp.parent/'agent.yaml').read_text())
     entropy_trial=CONFIG.get('entropy_coef')
     if entropy_trial is not None:
@@ -121,8 +124,9 @@ try:
     canonical=lambda x:hashlib.sha256(json.dumps(plain(x),sort_keys=True,separators=(',',':')).encode()).hexdigest()
     identity=dict(node_id='yanglab3060',purpose='stage3_original_uniform_dynamicX_PPO',dynamic_fraction=fraction,image_id=IMAGE,
                   b0_commit='ae1054046f792df8da6362c36ee168ded6b2ebcd',lab_commit='b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8',
-                  method=spec['method'],root_parent_sha256=CP1800_SHA,num_envs=a.num_envs,seed=21,
+                  method=spec['method'],root_parent_sha256=CP1800_SHA,num_envs=a.num_envs,seed=training_seed,
                   env_config_sha256=canonical(cfg),agent_config_sha256=canonical(agent),physics_config_sha256=canonical(cfg.sim))
+    if recipe is not None:identity['actor_recipe']=recipe
     dump_yaml(str(OUT/'env.yaml'),cfg);dump_yaml(str(OUT/'agent.yaml'),agent)
     write_json(OUT/'identity.json',identity);write_json(OUT/'contact-buffer-settings.json',plain(cfg.sim.physx))
     env=RslRlVecEnvWrapper(gym.make('GO2-PIPER-WBC',cfg=cfg),clip_actions=agent.clip_actions)
@@ -158,9 +162,15 @@ try:
             saved=torch.load(cp_path,map_location='cpu',weights_only=False)
             assert saved['infos']['stage2_identity']==identity,'Resume identity mismatch'
             parent_updates=saved['infos']['completed_updates']
-            cp,evidence=restore_native(runner,cp_path,expected_updates=parent_updates)
+            if recipe is not None:
+                from synergy_actor import attach,restore_recipe
+                attach(alg,recipe);cp,evidence=restore_recipe(runner,cp_path,parent_updates)
+            else:cp,evidence=restore_native(runner,cp_path,expected_updates=parent_updates)
         else:
             cp_path=original_cp;cp,evidence=restore_b0(runner,cp_path);parent_updates=1800
+            if recipe is not None:
+                from synergy_actor import attach
+                original_actor=alg.actor;attach(alg,recipe)
         evidence['all_rng_streams']=rng_proof(cp)
         evidence.update(loaded_checkpoint_sha256=sha(cp_path),new_container_process=True,environment_reset_required=True,physx_state_restored=False)
         assert env.unwrapped.action_manager.total_action_dim==18
@@ -169,11 +179,20 @@ try:
         initial_adam_step=adam_steps(alg);assert initial_adam_step==parent_updates*20
         assert float(alg.entropy_coef)==float(agent.algorithm.entropy_coef),'Runtime entropy coefficient overridden during restore'
         write_json(OUT/'runtime-algorithm.json',dict(entropy_coef=float(alg.entropy_coef),new_entropy_trial=entropy_trial is not None,
-            task_reward_unchanged=True,network_LR_KL_unchanged=True,dynamic_fraction=fraction,
+            task_reward_unchanged=True,network_LR_KL_unchanged=(recipe is None),actor_recipe=recipe,dynamic_fraction=fraction,
             sampler_matches_original_parent=(fraction==.3),optimizer_fully_restored=True))
         write_json(OUT/'restore-evidence.json',evidence)
         # The saved learner/RNG is checked before an explicit new physical reset.
-        restore_rng(cp['infos']);env.reset()
+        restore_rng(cp['infos'])
+        if training_seed!=21 and not a.resume_sha:
+            random.seed(training_seed);np.random.seed(training_seed);torch.manual_seed(training_seed);torch.cuda.manual_seed_all(training_seed)
+            write_json(OUT/'continuation-seed.json',dict(seed=training_seed,parent_weights_shared=True,independent_full_scratch_seed=False,parent_RNG_verified_before_explicit_reseed=True))
+        reset_observations,_=env.reset()
+        if recipe is not None and not a.resume_sha:
+            from synergy_actor import validate_zero_attach
+            # Reuse reset's actual observation: a diagnostic get_observations()
+            # would draw fresh observation noise and potentially change history.
+            write_json(OUT/'zero-mean-attachment.json',validate_zero_attach(original_actor,alg.actor,reset_observations,env.unwrapped.action_manager.get_term('joint_pos')))
         reset_control_steps=physical_control_steps
         physical_rows.clear();dynamic_masks.clear()
         if a.updates==0:
@@ -255,6 +274,7 @@ try:
                        accounting_version=2,parent_completed_updates=parent_updates,
                        rng_cpu=torch.get_rng_state(),rng_cuda=torch.cuda.get_rng_state_all(),rng_python=random.getstate(),rng_numpy=np.random.get_state(),
                        stage2_identity=identity,physx_state_saved=False,environment_state_saved=False,rollout_boundary=True)
+            if recipe is not None:infos['stage3_actor_recipe']=recipe
             state=alg.save();state.update(iter=completed-1,infos=infos)
             temporary=target.with_suffix('.partial');begin=time.perf_counter();torch.save(state,temporary);os.replace(temporary,target)
             elapsed=time.perf_counter()-begin
@@ -290,6 +310,11 @@ try:
                        critic_grad_norm_mean=float(norms[1::2].mean()),critic_grad_norm_max=float(norms[1::2].max()),
                        action_std=alg.actor.output_std.detach().mean(0).cpu().tolist())
             row['physical_reward_time']={k:float(torch.stack([v[k] for v in physical_rows]).mean()) for k in physical_rows[0]}
+            if recipe is not None:
+                row['synergy_head']=dict(parameter_l2=float(torch.linalg.vector_norm(torch.cat([p.detach().flatten() for p in alg.actor.synergy_head.parameters()]))),
+                    gradient_l2=float(torch.linalg.vector_norm(torch.cat([p.grad.detach().flatten() for p in alg.actor.synergy_head.parameters()]))),
+                    Adam_steps=[int(alg.optimizer.state[p]['step']) for p in alg.actor.synergy_head.parameters()],
+                    all_original_leg_arm_parameters_trainable=all(p.requires_grad for p in alg.actor.mlp.parameters()),residual_in_Gaussian_mean=True)
             row['physical_reward_time']['hard_excess_max']=max(float(v['hard_excess_max']) for v in physical_rows)
             assert len(dynamic_masks)==24 and len(physical_rows)==24
             cohort={}

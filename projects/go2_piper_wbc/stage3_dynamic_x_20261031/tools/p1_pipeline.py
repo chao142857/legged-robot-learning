@@ -8,6 +8,7 @@ def wait(b,run):
         write(b.p/'PIPELINE_STATE.json',dict(state='P1_physics',run=str(run),clock=b.meter()));time.sleep(5)
     state=read_state(job['cid'])
     assert state['ExitCode']==0,dict(run=str(run),state=state)
+    if (run/'evaluation/error.json').exists():raise RuntimeError(read(run/'evaluation/error.json'))
     assert (run/'evaluation/manifest.json').exists()
 
 def main(b):

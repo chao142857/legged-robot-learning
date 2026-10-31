@@ -603,8 +603,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/README.md",
-      "bytes": 3921,
-      "sha256": "066f86a2982634c4dd25c1ebadc0f7bd1297bfc1359b5ce30d0eb7e0f9b11e32"
+      "bytes": 4500,
+      "sha256": "ab4fd203e3564778986fc470a7a122e4eddcc9b9bc12c793ae67340653392ffd"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/RESOURCE_PLAN.json",
@@ -622,19 +622,34 @@
       "sha256": "dc01c5ba53b11825ff0e1753976bf3a300e60d9210134aade1fda769a7cb3c97"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/evidence/P1_CAUSAL_SUMMARY.json",
+      "bytes": 2566,
+      "sha256": "e019f333db84219dcf657d32bb6a6d9fa12d7b6bbaf11e5f343a4c50358a987d"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/analyze_physics.py",
       "bytes": 8422,
       "sha256": "0eb54ad62176d1c0897bf7b9d643f9e4481d6affa9793945a6d1d3bbc2ff029d"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/build_synergy_recipe.py",
+      "bytes": 3527,
+      "sha256": "67012bd35f64bfaef84ee84f2c3d25c55b43cc2e78fda8d994fbb5a766dc4fbf"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/dynamic_x_probe.py",
-      "bytes": 12012,
-      "sha256": "3de99ee90b5d62d4974ba8a9da14c8db2ec987d9141f0bd4c65905054233fe35"
+      "bytes": 12353,
+      "sha256": "9e84a8720f8be15f7b0e3c08759ff50e14ebe3833cf2a33f8e20a5a0ec1c86a9"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/evaluate_entry.py",
-      "bytes": 927,
-      "sha256": "9850a3daea4cd5421dd0f4ef39cb1496ca630502addfffa0e550c4eb29054697"
+      "bytes": 2225,
+      "sha256": "44a8223742eb86eaceae1b372769fec3647fd98f478c0d10b8858b37a24cb58a"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/finalize_stage3.py",
+      "bytes": 12148,
+      "sha256": "ecd25dde0108bcd25668c2c15eb68c8d8ee030dfe5bcb59867b8a28319c8ea10"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/gpu_budget.py",
@@ -648,8 +663,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/p1_pipeline.py",
-      "bytes": 4208,
-      "sha256": "cd6985d7c4824644c40a2930aeccb8b4a8894745f340425759c92e2a9302feaa"
+      "bytes": 4308,
+      "sha256": "d6267a23f20ed65057a1b36ce641274be78d51b5babe40117637e6bad22abd66"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/plot_physics.py",
@@ -673,8 +688,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/response_tap.py",
-      "bytes": 4889,
-      "sha256": "0596d18c40bdfcf548a7fbde3838e3309c7c430b1eb48875439dcfc5c84d7a02"
+      "bytes": 4965,
+      "sha256": "a4768f2b7413b4439141e2d524937a2985ecf6433b1a2fa86ee81762512c98f8"
     },
     {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/safety_breakdown.py",
@@ -682,9 +697,19 @@
       "sha256": "65473b3b29d0153d9aae815a52b99274a95a2fd564b3390c50d5ecc7985fd04d"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/stage3_pipeline.py",
+      "bytes": 10147,
+      "sha256": "68b4e4c6ed15eebf4d3302a367511c4bf3f5270f14df8ea5430553e25cbe78c7"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/synergy_actor.py",
+      "bytes": 7639,
+      "sha256": "2e19d39175089162662a75c7699f41b3d778cade1ec514910e9492a8fb600f03"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools/train_entry.py",
-      "bytes": 29712,
-      "sha256": "0742cb0436cca5f8ac388115c123d4f31f1caef6077a45fa090c7cc0e29e904b"
+      "bytes": 31967,
+      "sha256": "f17475de28698585f15e44e15901908e7c8880d581711bdf8dfb7d09d066558a"
     },
     {
       "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/__init__.py",

@@ -30,3 +30,6 @@ python3 tools/reduce_p1.py --root "$STAGE3_ROOT"
 ```
 
 P2/P3 are contingent on actual causal evidence. They are not asserted implemented or running merely because P1 code exists. Formal seeds511031/521031/531031 remain closed until development selection and the full original acceptance checks are frozen.
+
+
+2026-10-31实际执行：P1已完成，严格冷启动前缀逐项相等。三个物理对照均32/32安全产生至少8mm有效X响应，原27项总奖励均提高；请求目标的X幅度约3.3mm，经真实DelayedPD后仍约3.3mm。P2选择零初始化的Gaussian均值协同头，保持原210D观测、27项奖励、Uniform、LR/熵/执行器和原评测器。此时仅在集成smoke阶段，尚无新增策略收益或baseline PASS。失败启动及未配对诊断完整留账。证据见evidence/P1_CAUSAL_SUMMARY.json；后续运行状态以YangLab独立账本为准。

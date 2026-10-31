@@ -139,7 +139,11 @@ class Probe:
             offset=torch.as_tensor(self.term._offset,device=actions.device,dtype=actions.dtype).expand_as(mean)
             target=mean[:,self.arm]*.25+offset[:,self.arm]
             bounded=(target+correction).clamp(self.term.target_lower[:,self.arm],self.term.target_upper[:,self.arm])
-            actual_delta=bounded-target;actions=mean.clone();actions[:,self.arm]+=actual_delta/.25
+            # Even a zero correction must leave the raw action bitwise unchanged.
+            # Pre-clipping its target otherwise changes previous-action history
+            # before the diagnostic intervention's registered start time.
+            actual_delta=torch.where(torch.as_tensor(alpha>0,device=actions.device)[:,None],bounded-target,torch.zeros_like(target))
+            actions=mean.clone();actions[:,self.arm]+=actual_delta/.25
             self.last['diag_intervention_dq']=actual_delta
         assert torch.equal(actions[:,:12],mean[:,:12])
         result=self.actual_step(actions);self.step+=1;return result
