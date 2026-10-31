@@ -63,6 +63,10 @@ def main(b):
         if r['protocol']=='X':
             x=r['X_after1s'];y=old['X_after1s'];c.update(r['absolute_X_gate'])
             c.update(gain_improvement=x['synchronous_gain']>=y['synchronous_gain']+g['X_gain_improvement_vs_CP1800_min'],correlation_improvement=x['correlation']>=y['correlation']+g['X_correlation_improvement_min'],demeaned_RMSE=x['demeaned_rmse_m']<=y['demeaned_rmse_m']*g['X_demeaned_RMSE_fraction_of_parent_max'],absolute_RMSE=x['absolute_rmse_m']<=y['absolute_rmse_m']+g['X_absolute_RMSE_increase_max_m'])
+        # User's preregistered branch-stop rule applies to final acceptance too:
+        # never hide an actual hard/contact event inside a passing fraction.
+        # Native scores, their thresholds and all original checks above stay.
+        c.update(user_zero_actual_hard_events=r['joint_limit']==0,user_zero_actual_nonfoot_events=r['nonfoot']==0)
         checks.append(dict(protocol=r['protocol'],seed=r['seed'],checks=c,passed=all(c.values())))
     write(b.p/'FINAL_MATRIX.json',dict(rows=rows,checks=checks,single_candidate_numeric_gates=all(c['passed'] for c in checks),original_two_consecutive_saved_nodes_requirement='Primary final candidate tested here; adjacent saved-node verification is recorded separately and required for PASS'))
     # Verify an adjacent node on the same final protocols only if frozen before
@@ -87,6 +91,7 @@ def main(b):
             if r['protocol']=='T0':c['drift_retained']=r['base_drift']['mean']<=old['base_drift']['mean']+ret['T0_base_drift_mean_increase_max_m'] and r['base_drift']['p95']<=old['base_drift']['p95']+ret['T0_base_drift_p95_increase_max_m']
             if r['protocol']=='X':
                 x=r['X_after1s'];y=old['X_after1s'];c.update(r['absolute_X_gate']);c.update(gain_improvement=x['synchronous_gain']>=y['synchronous_gain']+g['X_gain_improvement_vs_CP1800_min'],correlation_improvement=x['correlation']>=y['correlation']+g['X_correlation_improvement_min'],demeaned_RMSE=x['demeaned_rmse_m']<=y['demeaned_rmse_m']*g['X_demeaned_RMSE_fraction_of_parent_max'],absolute_RMSE=x['absolute_rmse_m']<=y['absolute_rmse_m']+g['X_absolute_RMSE_increase_max_m'])
+            c.update(user_zero_actual_hard_events=r['joint_limit']==0,user_zero_actual_nonfoot_events=r['nonfoot']==0)
             adjacent_checks.append(dict(protocol=r['protocol'],seed=r['seed'],checks=c,passed=all(c.values())))
     write(b.p/'CONSECUTIVE_NODE_FINAL.json',dict(adjacent=adjacent,checks=adjacent_checks,passed=len(adjacent_checks)==12 and all(c['passed'] for c in adjacent_checks),selection_not_changed_after_final_seeds=True))
     if b.p/'runs' in pathlib.Path(candidate['checkpoint']).parents:
