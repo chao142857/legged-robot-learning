@@ -55,13 +55,31 @@ def collect(p, out):
     seconds = sum(stamp(s['FinishedAt']) - stamp(s['StartedAt']) for s in states
                   if not s['StartedAt'].startswith('0001'))
     assert abs(seconds - done['clock']['GPU_container_SUM_seconds']) < .01
-    snapshots = []
-    for j in jobs:
+    snapshots = []; costs = {}; stochastic = dict(rollout_updates=0,
+        rollouts_with_any_hard_excess_above_native1mrad=0,
+        rollouts_with_nonfoot_positive_slots=0, nonfoot_positive_transition_slots=0,
+        maximum_recorded_all_joint_hard_excess_rad=0., maximum_rollout_mean_nonfoot_fraction=0.)
+    for j, state in zip(jobs, states):
         run = pathlib.Path(j['run']); cfg = read(run/'config.json'); launch = read(run/'launch.json')
         assert run.parent == p/'runs' and cfg['grant_id'] == a['grant_id']
         assert all(sha(run/'source'/name) == value for name, value in launch['source_sha256'].items())
         snapshots.append(dict(run=run.name, config_sha256=sha(run/'config.json'),
             launch_sha256=sha(run/'launch.json'), frozen_source_files=len(launch['source_sha256'])))
+        key = j['mode']+'/'+j['phase']; seconds_job = 0. if state['StartedAt'].startswith('0001') else stamp(state['FinishedAt'])-stamp(state['StartedAt'])
+        costs[key] = costs.get(key, 0.) + seconds_job
+        updates = run/'ppo/updates.jsonl'
+        if updates.exists():
+            for line in updates.open():
+                row = json.loads(line); physical = row['physical_reward_time']
+                hard = physical['hard_excess_max']; nonfoot = physical['nonfoot_fraction']
+                slots = nonfoot*row['transitions']; assert abs(slots-round(slots)) < .01
+                stochastic['rollout_updates'] += 1
+                stochastic['rollouts_with_any_hard_excess_above_native1mrad'] += int(hard > .001)
+                stochastic['rollouts_with_nonfoot_positive_slots'] += int(nonfoot > 0)
+                stochastic['nonfoot_positive_transition_slots'] += round(slots)
+                stochastic['maximum_recorded_all_joint_hard_excess_rad'] = max(stochastic['maximum_recorded_all_joint_hard_excess_rad'], hard)
+                stochastic['maximum_rollout_mean_nonfoot_fraction'] = max(stochastic['maximum_rollout_mean_nonfoot_fraction'], nonfoot)
+    assert stochastic['rollout_updates'] == resources['totals']['PPO_updates']
     formal = [r for r in curve['rows'] if r['label'].startswith('final-')]
     assert {r['seed'] for r in formal} == {611101, 621101, 631101}
     assert all(r['n'] == 64 for r in formal)
@@ -79,6 +97,7 @@ def collect(p, out):
             for n in read(p/'CANDIDATE_NODES.json')],
         GPU_container_SUM_seconds=seconds, approved_cap_seconds=28800,
         unused_seconds_not_transferred=28800-seconds, counters=resources['totals'],
+        GPU_SUM_seconds_by_mode_and_phase=costs, stochastic_training_rollout_summary=stochastic,
         partial_evaluation_count_uncertainty=resources['unmeasured_partial_evaluations'],
         full_learner_restore=restore, closed_Stage3_SHA_unchanged=True,
         frozen_run_audit=snapshots, audit_source_sha256=sha(__file__),
@@ -86,6 +105,7 @@ def collect(p, out):
             'Tracking uses the unchanged original after1s mask; strict safety and failure denominators include startup and all20s.',
             'Native joint5cm is not dynamicX or complete baseline acceptance.',
             'Frozen diagnostic leg/arm compositions are not learned single-policy results.',
+            'Stochastic training rollouts can include failed exploration and native resets. Their positive-contact slots are not distinct episodes/events, and the aggregate hard maximum does not identify a joint. Zero hard/contact formal-policy claims must never be extended to all training samples.',
             'Parent pretraining is outside this grant and is not relabeled as new PPO learning.'])
     out.mkdir(parents=True, exist_ok=False)
     (out/'FINAL_RESULT.json').write_text(json.dumps(result, indent=2)+'\n')
