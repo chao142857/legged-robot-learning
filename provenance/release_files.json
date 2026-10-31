@@ -807,14 +807,19 @@
       "sha256": "85b4fee4230a04f677ff0b522d0d897c2d3a9c7bab22255b42e11274b342c863"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/FINAL_TRACE_PLAN.json",
+      "bytes": 600,
+      "sha256": "16e709329a22bba1f19a24d83ea9301b1f3aac24d55fa8bea7eec56f4d62e88d"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/FORMAL_SEEDS_PREREGISTRATION.json",
       "bytes": 761,
       "sha256": "5045f64ea03a9d489a6bf8fe0d48202f7d0ab16299cca947c2a6895cad241c23"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/README.md",
-      "bytes": 13392,
-      "sha256": "64844425a377ff9ea642d6838e513560f4d63ecc3dc772f1b498fb596ce1ae91"
+      "bytes": 13890,
+      "sha256": "7783b52e00eccbdea3b875b7ad5772cbb7dae3205f708568580ed238f34d532d"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/RESOURCE_PLAN.json",
@@ -865,6 +870,11 @@
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT600_SEED22.json",
       "bytes": 119417,
       "sha256": "1b9049f5906d121d51bb833f9c07d2cca2d1553050cc5b1298d1eaf0e76b0880"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FINAL_TRACE_PREREGISTRATION.json",
+      "bytes": 428,
+      "sha256": "8a67de55638448c8549462c776c48366475cf0efefd69264242c9863b765073d"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FUNCTION_AND_LEG_MARGIN_AUDIT.json",
@@ -980,6 +990,11 @@
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/leg_retention.py",
       "bytes": 5927,
       "sha256": "2871f2789c758aec504a559a6ffb40da5e3d5a3c481f0d409c557841dd23c8ef"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/plot_final_trace.py",
+      "bytes": 5322,
+      "sha256": "b5425d976ea81324942b3e415783f12b1212d3ed9f806a21d46c70cd16216ee2"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/plot_learning.py",

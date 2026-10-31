@@ -1,0 +1,8 @@
+{
+  "pid": 1049385,
+  "source_sha256": "b5425d976ea81324942b3e415783f12b1212d3ed9f806a21d46c70cd16216ee2",
+  "plan_sha256": "d942f10f7aafd953ba508c2a1180fe719c1b96ee277a777ed440770a65c36710",
+  "UTC": "2026-10-31T21:47:46.082857+00:00",
+  "formal_seeds_unopened_at_preregistration": true,
+  "scope": "CPU-only plotter waits actual COMPLETED; fixed protocol X/seed611101/env0. No GPU, no video, no model or episode selection."
+}

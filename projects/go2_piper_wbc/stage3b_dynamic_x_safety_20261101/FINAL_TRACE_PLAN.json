@@ -1,0 +1,13 @@
+{
+  "version": "original_B0X_predeclared_native_trace_v1",
+  "protocol": "X",
+  "formal_seed": 611101,
+  "environment_index": 0,
+  "models": ["initial", "candidate", "adjacent"],
+  "horizon_seconds": 20,
+  "selection": "Fixed before formal seeds; no best-episode or median-episode selection",
+  "timing": "Native50Hz control records including startup; stop each plotted line at its first-episode valid boundary",
+  "coordinate_frame": "Original mixed EE link0-localXY/worldZ and original body-frame velocity/yaw commands",
+  "no_new_GPU_or_video": true,
+  "full_matrix_remains_authoritative": true
+}
