@@ -24,5 +24,10 @@
   },
   "entropy800_status": "400 additional native updates completed; branch total800/global2600, strict431/512, complete488/512. Stopped for physical degradation; not selected.",
   "final_selection": "Original control200 CP2000, SHAecb802d9ff186fa40208a7197265904444cea4a68b8fd2ceb14a6ea60b825f6e; registered development retention true; frozen before final seeds.",
-  "final_seeds_opened": true
+  "final_seeds_opened": true,
+  "final_state": "CLOSED: formal baseline FAIL, all24 frozen final cases plus full learner restore completed",
+  "final_GPU_SUM_seconds": 12197.663787603378,
+  "final_selected_checkpoint_sha256": "ecb802d9ff186fa40208a7197265904444cea4a68b8fd2ceb14a6ea60b825f6e",
+  "original33_task_files_unchanged": true,
+  "final_delivery_audit_sha256": "09f78156769867065562b1b781c3baa4411055251b76ac47a289417bb60a9c65"
 }

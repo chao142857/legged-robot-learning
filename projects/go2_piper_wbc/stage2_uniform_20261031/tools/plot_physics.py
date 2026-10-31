@@ -30,7 +30,7 @@ def plot(data):
         if 'amplitude' in title:ax.axhline(20,color='#555555',ls='--',lw=.8,label='target20mm')
         ax.set_title(title,fontsize=10);ax.set_xlabel('New PPO updates from shared CP1800');ax.grid(alpha=.2)
     axes[0,0].legend(fontsize=7,ncol=2)
-    fig.suptitle('Original PPO + Uniform | warm-start train seed21 | separate evaluation-seed lines\nMeasured physics only; preliminary table does not certify baseline PASS',fontsize=11)
+    fig.suptitle('Original PPO + Uniform | warm-start train seed21 | separate evaluation-seed lines\nMeasured checkpoints; original task and strict-safety gates unchanged',fontsize=11)
     return fig
 
 if __name__=='__main__':

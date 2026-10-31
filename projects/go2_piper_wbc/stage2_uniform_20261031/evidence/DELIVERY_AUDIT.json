@@ -1,0 +1,149 @@
+{
+  "unix": 1793441619.3914757,
+  "original_task_files_checked": 33,
+  "original_task_files_unchanged": true,
+  "original_task_file_sha256": [
+    {
+      "path": "recipe_v1/telemetry.py",
+      "sha256": "71da2a68ed2f8ec1b8e75a3e3de8b4f0931399960bc1a4a0148b6553ca17875f"
+    },
+    {
+      "path": "recipe_v1/provenance.py",
+      "sha256": "b9c937ecfaa941e83c245b39e5a96d49ce807b450014cf684f318eb7bd9f5045"
+    },
+    {
+      "path": "recipe_v1/commands.py",
+      "sha256": "93955e94f105d6ad42fb56d5d0e53fb3ff1704052d69b7bab04f872760ab285c"
+    },
+    {
+      "path": "recipe_v1/kinematics.py",
+      "sha256": "39964cda072c884b90270558fbcac1fa3a3b920eea753c358f760562e5eededf"
+    },
+    {
+      "path": "recipe_v1/config.py",
+      "sha256": "2d030404affd8b4d979773e33dad703b81c97fb39cc795be302c9481406c46f1"
+    },
+    {
+      "path": "recipe_v1/__init__.py",
+      "sha256": "c4ff0334ff6b307f5f4d5049ef72e4f67c1771188fdf517273334f18d2214f42"
+    },
+    {
+      "path": "recipe_v1/control.py",
+      "sha256": "0def5ae3f0a37115c6bcdbc8fabc67e30d2e226937d25bc3e3454aedad2482bf"
+    },
+    {
+      "path": "recipe_v1/spec.json",
+      "sha256": "b2bffe1ccff368ff1ad2f6b210af5bfcdb431d37f395a13ff0556775842d60b7"
+    },
+    {
+      "path": "recipe_aplus/telemetry.py",
+      "sha256": "dd67ee1df5263c2f5134bc929eae35c3999a573a0f0731c40096ca6fc6c98ce1"
+    },
+    {
+      "path": "recipe_aplus/startup.py",
+      "sha256": "4d7b484d6000cf735aa83405589a887eb6bbd26ea394ee4ec0c9366563d6553f"
+    },
+    {
+      "path": "recipe_aplus/config.py",
+      "sha256": "0f07af2110c9956a883f4e20220f461852287592e101ad55418149eb1fb1f1fb"
+    },
+    {
+      "path": "recipe_aplus/__init__.py",
+      "sha256": "704784bd1e1a174d308ab5f2b2947ba6c75531f16c6b2c890e0f58613e4c1e60"
+    },
+    {
+      "path": "recipe_aplus/state.py",
+      "sha256": "f276fb2e3f295062782739565945a787c8634d19bda6e16c2141aacdf544f47d"
+    },
+    {
+      "path": "recipe_aplus/spec.json",
+      "sha256": "099011935b775c68b9aa6022391e6e03d85d4f1abeeba0f7634b2451d0350e58"
+    },
+    {
+      "path": "recipe_b0/center_reference.py",
+      "sha256": "c513f4f2c76c2911d0ae4bfe51bf721e681bcfd7156da854bdd2e1073cd27ec5"
+    },
+    {
+      "path": "recipe_b0/telemetry.py",
+      "sha256": "0f34f778b40e0da602307cf450b7a4f3a8448d2fb3d5846d63e0ee2f41cc5482"
+    },
+    {
+      "path": "recipe_b0/metrics.py",
+      "sha256": "22524c6f193ec396bce53b3be8ce278eb347a29330ee2814eb10c3b42eb639ee"
+    },
+    {
+      "path": "recipe_b0/commands.py",
+      "sha256": "92a12702c8dfc3d674bb8341feae2303ca2bd6a849b2a678cc8077f450574e47"
+    },
+    {
+      "path": "recipe_b0/config.py",
+      "sha256": "a75c72d16800d8ef7b8fc144338f1c1317584355d9b4323b3a5f1f8478e87155"
+    },
+    {
+      "path": "recipe_b0/__init__.py",
+      "sha256": "ac65454d61542ab2feba3d8308f2a5c9e801985f8f90bfade3f70e6c0a1d6206"
+    },
+    {
+      "path": "recipe_b0/state.py",
+      "sha256": "15d9424d671843e17ae5d9d652f765d421017ebfdc175e301f847b19448b7638"
+    },
+    {
+      "path": "recipe_b0/startup_spec.json",
+      "sha256": "a77cdcdb3a1db0d798b7f0255f5696c82b7d55581cb9434f397c395ac42dca21"
+    },
+    {
+      "path": "recipe_b0/spec.json",
+      "sha256": "765f3bd7df04d7f5446ddd9f77a02c94d7787e97386e56d5c59c0c91a210586a"
+    },
+    {
+      "path": "recipe_b0/center_reference_spec.json",
+      "sha256": "299fa2a21f3f12472c6093008c97216c58568c59529d4b94c37c1186f892090c"
+    },
+    {
+      "path": "task_suite/config.py",
+      "sha256": "64a0cb477790bc25e70c6fddddff05dcaf4d6cfd84f52e35cbac25d627ced56e"
+    },
+    {
+      "path": "task_suite/mdp.py",
+      "sha256": "e5b1206233efd404d5c206054b7a1ff6ba6afee6776178f9620944d67fce2c85"
+    },
+    {
+      "path": "task_suite/__init__.py",
+      "sha256": "3c1e97153c0581cafddea394646ca399f56898727d46b10065ab6909b8bfa920"
+    },
+    {
+      "path": "task_suite/profiles.json",
+      "sha256": "01cee38b06c476f731d039dea965c086d3f92073ce5cb3695d3bef4ed5b5f0a3"
+    },
+    {
+      "path": "tools/run_B0.py",
+      "sha256": "b9b1d91983edaed139987aaa6dde1645ff3448e7d3a7f765cee4cc4c56f901f8"
+    },
+    {
+      "path": "tools/scratch_observer.py",
+      "sha256": "b64d3613265373f44e0e5fbd1db9a44d5b8b5ca7fc07867fdc38c82a2b921684"
+    },
+    {
+      "path": "tools/telemetry.py",
+      "sha256": "499aa0998bd331e15b584cdc47862c48f0bd4daa36b3ff7f867ced6d69a89bde"
+    },
+    {
+      "path": "tools/run_recipe_python.sh",
+      "sha256": "10e3f66444ad17073dcab39142e16683d7a5624f7f7cddad403a26571a69cf8c"
+    },
+    {
+      "path": "tools/run_python.sh",
+      "sha256": "029b8f5ee566a5ab769560865b3b76143eec756ce14891a46b0cf98bdc084ce0"
+    }
+  ],
+  "initial_checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "selected_checkpoint_sha256": "ecb802d9ff186fa40208a7197265904444cea4a68b8fd2ceb14a6ea60b825f6e",
+  "all_metered_containers_exited": true,
+  "total_metered_containers": 92,
+  "GPU_seconds_SUM": 12197.663787603378,
+  "completed_sha256": "6d32c61cec2e868c1fa57ef9d884745b22400ca70bbb5a3831d25ef418b8cf3d",
+  "ledger_sha256": "96e7088af4f62b3bc0e04176bd31120d3a8045b4d7c783b071eb926e476549b2",
+  "final_matrix_sha256": "51bde5995b0a9eebc1ca3febd84270dc1cc8cf6ec21dc4f41cfabc859576450c",
+  "model_or_raw_trajectory_transfer": false,
+  "receipt_sha256": "09f78156769867065562b1b781c3baa4411055251b76ac47a289417bb60a9c65"
+}

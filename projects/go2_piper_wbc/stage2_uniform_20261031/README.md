@@ -40,4 +40,29 @@ The paired400 development tests did not establish a qualified repair. Native con
 
 `local_reward_audit.py` checks saved-state position kernels and arm-posture reward numerically and examines bounded local FK directions. It neither executes a controller nor estimates full physical return or the policy gradient. `plot_physics.py` renders actual measured checkpoints, with branches and safety failures kept separate.
 
-The entropy800 endpoint failed physical retention:431/512 strict-safe and488/512 complete, versus507/512 and512/512 at400. Mobile X gains remained .142/.122. Saved-state attribution reproduced the native scores and found FL hip hard-limit excursions plus nonfoot terminations around7.9–14.7s; these are not merely startup failures. This branch was stopped and excluded. The pre-final selection is native control200, `cp_2000.pt`, SHA256 `ecb802d9ff186fa40208a7197265904444cea4a68b8fd2ceb14a6ea60b825f6e`, with unchanged original registered development retention. Independent final tests are pending; selecting this candidate does not establish task success. Across all branches,1600 new PPO updates /157,286,400 rollout transitions were completed.
+The entropy800 endpoint failed physical retention:431/512 strict-safe and488/512 complete, versus507/512 and512/512 at400. Mobile X gains remained .142/.122. Saved-state attribution reproduced the native scores and found FL hip hard-limit excursions plus nonfoot terminations around7.9–14.7s; these are not merely startup failures. This branch was stopped and excluded. The pre-final selection is native control200, `cp_2000.pt`, SHA256 `ecb802d9ff186fa40208a7197265904444cea4a68b8fd2ceb14a6ea60b825f6e`, with unchanged original registered development retention. This candidate was frozen before the independent final tests; selection did not establish task success. Across all branches,1600 new PPO updates /157,286,400 rollout transitions were completed.
+
+The bounded round is closed: **original Uniform WBC baseline FAIL**. All three new final seeds retained the original20s protocol. The selected CP2000 has X gains .1198/.1407/.1214, correlations .3000/.3273/.2939, and fitted amplitudes3.18/3.58/3.07mm; the frozen minima are .35/.5/8mm. It improves small-error tracking but does not learn adequate dynamic X response. A strict safety is61/64,59/64,63/64; one A episode has a real nonfoot termination. T1 backward gain rises from about .99 to1.15 on two seeds and fails original direction retention. No original score or threshold was changed.
+
+| Protocol | CP1800 native5cm count | CP2000 native5cm count | CP1800 strict safe | CP2000 strict safe | CP2000 complete |
+|---|---:|---:|---:|---:|---:|
+| A | 84/192 | 164/192 | 186/192 | 183/192 | 191/192 |
+| T0 | 186/192 | 188/192 | 187/192 | 188/192 | 192/192 |
+| T1 | 174/192 | 188/192 | 187/192 | 188/192 | 192/192 |
+| X | 175/192 | 188/192 | 187/192 | 188/192 | 192/192 |
+
+Native5cm counts above are reported for comparability; they are not dynamic-X or baseline qualification. Per-seed gates, full20s position/orientation/velocity errors, original failure reasons and trajectory SHA are in `final_result.json`. `figures/development_learning_curve.svg` shows the measured branches. The endpoint checkpoint is a development candidate, not a qualified safe teacher. The frozen CP1800 remains available as the historical fallback.
+
+GPU-container SUM was 12197.664s (203.29/240min), including all92 containers. Training completed1600 new PPO updates /157,286,400 rollout transitions /32,000 native Adam minibatches across the independent branches. The selected lineage adds200 updates /19,660,800 transitions to CP1800. There were84 native evaluation cases /5,376,000 recorded simulator slots; first-episode valid samples are separate. Full actor/critic/Adam/RNG restoration and24 inference steps passed without parameter updates. The ledger is closed and no further GPU work is authorized from it.
+
+The observed bottleneck remains command-conditioned joint coordination during locomotion: requested-target FK response was already only about3mm for a20mm X reference, and target-to-actual response did not show a large actuator attenuation. Named-joint/FK checks were consistent with PhysX within a few micrometers. Bounded saved-state X corrections increased position-plus-arm-posture reward, so arm L1 alone does not explain the failure; untested dynamic penalties and long-term control coupling remain possible. Neither increased dynamic coverage nor lower entropy repaired this bottleneck. Extending the latter produced leg-limit/contact failures. These results do not justify another unchanged long window.
+
+Reproduction uses the original source/assets and pinned image, with explicit external mounts. The exact verified host argv and frozen source hashes are in `${STAGE2_ROOT}/runs/20261031T143531-control-nativePPO-first200/launch.json`; its config is `config.json`. The in-container commands are:
+
+```bash
+# Run only through an active independent GPU budget and a new output directory.
+${ISAAC_PYTHON_WRAPPER} /stage2-active/train_entry.py --num-envs 4096 --updates 200
+${ISAAC_PYTHON_WRAPPER} /stage2-active/evaluate_entry.py
+```
+
+The evaluator reads the explicit `/stage2-config.json` protocol/seed/checkpoint contract and original native evaluator; use A/T0/T1/X and seeds381031/391031/401031 only to reproduce the frozen result, not to select or tune a new policy. Model weights and raw trajectories remain on YangLab.
