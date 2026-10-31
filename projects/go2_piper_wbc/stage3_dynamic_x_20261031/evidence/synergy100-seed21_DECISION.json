@@ -1,0 +1,147 @@
+{
+  "worst_seed_X_gain": 0.20961137493997048,
+  "worst_seed_X_amplitude_m": 0.004572052801994344,
+  "worst_seed_X_correlation": 0.4674922631561633,
+  "original_all_development_gates": false,
+  "original_retention": true,
+  "severe_physical_failures": [
+    {
+      "protocol": "A",
+      "seed": 6181031,
+      "nonfoot": 0,
+      "hard_joint": 1,
+      "strict_safe": 63,
+      "complete": 64
+    }
+  ],
+  "learning_change": null,
+  "engineering_gate_not_formal_PASS": true,
+  "rows": [
+    {
+      "label": "synergy100-seed21-A-6181031",
+      "strict_safe": 63,
+      "complete": 64,
+      "X_gain": 0.18189139248111189,
+      "amplitude_m": null
+    },
+    {
+      "label": "synergy100-seed21-T0-6181031",
+      "strict_safe": 63,
+      "complete": 64,
+      "X_gain": 0.29334373306206474,
+      "amplitude_m": 0.00597221818389288
+    },
+    {
+      "label": "synergy100-seed21-T1-6181031",
+      "strict_safe": 63,
+      "complete": 64,
+      "X_gain": 0.26436010763834716,
+      "amplitude_m": 0.005898499483797408
+    },
+    {
+      "label": "synergy100-seed21-X-6181031",
+      "strict_safe": 64,
+      "complete": 64,
+      "X_gain": 0.2287556174635448,
+      "amplitude_m": 0.004936291599719187
+    },
+    {
+      "label": "synergy100-seed21-A-6281031",
+      "strict_safe": 63,
+      "complete": 64,
+      "X_gain": 0.20415487832585136,
+      "amplitude_m": null
+    },
+    {
+      "label": "synergy100-seed21-T0-6281031",
+      "strict_safe": 62,
+      "complete": 64,
+      "X_gain": 0.29548513240847507,
+      "amplitude_m": 0.006025561928101805
+    },
+    {
+      "label": "synergy100-seed21-T1-6281031",
+      "strict_safe": 63,
+      "complete": 64,
+      "X_gain": 0.26300611873490726,
+      "amplitude_m": 0.005751908242431623
+    },
+    {
+      "label": "synergy100-seed21-X-6281031",
+      "strict_safe": 63,
+      "complete": 64,
+      "X_gain": 0.20961137493997048,
+      "amplitude_m": 0.004572052801994344
+    }
+  ],
+  "matched_native_control": {
+    "worst_seed_X_gain": 0.08406158274252964,
+    "worst_seed_X_amplitude_m": 0.0026141878583082943,
+    "worst_seed_X_correlation": 0.20933938921266565,
+    "original_all_development_gates": false,
+    "original_retention": true,
+    "severe_physical_failures": [],
+    "learning_change": null,
+    "engineering_gate_not_formal_PASS": true,
+    "rows": [
+      {
+        "label": "matchedNative100-seed21-A-6181031",
+        "strict_safe": 64,
+        "complete": 64,
+        "X_gain": 0.10373709546944583,
+        "amplitude_m": null
+      },
+      {
+        "label": "matchedNative100-seed21-T0-6181031",
+        "strict_safe": 64,
+        "complete": 64,
+        "X_gain": 0.18822108681561125,
+        "amplitude_m": 0.003853982653186431
+      },
+      {
+        "label": "matchedNative100-seed21-T1-6181031",
+        "strict_safe": 64,
+        "complete": 64,
+        "X_gain": 0.16946360485051465,
+        "amplitude_m": 0.004046172066731756
+      },
+      {
+        "label": "matchedNative100-seed21-X-6181031",
+        "strict_safe": 64,
+        "complete": 64,
+        "X_gain": 0.11390325318589793,
+        "amplitude_m": 0.0029858727249688797
+      },
+      {
+        "label": "matchedNative100-seed21-A-6281031",
+        "strict_safe": 63,
+        "complete": 64,
+        "X_gain": 0.1032055851580309,
+        "amplitude_m": null
+      },
+      {
+        "label": "matchedNative100-seed21-T0-6281031",
+        "strict_safe": 63,
+        "complete": 64,
+        "X_gain": 0.1909745378021167,
+        "amplitude_m": 0.003918309929690193
+      },
+      {
+        "label": "matchedNative100-seed21-T1-6281031",
+        "strict_safe": 63,
+        "complete": 64,
+        "X_gain": 0.17090735359365317,
+        "amplitude_m": 0.003957320282165809
+      },
+      {
+        "label": "matchedNative100-seed21-X-6281031",
+        "strict_safe": 62,
+        "complete": 64,
+        "X_gain": 0.08406158274252964,
+        "amplitude_m": 0.0026141878583082943
+      }
+    ]
+  },
+  "gain_vs_matched_native": 0.12554979219744083,
+  "amplitude_vs_matched_native_m": 0.00195786494368605
+}

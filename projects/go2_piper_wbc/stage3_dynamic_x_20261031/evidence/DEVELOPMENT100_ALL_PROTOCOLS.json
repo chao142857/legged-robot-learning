@@ -1,0 +1,2925 @@
+{
+  "task": "Historical B0-X ae105404, PPO + original Uniform(.3 dynamicX/.7 fixed27); not a passed baseline",
+  "rows": [
+    {
+      "label": "frozen1800-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261031T235733-frozen1800-A-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.034354839473962784,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05198189616203308,
+          "after1s": 0.02842145785689354
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05198189616203308,
+          "after1s": 0.02842145785689354
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.4482236823165103,
+        "actual_mean_m": 0.446390103704149,
+        "bias_m": -0.0018335786123612995,
+        "absolute_rmse_m": 0.017212621250180582,
+        "demeaned_rmse_m": 0.011375108646576971,
+        "target_std_m": 0.008893904877587996,
+        "actual_std_m": 0.006771229336384828,
+        "synchronous_gain": 0.0488436123379348,
+        "correlation": 0.07470501914257312,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.29924416043228236,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "5bef9fa6136056c75873e27d9a6c2707885658b1bc7881bcae75964febbe2bde",
+      "absolute_X_gate": null,
+      "full20": {
+        "xy_rmse": 0.052855901420116425,
+        "yaw_rmse": 0.07635053992271423,
+        "ee_position_rmse": 0.051245588809251785,
+        "ee_orientation_mean": 0.030480874702334404,
+        "joint_velocity_limit_ratio_max": 0.9999441504478455,
+        "joint_position_limit_excess_max_rad": 1.3289987691678107e-05,
+        "base_clearance_min": 0.23907242715358734
+      },
+      "directions": {
+        "forward": {
+          "gain": 0.9778069063838276,
+          "correlation": null,
+          "rmse": 0.04347752238016873
+        },
+        "backward": {
+          "gain": 1.0558750986604257,
+          "correlation": null,
+          "rmse": 0.048784780337305475
+        },
+        "left": {
+          "gain": 0.9785320963331879,
+          "correlation": null,
+          "rmse": 0.06467517619637073
+        },
+        "right": {
+          "gain": 0.9817597264485107,
+          "correlation": null,
+          "rmse": 0.07286905929989097
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "frozen1800-T0-6181031",
+      "protocol": "T0",
+      "seed": 6181031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261031T235820-frozen1800-T0-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.01965169981122017,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04713481292128563,
+          "after1s": 0.019761016592383385
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04713481292128563,
+          "after1s": 0.019761018455028534
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.4547109617797756,
+        "bias_m": 0.0024156238016133248,
+        "absolute_rmse_m": 0.014061960339074352,
+        "demeaned_rmse_m": 0.012382704959123608,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.0039934948697240985,
+        "synchronous_gain": 0.1586516561418444,
+        "correlation": 0.5651691185911694,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.2365712778130676,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.003458858247955856,
+        "phase_lag_s": 0.41497366033312155,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "6b1261dda705b72adc898b8b33214b3fdce1092f68b5573cecbe72bca4176c41",
+      "absolute_X_gate": null,
+      "full20": {
+        "xy_rmse": 0.03042026236653328,
+        "yaw_rmse": 0.05856845900416374,
+        "ee_position_rmse": 0.04340941086411476,
+        "ee_orientation_mean": 0.02331569232046604,
+        "joint_velocity_limit_ratio_max": 0.9991195797920227,
+        "joint_position_limit_excess_max_rad": 1.261923898709938e-05,
+        "base_clearance_min": 0.23901265859603882
+      },
+      "directions": {
+        "forward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "backward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "left": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "right": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": false,
+        "forward/gain_min": false,
+        "forward/gain_max": false,
+        "forward/correct_sign": false,
+        "forward/rmse": false,
+        "backward/coverage": false,
+        "backward/gain_min": false,
+        "backward/gain_max": false,
+        "backward/correct_sign": false,
+        "backward/rmse": false,
+        "left/coverage": false,
+        "left/gain_min": false,
+        "left/gain_max": false,
+        "left/correct_sign": false,
+        "left/rmse": false,
+        "right/coverage": false,
+        "right/gain_min": false,
+        "right/gain_max": false,
+        "right/correct_sign": false,
+        "right/rmse": false,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": null
+    },
+    {
+      "label": "frozen1800-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261031T235907-frozen1800-T1-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.027109213173389435,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04938119649887085,
+          "after1s": 0.0245905090123415
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04938119649887085,
+          "after1s": 0.02459051087498665
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.44926097437200185,
+        "bias_m": -0.0030343636061604083,
+        "absolute_rmse_m": 0.01574350527258518,
+        "demeaned_rmse_m": 0.014310333658011182,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.007990760162994038,
+        "synchronous_gain": 0.15328774876721432,
+        "correlation": 0.27356088381101273,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.022301714071753388,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.004463865583381813,
+        "phase_lag_s": 0.35475040318988016,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "2024bcddde9b3a0f031472611d5fbdec1a58962d1fa3c2d2e02f39f975f141e2",
+      "absolute_X_gate": null,
+      "full20": {
+        "xy_rmse": 0.049877457320690155,
+        "yaw_rmse": 0.07773838937282562,
+        "ee_position_rmse": 0.047152694314718246,
+        "ee_orientation_mean": 0.027905358001589775,
+        "joint_velocity_limit_ratio_max": 1.0003736019134521,
+        "joint_position_limit_excess_max_rad": 1.3636569747177418e-05,
+        "base_clearance_min": 0.23906850814819336
+      },
+      "directions": {
+        "forward": {
+          "gain": 0.9569619996166676,
+          "correlation": null,
+          "rmse": 0.04075648408762803
+        },
+        "backward": {
+          "gain": 1.0063075685420835,
+          "correlation": null,
+          "rmse": 0.03953867891962617
+        },
+        "left": {
+          "gain": 0.7981780352440566,
+          "correlation": null,
+          "rmse": 0.07926042816128855
+        },
+        "right": {
+          "gain": 0.826254896893092,
+          "correlation": null,
+          "rmse": 0.0719982400658788
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "frozen1800-X-6181031",
+      "protocol": "X",
+      "seed": 6181031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261031T235954-frozen1800-X-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.027148712426424026,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04796614497900009,
+          "after1s": 0.02379787154495716
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04796614870429039,
+          "after1s": 0.02379787527024746
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.4500839403531465,
+        "actual_mean_m": 0.44935731239567855,
+        "bias_m": -0.00072662795746797,
+        "absolute_rmse_m": 0.01574934762543548,
+        "demeaned_rmse_m": 0.014537304349369548,
+        "target_std_m": 0.014044515132261732,
+        "actual_std_m": 0.007611869688345708,
+        "synchronous_gain": 0.10925681266815787,
+        "correlation": 0.1923152874150184,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.08491138159127856,
+        "target_fitted_amplitude_m": 0.01999999947958138,
+        "actual_fitted_amplitude_m": 0.0036363025330495087,
+        "phase_lag_s": -0.09942503458209603,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "3a982cf77da9cc90d2bbaba131e3ddd334833afccd944dade9f1d77bb54c9871",
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "full20": {
+        "xy_rmse": 0.05015863850712776,
+        "yaw_rmse": 0.07752746343612671,
+        "ee_position_rmse": 0.04629608243703842,
+        "ee_orientation_mean": 0.026894403621554375,
+        "joint_velocity_limit_ratio_max": 1.0011391639709473,
+        "joint_position_limit_excess_max_rad": 1.0641286280588247e-05,
+        "base_clearance_min": 0.2391386330127716
+      },
+      "directions": {
+        "forward": {
+          "gain": 0.9555378211037328,
+          "correlation": null,
+          "rmse": 0.04171369349405447
+        },
+        "backward": {
+          "gain": 0.996093101712162,
+          "correlation": null,
+          "rmse": 0.04012967532837647
+        },
+        "left": {
+          "gain": 0.8106141289316191,
+          "correlation": null,
+          "rmse": 0.07842316948733791
+        },
+        "right": {
+          "gain": 0.8282599305043098,
+          "correlation": null,
+          "rmse": 0.07158345355068929
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "frozen1800-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T000041-frozen1800-A-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.03389781713485718,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05116889998316765,
+          "after1s": 0.028305521234869957
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05116889998316765,
+          "after1s": 0.028305521234869957
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.4468092090744329,
+        "actual_mean_m": 0.44539716764843384,
+        "bias_m": -0.001412041425999058,
+        "absolute_rmse_m": 0.01655985355134422,
+        "demeaned_rmse_m": 0.011563698543063841,
+        "target_std_m": 0.009049937700946396,
+        "actual_std_m": 0.007031944209886367,
+        "synchronous_gain": 0.09271486729954609,
+        "correlation": 0.13909230844421935,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.22630686698638142,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "b389901b42242f96b579b7a0d8900b8709f9f0b740fab451618181616b473234",
+      "absolute_X_gate": null,
+      "full20": {
+        "xy_rmse": 0.0520128533244133,
+        "yaw_rmse": 0.07718934863805771,
+        "ee_position_rmse": 0.05065176635980606,
+        "ee_orientation_mean": 0.030510347336530685,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23754264414310455
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.0054556654333409,
+          "correlation": null,
+          "rmse": 0.043680235306895736
+        },
+        "backward": {
+          "gain": 1.0155933879155015,
+          "correlation": null,
+          "rmse": 0.044707642638966
+        },
+        "left": {
+          "gain": 0.9765098061060625,
+          "correlation": null,
+          "rmse": 0.07040176420952701
+        },
+        "right": {
+          "gain": 0.9432526948659941,
+          "correlation": null,
+          "rmse": 0.07381209219570381
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "frozen1800-T0-6281031",
+      "protocol": "T0",
+      "seed": 6281031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T000203-frozen1800-T0-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.018788982182741165,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04719216749072075,
+          "after1s": 0.01902391016483307
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04719216376543045,
+          "after1s": 0.019023912027478218
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.45465558857264876,
+        "bias_m": 0.0023602505944865316,
+        "absolute_rmse_m": 0.013596083882532412,
+        "demeaned_rmse_m": 0.012332851733798614,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.003895664573349356,
+        "synchronous_gain": 0.16043760883247202,
+        "correlation": 0.5917038967959949,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.24332979716961226,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.0034909674316716726,
+        "phase_lag_s": 0.40894447907623155,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "5b42969f32a003ff93a15755dae3d7eff67577d3c432cb3a9a0583467e331f8c",
+      "absolute_X_gate": null,
+      "full20": {
+        "xy_rmse": 0.031245874240994453,
+        "yaw_rmse": 0.05798015370965004,
+        "ee_position_rmse": 0.043035879731178284,
+        "ee_orientation_mean": 0.022767893970012665,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23753024637699127
+      },
+      "directions": {
+        "forward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "backward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "left": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "right": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": false,
+        "forward/gain_min": false,
+        "forward/gain_max": false,
+        "forward/correct_sign": false,
+        "forward/rmse": false,
+        "backward/coverage": false,
+        "backward/gain_min": false,
+        "backward/gain_max": false,
+        "backward/correct_sign": false,
+        "backward/rmse": false,
+        "left/coverage": false,
+        "left/gain_min": false,
+        "left/gain_max": false,
+        "left/correct_sign": false,
+        "left/rmse": false,
+        "right/coverage": false,
+        "right/gain_min": false,
+        "right/gain_max": false,
+        "right/correct_sign": false,
+        "right/rmse": false,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": null
+    },
+    {
+      "label": "frozen1800-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T000250-frozen1800-T1-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.026297621428966522,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04927157983183861,
+          "after1s": 0.023717546835541725
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04927157983183861,
+          "after1s": 0.023717548698186874
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.44832707808990224,
+        "bias_m": -0.003968259888259988,
+        "absolute_rmse_m": 0.01548983795713974,
+        "demeaned_rmse_m": 0.014296747250330031,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.008035044307804396,
+        "synchronous_gain": 0.15465369926946884,
+        "correlation": 0.27370527118479704,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.021145319250086878,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.004348413235839014,
+        "phase_lag_s": 0.3626229978527853,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "a80f7137b0c68ea91900a83d4a589f6a92a66f484da86679d502b0538beed2e9",
+      "absolute_X_gate": null,
+      "full20": {
+        "xy_rmse": 0.05037283897399902,
+        "yaw_rmse": 0.07812462002038956,
+        "ee_position_rmse": 0.0467267781496048,
+        "ee_orientation_mean": 0.027204329147934914,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 1.4609024674427928e-06,
+        "base_clearance_min": 0.23751652240753174
+      },
+      "directions": {
+        "forward": {
+          "gain": 0.9904902649780422,
+          "correlation": null,
+          "rmse": 0.03608602155424571
+        },
+        "backward": {
+          "gain": 0.974019918010084,
+          "correlation": null,
+          "rmse": 0.0419241873052438
+        },
+        "left": {
+          "gain": 0.784778912740218,
+          "correlation": null,
+          "rmse": 0.08156729238323004
+        },
+        "right": {
+          "gain": 0.7784241661022163,
+          "correlation": null,
+          "rmse": 0.07490768164920492
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "frozen1800-X-6281031",
+      "protocol": "X",
+      "seed": 6281031,
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T000339-frozen1800-X-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 62,
+      "nonfoot": 0,
+      "overspeed": 2,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.026535436511039734,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04794954136013985,
+          "after1s": 0.022816214710474014
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04794954136013985,
+          "after1s": 0.022816214710474014
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45004991150363105,
+        "actual_mean_m": 0.4484706276120912,
+        "bias_m": -0.001579283891539825,
+        "absolute_rmse_m": 0.01573807316862717,
+        "demeaned_rmse_m": 0.014866325277674635,
+        "target_std_m": 0.014003317116638186,
+        "actual_std_m": 0.007664763698278243,
+        "synchronous_gain": 0.08281055765868647,
+        "correlation": 0.14973599636452467,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.14252734978982942,
+        "target_fitted_amplitude_m": 0.019999999423981923,
+        "actual_fitted_amplitude_m": 0.003348826798712374,
+        "phase_lag_s": 0.13682413156282444,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "aabdc719d8ad1b7aabf5dd65d3c52a7c71d1df34a7ffbf1069d42038000665b7",
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "full20": {
+        "xy_rmse": 0.05052352696657181,
+        "yaw_rmse": 0.07769137620925903,
+        "ee_position_rmse": 0.04643626511096954,
+        "ee_orientation_mean": 0.02610822208225727,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23752601444721222
+      },
+      "directions": {
+        "forward": {
+          "gain": 0.99137353132755,
+          "correlation": null,
+          "rmse": 0.035794910905896385
+        },
+        "backward": {
+          "gain": 0.9718551517692615,
+          "correlation": null,
+          "rmse": 0.042705610683251294
+        },
+        "left": {
+          "gain": 0.7961523881963943,
+          "correlation": null,
+          "rmse": 0.08075749248992202
+        },
+        "right": {
+          "gain": 0.780787903703418,
+          "correlation": null,
+          "rmse": 0.0739824649681055
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "synergy100-seed21-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T002550-synergy100-seed21-A-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 1,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.029455650597810745,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.060830213129520416,
+          "after1s": 0.04385571926832199
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06083020940423012,
+          "after1s": 0.04385571926832199
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.4482236823165103,
+        "actual_mean_m": 0.45436566836739845,
+        "bias_m": 0.006141986050888112,
+        "absolute_rmse_m": 0.015166543623749553,
+        "demeaned_rmse_m": 0.009589000354389011,
+        "target_std_m": 0.008893904877587996,
+        "actual_std_m": 0.0056065419736858624,
+        "synchronous_gain": 0.18189139248111189,
+        "correlation": 0.36031022483253006,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.11626620188562393,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "f7ddf1b11b30a51f1cd00efc87ed5fb9769941bbbeb531b95538bbe45ed943a1",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "full20": {
+        "xy_rmse": 0.05422397330403328,
+        "yaw_rmse": 0.08050498366355896,
+        "ee_position_rmse": 0.04765450209379196,
+        "ee_orientation_mean": 0.04210343956947327,
+        "joint_velocity_limit_ratio_max": 0.999958336353302,
+        "joint_position_limit_excess_max_rad": 0.0010474920272827148,
+        "base_clearance_min": 0.23921255767345428
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.0183279158099725,
+          "correlation": null,
+          "rmse": 0.0451814985801137
+        },
+        "backward": {
+          "gain": 1.004355628762176,
+          "correlation": null,
+          "rmse": 0.047925376402854804
+        },
+        "left": {
+          "gain": 0.9913264927304767,
+          "correlation": null,
+          "rmse": 0.06585678864216518
+        },
+        "right": {
+          "gain": 0.9741827246006194,
+          "correlation": null,
+          "rmse": 0.07464635479295811
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "synergy100-seed21-T0-6181031",
+      "protocol": "T0",
+      "seed": 6181031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T002639-synergy100-seed21-T0-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.017874471843242645,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.046826425939798355,
+          "after1s": 0.02086169272661209
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.046826425939798355,
+          "after1s": 0.02086169458925724
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.45849983640407266,
+        "bias_m": 0.006204498425910347,
+        "absolute_rmse_m": 0.012802646042631802,
+        "demeaned_rmse_m": 0.010373194453022752,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.00493610716305198,
+        "synchronous_gain": 0.29334373306206474,
+        "correlation": 0.8418206066709928,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.46466323627160416,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.00597221818389288,
+        "phase_lag_s": 0.22861967196467897,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "ec2837b91962521bbdeedb9e4290467e6aa8f55688cc099ea34c5a744aa92c9e",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "full20": {
+        "xy_rmse": 0.030515387654304504,
+        "yaw_rmse": 0.05850033089518547,
+        "ee_position_rmse": 0.04189395532011986,
+        "ee_orientation_mean": 0.024123860523104668,
+        "joint_velocity_limit_ratio_max": 1.001407265663147,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23908889293670654
+      },
+      "directions": {
+        "forward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "backward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "left": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "right": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": false,
+        "forward/gain_min": false,
+        "forward/gain_max": false,
+        "forward/correct_sign": false,
+        "forward/rmse": false,
+        "backward/coverage": false,
+        "backward/gain_min": false,
+        "backward/gain_max": false,
+        "backward/correct_sign": false,
+        "backward/rmse": false,
+        "left/coverage": false,
+        "left/gain_min": false,
+        "left/gain_max": false,
+        "left/correct_sign": false,
+        "left/rmse": false,
+        "right/coverage": false,
+        "right/gain_min": false,
+        "right/gain_max": false,
+        "right/correct_sign": false,
+        "right/rmse": false,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": null
+    },
+    {
+      "label": "synergy100-seed21-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T002727-synergy100-seed21-T1-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.023020392283797264,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.058401308953762054,
+          "after1s": 0.0411643423140049
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.058401305228471756,
+          "after1s": 0.0411643460392952
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.457115799076365,
+        "bias_m": 0.00482046109820275,
+        "absolute_rmse_m": 0.013681190381291224,
+        "demeaned_rmse_m": 0.012011796438659031,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.007015644001518731,
+        "synchronous_gain": 0.26436010763834716,
+        "correlation": 0.5400734664232816,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.2795916370617982,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.005898499483797408,
+        "phase_lag_s": 0.3728836830885848,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "8228efb34a909205f5ee279d57edd5ded813e1f0a692625eb2be535707e6c50e",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "full20": {
+        "xy_rmse": 0.05259966850280762,
+        "yaw_rmse": 0.07985662668943405,
+        "ee_position_rmse": 0.0443020761013031,
+        "ee_orientation_mean": 0.041210297495126724,
+        "joint_velocity_limit_ratio_max": 1.0011823177337646,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23916761577129364
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.016525201868829,
+          "correlation": null,
+          "rmse": 0.04098774183587847
+        },
+        "backward": {
+          "gain": 1.0796562078518317,
+          "correlation": null,
+          "rmse": 0.046124916632410244
+        },
+        "left": {
+          "gain": 0.8587363469162093,
+          "correlation": null,
+          "rmse": 0.07691078158695014
+        },
+        "right": {
+          "gain": 0.7669535857070741,
+          "correlation": null,
+          "rmse": 0.07561533218351844
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "synergy100-seed21-X-6181031",
+      "protocol": "X",
+      "seed": 6181031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T002816-synergy100-seed21-X-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.02395666390657425,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05722636356949806,
+          "after1s": 0.04074334725737572
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05722636356949806,
+          "after1s": 0.040743350982666016
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.4500839403531465,
+        "actual_mean_m": 0.45695850921843795,
+        "bias_m": 0.006874568865291383,
+        "absolute_rmse_m": 0.014680338937893328,
+        "demeaned_rmse_m": 0.012185188516708719,
+        "target_std_m": 0.014044515132261732,
+        "actual_std_m": 0.006449551927833709,
+        "synchronous_gain": 0.2287556174635448,
+        "correlation": 0.49207248415441074,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.24028614441849983,
+        "target_fitted_amplitude_m": 0.01999999947958138,
+        "actual_fitted_amplitude_m": 0.004936291599719187,
+        "phase_lag_s": 0.012580315328158759,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "ee5c18d22a6da80359bdc269165540c6d821878c2ad560055e1520e1df3e8c3c",
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true
+      },
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "full20": {
+        "xy_rmse": 0.05247754976153374,
+        "yaw_rmse": 0.07965923845767975,
+        "ee_position_rmse": 0.043990135192871094,
+        "ee_orientation_mean": 0.04036244750022888,
+        "joint_velocity_limit_ratio_max": 0.9990034103393555,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23932361602783203
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.023651496104557,
+          "correlation": null,
+          "rmse": 0.041473374636930516
+        },
+        "backward": {
+          "gain": 1.0741939076973626,
+          "correlation": null,
+          "rmse": 0.04448890649237433
+        },
+        "left": {
+          "gain": 0.8586307970373515,
+          "correlation": null,
+          "rmse": 0.07715023014545107
+        },
+        "right": {
+          "gain": 0.7686318700340856,
+          "correlation": null,
+          "rmse": 0.07474806849011957
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "synergy100-seed21-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T002904-synergy100-seed21-A-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.028859488666057587,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.059891849756240845,
+          "after1s": 0.04365481436252594
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05989185348153114,
+          "after1s": 0.04365481436252594
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.4468092090744329,
+        "actual_mean_m": 0.45290439406017724,
+        "bias_m": 0.0060951849857443265,
+        "absolute_rmse_m": 0.015114676203272451,
+        "demeaned_rmse_m": 0.009738776905524238,
+        "target_std_m": 0.009049937700946396,
+        "actual_std_m": 0.005876636231717585,
+        "synchronous_gain": 0.20415487832585136,
+        "correlation": 0.40919570374576175,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.13540923378744504,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "93dde73b61a487c9c55759625a9f632d58b1211b8313bf0f84838616faea401a",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "full20": {
+        "xy_rmse": 0.05552607774734497,
+        "yaw_rmse": 0.08305459469556808,
+        "ee_position_rmse": 0.04693909361958504,
+        "ee_orientation_mean": 0.04188471660017967,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23757657408714294
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.0533237946265006,
+          "correlation": null,
+          "rmse": 0.04976839023809407
+        },
+        "backward": {
+          "gain": 0.968485987239305,
+          "correlation": null,
+          "rmse": 0.051354977385799895
+        },
+        "left": {
+          "gain": 0.9899818559019976,
+          "correlation": null,
+          "rmse": 0.07168554742023886
+        },
+        "right": {
+          "gain": 0.9296565065023521,
+          "correlation": null,
+          "rmse": 0.0761278037199312
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "synergy100-seed21-T0-6281031",
+      "protocol": "T0",
+      "seed": 6281031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T002953-synergy100-seed21-T0-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 62,
+      "nonfoot": 0,
+      "overspeed": 2,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.017185593023896217,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04687300696969032,
+          "after1s": 0.02041006274521351
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.046873003244400024,
+          "after1s": 0.02041006088256836
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.4573562105882325,
+        "bias_m": 0.005060872610070204,
+        "absolute_rmse_m": 0.012306885083405258,
+        "demeaned_rmse_m": 0.01034155475734511,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.0049533825969989296,
+        "synchronous_gain": 0.29548513240847507,
+        "correlation": 0.8461641288722264,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.46838209600226954,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.006025561928101805,
+        "phase_lag_s": 0.23523975543242506,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "7d6ba8d046f081a927ae5ad586ebc5018da2d5f783371204b2fe95c6f855af4e",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "full20": {
+        "xy_rmse": 0.031115993857383728,
+        "yaw_rmse": 0.05815714970231056,
+        "ee_position_rmse": 0.04161124676465988,
+        "ee_orientation_mean": 0.02365846373140812,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23771336674690247
+      },
+      "directions": {
+        "forward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "backward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "left": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "right": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": false,
+        "forward/gain_min": false,
+        "forward/gain_max": false,
+        "forward/correct_sign": false,
+        "forward/rmse": false,
+        "backward/coverage": false,
+        "backward/gain_min": false,
+        "backward/gain_max": false,
+        "backward/correct_sign": false,
+        "backward/rmse": false,
+        "left/coverage": false,
+        "left/gain_min": false,
+        "left/gain_max": false,
+        "left/correct_sign": false,
+        "left/rmse": false,
+        "right/coverage": false,
+        "right/gain_min": false,
+        "right/gain_max": false,
+        "right/correct_sign": false,
+        "right/rmse": false,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": null
+    },
+    {
+      "label": "synergy100-seed21-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003042-synergy100-seed21-T1-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.02208072878420353,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05782446265220642,
+          "after1s": 0.040073592215776443
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05782445892691612,
+          "after1s": 0.040073592215776443
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.4557874742194422,
+        "bias_m": 0.003492136241279935,
+        "absolute_rmse_m": 0.013013934025904316,
+        "demeaned_rmse_m": 0.011956601373272497,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.006899522475050187,
+        "synchronous_gain": 0.26300611873490726,
+        "correlation": 0.5426717039578803,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.28567910595645984,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.005751908242431623,
+        "phase_lag_s": 0.3917975306585336,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "f623594ae995155962c305db258b07cdc935b2c2232204b7a94b9ded4b5f9560",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "full20": {
+        "xy_rmse": 0.052602369338274,
+        "yaw_rmse": 0.0813099667429924,
+        "ee_position_rmse": 0.0438370443880558,
+        "ee_orientation_mean": 0.04022016376256943,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23766909539699554
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.036511477899063,
+          "correlation": null,
+          "rmse": 0.039080868812861956
+        },
+        "backward": {
+          "gain": 1.0417123558009942,
+          "correlation": null,
+          "rmse": 0.0435849808218539
+        },
+        "left": {
+          "gain": 0.8472977202799067,
+          "correlation": null,
+          "rmse": 0.0797502270817887
+        },
+        "right": {
+          "gain": 0.7098554107512518,
+          "correlation": null,
+          "rmse": 0.07917385565382762
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "synergy100-seed21-X-6281031",
+      "protocol": "X",
+      "seed": 6281031,
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003132-synergy100-seed21-X-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.023064294829964638,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05673312023282051,
+          "after1s": 0.039623890072107315
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05673312023282051,
+          "after1s": 0.039623890072107315
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45004991150363105,
+        "actual_mean_m": 0.45564436835089794,
+        "bias_m": 0.005594456847266931,
+        "absolute_rmse_m": 0.014137389360262792,
+        "demeaned_rmse_m": 0.012355616023296847,
+        "target_std_m": 0.014003317116638186,
+        "actual_std_m": 0.006254550267420236,
+        "synchronous_gain": 0.20961137493997048,
+        "correlation": 0.4674922631561633,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.21530585819438913,
+        "target_fitted_amplitude_m": 0.019999999423981923,
+        "actual_fitted_amplitude_m": 0.004572052801994344,
+        "phase_lag_s": 0.08150644979046139,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "8449c1929d8255c254b34a8b8fa2e518bfb9d35c190ab84cff373d13e93b5fa9",
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": true,
+        "demeaned_RMSE": true,
+        "absolute_RMSE": true
+      },
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "full20": {
+        "xy_rmse": 0.05256015062332153,
+        "yaw_rmse": 0.08075055480003357,
+        "ee_position_rmse": 0.04396188631653786,
+        "ee_orientation_mean": 0.039384011179208755,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23758861422538757
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.0463387007938034,
+          "correlation": null,
+          "rmse": 0.039466866021825614
+        },
+        "backward": {
+          "gain": 1.0378041536615228,
+          "correlation": null,
+          "rmse": 0.04289315222111095
+        },
+        "left": {
+          "gain": 0.8575026137047452,
+          "correlation": null,
+          "rmse": 0.07810375401569422
+        },
+        "right": {
+          "gain": 0.7114760772668097,
+          "correlation": null,
+          "rmse": 0.07879164996931622
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "matchedNative100-seed21-A-6181031",
+      "protocol": "A",
+      "seed": 6181031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003223-matchedNative100-seed21-A-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.03014356829226017,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06143761798739433,
+          "after1s": 0.04446868225932121
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06143761798739433,
+          "after1s": 0.04446868225932121
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.4482236823165103,
+        "actual_mean_m": 0.4534067830516908,
+        "bias_m": 0.005183100735180472,
+        "absolute_rmse_m": 0.01627475710432826,
+        "demeaned_rmse_m": 0.010300899719777601,
+        "target_std_m": 0.008893904877587996,
+        "actual_std_m": 0.00538254250004998,
+        "synchronous_gain": 0.10373709546944583,
+        "correlation": 0.22651180483858377,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.033967711488512686,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "2cfc5a49488f428e50ec482f56a531ec732533aada48557bf66042887ba98eef",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "full20": {
+        "xy_rmse": 0.05439811572432518,
+        "yaw_rmse": 0.0813424214720726,
+        "ee_position_rmse": 0.048010628670454025,
+        "ee_orientation_mean": 0.04189672693610191,
+        "joint_velocity_limit_ratio_max": 1.0000005960464478,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.2392798662185669
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.0014371344201936,
+          "correlation": null,
+          "rmse": 0.04456137006619179
+        },
+        "backward": {
+          "gain": 1.0096978249892454,
+          "correlation": null,
+          "rmse": 0.05167781072064735
+        },
+        "left": {
+          "gain": 0.9839887919704143,
+          "correlation": null,
+          "rmse": 0.06486070250473906
+        },
+        "right": {
+          "gain": 1.024828794844036,
+          "correlation": null,
+          "rmse": 0.0727533878077526
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "matchedNative100-seed21-T0-6181031",
+      "protocol": "T0",
+      "seed": 6181031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003313-matchedNative100-seed21-T0-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.018651923164725304,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.0465882383286953,
+          "after1s": 0.019851529970765114
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.0465882383286953,
+          "after1s": 0.019851529970765114
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.4584971462567582,
+        "bias_m": 0.006201808278595931,
+        "absolute_rmse_m": 0.014040184869777116,
+        "demeaned_rmse_m": 0.011809955834596104,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.003731043778930366,
+        "synchronous_gain": 0.18822108681561125,
+        "correlation": 0.7125147944799375,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.30663010972243915,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.003853982653186431,
+        "phase_lag_s": -0.15236132627462756,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "295d41bec26ac597b3d94a480bc9e5186f7ad5a01f8ebb48b0a78eb7299ed1fd",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "full20": {
+        "xy_rmse": 0.030268358066678047,
+        "yaw_rmse": 0.05857270956039429,
+        "ee_position_rmse": 0.04212111234664917,
+        "ee_orientation_mean": 0.02318774163722992,
+        "joint_velocity_limit_ratio_max": 0.9988901019096375,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.2391136735677719
+      },
+      "directions": {
+        "forward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "backward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "left": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "right": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": false,
+        "forward/gain_min": false,
+        "forward/gain_max": false,
+        "forward/correct_sign": false,
+        "forward/rmse": false,
+        "backward/coverage": false,
+        "backward/gain_min": false,
+        "backward/gain_max": false,
+        "backward/correct_sign": false,
+        "backward/rmse": false,
+        "left/coverage": false,
+        "left/gain_min": false,
+        "left/gain_max": false,
+        "left/correct_sign": false,
+        "left/rmse": false,
+        "right/coverage": false,
+        "right/gain_min": false,
+        "right/gain_max": false,
+        "right/correct_sign": false,
+        "right/rmse": false,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": null
+    },
+    {
+      "label": "matchedNative100-seed21-T1-6181031",
+      "protocol": "T1",
+      "seed": 6181031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003403-matchedNative100-seed21-T1-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.023428957909345627,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05832451209425926,
+          "after1s": 0.04073917120695114
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05832451209425926,
+          "after1s": 0.04073917493224144
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.4558638591177174,
+        "bias_m": 0.0035685211395550713,
+        "absolute_rmse_m": 0.014354627752599004,
+        "demeaned_rmse_m": 0.01305775782008715,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.006108115383233373,
+        "synchronous_gain": 0.16946360485051465,
+        "correlation": 0.39476024330372206,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.15082293171511255,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.004046172066731756,
+        "phase_lag_s": -0.013186171236120911,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "5890872014183addfd6ac4498aebb464d8772a5304ac116be3a35a754069ad92",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "full20": {
+        "xy_rmse": 0.05184507742524147,
+        "yaw_rmse": 0.07918620854616165,
+        "ee_position_rmse": 0.044409990310668945,
+        "ee_orientation_mean": 0.040199439972639084,
+        "joint_velocity_limit_ratio_max": 0.9998226165771484,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23917023837566376
+      },
+      "directions": {
+        "forward": {
+          "gain": 0.9813937577916777,
+          "correlation": null,
+          "rmse": 0.04238956552533812
+        },
+        "backward": {
+          "gain": 1.0329945243819325,
+          "correlation": null,
+          "rmse": 0.044926485053147495
+        },
+        "left": {
+          "gain": 0.8073986243084103,
+          "correlation": null,
+          "rmse": 0.0781051580742936
+        },
+        "right": {
+          "gain": 0.8284783980394049,
+          "correlation": null,
+          "rmse": 0.07163945726984233
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "matchedNative100-seed21-X-6181031",
+      "protocol": "X",
+      "seed": 6181031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003452-matchedNative100-seed21-X-6181031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 64,
+      "nonfoot": 0,
+      "overspeed": 0,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.024430278688669205,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05711054429411888,
+          "after1s": 0.0402899794280529
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05711054801940918,
+          "after1s": 0.0402899794280529
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.4500839403531465,
+        "actual_mean_m": 0.4560452466065947,
+        "bias_m": 0.005961306253448128,
+        "absolute_rmse_m": 0.01557080148762258,
+        "demeaned_rmse_m": 0.013565219257582571,
+        "target_std_m": 0.014044515132261732,
+        "actual_std_m": 0.005674340327609013,
+        "synchronous_gain": 0.11390325318589793,
+        "correlation": 0.2706861756385447,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.06035037026470177,
+        "target_fitted_amplitude_m": 0.01999999947958138,
+        "actual_fitted_amplitude_m": 0.0029858727249688797,
+        "phase_lag_s": 0.14301403822890818,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "33db9e93958ec0c1ccda5b90bbf9cd105213affa153ae872ad9b905926ea865b",
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "demeaned_RMSE": false,
+        "absolute_RMSE": true
+      },
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "full20": {
+        "xy_rmse": 0.05133657157421112,
+        "yaw_rmse": 0.07912687957286835,
+        "ee_position_rmse": 0.04416775330901146,
+        "ee_orientation_mean": 0.0393165647983551,
+        "joint_velocity_limit_ratio_max": 0.99950110912323,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.2392958402633667
+      },
+      "directions": {
+        "forward": {
+          "gain": 0.987002834387187,
+          "correlation": null,
+          "rmse": 0.04148561551462733
+        },
+        "backward": {
+          "gain": 1.0388051391870932,
+          "correlation": null,
+          "rmse": 0.04354966261877211
+        },
+        "left": {
+          "gain": 0.8148954803707441,
+          "correlation": null,
+          "rmse": 0.07716522456672241
+        },
+        "right": {
+          "gain": 0.8334934655938053,
+          "correlation": null,
+          "rmse": 0.07117574647743796
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "matchedNative100-seed21-A-6281031",
+      "protocol": "A",
+      "seed": 6281031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003542-matchedNative100-seed21-A-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.029598964378237724,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.06069942191243172,
+          "after1s": 0.044454436749219894
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.06069942191243172,
+          "after1s": 0.044454436749219894
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.4468092090744329,
+        "actual_mean_m": 0.45242276428757533,
+        "bias_m": 0.005613555213142382,
+        "absolute_rmse_m": 0.01624158253724481,
+        "demeaned_rmse_m": 0.01045831552257314,
+        "target_std_m": 0.009049937700946396,
+        "actual_std_m": 0.005542342971993717,
+        "synchronous_gain": 0.1032055851580309,
+        "correlation": 0.2821848248057692,
+        "demeaned_mse_improvement_vs_mathematical_center": -0.050488048846056295,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "d3067a906f352f0346d596472df00cf95fa6b0f1f75c4a54532ff31cc3e4897b",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true
+      },
+      "full20": {
+        "xy_rmse": 0.05353325605392456,
+        "yaw_rmse": 0.08249236643314362,
+        "ee_position_rmse": 0.04733225330710411,
+        "ee_orientation_mean": 0.04184654727578163,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23732465505599976
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.0338610356507205,
+          "correlation": null,
+          "rmse": 0.04699390697980029
+        },
+        "backward": {
+          "gain": 0.9690673902034374,
+          "correlation": null,
+          "rmse": 0.05078781984085566
+        },
+        "left": {
+          "gain": 0.9840383889288993,
+          "correlation": null,
+          "rmse": 0.07153722276558082
+        },
+        "right": {
+          "gain": 0.9857633927966972,
+          "correlation": null,
+          "rmse": 0.06899912384891904
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "matchedNative100-seed21-T0-6281031",
+      "protocol": "T0",
+      "seed": 6281031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003633-matchedNative100-seed21-T0-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.01779397577047348,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.04652087762951851,
+          "after1s": 0.01906813681125641
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.04652088135480881,
+          "after1s": 0.01906813681125641
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.45743002858012916,
+        "bias_m": 0.005134690601966883,
+        "absolute_rmse_m": 0.013446312449158119,
+        "demeaned_rmse_m": 0.011761805260946268,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.0037181157407633336,
+        "synchronous_gain": 0.1909745378021167,
+        "correlation": 0.7275932131172375,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.31277121128912133,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.003918309929690193,
+        "phase_lag_s": -0.17450475549671132,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "8c3eb44260bd022c3007ad967c3c1e119caf6d26b78730a2b30d05e61d90e2bd",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "base_drift_mean": true,
+        "base_drift_p95": true
+      },
+      "full20": {
+        "xy_rmse": 0.03079867735505104,
+        "yaw_rmse": 0.05799945443868637,
+        "ee_position_rmse": 0.041768621653318405,
+        "ee_orientation_mean": 0.022548150271177292,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23736028373241425
+      },
+      "directions": {
+        "forward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "backward": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "left": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        },
+        "right": {
+          "gain": null,
+          "correlation": null,
+          "rmse": null
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": false,
+        "forward/gain_min": false,
+        "forward/gain_max": false,
+        "forward/correct_sign": false,
+        "forward/rmse": false,
+        "backward/coverage": false,
+        "backward/gain_min": false,
+        "backward/gain_max": false,
+        "backward/correct_sign": false,
+        "backward/rmse": false,
+        "left/coverage": false,
+        "left/gain_min": false,
+        "left/gain_max": false,
+        "left/correct_sign": false,
+        "left/rmse": false,
+        "right/coverage": false,
+        "right/gain_min": false,
+        "right/gain_max": false,
+        "right/correct_sign": false,
+        "right/rmse": false,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": null
+    },
+    {
+      "label": "matchedNative100-seed21-T1-6281031",
+      "protocol": "T1",
+      "seed": 6281031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003723-matchedNative100-seed21-T1-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 63,
+      "nonfoot": 0,
+      "overspeed": 1,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.022609703242778778,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.057570308446884155,
+          "after1s": 0.03939313441514969
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.057570308446884155,
+          "after1s": 0.03939313441514969
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45229533797816224,
+        "actual_mean_m": 0.4547179028779072,
+        "bias_m": 0.002422564899744956,
+        "absolute_rmse_m": 0.013804224124310394,
+        "demeaned_rmse_m": 0.013008235094028629,
+        "target_std_m": 0.014196383949662732,
+        "actual_std_m": 0.00606426066712952,
+        "synchronous_gain": 0.17090735359365317,
+        "correlation": 0.39771860793079145,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.15647496320604162,
+        "target_fitted_amplitude_m": 0.019999998767508877,
+        "actual_fitted_amplitude_m": 0.003957320282165809,
+        "phase_lag_s": -0.03817111852256111,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "d54efcac4076d8cd0873c7c06b6345d3126ec1c8d04dbdf8783fa2511493c35e",
+      "absolute_X_gate": null,
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true,
+        "forward": true,
+        "backward": true,
+        "left": true,
+        "right": true,
+        "y_retained": true,
+        "z_retained": true
+      },
+      "full20": {
+        "xy_rmse": 0.05107618123292923,
+        "yaw_rmse": 0.07920105010271072,
+        "ee_position_rmse": 0.04401497542858124,
+        "ee_orientation_mean": 0.039120085537433624,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23734618723392487
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.0299180864524413,
+          "correlation": null,
+          "rmse": 0.03928043249951734
+        },
+        "backward": {
+          "gain": 0.9911987220763875,
+          "correlation": null,
+          "rmse": 0.04180228184996591
+        },
+        "left": {
+          "gain": 0.8012811188982546,
+          "correlation": null,
+          "rmse": 0.07955977392564506
+        },
+        "right": {
+          "gain": 0.7936746736108271,
+          "correlation": null,
+          "rmse": 0.07328787650159321
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    },
+    {
+      "label": "matchedNative100-seed21-X-6281031",
+      "protocol": "X",
+      "seed": 6281031,
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "run": "/data/go2_piper_wbc_stage3_dynamic_x_20261031/runs/20261101T003813-matchedNative100-seed21-X-6281031",
+      "n": 64,
+      "complete": 64,
+      "strict_safe": 62,
+      "nonfoot": 0,
+      "overspeed": 2,
+      "joint_limit": 0,
+      "terminations": {
+        "time_out": 64,
+        "base_contact": 0,
+        "bad_orientation": 0,
+        "nonfoot_contact": 0,
+        "sustained_low_height": 0
+      },
+      "EE_after1s": 0.02379198558628559,
+      "orientation_RMS_rad": {
+        "ee_orientation_error": {
+          "all20s": 0.05642174556851387,
+          "after1s": 0.038864605128765106
+        },
+        "ee_orientation_reward_error": {
+          "all20s": 0.05642174556851387,
+          "after1s": 0.03886460140347481
+        }
+      },
+      "X_after1s": {
+        "target_mean_m": 0.45004991150363105,
+        "actual_mean_m": 0.45493092470116125,
+        "bias_m": 0.004881013197530257,
+        "absolute_rmse_m": 0.01531108750190735,
+        "demeaned_rmse_m": 0.0139080378188588,
+        "target_std_m": 0.014003317116638186,
+        "actual_std_m": 0.005574723907249765,
+        "synchronous_gain": 0.08406158274252964,
+        "correlation": 0.20933938921266565,
+        "demeaned_mse_improvement_vs_mathematical_center": 0.0070066429918108665,
+        "target_fitted_amplitude_m": 0.019999999423981923,
+        "actual_fitted_amplitude_m": 0.0026141878583082943,
+        "phase_lag_s": 0.1513961236031227,
+        "episodes_measured": 64
+      },
+      "raw_trajectory_sha256": "7b41c2af602a582258bcd971b7cdbe1753333b31f3811882d051d5e0096e1f1d",
+      "absolute_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "amplitude": false,
+        "EE": true
+      },
+      "relative_X_gate": {
+        "gain": false,
+        "correlation": false,
+        "demeaned_RMSE": false,
+        "absolute_RMSE": true
+      },
+      "retention_checks": {
+        "complete": true,
+        "strict_safe": true,
+        "EE": true,
+        "native_health": true
+      },
+      "full20": {
+        "xy_rmse": 0.05140761286020279,
+        "yaw_rmse": 0.07886578887701035,
+        "ee_position_rmse": 0.044292889535427094,
+        "ee_orientation_mean": 0.03818560019135475,
+        "joint_velocity_limit_ratio_max": 1.0454882383346558,
+        "joint_position_limit_excess_max_rad": 0.0,
+        "base_clearance_min": 0.23731139302253723
+      },
+      "directions": {
+        "forward": {
+          "gain": 1.0401705512442563,
+          "correlation": null,
+          "rmse": 0.03825012755596718
+        },
+        "backward": {
+          "gain": 0.9896875580330392,
+          "correlation": null,
+          "rmse": 0.042171398043717945
+        },
+        "left": {
+          "gain": 0.8095424872203932,
+          "correlation": null,
+          "rmse": 0.07852886240191423
+        },
+        "right": {
+          "gain": 0.7960173840222167,
+          "correlation": null,
+          "rmse": 0.07271337980548334
+        }
+      },
+      "native_original_checks": {
+        "forward/coverage": true,
+        "forward/gain_min": true,
+        "forward/gain_max": true,
+        "forward/correct_sign": true,
+        "forward/rmse": true,
+        "backward/coverage": true,
+        "backward/gain_min": true,
+        "backward/gain_max": true,
+        "backward/correct_sign": true,
+        "backward/rmse": true,
+        "left/coverage": true,
+        "left/gain_min": true,
+        "left/gain_max": true,
+        "left/correct_sign": true,
+        "left/rmse": true,
+        "right/coverage": true,
+        "right/gain_min": true,
+        "right/gain_max": true,
+        "right/correct_sign": true,
+        "right/rmse": true,
+        "ee_rmse": true,
+        "completion": true,
+        "low_height_time_fraction": true,
+        "nonfoot_failure_fraction": true,
+        "actual_joint_hard_limit_violation_fraction": true,
+        "target_clipping_element_fraction": true,
+        "actuator_saturation_element_fraction": true,
+        "body_abs_roll_pitch_p95_rad": true,
+        "arm_pd_abs_error_mean_rad": true,
+        "base_clearance_p05_m": true,
+        "base_clearance_median_m": true
+      },
+      "native_original_gate_pass": true
+    }
+  ],
+  "native_capability_source_sha256": "3c0df26e04da3e41ce7b627f69b6ecdda92fc205099ee0e8acc1e78549a7bdf1",
+  "spec_sha256": "765f3bd7df04d7f5446ddd9f77a02c94d7787e97386e56d5c59c0c91a210586a",
+  "interpretation": "Partial genuine learned X improvement; seed21 stopped for actual FL_hip hard event at7.16s; not baseline PASS. All original gates remain unchanged. Native source full metrics/trajectories on execution host.",
+  "local_full_summary_sha256": "bbcf66503b92d509244db14e34cb7278784db5c9dece520d365a803bcd4e39b0"
+}

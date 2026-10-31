@@ -18,9 +18,18 @@ def selection(b):
     acceptable=[r for r in options if r['safe']]
     parent=read(b.p/'CHECKPOINTS.json')['parent']
     chosen=max(acceptable,key=lambda r:r['min_X_gain']) if acceptable else dict(parent,reason='No new safe full-matrix candidate; keep immutable parent')
-    nodes=read(b.p/'CANDIDATE_NODES.json') if (b.p/'CANDIDATE_NODES.json').exists() else []
-    ix=next((i for i,n in enumerate(nodes) if n['checkpoint']['checkpoint_sha256']==chosen['checkpoint_sha256']),None)
-    adjacent=nodes[ix-1] if ix is not None and ix>0 else None
+    # Freeze the adjacent node on this exact recipe/seed lineage, including
+    # the matched native control. Never combine capabilities across branches.
+    import re
+    match=re.match(r'^(synergy|matchedNative)([0-9]+)-seed([0-9]+)-',chosen.get('labels',[''])[0])
+    earlier=[]
+    if match:
+        branch,count,seed=match.group(1),int(match.group(2)),match.group(3)
+        for option in options:
+            other=re.match(r'^(synergy|matchedNative)([0-9]+)-seed([0-9]+)-',option['labels'][0])
+            if other and other.group(1)==branch and other.group(3)==seed and int(other.group(2))<count:earlier.append((int(other.group(2)),option))
+    previous=max(earlier,key=lambda item:item[0])[1] if earlier else None
+    adjacent=None if previous is None else dict(checkpoint={k:v for k,v in previous.items() if k in ('checkpoint','checkpoint_sha256','actor_recipe') and v is not None},labels=previous['labels'],frozen_before_final_seeds=True)
     return dict(candidate=chosen,adjacent=adjacent,all_development_candidates=options,used_final_seeds=False,rule='Before formal seeds: best worst-development-seed X gain among full8 native20s matrices, no actual nonfoot or hard-limit event, strict and completion>=.95. Original retention gates remain mandatory formal gates; selection is not PASS.')
 
 def main(b):
@@ -29,7 +38,7 @@ def main(b):
         clock=b.meter()
         if ((b.p/'RESEARCH_CLOSED.json').exists() or clock['GPU_container_SUM_seconds']>=b.cap-b.reserve) and not clock['active']:break
         write(b.p/'FINALIZER_STATE.json',dict(state='waiting_for_research_close_GPU_idle',clock=clock));time.sleep(5)
-    base=read(b.p/'P1_BASE_CONFIG.json');source=base['native_source'];base.pop('probe',None);base.update(mode='eval',entry='evaluate_entry.py',phase='P4',num_envs=64)
+    base=read(b.p/'P1_BASE_CONFIG.json');source=str(pathlib.Path(read(b.p/'CPU_RESPONSE_CONFIG.json')['kinematics_source']).parents[1]);base.pop('probe',None);base.update(mode='eval',entry='evaluate_entry.py',phase='P4',num_envs=64)
     path=b.p/'FROZEN_SELECTION.json'
     if not path.exists():write(path,selection(b))
     selected=read(path);candidate={k:v for k,v in selected['candidate'].items() if k in ('checkpoint','checkpoint_sha256','actor_recipe') and v is not None};parent=read(b.p/'CHECKPOINTS.json')['parent']
@@ -86,7 +95,8 @@ def main(b):
         if receipt.exists():run=pathlib.Path(read(receipt)['run'])
         else:run=b.launch(cfg,'final-native-learner-restore',purpose='final',timeout=180);write(receipt,dict(run=str(run)))
         wait(b,run);assert read(run/'ppo/result.json')['passed']
-    resources=[];totals=dict(PPO_updates=0,Adam_calls=0,training_transitions_used=0,eval_transition_slots=0,probe_transition_slots=0)
+    actual_slots={r['run']:r['simulator_transition_slots'] for r in report(b,'resource_counts')['rows']}
+    resources=[];unmeasured_partial=[];totals=dict(PPO_updates=0,Adam_calls=0,training_transitions_used=0,eval_transition_slots=0,probe_transition_slots=0)
     for j in read(b.p/'LEDGER.json')['jobs']:
         run=pathlib.Path(j['run']);row=dict(run=str(run),mode=j['mode'],phase=j['phase'],cid=j['cid'],state=read_state(j['cid']))
         updates=[json.loads(x) for x in (run/'ppo/updates.jsonl').read_text().splitlines()] if (run/'ppo/updates.jsonl').exists() else []
@@ -97,11 +107,15 @@ def main(b):
         s=run/'evaluation/summary.json'
         if s.exists():
             s=read(s);row.update(evaluation_episodes=s['num_episodes'],evaluation_requested_steps=s['requested_steps'])
-            totals['probe_transition_slots' if j['mode']=='probe' else 'eval_transition_slots']+=s['num_episodes']*s['requested_steps']
+            if j['mode']=='probe':
+                row['diagnostic_requested_transition_slots']=s['num_episodes']*s['requested_steps'];totals['probe_transition_slots']+=row['diagnostic_requested_transition_slots']
+            else:row['actual_transition_slots']=actual_slots[str(run)];totals['eval_transition_slots']+=row['actual_transition_slots']
+        elif j['mode'] in ('eval','probe'):
+            unmeasured_partial.append(dict(run=str(run),mode=j['mode'],GPU_cost_included=True,partial_transition_count='Not recorded reliably by failed native evaluator; not silently counted as zero'))
         resources.append(row)
     clock=b.meter();assert not clock['active'] and clock['GPU_container_SUM_seconds']<=b.cap
     finalpass=len(checks)==12 and all(c['passed'] for c in checks) and len(adjacent_checks)==12 and all(c['passed'] for c in adjacent_checks)
-    write(b.p/'RESOURCES_FINAL.json',dict(clock=clock,totals=totals,jobs=resources,update_counters_not_caps=True,old_Stage2_pretraining_and_control_cost_not_recharged=True))
+    write(b.p/'RESOURCES_FINAL.json',dict(clock=clock,totals=totals,jobs=resources,unmeasured_partial_evaluations=unmeasured_partial,update_counters_not_caps=True,old_Stage2_pretraining_and_control_cost_not_recharged=True))
     write(b.p/'COMPLETED.json',dict(state='Stage3 original PPO Uniform bounded experiment closed',clock=clock,selected=candidate,original_baseline_PASS=finalpass,primary_checks_passed=all(c['passed'] for c in checks),consecutive_nodes_passed=len(adjacent_checks)==12 and all(c['passed'] for c in adjacent_checks),SuperMimic_used=False,SGS_ready=finalpass))
 
 if __name__=='__main__':

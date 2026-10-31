@@ -21,8 +21,9 @@ def evaluate(b,cfg,label,purpose='research'):
     return run
 
 def report(b,tag):
-    base=read(b.p/'P1_BASE_CONFIG.json');out=b.p/('PHYSICS_'+tag+'.json')
-    subprocess.run([read(b.p/'CPU_RUNTIME.json')['python'],str(b.p/'active/analyze_physics.py'),'--root',str(b.p),'--source',base['native_source'],'--out',str(out)],check=True,timeout=240)
+    host_source=pathlib.Path(read(b.p/'CPU_RESPONSE_CONFIG.json')['kinematics_source']).parents[1]
+    out=b.p/('PHYSICS_'+tag+'.json')
+    subprocess.run([read(b.p/'CPU_RUNTIME.json')['python'],str(b.p/'active/analyze_physics.py'),'--root',str(b.p),'--source',str(host_source),'--out',str(out)],check=True,timeout=240)
     d=read(out);write(b.p/'PHYSICAL_CURVE.json',d);return d
 
 def tests(b,base,cp,label,phase='P2',seeds=DEV,protocols=('A','T0','T1','X')):
@@ -51,7 +52,7 @@ def decision(rows,old=None):
     original=all(all(r['absolute_X_gate'].values()) and all(r.get('relative_X_gate',{}).values()) for r in xs) and retained
     return dict(worst_seed_X_gain=gain,worst_seed_X_amplitude_m=amplitude,worst_seed_X_correlation=correlation,original_all_development_gates=original,original_retention=retained,
         severe_physical_failures=bad,learning_change=None if old is None else gain-old['worst_seed_X_gain'],
-        engineering_gate_not_formal_PASS=True,rows=[dict(label=r['label'],strict_safe=r['strict_safe'],complete=r['complete'],X_gain=r['X_after1s']['synchronous_gain'],amplitude_m=r['X_after1s']['actual_fitted_amplitude_m']) for r in rows])
+        engineering_gate_not_formal_PASS=True,rows=[dict(label=r['label'],strict_safe=r['strict_safe'],complete=r['complete'],X_gain=r['X_after1s']['synchronous_gain'],amplitude_m=r['X_after1s'].get('actual_fitted_amplitude_m')) for r in rows])
 
 def main(b):
     write(b.p/'LEARNING_PROCESS.json',dict(pid=os.getpid()))

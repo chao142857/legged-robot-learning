@@ -1,0 +1,146 @@
+{
+  "rows": [
+    {
+      "label": "parent",
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "same_real_state_samples": 76,
+      "counterfactuals": [
+        {
+          "mode": "position_only",
+          "affine_local_J_X_signed_gain_mean": 0.008564674574586385,
+          "affine_local_J_X_head_gain_mean": 0.0,
+          "cancellation_ratio_median": 0.43313638854406666,
+          "positive_X_fraction": 0.6842105263157895,
+          "signed_contribution_m_mean_per_arm_joint": [
+            -4.950212592523355e-07,
+            0.0004695611658126132,
+            0.00021016421656457488,
+            -2.389326932167499e-06,
+            -0.0003342540512023914,
+            7.847454308324e-17
+          ]
+        },
+        {
+          "mode": "coherent_aim_pose",
+          "affine_local_J_X_signed_gain_mean": -0.013251850889010605,
+          "affine_local_J_X_head_gain_mean": 0.0,
+          "cancellation_ratio_median": 0.23009696834912655,
+          "positive_X_fraction": 0.618421052631579,
+          "signed_contribution_m_mean_per_arm_joint": [
+            8.109583579567938e-06,
+            0.003924691387619346,
+            -0.0004218650406297291,
+            -2.172903393065428e-05,
+            -0.004019280932200088,
+            1.1302781257290456e-15
+          ]
+        }
+      ]
+    },
+    {
+      "label": "synergy",
+      "checkpoint_sha256": "839f6c678617de73912b6d6b16efc4dad30774f36d782d0d2ff989bfe4271f89",
+      "same_real_state_samples": 76,
+      "counterfactuals": [
+        {
+          "mode": "position_only",
+          "affine_local_J_X_signed_gain_mean": 0.19919358907802823,
+          "affine_local_J_X_head_gain_mean": 0.1898390090905042,
+          "cancellation_ratio_median": 0.8631041482952886,
+          "positive_X_fraction": 1.0,
+          "signed_contribution_m_mean_per_arm_joint": [
+            1.55577005393359e-05,
+            0.002267555469576589,
+            0.006302370739648015,
+            6.562484700441975e-06,
+            -0.0006243028313431348,
+            -1.1658410079304223e-16
+          ]
+        },
+        {
+          "mode": "coherent_aim_pose",
+          "affine_local_J_X_signed_gain_mean": 0.08725962898871609,
+          "affine_local_J_X_head_gain_mean": 0.10431374569030066,
+          "cancellation_ratio_median": 0.36078681591743966,
+          "positive_X_fraction": 0.7236842105263158,
+          "signed_contribution_m_mean_per_arm_joint": [
+            1.1511380436568023e-05,
+            0.005284610061065498,
+            0.0025139956472302757,
+            -1.8433974630546216e-05,
+            -0.004301297954554164,
+            1.0131511876590153e-15
+          ]
+        }
+      ],
+      "head_coefficients": {
+        "latent_l2": 0.015992362052202225,
+        "targetX": 0.09091198444366455,
+        "targetXrate": 0.0035480279475450516,
+        "local_X_error": 0.015269345603883266,
+        "bias": 0.0003332709311507642,
+        "actual_residual_raw_action_RMS_per_action": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0012511422391980886,
+          0.020751170814037323,
+          0.02465272881090641,
+          0.0018290530424565077,
+          0.003986199852079153,
+          0.0011176214320585132
+        ]
+      }
+    },
+    {
+      "label": "matchedNative",
+      "checkpoint_sha256": "9acdea96caef807e8459f6a01cb7f580db939a2bc1d53981475543adb5b641d3",
+      "same_real_state_samples": 76,
+      "counterfactuals": [
+        {
+          "mode": "position_only",
+          "affine_local_J_X_signed_gain_mean": 0.009961987302854922,
+          "affine_local_J_X_head_gain_mean": 0.0,
+          "cancellation_ratio_median": 0.4519935944674863,
+          "positive_X_fraction": 0.6973684210526315,
+          "signed_contribution_m_mean_per_arm_joint": [
+            2.964531873793152e-08,
+            0.0005154948129063784,
+            0.00021631565153959858,
+            -2.7221874236637818e-06,
+            -0.0003306384302269177,
+            6.317591928373748e-17
+          ]
+        },
+        {
+          "mode": "coherent_aim_pose",
+          "affine_local_J_X_signed_gain_mean": -0.011762162457125771,
+          "affine_local_J_X_head_gain_mean": 0.0,
+          "cancellation_ratio_median": 0.24431230066324847,
+          "positive_X_fraction": 0.631578947368421,
+          "signed_contribution_m_mean_per_arm_joint": [
+            1.2715386321529214e-05,
+            0.004326429832165792,
+            -0.000690107997465163,
+            -2.4045482776079595e-05,
+            -0.004095478236532102,
+            9.92208042537299e-16
+          ]
+        }
+      ]
+    }
+  ],
+  "cpu_only": true,
+  "old_parent_forward_matches_actual_GPU_tap": true,
+  "physical_response_or_success_claim": false,
+  "scope": "Same real P1 state/history and observable target changes. Fixed original FK Jacobian projection of requested affine joint target, not actual closed-loop performance. No training or heldout seeds used."
+}

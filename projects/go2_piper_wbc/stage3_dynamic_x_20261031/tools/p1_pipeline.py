@@ -28,7 +28,7 @@ def main(b):
             incomplete_response=x.get('actual_fitted_amplitude_m',0)<.008 or x.get('synchronous_gain',-1)<.35 or x.get('correlation',-1)<.5
             same_physical_safety=row['safe']>=control['safe'] and row['complete']>=control['complete'] and row['nonfoot']<=control['nonfoot'] and row['joint_limit']<=control['joint_limit']
             if incomplete_response and same_physical_safety:cases.append((parent,protocol,1.0))
-    # Fifty unmodified native PPO updates expose a complete20s reference period
+    # Fifty unmodified native PPO updates expose a complete20s task timespan
     # for the native-GAE/total-gradient audit. This is diagnostic, not a new start.
     config=dict(read(b.p/'NATIVE_TRAIN_CONFIG.json'),phase='P1',mode='train',entry='train_entry.py',updates=50,gradient_audit=True)
     receipt=b.p/'P1_NATIVE_GRADIENT_RUN.json'

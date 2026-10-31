@@ -15,9 +15,9 @@ P1 is implemented as an in-memory diagnostic overlay on the original evaluator. 
 
 The physical intervention is explicitly diagnostic: a bounded6D FK/Jacobian feedback correction added to the six arm requests after a shared4s cold-start action prefix. The leg policy and original target/delay/physics/safety paths are retained. Leg actions may respond to the altered physical state; the intervention directly changes only arm requests. It reuses original Piper FK, not a new kinematic model. It is never counted as learned PPO success. The CPU reduction verifies the actual prefix and measured initial state/DR, compares requested/delayed/actual joint responses, retains all20s failures and reports native27-term reward differences separately from partial steady-window diagnosis.
 
-A separate50-update native PPO diagnostic window covers the full reference timespan and observes original GAE, cohort exposure, actual total-loss gradients before Adam, fixed-input mean-action changes and native KL. It never constructs alternate advantages or per-reward surrogate PPO gradients. Its weights do not become the P2 parent; any treatment starts from the same original CP1800. This window and failed starts consume P1's allocation.
+A separate50-update native PPO diagnostic window covers the full20s task timespan and observes original GAE, cohort exposure, actual total-loss gradients before Adam, fixed-input mean-action changes and native KL. It never constructs alternate advantages or per-reward surrogate PPO gradients. Its weights do not become the P2 parent; any treatment starts from the same original CP1800. This window and failed starts consume P1's allocation.
 
-At preparation time both SSH and the Tailscale data plane were unreachable. Local syntax/overlay checks are not PhysX evidence. Only remote `BOOTSTRAP.json`, `LEDGER.json`, actual Docker state and run receipts establish deployment. No new physical result or P1 PASS is claimed here. A bounded connection-recovery process uses the existing SSH only, with no chat reminders or network/configuration changes.
+The initial network block is historical and preserved in `evidence/NETWORK_BLOCK_AT_DEPLOYMENT.json`. SSH recovered and the experiments below actually ran. Each remote start freezes source/config/checkpoint SHA; the persistent GPU watcher and CPU closer are independent of chat.
 
 Runtime roots, original asset/chain locations and private native configs are supplied explicitly at deployment. The internal `/stage2-active` and `/stage2-config.json` container mount names are retained compatibility aliases; they bind the new Stage3 run's frozen files, never the old Stage2 run directory. New resource ledger files are not copied from Stage2.
 
@@ -29,7 +29,19 @@ python3 tools/p1_pipeline.py --root "$STAGE3_ROOT"
 python3 tools/reduce_p1.py --root "$STAGE3_ROOT"
 ```
 
-P2/P3 are contingent on actual causal evidence. They are not asserted implemented or running merely because P1 code exists. Formal seeds511031/521031/531031 remain closed until development selection and the full original acceptance checks are frozen.
+Actual results as of 2026-11-01: P1 completed with three identical4s cold prefixes and measured initial DR/state equality. All three diagnostic treatments produced >=8mm effective X response in32/32 strictly safe complete20s trials; original27-term reward rate increased. Requested3.3mm X motion remained3.3mm after DelayedPD, while target-conditioned shoulder/elbow/wrist coordination substantially cancelled. These are diagnostic actions, not PPO success.
 
+P2 uses `original210_arm_synergy_mean_v1`: one zero-initialized131->1 bounded arm-synergy mean head, original128latent plus derived observable X/velocity/local linear-FK error, fixed original-FK geometric direction. It enters the native Gaussian before sampling/log-probability. All original leg/arm MLP parameters remain trainable. No inference IK, BC, external leg policy, extra privileged actor inputs, reward/LR/entropy/sampler/PD changes. The training distribution is original dynamic X +/-20mm only (.30), fixed27anchors (.70), with original A+ base-command sampling.
 
-2026-10-31实际执行：P1已完成，严格冷启动前缀逐项相等。三个物理对照均32/32安全产生至少8mm有效X响应，原27项总奖励均提高；请求目标的X幅度约3.3mm，经真实DelayedPD后仍约3.3mm。P2选择零初始化的Gaussian均值协同头，保持原210D观测、27项奖励、Uniform、LR/熵/执行器和原评测器。此时仅在集成smoke阶段，尚无新增策略收益或baseline PASS。失败启动及未配对诊断完整留账。证据见evidence/P1_CAUSAL_SUMMARY.json；后续运行状态以YangLab独立账本为准。
+The true native control and treatment use the same CP1800, trainingseed21 and2/100/200 physical-reset boundaries; the old Stage2 uninterrupted200 is diagnostic only. Zero-output means/targets, Gaussian log-probability, full JIT and full native Adam/RNG resume have executed. At100 new updates, original20s X tests were:
+
+| Development physics seed | Frozen parent gain / amp | Matched native100 | Synergy100 |
+|---|---|---|---|
+|6181031|.109 /3.64mm|.114 /2.99mm|.229 /4.94mm|
+|6281031|.083 /3.35mm|.084 /2.61mm|.210 /4.57mm|
+
+This is real partial learning, not baseline PASS. Seed21's A test had one actual FL_hip event at7.16s:1.047mrad hard-limit excess, with a valid requested target and saturated return torque. Neither frozen parent nor matched control had that hard event. The branch was stopped; its checkpoint is preserved as an unsafe diagnostic, never the next initialization. The preregistered independent continuationseed22 started from common CP1800 with the same mechanism and paired native control. These are shared-parent continuation seeds, not full from-scratch seeds.
+
+Evidence: `evidence/DEVELOPMENT100_ALL_PROTOCOLS.json`, `evidence/SEED21_FL_HIP_COUPLING.json`, and `evidence/CPU_POLICY_SENSITIVITY_1900.json`. The CPU counterfactual/Jacobian projection is separate from real physical scores. Figures: `evidence/figures/P1_PHYSICS-v1.svg` (amplitude follows original after1s metric; safety covers all20s) and `evidence/figures/LEARNING-24rows.svg`.
+
+Formal511031/521031/531031 seeds remain unopened until frozen development selection. Original gates, including continuous saved-node stability, remain unchanged. Large weights and full trajectories stay on YangLab. The current result is not a qualified Uniform baseline for SGS.

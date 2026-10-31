@@ -1,0 +1,62 @@
+{
+  "schema": "original210_arm_synergy_mean_v1",
+  "arm_basis_raw_action": [
+    0.0155344873474675,
+    0.25765162908324885,
+    -0.3060943218422699,
+    0.022709972107836318,
+    0.0494936346914944,
+    -0.013876660931753826
+  ],
+  "observed_arm_q_reference": [
+    -0.04710909724235535,
+    1.5699055194854736,
+    -0.7696000933647156,
+    -0.1188892126083374,
+    -0.4412599205970764,
+    0.08760293573141098
+  ],
+  "local_FK_Jx": [
+    0.010250177662207705,
+    0.07501159695610937,
+    -0.20711203448930957,
+    0.0028925178086058874,
+    -0.05955509573274397,
+    0.0
+  ],
+  "local_FK_x_reference": 0.4548373412429354,
+  "basis_measured_actual_q": [
+    -0.047093261033296585,
+    1.5698848962783813,
+    -0.7695626020431519,
+    -0.11876356601715088,
+    -0.44127678871154785,
+    0.08757662028074265
+  ],
+  "basis_predicted_position_delta_m": [
+    0.019999999999999997,
+    -3.2526065174565133e-19,
+    1.6046192152785466e-17
+  ],
+  "basis_predicted_orientation_delta_rad": [
+    4.7704895589362195e-18,
+    -6.245004513516506e-17,
+    -1.3444106938820255e-17
+  ],
+  "origin": "Original FK at actual safe P1 locomotion states; fixed six-joint geometric direction, no inference IK or teacher supervision",
+  "P1_evidence_sha256": "9fd585619553aa45a1e0db5e31ba61d12a555b58365c70a2d4f1208b6c3d298e",
+  "observation_ABI": "unchanged210, term-major3x70: newest q_rel arm66:72, oldest targetX189, newest203",
+  "feature_ABI": "original128latent + centered observable targetX/.02 + finite-difference observable targetXrate/.02 + locally linearized observable q-to-X error/.02",
+  "residual": "zero131->1 head, tanh times fixed18D basis (zero legs), added before native Gaussian update/sample/logprob; original18D MLP fully trainable",
+  "unchanged": [
+    "reward27",
+    "Uniform.3/.7",
+    "learning_rate",
+    "entropy.005",
+    "nativeGAE_PPO",
+    "18Dphysics",
+    "PD_DR",
+    "safety",
+    "formal_evaluator"
+  ]
+}
