@@ -1,0 +1,22 @@
+{
+  "stage3b_formal_seeds": [
+    611101,
+    621101,
+    631101
+  ],
+  "checked_configuration_count": 184,
+  "checked_configuration_digest": "526f1e86dcd5d6109c5ca7036260cb0b5060c8a69e3d61a7589992cc50c2565a",
+  "checked_roots": [
+    "/data/go2_piper_wbc_stage2_20261031",
+    "/data/go2_piper_wbc_stage3_dynamic_x_20261031"
+  ],
+  "unused_in_checked_original_PPO_experiments": true,
+  "original_Stage3_final_seeds_not_reused": [
+    511031,
+    521031,
+    531031
+  ],
+  "GPU_evaluation_not_opened": true,
+  "selection_must_freeze_before_first_use": true,
+  "scope": "Accessible pinned original PPO Stage2/Stage3 starts only; offline original primary-host latest history remains unverified. Preregistration is not a physical evaluation or a new GPU grant."
+}

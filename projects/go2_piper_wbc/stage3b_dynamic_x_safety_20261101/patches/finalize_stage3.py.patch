@@ -1,0 +1,74 @@
+--- finalize_stage3.py
++++ finalize_stage3.py
+@@ -2,37 +2,14 @@
+ import argparse,fcntl,hashlib,json,os,pathlib,time,traceback
+ from gpu_budget import Budget,read,write,read_state
+ from stage3_pipeline import evaluate,wait,report
+-FINAL_SEEDS=(511031,521031,531031)
++FINAL_SEEDS=(611101,621101,631101)
+ 
+ def selection(b):
+-    curve=report(b,'before_final');groups={}
+-    for r in curve['rows']:
+-        if r['label'].startswith(('final-','frozen1800-','nativeControl')):continue
+-        groups.setdefault(r['checkpoint_sha256'],[]).append(r)
+-    options=[]
+-    for sha,rows in groups.items():
+-        if len(rows)!=8 or any({r['protocol'] for r in rows if r['seed']==seed}!={'A','T0','T1','X'} for seed in (6181031,6281031)):continue
+-        xs=[r for r in rows if r['protocol']=='X'];safe=all(r['nonfoot']==0 and r['joint_limit']==0 and r['strict_safe']/r['n']>=.95 and r['complete']/r['n']>=.95 for r in rows)
+-        options.append(dict(checkpoint=rows[0]['checkpoint'],checkpoint_sha256=sha,actor_recipe=read(pathlib.Path(rows[0]['run'])/'config.json').get('actor_recipe'),
+-            min_X_gain=min(r['X_after1s']['synchronous_gain'] for r in xs),safe=safe,registered_retention=all(all(r.get('retention_checks',{}).values()) for r in rows),labels=[r['label'] for r in rows]))
+-    acceptable=[r for r in options if r['safe']]
+-    parent=read(b.p/'CHECKPOINTS.json')['parent']
+-    chosen=max(acceptable,key=lambda r:r['min_X_gain']) if acceptable else dict(parent,reason='No new safe full-matrix candidate; keep immutable parent')
+-    # Freeze the adjacent node on this exact recipe/seed lineage, including
+-    # the matched native control. Never combine capabilities across branches.
+-    import re
+-    match=re.match(r'^(synergy|matchedNative)([0-9]+)-seed([0-9]+)-',chosen.get('labels',[''])[0])
+-    earlier=[]
+-    if match:
+-        branch,count,seed=match.group(1),int(match.group(2)),match.group(3)
+-        for option in options:
+-            other=re.match(r'^(synergy|matchedNative)([0-9]+)-seed([0-9]+)-',option['labels'][0])
+-            if other and other.group(1)==branch and other.group(3)==seed and int(other.group(2))<count:earlier.append((int(other.group(2)),option))
+-    previous=max(earlier,key=lambda item:item[0])[1] if earlier else None
+-    adjacent=None if previous is None else dict(checkpoint={k:v for k,v in previous.items() if k in ('checkpoint','checkpoint_sha256','actor_recipe') and v is not None},labels=previous['labels'],frozen_before_final_seeds=True)
+-    return dict(candidate=chosen,adjacent=adjacent,all_development_candidates=options,used_final_seeds=False,rule='Before formal seeds: best worst-development-seed X gain among full8 native20s matrices, no actual nonfoot or hard-limit event, strict and completion>=.95. Original retention gates remain mandatory formal gates; selection is not PASS.')
++    from stage3b_selection import selection as select
++    return select(b)
+ 
+ def main(b):
++    assert not (b.p/'COMPLETED.json').exists(),'Closed study is read-only'
+     write(b.p/'FINALIZER_PROCESS.json',dict(pid=os.getpid()))
+     while True:
+         clock=b.meter()
+@@ -94,7 +71,7 @@
+             c.update(user_zero_actual_hard_events=r['joint_limit']==0,user_zero_actual_nonfoot_events=r['nonfoot']==0)
+             adjacent_checks.append(dict(protocol=r['protocol'],seed=r['seed'],checks=c,passed=all(c.values())))
+     write(b.p/'CONSECUTIVE_NODE_FINAL.json',dict(adjacent=adjacent,checks=adjacent_checks,passed=len(adjacent_checks)==12 and all(c['passed'] for c in adjacent_checks),selection_not_changed_after_final_seeds=True))
+-    if b.p/'runs' in pathlib.Path(candidate['checkpoint']).parents:
++    if any(root/'runs' in pathlib.Path(candidate['checkpoint']).parents for root in (b.p,pathlib.Path(b.a['prior_closed_stage3_root']))):
+         run_parent=pathlib.Path(candidate['checkpoint']).parents[2];cfg=dict(read(run_parent/'config.json'),**candidate,resume=True,updates=0,phase='P4')
+         receipt=b.p/'FINAL_RESTORE_RUN.json'
+         if receipt.exists():run=pathlib.Path(read(receipt)['run'])
+@@ -121,15 +98,17 @@
+         if s.exists():
+             s=read(s);row.update(evaluation_episodes=s['num_episodes'],evaluation_requested_steps=s['requested_steps'])
+             if j['mode']=='probe':
+-                row['diagnostic_requested_transition_slots']=s['num_episodes']*s['requested_steps'];totals['probe_transition_slots']+=row['diagnostic_requested_transition_slots']
++                row['diagnostic_requested_transition_slots']=s['num_episodes']*s['requested_steps']
++                control_steps=read(run/'evaluation/component_result.json')['complete_control_steps'] if (run/'evaluation/component_result.json').exists() else s['requested_steps']
++                row['actual_diagnostic_transition_slots']=s['num_episodes']*control_steps;totals['probe_transition_slots']+=row['actual_diagnostic_transition_slots']
+             else:row['actual_transition_slots']=actual_slots[str(run)];totals['eval_transition_slots']+=row['actual_transition_slots']
+         elif j['mode'] in ('eval','probe'):
+             unmeasured_partial.append(dict(run=str(run),mode=j['mode'],GPU_cost_included=True,partial_transition_count='Not recorded reliably by failed native evaluator; not silently counted as zero'))
+         resources.append(row)
+     clock=b.meter();assert not clock['active'] and clock['GPU_container_SUM_seconds']<=b.cap
+     finalpass=len(checks)==12 and all(c['passed'] for c in checks) and len(adjacent_checks)==12 and all(c['passed'] for c in adjacent_checks)
+-    write(b.p/'RESOURCES_FINAL.json',dict(clock=clock,totals=totals,jobs=resources,unmeasured_partial_evaluations=unmeasured_partial,update_counters_not_caps=True,old_Stage2_pretraining_and_control_cost_not_recharged=True))
+-    write(b.p/'COMPLETED.json',dict(state='Stage3 original PPO Uniform bounded experiment closed',clock=clock,selected=candidate,original_baseline_PASS=finalpass,primary_checks_passed=all(c['passed'] for c in checks),consecutive_nodes_passed=len(adjacent_checks)==12 and all(c['passed'] for c in adjacent_checks),SuperMimic_used=False,SGS_ready=finalpass))
++    write(b.p/'RESOURCES_FINAL.json',dict(clock=clock,totals=totals,jobs=resources,unmeasured_partial_evaluations=unmeasured_partial,update_counters_not_caps=True,old_Stage2_and_Stage3_pretraining_and_control_cost_not_recharged=True))
++    write(b.p/'COMPLETED.json',dict(state='Stage3b original PPO Uniform dynamicX/safety experiment closed',clock=clock,selected=candidate,original_baseline_PASS=finalpass,primary_checks_passed=all(c['passed'] for c in checks),consecutive_nodes_passed=len(adjacent_checks)==12 and all(c['passed'] for c in adjacent_checks),SuperMimic_used=False,SGS_ready=finalpass))
+ 
+ if __name__=='__main__':
+     a=argparse.ArgumentParser();a.add_argument('--root',required=True);v=a.parse_args();b=Budget(v.root)

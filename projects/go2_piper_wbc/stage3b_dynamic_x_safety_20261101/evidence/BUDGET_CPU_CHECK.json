@@ -1,0 +1,16 @@
+{
+  "CPU_fixture_only": true,
+  "no_actual_GPU_or_closed_history_touched": true,
+  "independent28800_cap": true,
+  "combined50400_rejected": true,
+  "cloned_directory_rejected": true,
+  "closed_old_ledger_mutation_rejected": true,
+  "required_full_closure_and_restore": true,
+  "finished_container_SUM": true,
+  "paused_container_SUM": true,
+  "batched_Docker_state_read_validated": true,
+  "elastic_phases_no_hidden_count_caps": true,
+  "new_directory_cannot_precede_old_completion": true,
+  "source_sha256": "1a204585be7e923bbbc2ffe3dd692f5ce9ca8e2d685e73fd7b838bc3d97d4604",
+  "test_sha256": "90a287324521c386b7b7e746f896404bfc16ac9e071ffdb452d28020bba4ed6d"
+}

@@ -1,0 +1,30 @@
+--- native_gradient_audit.py
++++ native_gradient_audit.py
+@@ -3,7 +3,8 @@
+ import torch
+ 
+ class NativeGradientAudit:
+-    def __init__(self,alg,out,manager):
++    def __init__(self,alg,out,manager,objective_extension=None):
++        self.objective_extension=objective_extension
+         self.alg,self.out=alg,pathlib.Path(out);self.sample=None;self.rows=[];self.minibatches=[];self.rollout={}
+         self.output=[(n,p) for n,p in alg.actor.named_parameters() if p.ndim==2 and p.shape[0]==18][-1]
+         offset=0;self.command_slice=None
+@@ -41,7 +42,7 @@
+         name,p=self.output;g=p.grad
+         assert g is not None and torch.isfinite(g).all()
+         self.minibatches.append(dict(native_total_actor_mean_output_gradient_per_action_l2=g.detach().square().sum(-1).sqrt().cpu().tolist(),output_parameter=name,
+-            measurement='Native total-loss backward and native gradient clipping, immediately before native Adam.step; no per-reward PPO gradient attribution.'))
++            measurement=('Native PPO plus declared fixed leg KL' if self.objective_extension else 'Native total-loss')+' backward and native gradient clipping, immediately before native Adam.step; no per-reward PPO gradient attribution.'))
+ 
+     def after_update(self,update,loss,KL):
+         after=self.mean();delta=after-self.before_mean
+@@ -50,7 +51,7 @@
+             same_actual_observation_mean_action_delta_per_action_rms=delta.square().mean(0).sqrt().cpu().tolist(),
+             position_only_newest_target_X_sensitivity_before_mean=self.before_sensitivity.mean(0).cpu().tolist(),
+             position_only_newest_target_X_sensitivity_after_mean=sensitivity.mean(0).cpu().tolist(),
+-            native_minibatch_gradients=self.minibatches,advantage_replacement=False,optimizer_or_objective_reimplemented=False)
++            native_minibatch_gradients=self.minibatches,advantage_replacement=False,optimizer_or_objective_reimplemented=bool(self.objective_extension),original_native_PPO_core_reimplemented=False,declared_objective_extension=self.objective_extension)
+         self.rows.append(row)
+         with (self.out/'native_gradient_audit.jsonl').open('a') as f:f.write(json.dumps(row)+'\n')
+         self.sample=None

@@ -1,0 +1,118 @@
+{
+  "zero_initialization": {
+    "actual": {
+      "mean_max_error": 0.0,
+      "target_delta_max_error": 0.0,
+      "native_logprob_max_error": 0.0,
+      "full_mean_JIT_equal": true
+    },
+    "synthetic": {
+      "mean_max_error": 0.0,
+      "target_delta_max_error": 0.0,
+      "native_logprob_max_error": 0.0,
+      "full_mean_JIT_equal": true
+    }
+  },
+  "complete_learner_restore": {
+    "actor_bitwise_equal": true,
+    "critic_bitwise_equal": true,
+    "distribution_in_actor_state": true,
+    "adam_bitwise_equal": true,
+    "adam_step_min": 36000.0,
+    "adam_step_max": 36000.0,
+    "learning_rate": 6.584362139917695e-05,
+    "next_zero_based_runner_iteration": 1800,
+    "first_new_completed_update": 1801,
+    "cpu_rng_sha256": "731464c63535979cbdb2f2a2fda9d5d713dd1b281a84e7455b34e759d040190b",
+    "cuda_rng_sha256": [
+      "f4f909715266d1ed7ab1c7f8ee05a09b219c2bba12e7bcba568cc28b5c8b025a"
+    ],
+    "saved_rng_replay_passed": true,
+    "rng_restored_after_probe": true,
+    "limitation": "All saved Torch/Python/NumPy RNG restored. No PhysX/environment/history snapshot exists; environment reset is explicit.",
+    "python_numpy_rng_sha256": {
+      "python": "34a5a47d887bf526b6a8e077c1349c3f3d19a1acca3778e941fe0e764aeadfc1",
+      "numpy": "0a92d4d69ba9f0866e6eb369708c288f3ffed84c442803871cd924c77a2b25f4"
+    },
+    "python_numpy_replay_passed": true,
+    "method": "B0: Vanilla WBC + Uniform",
+    "all_rng_streams": {
+      "torch_cpu_equal": true,
+      "torch_cuda_equal": true,
+      "python_equal": true,
+      "numpy_equal": true,
+      "python_numpy_replay": true,
+      "restored_after_probe": true
+    },
+    "loaded_checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+    "new_container_process": true,
+    "environment_reset_required": true,
+    "physx_state_restored": false
+  },
+  "smoke_completed_updates": 2,
+  "smoke_Adam_calls": 40,
+  "first_rollout_native27_physics_and_reward_cohorts_match_unconstrained_control": true,
+  "first_rollout_max_rate_error": 0.0,
+  "matched_fields": 94,
+  "constraint_contract": {
+    "schema": "original210_fixed_leg_gaussian_KL_v1",
+    "weight": 0.01,
+    "anchor_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+    "anchor_actor_sha256": "a8e5c8baf83de2e91e0019ec3ff0a9ca5fb4aaa94f36ee47ef29d2481e045358",
+    "native_update_sha256": "43051e2256a8111bc487aa7d802c2242c7179680a5ec4391467c0e72857e9925",
+    "patched_update_sha256": "c31d2a4d99cd8b751af1fd487805c2bcc9e6baa7ec3b324d7c4c45514813f571",
+    "injection": "one additive declared loss before native total-loss backward",
+    "original_GAE_surrogate_rewards_logprob_and_KL_scheduler_unchanged": true,
+    "all18D_actor_parameters_trainable": true,
+    "inference_external_controller": false
+  },
+  "physical_learning_not_yet_claimed": true,
+  "verified_first_smoke_update_example": {
+    "completed_updates": 1801,
+    "finite": true,
+    "KL": 0.008001071400940418,
+    "losses": {
+      "value": 0.146958439797163,
+      "surrogate": -0.003089906173408963,
+      "entropy": -4.725318503379822,
+      "fixed_leg_KL": 0.00546038324246183,
+      "fixed_leg_KL_weighted": 5.460383126774104e-05
+    },
+    "fixed_leg_retention": {
+      "leg_KL": 0.00546038324246183,
+      "weighted_loss": 5.460383126774104e-05,
+      "leg_mean_shift_RMS": 0.005229437863454223,
+      "arm_mean_shift_RMS": 0.007281160913407803
+    },
+    "synergy_head": {
+      "parameter_l2": 0.0017483773408457637,
+      "gradient_l2": 0.026770420372486115,
+      "Adam_steps": [
+        20,
+        20
+      ],
+      "all_original_leg_arm_parameters_trainable": true,
+      "residual_in_Gaussian_mean": true
+    }
+  },
+  "first_update_output_weight_change_L2_all18": [
+    0.0009787891758605838,
+    0.0010965494439005852,
+    0.0009419085108675063,
+    0.0009401609422639012,
+    0.001101819914765656,
+    0.0010310300858691335,
+    0.0009168301476165652,
+    0.0009205872775055468,
+    0.0010923569789156318,
+    0.0009533963748253882,
+    0.0010767861967906356,
+    0.001268712687306106,
+    0.0008065614965744317,
+    0.0012800096301361918,
+    0.0010775401024147868,
+    0.001734602847136557,
+    0.0012903263559564948,
+    0.0014220807934179902
+  ]
+}

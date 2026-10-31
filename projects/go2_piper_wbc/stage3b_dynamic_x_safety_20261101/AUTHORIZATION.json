@@ -1,0 +1,15 @@
+{
+  "stage": "Stage3b",
+  "approved": true,
+  "approved_GPU_container_SUM_seconds": 28800,
+  "final_reserve_seconds": 3600,
+  "actor_update_cap": null,
+  "Adam_call_cap": null,
+  "training_transition_cap": null,
+  "evaluation_transition_cap": null,
+  "independent_from_closed_Stage3": true,
+  "prior_closed_Stage3_GPU_seconds": 11537.230027675629,
+  "execution_host": "YangLab existing RTX3060 and native PPO Docker",
+  "simulation_only": true,
+  "no_SuperMimic_SGS_M3_or_video_demo": true
+}

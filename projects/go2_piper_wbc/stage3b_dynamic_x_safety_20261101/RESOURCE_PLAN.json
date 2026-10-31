@@ -1,0 +1,15 @@
+{
+  "cap_GPU_container_SUM_seconds": 28800,
+  "reserved_final_seconds": 3600,
+  "elastic_minutes": {
+    "handoff": 20,
+    "safety_causality": 90,
+    "evidence_selected_training": 150,
+    "refinement_and_replication": 160,
+    "formal_close": 60
+  },
+  "counts_accounting_only": true,
+  "no_old_balance_transfer": true,
+  "no_concurrent_GPU": true,
+  "all_failed_start_and_paused_container_time_included": true
+}

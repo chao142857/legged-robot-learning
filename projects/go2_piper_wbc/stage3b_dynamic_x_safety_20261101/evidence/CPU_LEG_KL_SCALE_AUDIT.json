@@ -1,0 +1,33 @@
+{
+  "CPU_only": true,
+  "CUDA_initialized": false,
+  "real_physical_observation_samples": 608,
+  "anchor_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "anchor_std_parameter_key": "distribution.log_std_param",
+  "rows": [
+    {
+      "label": "synergy200-seed22",
+      "checkpoint_sha256": "43376b80485537270b949c0d9ff59395a02e2ceb60ed866b968dc7f942671476",
+      "actual_std_parameter_key": "distribution.log_std_param",
+      "fixed_parent_leg_KL": 3.051753282546997,
+      "unweighted_fixed_leg_KL_actor_gradient_L2": 137.09512329101562,
+      "native_PPO_actor_preclip_gradient_norm_last20_median": 5.9653613567352295,
+      "weight_for_25pct_native_gradient_scale": 0.010878142879073079,
+      "head_direct_leg_KL_gradient_norm": 0.0
+    },
+    {
+      "label": "synergy400-seed22",
+      "checkpoint_sha256": "19834dd18342cb008f9a67a2b760f7163a1fe78a39b462602f3d72ad2427593c",
+      "actual_std_parameter_key": "distribution.log_std_param",
+      "fixed_parent_leg_KL": 9.448542594909668,
+      "unweighted_fixed_leg_KL_actor_gradient_L2": 275.4211730957031,
+      "native_PPO_actor_preclip_gradient_norm_last20_median": 7.242444753646851,
+      "weight_for_25pct_native_gradient_scale": 0.0065739723931194025,
+      "head_direct_leg_KL_gradient_norm": 0.0
+    }
+  ],
+  "scope": "Unweighted fixed-leg Gaussian KL gradients on fixed real P1 observations versus native total-PPO gradient-norm statistics on its different actual rollouts. Scaling heuristic, not an exact decomposition of native PPO gradients. No alternate advantages.",
+  "no_coefficient_activated": true,
+  "no_regularized_training_started": true,
+  "physical_causal_validation_still_required": true
+}

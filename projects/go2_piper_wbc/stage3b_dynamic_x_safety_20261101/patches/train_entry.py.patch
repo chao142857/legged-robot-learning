@@ -1,0 +1,71 @@
+--- train_entry.py
++++ train_entry.py
+@@ -97,7 +97,8 @@
+     source=Path(CONFIG['native_source'])
+     spec=json.loads((source/'recipe_b0/spec.json').read_text());original_cp=Path(spec['parent_checkpoint'])
+     assert sha(original_cp)==CP1800_SHA==spec['parent_sha256']
+-    training_seed=int(CONFIG.get('training_seed',21));assert training_seed in (21,22)
++    training_seed=int(CONFIG.get('training_seed',21));assert training_seed in (21,22,23)
++    leg_cfg=CONFIG.get('leg_retention')
+     recipe=CONFIG.get('actor_recipe')
+     cfg=build_b0(admission=CONFIG['admission'],num_envs=a.num_envs,seed=training_seed)
+     cfg.sim.device='cuda:0';cfg.log_dir=str(OUT)
+@@ -127,6 +128,9 @@
+                   method=spec['method'],root_parent_sha256=CP1800_SHA,num_envs=a.num_envs,seed=training_seed,
+                   env_config_sha256=canonical(cfg),agent_config_sha256=canonical(agent),physics_config_sha256=canonical(cfg.sim))
+     if recipe is not None:identity['actor_recipe']=recipe
++    if leg_cfg is not None:
++        assert recipe is not None and leg_cfg['anchor_sha256']==CP1800_SHA
++        identity['declared_leg_retention_objective']=leg_cfg
+     dump_yaml(str(OUT/'env.yaml'),cfg);dump_yaml(str(OUT/'agent.yaml'),agent)
+     write_json(OUT/'identity.json',identity);write_json(OUT/'contact-buffer-settings.json',plain(cfg.sim.physx))
+     env=RslRlVecEnvWrapper(gym.make('GO2-PIPER-WBC',cfg=cfg),clip_actions=agent.clip_actions)
+@@ -193,6 +197,11 @@
+             # Reuse reset's actual observation: a diagnostic get_observations()
+             # would draw fresh observation noise and potentially change history.
+             write_json(OUT/'zero-mean-attachment.json',validate_zero_attach(original_actor,alg.actor,reset_observations,env.unwrapped.action_manager.get_term('joint_pos')))
++        leg_retention=None
++        if leg_cfg is not None:
++            from leg_retention import LegRetention,load_anchor
++            anchor=load_anchor(alg.actor,'/leg_anchor/checkpoint.pt',leg_cfg['anchor_sha256'])
++            leg_retention=LegRetention(alg,anchor,leg_cfg,OUT)
+         reset_control_steps=physical_control_steps
+         physical_rows.clear();dynamic_masks.clear()
+         if a.updates==0:
+@@ -217,7 +226,7 @@
+         original_act=alg.act;original_process=alg.process_env_step;original_returns=alg.compute_returns;original_update=alg.update
+         original_step=alg.optimizer.step;original_kl=alg.actor.get_kl_divergence
+         from native_gradient_audit import NativeGradientAudit
+-        gradient_audit=NativeGradientAudit(alg,OUT,env.unwrapped.observation_manager) if CONFIG.get("gradient_audit",False) else None
++        gradient_audit=NativeGradientAudit(alg,OUT,env.unwrapped.observation_manager,objective_extension=leg_cfg) if CONFIG.get("gradient_audit",False) else None
+ 
+         def observed_act(obs):
+             global rollout_start
+@@ -279,6 +288,9 @@
+                        rng_cpu=torch.get_rng_state(),rng_cuda=torch.cuda.get_rng_state_all(),rng_python=random.getstate(),rng_numpy=np.random.get_state(),
+                        stage2_identity=identity,physx_state_saved=False,environment_state_saved=False,rollout_boundary=True)
+             if recipe is not None:infos['stage3_actor_recipe']=recipe
++            if leg_cfg is not None:infos['stage3b_leg_retention']=leg_cfg
++            infos['research_grant_id']=CONFIG['grant_id']
++            infos['research_phase']='Stage3b original Uniform PPO dynamicX/safety'
+             state=alg.save();state.update(iter=completed-1,infos=infos)
+             temporary=target.with_suffix('.partial');begin=time.perf_counter();torch.save(state,temporary);os.replace(temporary,target)
+             elapsed=time.perf_counter()-begin
+@@ -294,6 +306,9 @@
+             before_step=adam_steps(alg);before_calls=optimizer_calls
+             if gradient_audit is not None:gradient_audit.before_update()
+             torch.cuda.synchronize();start=time.perf_counter();loss=original_update();torch.cuda.synchronize();elapsed=time.perf_counter()-start
++            if leg_retention is not None:
++                retention_summary=leg_retention.update_summary()
++                loss=dict(loss,fixed_leg_KL=retention_summary['leg_KL'],fixed_leg_KL_weighted=retention_summary['weighted_loss'])
+             finite(loss,'losses');finite(alg.actor.state_dict(),'actor');finite(alg.critic.state_dict(),'critic');finite(alg.optimizer.state_dict(),'Adam')
+             assert optimizer_calls-before_calls==20 and adam_steps(alg)==before_step+20
+             assert alg.storage.step==0,'Native PPO did not clear rollout storage'
+@@ -319,6 +334,7 @@
+                     gradient_l2=float(torch.linalg.vector_norm(torch.cat([p.grad.detach().flatten() for p in alg.actor.synergy_head.parameters()]))),
+                     Adam_steps=[int(alg.optimizer.state[p]['step']) for p in alg.actor.synergy_head.parameters()],
+                     all_original_leg_arm_parameters_trainable=all(p.requires_grad for p in alg.actor.mlp.parameters()),residual_in_Gaussian_mean=True)
++            if leg_retention is not None:row['fixed_leg_retention']=retention_summary
+             row['physical_reward_time']['hard_excess_max']=max(float(v['hard_excess_max']) for v in physical_rows)
+             assert len(dynamic_masks)==24 and len(physical_rows)==24
+             cohort={}

@@ -1,0 +1,69 @@
+{
+  "recipe_id": "arm_synergy_fixed_legKL_001",
+  "single_new_factor": "fixed original-CP1800 leg Gaussian KL in native PPO loss",
+  "objective": {
+    "schema": "original210_fixed_leg_gaussian_KL_v1",
+    "weight": 0.01,
+    "anchor_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091"
+  },
+  "common_parent": {
+    "checkpoint": "$CP1800_CHECKPOINT",
+    "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091"
+  },
+  "training_seeds": [
+    22,
+    21
+  ],
+  "all18D_actor_parameters_trainable": true,
+  "original27_rewards_Uniform30_70_LR_entropy_PD_DR_unchanged": true,
+  "first_slices": [
+    2,
+    98,
+    100
+  ],
+  "then_actual_throughput_bounded": true,
+  "model_data_counters_not_caps": true,
+  "final_seeds_unopened": true,
+  "calibration": "CPU_LEG_KL_SCALE_AUDIT:0.01 gives approximately25%-38% of native actor preclip-gradient scale at old200/400 fixed-state probes. Different batches; not exact native PPO gradient attribution.",
+  "physical_support_cells": [
+    {
+      "group": "synergy600-seed22",
+      "protocol": "T1",
+      "seed": 6281031,
+      "before_hard": 0,
+      "before_nonfoot": 1,
+      "after_hard": 0,
+      "after_nonfoot": 0
+    },
+    {
+      "group": "synergy600-seed22",
+      "protocol": "X",
+      "seed": 6281031,
+      "before_hard": 0,
+      "before_nonfoot": 1,
+      "after_hard": 0,
+      "after_nonfoot": 0
+    },
+    {
+      "group": "matchedNative200-seed22",
+      "protocol": "A",
+      "seed": 6181031,
+      "before_hard": 1,
+      "before_nonfoot": 0,
+      "after_hard": 0,
+      "after_nonfoot": 0
+    },
+    {
+      "group": "synergy100-seed21",
+      "protocol": "A",
+      "seed": 6181031,
+      "before_hard": 1,
+      "before_nonfoot": 0,
+      "after_hard": 0,
+      "after_nonfoot": 0
+    }
+  ],
+  "interpretation": "Soft leg-function preservation while allowing actual joint leg/arm coadaptation. Frozen diagnostic composition is never a trained-policy success.",
+  "public_copy_redacts_private_parent_path": true,
+  "complete_runtime_plan_retained_at": "DATA_ROOT/LEG_KL001_PLAN_FROZEN.json"
+}

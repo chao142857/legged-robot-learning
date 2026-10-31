@@ -1,0 +1,31 @@
+{
+  "base_commit": "ded395e",
+  "base_project": "projects/go2_piper_wbc/stage3_dynamic_x_20261031/tools",
+  "transforms": [
+    {
+      "base_file": "train_entry.py",
+      "base_sha256": "cef42d36f28c9cbcddb9688d959a5e1fb0c5fcbee97807ce476f44b41600014c",
+      "patch": "patches/train_entry.py.patch",
+      "patch_sha256": "824bdcce11fc284d5af6a943757d89fb17d3b9dc80f8ce1a40ea6f6501d8e600",
+      "target_file": "train_entry.py",
+      "target_sha256": "d253c0714b2a520dbc771e6b56d54f051159315071ba1b1daa63ff29476b9244"
+    },
+    {
+      "base_file": "native_gradient_audit.py",
+      "base_sha256": "e69a3f1045d150fa9094c12d2f79e7d1b90b4330be63dd058fb8001894e4178f",
+      "patch": "patches/native_gradient_audit.py.patch",
+      "patch_sha256": "94e77689558012451e169bf3fd0a0be94f2e5c51ce18584e6882be1a82dca00f",
+      "target_file": "native_gradient_audit.py",
+      "target_sha256": "28f817ca606562f0075d71106b26e0e8b11993d10a90680c08b2ba8a15e7c00c"
+    },
+    {
+      "base_file": "finalize_stage3.py",
+      "base_sha256": "50503cf3eafde9a8e7809465dea4e44e0a254a79976c81226ff9105c147abfaf",
+      "patch": "patches/finalize_stage3.py.patch",
+      "patch_sha256": "99d67e943a24f0abb9c80964fce34249c2f357f122f1b51950902189bf7cea59",
+      "target_file": "finalize_stage3b.py",
+      "target_sha256": "ff513c592a91581ae140a231550d98e8d8d63b187d0d82810403f9a8c11fada9"
+    }
+  ],
+  "full_runtime_sources_frozen_on_YangLab_not_duplicated_in_Git": true
+}
