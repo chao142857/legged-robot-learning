@@ -1,0 +1,8 @@
+{
+  "before_formal_seeds": true,
+  "prior_selector_sha256": "524b1890cce7344cf9a368c031e6cae1945c1ad6d89b2806696dce50110cc4a9",
+  "new_selector_sha256": "10e9bacb25feb8d2c3b4d6394f426a059df70d9b3703f2d22719e06a576028e2",
+  "rule": "Explicit recipe admission is written only if both planned seeds have two safe passing development nodes; prevents old unreplicated higher single-seed gain outranking a replicated repaired recipe.",
+  "no_actor_optimizer_reward_physics_or_gates_changed": true,
+  "UTC": "2026-10-31T22:16:20.722160+00:00"
+}

@@ -6,7 +6,7 @@ sys.modules['stage3_pipeline'] = types.SimpleNamespace(report=lambda *_: None)
 import stage3b_selection as selector
 
 
-def fixture(entries, hard_labels=()):
+def fixture(entries, hard_labels=(), admitted=None):
     nodes=[]; rows=[]
     for label, experiment, seed, recipe, count, gain, passed in entries:
         cp=dict(checkpoint='/CPU_FIXTURE/'+label+'.pt', checkpoint_sha256=label)
@@ -20,10 +20,11 @@ def fixture(entries, hard_labels=()):
                     seed=dev, checkpoint_sha256=label, joint_limit=int(label in hard_labels),
                     nonfoot=0, strict_safe=64, n=64, complete=64,
                     retention_checks=dict(original_health=True), X_after1s=dict(synchronous_gain=gain)))
-    selector.read=lambda _:nodes
+    selector.read=lambda path:dict(recipe_ids=admitted) if path.name=='FINAL_RECIPE_ADMISSION.json' else nodes
     selector.report=lambda *_:dict(rows=rows)
     with tempfile.TemporaryDirectory(prefix='CPU-only-selection-fixture-') as tmp:
         root=pathlib.Path(tmp); (root/'CANDIDATE_NODES.json').touch()
+        if admitted is not None:(root/'FINAL_RECIPE_ADMISSION.json').touch()
         return selector.selection(types.SimpleNamespace(p=root))
 
 
@@ -45,4 +46,10 @@ for changed in [('different_seed',42,'recipe'),('different_recipe',41,'other')]:
     selected=fixture([qualified[0],('A200','A',seed,recipe,200,.9,True)])
     assert not selected['candidate']['consecutive_development_pass']
     assert selected['adjacent'] is None
-print('CPU selection contract PASS: consecutive gates, actual hard-event exclusion, same seed/recipe; no GPU or real-study writes')
+
+# Replicated repaired-recipe admission must override a higher single-seed gain
+# from a recipe whose other continuation failed. No gate is weakened.
+selected=fixture(qualified+[
+    ('B100','B',42,'repaired',100,.35,True),('B200','B',42,'repaired',200,.45,True)],admitted=['repaired'])
+assert selected['candidate']['labels']==['B200'] and selected['adjacent']['labels']==['B100']
+print('CPU selection contract PASS: consecutive gates, actual hard exclusion, same seed/recipe and explicit recipe admission; no GPU or real-study writes')

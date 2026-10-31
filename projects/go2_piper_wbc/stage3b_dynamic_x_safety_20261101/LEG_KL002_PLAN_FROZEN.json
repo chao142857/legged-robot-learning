@@ -1,0 +1,43 @@
+{
+  "version": "legKL002_coefficient_only_control_v1",
+  "label_prefix": "legKL002",
+  "recipe_id": "arm_synergy_fixed_legKL_002",
+  "single_changed_training_factor": "fixed_leg_Gaussian_KL_weight_0.01_to_0.02",
+  "common_parent_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "training_seeds": [
+    21,
+    22
+  ],
+  "leg_retention": {
+    "schema": "original210_fixed_leg_gaussian_KL_v1",
+    "weight": 0.02,
+    "anchor_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091"
+  },
+  "hypothesis": "Rare-state leg-function drift remains under0.01; same frozen400arm plus safe200legs removes actual RL_calf strike. Test stronger same fixed leg distribution penalty while all18D remain trainable.",
+  "causal_admission": "REPAIR1_LEG_FUNCTION_CAUSAL_COMPARISON: equal realized state/DR and first49controls; current63/64vs leg-function-only64/64; no frozen-composition success claim.",
+  "coefficient_scale": "Exactly2x existing penalty/gradient at the same parameters/batch; prior0.01calibration was about25%-38% of observed native preclip scale, so0.02is a bounded next test, not an exact new PPO-gradient decomposition.",
+  "unchanged": [
+    "common_CP1800_actor_critic_Adam_normalization",
+    "zero_synergy_head",
+    "reward27",
+    "Uniform30_70",
+    "210D_actor_102D_critic",
+    "network_LR_rule_entropy",
+    "PD_DR_limits_startup",
+    "original20s_A_T0_T1_X_gates",
+    "fixed_anchor"
+  ],
+  "same_window_cuts": [
+    2,
+    100,
+    200,
+    400,
+    600
+  ],
+  "counts_accounting_only": true,
+  "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800",
+  "GPU_SUM_cap_not_reset": 28800,
+  "final_reserve_seconds": 3600,
+  "final_recipe_admission": "Only after both continuation seeds have two safe full-original-gate development nodes. Formal selector then restricts to this replicated recipe; original final and adjacent gates remain unchanged.",
+  "no_inference_IK_or_external_policy": true
+}

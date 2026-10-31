@@ -817,9 +817,14 @@
       "sha256": "5045f64ea03a9d489a6bf8fe0d48202f7d0ab16299cca947c2a6895cad241c23"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/LEG_KL002_PLAN_FROZEN.json",
+      "bytes": 1975,
+      "sha256": "1ca9cba7f4ba0a663a01bcc8b48a0f2fc4238b4fb74a98da0fdeee5c9d5927d6"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/README.md",
-      "bytes": 13890,
-      "sha256": "7783b52e00eccbdea3b875b7ad5772cbb7dae3205f708568580ed238f34d532d"
+      "bytes": 15588,
+      "sha256": "46a2c340e009250c8fb566c1f56fc3b5bb001b9d0bdd0801dc168feb17243bcc"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/RESOURCE_PLAN.json",
@@ -862,6 +867,11 @@
       "sha256": "e78bc832bfe32a882e206022322a33cc5363f0ad0d04bf605ba61b013ad2180f"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT400_SEED21.json",
+      "bytes": 119617,
+      "sha256": "20b875a068ba75dee24d6bbfe47fe67aa62538282aab5811aa74a13f07f0c55c"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT400_SEED22.json",
       "bytes": 119438,
       "sha256": "1db935a838aed55edb2c6988915e3fe45b8cc40e18770b932d29fef6010a7284"
@@ -878,8 +888,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FUNCTION_AND_LEG_MARGIN_AUDIT.json",
-      "bytes": 61951,
-      "sha256": "526c9db86cacc9f2bbcba0c46f7dba1475bbd4eda03b845c4c932ff15144a443"
+      "bytes": 66275,
+      "sha256": "59c3935707908b26d2f95e94dfd77058b6447c9b1a9c36d82697bb2dcfa062b5"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/GPU_INITIALIZATION_AND_NATIVE_PPO.json",
@@ -892,6 +902,11 @@
       "sha256": "7bc56f47c7540ce90cb2624f7c8fa54336464a8fe03ecc459b8bf8b462237e4e"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/LEG_KL002_INITIALIZATION_AND_ROLLOUT_MATCH.json",
+      "bytes": 2266,
+      "sha256": "bfde1aa2b66cbbc86a75efee03afa432b59d2e65ef0780380fbf4408225c342c"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/ORIGINAL_TASK_SOURCE_RECHECK.json",
       "bytes": 8468,
       "sha256": "a27fb3d6e18a536e8a055d3e85cbbd68412559468c5f3f60bffefd8fae69d09f"
@@ -902,9 +917,24 @@
       "sha256": "c3f473c268bb89503a4da7cd16cf7588d031b80b8c2816874217e6582ef13f15"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/REPAIR1_CONTACT_FULL_LINK_ANALYSIS.json",
+      "bytes": 4364,
+      "sha256": "1f0e8ccb7cd520cfee63ff080791f5a70428c1a6fe3b79497475461186489324"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/REPAIR1_LEG_FUNCTION_CAUSAL_COMPARISON.json",
+      "bytes": 1211,
+      "sha256": "2bcb42637878bcb1cb4d95ea8361d7b50f07035375b92b210ead6e47eedf2166"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/SEED22_MATCHED_EXPOSURE_AND_TRAIN_COST.json",
       "bytes": 2240,
       "sha256": "c2d1bb54e6ed48e7785a9f8314742387fe45d13cdd923f6a40bc13fd79611032"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/SELECTION_RECIPE_ADMISSION_PREREGISTRATION.json",
+      "bytes": 538,
+      "sha256": "00ca918a2b6e593de7ad7a8fdd097a44ea8607a9fa5aca09521ac79a8b520605"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/SELECTION_RULE_CLARIFICATION_V2.json",
@@ -913,13 +943,13 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.json",
-      "bytes": 4929,
-      "sha256": "3339b0a9b756b50223756d828903f7a70e55b89a367e915f6e0fca708d00baea"
+      "bytes": 5254,
+      "sha256": "b1ad887c720d61fb1a9c07a6501dba7ab4d3717b32bbb5bc88ddfe225aef9e14"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.svg",
-      "bytes": 238803,
-      "sha256": "ef97ca6acb05a98c97d5c72a378c799591b9822c272cfc6a91d5c8247ddf9b78"
+      "bytes": 246605,
+      "sha256": "eb1923d115f7047c1e20684c9931b6ab27d6a8eb1162dd277fc1c637518fab9e"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/patches/finalize_stage3.py.patch",
@@ -1007,9 +1037,14 @@
       "sha256": "e7d9df4bce735e1be0aa63b19de8a3fb84180b46a4014c55547f63985c46fec1"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/run_leg_kl_variant.py",
+      "bytes": 7474,
+      "sha256": "87f3b4fd2907118464e621af84fc06d243d8c93aeeab5a53e38f9a6018a7d3f1"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/stage3b_selection.py",
-      "bytes": 4048,
-      "sha256": "524b1890cce7344cf9a368c031e6cae1945c1ad6d89b2806696dce50110cc4a9"
+      "bytes": 4387,
+      "sha256": "10e9bacb25feb8d2c3b4d6394f426a059df70d9b3703f2d22719e06a576028e2"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/test_budget_cpu.py",
@@ -1018,8 +1053,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/test_selection_cpu.py",
-      "bytes": 2792,
-      "sha256": "0ae06442773f44d3e73353263c9b10b95a17d97eac806943ced9ca0fd5bf4424"
+      "bytes": 3367,
+      "sha256": "a1239ebaccccb9f55d6760e23c7ee9daba7d3ccc045e18fa71cfab87c85f6867"
     },
     {
       "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/__init__.py",

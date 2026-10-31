@@ -1,0 +1,41 @@
+{
+  "actual_initial_state_DR_and_actuators_equal": true,
+  "actual_prefix_first49controls_equal": {
+    "diag_actor_obs": true,
+    "component_current_mean": true,
+    "control_processed_target": true,
+    "control_joint_position": true,
+    "control_joint_velocity": true,
+    "ee_cmd": true,
+    "base_cmd": true,
+    "kin_link0_pos": true,
+    "kin_link0_quat": true,
+    "component_contacts_history_w": true
+  },
+  "current400": {
+    "strict": 63,
+    "complete": 63,
+    "hard": 0,
+    "nonfoot": 1,
+    "EE_after1s_m": 0.02978029102087021
+  },
+  "only_safe200_leg_function": {
+    "strict": 64,
+    "complete": 64,
+    "hard": 0,
+    "nonfoot": 0,
+    "EE_after1s_m": 0.029466750100255013
+  },
+  "weights_frozen": {
+    "complete_control_steps": 1000,
+    "mode": "parent_legs",
+    "parent_unchanged": true,
+    "current_unchanged": true,
+    "native_strict_safe": 64,
+    "native_complete": 64,
+    "diagnostic_only": true,
+    "trained_policy_success": false
+  },
+  "scope": "Same actual cold realization and physical/observable prefix; only12leg function replaced after1s/250ms blend,400arm function retained. Not hidden PhysX recovery, not learned policy success.",
+  "hypothesis_supported": true
+}
