@@ -823,8 +823,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/README.md",
-      "bytes": 18693,
-      "sha256": "be631bc572ef02f3560a08fe0b6a7cb413fc5ed98f93f84d1fc1a28762f5404b"
+      "bytes": 19758,
+      "sha256": "3352243471c4419611beecb1783e6141611abadb1d86f6075b9196e8c81082fb"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/RESOURCE_PLAN.json",
@@ -892,9 +892,19 @@
       "sha256": "f13e95adcf3e3bf785aa1859f2d494ea555a62cf511ac78956bb77e26ac87885"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT_LEGKL002_N100_SEED22.json",
+      "bytes": 122695,
+      "sha256": "dd543ee6ab1cb07599e1b1f231292b27136a45880e880b40c1d7c33a79567cab"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT_LEGKL002_N200_SEED21.json",
       "bytes": 122704,
       "sha256": "9dd0ddb57b0c392deb2a85d68505ccae4f10439d53fe810e72f2e92927f4095f"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT_LEGKL002_N200_SEED22.json",
+      "bytes": 122642,
+      "sha256": "3e7f68fd1e264c034ccb179870ed533b7070388496f7d26fbfe35a615d792e3f"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT_LEGKL002_N400_SEED21.json",
@@ -913,8 +923,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FUNCTION_AND_LEG_MARGIN_AUDIT.json",
-      "bytes": 83613,
-      "sha256": "bd69c47caa6db2f07581ad19c1e294dd6a240fae6b2cbf70434b42d59d39cedb"
+      "bytes": 92297,
+      "sha256": "0e7ea78cc50423e7375065e9d9a645c53b45553bfc51c23fafe6fc1b8a56fafd"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/GPU_INITIALIZATION_AND_NATIVE_PPO.json",
@@ -930,6 +940,16 @@
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/LEG_KL002_INITIALIZATION_AND_ROLLOUT_MATCH.json",
       "bytes": 2266,
       "sha256": "bfde1aa2b66cbbc86a75efee03afa432b59d2e65ef0780380fbf4408225c342c"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/LEG_KL002_SEED21_N600_FAILURE_BOUNDARY.json",
+      "bytes": 90289,
+      "sha256": "cb9ad65e457e48efc57d8a9076dfb99e7b46f174f22c6aebd07127dfadad9a9a"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/LEG_KL002_SEED22_INITIALIZATION_AND_ROLLOUT_MATCH.json",
+      "bytes": 2307,
+      "sha256": "de78ae38f8af430480129b21c91507802299636b7788b392954ffcd3db3a310b"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/ORIGINAL_TASK_SOURCE_RECHECK.json",
@@ -978,18 +998,18 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/TRAINING_SIGNAL_COMPARISON.json",
-      "bytes": 21893,
-      "sha256": "e984de267e9acf915a7d65d2c93db4cffce729b75b5b51fc1de0c60c981319ce"
+      "bytes": 28384,
+      "sha256": "f2e60f54844411e9f4877d831843ec4f841516735a2f62cd68cb8564c0d273b0"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.json",
-      "bytes": 6556,
-      "sha256": "e1ac465f161f21862b7162792a8c3ea534da93a39ec0c04e352e2a6e7775ba49"
+      "bytes": 7208,
+      "sha256": "cf2f915d28a7ab9eccf8fb24db5dbec3e11d3b76e1da9f8c31f39c795c99766e"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.svg",
-      "bytes": 265739,
-      "sha256": "b84b8c2ce2ba4d202128e66b80e5affe310e1f9ea4c13a6dd4b30b505aacfcaa"
+      "bytes": 276553,
+      "sha256": "1c2659cac49c02c1e7a02f6d81423cf719658f4675adcccfbe8295d7b176a201"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/patches/finalize_stage3.py.patch",

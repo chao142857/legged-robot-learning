@@ -1,0 +1,60 @@
+{
+  "actual_common_parent_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "seed": 22,
+  "zero_attachment": {
+    "actual": {
+      "mean_max_error": 0.0,
+      "target_delta_max_error": 0.0,
+      "native_logprob_max_error": 0.0,
+      "full_mean_JIT_equal": true
+    },
+    "synthetic": {
+      "mean_max_error": 0.0,
+      "target_delta_max_error": 0.0,
+      "native_logprob_max_error": 0.0,
+      "full_mean_JIT_equal": true
+    }
+  },
+  "complete_actor_critic_Adam_RNG_restore": {
+    "actor_bitwise_equal": true,
+    "critic_bitwise_equal": true,
+    "distribution_in_actor_state": true,
+    "adam_bitwise_equal": true,
+    "adam_step_min": 36000.0,
+    "adam_step_max": 36000.0,
+    "learning_rate": 6.584362139917695e-05,
+    "next_zero_based_runner_iteration": 1800,
+    "first_new_completed_update": 1801,
+    "cpu_rng_sha256": "731464c63535979cbdb2f2a2fda9d5d713dd1b281a84e7455b34e759d040190b",
+    "cuda_rng_sha256": [
+      "f4f909715266d1ed7ab1c7f8ee05a09b219c2bba12e7bcba568cc28b5c8b025a"
+    ],
+    "saved_rng_replay_passed": true,
+    "rng_restored_after_probe": true,
+    "limitation": "All saved Torch/Python/NumPy RNG restored. No PhysX/environment/history snapshot exists; environment reset is explicit.",
+    "python_numpy_rng_sha256": {
+      "python": "34a5a47d887bf526b6a8e077c1349c3f3d19a1acca3778e941fe0e764aeadfc1",
+      "numpy": "0a92d4d69ba9f0866e6eb369708c288f3ffed84c442803871cd924c77a2b25f4"
+    },
+    "python_numpy_replay_passed": true,
+    "method": "B0: Vanilla WBC + Uniform",
+    "all_rng_streams": {
+      "torch_cpu_equal": true,
+      "torch_cuda_equal": true,
+      "python_equal": true,
+      "numpy_equal": true,
+      "python_numpy_replay": true,
+      "restored_after_probe": true
+    },
+    "loaded_checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+    "new_container_process": true,
+    "environment_reset_required": true,
+    "physx_state_restored": false
+  },
+  "first_rollout_original_physics_rewards_and_cohorts_exactly_equal": true,
+  "fields": 94,
+  "maximum_difference": 0.0,
+  "only_changed_objective_coefficient": 0.02,
+  "new_smoke_run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T073733-legKL002-seed22-window-to2",
+  "native_first_completed_update": 1801
+}
