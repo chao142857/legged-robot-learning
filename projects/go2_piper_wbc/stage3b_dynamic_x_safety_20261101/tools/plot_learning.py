@@ -38,7 +38,16 @@ def main(root,out):
                     safety.append(min(r['strict_safe']/r['n'] for r in whole))
                     if step and dev==6181031:
                         hard=sum(r['joint_limit']+r['nonfoot'] for r in whole);retained=all(all(r.get('retention_checks',{}).values()) for r in whole)
-                        points.append(dict(family=family,training_seed=training,additional_updates=step,checkpoint_sha256=x['checkpoint_sha256'],hard_nonfoot_events=hard,original_retention=retained,worst_strict_safe_fraction=safety[-1]))
+                        physical_X=[r for r in whole if r['protocol']=='X']
+                        points.append(dict(family=family,training_seed=training,additional_updates=step,checkpoint_sha256=x['checkpoint_sha256'],
+                            hard_nonfoot_events=hard,original_retention=retained,worst_strict_safe_fraction=safety[-1],
+                            full_matrix_episodes=sum(r['n'] for r in whole),full_matrix_complete=sum(r['complete'] for r in whole),
+                            full_matrix_strict_safe=sum(r['strict_safe'] for r in whole),
+                            worst_seed_X_gain=min(r['X_after1s']['synchronous_gain'] for r in physical_X),
+                            worst_seed_X_amplitude_m=min(r['X_after1s']['actual_fitted_amplitude_m'] for r in physical_X),
+                            worst_seed_X_correlation=min(r['X_after1s']['correlation'] for r in physical_X),
+                            X_by_evaluation_seed={str(r['seed']):{key:r['X_after1s'][key] for key in
+                                ('synchronous_gain','actual_fitted_amplitude_m','correlation','demeaned_rmse_m','absolute_rmse_m')} for r in physical_X}))
                         for col,value in enumerate([x['X_after1s']['synchronous_gain'],x['X_after1s']['actual_fitted_amplitude_m']*1000,x['X_after1s']['correlation'],safety[-1]]):
                             if hard:axes[rowno,col].scatter([step],[value],s=90,facecolors='none',edgecolors='#c33e3e',zorder=5)
                             elif not retained:axes[rowno,col].scatter([step],[value],s=55,marker='^',color='#d49d31',zorder=5)

@@ -1,0 +1,10 @@
+{
+  "reason": "Replicated original full passes and bounded robustness follow-up complete; freeze for unchanged formal acceptance",
+  "clock": {
+    "GPU_container_SUM_seconds": 24520.679535865784,
+    "cap_seconds": 28800,
+    "final_reserve_seconds": 3600,
+    "active": [],
+    "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800"
+  }
+}

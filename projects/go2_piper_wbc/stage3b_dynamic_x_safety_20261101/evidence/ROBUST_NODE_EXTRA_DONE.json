@@ -1,0 +1,35 @@
+{
+  "skipped": true,
+  "reason": "No near-boundary trigger or complete window does not fit final reserve",
+  "base_qualified_pairs": [
+    {
+      "training_seed": 22,
+      "labels": [
+        "steadyKL001-n300-seed22",
+        "steadyKL001-n400-seed22"
+      ],
+      "checkpoint_sha256": [
+        "1945ae66f85879832c456eda2e6b192528869160e67114dc78e87251b98f2be1",
+        "110be5bf7527dc34c43b75dce68caed2da0889dda7013bc0f881c1eacae2a202"
+      ]
+    },
+    {
+      "training_seed": 21,
+      "labels": [
+        "steadyKL001-n400-seed21",
+        "steadyKL001-n500-seed21"
+      ],
+      "checkpoint_sha256": [
+        "046c1202b831b1e172aca2e310c29ea266d9fe1a16899444d82969adcadabe87",
+        "29471d2e1536eef9df96853609a78b49dcf0886e59cef06030851dd0b637e5ef"
+      ]
+    }
+  ],
+  "clock": {
+    "GPU_container_SUM_seconds": 24520.679535865784,
+    "cap_seconds": 28800,
+    "final_reserve_seconds": 3600,
+    "active": [],
+    "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800"
+  }
+}

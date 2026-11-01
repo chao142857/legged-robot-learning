@@ -1,0 +1,7 @@
+{
+  "recipe_ids": [
+    "arm_synergy_legKL02_steady_full_mean_v1"
+  ],
+  "reason": "Both common-parent continuation seeds have consecutive safe full original development nodes",
+  "formal_seeds_unopened": true
+}
