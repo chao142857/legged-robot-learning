@@ -1,0 +1,43 @@
+{
+  "UTC": "2026-11-01T02:10:27.965032+00:00",
+  "previous_CPU_pid": 3533025,
+  "new_CPU_pid": 185272,
+  "actual_native_GPU_unchanged": {
+    "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T100306-steadyKL001-seed21-window-to100",
+    "cid": "ab673aa1f869cb310d0d20f07a4ff3ca6a52073d9dc23e2fe2c586d782e8a496",
+    "purpose": "research",
+    "mode": "train",
+    "phase": "P2",
+    "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800"
+  },
+  "source_changes": {
+    "run_steady_kl_v2.py": {
+      "previous_sha256": null,
+      "current_sha256": "2a242874aa4d581facc4b5d76314f149267206e5af1c78bdec376b64d3f65c22"
+    },
+    "stage3b_selection.py": {
+      "previous_sha256": "10e9bacb25feb8d2c3b4d6394f426a059df70d9b3703f2d22719e06a576028e2",
+      "current_sha256": "5c67e64258620374452370fb1b53cae1e2d9c198513ca9e6efd57edb23d85599"
+    }
+  },
+  "formal_seeds_unopened": true,
+  "GPU_watcher_finalizer_and_collector_unchanged": true,
+  "original_task_optimization_and_all_gates_unchanged": true,
+  "receipt_replay_prevents_duplicate_training": true,
+  "clock": {
+    "GPU_container_SUM_seconds": 20899.091309070587,
+    "cap_seconds": 28800,
+    "final_reserve_seconds": 3600,
+    "active": [
+      {
+        "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T100306-steadyKL001-seed21-window-to100",
+        "cid": "ab673aa1f869cb310d0d20f07a4ff3ca6a52073d9dc23e2fe2c586d782e8a496",
+        "purpose": "research",
+        "mode": "train",
+        "phase": "P2",
+        "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800"
+      }
+    ],
+    "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800"
+  }
+}

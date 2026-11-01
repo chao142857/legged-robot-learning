@@ -1,0 +1,25 @@
+{
+  "version": "development_adjacent_robustness_v1",
+  "training_seed": 22,
+  "extra_updates": 100,
+  "adjacent_amplitude_trigger_m": 0.0085,
+  "condition": "Both continuation seeds first have safe consecutive full original development nodes; seed22 is at400 with prior300 amplitude below8.5mm; at least1300 research seconds remain, preserving final3600.",
+  "observed_seed22_saved300_min_amplitude_m": 0.008006568228661708,
+  "observed_seed22_saved400_min_amplitude_m": 0.009139241968308932,
+  "scope": "One same-recipe native100-update continuation only; all original rewards, network, LR/entropy rules, Uniform sampling, anchor and hardware gates unchanged. Unsafe500 is never resumed; previous qualified nodes retained.",
+  "selection": "Before any final seed, among fully qualified same-lineage current/adjacent pairs rank the weaker node X gain before latest X gain. All original task gates and zero hard/nonfoot requirement remain mandatory; both nodes must separately pass formal.",
+  "coordinator_source_sha256": "2a242874aa4d581facc4b5d76314f149267206e5af1c78bdec376b64d3f65c22",
+  "selector_source_sha256": "5c67e64258620374452370fb1b53cae1e2d9c198513ca9e6efd57edb23d85599",
+  "CPU_tests_passed": [
+    "test_steady_schedule_cpu.py",
+    "test_selection_cpu.py"
+  ],
+  "original_grant_GPU_SUM_seconds": 28800,
+  "final_reserve_seconds": 3600,
+  "formal_seeds": [
+    611101,
+    621101,
+    631101
+  ],
+  "formal_seeds_unopened_must_be_verified_remote": true
+}

@@ -60,4 +60,10 @@ selected=fixture([('N400','N',21,'repaired',400,.47,True),
     ('N500','N',21,'repaired',500,.53,True)],contact_labels=('N600',),admitted=['repaired'])
 assert selected['candidate']['labels']==['N500'] and selected['adjacent']['labels']==['N400']
 assert selected['candidate']['actual_checkpoint_iteration']==2300
+
+# Prefer the stronger weaker-node margin across two qualified lineages, rather
+# than a high latest gain with a barely qualified predecessor. No gates change.
+selected=fixture([('A100','A',21,'same',100,.36,True),('A200','A',21,'same',200,.9,True),
+    ('B100','B',22,'same',100,.50,True),('B200','B',22,'same',200,.60,True)])
+assert selected['candidate']['labels']==['B200'] and selected['candidate']['pair_min_X_gain']==.50
 print('CPU selection contract PASS: consecutive gates, actual hard exclusion, same seed/recipe and explicit recipe admission; no GPU or real-study writes')

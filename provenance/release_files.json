@@ -828,13 +828,18 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/README.md",
-      "bytes": 24609,
-      "sha256": "54a9c9f645f01c354f96ed5f200e5cdf6fd05c2c3e7f7c2c8c24381d2db0b30f"
+      "bytes": 25422,
+      "sha256": "5b7d95bad2c40d2ec55bbfd703cbe42a791dbd31329bfa4f4b53b5a69dcc489f"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/RESOURCE_PLAN.json",
       "bytes": 416,
       "sha256": "7f1ae3dea7bebeccae52d0d7a1e8afdd3c1690eb1b9fd9f381b61f752d640ccb"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/ROBUST_NODE_EXTENSION_PREREGISTRATION.json",
+      "bytes": 1472,
+      "sha256": "a580bdda674d6a307a6ad5c6b72b965e196a5a7896113e168939b6b6495ff399"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/SAVED500_FOLLOWUP_PLAN.json",
@@ -947,6 +952,16 @@
       "sha256": "859946f2716eafbcd879ef795ec51b40b3ec0fef7423cb90291afc8abc90ef8b"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT_STEADYKL001_N300_SEED22.json",
+      "bytes": 119587,
+      "sha256": "5e77ad2f397b7d5e485a09c32761f2de4bdade05893c598fc68a02a775018cdb"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT_STEADYKL001_N400_SEED22.json",
+      "bytes": 122355,
+      "sha256": "e3b345cb299c4dbac75d06d0c3d5b995197fc5ad7c17e132c87e37dd1b730fa5"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DIAGNOSTIC_ACTOR_ONLY_SERIALIZATION_FIX.json",
       "bytes": 678,
       "sha256": "f74389b86a8b7bd70767cffad84456710a7256ad676ccebe9601f2d40bb524cd"
@@ -958,8 +973,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FUNCTION_AND_LEG_MARGIN_AUDIT.json",
-      "bytes": 105294,
-      "sha256": "35c653614cd62433bf863e823428f54a93100d781055a0ba7bf4c4eabc11b3e8"
+      "bytes": 113997,
+      "sha256": "dcef7a9e4d2eec801fe1d0c0268fe4846adaecf4827d6fa8a7d795a6d86c3c00"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/GPU_INITIALIZATION_AND_NATIVE_PPO.json",
@@ -1072,6 +1087,11 @@
       "sha256": "832c453626219b3148fe55f5c5f4d60fce6fcd555d69fa5c1a25a752f698575b"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/STEADY_COORDINATOR_HANDOFF_V2.json",
+      "bytes": 1692,
+      "sha256": "867701588cb25381c713ef725a6899204c38ac954b275a8d591dead64bfb17cf"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/STEADY_KL001_LAUNCH.json",
       "bytes": 364,
       "sha256": "27ca10ced718c59a8753dc6297f052f3f0ea7db7ecd930fd9748ba9ba37aa179"
@@ -1093,18 +1113,18 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/TRAINING_SIGNAL_COMPARISON.json",
-      "bytes": 35209,
-      "sha256": "7499378e3daa05ddb6ddb77e620b81582d04f64fa8550798ce712a8c75b6909d"
+      "bytes": 40479,
+      "sha256": "da2ef888a5f92e452375031e0d084050e797b142aa20fba1e51d9de5bc4f7d4c"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.json",
-      "bytes": 8197,
-      "sha256": "86e80a38ef7bcc2274ea613f8ad2f67315c8d3718d71047b38a1fbe311c2f8a6"
+      "bytes": 8873,
+      "sha256": "d1fa4b16a21f74ab9531d281c19b33b1f2282b7837cb78e06402a308ba42cdb7"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.svg",
-      "bytes": 294586,
-      "sha256": "0fbe5b1a5ab0aecf248611999812371f9e392a717ed6a23657fade6d5393eeae"
+      "bytes": 296618,
+      "sha256": "b70fc7baed508420b31c88587caa81a70f863e1425da0600488b52879efff392"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/patches/finalize_stage3.py.patch",
@@ -1207,6 +1227,11 @@
       "sha256": "6c865f502fe5cc81f68de8e5ffaf3bae749ffc73546112a72b544786b0132f95"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/replace_steady_coordinator.py",
+      "bytes": 4231,
+      "sha256": "2dee879eee23c285dd9d812da3c02048b400cb5bc674770e0ec596264ac3f69b"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/run_leg_kl004.py",
       "bytes": 9350,
       "sha256": "0179679849457a4803574dd59958311513a3d606eda1a2a009f9c93c3dbb986c"
@@ -1222,9 +1247,14 @@
       "sha256": "2d61864928f169f485fd6c03d2eb752b2b5e52ab4e73c76b5c7b3f64963653e3"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/run_steady_kl_v2.py",
+      "bytes": 12706,
+      "sha256": "2a242874aa4d581facc4b5d76314f149267206e5af1c78bdec376b64d3f65c22"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/stage3b_selection.py",
-      "bytes": 4387,
-      "sha256": "10e9bacb25feb8d2c3b4d6394f426a059df70d9b3703f2d22719e06a576028e2"
+      "bytes": 4706,
+      "sha256": "5c67e64258620374452370fb1b53cae1e2d9c198513ca9e6efd57edb23d85599"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/test_budget_cpu.py",
@@ -1238,13 +1268,18 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/test_selection_cpu.py",
-      "bytes": 3928,
-      "sha256": "82e57515db9d206553cc1d2699f1314c81b160c9e327c4d46559c0e0d7d7e054"
+      "bytes": 4355,
+      "sha256": "90010ea1dfaebbb1858b8186235bbc7dd72066c009eae15e3b7f5c4a5c5051d7"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/test_steady_retention_cpu.py",
       "bytes": 2094,
       "sha256": "827a4051e4247af4992ab0a874d6d14e4c4af08b9bb273d28bef6e099086d003"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/tools/test_steady_schedule_cpu.py",
+      "bytes": 5298,
+      "sha256": "75879c59f7759853241682f61f6db843d1dd3c84ac18ac9b6c5fbbec3886d1c6"
     },
     {
       "path": "projects/go2_piper_wbc/task_suite_20261023/task_suite/__init__.py",

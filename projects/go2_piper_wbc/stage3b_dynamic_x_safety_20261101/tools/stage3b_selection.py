@@ -24,14 +24,16 @@ def selection(b):
         option['previous_development_node']=None if previous is None else previous['label']
         option['consecutive_development_pass']=bool(option['safe'] and option['original_all_development_gates'] and previous_option
             and previous_option['safe'] and previous_option['original_all_development_gates'])
+        option['pair_min_X_gain']=min(option['min_X_gain'],previous_option['min_X_gain']) if option['consecutive_development_pass'] else None
     admitted=read(b.p/'FINAL_RECIPE_ADMISSION.json')['recipe_ids'] if (b.p/'FINAL_RECIPE_ADMISSION.json').exists() else None
     pool=[v for v in options if v['safe'] and (admitted is None or v['node']['recipe_id'] in admitted)]
     if admitted is not None:assert pool, 'Explicit replicated-recipe admission has no safe physical candidate'
     if pool:
-        best=max(pool,key=lambda v:(v['consecutive_development_pass'],v['original_all_development_gates'],v['registered_retention'],v['min_X_gain']))
+        best=max(pool,key=lambda v:(v['consecutive_development_pass'],v['original_all_development_gates'],v['registered_retention'],
+            -1 if v['pair_min_X_gain'] is None else v['pair_min_X_gain'],v['min_X_gain']))
         node=best['node'];candidate=dict(node['checkpoint'],labels=[node['evaluation_prefix']],recipe_id=node['recipe_id'],training_seed=node['training_seed'],
             safe=best['safe'],registered_retention=best['registered_retention'],min_X_gain=best['min_X_gain'],actual_checkpoint_iteration=node['actual_checkpoint_iteration'],
-            consecutive_development_pass=best['consecutive_development_pass'])
+            consecutive_development_pass=best['consecutive_development_pass'],pair_min_X_gain=best['pair_min_X_gain'])
         earlier=[n for n in nodes if n['experiment_id']==node['experiment_id'] and n['training_seed']==node['training_seed']
             and n['recipe_id']==node['recipe_id'] and n['additional_actual_updates']<node['additional_actual_updates']]
         previous=max(earlier,key=lambda n:n['additional_actual_updates']) if earlier else None
@@ -40,5 +42,5 @@ def selection(b):
         old=read(b.p/'HANDOFF.json')['selected_safe_development_node']
         candidate=dict(old['checkpoint'],labels=[old['label']],reason='No new safe full-matrix candidate; retain verified safe original-retained historical initialization',not_new_learning=True)
         adjacent=None
-    return dict(candidate=candidate,adjacent=adjacent,all_development_candidates=options,used_final_seeds=False,selection_version='consecutive_original_gates_with_recipe_admission_v3',admitted_recipe_ids=admitted,
-        rule='Before new formal seeds: require full8 matrices, zero actual hard/nonfoot events and>=95%safe/complete each; prioritize a current/adjacent pair already passing all original development gates, then single-node original gates, original retention and worst X gain. Both same-experiment/trainingseed nodes must still independently pass the unchanged formal protocols; no capability mixing.')
+    return dict(candidate=candidate,adjacent=adjacent,all_development_candidates=options,used_final_seeds=False,selection_version='consecutive_pair_minimum_with_recipe_admission_v4',admitted_recipe_ids=admitted,
+        rule='Before new formal seeds: require full8 matrices, zero actual hard/nonfoot events and>=95%safe/complete each; prioritize a current/adjacent pair already passing all original development gates, then single-node original gates, original retention, minimum X gain across both saved nodes, and current worst X gain. Both same-experiment/trainingseed nodes must still independently pass unchanged formal protocols; no capability mixing or threshold change.')
