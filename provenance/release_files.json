@@ -828,8 +828,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/README.md",
-      "bytes": 26914,
-      "sha256": "ee86b63e358cacc317ed3ab0749be3add9d01b151c8b8127efa22104d23d4e46"
+      "bytes": 10306,
+      "sha256": "f51cfa252e5ba0664efdeb07ca42d4018e66b288293d81b6b9e282bf02f6d4f1"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/RESOURCE_PLAN.json",
@@ -860,6 +860,11 @@
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/BUDGET_CPU_CHECK.json",
       "bytes": 664,
       "sha256": "3160b59e006b9bd609e29e4d585625d2832fc54fd575a711ee30948a59095c41"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/COMPLETED.json",
+      "bytes": 2911,
+      "sha256": "a9d3472378ac1ddbae99e281dc17f8039dffbbd0551f8081a1c58decf79415ef"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/CPU_LEG_KL_SCALE_AUDIT.json",
@@ -987,9 +992,29 @@
       "sha256": "f74389b86a8b7bd70767cffad84456710a7256ad676ccebe9601f2d40bb524cd"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FINAL_ADJACENT_FAILURE_TIMING.json",
+      "bytes": 10109,
+      "sha256": "a04c0f8c6d6925ec0b767e370608fd3bb079bc610168f832d5da5445d67bf65f"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FINAL_EXECUTION_STATUS.json",
+      "bytes": 710,
+      "sha256": "91c7760c2df0a646ace6667e4e1235d17282660fca7486cd018e76ab926611ae"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FINAL_RECIPE_ADMISSION.json",
       "bytes": 212,
       "sha256": "8da4a69eb35d323bd859e6e0b45a4960efe15ac82f05a3c97e8c4255e1683e30"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FINAL_RESTORE_RUN.json",
+      "bytes": 112,
+      "sha256": "ed24c6e5c43207602df11a2076180d16086d366a90a7ff106868a115258628c4"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FINAL_RESULT.json",
+      "bytes": 411541,
+      "sha256": "578fc9e24c548a6821112b7931d829ba8215d1af19bfa1808f19429f544390dc"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FINAL_TRACE_PREREGISTRATION.json",
@@ -1097,6 +1122,11 @@
       "sha256": "a794ebe126017f400be880de3ba85245bedcb02a5a7413e95474118c4cb3847a"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/REPRODUCTION_RECEIPTS.json",
+      "bytes": 30579,
+      "sha256": "705e3a64c6c906d181dd851dd57f5df3b687efef341273d26f16676ad03db7f6"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/RESEARCH_CLOSED.json",
       "bytes": 356,
       "sha256": "bb701e3d99aa4ff8113300a00de767959457816bef6a15cad181112e9a1380b6"
@@ -1160,6 +1190,16 @@
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/TRAINING_SIGNAL_COMPARISON.json",
       "bytes": 40479,
       "sha256": "da2ef888a5f92e452375031e0d084050e797b142aa20fba1e51d9de5bc4f7d4c"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/FINAL_PREDECLARED_NATIVE20S.json",
+      "bytes": 3084,
+      "sha256": "22e789ed2703cab0ba9d5366851333682660eca1c1eb53e8406f252391c9e10e"
+    },
+    {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/FINAL_PREDECLARED_NATIVE20S.svg",
+      "bytes": 508938,
+      "sha256": "67beb80350e595e6ad2262bc6f6ed37467300319491b1a3569719fb9dae4ebb3"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.json",

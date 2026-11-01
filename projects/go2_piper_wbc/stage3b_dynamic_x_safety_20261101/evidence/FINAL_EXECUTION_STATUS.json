@@ -1,0 +1,15 @@
+{
+  "closed": true,
+  "study_GPU_containers_running": 0,
+  "verified_container_count": 265,
+  "host_compute_process_count": 0,
+  "baseline_PASS": false,
+  "GPU_container_SUM_seconds": 26061.517208337784,
+  "all_closed_ledger_files_unchanged": {
+    "LEDGER.json": "03ffe0691c24bb6226b178fc2c61741473b153b11c3c23cf6903477a5663ee9f",
+    "GPU_CLOCK.json": "9d52d5d39cf4e08c6cd4a4da015de6930285fa942f4545ccf5733a529c3668a1",
+    "COMPLETED.json": "a9d3472378ac1ddbae99e281dc17f8039dffbbd0551f8081a1c58decf79415ef",
+    "FROZEN_SELECTION.json": "2969035d687a29494f0d50ae0e7b4d57ec4aec261c6cd74dfa9afea71aa3d190",
+    "RESOURCES_FINAL.json": "8bc09d83c16a6db030a29496469e1373210c3387a19e8f830ed1634ef50ab771"
+  }
+}

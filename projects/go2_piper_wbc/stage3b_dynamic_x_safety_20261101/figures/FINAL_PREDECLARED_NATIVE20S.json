@@ -1,0 +1,87 @@
+{
+  "plan": {
+    "version": "original_B0X_predeclared_native_trace_v1",
+    "protocol": "X",
+    "formal_seed": 611101,
+    "environment_index": 0,
+    "models": [
+      "initial",
+      "candidate",
+      "adjacent"
+    ],
+    "horizon_seconds": 20,
+    "selection": "Fixed before formal seeds; no best-episode or median-episode selection",
+    "timing": "Native50Hz control records including startup; stop each plotted line at its first-episode valid boundary",
+    "coordinate_frame": "Original mixed EE link0-localXY/worldZ and original body-frame velocity/yaw commands",
+    "no_new_GPU_or_video": true,
+    "full_matrix_remains_authoritative": true
+  },
+  "plan_sha256": "d942f10f7aafd953ba508c2a1180fe719c1b96ee277a777ed440770a65c36710",
+  "source_sha256": "b5425d976ea81324942b3e415783f12b1212d3ed9f806a21d46c70cd16216ee2",
+  "file": "FINAL_PREDECLARED_NATIVE20S.svg",
+  "bytes": 508938,
+  "sha256": "67beb80350e595e6ad2262bc6f6ed37467300319491b1a3569719fb9dae4ebb3",
+  "records": [
+    {
+      "model": "initial",
+      "checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "valid_control_samples": 1000,
+      "native_trajectory_sha256": "c3aff524cb27da584de447ce73646414e5c14ec66ee62e849f206e0eb4cde602",
+      "body_command_abs_max_by_axis": [
+        0.20000000298023224,
+        0.0,
+        0.15000000596046448
+      ],
+      "net_world_base_xy_displacement_m": 0.29168668389320374,
+      "target_X_range_m": [
+        0.43000003695487976,
+        0.46999993920326233
+      ],
+      "actual_X_range_m": [
+        0.192445307970047,
+        0.4764585494995117
+      ]
+    },
+    {
+      "model": "candidate",
+      "checkpoint_sha256": "29471d2e1536eef9df96853609a78b49dcf0886e59cef06030851dd0b637e5ef",
+      "valid_control_samples": 1000,
+      "native_trajectory_sha256": "991508d2d9071795cd5fc9378f15eb58c5d50fe598426e06a5697cad12002284",
+      "body_command_abs_max_by_axis": [
+        0.20000000298023224,
+        0.0,
+        0.15000000596046448
+      ],
+      "net_world_base_xy_displacement_m": 0.2727331221103668,
+      "target_X_range_m": [
+        0.43000003695487976,
+        0.46999993920326233
+      ],
+      "actual_X_range_m": [
+        0.19245757162570953,
+        0.4805671274662018
+      ]
+    },
+    {
+      "model": "adjacent",
+      "checkpoint_sha256": "046c1202b831b1e172aca2e310c29ea266d9fe1a16899444d82969adcadabe87",
+      "valid_control_samples": 1000,
+      "native_trajectory_sha256": "7e56c4178449afaa2d5b06972885a15af8c4989af21a7853a6e5c9c283410d0e",
+      "body_command_abs_max_by_axis": [
+        0.20000000298023224,
+        0.0,
+        0.15000000596046448
+      ],
+      "net_world_base_xy_displacement_m": 0.36740991473197937,
+      "target_X_range_m": [
+        0.43000003695487976,
+        0.46999993920326233
+      ],
+      "actual_X_range_m": [
+        0.1924557089805603,
+        0.4775676429271698
+      ]
+    }
+  ],
+  "scope": "Native logged arrays only; no smoothing, rescoring, FK reconstruction, best-episode selection or new GPU. One fixed episode is not full-task evidence."
+}

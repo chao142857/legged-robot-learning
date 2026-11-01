@@ -1,0 +1,643 @@
+{
+  "selected_checkpoint": {
+    "checkpoint": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T105851-steadyKL001-seed21-window-to500/ppo/checkpoints/cp_2300.pt",
+    "checkpoint_sha256": "29471d2e1536eef9df96853609a78b49dcf0886e59cef06030851dd0b637e5ef",
+    "actor_recipe": {
+      "schema": "original210_arm_synergy_mean_v1",
+      "arm_basis_raw_action": [
+        0.0155344873474675,
+        0.25765162908324885,
+        -0.3060943218422699,
+        0.022709972107836318,
+        0.0494936346914944,
+        -0.013876660931753826
+      ],
+      "observed_arm_q_reference": [
+        -0.04710909724235535,
+        1.5699055194854736,
+        -0.7696000933647156,
+        -0.1188892126083374,
+        -0.4412599205970764,
+        0.08760293573141098
+      ],
+      "local_FK_Jx": [
+        0.010250177662207705,
+        0.07501159695610937,
+        -0.20711203448930957,
+        0.0028925178086058874,
+        -0.05955509573274397,
+        0.0
+      ],
+      "local_FK_x_reference": 0.4548373412429354,
+      "basis_measured_actual_q": [
+        -0.047093261033296585,
+        1.5698848962783813,
+        -0.7695626020431519,
+        -0.11876356601715088,
+        -0.44127678871154785,
+        0.08757662028074265
+      ],
+      "basis_predicted_position_delta_m": [
+        0.019999999999999997,
+        -3.2526065174565133e-19,
+        1.6046192152785466e-17
+      ],
+      "basis_predicted_orientation_delta_rad": [
+        4.7704895589362195e-18,
+        -6.245004513516506e-17,
+        -1.3444106938820255e-17
+      ],
+      "origin": "Original FK at actual safe P1 locomotion states; fixed six-joint geometric direction, no inference IK or teacher supervision",
+      "P1_evidence_sha256": "9fd585619553aa45a1e0db5e31ba61d12a555b58365c70a2d4f1208b6c3d298e",
+      "observation_ABI": "unchanged210, term-major3x70: newest q_rel arm66:72, oldest targetX189, newest203",
+      "feature_ABI": "original128latent + centered observable targetX/.02 + finite-difference observable targetXrate/.02 + locally linearized observable q-to-X error/.02",
+      "residual": "zero131->1 head, tanh times fixed18D basis (zero legs), added before native Gaussian update/sample/logprob; original18D MLP fully trainable",
+      "unchanged": [
+        "reward27",
+        "Uniform.3/.7",
+        "learning_rate",
+        "entropy.005",
+        "nativeGAE_PPO",
+        "18Dphysics",
+        "PD_DR",
+        "safety",
+        "formal_evaluator"
+      ]
+    },
+    "labels": [
+      "steadyKL001-n500-seed21"
+    ],
+    "recipe_id": "arm_synergy_legKL02_steady_full_mean_v1",
+    "training_seed": 21,
+    "safe": true,
+    "registered_retention": true,
+    "min_X_gain": 0.4870020512260082,
+    "actual_checkpoint_iteration": 2300,
+    "consecutive_development_pass": true,
+    "pair_min_X_gain": 0.4444583434035586
+  },
+  "adjacent": {
+    "checkpoint": {
+      "checkpoint": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T102749-steadyKL001-seed21-window-to400/ppo/checkpoints/cp_2200.pt",
+      "checkpoint_sha256": "046c1202b831b1e172aca2e310c29ea266d9fe1a16899444d82969adcadabe87",
+      "actor_recipe": {
+        "schema": "original210_arm_synergy_mean_v1",
+        "arm_basis_raw_action": [
+          0.0155344873474675,
+          0.25765162908324885,
+          -0.3060943218422699,
+          0.022709972107836318,
+          0.0494936346914944,
+          -0.013876660931753826
+        ],
+        "observed_arm_q_reference": [
+          -0.04710909724235535,
+          1.5699055194854736,
+          -0.7696000933647156,
+          -0.1188892126083374,
+          -0.4412599205970764,
+          0.08760293573141098
+        ],
+        "local_FK_Jx": [
+          0.010250177662207705,
+          0.07501159695610937,
+          -0.20711203448930957,
+          0.0028925178086058874,
+          -0.05955509573274397,
+          0.0
+        ],
+        "local_FK_x_reference": 0.4548373412429354,
+        "basis_measured_actual_q": [
+          -0.047093261033296585,
+          1.5698848962783813,
+          -0.7695626020431519,
+          -0.11876356601715088,
+          -0.44127678871154785,
+          0.08757662028074265
+        ],
+        "basis_predicted_position_delta_m": [
+          0.019999999999999997,
+          -3.2526065174565133e-19,
+          1.6046192152785466e-17
+        ],
+        "basis_predicted_orientation_delta_rad": [
+          4.7704895589362195e-18,
+          -6.245004513516506e-17,
+          -1.3444106938820255e-17
+        ],
+        "origin": "Original FK at actual safe P1 locomotion states; fixed six-joint geometric direction, no inference IK or teacher supervision",
+        "P1_evidence_sha256": "9fd585619553aa45a1e0db5e31ba61d12a555b58365c70a2d4f1208b6c3d298e",
+        "observation_ABI": "unchanged210, term-major3x70: newest q_rel arm66:72, oldest targetX189, newest203",
+        "feature_ABI": "original128latent + centered observable targetX/.02 + finite-difference observable targetXrate/.02 + locally linearized observable q-to-X error/.02",
+        "residual": "zero131->1 head, tanh times fixed18D basis (zero legs), added before native Gaussian update/sample/logprob; original18D MLP fully trainable",
+        "unchanged": [
+          "reward27",
+          "Uniform.3/.7",
+          "learning_rate",
+          "entropy.005",
+          "nativeGAE_PPO",
+          "18Dphysics",
+          "PD_DR",
+          "safety",
+          "formal_evaluator"
+        ]
+      }
+    },
+    "labels": [
+      "steadyKL001-n400-seed21"
+    ],
+    "frozen_before_final_seeds": true
+  },
+  "actual_selected_lineage": [
+    {
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T105851-steadyKL001-seed21-window-to500",
+      "checkpoint_sha256": "29471d2e1536eef9df96853609a78b49dcf0886e59cef06030851dd0b637e5ef",
+      "input_checkpoint_sha256": "046c1202b831b1e172aca2e310c29ea266d9fe1a16899444d82969adcadabe87",
+      "GPU_container_SUM_seconds": 547.7834799289703,
+      "PPO_updates": 100,
+      "combined_native_Adam_calls": 2000,
+      "training_transitions_used": 9830400
+    },
+    {
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T102749-steadyKL001-seed21-window-to400",
+      "checkpoint_sha256": "046c1202b831b1e172aca2e310c29ea266d9fe1a16899444d82969adcadabe87",
+      "input_checkpoint_sha256": "81d3f201bff687c389960c3a92f5468436d56e757b8bd90fc60261e3d306fe1d",
+      "GPU_container_SUM_seconds": 1077.606863975525,
+      "PPO_updates": 200,
+      "combined_native_Adam_calls": 4000,
+      "training_transitions_used": 19660800
+    },
+    {
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T101210-steadyKL001-seed21-window-to200",
+      "checkpoint_sha256": "81d3f201bff687c389960c3a92f5468436d56e757b8bd90fc60261e3d306fe1d",
+      "input_checkpoint_sha256": "b9151c34aee042bf8f892e61789e7ec7a3f820a9462a23c3d38ffa3b23a835eb",
+      "GPU_container_SUM_seconds": 549.3475868701935,
+      "PPO_updates": 100,
+      "combined_native_Adam_calls": 2000,
+      "training_transitions_used": 9830400
+    },
+    {
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T100306-steadyKL001-seed21-window-to100",
+      "checkpoint_sha256": "b9151c34aee042bf8f892e61789e7ec7a3f820a9462a23c3d38ffa3b23a835eb",
+      "input_checkpoint_sha256": "10c6f86e6db3d4e3b3f55254f3cc16c38a38f8de4fe83c84319bbd05ec0c0b72",
+      "GPU_container_SUM_seconds": 538.730740070343,
+      "PPO_updates": 98,
+      "combined_native_Adam_calls": 1960,
+      "training_transitions_used": 9633792
+    },
+    {
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T100230-steadyKL001-seed21-window-to2",
+      "checkpoint_sha256": "10c6f86e6db3d4e3b3f55254f3cc16c38a38f8de4fe83c84319bbd05ec0c0b72",
+      "input_checkpoint_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+      "GPU_container_SUM_seconds": 33.41793894767761,
+      "PPO_updates": 2,
+      "combined_native_Adam_calls": 40,
+      "training_transitions_used": 196608
+    }
+  ],
+  "selected_lineage_PPO_updates": 500,
+  "selected_lineage_training_transitions": 49152000,
+  "selected_lineage_native_Adam_calls": 10000,
+  "selected_lineage_training_GPU_container_SUM_seconds": 2746.8866097927094,
+  "parent_pretraining_not_recharged_and_not_reconstructed": true,
+  "selected_training_config": {
+    "path": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T105851-steadyKL001-seed21-window-to500/config.json",
+    "sha256": "10d0320e030c30baf3841dfbad86bb8100b1fad81fe8285d09c56c72d3aaa792"
+  },
+  "selected_training_launch": {
+    "path": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T105851-steadyKL001-seed21-window-to500/launch.json",
+    "sha256": "4f3497784d22c75ab2eccf6a1b0f6506472f245ceaecf79a06955984eb14d83c"
+  },
+  "complete_native_restore": {
+    "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T114344-final-native-learner-restore",
+    "config_sha256": "ef80324e0b9cd0fc72eae9dd33f2c4cac55ab54971100781d4003dbd07b5310d",
+    "launch_sha256": "f8188559b82ab1d313e1f828ddc171627bac230a82f037b0247373efc631fa35",
+    "result": {
+      "passed": true,
+      "kind": "final_checkpoint_restore_zero_updates",
+      "identity": {
+        "node_id": "yanglab3060",
+        "purpose": "stage3_original_uniform_dynamicX_PPO",
+        "dynamic_fraction": 0.3,
+        "image_id": "sha256:8ee9b2bb8e6aae08dace71ee1e2141a4d62bcc63e4cf0eac28b347111a486a87",
+        "b0_commit": "ae1054046f792df8da6362c36ee168ded6b2ebcd",
+        "lab_commit": "b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8",
+        "method": "B0: Vanilla WBC + Uniform",
+        "root_parent_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+        "num_envs": 4096,
+        "seed": 21,
+        "env_config_sha256": "d036fd933fcafe010dd43eddaadfdacc7bf3a70f69e20022fee597a1ed2de987",
+        "agent_config_sha256": "2a8b38f1c69e5d74605cf941c73379101d88c3102c82bdbb75c33e76b831dd20",
+        "physics_config_sha256": "c4f091ed84ce08f3dbba94ec16a4c39b89ebb480435cf40e4b8611dc784ceb5d",
+        "actor_recipe": {
+          "schema": "original210_arm_synergy_mean_v1",
+          "arm_basis_raw_action": [
+            0.0155344873474675,
+            0.25765162908324885,
+            -0.3060943218422699,
+            0.022709972107836318,
+            0.0494936346914944,
+            -0.013876660931753826
+          ],
+          "observed_arm_q_reference": [
+            -0.04710909724235535,
+            1.5699055194854736,
+            -0.7696000933647156,
+            -0.1188892126083374,
+            -0.4412599205970764,
+            0.08760293573141098
+          ],
+          "local_FK_Jx": [
+            0.010250177662207705,
+            0.07501159695610937,
+            -0.20711203448930957,
+            0.0028925178086058874,
+            -0.05955509573274397,
+            0.0
+          ],
+          "local_FK_x_reference": 0.4548373412429354,
+          "basis_measured_actual_q": [
+            -0.047093261033296585,
+            1.5698848962783813,
+            -0.7695626020431519,
+            -0.11876356601715088,
+            -0.44127678871154785,
+            0.08757662028074265
+          ],
+          "basis_predicted_position_delta_m": [
+            0.019999999999999997,
+            -3.2526065174565133e-19,
+            1.6046192152785466e-17
+          ],
+          "basis_predicted_orientation_delta_rad": [
+            4.7704895589362195e-18,
+            -6.245004513516506e-17,
+            -1.3444106938820255e-17
+          ],
+          "origin": "Original FK at actual safe P1 locomotion states; fixed six-joint geometric direction, no inference IK or teacher supervision",
+          "P1_evidence_sha256": "9fd585619553aa45a1e0db5e31ba61d12a555b58365c70a2d4f1208b6c3d298e",
+          "observation_ABI": "unchanged210, term-major3x70: newest q_rel arm66:72, oldest targetX189, newest203",
+          "feature_ABI": "original128latent + centered observable targetX/.02 + finite-difference observable targetXrate/.02 + locally linearized observable q-to-X error/.02",
+          "residual": "zero131->1 head, tanh times fixed18D basis (zero legs), added before native Gaussian update/sample/logprob; original18D MLP fully trainable",
+          "unchanged": [
+            "reward27",
+            "Uniform.3/.7",
+            "learning_rate",
+            "entropy.005",
+            "nativeGAE_PPO",
+            "18Dphysics",
+            "PD_DR",
+            "safety",
+            "formal_evaluator"
+          ]
+        },
+        "declared_leg_retention_objective": {
+          "schema": "original210_fixed_leg_gaussian_KL_v1",
+          "weight": 0.02,
+          "anchor_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+          "steady_mean_weight": 0.00419,
+          "steady_mean_schema": "observable_steady_XYZ_full_mean_v1",
+          "steady_xyz_tolerance_m": 1e-07
+        }
+      },
+      "updates": 0,
+      "optimizer_steps": 0,
+      "completed_updates": 2300,
+      "loaded_native_iter": 2299,
+      "next_runner_iteration": 2300,
+      "loaded_checkpoint_sha256": "29471d2e1536eef9df96853609a78b49dcf0886e59cef06030851dd0b637e5ef",
+      "adam_step": 46000,
+      "learner_adam_unchanged": true,
+      "restore_evidence": {
+        "actor_bitwise_equal": true,
+        "critic_bitwise_equal": true,
+        "adam_bitwise_equal": true,
+        "step_groups": {
+          "native": {
+            "actual": 46000.0,
+            "expected": 46000
+          },
+          "new_head": {
+            "actual": 10000.0,
+            "expected": 10000
+          }
+        },
+        "new_head_not_falsely_aged_as_parent": true,
+        "physx_state_restored": false,
+        "all_rng_streams": {
+          "torch_cpu_equal": true,
+          "torch_cuda_equal": true,
+          "python_equal": true,
+          "numpy_equal": true,
+          "python_numpy_replay": true,
+          "restored_after_probe": true
+        },
+        "loaded_checkpoint_sha256": "29471d2e1536eef9df96853609a78b49dcf0886e59cef06030851dd0b637e5ef",
+        "new_container_process": true,
+        "environment_reset_required": true
+      },
+      "inference_steps": 24,
+      "restore_inference_transition_slots": 98304,
+      "physical_control_steps": 24,
+      "reset_control_steps": 0,
+      "reset_transition_slots": 0,
+      "physical_transition_slots_including_reset": 98304,
+      "physx": {
+        "gpu_dynamics_enabled": true,
+        "broadphase": "GPU",
+        "gpu_override": -1,
+        "statistics": {
+          "gpu_mem_collision_stack_size": 0,
+          "gpu_mem_deformable_surface_contacts": 0,
+          "gpu_mem_deformable_surfaces": 0,
+          "gpu_mem_deformable_volume_contacts": 0,
+          "gpu_mem_deformable_volumes": 0,
+          "gpu_mem_found_lost_aggregate_pairs": 110592,
+          "gpu_mem_found_lost_pairs": 4096,
+          "gpu_mem_heap": 2632122368,
+          "gpu_mem_heap_articulation": 2491784,
+          "gpu_mem_heap_broadphase": 1644515704,
+          "gpu_mem_heap_deformable_surfaces": 0,
+          "gpu_mem_heap_deformable_volumes": 0,
+          "gpu_mem_heap_narrowphase": 61903964,
+          "gpu_mem_heap_other": 67108864,
+          "gpu_mem_heap_particles": 0,
+          "gpu_mem_heap_simulation": 99042080,
+          "gpu_mem_heap_simulation_articulation": 282837208,
+          "gpu_mem_heap_simulation_deformable_surface": 8,
+          "gpu_mem_heap_simulation_deformable_volume": 12,
+          "gpu_mem_heap_simulation_particles": 0,
+          "gpu_mem_heap_solver": 310442068,
+          "gpu_mem_particle_contacts": 0,
+          "gpu_mem_particles": 0,
+          "gpu_mem_rigid_contact_count": 32768,
+          "gpu_mem_rigid_patch_count": 32768,
+          "gpu_mem_temp_buffer_capacity": 149888,
+          "gpu_mem_total_aggregate_pairs": 4096,
+          "nb_active_constraints": 0,
+          "nb_active_dynamic_rigids": 0,
+          "nb_active_kinematic_rigids": 0,
+          "nb_aggregates": 4096,
+          "nb_articulations": 4096,
+          "nb_axis_solver_constaints": 0,
+          "nb_box_shapes": 16384,
+          "nb_capsule_shapes": 0,
+          "nb_cone_shapes": 0,
+          "nb_convex_shapes": 45056,
+          "nb_cylinder_shapes": 0,
+          "nb_discrete_contact_pairs_total": 77824,
+          "nb_discrete_contact_pairs_with_cache_hits": 0,
+          "nb_discrete_contact_pairs_with_contacts": 0,
+          "nb_dynamic_rigids": 102400,
+          "nb_kinematic_rigids": 0,
+          "nb_lost_pairs": 0,
+          "nb_lost_touches": 5,
+          "nb_new_pairs": 0,
+          "nb_new_touches": 3,
+          "nb_partitions": 0,
+          "nb_plane_shapes": 1,
+          "nb_sphere_shapes": 16384,
+          "nb_static_rigids": 1,
+          "nb_trimesh_shapes": 0
+        }
+      },
+      "physx_state_restored": false,
+      "new_training_transitions": 0
+    }
+  },
+  "actual_formal_runs": [
+    {
+      "label": "final-initial-A-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T111455-final-initial-A-611101",
+      "config_sha256": "80981aa4496d8333080664e746e141565a068b16de5022237ac2c34ae6b50acc",
+      "launch_sha256": "74116b5a7a08cea24ee0408aa52f58719a941a5373b85bc19190c6f4db2a3451"
+    },
+    {
+      "label": "final-initial-T0-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T111541-final-initial-T0-611101",
+      "config_sha256": "72a8aa1f6872ac648f93db0cd788906a02ee5ee5583060d78136f9c8732031c9",
+      "launch_sha256": "19812fa55854b8b50a85de768b49c50142cfa39156be42c50c078b553a57ae02"
+    },
+    {
+      "label": "final-initial-T1-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T111628-final-initial-T1-611101",
+      "config_sha256": "fe54747e6c50c793b5d6e63d2642a75adc882cd94d8c29a9dc0b558a24dfca3c",
+      "launch_sha256": "e5930b23786676001eadc58fda1e41256bdab9e06a2ef972f37616eac6479b42"
+    },
+    {
+      "label": "final-initial-X-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T111715-final-initial-X-611101",
+      "config_sha256": "6e2e4d4f50058521cfff649263bda9677c93f1829e3d4c6220b66425c4234e07",
+      "launch_sha256": "e7a5ad22e62e24c3a75ffcf20fc5adc0f029a91391f25373cde4b9851b733e62"
+    },
+    {
+      "label": "final-initial-A-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T111802-final-initial-A-621101",
+      "config_sha256": "9eaa3d9ab7a0b430ef8a2f554e97696d67b15ab1728d2c4dc6ba9aac81afc3b7",
+      "launch_sha256": "29c892d521c89f535b73b2b5d46acd5999c1038f8e9903e410ac1148f613404d"
+    },
+    {
+      "label": "final-initial-T0-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T111848-final-initial-T0-621101",
+      "config_sha256": "24b2ea0df00ee03e06a2f79bb225ed5a8b1f6c40f7708dbee657c42c1f36c00d",
+      "launch_sha256": "d035cd7ea3c1bb721a4fcda4f9f99d4e0312db639bcb50fdf2ae676b84ec7661"
+    },
+    {
+      "label": "final-initial-T1-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T111935-final-initial-T1-621101",
+      "config_sha256": "f5f34317d8b56307a237afb70654ebae9211fed895a260b545bb507a221c235b",
+      "launch_sha256": "bc4e99265e1b9bcc115f296c6b3b2408861f27ab256447453d7b5d0a149aa2b8"
+    },
+    {
+      "label": "final-initial-X-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112021-final-initial-X-621101",
+      "config_sha256": "54a08dd792dbedd3923c71ddda291a50fbb43301b9a7f32eba571fb42fb28e4e",
+      "launch_sha256": "a522598ceafd61b891b0d94fa9861f974cd7adb06c4dbe8e86d05829cceb0586"
+    },
+    {
+      "label": "final-initial-A-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112108-final-initial-A-631101",
+      "config_sha256": "a6601e5de85f62a2e998192e5b42eaf3adaafa720264a9b05a76871cb5b94789",
+      "launch_sha256": "2e1d0cce1b462e27274784735b34bb67e5124d4784901a3b9e182c59d823839a"
+    },
+    {
+      "label": "final-initial-T0-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112155-final-initial-T0-631101",
+      "config_sha256": "6a799ddb9669b8f91362db95af77cf9f1eea91b58d88e2f15084878405137bbc",
+      "launch_sha256": "71afd70943cb05c522f2a34c1638ba728065fda8b662d8c398816c6e27ab3424"
+    },
+    {
+      "label": "final-initial-T1-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112242-final-initial-T1-631101",
+      "config_sha256": "929c3e89ab8607523e13a1f8a6743a393b6c56ef3467eda706c5f033ed1ecb06",
+      "launch_sha256": "aea014e7a2bc7c4587d5efd338105deeff8847f9c2e845a0af33cab20f8abcba"
+    },
+    {
+      "label": "final-initial-X-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112329-final-initial-X-631101",
+      "config_sha256": "cc1a61330c1f5abd04ea630238fe4c522f57c74ce2bedddf22fc40153382c6f8",
+      "launch_sha256": "be8f02351814140fd666f7cbd8accafd9893dc7062451abf32bc7639c26363d0"
+    },
+    {
+      "label": "final-candidate-A-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112416-final-candidate-A-611101",
+      "config_sha256": "5eebccbd625ff0bacc6c5d5b8d6bf719d3557a7b2f64e864c17cb3371b9512ed",
+      "launch_sha256": "68deabbdd20ed0a6d37996fa73592a333ab792a8601e8dfbbd7cfe1a9e0e4fe0"
+    },
+    {
+      "label": "final-candidate-T0-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112503-final-candidate-T0-611101",
+      "config_sha256": "b5de3bbed67d9772150deb6d60b225b6dd63720fd7e549ddc57f138864dd5f92",
+      "launch_sha256": "b81c7086c166f0534e9c645b79e66369e06d23fd83726e2adaaa6288cd0c7fe2"
+    },
+    {
+      "label": "final-candidate-T1-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112549-final-candidate-T1-611101",
+      "config_sha256": "d7e1da28834fa53c3d51eb615726fd118d08a55dbf9df00d8a6fb9ce8b9aaaed",
+      "launch_sha256": "e35600eb08d7c14c7eae4259be8b758f3996f443456f84da3f572884e336284a"
+    },
+    {
+      "label": "final-candidate-X-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112637-final-candidate-X-611101",
+      "config_sha256": "421f15412d2bc09816d5e5da31b136b50c490d21ef0786a6ca1c58ae152130d6",
+      "launch_sha256": "408028ca0042ff67feb08cf7f5b04c602b52b854209c4fadb559b88e45f1e207"
+    },
+    {
+      "label": "final-candidate-A-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112724-final-candidate-A-621101",
+      "config_sha256": "8e955d8b7f0610ab03022d98ba79f4cba3104c6f1cff54f6a1150bb634b76d7f",
+      "launch_sha256": "92d9bcbb7e4da06c0a505f05b5cd24992bb6d86e412ee258aafd80d27f46c444"
+    },
+    {
+      "label": "final-candidate-T0-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112811-final-candidate-T0-621101",
+      "config_sha256": "90446774dc72d63b5b1ccdaacb232c098979f0824875121d1fe860f7541f23b0",
+      "launch_sha256": "7e3d46e5cfb8a2c9368228dfae064004fb164c0af453617f715b323ebd46f8ec"
+    },
+    {
+      "label": "final-candidate-T1-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112858-final-candidate-T1-621101",
+      "config_sha256": "3aed232acc2553ab2babce114b094ea75635335bb7f3bc03562e1254586e79ec",
+      "launch_sha256": "e6c4084faf83256bfe1db81340a0e445e01312275cb6b119ecd3ca8351396f1f"
+    },
+    {
+      "label": "final-candidate-X-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T112945-final-candidate-X-621101",
+      "config_sha256": "5bd2dcab6d52ab4bfc7f033c4ae0911d4d4967a73d4e918acc427e4ac3220b74",
+      "launch_sha256": "d30ec53915190d2f08ab1c3f5f0f32d778bd79993046ceb394cbfca2ead189fb"
+    },
+    {
+      "label": "final-candidate-A-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113032-final-candidate-A-631101",
+      "config_sha256": "50884ebc2a8322d415077914df97899c6b8bae1236c16637aa9ffe99eff08a03",
+      "launch_sha256": "cd50a4fe59a734a46fc19baa69ecf0e31b9e25a9f9b52e954a22650df5fb02e7"
+    },
+    {
+      "label": "final-candidate-T0-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113119-final-candidate-T0-631101",
+      "config_sha256": "e70aa04145735b77355bd42e19f8540bd9d0cf2eb170025ff69ea328f23c1821",
+      "launch_sha256": "c2cdcd1cbeb47c07d78662290611ae1881aa21f88696a565aa2c510e99ca5ea4"
+    },
+    {
+      "label": "final-candidate-T1-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113205-final-candidate-T1-631101",
+      "config_sha256": "b73489f8ab652a564e9a6bd122b8041da88a39383f85823fd75b9eec1824a80a",
+      "launch_sha256": "6d3eb246097ed42e5f283b68d8dc6d192fff4f3bc572fd0296f807f17fee3a6d"
+    },
+    {
+      "label": "final-candidate-X-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113252-final-candidate-X-631101",
+      "config_sha256": "e3132e2983d098a27fa6e1662a79bbc9875d7fcde15ea59dcc658a77df617705",
+      "launch_sha256": "a0531113fc8e2ea584bdc42ae82a8f8da8d2a340e318742cd1940c5e93912eef"
+    },
+    {
+      "label": "final-adjacent-A-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113400-final-adjacent-A-611101",
+      "config_sha256": "563b06a5220461d33ccb03afd7f5044adf9fd03ce8cb5e2670851e2f838a3eeb",
+      "launch_sha256": "26c1e35c801674e8c4cfcb37c45b4537752c1fa7e3f06b96e2db07adcc9d3004"
+    },
+    {
+      "label": "final-adjacent-T0-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113447-final-adjacent-T0-611101",
+      "config_sha256": "610ba26603da6d2b24cbad9d81d32bf529bbfd664524d423def766623941a37c",
+      "launch_sha256": "39102e9204cf158cb2390cff51191697c593655c8e5a96f930f299a420a8693b"
+    },
+    {
+      "label": "final-adjacent-T1-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113534-final-adjacent-T1-611101",
+      "config_sha256": "e76f3be3d4051c665fb96b72e327e9c5f8f9ce6e0728f10c8a35c11de1a02aae",
+      "launch_sha256": "d0441ab22405243230acbb689ddc6e3a105eeb8844d19b3d6cbf5d9533b5bba1"
+    },
+    {
+      "label": "final-adjacent-X-611101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113620-final-adjacent-X-611101",
+      "config_sha256": "67e089cdb9718a52b20b500192f8367ad7b13c69fac3263e35b0ce625331b971",
+      "launch_sha256": "37c5b2be5dbfd8f08f5b798a1e4111570027b9a5846304f3bb98991c3bf4c6a6"
+    },
+    {
+      "label": "final-adjacent-A-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113707-final-adjacent-A-621101",
+      "config_sha256": "d930358360248726e11db55c69dd97fe71ff59a0177c34eb69a453c03fdef353",
+      "launch_sha256": "7cf68997847c23bde63ee5d01a729d2c470c8250490d375faeee59b5fb207d91"
+    },
+    {
+      "label": "final-adjacent-T0-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113753-final-adjacent-T0-621101",
+      "config_sha256": "4694f53338b0ea880d6e9a8bf6d270231fd3f30222fc6c2dc362d7122d6c2512",
+      "launch_sha256": "0a5e600565f58e75074c3a51a9d7050f34da394f3f62fab1dba8b2352b53fc0b"
+    },
+    {
+      "label": "final-adjacent-T1-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113840-final-adjacent-T1-621101",
+      "config_sha256": "e87874bd55cbb860175ba370a0df4a1cd7e550f94a78654cdae715c76ddbffa6",
+      "launch_sha256": "451e28b1ecd673aa9bdce0cd843e327639cac4870ed234ff0a23246b04bf04d6"
+    },
+    {
+      "label": "final-adjacent-X-621101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T113927-final-adjacent-X-621101",
+      "config_sha256": "4103e336f1ce77c10dc13873ad800b34f7563c5a6df87cd2de1044ce0e55d6bf",
+      "launch_sha256": "ca53fab688479fd953395634787f5d96080988e9ad1f75bad2ed8a73fc5780a2"
+    },
+    {
+      "label": "final-adjacent-A-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T114013-final-adjacent-A-631101",
+      "config_sha256": "f8bf83c4fb231836a13d116db64c16741278751c9cbb0d6df5ce55beba086cc3",
+      "launch_sha256": "55c700dbc9667be048bd5357952f3f403648da393feadff18ee55f179d515345"
+    },
+    {
+      "label": "final-adjacent-T0-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T114100-final-adjacent-T0-631101",
+      "config_sha256": "df699139bc6febf8b89546667dbe823a4546f81cacd1739ad082717ab6eafda3",
+      "launch_sha256": "04aac3b402862690d113a94539f50d50239f75ee4e7eb9fc349f45a377ea52c5"
+    },
+    {
+      "label": "final-adjacent-T1-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T114147-final-adjacent-T1-631101",
+      "config_sha256": "4bf9ae06ab185d0f1be61bf2f26eb972ddf861ccca11c6cc474196397e0f7632",
+      "launch_sha256": "f9c6e6bba51983b845180fbd9763d6699b2d963c1238e11296601eff71ea78dc"
+    },
+    {
+      "label": "final-adjacent-X-631101",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T114234-final-adjacent-X-631101",
+      "config_sha256": "318fb24b6c8c4e8792c5b53f2b2117e28e369c69fa1e62f129803aa05cbb66b0",
+      "launch_sha256": "584a6c9c1946863248887c488775b6ed42282bad4768b8a5ccd6b8efb069d2c5"
+    }
+  ],
+  "closed_file_sha256": {
+    "AUTHORIZATION.json": "14132dc175e09128ef8e08685b1281b58d4871a39fdb7f22db82160751ead8aa",
+    "LEDGER.json": "03ffe0691c24bb6226b178fc2c61741473b153b11c3c23cf6903477a5663ee9f",
+    "GPU_CLOCK.json": "9d52d5d39cf4e08c6cd4a4da015de6930285fa942f4545ccf5733a529c3668a1",
+    "COMPLETED.json": "a9d3472378ac1ddbae99e281dc17f8039dffbbd0551f8081a1c58decf79415ef",
+    "FROZEN_SELECTION.json": "2969035d687a29494f0d50ae0e7b4d57ec4aec261c6cd74dfa9afea71aa3d190",
+    "FINAL_MATRIX.json": "77ea34d17b6592d9b8f7ae3a5ee67c131f63db08144b2dcce5387c6279fdd457",
+    "CONSECUTIVE_NODE_FINAL.json": "eb8e13914298c27f95cd76eb57842422d930b7815be2f60b90983e7355ebf044",
+    "RESOURCES_FINAL.json": "8bc09d83c16a6db030a29496469e1373210c3387a19e8f830ed1634ef50ab771",
+    "FINAL_RESTORE_RUN.json": "ed24c6e5c43207602df11a2076180d16086d366a90a7ff106868a115258628c4"
+  },
+  "actual_GPU_SUM_seconds": 26061.517208337784,
+  "approved_GPU_SUM_seconds": 28800,
+  "native_task_version": "ae1054046f792df8da6362c36ee168ded6b2ebcd",
+  "new_GPU_reproduction_requires_new_authorization": true,
+  "old_grants_must_remain_closed": true,
+  "scope": "Paths and SHA of commands/configurations actually executed, not a new simulation or an unmetered launch. Parent pretraining is outside this grant. No model/NPZ/video transferred."
+}

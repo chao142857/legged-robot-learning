@@ -1,0 +1,333 @@
+{
+  "original_velocity_ratio_threshold": 1.0001,
+  "original_hard_excess_threshold_rad": 0.001,
+  "native_definition_source_relative_path": "tools/run_suite.py",
+  "native_definition_source_sha256": "cae4e47343c815dd4db11218a8a1f24e58f4ad79e1edbc32ff6f019cea7075f1",
+  "records": [
+    {
+      "label": "final-adjacent-A-621101",
+      "trajectory_sha256": "22a29cb9a5023d16f75cc3ce13702d2550139ccddd9f4b3c25d279be570021a9",
+      "native_counts": {
+        "safe_count": 59,
+        "complete_count": 64,
+        "overspeed_count": 5,
+        "joint_limit_violation_count": 0,
+        "nonfoot_contact_count": 0
+      },
+      "channels": {
+        "joint_velocity_limit_ratio": {
+          "native_or_direct_record_threshold": 1.0001,
+          "maximum": 1.0256479978561401,
+          "first_hit_control_intervals_s": [
+            [
+              0.0,
+              0.02
+            ],
+            [
+              0.0,
+              0.02
+            ],
+            [
+              0.3,
+              0.32
+            ],
+            [
+              0.34,
+              0.36
+            ],
+            [
+              0.42,
+              0.44
+            ]
+          ],
+          "first_hit_environment_indices": [
+            0,
+            44,
+            18,
+            38,
+            37
+          ],
+          "hit_environment_count": 5,
+          "hit_control_samples": 5,
+          "last_hit_control_time_s": 0.44
+        },
+        "joint_position_limit_excess": {
+          "native_or_direct_record_threshold": 0.001,
+          "maximum": 0.0,
+          "first_hit_control_intervals_s": [],
+          "first_hit_environment_indices": [],
+          "hit_environment_count": 0,
+          "hit_control_samples": 0,
+          "last_hit_control_time_s": null
+        },
+        "nonfoot_max_force": {
+          "native_or_direct_record_threshold": 1.0,
+          "maximum": 0.0,
+          "first_hit_control_intervals_s": [],
+          "first_hit_environment_indices": [],
+          "hit_environment_count": 0,
+          "hit_control_samples": 0,
+          "last_hit_control_time_s": null
+        },
+        "termination_nonfoot_contact": {
+          "native_or_direct_record_threshold": 0.5,
+          "maximum": 0.0,
+          "first_hit_control_intervals_s": [],
+          "first_hit_environment_indices": [],
+          "hit_environment_count": 0,
+          "hit_control_samples": 0,
+          "last_hit_control_time_s": null
+        }
+      },
+      "action_order_substep_hard_excess_hits": [],
+      "nonfoot_terminal_events": []
+    },
+    {
+      "label": "final-adjacent-X-621101",
+      "trajectory_sha256": "cdff8b610883a6695203a9294fe365f2e04416bdd962a6d7f4abf63746b5e504",
+      "native_counts": {
+        "safe_count": 60,
+        "complete_count": 64,
+        "overspeed_count": 4,
+        "joint_limit_violation_count": 0,
+        "nonfoot_contact_count": 0
+      },
+      "channels": {
+        "joint_velocity_limit_ratio": {
+          "native_or_direct_record_threshold": 1.0001,
+          "maximum": 1.0256479978561401,
+          "first_hit_control_intervals_s": [
+            [
+              0.0,
+              0.02
+            ],
+            [
+              0.0,
+              0.02
+            ],
+            [
+              0.3,
+              0.32
+            ],
+            [
+              0.3,
+              0.32
+            ]
+          ],
+          "first_hit_environment_indices": [
+            0,
+            44,
+            18,
+            62
+          ],
+          "hit_environment_count": 4,
+          "hit_control_samples": 4,
+          "last_hit_control_time_s": 0.32
+        },
+        "joint_position_limit_excess": {
+          "native_or_direct_record_threshold": 0.001,
+          "maximum": 0.0,
+          "first_hit_control_intervals_s": [],
+          "first_hit_environment_indices": [],
+          "hit_environment_count": 0,
+          "hit_control_samples": 0,
+          "last_hit_control_time_s": null
+        },
+        "nonfoot_max_force": {
+          "native_or_direct_record_threshold": 1.0,
+          "maximum": 0.0,
+          "first_hit_control_intervals_s": [],
+          "first_hit_environment_indices": [],
+          "hit_environment_count": 0,
+          "hit_control_samples": 0,
+          "last_hit_control_time_s": null
+        },
+        "termination_nonfoot_contact": {
+          "native_or_direct_record_threshold": 0.5,
+          "maximum": 0.0,
+          "first_hit_control_intervals_s": [],
+          "first_hit_environment_indices": [],
+          "hit_environment_count": 0,
+          "hit_control_samples": 0,
+          "last_hit_control_time_s": null
+        }
+      },
+      "action_order_substep_hard_excess_hits": [],
+      "nonfoot_terminal_events": []
+    },
+    {
+      "label": "final-adjacent-A-631101",
+      "trajectory_sha256": "77c77aed65ff73903c1794fe924c9ea7326ba699e6cebeb6054fad0f2fbeb0eb",
+      "native_counts": {
+        "safe_count": 61,
+        "complete_count": 64,
+        "overspeed_count": 2,
+        "joint_limit_violation_count": 1,
+        "nonfoot_contact_count": 0
+      },
+      "channels": {
+        "joint_velocity_limit_ratio": {
+          "native_or_direct_record_threshold": 1.0001,
+          "maximum": 1.0511032342910767,
+          "first_hit_control_intervals_s": [
+            [
+              0.0,
+              0.02
+            ],
+            [
+              1.72,
+              1.74
+            ]
+          ],
+          "first_hit_environment_indices": [
+            5,
+            60
+          ],
+          "hit_environment_count": 2,
+          "hit_control_samples": 2,
+          "last_hit_control_time_s": 1.74
+        },
+        "joint_position_limit_excess": {
+          "native_or_direct_record_threshold": 0.001,
+          "maximum": 0.0020411014556884766,
+          "first_hit_control_intervals_s": [
+            [
+              12.4,
+              12.42
+            ]
+          ],
+          "first_hit_environment_indices": [
+            20
+          ],
+          "hit_environment_count": 1,
+          "hit_control_samples": 1,
+          "last_hit_control_time_s": 12.42
+        },
+        "nonfoot_max_force": {
+          "native_or_direct_record_threshold": 1.0,
+          "maximum": 0.0,
+          "first_hit_control_intervals_s": [],
+          "first_hit_environment_indices": [],
+          "hit_environment_count": 0,
+          "hit_control_samples": 0,
+          "last_hit_control_time_s": null
+        },
+        "termination_nonfoot_contact": {
+          "native_or_direct_record_threshold": 0.5,
+          "maximum": 0.0,
+          "first_hit_control_intervals_s": [],
+          "first_hit_environment_indices": [],
+          "hit_environment_count": 0,
+          "hit_control_samples": 0,
+          "last_hit_control_time_s": null
+        }
+      },
+      "action_order_substep_hard_excess_hits": [
+        {
+          "control_interval_s": [
+            12.4,
+            12.42
+          ],
+          "env_index": 20,
+          "joint": "FL_hip_joint",
+          "excess_rad": 0.0020411014556884766,
+          "native_body_command": [
+            -0.44999998807907104,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "nonfoot_terminal_events": []
+    },
+    {
+      "label": "final-adjacent-T1-631101",
+      "trajectory_sha256": "ea5e33c9e824992d2444ec34010e486f110f81bb710109436bef2a94b6c10422",
+      "native_counts": {
+        "safe_count": 62,
+        "complete_count": 63,
+        "overspeed_count": 1,
+        "joint_limit_violation_count": 0,
+        "nonfoot_contact_count": 1
+      },
+      "channels": {
+        "joint_velocity_limit_ratio": {
+          "native_or_direct_record_threshold": 1.0001,
+          "maximum": 1.0511032342910767,
+          "first_hit_control_intervals_s": [
+            [
+              0.0,
+              0.02
+            ]
+          ],
+          "first_hit_environment_indices": [
+            5
+          ],
+          "hit_environment_count": 1,
+          "hit_control_samples": 1,
+          "last_hit_control_time_s": 0.02
+        },
+        "joint_position_limit_excess": {
+          "native_or_direct_record_threshold": 0.001,
+          "maximum": 0.0,
+          "first_hit_control_intervals_s": [],
+          "first_hit_environment_indices": [],
+          "hit_environment_count": 0,
+          "hit_control_samples": 0,
+          "last_hit_control_time_s": null
+        },
+        "nonfoot_max_force": {
+          "native_or_direct_record_threshold": 1.0,
+          "maximum": 2560.388916015625,
+          "first_hit_control_intervals_s": [
+            [
+              18.82,
+              18.84
+            ]
+          ],
+          "first_hit_environment_indices": [
+            20
+          ],
+          "hit_environment_count": 1,
+          "hit_control_samples": 1,
+          "last_hit_control_time_s": 18.84
+        },
+        "termination_nonfoot_contact": {
+          "native_or_direct_record_threshold": 0.5,
+          "maximum": 1.0,
+          "first_hit_control_intervals_s": [
+            [
+              18.82,
+              18.84
+            ]
+          ],
+          "first_hit_environment_indices": [
+            20
+          ],
+          "hit_environment_count": 1,
+          "hit_control_samples": 1,
+          "last_hit_control_time_s": 18.84
+        }
+      },
+      "action_order_substep_hard_excess_hits": [],
+      "nonfoot_terminal_events": [
+        {
+          "control_interval_s": [
+            18.82,
+            18.84
+          ],
+          "env_index": 20,
+          "native_body_command": [
+            0.0,
+            0.0,
+            -0.10199995338916779
+          ],
+          "maximum_force_N": 2560.388916015625,
+          "link_or_contact_pair": "not recorded by this native evaluation"
+        }
+      ]
+    }
+  ],
+  "scope": "CPU-only exact native threshold audit; no rescoring, exclusion of startup, policy updates or GPU. Control intervals do not identify exact5ms times. Joint names derive from measured action-order metadata; contact pair is not inferred.",
+  "earlier_explicit_1001_diagnostic_sha256": "51174d714ec3972842f7484b28f35d13b8cdc9c10ff941ee7bd638b3a507a485"
+}
