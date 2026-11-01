@@ -828,8 +828,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/README.md",
-      "bytes": 23822,
-      "sha256": "b6253257de3b1b2c4571599fd4bb3605d50b7422a0216d6629272154cb0b0178"
+      "bytes": 24609,
+      "sha256": "54a9c9f645f01c354f96ed5f200e5cdf6fd05c2c3e7f7c2c8c24381d2db0b30f"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/RESOURCE_PLAN.json",
@@ -942,6 +942,11 @@
       "sha256": "59c06026741bfb1f2402d311cf850c5c4c6c8c7acc7245d7193fd3f1581f3afb"
     },
     {
+      "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DEVELOPMENT_STEADYKL001_N200_SEED22.json",
+      "bytes": 122419,
+      "sha256": "859946f2716eafbcd879ef795ec51b40b3ec0fef7423cb90291afc8abc90ef8b"
+    },
+    {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/DIAGNOSTIC_ACTOR_ONLY_SERIALIZATION_FIX.json",
       "bytes": 678,
       "sha256": "f74389b86a8b7bd70767cffad84456710a7256ad676ccebe9601f2d40bb524cd"
@@ -953,8 +958,8 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/FUNCTION_AND_LEG_MARGIN_AUDIT.json",
-      "bytes": 100947,
-      "sha256": "3681f704373ae610fbdd8b4ac7b18ded09e7eb43beff1c5ca7bc346d417f01c8"
+      "bytes": 105294,
+      "sha256": "35c653614cd62433bf863e823428f54a93100d781055a0ba7bf4c4eabc11b3e8"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/GPU_INITIALIZATION_AND_NATIVE_PPO.json",
@@ -1088,18 +1093,18 @@
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/evidence/TRAINING_SIGNAL_COMPARISON.json",
-      "bytes": 28384,
-      "sha256": "f2e60f54844411e9f4877d831843ec4f841516735a2f62cd68cb8564c0d273b0"
+      "bytes": 35209,
+      "sha256": "7499378e3daa05ddb6ddb77e620b81582d04f64fa8550798ce712a8c75b6909d"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.json",
-      "bytes": 7860,
-      "sha256": "5831e286d9a1be40ed0aa0983f94a497874d40faaeb84a6507567c3976b4db7c"
+      "bytes": 8197,
+      "sha256": "86e80a38ef7bcc2274ea613f8ad2f67315c8d3718d71047b38a1fbe311c2f8a6"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/figures/STAGE3B_PHYSICAL_LEARNING.svg",
-      "bytes": 282191,
-      "sha256": "43b4cd12a55c0bb8e979122b57d0a98713aeec9db2e85a9d218e9916986b8529"
+      "bytes": 294586,
+      "sha256": "0fbe5b1a5ab0aecf248611999812371f9e392a717ed6a23657fade6d5393eeae"
     },
     {
       "path": "projects/go2_piper_wbc/stage3b_dynamic_x_safety_20261101/patches/finalize_stage3.py.patch",
