@@ -1,0 +1,56 @@
+{
+  "recipe_id": "arm_synergy_legKL02_steady_full_mean_v1",
+  "leg_weight": 0.02,
+  "steady_mean_weight": 0.00419,
+  "training_seeds": [
+    22,
+    21
+  ],
+  "only_changed_learning_factor": "add_observable_steady_goal_full_mean_preservation",
+  "common_parent_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "source_sha256": "2d61864928f169f485fd6c03d2eb752b2b5e52ab4e73c76b5c7b3f64963653e3",
+  "retention_source_sha256": "fc0e035b541a691da8b54f2d9b67d4ce6f8b8c04f09e549d4047490e9713eafe",
+  "physical_admission": "REPAIR3V2 actual current/head-zero remain1contact; original full function restores64complete,0hard/nonfoot with exact realization/prefix and EE3.44cm. This supports joint function preservation, not a unique calf scalar or arm-only cause.",
+  "mechanism": "Existing global12leg GaussianKL.02 unchanged; one new full18D mean-only distance to same immutable parent on held XYZ target history. Parent std only fixes scaling; current exploration std/native entropy are not part of this new loss. No extra actor inputs, oracle task flag or goal amplitude change.",
+  "observable_mask": "Original210 term-major goal189:210 ->3x7, use XYZ only; both consecutive intervals maxabs<=1e-7m. Padding/resampling can be nonsteady. Actual-A steady fraction.94897;608actualP1 dynamicX samples mask0.",
+  "weight_calibration": {
+    "CPU_only": true,
+    "current_checkpoint_sha256": "973cf14664d09b22f84b11e5cdf00ab40d58ac8f6134fda935bab872dcadec51",
+    "anchor_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+    "actual_fixed_protocol_samples": 1215,
+    "steady_goal_fraction": 0.9489712119102478,
+    "mean_only_distance": 21.319595336914062,
+    "new_term_gradient_norm": 438.5395202636719,
+    "reference_native_preclip_actor_norm_median": 7.35792350769043,
+    "selected_weight": 0.00419,
+    "heuristic_weighted_gradient_fraction": 0.24972814517360345,
+    "actual_dynamic_X_samples": 608,
+    "dynamic_X_steady_mask_fraction": 0.0,
+    "scope": "Same real current-A observations and fixed-parent mean/std; original210 visible XYZ history only. Current std is not in the new mean-only loss. Different native-gradient batches: scale heuristic, not exact PPO/per-reward gradient attribution. Dynamic mask check is actual frozen P1 history, not task ID/seed oracle."
+  },
+  "all18D_original_actor_parameters_trainable": true,
+  "unchanged": [
+    "common_CP1800_actor_critic_Adam_normalization",
+    "zero_rank1_arm_mean_head_v1",
+    "210_actor_102_critic",
+    "native_GAE_Gaussian_sampling_logprob",
+    "original27_rewards",
+    "Uniform30_70",
+    "LR_rule_entropy",
+    "DelayedPD_DR_ramp_limits",
+    "original20s_all_gates"
+  ],
+  "native_training_reset_cuts": [
+    2,
+    100,
+    200,
+    400
+  ],
+  "physical_milestones": "200 then real saved300/400 after uninterrupted200->400; both seeds before optional safe100-update continuations. No unused100evaluation, no alteration to native training/reset schedule.",
+  "stopping": "Stop unsafe policy or two flat physical milestones; never resume unsafe weights. Both continuation seeds require two complete safe original-gate nodes before recipe admission/formal. Time only hard quota; no update/transition caps.",
+  "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800",
+  "GPU_SUM_cap_seconds": 28800,
+  "final_reserve_seconds": 3600,
+  "actor_update_cap": null,
+  "transition_cap": null
+}

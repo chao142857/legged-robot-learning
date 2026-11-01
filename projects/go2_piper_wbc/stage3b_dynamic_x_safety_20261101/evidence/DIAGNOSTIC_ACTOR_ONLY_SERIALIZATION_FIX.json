@@ -1,0 +1,9 @@
+{
+  "failed_diagnostic_run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T085104-repair3-seed22-head_zero",
+  "raw_error_sha256": "79de19d78911168ee987ce5c4cf996ce10f736635a33a2d0a81feb91e4bc86f7",
+  "actual_error": "ModuleNotFoundError: numpy._core",
+  "cause": "CPU NumPy2 full checkpoint RNG metadata is not loadable by fixed NumPy1 GPU environment",
+  "fix": "New actor-only Torch diagnostic artifact; original full training checkpoint and failed raw evidence retained. No environment/library upgrade.",
+  "corrected_source_sha256": "6c865f502fe5cc81f68de8e5ffaf3bae749ffc73546112a72b544786b0132f95",
+  "all_failed_start_GPU_cost_in_original_grant": true
+}

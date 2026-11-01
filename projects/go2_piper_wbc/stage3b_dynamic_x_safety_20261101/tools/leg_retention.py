@@ -33,11 +33,25 @@ def leg_kl(anchor_mean, anchor_std, current_mean, current_std):
     cm, cst = current_mean[..., :12], current_std[..., :12]
     return (torch.log(cst / ast) + (ast.square() + (am-cm).square()) / (2*cst.square()) - .5).sum(-1).mean()
 
+def steady_goal_mask(x,tolerance_m=1e-7):
+    """Observable original210 history only; XYZ, never goal quaternion or seed.
+
+    Three term-major7D goal records occupy189:210. A held XYZ goal has no
+    position change across both intervals. Smooth dynamic-X extrema still
+    change over this40ms history. Padding/resampling can be nonsteady.
+    """
+    assert x.ndim==2 and x.shape[-1]==210
+    xyz=x[:,189:210].reshape(-1,3,7)[:,:,:3]
+    return (xyz[:,1:]-xyz[:,:-1]).abs().amax(dim=(1,2))<=tolerance_m
+
 class LegRetention:
     def __init__(self, alg, anchor, cfg, out):
         assert cfg['schema'] == SCHEMA and float(cfg['weight']) > 0
         assert not alg.actor.is_recurrent and not alg.symmetry and not alg.rnd
         self.alg, self.anchor, self.cfg = alg, anchor, copy.deepcopy(cfg)
+        if self.cfg.get('steady_mean_weight',0.):
+            assert self.cfg['steady_mean_schema']=='observable_steady_XYZ_full_mean_v1'
+            assert self.cfg['steady_xyz_tolerance_m']==1e-7
         anchor.eval().requires_grad_(False)
         assert not set(anchor.parameters()) & set(alg.actor.parameters())
         self.fixed_anchor_hash = model_sha(anchor)
@@ -85,10 +99,26 @@ class LegRetention:
         assert mean.shape == anchor_mean.shape
         loss = leg_kl(anchor_mean, anchor_std, mean, std)
         assert torch.isfinite(loss), 'Leg retention numerical error'
-        self.values.append(dict(leg_KL=float(loss.detach()), weighted_loss=float((loss*self.cfg['weight']).detach()),
+        total=self.cfg['weight']*loss
+        row=dict(leg_KL=float(loss.detach()), weighted_loss=float(total.detach()),
             leg_mean_shift_RMS=float((mean[...,:12].detach()-anchor_mean[...,:12]).square().mean().sqrt()),
-            arm_mean_shift_RMS=float((mean[...,12:].detach()-anchor_mean[...,12:]).square().mean().sqrt())))
-        return self.cfg['weight']*loss
+            arm_mean_shift_RMS=float((mean[...,12:].detach()-anchor_mean[...,12:]).square().mean().sqrt()))
+        if self.cfg.get('steady_mean_weight',0.):
+            x=torch.cat([obs[g] for g in self.alg.actor.obs_groups],-1)
+            mask=steady_goal_mask(x,self.cfg['steady_xyz_tolerance_m']).to(mean.dtype)
+            # Mean-only functional preservation. Parent std is a fixed scale;
+            # current exploration std and native entropy are not constrained by
+            # this new term. Normalize by the full actual batch, including a
+            # zero loss/gradient when no held target is present.
+            distance=.5*((mean-anchor_mean)/anchor_std).square().sum(-1)
+            steady=(distance*mask).mean()
+            weighted=self.cfg['steady_mean_weight']*steady
+            total=total+weighted
+            row.update(steady_goal_fraction=float(mask.mean()),steady_full_mean_distance=float(steady.detach()),
+                steady_full_mean_weighted_loss=float(weighted.detach()),total_functional_retention_loss=float(total.detach()))
+        assert torch.isfinite(total)
+        self.values.append(row)
+        return total
 
     def update_summary(self):
         assert model_sha(self.anchor) == self.fixed_anchor_hash, 'Fixed skill anchor changed'

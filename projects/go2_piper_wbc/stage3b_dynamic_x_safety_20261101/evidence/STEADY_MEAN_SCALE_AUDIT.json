@@ -1,0 +1,15 @@
+{
+  "CPU_only": true,
+  "current_checkpoint_sha256": "973cf14664d09b22f84b11e5cdf00ab40d58ac8f6134fda935bab872dcadec51",
+  "anchor_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "actual_fixed_protocol_samples": 1215,
+  "steady_goal_fraction": 0.9489712119102478,
+  "mean_only_distance": 21.319595336914062,
+  "new_term_gradient_norm": 438.5395202636719,
+  "reference_native_preclip_actor_norm_median": 7.35792350769043,
+  "selected_weight": 0.00419,
+  "heuristic_weighted_gradient_fraction": 0.24972814517360345,
+  "actual_dynamic_X_samples": 608,
+  "dynamic_X_steady_mask_fraction": 0.0,
+  "scope": "Same real current-A observations and fixed-parent mean/std; original210 visible XYZ history only. Current std is not in the new mean-only loss. Different native-gradient batches: scale heuristic, not exact PPO/per-reward gradient attribution. Dynamic mask check is actual frozen P1 history, not task ID/seed oracle."
+}

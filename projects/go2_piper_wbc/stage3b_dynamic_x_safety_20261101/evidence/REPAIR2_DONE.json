@@ -1,0 +1,47 @@
+{
+  "hypothesis_supported": false,
+  "rows": [
+    {
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T084041-repair2-seed22-current",
+      "mode": "current",
+      "strict": 63,
+      "complete": 63,
+      "hard": 0,
+      "nonfoot": 1,
+      "EE_after1s_m": 0.02729271724820137
+    },
+    {
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T084137-repair2-seed22-parent_legs",
+      "mode": "parent_legs",
+      "strict": 63,
+      "complete": 63,
+      "hard": 0,
+      "nonfoot": 1,
+      "EE_after1s_m": 0.027288401499390602
+    }
+  ],
+  "native_scalar_reproduced": true,
+  "initial_realization_equal": true,
+  "first49_actual_control_prefix_equal": {
+    "diag_actor_obs": true,
+    "component_current_mean": true,
+    "control_processed_target": true,
+    "control_joint_position": true,
+    "control_joint_velocity": true,
+    "ee_cmd": true,
+    "base_cmd": true,
+    "kin_link0_pos": true,
+    "kin_link0_quat": true,
+    "component_contacts_history_w": true
+  },
+  "plan_sha256": "43facd264fe1f11694d73da55904aa129cb04dc7c17d9ced8a46eef05d823095",
+  "diagnostic_only_not_single_policy_success": true,
+  "scope": "Whole-leg function intervention, not a unique instantaneous calf-scalar cause or hidden PhysX restore.",
+  "clock": {
+    "GPU_container_SUM_seconds": 17103.28710794449,
+    "cap_seconds": 28800,
+    "final_reserve_seconds": 3600,
+    "active": [],
+    "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800"
+  }
+}

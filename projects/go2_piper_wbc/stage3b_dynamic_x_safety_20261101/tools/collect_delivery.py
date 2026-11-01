@@ -39,6 +39,8 @@ def collect(p, out):
     prior = pathlib.Path(a['prior_closed_stage3_root'])
     assert all(sha(prior/name) == value for name, value in a['prior_closed_file_sha256'].items())
     cp = frozen['candidate']; assert sha(cp['checkpoint']) == cp['checkpoint_sha256']
+    selected_training_run=pathlib.Path(cp['checkpoint']).parents[2]
+    selected_training_config=read(selected_training_run/'config.json')
     if frozen['adjacent']:
         previous = frozen['adjacent']['checkpoint']
         assert sha(previous['checkpoint']) == previous['checkpoint_sha256']
@@ -85,7 +87,9 @@ def collect(p, out):
     assert all(r['n'] == 64 for r in formal)
     result = dict(stage='Stage3b original Uniform PPO dynamicX and safety', closed=True,
         original_baseline_PASS=actual_pass and adjacent_pass, SGS_ready=actual_pass and adjacent_pass,
-        recipe='Declared synergy mean head plus fixed-parent leg Gaussian KL; original task/27rewards/Uniform/physics/evaluator unchanged',
+        recipe='Single18D synergy mean actor with the explicit selected learning objective below; original task/27rewards/Uniform/physics/evaluator unchanged',
+        selected_training_recipe_id=cp.get('recipe_id'),selected_training_run=str(selected_training_run),
+        selected_learning_objective=selected_training_config.get('leg_retention'),
         common_parent_sha256=read(p/'CHECKPOINTS.json')['parent']['checkpoint_sha256'],
         selected_checkpoint=cp, adjacent=frozen['adjacent'],
         candidate_checks=matrix['checks'], adjacent_checks=consecutive['checks'],

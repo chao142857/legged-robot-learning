@@ -1,0 +1,5 @@
+{
+  "pid": 3622746,
+  "source_sha256": "0f23cc93a39f9b4fa21274f71225afd7187b2eabf4ac05b498e8b5d88eb76453",
+  "scope": "CPU only, waits for actual COMPLETED and audits immutable final evidence; never selects models or launches GPU"
+}

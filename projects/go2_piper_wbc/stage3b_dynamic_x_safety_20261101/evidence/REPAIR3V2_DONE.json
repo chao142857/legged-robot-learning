@@ -1,0 +1,66 @@
+{
+  "rows": [
+    {
+      "mode": "head_zero",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T085342-repair3v2-seed22-head_zero",
+      "strict": 63,
+      "complete": 63,
+      "hard": 0,
+      "nonfoot": 1,
+      "EE_after1s_m": 0.029373440891504288
+    },
+    {
+      "mode": "parent_all",
+      "run": "/data/go2_piper_wbc_stage3b_dynamic_x_20261101/runs/20261101T085440-repair3v2-seed22-parent_all",
+      "strict": 63,
+      "complete": 64,
+      "hard": 0,
+      "nonfoot": 0,
+      "EE_after1s_m": 0.03438861668109894
+    }
+  ],
+  "checks": [
+    {
+      "mode": "head_zero",
+      "equal_prefix": {
+        "diag_actor_obs": true,
+        "component_current_mean": true,
+        "control_processed_target": true,
+        "control_joint_position": true,
+        "control_joint_velocity": true,
+        "ee_cmd": true,
+        "base_cmd": true,
+        "kin_link0_pos": true,
+        "kin_link0_quat": true,
+        "component_contacts_history_w": true
+      },
+      "equal_realization": true,
+      "removes_contact": false
+    },
+    {
+      "mode": "parent_all",
+      "equal_prefix": {
+        "diag_actor_obs": true,
+        "component_current_mean": true,
+        "control_processed_target": true,
+        "control_joint_position": true,
+        "control_joint_velocity": true,
+        "ee_cmd": true,
+        "base_cmd": true,
+        "kin_link0_pos": true,
+        "kin_link0_quat": true,
+        "component_contacts_history_w": true
+      },
+      "equal_realization": true,
+      "removes_contact": true
+    }
+  ],
+  "diagnostic_only_not_learned_policy": true,
+  "clock": {
+    "GPU_container_SUM_seconds": 17218.499127149582,
+    "cap_seconds": 28800,
+    "final_reserve_seconds": 3600,
+    "active": [],
+    "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800"
+  }
+}

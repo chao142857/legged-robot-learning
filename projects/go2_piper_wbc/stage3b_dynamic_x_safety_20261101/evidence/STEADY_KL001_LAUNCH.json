@@ -1,0 +1,8 @@
+{
+  "pid": 3533025,
+  "source_sha256": "2d61864928f169f485fd6c03d2eb752b2b5e52ab4e73c76b5c7b3f64963653e3",
+  "retention_source_sha256": "fc0e035b541a691da8b54f2d9b67d4ce6f8b8c04f09e549d4047490e9713eafe",
+  "plan_sha256": "59aac001d5c5f0f402da951cea210400a0d02d9fafada3e1ca304305a397e934",
+  "GPU_receipt_must_be_verified": true,
+  "same_grant_and_reserve": true
+}

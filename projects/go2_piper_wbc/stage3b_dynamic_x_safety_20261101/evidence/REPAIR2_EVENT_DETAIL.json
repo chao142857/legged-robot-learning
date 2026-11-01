@@ -1,0 +1,179 @@
+{
+  "rows": [
+    {
+      "mode": "current",
+      "events": [
+        {
+          "t_index": 934,
+          "time_s": 18.7,
+          "env": 56,
+          "native_nonfoot_N": 179.81680297851562,
+          "matched_force_body_names": [
+            "RL_calf"
+          ],
+          "largest_measured_body_peaks": [
+            {
+              "body": "RL_calf",
+              "force_N": 179.81680297851562
+            },
+            {
+              "body": "FL_foot",
+              "force_N": 103.36225128173828
+            },
+            {
+              "body": "RR_foot",
+              "force_N": 96.01143646240234
+            },
+            {
+              "body": "RL_foot",
+              "force_N": 74.76776123046875
+            },
+            {
+              "body": "end_effector",
+              "force_N": 0.0
+            },
+            {
+              "body": "link3",
+              "force_N": 0.0
+            },
+            {
+              "body": "link6",
+              "force_N": 0.0
+            },
+            {
+              "body": "link4",
+              "force_N": 0.0
+            }
+          ],
+          "EE_target_peak_to_peak": [
+            0.019999980926513672,
+            0.029999999329447746,
+            0.0,
+            0.005133688449859619,
+            0.005395805928856134,
+            0.03084200620651245,
+            0.03290147706866264
+          ],
+          "EE_target_at_event": [
+            0.4300000071525574,
+            0.0,
+            0.47999998927116394,
+            0.9913543462753296,
+            0.0,
+            0.13121183216571808,
+            0.0
+          ],
+          "arm_q": [
+            -0.17726720869541168,
+            1.4376529455184937,
+            -0.7882224321365356,
+            -1.1954203844070435,
+            -0.3432233929634094,
+            1.0727630853652954
+          ],
+          "command": [
+            -0.44999998807907104,
+            0.0,
+            0.0
+          ],
+          "actual_velocity": [
+            -0.38022369146347046,
+            -0.02656802535057068,
+            0.4096178412437439
+          ],
+          "roll": -0.10738396644592285,
+          "pitch": -0.03517627716064453,
+          "clearance": 0.25882473587989807
+        }
+      ]
+    },
+    {
+      "mode": "parent_legs",
+      "events": [
+        {
+          "t_index": 772,
+          "time_s": 15.46,
+          "env": 56,
+          "native_nonfoot_N": 245.05819702148438,
+          "matched_force_body_names": [
+            "RL_calf"
+          ],
+          "largest_measured_body_peaks": [
+            {
+              "body": "RL_calf",
+              "force_N": 245.05819702148438
+            },
+            {
+              "body": "RL_foot",
+              "force_N": 92.81175231933594
+            },
+            {
+              "body": "FL_foot",
+              "force_N": 77.8851089477539
+            },
+            {
+              "body": "RR_foot",
+              "force_N": 53.78887176513672
+            },
+            {
+              "body": "FR_foot",
+              "force_N": 24.505399703979492
+            },
+            {
+              "body": "end_effector",
+              "force_N": 0.0
+            },
+            {
+              "body": "link6",
+              "force_N": 0.0
+            },
+            {
+              "body": "link4",
+              "force_N": 0.0
+            }
+          ],
+          "EE_target_peak_to_peak": [
+            0.019999980926513672,
+            0.029999999329447746,
+            0.0,
+            0.005250513553619385,
+            0.005405745469033718,
+            0.03165324032306671,
+            0.03290082514286041
+          ],
+          "EE_target_at_event": [
+            0.4300000071525574,
+            0.0,
+            0.47999998927116394,
+            0.9912154078483582,
+            0.0,
+            0.13225729763507843,
+            0.0
+          ],
+          "arm_q": [
+            -0.20848345756530762,
+            1.4813485145568848,
+            -0.8025891780853271,
+            -1.1876729726791382,
+            -0.3824564814567566,
+            1.0720117092132568
+          ],
+          "command": [
+            -0.44999998807907104,
+            0.0,
+            0.0
+          ],
+          "actual_velocity": [
+            -0.298723042011261,
+            0.026697352528572083,
+            0.3163074254989624
+          ],
+          "roll": -0.14089059829711914,
+          "pitch": -0.060999155044555664,
+          "clearance": 0.26317042112350464
+        }
+      ]
+    }
+  ],
+  "scope": "Actual full sensor history and target/q records; native scalar matched to measured body-force magnitude, not a measured collision pair. Command peak-to-peak uses valid1s-to-contact prefix; fixed versus dynamic is measured, not inferred from protocol name."
+}

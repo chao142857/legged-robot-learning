@@ -1,7 +1,7 @@
 {
   "file": "STAGE3B_PHYSICAL_LEARNING.svg",
-  "sha256": "a7eb26c7fa2b51c37873d2746f125d928b454200cea2777086bcba8ab8e01d6b",
-  "bytes": 280464,
+  "sha256": "43b4cd12a55c0bb8e979122b57d0a98713aeec9db2e85a9d218e9916986b8529",
+  "bytes": 282191,
   "points": [
     {
       "family": "Matched native PPO",
@@ -73,6 +73,15 @@
       "checkpoint_sha256": "ad00e131aade54c2d44f461c021389732cddb6bb297328980ed3dc6298a2aeec",
       "hard_nonfoot_events": 0,
       "original_retention": true,
+      "worst_strict_safe_fraction": 0.984375
+    },
+    {
+      "family": "arm_synergy_fixed_legKL_002",
+      "training_seed": 21,
+      "additional_updates": 500,
+      "checkpoint_sha256": "4b288455aa976c878e5dc6ca9f755b65c81849c532726381df900b273d6466a7",
+      "hard_nonfoot_events": 0,
+      "original_retention": false,
       "worst_strict_safe_fraction": 0.984375
     },
     {
