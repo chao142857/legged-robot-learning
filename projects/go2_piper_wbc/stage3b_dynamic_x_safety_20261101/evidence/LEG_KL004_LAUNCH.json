@@ -1,0 +1,7 @@
+{
+  "pid": 3196654,
+  "source_sha256": "0179679849457a4803574dd59958311513a3d606eda1a2a009f9c93c3dbb986c",
+  "plan_sha256": "febde118425c71f3010c1b23edb8f5f9454b7b829f4c72de8429b8e6a4545cf4",
+  "state": "CPU conditional coordinator only; waits new actual causal support. No new PPO/GPU started.",
+  "same_grant_and_reserve": true
+}

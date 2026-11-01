@@ -1,0 +1,5 @@
+{
+  "pid": 3155205,
+  "source_sha256": "290c36d78b302b50d714144419f6551ed8d11d36cc2898a39321f5217c9780c4",
+  "state": "CPU waiting for learner and saved500 completion; at most2 frozen causal PhysX cells, no training"
+}

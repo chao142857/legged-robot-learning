@@ -1,0 +1,43 @@
+{
+  "recipe_id": "arm_synergy_fixed_legKL_004",
+  "weight": 0.04,
+  "training_seeds": [
+    22,
+    21
+  ],
+  "only_changed_learning_factor": "fixed_leg_Gaussian_KL_coefficient_0.02_to_0.04",
+  "common_parent_sha256": "16333b869458ae62c371fd68b92f61e4740c250635f8b57906809ac067a77091",
+  "source_sha256": "0179679849457a4803574dd59958311513a3d606eda1a2a009f9c93c3dbb986c",
+  "admission": "Only if REPAIR2_DONE.hypothesis_supported: a matched actual native400 contact is reproduced and removed by safe200leg-function-only intervention with exact physical prefix/DR and retained EE.",
+  "hypothesis": "The weaker leg distribution constraint permits repeatable late leg-function/safety drift while arm X learns. A bounded2x coefficient change tests this without changing actor/reward/LR/entropy/sampling/physics.",
+  "calibration": "Exactly2x the preceding declared penalty/gradient at identical batch/parameters; the .01original scale audit was25%-38% of observed native preclip norms. This is not an exact per-reward gradient decomposition; direct head leg-KL gradient is zero, full native total gradient remains.",
+  "unchanged": [
+    "common_CP1800_actor_critic_Adam_normalization",
+    "zero_synergy_head",
+    "all18_original_actor_parameters_trainable",
+    "fixed_CP1800_anchor",
+    "native_GAE_and_27_rewards",
+    "210_actor_102_critic",
+    "Uniform30_70",
+    "LR_rule_entropy",
+    "DelayedPD_DR_ramp_limits",
+    "original20s_all_gates"
+  ],
+  "native_training_reset_cuts": [
+    2,
+    100,
+    200,
+    400
+  ],
+  "first_complete_physical_matrix": 200,
+  "saved300_evaluation": "Evaluate the real CP2100 saved inside uninterrupted200->400 window after400training completes. Additional evaluation cannot alter the generated PPO data or400 policy.",
+  "balanced_seeds": "Both independent common-parent seeds receive first controlled through400 opportunity before optional safe100-update continuations; unsafe weights never resumed.",
+  "first100": "Native100checkpoint kept; omit redundant100physicalmatrix to preserve budget for both seeds and consecutive native300/400 tests. Training/reset boundaries and RNG/data semantics match002.",
+  "stopping": "Zero actual hard/nonfoot full-policy events; stop that branch at real safety event or two flat physical milestones. Admit recipe only if both seeds have consecutive complete original-gate passing nodes before formal. No threshold changes.",
+  "grant_id": "stage3b-original-uniform-dynamicX-safety-20261101-28800",
+  "GPU_SUM_cap_seconds": 28800,
+  "final_reserve_seconds": 3600,
+  "actor_update_cap": null,
+  "transition_cap": null,
+  "not_admitted_if_causal_support_missing": true
+}
