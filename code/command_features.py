@@ -62,8 +62,8 @@ def features(ee,velocity,reference,return_content=False):
     offsets[...,0]=np.clip(offsets[...,0],-3.14/4,3.14/3)
     rotations=native_reference_rotation(pos,offsets,reference)
     perturb_rotations=euler_matrix(offsets)
-    speeds=v[:,:2,:3].astype(np.float64)*np.array([2,1.2,2])+np.array([-1,-.6,-1])
-    standing=v[:,:2,3]<=.1;effective_speed=speeds.copy();effective_speed[standing]=0
+    speeds=v[:,:3,:3].astype(np.float64)*np.array([2,1.2,2])+np.array([-1,-.6,-1])
+    standing=v[:,:3,3]<=.1;effective_speed=speeds.copy();effective_speed[standing]=0
     index=np.arange(n)[:,None];ee_slot=trace[:,SAMPLE_STEPS,0].astype(int);vel_slot=trace[:,SAMPLE_STEPS,1].astype(int);T=len(SAMPLE_STEPS)
     blocks={
       'position_time':((pos[index,ee_slot]-np.array([.575,0,.45]))/np.array([.25,.7,.7])/np.sqrt(3*T)).reshape(n,-1),
@@ -78,13 +78,16 @@ def features(ee,velocity,reference,return_content=False):
     duration=np.stack([(trace[:,:,0]==j).sum(1) for j in range(3)],1)/HORIZON
     event=np.concatenate(((pos-np.array([.575,0,.45]))/np.array([.25,.7,.7])/np.sqrt(3),rotations.reshape(n,3,9)/4,perturb_rotations.reshape(n,3,9)/4),2)
     blocks['EE_exact_dwell']=(event*np.sqrt(duration)[...,None]/np.sqrt(3)).reshape(n,-1)
+    velocity_duration=np.stack([(trace[:,:,1]==j).sum(1) for j in range(3)],1)/HORIZON
+    velocity_event=np.concatenate((effective_speed/np.array([1,.6,1])/np.sqrt(3),standing[...,None]),2)
+    blocks['velocity_exact_dwell']=(velocity_event*np.sqrt(velocity_duration)[...,None]/np.sqrt(2)).reshape(n,-1)
     X=np.concatenate(list(blocks.values()),1).astype(np.float32)
     # The raw standing velocity is observable for one initial-reset step only; explicit provenance, not the regular episode descriptor.
     metadata=dict(dimensions=X.shape[1],block_dimensions={k:v.shape[1] for k,v in blocks.items()},normalization='Fixed native physical ranges; equal time-averaged position/velocity/standing blocks; SO3 native-reference and perturbation rotations split total orientation weight.',reference=reference,
         primary_lifecycle='Regular native autoreset, including one compute on reset frame',initial_reset_sensitivity='One-control-step offset; explicit initial reset raw standing velocity lasts one step, regular autoreset applies zero mask before first action.',
-        excluded=['all EE slot3 fields','all velocity slot2/3 fields','EE slot2 timer','all velocity timer inputs (constant10s)','raw standing uniforms beyond their boolean marker','raw velocity values when standing in regular episodes (initial-reset slot0 pulse is retained separately)'],
+        excluded=['all EE slot3 fields','all velocity slot3 fields','EE slot2 timer','all velocity timer inputs (constant10s)','raw standing uniforms beyond their boolean marker','raw velocity values when standing in regular episodes (initial-reset slot0 pulse is retained separately)'],
         rotation_limitation='Reference SO3 target follows the exact native function at a fixed pre-policy reset state. Later state-dependent target rotations are not precomputed; perturbation SO3 descriptors retain their input dependence. No claim of full moving-state orientation equivalence.')
-    content=dict(position=pos,rotation=rotations,perturb_rotation=perturb_rotations,velocity=effective_speed,standing=standing,trace=trace,starts=starts,duration=duration)
+    content=dict(position=pos,rotation=rotations,perturb_rotation=perturb_rotations,velocity=effective_speed,standing=standing,trace=trace,starts=starts,duration=duration,velocity_duration=velocity_duration)
     return (X,metadata,content) if return_content else (X,metadata)
 
 def balanced_partition(X,capacity=8,seed=20261104,power_steps=8):

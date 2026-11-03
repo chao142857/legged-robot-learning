@@ -10,15 +10,19 @@ from grouped_sampling import mapping_hash
 start=time.time();OUT=ROOT/'artifacts/groups';OUT.mkdir(parents=True,exist_ok=True)
 protocol=json.loads((ROOT/'protocol/E2_protocol_frozen.json').read_text())
 pool=ROOT/'pools/wbc_train.npz';raw=np.load(pool);ee=raw['ee'];velocity=raw['velocity'];assert len(ee)==32768
-refs=json.loads((ROOT/'artifacts/structure/reset_reference_states.json').read_text());reference=dict(height=refs['link0_positions'][0][2],quaternion=refs['link0_quaternions'][0])
-trace,starts=timeline(ee[:16],velocity[:16],False)
-events=json.loads((ROOT/'artifacts/structure/resample_events.json').read_text())
-for e in events:assert int(starts[e['sequence_id'],0 if e['kind']=='ee' else 1,e['slot']])==e['episode_step'],e
-samples=json.loads((ROOT/'artifacts/structure/control_samples.json').read_text())
-for s in samples:assert list(trace[s['env_id'],s['episode_step']])==[s['ee_slot'],s['velocity_slot']]
+refs=json.loads((ROOT/'artifacts/structure_v2/reset_reference_states.json').read_text());reference=dict(height=refs['link0_positions'][0][2],quaternion=refs['link0_quaternions'][0])
+trace0,starts0=timeline(ee[:16],velocity[:16],False);trace1,starts1=timeline(ee[:16],velocity[:16],True)
+events=json.loads((ROOT/'artifacts/structure_v2/resample_events.json').read_text())
+for e in events:
+    starts=starts0 if e['generation']==1 else starts1
+    assert int(starts[e['sequence_id'],0 if e['kind']=='ee' else 1,e['slot']])==e['episode_step'],e
+samples=json.loads((ROOT/'artifacts/structure_v2/control_samples.json').read_text())
+for s in samples:
+    trace=trace0 if s['generation']==1 else trace1
+    assert list(trace[s['env_id'],s['episode_step']])==[s['ee_slot'],s['velocity_slot']]
 print('NATIVE_TRACE_TIMELINE_MATCH '+str(len(samples)),flush=True)
 X,meta,content=features(ee,velocity,reference,True)
-write(OUT/'feature_definition.json',dict(**meta,inputs=[str(pool),str(ROOT/'artifacts/structure/reset_reference_states.json')],no_feedback_or_eval_inputs=True,pool_sha256=file_sha(pool)))
+write(OUT/'feature_definition.json',dict(**meta,inputs=[str(pool),str(ROOT/'artifacts/structure_v2/reset_reference_states.json')],no_feedback_or_eval_inputs=True,pool_sha256=file_sha(pool)))
 np.save(OUT/'command_features.npy',X);np.savez_compressed(OUT/'effective_content.npz',**content)
 print('FEATURES '+str(X.shape),flush=True)
 maps={}
@@ -52,7 +56,7 @@ for name,rows in [('geometry_comparison.csv',geometry),('within_group_command_di
     with (OUT/name).open('w',newline='',encoding='utf-8-sig') as f:w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 usage=dict(EE_slot_exposure_steps=[int((content['trace'][:,:,0]==j).sum()) for j in range(4)],velocity_slot_exposure_steps=[int((content['trace'][:,:,1]==j).sum()) for j in range(4)],
     standing_fraction_effective_slots=content['standing'].mean(0).tolist(),EE_switch_seconds_quantiles=[np.quantile(content['starts'][:,0,j]*.02,[0,.25,.5,.75,1]).tolist() for j in (1,2)],
-    native_trace_matched_samples=len(samples),normal_full_episode_slots=dict(EE=[0,1,2],velocity=[0,1]))
+    native_trace_matched_samples=len(samples),normal_full_episode_slots=dict(EE=[0,1,2],velocity_initial=[0,1],velocity_autoreset=[0,1,2]),velocity_slot2_autoreset_steps=1)
 write(OUT/'geometry_summary.json',dict(passed=True,rows=geometry,slot_usage=usage,wall_seconds=time.time()-start,reference_rotation_limitation=meta['rotation_limitation']))
 fig,axes=plt.subplots(1,3,figsize=(14,4))
 for name,d in pair_dist.items():axes[0].hist(d,bins=55,density=True,histtype='step',lw=1.5,label=name)
