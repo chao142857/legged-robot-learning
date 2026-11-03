@@ -20,3 +20,7 @@ P(group k)=size_k*f(p_k)/sum_j(size_j*f(p_j))；组内均匀抽真实sequence。
 原始反馈日志、特征大数组、工程checkpoint、逐步结构追踪保留YangLab；交付包仅含必要映射、汇总、图表、源码、测试及报告。
 远端 /data/go2_piper_sgs_e2_20261104；tmux go2-sgs-e2。
 正式训练仅在预注册GO条件全部满足后按用户授权自动启动两组各10k；当前判定见E2_GO_NO_GO.json。最小冻结补充方案为未执行的方案文件。
+
+本轮完成判定：NO-GO，暂缓正式PPO。结论不等于聚类无效，而是固定策略的控制同质性证据不足。
+报告位于output/pdf/；完整映射、图表与离线表位于artifacts/；轻量交付ZIP和Git bundle位于output/delivery/。
+交付包中的delivery_manifest.json列明所有成员SHA256；E2_completion_verified.json记录交付核验范围及未执行项目。
