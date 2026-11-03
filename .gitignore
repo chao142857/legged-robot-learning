@@ -7,3 +7,5 @@ data_cache/
 *.pt
 *.npz
 *.mp4
+output/
+tmp/
