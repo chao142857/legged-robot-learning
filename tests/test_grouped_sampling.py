@@ -3,7 +3,8 @@ import numpy as np
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/'code'))
 from grouped_sampling import GroupedSampler,GroupedOwnership
 from vendor_sampler import TaskSampler
-from common import digest
+from common import digest,plain
+from sampling import Ownership
 
 class SamplerTests(unittest.TestCase):
     def make(self,mapping=None,**kw):return GroupedSampler(np.repeat(np.arange(4),8) if mapping is None else np.array(mapping),'wbc:train:test',42,**kw)
@@ -76,5 +77,22 @@ class SamplerTests(unittest.TestCase):
     def test_age_and_member_mixture_diagnostics(self):
         s=self.make();s.record([0],[1],control_step=10);s.record([1],[0],control_step=30)
         d=s.diagnostics(50);self.assertEqual(d['mean_feedback_age_control_steps'],30);self.assertEqual(d['feedback_total'],2)
+    def test_json_rng_provenance_checkpoint(self):
+        s=self.make();s.record([0,8],[1,0],control_step=48,event_ids=[(0,1),(1,1)])
+        other=self.make();other.load_state_dict(json.loads(json.dumps(plain(s.state_dict()))))
+        self.assertEqual(digest(s.state_dict()),digest(other.state_dict()));self.assertEqual(s.sample(4096),other.sample(4096))
+        with self.assertRaises(ValueError):other.record([0],[0],control_step=49,event_ids=[(0,1)])
+    def test_corrupt_rng_load_is_atomic(self):
+        s=self.make();s.record([0],[1]);before=digest(s.state_dict());bad=self.make().state_dict();bad['rng_state']=(99,(),None)
+        with self.assertRaises(ValueError):s.load_state_dict(bad)
+        self.assertEqual(before,digest(s.state_dict()))
+    def test_evaluation_isolation(self):
+        class EvalPool:n=32;identity='wbc:evaluation:independent'
+        e=Ownership(EvalPool(),4,'evaluation');ids=np.arange(4);e.assign(ids);e.advance();e.commit(e.token(ids),[1]*4);e.check()
+        self.assertEqual(sum(e.engine.completed_counts),0)
+        class TrainPool:n=32;identity='wbc:train:test'
+        t=GroupedOwnership(TrainPool(),4,np.repeat(np.arange(4),8));t.assign(ids);t.advance();token=t.token(ids);token['pool_identity']=EvalPool.identity
+        with self.assertRaises(AssertionError):t.commit(token,[1]*4)
+        self.assertEqual(sum(t.engine.completed_counts),0)
 
 if __name__=='__main__':unittest.main(verbosity=2)

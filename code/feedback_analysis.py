@@ -49,7 +49,7 @@ def window_statistics(data,mapping,cp,name,run):
     return dict(run=run,mapping=name,checkpoint=cp,groups=len(sizes),feedback_events=len(d),mean_window_samples=float(sizes.mean()),median_window_samples=float(np.median(sizes)),empty_groups=int((sizes==0).sum()),full_windows=int((sizes==100).sum()),
         mean_feedback_age_updates=float(values.mean()) if len(values) else None,median_feedback_age_updates=float(np.median(values)) if len(values) else None,p95_feedback_age_updates=float(np.quantile(values,.95)) if len(values) else None,
         median_members_per_window=float(np.median(diversity)),median_largest_member_share=float(np.median(largest)),mean_effective_members=float(np.mean(contributions)) if contributions else None,
-        mean_abs_exposure_mixture_gap=float(np.abs(bias).mean()) if bias else None,zero_window_fraction=float((p==0).mean()),near50_window_fraction=float(((p>=.4)&(p<=.6)).mean()))
+        mean_abs_recent_group_vs_lifetime_members_gap=float(np.abs(bias).mean()) if bias else None,zero_window_fraction=float((p==0).mean()),near50_window_fraction=float(((p>=.4)&(p<=.6)).mean()))
 
 class Ring:
     def __init__(self,mapping):

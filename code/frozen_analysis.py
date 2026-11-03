@@ -11,14 +11,6 @@ G=ROOT/'artifacts/groups';maps={p.stem.removeprefix('mapping_'):np.load(p) for p
 E1=pathlib.Path('/e1reference/exports/cohort10397_20261103');OLD=pathlib.Path('/reference/analysis/metric-diagnostics-20261102')
 sources=[];datasets=[];BOOT=2000;rng=np.random.default_rng(20261104)
 
-def panel(path,kind):
-    if kind=='e1':
-        s=json.loads((path/'selection.json').read_text());pop=s['population_groups'];P={'lower_p':pop['lower_p'],'sweet_40_60':pop['sweet_40_60'],'higher_p':pop['higher_p']}
-        ids=np.array(s['unique_ids']);labels=s['unique_groups']
-    else:
-        s=json.loads((path/'cohort_ids.json').read_text());ids=np.array(sorted(set(s['sequence_ids'])));labels=None;P=None
-    return s,ids,labels,P
-
 selection=json.loads((E1/'selection.json').read_text())
 # The diagnostic selection was sampled without replacement within three disjoint
 # history strata. Reconstruct strata of selected IDs; the known population sizes

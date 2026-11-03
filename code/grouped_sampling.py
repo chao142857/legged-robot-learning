@@ -112,9 +112,12 @@ class GroupedSampler:
         grouped_success=np.bincount(self.mapping,weights=np.array(state['success_counts']),minlength=self.groups).astype(np.int64)
         if not np.array_equal(grouped_success,state['group_successes']):raise ValueError('Group success counter mismatch')
         if any(a<0 or b<0 or b>a for a,b in zip(state['completed_counts'],state['success_counts'])):raise ValueError('Invalid sequence totals')
-        for k in ('outcomes','window_steps','window_members','window_events','window_successes','sample_counts','completed_counts','success_counts','group_completed','group_successes','last_generations','last_control_step','eval_cursor'):setattr(self,k,state[k])
         def tuples(v):return tuple(tuples(x) for x in v) if isinstance(v,(tuple,list)) else v
-        self.rng.setstate(tuples(state['rng_state']))
+        restored_rng=random.Random();restored_rng.setstate(tuples(state['rng_state']))
+        for k in ('window_successes','group_completed','group_successes'):state[k]=np.asarray(state[k],dtype=np.int64).copy()
+        state['last_generations']={int(k):int(v) for k,v in state['last_generations'].items()}
+        for k in ('outcomes','window_steps','window_members','window_events','window_successes','sample_counts','completed_counts','success_counts','group_completed','group_successes','last_generations','last_control_step','eval_cursor'):setattr(self,k,state[k])
+        self.rng=restored_rng
 
     def diagnostics(self,now=None):
         now=self.last_control_step if now is None else int(now)
