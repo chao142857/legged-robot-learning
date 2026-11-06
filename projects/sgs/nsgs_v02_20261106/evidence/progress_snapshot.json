@@ -1,0 +1,360 @@
+{
+  "captured_at": "2026-11-06T21:19:50.989278+08:00",
+  "status": {
+    "phase": "running_transfer-seed47-uniform",
+    "unix": 1793969893.2865238,
+    "run": "/data/go2_piper_nsgs_v02_20261106/runs/transfer-seed47-uniform",
+    "target": 10000,
+    "student_seed": 47,
+    "mode": "transfer"
+  },
+  "gpu": "NVIDIA GeForce RTX 3060, 59 %, 4578 MiB, 12288 MiB",
+  "transfer": {
+    "uniform": {
+      "latest": {
+        "completed_updates": 558,
+        "optimizer_calls": 11160,
+        "environment_transitions": 54853632,
+        "new_updates": 558,
+        "new_environment_transitions": 54853632,
+        "unix": 1793971190.4268994,
+        "branch": "uniform",
+        "mode": "transfer",
+        "teacher_version": 6,
+        "mean_training_reward": 119.36629585266114,
+        "losses": {
+          "value": 0.0808715544641018,
+          "surrogate": -0.0036863257497316225,
+          "entropy": 14.662763404846192
+        },
+        "learning_rate": 0.00022222222222222218,
+        "action_std": 0.5597521066665649,
+        "native_feedback_episodes": 307539
+      },
+      "development": [
+        {
+          "passed": true,
+          "kind": "development",
+          "update": 0,
+          "checkpoint_sha256": "5afd0f79bf8ec8068a61595e91ead50e37e0ad613fd32abe62e25203f3a02ede",
+          "actor_sha256": "e64060ea60196e31609a4400af318af305642f5a39ceb72e6ae6fd97754143de",
+          "pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+          "initial_sha256": "448cbb79ba1dfbc849e23afc3c0c99a08b9c31a3911e8d617022acc6b5c1f435",
+          "seed": 2026110602,
+          "episodes": 512,
+          "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+          "training_history_updates": 0,
+          "model_weights_unchanged": true,
+          "joint_success_rate": 0.0,
+          "native_failure_rate": 0.01171875,
+          "no_valid_window_rate": 0.01171875,
+          "continuous_joint_score": 0.0,
+          "longest_joint_good_seconds_mean": 0.0,
+          "loco_success_rate": 0.015625,
+          "manipulation_rmse_pass_rate": 0.0,
+          "pooled_rmse": {
+            "velocity_m_s": 0.6584021995041761,
+            "yaw_rad_s": 0.5586508539402041,
+            "ee_position_m": 0.4877647429361422,
+            "ee_orientation_rad": 0.9152739952980784
+          },
+          "wall_seconds": 30.9007333049085,
+          "executed_environment_transitions": 512000,
+          "first_episode_transitions": 506249,
+          "episode_results_sha256": "3331379338c5770b2396a8ddc9c91b1e310ceadf29ea2db42391cb67d1e6798c",
+          "safety": {
+            "native_failure_rate": 0.01171875,
+            "joint_soft_limit_step_fraction_mean": 1.0,
+            "body_tilt_over_30deg_step_fraction_mean": 1.3671875e-05,
+            "max_joint_soft_limit_excess_rad": 0.15788128972053528,
+            "max_body_tilt_rad": 0.5768542885780334,
+            "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+          },
+          "reset_repeat_mean_gap": 0.0,
+          "sequence_mean_standard_error": 0.0,
+          "source_path": "/data/go2_piper_nsgs_v02_20261106/evaluations/transfer-seed47-uniform-00000-development/result.json",
+          "source_sha256": "cd4a3834a98d0666babb145114be911e214d378e56e3499c05683708b4d2b2cd"
+        },
+        {
+          "passed": true,
+          "kind": "development",
+          "update": 100,
+          "checkpoint_sha256": "1904e60f473303032731726cb12c593681e34b689877addd4ab9228e5d09471a",
+          "actor_sha256": "d95b0a7e3fb3fb6e90c37f75b3685775a384093f439ade731ff79a0864c94101",
+          "pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+          "initial_sha256": "448cbb79ba1dfbc849e23afc3c0c99a08b9c31a3911e8d617022acc6b5c1f435",
+          "seed": 2026110602,
+          "episodes": 512,
+          "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+          "training_history_updates": 0,
+          "model_weights_unchanged": true,
+          "joint_success_rate": 0.0,
+          "native_failure_rate": 0.5546875,
+          "no_valid_window_rate": 0.2890625,
+          "continuous_joint_score": 0.0,
+          "longest_joint_good_seconds_mean": 0.0,
+          "loco_success_rate": 0.015625,
+          "manipulation_rmse_pass_rate": 0.0,
+          "pooled_rmse": {
+            "velocity_m_s": 0.5685030489216572,
+            "yaw_rad_s": 0.5341321956201582,
+            "ee_position_m": 0.48072993493598537,
+            "ee_orientation_rad": 0.2025665165072199
+          },
+          "wall_seconds": 34.060079069109634,
+          "executed_environment_transitions": 512000,
+          "first_episode_transitions": 317408,
+          "episode_results_sha256": "a2f810bb5637e7a8d3b0304b44b287f2058be9f18432dd26dee6a6468f03b9d9",
+          "safety": {
+            "native_failure_rate": 0.5546875,
+            "joint_soft_limit_step_fraction_mean": 0.9674275711778514,
+            "body_tilt_over_30deg_step_fraction_mean": 0.038173832705304125,
+            "max_joint_soft_limit_excess_rad": 0.25457751750946045,
+            "max_body_tilt_rad": 1.0871201753616333,
+            "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+          },
+          "reset_repeat_mean_gap": 0.0,
+          "sequence_mean_standard_error": 0.0,
+          "source_path": "/data/go2_piper_nsgs_v02_20261106/evaluations/transfer-seed47-uniform-00100-development/result.json",
+          "source_sha256": "61121a15c312a0011bed4e46c2ea183971e6afa28864e050a3805a3cfa9003f1"
+        },
+        {
+          "passed": true,
+          "kind": "development",
+          "update": 200,
+          "checkpoint_sha256": "6712f9d04cf3eb0637a6a465f05daefb69dcc3949a7de37d399efd76456d2e6a",
+          "actor_sha256": "fcabad4f246870d26d6dc210bcda3ceeb0b34e03f273320e97af624a6177370d",
+          "pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+          "initial_sha256": "448cbb79ba1dfbc849e23afc3c0c99a08b9c31a3911e8d617022acc6b5c1f435",
+          "seed": 2026110602,
+          "episodes": 512,
+          "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+          "training_history_updates": 0,
+          "model_weights_unchanged": true,
+          "joint_success_rate": 0.0,
+          "native_failure_rate": 0.154296875,
+          "no_valid_window_rate": 0.03125,
+          "continuous_joint_score": 0.0,
+          "longest_joint_good_seconds_mean": 0.0,
+          "loco_success_rate": 0.328125,
+          "manipulation_rmse_pass_rate": 0.0,
+          "pooled_rmse": {
+            "velocity_m_s": 0.2672294096722509,
+            "yaw_rad_s": 0.20562597296629678,
+            "ee_position_m": 0.48178193073212994,
+            "ee_orientation_rad": 0.11137230356481721
+          },
+          "wall_seconds": 32.19268444809131,
+          "executed_environment_transitions": 512000,
+          "first_episode_transitions": 471377,
+          "episode_results_sha256": "fba492ca1850a7523861a781970b5dec06956d604d16020703a8d819658c1b22",
+          "safety": {
+            "native_failure_rate": 0.154296875,
+            "joint_soft_limit_step_fraction_mean": 0.751688073467097,
+            "body_tilt_over_30deg_step_fraction_mean": 0.0035531816555457976,
+            "max_joint_soft_limit_excess_rad": 0.1595718264579773,
+            "max_body_tilt_rad": 1.0732752084732056,
+            "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+          },
+          "reset_repeat_mean_gap": 0.0,
+          "sequence_mean_standard_error": 0.0,
+          "source_path": "/data/go2_piper_nsgs_v02_20261106/evaluations/transfer-seed47-uniform-00200-development/result.json",
+          "source_sha256": "d51e0764cead625d449c5b89c0fd461b13883bbbd269d710ea28bee7ccae351b"
+        },
+        {
+          "passed": true,
+          "kind": "development",
+          "update": 300,
+          "checkpoint_sha256": "a53572188c427a76f2c33ed5466a52bcac510273006ca4ea747c97d9333744bc",
+          "actor_sha256": "6301dd39e763934d92ea9b1e7c85e46aa59dd16539efe1ec251ed185823485f5",
+          "pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+          "initial_sha256": "448cbb79ba1dfbc849e23afc3c0c99a08b9c31a3911e8d617022acc6b5c1f435",
+          "seed": 2026110602,
+          "episodes": 512,
+          "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+          "training_history_updates": 0,
+          "model_weights_unchanged": true,
+          "joint_success_rate": 0.0,
+          "native_failure_rate": 0.0390625,
+          "no_valid_window_rate": 0.0,
+          "continuous_joint_score": 0.0,
+          "longest_joint_good_seconds_mean": 0.0,
+          "loco_success_rate": 0.810546875,
+          "manipulation_rmse_pass_rate": 0.0,
+          "pooled_rmse": {
+            "velocity_m_s": 0.1578754320288418,
+            "yaw_rad_s": 0.151693992003509,
+            "ee_position_m": 0.4649824578001491,
+            "ee_orientation_rad": 0.0969693382783391
+          },
+          "wall_seconds": 31.076013111975044,
+          "executed_environment_transitions": 512000,
+          "first_episode_transitions": 501861,
+          "episode_results_sha256": "130ced8ad7012635673b5478550751357a25fd2da3a34f0544ad340060983426",
+          "safety": {
+            "native_failure_rate": 0.0390625,
+            "joint_soft_limit_step_fraction_mean": 0.1266908462384943,
+            "body_tilt_over_30deg_step_fraction_mean": 0.0006665383033486079,
+            "max_joint_soft_limit_excess_rad": 0.15727996826171875,
+            "max_body_tilt_rad": 1.0805120468139648,
+            "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+          },
+          "reset_repeat_mean_gap": 0.0,
+          "sequence_mean_standard_error": 0.0,
+          "source_path": "/data/go2_piper_nsgs_v02_20261106/evaluations/transfer-seed47-uniform-00300-development/result.json",
+          "source_sha256": "0125c7b0c9e00a2c88e1c12fc1898c0de52217883f7e26c35b0ded15507695f0"
+        },
+        {
+          "passed": true,
+          "kind": "development",
+          "update": 400,
+          "checkpoint_sha256": "fc95ec6bd706c42d2d218fa2eb642c2d7ed6007b99587f2656925080a42916b9",
+          "actor_sha256": "fbeba27775bc4193fccd2c7c655460895734261078e492a9e02d0e85137a3cdf",
+          "pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+          "initial_sha256": "448cbb79ba1dfbc849e23afc3c0c99a08b9c31a3911e8d617022acc6b5c1f435",
+          "seed": 2026110602,
+          "episodes": 512,
+          "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+          "training_history_updates": 0,
+          "model_weights_unchanged": true,
+          "joint_success_rate": 0.0,
+          "native_failure_rate": 0.03125,
+          "no_valid_window_rate": 0.001953125,
+          "continuous_joint_score": 0.002090835542210109,
+          "longest_joint_good_seconds_mean": 0.0067578125,
+          "loco_success_rate": 0.8671875,
+          "manipulation_rmse_pass_rate": 0.0,
+          "pooled_rmse": {
+            "velocity_m_s": 0.14356895279023135,
+            "yaw_rad_s": 0.14944659915938457,
+            "ee_position_m": 0.3656094539602337,
+            "ee_orientation_rad": 0.1665396217500525
+          },
+          "wall_seconds": 31.293173155048862,
+          "executed_environment_transitions": 512000,
+          "first_episode_transitions": 504473,
+          "episode_results_sha256": "14e7b609253ab0f96648b251f214497327e50aa68fe5aba8bb0bff311f7c92f6",
+          "safety": {
+            "native_failure_rate": 0.03125,
+            "joint_soft_limit_step_fraction_mean": 0.009613644149536292,
+            "body_tilt_over_30deg_step_fraction_mean": 0.0011948983554355805,
+            "max_joint_soft_limit_excess_rad": 0.15706802904605865,
+            "max_body_tilt_rad": 1.0454185009002686,
+            "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+          },
+          "reset_repeat_mean_gap": 0.001123009453298575,
+          "sequence_mean_standard_error": 0.0015694164609162543,
+          "source_path": "/data/go2_piper_nsgs_v02_20261106/evaluations/transfer-seed47-uniform-00400-development/result.json",
+          "source_sha256": "560e06b673ca468f99af8b633615d2ff02ce1cbb98159cc2da1f41ba2059b55d"
+        },
+        {
+          "passed": true,
+          "kind": "development",
+          "update": 500,
+          "checkpoint_sha256": "401257e433b368cdc43807b38ebcad2f492d3b57647201f890ada02c16055690",
+          "actor_sha256": "7ac7fe1a438f3c0271995ff2de0d816101b8347013b2c3d78cbd6bc92cc19e8a",
+          "pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+          "initial_sha256": "448cbb79ba1dfbc849e23afc3c0c99a08b9c31a3911e8d617022acc6b5c1f435",
+          "seed": 2026110602,
+          "episodes": 512,
+          "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+          "training_history_updates": 0,
+          "model_weights_unchanged": true,
+          "joint_success_rate": 0.0,
+          "native_failure_rate": 0.017578125,
+          "no_valid_window_rate": 0.0,
+          "continuous_joint_score": 0.022040906317679822,
+          "longest_joint_good_seconds_mean": 0.0758984375,
+          "loco_success_rate": 0.90234375,
+          "manipulation_rmse_pass_rate": 0.001953125,
+          "pooled_rmse": {
+            "velocity_m_s": 0.14005259587210236,
+            "yaw_rad_s": 0.15217538338330733,
+            "ee_position_m": 0.15651901214659528,
+            "ee_orientation_rad": 0.2743473300753486
+          },
+          "wall_seconds": 30.853095256956294,
+          "executed_environment_transitions": 512000,
+          "first_episode_transitions": 507782,
+          "episode_results_sha256": "a92f23bdf9a6e56590098192733e6e49a592bf082640ddf375c214e5dfad562f",
+          "safety": {
+            "native_failure_rate": 0.017578125,
+            "joint_soft_limit_step_fraction_mean": 0.10645858672730378,
+            "body_tilt_over_30deg_step_fraction_mean": 0.0006403275781423107,
+            "max_joint_soft_limit_excess_rad": 0.12236392498016357,
+            "max_body_tilt_rad": 1.0466102361679077,
+            "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+          },
+          "reset_repeat_mean_gap": 0.024376013938295072,
+          "sequence_mean_standard_error": 0.004302311525680809,
+          "source_path": "/data/go2_piper_nsgs_v02_20261106/evaluations/transfer-seed47-uniform-00500-development/result.json",
+          "source_sha256": "52f52fac62783829c664f9d693ea418b5c1f0ac0faefb1f1851e8d3fe3eb549d"
+        }
+      ],
+      "formal_test": [],
+      "full_checkpoints": [
+        {
+          "path": "/data/go2_piper_nsgs_v02_20261106/runs/transfer-seed47-uniform/checkpoints/update_00000.pt",
+          "bytes": 49725991
+        },
+        {
+          "path": "/data/go2_piper_nsgs_v02_20261106/runs/transfer-seed47-uniform/checkpoints/update_00100.pt",
+          "bytes": 209593287
+        },
+        {
+          "path": "/data/go2_piper_nsgs_v02_20261106/runs/transfer-seed47-uniform/checkpoints/update_00200.pt",
+          "bytes": 206728455
+        },
+        {
+          "path": "/data/go2_piper_nsgs_v02_20261106/runs/transfer-seed47-uniform/checkpoints/update_00300.pt",
+          "bytes": 210816199
+        },
+        {
+          "path": "/data/go2_piper_nsgs_v02_20261106/runs/transfer-seed47-uniform/checkpoints/update_00400.pt",
+          "bytes": 214973255
+        },
+        {
+          "path": "/data/go2_piper_nsgs_v02_20261106/runs/transfer-seed47-uniform/checkpoints/update_00500.pt",
+          "bytes": 219075591
+        }
+      ],
+      "first_committed_cycle": {
+        "passed": true,
+        "completed_updates": 100,
+        "checkpoint": "/workspace/runs/transfer-seed47-uniform/checkpoints/update_00100.pt",
+        "checkpoint_sha256": "d31720a88e57b8ce73ecd4e8f4b0b9fd03a0e722400ce881b43e94a6cfa1226d",
+        "files": {
+          "decision.json": "58daef289c037672e4bf9163d75e35e9bacd42a920006df21f9545040a3a6022",
+          "decision.pt": "38e7b6c69bb92beec5e8b7c79955e4871c07c812ca80f9fc7de1daea81a90672",
+          "outcome.json": "d069dc530380561a32f6f3c0c51f40123bab662520e2ac79648cdbb2a863e0fc",
+          "real_draws.npz": "7e6ead54121689b81b6fc19f76f9f3c04cbc9e7a8db4afc09885aca625964c62"
+        }
+      },
+      "checkpoint_list_scope": "File inventory only: update_00000 is initialization_only; positive updates contain full resume state. Field name full_checkpoints is historical."
+    },
+    "fresh": {
+      "latest": null,
+      "development": [],
+      "formal_test": [],
+      "full_checkpoints": []
+    },
+    "meta": {
+      "latest": null,
+      "development": [],
+      "formal_test": [],
+      "full_checkpoints": []
+    }
+  },
+  "faults": [
+    {
+      "path": "/data/go2_piper_nsgs_v02_20261106/runs/attempt-r01-smoke1/fault.txt",
+      "sha256": "af1c6df5a0d82570c67e0fde94921f4924f8a59926506657403e4447db2d2152",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/code/train_v02.py\", line 466, in <module>\n    train()\n  File \"/workspace/code/train_v02.py\", line 261, in train\n    assert tree_hash(restored_adapter[section]) == tree_hash(info['adapter'][section]), f'Adapter restore differs: {section}'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Adapter restore differs: owner\n"
+    },
+    {
+      "path": "/data/go2_piper_nsgs_v02_20261106/runs/attempt-r02-transfer-seed47-uniform/fault.txt",
+      "sha256": "2825f61e842b0ad82a327f231daddc527283f912c507e227584282e56cf01d3d",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/code/train_v02.py\", line 469, in <module>\n    train()\n  File \"/workspace/code/train_v02.py\", line 326, in train\n    runner.save(out/'checkpoints'/f'update_{completed:05d}.pt')\n  File \"/workspace/code/train_v02.py\", line 141, in save\n    adapter=adapter.state_dict(), environment=capture(raw, self.logger),\n                                              ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/code/fork_state.py\", line 117, in capture\n    raw={\n        ^\n  File \"/workspace/code/fork_state.py\", line 118, in <dictcomp>\n    name: cpu_tree(getattr(raw, name))\n                   ^^^^^^^^^^^^^^^^^^\nAttributeError: 'ManagerBasedRLEnv' object has no attribute 'reset_buf'\n"
+    }
+  ]
+}

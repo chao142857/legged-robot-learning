@@ -6,6 +6,10 @@ An independent research collection by [chao142857](https://github.com/chao142857
 
 **All reported robot experiments are simulation results. This release establishes no real-robot validation and no stable SGS advantage over Uniform sampling.**
 
+## Latest experiment archive
+
+[nSGS V0.2 counterfactual Teacher progress](projects/sgs/nsgs_v02_20261106/README.md): eight fixed-start experiments completed; frozen-Teacher transfer on new Student seed47 is in progress. Source, CPU tests and timestamped lightweight evidence are included; no superiority over Uniform is established.
+
 ## Research Overview
 
 The work studies how task distributions, reward design, reset semantics, and policy updates affect learned control. It includes successful learning runs, failed baselines, controlled interventions, and tools for examining why an apparently reasonable PPO update can behave poorly.

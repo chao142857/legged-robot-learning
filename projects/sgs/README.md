@@ -2,6 +2,10 @@
 
 Local implementation and controlled-study tooling for SGS from [Zhang et al., *A Balanced Data Diet*](https://arxiv.org/abs/2610.12465v1), §3.2 and Appendix B.2. This work implements and evaluates that method; it does not claim to introduce SGS.
 
+## nSGS V0.2 — November 6 update
+
+[Counterfactual Teacher implementation and progress](nsgs_v02_20261106/README.md) archives eight completed three-arm starts, eight Teacher updates and the ongoing seed47 frozen-Teacher transfer comparison. This is a separate neural sampler protocol; it does not use the fixed SGS sweet spot or historical48-task pool.
+
 ## Implementations and experiments
 
 - `historical_48task_20261019/` retains **both** the executed source and later working source, fixed task/success definitions, and the Uniform/SGS pilot results. The versions are not silently merged.
