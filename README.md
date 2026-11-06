@@ -6,6 +6,14 @@ An independent research collection by [chao142857](https://github.com/chao142857
 
 **All reported robot experiments are simulation results. This release establishes no real-robot validation and no stable SGS advantage over Uniform sampling.**
 
+## Current Research: nSGS V0.2
+
+[**nSGS: state-conditioned neural task sampling for Go2–Piper whole-body control**](https://github.com/chao142857/legged-robot-learning/tree/research/nsgs-v02-20261106/projects/sgs/nsgs_v02_20261106)
+
+This ongoing study asks whether a neural teacher can select training tasks that improve subsequent PPO learning. It includes a state-conditioned sampler, matched-start training comparisons, and teacher updates driven by subsequent learning gains.
+
+The **6 November 2026 public snapshot** records eight matched-start comparisons and eight Teacher updates; transfer evaluation is ongoing. No advantage over Uniform has been established. See the [method and implementation](https://github.com/chao142857/legged-robot-learning/tree/research/nsgs-v02-20261106/projects/sgs/nsgs_v02_20261106) and [experiment progress](https://github.com/chao142857/legged-robot-learning/blob/research/nsgs-v02-20261106/projects/sgs/nsgs_v02_20261106/PROGRESS.md). This work is maintained on its research branch; the earlier studies below retain their original protocols and results.
+
 ## Research Overview
 
 The work studies how task distributions, reward design, reset semantics, and policy updates affect learned control. It includes successful learning runs, failed baselines, controlled interventions, and tools for examining why an apparently reasonable PPO update can behave poorly.
