@@ -1,0 +1,129 @@
+{
+  "version": 12,
+  "before_dev": 0.4280222402771269,
+  "uniform_after": 0.45393658469233256,
+  "plus_after": 0.4233974510025688,
+  "minus_after": 0.45232196024269655,
+  "reward_plus": -0.004624789274558061,
+  "reward_minus": 0.024299719965569677,
+  "uniform_gain_baseline": 0.02591434441520568,
+  "paired_reward_difference": -0.028924509240127738,
+  "plus_vs_uniform": -0.030539133689763742,
+  "minus_vs_uniform": -0.001614624449636004,
+  "loss": -0.09503275778450013,
+  "gradient_norm_before_clip": 0.22800880530945503,
+  "parameter_delta_l2": 0.09852523078846585,
+  "mean_gradient_ascent": [
+    -0.0128361938270659,
+    -0.014834652311684557,
+    -0.028264157299083045,
+    0.013366505715661732,
+    0.020039328677224442,
+    -0.02457649834738228,
+    -0.06675812221931648,
+    0.00661901830504875
+  ],
+  "preference_step_kl": 0.04205581605864902,
+  "step_rejected": false,
+  "zero_signal": false,
+  "step_backtracking": [
+    {
+      "backtracks": 0,
+      "learning_rate_multiplier": 1.0,
+      "attempted_learning_rates": [
+        0.01
+      ],
+      "preference_kl": 0.15876409279970732,
+      "finite": true
+    },
+    {
+      "backtracks": 1,
+      "learning_rate_multiplier": 0.5,
+      "attempted_learning_rates": [
+        0.005
+      ],
+      "preference_kl": 0.04205581605864902,
+      "finite": true
+    }
+  ],
+  "accepted_learning_rate_multiplier": 0.5,
+  "gaussian_entropy": 5.806330821157819,
+  "policy_after": {
+    "entropy": 10.358634481032821,
+    "effective_sequences": 30292.794825988436,
+    "min": 1.1384683286976561e-05,
+    "max": 9.368115985999383e-05,
+    "tv_uniform": 0.11042448072897423,
+    "top10_mass": 0.16020967853500295
+  },
+  "teacher_after_sha256": "7bb5b1e596a4eac5d659b341c923b1dc33e1d05f2361ec1984d079e14d30d68c",
+  "warning": null,
+  "teacher_checkpoint_sha256": "1837e028e515234db1a0b7ebf11dd43355e33dd89fa3305d041586f2d09eadad",
+  "development_results": {
+    "uniform": {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/evaluations/p04-seed46-cp03000-uniform-after/result.json",
+      "sha256": "8cfd74dc72aa5d1232e1a1df6eaa905128a5fd1225b0104f50071ee3ac0a1afe",
+      "score": 0.45393658469233256,
+      "strict": 0.13671875,
+      "rmse": {
+        "velocity_m_s": 0.08062055848235751,
+        "yaw_rad_s": 0.11891221066472775,
+        "ee_position_m": 0.06349338155380883,
+        "ee_orientation_rad": 0.09615384696595491
+      },
+      "safety": {
+        "native_failure_rate": 0.0,
+        "joint_soft_limit_step_fraction_mean": 0.41306835937499997,
+        "body_tilt_over_30deg_step_fraction_mean": 0.0,
+        "max_joint_soft_limit_excess_rad": 0.15741848945617676,
+        "max_body_tilt_rad": 0.4619852900505066,
+        "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+      }
+    },
+    "plus": {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/evaluations/p04-seed46-cp03000-plus-after/result.json",
+      "sha256": "d20d79437021aae4c31714a56a95cfa9418276b6bd5f108615d3212bb438207f",
+      "score": 0.4233974510025688,
+      "strict": 0.140625,
+      "rmse": {
+        "velocity_m_s": 0.08074542236814489,
+        "yaw_rad_s": 0.11878163343491431,
+        "ee_position_m": 0.06414641824177288,
+        "ee_orientation_rad": 0.09760096157861496
+      },
+      "safety": {
+        "native_failure_rate": 0.00390625,
+        "joint_soft_limit_step_fraction_mean": 0.3909873591043441,
+        "body_tilt_over_30deg_step_fraction_mean": 9.800312120603784e-05,
+        "max_joint_soft_limit_excess_rad": 0.15715956687927246,
+        "max_body_tilt_rad": 1.0129889249801636,
+        "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+      }
+    },
+    "minus": {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/evaluations/p04-seed46-cp03000-minus-after/result.json",
+      "sha256": "c65e5a125469d571d9d8e0f4a04f253078bd0e076aeb7879338313998cebbccc",
+      "score": 0.45232196024269655,
+      "strict": 0.1171875,
+      "rmse": {
+        "velocity_m_s": 0.07924110765670586,
+        "yaw_rad_s": 0.11969193190481417,
+        "ee_position_m": 0.06358004122813284,
+        "ee_orientation_rad": 0.09349265824519092
+      },
+      "safety": {
+        "native_failure_rate": 0.00390625,
+        "joint_soft_limit_step_fraction_mean": 0.41047128789267096,
+        "body_tilt_over_30deg_step_fraction_mean": 0.0001174601337931985,
+        "max_joint_soft_limit_excess_rad": 0.1573042869567871,
+        "max_body_tilt_rad": 1.0364930629730225,
+        "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+      }
+    }
+  },
+  "student_seed": 46,
+  "start_update": 3000,
+  "gradient_sha256": "c928d06780602e7295253a5fca988c1670e8d21ebc41218910ac0f0af2422cee",
+  "formal_test_used": false,
+  "causal_interpretation": "Paired restorable state and RNG; hidden PhysX nondeterminism remains. One pair is noisy."
+}

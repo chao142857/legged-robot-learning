@@ -1,0 +1,110 @@
+{
+  "version": 8,
+  "before_dev": 0.0,
+  "uniform_after": 0.0,
+  "plus_after": 0.0,
+  "minus_after": 0.0,
+  "reward_plus": 0.0,
+  "reward_minus": 0.0,
+  "uniform_gain_baseline": 0.0,
+  "paired_reward_difference": 0.0,
+  "plus_vs_uniform": 0.0,
+  "minus_vs_uniform": 0.0,
+  "loss": 0.0,
+  "gradient_norm_before_clip": 0.0,
+  "parameter_delta_l2": 0.0,
+  "mean_gradient_ascent": [
+    -0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0,
+    0.0,
+    -0.0
+  ],
+  "preference_step_kl": 0.0,
+  "step_rejected": false,
+  "zero_signal": true,
+  "step_backtracking": [],
+  "accepted_learning_rate_multiplier": 0.0,
+  "gaussian_entropy": 5.806330821157819,
+  "policy_after": {
+    "entropy": 10.384852269237781,
+    "effective_sequences": 31962.400086835132,
+    "min": 1.7252828885588778e-05,
+    "max": 5.838036552643036e-05,
+    "tv_uniform": 0.06265141932931434,
+    "top10_mass": 0.13128642041670774
+  },
+  "teacher_after_sha256": "4466034c6544f60fe9317fb696fdc4af8572db3e08aa418a242c8f8044d1efc6",
+  "warning": "zero_paired_reward",
+  "teacher_checkpoint_sha256": "23a0af43924d5af3bf1b486baaf74c75d29dace6ecc3fea6d57d3d9ab62eeda5",
+  "development_results": {
+    "uniform": {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/evaluations/p00-seed46-cp00100-uniform-after/result.json",
+      "sha256": "d1d6ed67d5282c90df417e959ac9a49618275423ad94fb67bb75d9556da5e39e",
+      "score": 0.0,
+      "strict": 0.0,
+      "rmse": {
+        "velocity_m_s": 0.46000656025332604,
+        "yaw_rad_s": 0.32298370849793,
+        "ee_position_m": 0.46600899052224787,
+        "ee_orientation_rad": 0.12345763787188926
+      },
+      "safety": {
+        "native_failure_rate": 0.14453125,
+        "joint_soft_limit_step_fraction_mean": 0.20054165318528178,
+        "body_tilt_over_30deg_step_fraction_mean": 0.0037490973196429335,
+        "max_joint_soft_limit_excess_rad": 0.2566995620727539,
+        "max_body_tilt_rad": 1.0907260179519653,
+        "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+      }
+    },
+    "plus": {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/evaluations/p00-seed46-cp00100-plus-after/result.json",
+      "sha256": "a38c3666252ad1f1fc8ed93b4a6b99dbef5f3ffc848c4b9fdb74bc5722805adc",
+      "score": 0.0,
+      "strict": 0.0,
+      "rmse": {
+        "velocity_m_s": 0.48758321448490316,
+        "yaw_rad_s": 0.38542186828069397,
+        "ee_position_m": 0.45799379168960047,
+        "ee_orientation_rad": 0.1339568022635324
+      },
+      "safety": {
+        "native_failure_rate": 0.205078125,
+        "joint_soft_limit_step_fraction_mean": 0.11966034814865056,
+        "body_tilt_over_30deg_step_fraction_mean": 0.008570684305061011,
+        "max_joint_soft_limit_excess_rad": 0.15725810825824738,
+        "max_body_tilt_rad": 1.102338194847107,
+        "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+      }
+    },
+    "minus": {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/evaluations/p00-seed46-cp00100-minus-after/result.json",
+      "sha256": "7e729e542db77ec4e367daa26e71fba52f6acad81b93648be60342f455611a33",
+      "score": 0.0,
+      "strict": 0.0,
+      "rmse": {
+        "velocity_m_s": 0.36156700043279294,
+        "yaw_rad_s": 0.2769569279731399,
+        "ee_position_m": 0.46246057606971064,
+        "ee_orientation_rad": 0.13526971639604252
+      },
+      "safety": {
+        "native_failure_rate": 0.1015625,
+        "joint_soft_limit_step_fraction_mean": 0.18520546230527068,
+        "body_tilt_over_30deg_step_fraction_mean": 0.0030243089074397144,
+        "max_joint_soft_limit_excess_rad": 0.2580956220626831,
+        "max_body_tilt_rad": 1.0961169004440308,
+        "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+      }
+    }
+  },
+  "student_seed": 46,
+  "start_update": 100,
+  "gradient_sha256": "00b3ae2b62eaa3de35ae975d020f6e02c4213518029f5db073210053f24af831",
+  "formal_test_used": false,
+  "causal_interpretation": "Paired restorable state and RNG; hidden PhysX nondeterminism remains. One pair is noisy."
+}
