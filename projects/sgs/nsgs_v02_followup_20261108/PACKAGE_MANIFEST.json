@@ -1,8 +1,8 @@
 {
   "files": {
     "README.md": {
-      "bytes": 6786,
-      "sha256": "1a1e5f252776daef5aafd6ade87d61d5ede8c4740d2630087133590aee973d76"
+      "bytes": 7645,
+      "sha256": "b45debc0bf5a4585da83c461ef4e47561d2570a451cfb3143dcfe9c981f6a554"
     },
     "evidence/completed_curves.json": {
       "bytes": 68662,
@@ -99,6 +99,22 @@
     "evidence/cpu_preflight_result.json": {
       "bytes": 461,
       "sha256": "dc649314c36fb74f5852db60b895684fc8ca23da6832fbc01c95e04e2905e00b"
+    },
+    "evidence/launch_receipt.json": {
+      "bytes": 11019,
+      "sha256": "12bd6e763056939726365ce69cfa19c1a0a4d1c38fb5ec3ed866b9e24b09534e"
+    },
+    "evidence/peer_probe.json": {
+      "bytes": 337,
+      "sha256": "edd9c5fbc06203a8c215f19dc2935bcfda01440794e89b6ed32fcbc91571fcc2"
+    },
+    "evidence/point00_engineering.json": {
+      "bytes": 12690,
+      "sha256": "62b2333ed9cda5b91170f8a33c1d0188db8ecc9aee5127fe53d1b19841bcd14a"
+    },
+    "evidence/point00_update.json": {
+      "bytes": 5050,
+      "sha256": "51dd46a5175e3036b9f5e1036ef48f89994b1ac6bf7497af7b6fc431e482d4bf"
     },
     "evidence/single_seed46_continuation/GPU_SMOKE_ACCEPTANCE.json": {
       "bytes": 127,
@@ -204,6 +220,10 @@
       "bytes": 3990,
       "sha256": "930e7de00ca2ce9637dc1dac4798c4acf613c9b2438cc4e0de9563c45d268864"
     },
+    "matched/code/compare_existing.py": {
+      "bytes": 4022,
+      "sha256": "7716b0fdf85973e452c3812802ff661a375bfa14ba2ea9b26338d336f054fadc"
+    },
     "matched/code/cpu_hash.py": {
       "bytes": 998,
       "sha256": "997122e7e5a977947af68a11bb1c38504a8d048063d520670d0ee4351e1f02ec"
@@ -245,8 +265,8 @@
       "sha256": "6c207b5c77ba710db7812dca762864cc65895c0f37d2def59a3457d255e1290a"
     },
     "matched/controller.py": {
-      "bytes": 5665,
-      "sha256": "6ab8750dab64e8981600245a27fb70db39f223eb22005c95b577a9c8aa56f6bd"
+      "bytes": 5750,
+      "sha256": "e64ce98e2725678922fa84a5c75d3c09eae2fba20eb0ad8bc8b5bf4008995514"
     },
     "matched/deploy_matched.py": {
       "bytes": 2029,
@@ -269,8 +289,8 @@
       "sha256": "8ad6d556f4ac10fd0c8bb62777680d6ffeebafe0c018796b023e63aacee0ef55"
     },
     "matched/source_manifest.json": {
-      "bytes": 4400,
-      "sha256": "04a1d26a82e8be4daefab7d7082e94476baee79c0bc5f622ba7763c608998f6c"
+      "bytes": 4500,
+      "sha256": "b44602fa0af71490050ff02cf27ee3799d1e50f9cb651015a8a34f2963c646cf"
     },
     "matched/sources.json": {
       "bytes": 17946,
@@ -299,6 +319,18 @@
     "matched/tmux.sh": {
       "bytes": 231,
       "sha256": "195642888d587820af30295640c6ccebba7dad711505440a3333266c968103df"
+    },
+    "matched/transfer/collect_launch.py": {
+      "bytes": 3536,
+      "sha256": "3884132a351df96263e8cd910801174a4ee82b1cdf20eed6c4a581f282ceaeaf"
+    },
+    "matched/transfer/private_file_client.py": {
+      "bytes": 2143,
+      "sha256": "7278d6c354b643533a69d516c4998840561c731f9b9b2cd65d2ce4e97125f68b"
+    },
+    "matched/transfer/private_file_server.py": {
+      "bytes": 2241,
+      "sha256": "2712685002fa51fbdec6a6e8cb6ddbf74fc40c25c04e92d9175902d1bed897cb"
     },
     "verify_archive.py": {
       "bytes": 1731,

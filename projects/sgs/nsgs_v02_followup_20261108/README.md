@@ -49,12 +49,12 @@ seed47 的三组和 seed48 的四组均已完成从零 10k。这里保留七条�
 - 主机：ubuntu-robot，RTX5060 Laptop 8GB。
 - 逻辑根：`/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/`。
 - 大输出：`/media/alex/Sharedata/go2_piper_nsgs_v02_matched_seed48_20261108/`，runs/experience/starts以稳定链接指向该分区。
-- 训练tmux计划名：`nsgs-matched-seed48`；状态见该根目录`STATUS.json`，具体启动收据将在实际启动后追加。
+- 训练tmux名：`nsgs-matched-seed48`；状态见该根目录`STATUS.json`，启动收据已在evidence中。
 - 原YangLab8个prepared状态和原始checkpoint均保留。只省略两个运行不读取的重复provenance字段，所有actor/critic/optimizer/adapter/environment/RNG/context字段逐项哈希不变。映射和逐文件哈希见 [sources.json](matched/sources.json)、[导出清单](matched/source_export_manifest.json)。
-- 单个获准SSH传输包428464362字节，SHA256 `9fd501b688c052cbf54c71608dc5aa9ee65e09099387a282c768c673c0e8d267`。分起点只在四份文件完整且SHA通过后释放给训练，全包还会独立校验。
+- 单个获准传输包428464362字节，SHA256 `9fd501b688c052cbf54c71608dc5aa9ee65e09099387a282c768c673c0e8d267`。分起点只在四份文件完整且SHA通过后释放给训练，全包还会独立校验。Mac中转遇到SSH间歇超时后保留断点，经1KB小流量校验改为两机现有加密Tailscale私网单文件Range续传，限定接收对端、随机nonce仅在内存、源服务3小时自动到期；不新增SSH认证或修改网络配置。8个起点已全部传完，逐文件和全包SHA均通过；临时源服务完成后已关闭，无剩余Mac传输依赖。
 - 新Student必须与已有同机seed48 Uniform初始actor/critic及空optimizer记录完全一致。显式物理状态和RNG可核对，PhysX隐藏solver缓存不能保证逐位恢复。
 
-本次提交时45项CPU工程测试已通过；状态包导入及GPU smoke/训练启动收据以之后的实际记录为准，不将准备完成写成训练完成。
+45项CPU测试、GPU两段共4次更新的完整恢复短测均通过。已在tmux `nsgs-matched-seed48` 启动真实队列；首个起点已完成三臂共300次新增PPO更新和Teacher版本8的真实更新。首条日志为CP1001，新增98304条环境转移。实际进程与源码哈希见 [launch_receipt.json](evidence/launch_receipt.json)。后续八起点完成后自动冻结Teacher，启动唯一新增的seed48从零10k，最终自动生成与已有四条seed48曲线的对比JSON/SVG/PNG。
 
 ## 比较限制
 
@@ -67,3 +67,5 @@ seed47旧Meta在7700后从3060迁至5060，续训收据中的wall_seconds只代�
 原生代码为LeggedManip_Lab `4e12109d1eccb1d9da2e4a35f189fabea3f13677`，Isaac Lab `b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8`。实际运行依赖服务器缓存的Isaac资产、原生仓库、环境和完整状态，本归档不是仅clone即可运行的独立仿真包。未上传模型、视频、原始逐步日志或完整经验张量；摘要保留其执行位置与哈希。
 
 CPU测试收据在[evidence](evidence/)。重建后运行`python -m unittest discover -s tests -v`，不启动仿真。`PACKAGE_MANIFEST.json`及`verify_archive.py`用于本归档完整性检查。
+
+启动快照：已新增600次真实分叉PPO更新、2次Teacher更新；会话PID 138526。这只是运行中的快照，最终以STATUS.json和results输出为准。

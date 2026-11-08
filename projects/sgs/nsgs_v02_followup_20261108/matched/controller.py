@@ -74,6 +74,7 @@ def main():
         kind=arm if arm in ('uniform','fresh') else 'meta'
         train('transfer-seed48-'+arm,10000,48,mode='transfer',transfer_kind=kind,teacher_in=cp)
     run('final-audit',[str(ROOT/'code/verify_extended.py'),'--final'],gpu=False)
+    run('compare-existing-results',[str(ROOT/'code/compare_existing.py')],gpu=False)
     status('complete',student_seed=48,new_counterfactual_updates=2400,engineering_updates=4,transfer_student_updates=10000,arms=['matched-meta'],source_seeds=[43,44],source_updates=[1000,3000,6000,9000])
 
 if __name__=='__main__':
