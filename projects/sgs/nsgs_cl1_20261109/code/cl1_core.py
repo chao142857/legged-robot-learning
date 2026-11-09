@@ -122,8 +122,18 @@ class Learner:
             norm=nn.utils.clip_grad_norm_(self.net.parameters(),CONFIG['max_grad_norm'],error_if_nonfinite=True)
             self.optimizer.step()
             steps.append(dict(epoch=epoch,early_stop=False,behavior_kl=float(kl.detach()),
-                loss=float(loss.detach()),policy_loss=float(policy.detach()),value_loss=float(vf.detach()),gradient_norm=float(norm)))
+                loss=float(loss.detach()),policy_loss=float(policy.detach()),value_loss=float(vf.detach()),gradient_norm=float(norm),
+                clip_fraction=float(((ratio.detach()-1).abs()>CONFIG['clip']).double().mean()),
+                value_explained_variance=float(1-torch.var(torch.stack(values).detach()-torch.tensor(returns),unbiased=False)/(torch.var(torch.tensor(returns),unbiased=False)+1e-12))))
+        final_kls=[]
+        with torch.no_grad():
+            for f,_,_ in prepared:
+                h=replay(self.net,f['prefix'])
+                for t in f['transitions']:
+                    mean,_,h=self.net(torch.as_tensor(t['x']),h)
+                    final_kls.append(float((mean-torch.as_tensor(t['mean'])).square().sum()/(2*CONFIG['sigma']**2)))
         self.version+=1
         delta=sum(float((self.net.state_dict()[k]-v).square().sum()) for k,v in params_before.items())**.5
         return dict(version=self.version,macro_samples=len(aa),epochs=steps,parameter_delta=delta,
+             final_behavior_kl=float(np.mean(final_kls)),max_behavior_kl=float(np.max(final_kls)),
              entropy=8*.5*math.log(2*math.pi*math.e*CONFIG['sigma']**2),rewards=[t['reward'] for f in fragments for t in f['transitions']])

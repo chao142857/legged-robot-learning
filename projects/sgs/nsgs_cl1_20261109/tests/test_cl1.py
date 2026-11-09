@@ -50,6 +50,14 @@ class Tests(unittest.TestCase):
   s=tree_hash(l.optimizer.state_dict());r=l.update(f)
   self.assertTrue(r['epochs'][0]['early_stop']);self.assertEqual(r['parameter_delta'],0)
   self.assertEqual(s,tree_hash(l.optimizer.state_dict()))
+ def test_fixed_parameters_state_response_and_rng_restore(self):
+  l=Learner();l.update(self.fragments(l));snap=l.state();b=Learner();b.load(snap)
+  x=np.zeros(CONFIG['input_dim']);a=l.act(x,[]);c=b.act(x,[])
+  np.testing.assert_array_equal(a['action'],c['action'])
+  with torch.no_grad():
+   m1,_,h1=l.net(torch.as_tensor(x),l.net.zero())
+   m2,_,h2=l.net(torch.ones(CONFIG['input_dim'],dtype=torch.float64),l.net.zero())
+  self.assertFalse(torch.equal(h1,h2));self.assertFalse(torch.equal(m1,m2))
  def test_decoder_probability(self):
   from teacher_v02 import Teacher,FeatureEncoder
   rng=np.random.default_rng(8);e=FeatureEncoder(rng.normal(size=(64,20)))

@@ -15,9 +15,18 @@ def save(p,v):
 def read(p):return torch.load(p,map_location='cpu',weights_only=False)
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('op',choices=['init','request','update','fork-memory','finish-fragment']);ap.add_argument('--stage',required=True);ap.add_argument('--request',type=Path);ap.add_argument('--batch',type=int);ap.add_argument('--length',type=int,default=5);ap.add_argument('--source-memory',type=Path);ap.add_argument('--seed',type=int);a=ap.parse_args()
+    import cl1_core,teacher_v02
+    identity={m.__name__:dict(path=m.__file__,sha256=file_sha(m.__file__)) for m in (cl1_core,teacher_v02)}
+    assert identity['teacher_v02']['sha256']=='734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96'
+    identity['operation']=a.op;identity['stage']=a.stage
+    identity_path=(a.request.with_suffix('.runtime.json') if a.request else ROOT/'teachers'/a.stage/f'{a.op}-{a.batch}-{a.seed}.runtime.json')
+    write(identity_path,identity)
     root=ROOT/'teachers'/a.stage;path=root/'current.pt';learner=Learner()
     if a.op=='init':
-        assert not path.exists(); root.mkdir(parents=True)
+        if a.stage=='base':
+            from smoke_acceptance import check
+            check()
+        assert not path.exists(); root.mkdir(parents=True,exist_ok=True)
         if a.stage=='recovery': learner.load(read(ROOT/'teachers/base/Base.pt')['learner'])
         state=dict(learner=learner.state(),students={str(s):dict(history=[],pending=None,previous=None,transitions=[],cursor=0) for s in (43,44)},batches=0)
         save(path,state);save(root/'initial.pt',state)
@@ -66,12 +75,17 @@ def main():
         if a.stage=='recovery':
             fragments=state.pop('fragments');assert len(fragments)==4
         before=copy.deepcopy(state);result=learner.update(fragments)
+        if a.stage=='smoke':
+            assert result['macro_samples']==4 and result['parameter_delta']>0
+            assert any(e.get('gradient_norm',0)>0 for e in result['epochs'])
         for s in state['students'].values():
             s['cursor']=len(s['transitions']);s['rebuilt_hidden']=replay(learner.net,s['history']).numpy()
         state['learner']=learner.state();state['batches']+=1
         p=root/f'batch_{a.batch:03d}';p.mkdir(exist_ok=False)
         save(p/'before.pt',before);save(p/'after.pt',state);save(p/'on_policy_fragments.pt',fragments)
         write(p/'result.json',result);save(path,state)
+        from cost_breakdown import report
+        report()
     elif a.op=='fork-memory':
         assert a.stage=='recovery'
         original=read(a.source_memory)['students'][str(a.seed)]
