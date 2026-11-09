@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "all_original_student_checkpoints_unchanged": true,
+  "prepared_full_student_states_hashes_match": true,
+  "original_sampling_tr_complete_teacher_state_equal": true,
+  "old_original_networks_differ": true,
+  "canonical_meta8_network_adam_encoder_unchanged": true,
+  "all_controls_share_recorded_private_rng": true,
+  "old_adam_steps": {
+    "0": 15,
+    "1": 15,
+    "2": 15,
+    "3": 15
+  },
+  "new_adam_steps": {
+    "0": 16,
+    "1": 16,
+    "2": 16,
+    "3": 16
+  },
+  "adam_step_increments_exactly_one": true,
+  "formal_500_update_runs": 0,
+  "native_upstream_commit": "4e12109d1eccb1d9da2e4a35f189fabea3f13677"
+}
