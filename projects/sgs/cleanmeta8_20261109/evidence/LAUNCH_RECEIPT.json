@@ -1,0 +1,17 @@
+{
+  "started_unix": 1794203049.9044323,
+  "session": "cleanmeta8-reproduction",
+  "root": "/home/alex/dog/go2_piper_cleanmeta8_20261109",
+  "code_commit": "22f2913faa8f87c8d7523362b8ead500ae717409",
+  "branch": "research/cleanmeta8-reproduction-20261109",
+  "meta_budget": 2400,
+  "teacher_initial": "Fresh original full state",
+  "student_seed": 48,
+  "student_updates_each": 10000,
+  "student_arms": [
+    "OldMeta8",
+    "CleanMeta8"
+  ],
+  "no_tv": true,
+  "meta24_paused": true
+}
