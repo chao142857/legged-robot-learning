@@ -1,0 +1,46 @@
+{
+  "groups": {
+    "smoke": {
+      "student_updates": 500,
+      "training_transitions": 49152000,
+      "development_transitions": 3584000,
+      "test_transitions": 0,
+      "development_job_seconds": 276.78843235969543,
+      "test_job_seconds": 0.0,
+      "student_job_seconds": 1374.6148743629456,
+      "startup_to_ready_seconds": 54.87967343092896,
+      "exposed_restore_seconds": 22.68865018012002,
+      "segments": 3
+    },
+    "base": {
+      "student_updates": 62,
+      "training_transitions": 6094848,
+      "development_transitions": 512000,
+      "test_transitions": 0,
+      "development_job_seconds": 39.042335510253906,
+      "test_job_seconds": 0.0,
+      "student_job_seconds": 0.0,
+      "startup_to_ready_seconds": 18.194999132072553,
+      "exposed_restore_seconds": 0.0,
+      "segments": 1
+    },
+    "recovery": {
+      "student_updates": 0,
+      "training_transitions": 0,
+      "development_transitions": 0,
+      "test_transitions": 0,
+      "development_job_seconds": 0.0,
+      "test_job_seconds": 0.0,
+      "student_job_seconds": 0.0,
+      "startup_to_ready_seconds": 0.0,
+      "exposed_restore_seconds": 0.0,
+      "segments": 0
+    }
+  },
+  "notes": [
+    "Student job wall includes nested dev/test and Teacher RPC waits; never add nested evaluation walls to it as disjoint GPU device time.",
+    "Startup-to-ready excludes initial dev evaluation and includes restoration; exposed restore seconds are a subset, not additional cost.",
+    "First smoke segment predates startup timing instrumentation; its complete parent job wall and raw console remain available.",
+    "PhysX hidden cache cannot be serialized; restore equality refers to captured exposed state."
+  ]
+}
