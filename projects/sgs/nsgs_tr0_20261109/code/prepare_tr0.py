@@ -20,6 +20,19 @@ def source_row(source):
    if row['completed_updates']==source['update']:return row
  raise AssertionError('No exact source progress row: '+source['id'])
 
+def complete_progress_row(row,actor_state):
+ """Legacy E3 rows omit std; derive it from the real saved Gaussian parameter."""
+ result=copy.deepcopy(row)
+ measured=float(actor_state['distribution.log_std_param'].exp().mean())
+ assert np.isfinite(measured) and measured>0
+ if 'action_std' in result:
+  # Native logger output_std is a recorded distribution snapshot, not a promise
+  # of bit equality to CPU exp(mean) of the post-update checkpoint parameter.
+  # Keep that genuine logged value. Only an absent field is derived from weights.
+  assert np.isfinite(result['action_std']) and result['action_std']>0
+ else:result['action_std']=measured
+ return result
+
 def prepare():
  assert file_sha(ROOT/'teachers/meta8.pt')==META8_SHA
  write(ROOT/'PREREGISTRATION.json',SPEC)
@@ -53,7 +66,7 @@ def prepare():
   assert all(tree_hash(saved[k])==v for k,v in hashes.items()) and tree_hash(i['environment'])==physical and tree_hash(i['rng'])==rng
   dest=ROOT/'starts'/source['id'];dest.mkdir(parents=True,exist_ok=False)
   cp=dest/'prepared.pt';torch.save(saved,cp)
-  row=source_row(source);assert row['completed_updates']==u and row['native_feedback_episodes']==owner['accepted']
+  row=complete_progress_row(source_row(source),saved['actor_state_dict']);assert row['completed_updates']==u and row['native_feedback_episodes']==owner['accepted']
   write(dest/'progress_row.json',row);write(dest/'source.json',dict(source,updates=u,path=str(cp),sha256=file_sha(cp),original_sha256=source_sha))
   write(dest/'export_receipt.json',dict(progress_row_sha256=file_sha(dest/'progress_row.json')))
   receipt=dict(source,prepared_checkpoint=str(cp),prepared_sha256=file_sha(cp),source_sha256=source_sha,
@@ -97,6 +110,22 @@ def actual_panel():
  write(ROOT/'panels/reference12.json',[{k:v for k,v in h.items() if k not in ('basis','global_state','dynamic','progress','progress_observed','partial')} for h in panel])
  print('TR0_FIXED_REFERENCE12_READY;ACTUAL_GRADIENT_H_WILL_BE_ADDED',flush=True)
 
+def repair_progress_metadata():
+ """Complete only new TR0 metadata; retain the original copied legacy row."""
+ import shutil
+ for p in sorted((ROOT/'starts').glob('*/progress_row.json')):
+  cp=torch.load(p.parent/'prepared.pt',map_location='cpu',weights_only=False)
+  old=json.loads(p.read_text());new=complete_progress_row(old,cp['actor_state_dict'])
+  if 'action_std' not in old:
+   original=p.with_name('progress_row.original.json');assert not original.exists();shutil.copyfile(p,original)
+   write(p,new)
+   write(p.parent/'ACTION_STD_PROVENANCE.json',dict(derived_from='Saved actor distribution.log_std_param.exp().mean()',value=new['action_std'],
+    checkpoint_sha256=file_sha(p.parent/'prepared.pt'),original_progress_sha256=file_sha(original)))
+  receipt=json.loads((p.parent/'export_receipt.json').read_text());receipt['progress_row_sha256']=file_sha(p)
+  write(p.parent/'export_receipt.json',receipt)
+ print('REAL_CHECKPOINT_ACTION_STD_VERIFIED_FOR_ALL_SOURCES',flush=True)
+
 if __name__=='__main__':
  import argparse
- p=argparse.ArgumentParser();p.add_argument('--actual-panel',action='store_true');a=p.parse_args();actual_panel() if a.actual_panel else prepare()
+ p=argparse.ArgumentParser();p.add_argument('--actual-panel',action='store_true');p.add_argument('--repair-progress',action='store_true');a=p.parse_args()
+ repair_progress_metadata() if a.repair_progress else actual_panel() if a.actual_panel else prepare()

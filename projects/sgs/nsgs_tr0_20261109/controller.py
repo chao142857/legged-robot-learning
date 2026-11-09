@@ -22,7 +22,11 @@ def idle():
 def evaluate(label,checkpoint,idle_first=True):
  if idle_first:idle()
  out=ROOT/'evaluations'/label
- run('eval-'+label,[str(ROOT/'code/evaluate.py'),'--checkpoint',str(checkpoint),'--kind','development','--out',str(out),'--headless','--kit_args',KIT])
+ if (out/'result.json').exists():
+  assert read(ROOT/'jobs'/('eval-'+label)/'result.json')['exit_code']==0
+ else:
+  assert not out.exists(),'Incomplete evaluation evidence: '+str(out)
+  run('eval-'+label,[str(ROOT/'code/evaluate.py'),'--checkpoint',str(checkpoint),'--kind','development','--out',str(out),'--headless','--kit_args',KIT])
  result=read(out/'result.json');assert result['passed'] and result['kind']=='development' and result['training_history_updates']==0 and result['model_weights_unchanged']
  assert result['checkpoint_sha256']==sha(checkpoint)
  identity={k:result[k] for k in ('initial_sha256','pool_sha256','seed','episodes','protocol_sha256')}
@@ -54,7 +58,8 @@ def training(label,source,target,teacher=None,arm=None,smoke=False,repeat_seed=N
  status('gpu_smoke' if smoke else 'validation_training' if teacher else 'fresh_direction_training',label=label,
    source_student_seed=source['seed'],source_update=u,new_updates=target-u,teacher=arm,teacher_frozen=True)
  run(label,args,on_tick=tick if teacher else None)
- assert not (out/'fault.txt').exists();result=read(out/'result.json')
+ if (out/'fault.txt').exists():raise RuntimeError(str(out/'fault.txt')+'\n'+(out/'fault.txt').read_text())
+ result=read(out/'result.json')
  assert result['passed'] and result['completed_updates']==target and result['new_updates']==target-u
  assert result['new_environment_transitions']==(target-u)*4096*24
  if teacher:assert result['teacher_frozen']
@@ -68,8 +73,9 @@ def main():
  idle();resource=subprocess.check_output(['/usr/bin/nvidia-smi','--query-gpu=name,memory.total,memory.used','--format=csv,noheader'],text=True)
  import shutil
  assert shutil.disk_usage(ROOT/'runs').free>40*1024**3
- write(ROOT/'RESOURCE_ACCEPTANCE.json',dict(passed=True,unix=started,gpu=resource.strip(),data_disk_free_bytes=shutil.disk_usage(ROOT/'runs').free,
-   no_existing_compute_jobs=True,existing_yanglab_queue_untouched=True))
+ if not (ROOT/'RESOURCE_ACCEPTANCE.json').exists():
+  write(ROOT/'RESOURCE_ACCEPTANCE.json',dict(passed=True,unix=started,gpu=resource.strip(),data_disk_free_bytes=shutil.disk_usage(ROOT/'runs').free,
+    no_existing_compute_jobs=True,existing_yanglab_queue_untouched=True))
  gradient=SOURCES[0];cp=ROOT/'starts'/gradient['id']/'prepared.pt';prefix='p00-seed43-cp01000'
  status('development_baseline',source=gradient['id'])
  baseline=evaluate(prefix+'-before',cp);shutil.copyfile(baseline,cp.parent/'baseline_dev.json')

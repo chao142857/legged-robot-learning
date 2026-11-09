@@ -45,6 +45,9 @@ def final_report():
  trains=[read(p) for p in (ROOT/'runs').glob('*/result.json')]
  formal=[r for r in trains if r['new_updates']==500]
  all_eval=[read(p) for p in (ROOT/'evaluations').glob('*/result.json')]
+ attempt_evaluations=[read(p) for p in (ROOT/'attempts').glob('*/evaluations/*/result.json')]
+ all_eval+=attempt_evaluations
+ attempt_jobs=[read(p) for p in (ROOT/'attempts').glob('*/jobs/*/result.json')]
  contrasts=[]
  for pair in pairs:
   a={r['teacher']:r for r in pair['arms']}
@@ -58,7 +61,9 @@ def final_report():
   all_new_student_updates=sum(r['new_updates'] for r in trains),all_new_training_transitions=sum(r['new_environment_transitions'] for r in trains),
   fresh_candidate_updates=300,smoke_updates=2,validation_branch_count=len(formal),source_seeds=[44,46,47,48],
   evaluation_environment_transitions=sum(e['executed_environment_transitions'] for e in all_eval),
-  evaluation_job_wall_seconds=sum(j['wall_seconds'] for j in jobs if j['label'].startswith('eval-')),
+  evaluation_job_wall_seconds=sum(j['wall_seconds'] for j in jobs+attempt_jobs if j['label'].startswith('eval-')),
+  failed_attempt_job_wall_seconds=sum(j['wall_seconds'] for j in attempt_jobs),
+  archived_attempt_evaluations=len(attempt_evaluations),
   student_job_wall_excluding_wait_for_evaluations=sum(max(0,r['wall_seconds']-r['evaluation_seconds']) for r in trains),
   total_pipeline_wall_seconds=time.time()-started if started else None,
   cost_scope='Training updates exclude historical source updates. Student evaluation waiting is subtracted before adding separate eval jobs; bootstrap/startup is retained in job wall time. No claim of exact GPU-active time.',

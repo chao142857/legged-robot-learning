@@ -1,8 +1,10 @@
 {
   "passed": true,
-  "wall_seconds": 1.7434167861938477,
-  "full_tests": 54,
+  "full_tests": 57,
+  "wall_seconds": 1.952665090560913,
   "gpu_used": false,
+  "legacy_missing_std_measured_from_checkpoint": true,
+  "existing_genuine_log_std_preserved": true,
   "optimizer_and_tr_tests_passed": true,
   "lifecycle_ast_verified": true
 }
