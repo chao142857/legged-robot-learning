@@ -1,3 +1,5 @@
+> Revision 02：用户取消重复基线训练。后续仅新增 Ubuntu seed48 CleanMeta8 10k，以及 YangLab seed49 CleanMeta8 10k；Uniform/Fresh/旧Meta不重跑、不自动补跑。下文初始双学生计划作为历史方案保留，以 revision02/PROTOCOL.json 为准。
+
 # CleanMeta8 — 原 V0.2 正确实现复现
 
 独立根目录：`/home/alex/dog/go2_piper_cleanmeta8_20261109`（ubuntu-robot）。大输出保存在 `/media/alex/Sharedata/go2_piper_cleanmeta8_20261109`。tmux：`cleanmeta8-reproduction`。
