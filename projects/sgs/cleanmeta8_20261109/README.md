@@ -1,4 +1,4 @@
-> Revision 02：用户取消重复基线训练。后续仅新增 Ubuntu seed48 CleanMeta8 10k，以及 YangLab seed49 CleanMeta8 10k；Uniform/Fresh/旧Meta不重跑、不自动补跑。下文初始双学生计划作为历史方案保留，以 revision02/PROTOCOL.json 为准。
+> Revision 02：用户取消重复基线训练。后续仅新增 Ubuntu seed48 CleanMeta8 10k，以及 YangLab seed49 CleanMeta8 10k；Uniform/Fresh/旧Meta不重跑、不自动补跑。活动队列以 evidence/CURRENT_QUEUE.json 为准，旧计划已归档。
 
 # CleanMeta8 — 原 V0.2 正确实现复现
 
@@ -8,7 +8,7 @@
 
 每点保存 `decision.pt`、真实分叉 checkpoint/日志/开发评测、`adam_full_trace.pt`、`adam_acceptance.json`。Trace包含更新前后完整Teacher状态、每次候选前后network和Adam、梯度、接受/拒绝、学习率、原KL、实际导入源码路径和SHA。观察包装不改变算法，配有更新结果等价测试。每个被接受更新只累积一次Adam状态；逻辑版本可因零信号或拒绝而多于真实Adam步数。
 
-完成后保存 `teachers/CleanMeta8.pt` 并自动核验，再串行运行 seed48 的 OldMeta8 与 CleanMeta8 两个冻结Teacher学生，各从零10k。相同本机原生PPO、初始化和独立评测；每1000更新正式测试、每100更新原有开发反馈，不训练冻结Teacher。核对已有本机Uniform配置、初始化、池、评测身份和checkpoint；匹配则复用，不匹配自动补跑同预算Uniform。
+完成后保存 `teachers/CleanMeta8.pt` 并自动核验。Ubuntu仅运行seed48 CleanMeta8学生10k；YangLab等待同一Teacher校验后，仅运行seed49 CleanMeta8学生10k。Uniform、Fresh与旧Meta学生基线均复用已有结果，不重跑、不自动补跑。每1000更新正式测试，每100更新原开发评测，Teacher全程冻结。
 
 旧Meta8/16与学生结果不改写；新 `LEGACY_LABELS.json` 记录旧实现来源。待执行Meta24队列保持暂停。
 

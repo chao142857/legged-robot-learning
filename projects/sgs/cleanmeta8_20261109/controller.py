@@ -64,14 +64,7 @@ def main():
     shutil.copy2(teacher,ROOT/'teachers/CleanMeta8.pt')
     run('clean-meta-acceptance',[ROOT/'code/final_checks.py','teacher'],gpu=False)
     status('CleanMeta8_complete',teacher=str(ROOT/'teachers/CleanMeta8.pt'),new_student_updates=2400)
-    for arm,name in [('old-meta8','OldMeta8.pt'),('clean-meta8','CleanMeta8.pt')]:
-        train('transfer-seed48-'+arm,10000,48,mode='transfer',branch=arm,transfer_kind='meta',teacher_in=ROOT/'teachers'/name)
-        run('verify-transfer-'+arm,[ROOT/'code/final_checks.py','student','--arm',arm],gpu=False)
-    run('check-uniform-reuse',[ROOT/'code/final_checks.py','uniform'],gpu=False)
-    if not read(ROOT/'UNIFORM_REUSE.json')['matched']:
-        train('transfer-seed48-uniform',10000,48,mode='transfer',branch='uniform',transfer_kind='uniform',teacher_in=ROOT/'teachers/Fresh.pt')
-    run('final-report',[ROOT/'code/final_checks.py','report'],gpu=False)
-    status('complete',teacher='CleanMeta8',meta_training_student_updates=2400,seed=48,student_updates_per_arm=10000)
+    raise RuntimeError('Obsolete transfer schedule disabled: use revision02 boundary handoff and CleanMeta8-only queue.')
 
 if __name__=='__main__':
     try:main()

@@ -61,13 +61,13 @@
   "student_validation": {
     "seed": 48,
     "arms": [
-      "OldMeta8",
       "CleanMeta8"
     ],
     "updates_each": 10000,
     "teacher_frozen": true,
     "reuse_matching_uniform": true,
-    "rerun_uniform_if_mismatch": true
+    "rerun_uniform_if_mismatch": false,
+    "reuse_existing_fresh": true
   },
   "history_policy": "all old results preserved; legacy-label registry only"
 }
