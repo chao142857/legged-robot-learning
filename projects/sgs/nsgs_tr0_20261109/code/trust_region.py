@@ -59,8 +59,11 @@ def construct_teachers(meta8,decision,scores,panel,tv_limit=.02,evidence_dir=Non
  assert 0<tv_limit<=1 and len(scores)==4
  assert meta8.updates==decision['teacher_updates']
  assert state_hash(meta8.net.state_dict())==decision['teacher_sha256']
+ assert tree_hash(meta8.optimizer.state_dict())==tree_hash(decision['teacher']['optimizer'])
  assert tree_hash(meta8.encoder.state_dict())==tree_hash(decision['teacher']['encoder'])
- old=clone(meta8);original=clone(meta8,decision['teacher'])
+ # All three alternatives begin after the one shared exploration draw. Old
+ # keeps Meta8 weights/Adam; it does not retain a different private RNG cursor.
+ old=clone(meta8,decision['teacher']);original=clone(meta8,decision['teacher'])
  original_info=original.learn_pair(decision,*scores)
  old_q=panel_probabilities(old,panel);original_q=panel_probabilities(original,panel)
  original_changes=[dict(id=h['id'],**distribution_change(a,b)) for h,a,b in zip(panel,old_q,original_q)]

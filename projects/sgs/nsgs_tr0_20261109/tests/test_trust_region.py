@@ -31,8 +31,10 @@ class TrustRegionTests(unittest.TestCase):
   self.assertTrue(np.isfinite(q).all());self.assertTrue((q>=.2/64).all());np.testing.assert_allclose(q.sum(1),1,rtol=0,atol=1e-12)
   for x in q:self.assertEqual(distribution_change(x,x)['tv'],0.)
  def test_nonbinding_is_bit_identical_including_adam_rng(self):
-  t,d,p=self.case();_,b,c,r=construct_teachers(t,d,[.3,.31,.35,.27],p,tv_limit=1.)
+  t,d,p=self.case();a,b,c,r=construct_teachers(t,d,[.3,.31,.35,.27],p,tv_limit=1.)
   self.assertFalse(r['constraint_intervention']);self.assertEqual(tree_hash(b.state()),tree_hash(c.state()))
+  self.assertEqual(tree_hash(a.rng.bit_generator.state),tree_hash(b.rng.bit_generator.state))
+  self.assertEqual(tree_hash(a.optimizer.state_dict()),tree_hash(d['teacher']['optimizer']))
  def test_binding_backtracks_same_adam_once_and_no_amplification(self):
   t,d,p=self.case();_,_,_,raw=construct_teachers(t,d,[.3,.31,.35,.27],p,tv_limit=1.)
   limit=raw['original_max_tv']*.49;self.assertGreater(limit,1e-12)

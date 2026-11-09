@@ -6,7 +6,7 @@
     "code/experiment_spec.py": "b39d011a03a5568535bd77705792b2ffca079dc878b8f8c2c421abe52ebd19cd",
     "code/validation.py": "fcff1bb37a05cf5270d9cae13a0b2ccc9316e2d21143a31a285cae0f31439429",
     "code/neural_owner.py": "a199caa76360c6ff8c5c546e4bbf88f61844d2ed1797e1f660d202fc2e531636",
-    "code/trust_region.py": "d6fd809fdce06c462acf06e8ecdf5641948e7f14f24a79dbb0be2e1344519e77",
+    "code/trust_region.py": "60ee8346adc9072ecd3e3755007c6d4e31bbdcb78a091b2a1f3ce50c6323ff97",
     "code/report_tr0.py": "13b320c2832b8af003499321fef6c1baa6de17f94ed866fca9a268e81838ecfc",
     "code/prepare_continual.py": "cb8a736a9882bf3f74c1bb55fae8d1d6126702c4300efddf53152ae402e2ab4d",
     "code/audit_point.py": "714bdbc9a0514425749879b61e3583e9fd8c0cd527fcc12f10fafff30e61d294",
@@ -53,5 +53,6 @@
     "rsl-rl-lib": "5.0.1"
   },
   "historical_outputs_untouched": true,
-  "full_binary_inputs_retained_on_host": true
+  "full_binary_inputs_retained_on_host": true,
+  "teacher_candidate_note": "Old/B/C share the recorded post-exploration private RNG cursor; frozen mean inference never draws it. No Student, gradient, Adam or probability-formula change."
 }
