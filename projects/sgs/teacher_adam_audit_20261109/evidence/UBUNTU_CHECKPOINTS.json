@@ -1,0 +1,70 @@
+[
+  {
+    "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/teachers/new-meta.pt",
+    "sha256": "a2e81e5a672628ad9f5463c61b6318a0f6bde6c80b714ab252a3ad0bd8f640e6",
+    "logical_updates": 16,
+    "adam_steps": [
+      24
+    ],
+    "network_hash": "0001ce7f284242e23066b43a57375f99692242c35f98f2d554750078eca0998c",
+    "optimizer_hash": "d35612ed4e142f5e62cc2a32d57e98b082c34f763eedeb78ea77b62b1d0872b8"
+  },
+  {
+    "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/teachers/old-meta.pt",
+    "sha256": "8929d0a13c4aaa7b98c70acf584d04390711bbc9ea6df8b61f3bcb556cdbd3b9",
+    "logical_updates": 8,
+    "adam_steps": [
+      15
+    ],
+    "network_hash": "e741c2caf605707ec895ae9f990efd59bf9737dba974ca1eec936e6472a2fedf",
+    "optimizer_hash": "021a265d0c2a32d9a2ec50e4743f37824cc045d144444b8577485d6c890b1f70"
+  },
+  {
+    "path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/teachers/meta-final.pt",
+    "sha256": "8929d0a13c4aaa7b98c70acf584d04390711bbc9ea6df8b61f3bcb556cdbd3b9",
+    "logical_updates": 8,
+    "adam_steps": [
+      15
+    ],
+    "network_hash": "e741c2caf605707ec895ae9f990efd59bf9737dba974ca1eec936e6472a2fedf",
+    "optimizer_hash": "021a265d0c2a32d9a2ec50e4743f37824cc045d144444b8577485d6c890b1f70"
+  },
+  {
+    "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/teachers/fresh.pt",
+    "sha256": "98c577bb969bbfd3362e5959f20a12cee61cbc2c4b8d2bdf529fecaa1c32cef2",
+    "logical_updates": 0,
+    "adam_steps": [],
+    "network_hash": "293f8c4bffea828e9613a5b0bdf9630673e2d10a88b6821de1907827974cd9d0",
+    "optimizer_hash": "d0871c8f5a832995d89f7afbca39004dc4804d7bd02f162cf80c1b4b90bef829"
+  },
+  {
+    "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/teachers/new-meta.pt",
+    "sha256": "803eb25da1fb3ed31c4a03c5b103aa4f24d57dd5c4f73f7f8d3645d507ec5968",
+    "logical_updates": 16,
+    "adam_steps": [
+      30
+    ],
+    "network_hash": "d62a809e66392684fa55dc969511e91fd9683ace2fcb0b7b1b0183027156e451",
+    "optimizer_hash": "157adc8b64581388cecf1c3737f4d5d153cb874253e1c0149049d0846ecdcb84"
+  },
+  {
+    "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/teachers/old-meta.pt",
+    "sha256": "8929d0a13c4aaa7b98c70acf584d04390711bbc9ea6df8b61f3bcb556cdbd3b9",
+    "logical_updates": 8,
+    "adam_steps": [
+      15
+    ],
+    "network_hash": "e741c2caf605707ec895ae9f990efd59bf9737dba974ca1eec936e6472a2fedf",
+    "optimizer_hash": "021a265d0c2a32d9a2ec50e4743f37824cc045d144444b8577485d6c890b1f70"
+  },
+  {
+    "path": "/home/alex/dog/go2_piper_nsgs_v02_seed49_meta_20261109/teachers/meta16.pt",
+    "sha256": "a2e81e5a672628ad9f5463c61b6318a0f6bde6c80b714ab252a3ad0bd8f640e6",
+    "logical_updates": 16,
+    "adam_steps": [
+      24
+    ],
+    "network_hash": "0001ce7f284242e23066b43a57375f99692242c35f98f2d554750078eca0998c",
+    "optimizer_hash": "d35612ed4e142f5e62cc2a32d57e98b082c34f763eedeb78ea77b62b1d0872b8"
+  }
+]
