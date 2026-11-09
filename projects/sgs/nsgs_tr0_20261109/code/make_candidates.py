@@ -26,8 +26,11 @@ assert tree_hash(t.encoder.state_dict())==tree_hash(d['teacher']['encoder'])
 panel=torch.load(ROOT/'panels/reference12.pt',map_location='cpu',weights_only=False)
 h=frozen_input(t,'actual-gradient-decision',d,d['global_state'],dict(decision_path=str(point/'decision.pt'),decision_sha256=file_sha(point/'decision.pt'),formal_test_used=False))
 assert h['basis_sha256']==d['basis_sha256'];panel.append(h);assert len(panel)==13
-torch.save(panel,ROOT/'panels/fixed13.pt')
-write(ROOT/'panels/fixed13.json',[{k:v for k,v in x.items() if k not in ('basis','global_state','dynamic','progress','progress_observed','partial')} for x in panel])
+if (ROOT/'panels/fixed13.pt').exists():
+ assert tree_hash(panel)==tree_hash(torch.load(ROOT/'panels/fixed13.pt',map_location='cpu',weights_only=False)),'Frozen inputs changed'
+else:
+ torch.save(panel,ROOT/'panels/fixed13.pt')
+ write(ROOT/'panels/fixed13.json',[{k:v for k,v in x.items() if k not in ('basis','global_state','dynamic','progress','progress_observed','partial')} for x in panel])
 scores=[before['continuous_joint_score'],*[results[a]['continuous_joint_score'] for a in ('uniform','plus','minus')]]
 old,original,tr,report=construct_teachers(t,d,scores,panel,evidence_dir=ROOT/'candidates/new_real')
 for name,teacher in (('old',old),('original',original),('sampling-tr',tr)):

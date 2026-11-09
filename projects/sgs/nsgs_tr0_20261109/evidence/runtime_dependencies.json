@@ -6,8 +6,8 @@
     "code/experiment_spec.py": "b39d011a03a5568535bd77705792b2ffca079dc878b8f8c2c421abe52ebd19cd",
     "code/validation.py": "fcff1bb37a05cf5270d9cae13a0b2ccc9316e2d21143a31a285cae0f31439429",
     "code/neural_owner.py": "a199caa76360c6ff8c5c546e4bbf88f61844d2ed1797e1f660d202fc2e531636",
-    "code/trust_region.py": "60ee8346adc9072ecd3e3755007c6d4e31bbdcb78a091b2a1f3ce50c6323ff97",
-    "code/report_tr0.py": "13b320c2832b8af003499321fef6c1baa6de17f94ed866fca9a268e81838ecfc",
+    "code/trust_region.py": "125c5ca5bcb4bfbc65927c66cf81ea409d82a215cda1f6f910a81c173c3193dd",
+    "code/report_tr0.py": "3289413d167358e2e20e82b40bfb8adcae1ffcf1afe6a7a2f486cec5efcb3d76",
     "code/prepare_continual.py": "cb8a736a9882bf3f74c1bb55fae8d1d6126702c4300efddf53152ae402e2ab4d",
     "code/audit_point.py": "714bdbc9a0514425749879b61e3583e9fd8c0cd527fcc12f10fafff30e61d294",
     "code/build_tr0_trainer.py": "2054d1d71eac369def1a018e4c99fd7d8656b8ab07e6ef3425da4f8160e41026",
@@ -20,7 +20,7 @@
     "code/teacher_ops.py": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f",
     "code/fork_v01.py": "1c6a09665f24ceaf7c6416f55321a373410b8d4015595cbce0f7ee62e8f5f295",
     "code/adapter.py": "a643694f7747f3260702b35b32a29aeae28fab5ab239cc06dc6b1ae1be17ef05",
-    "code/make_candidates.py": "600949310ece6efd68ae97e805b4fe0f127b7a2e057fd36461d966968c388804",
+    "code/make_candidates.py": "7391b420de956554f25e9ab8bf08551544b434fa41eefc23873769d7ae334d45",
     "code/matched_sources.py": "91bd5aff1f81e1798382296c4a1ffc758b1299480ce938e3595eab2ae2bb550e",
     "code/fork_v02.py": "bb0d2987bfca3dc83101f813d71abb3deb67cad5862d1b4c65db987eb7a9c093",
     "code/cpu_hash.py": "997122e7e5a977947af68a11bb1c38504a8d048063d520670d0ee4351e1f02ec",
@@ -40,7 +40,9 @@
     "code/prepare_matched.py": "68ba62acfe5629c59d324837c6e0137bbd0001044f213c771ed0dab6d8c59474",
     "code/neural_adapter.py": "6eb475f117f5f178f340519b9d2e730867bbf1c34d0f5bfa2a85d2bdc5c8c1a4",
     "code/common.py": "930e7de00ca2ce9637dc1dac4798c4acf613c9b2438cc4e0de9563c45d268864",
-    "code/python.sh": "a205baded972daff6749165d96c24be83f1ea13be3bd9b78cba1dad93965661f"
+    "code/python.sh": "a205baded972daff6749165d96c24be83f1ea13be3bd9b78cba1dad93965661f",
+    "code/plot_tr0.py": "18bad6c2de09ccd377cb84c49f794207d6942c60bef5250039e05c8f64e5c639",
+    "code/finalize_tr0.py": "84848ed1729e7e6ec779314357508dc83cd7b037abb2286b333a3515a82f4b2d"
   },
   "native_git_commit": "4e12109d1eccb1d9da2e4a35f189fabea3f13677",
   "native_tracked_diff": "",
@@ -54,5 +56,6 @@
   },
   "historical_outputs_untouched": true,
   "full_binary_inputs_retained_on_host": true,
-  "teacher_candidate_note": "Old/B/C share the recorded post-exploration private RNG cursor; frozen mean inference never draws it. No Student, gradient, Adam or probability-formula change."
+  "teacher_candidate_note": "Old/B/C share the recorded post-exploration private RNG cursor; frozen mean inference never draws it. No Student, gradient, Adam or probability-formula change.",
+  "adam_snapshot_note": "Historical Parent CPU load may alias snapshot tensors. TR0 isolates each load for both B/C; real canonical step15 is preserved and current accepted update goes15->16. Source modules and historical assets untouched."
 }

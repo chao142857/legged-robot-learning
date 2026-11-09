@@ -74,5 +74,26 @@ class TrustRegionTests(unittest.TestCase):
    self.assertTrue((Path(folder)/'candidates/old_and_original_full_probabilities.npz').exists())
    self.assertTrue((Path(folder)/'candidates/accepted_full_probabilities.npz').exists())
   self.assertLessEqual(r['max_accepted_tv'],.02);self.assertEqual(tree_hash(t.state()),before);self.assertEqual(ids,[tree_hash(h) for h in p])
+ def constrained_case(self,kl_limit):
+  t=clone(self.teacher);t.config['max_preference_step_kl']=kl_limit
+  d=t.sample_pair(self.context['dynamic'],self.g,8,self.context['progress'],self.context['progress_observed'],self.context['partial'])
+  p=[frozen_input(t,'isolated-backtrack',self.context,self.g,{'synthetic':True})]
+  return t,d,p
+ def test_original_kl_backtracks_do_not_alias_or_advance_adam_twice(self):
+  t,d,p=self.constrained_case(.001)
+  _,b,c,r=construct_teachers(t,d,[.3,.31,.35,.27],p,tv_limit=1.)
+  self.assertGreater(len(r['original_step']['step_backtracking']),1)
+  self.assertFalse(r['original_step']['step_rejected'])
+  old=d['teacher']['optimizer']['state'];new=b.optimizer.state_dict()['state']
+  for k,v in old.items():self.assertEqual(int(new[k]['step']),int(v['step'])+1)
+  self.assertEqual(tree_hash(b.state()),tree_hash(c.state()))
+  self.assertNotIn('load_state_dict',b.optimizer.__dict__)
+ def test_original_full_rejection_restores_the_original_adam_snapshot(self):
+  t,d,p=self.constrained_case(1e-20)
+  _,b,c,r=construct_teachers(t,d,[.3,.31,.35,.27],p,tv_limit=1.)
+  self.assertTrue(r['original_step']['step_rejected'])
+  self.assertEqual(tree_hash(b.optimizer.state_dict()),tree_hash(d['teacher']['optimizer']))
+  self.assertEqual(tree_hash(b.net.state_dict()),tree_hash(d['teacher']['network']))
+  self.assertEqual(tree_hash(b.state()),tree_hash(c.state()))
 
 if __name__=='__main__':unittest.main()

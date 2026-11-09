@@ -1,10 +1,10 @@
 {
   "passed": true,
-  "full_tests": 57,
-  "wall_seconds": 1.952665090560913,
+  "full_tests": 59,
+  "wall_seconds": 1.832,
   "gpu_used": false,
   "legacy_missing_std_measured_from_checkpoint": true,
-  "existing_genuine_log_std_preserved": true,
-  "optimizer_and_tr_tests_passed": true,
-  "lifecycle_ast_verified": true
+  "actual_adam_step_audit_passed": true,
+  "deep_copies_on_every_optimizer_load": true,
+  "real_gradient_and_raw_proposal_unchanged": true
 }

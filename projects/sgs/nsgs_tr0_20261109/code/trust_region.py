@@ -1,11 +1,12 @@
 """One real Meta8 update, with an optional trust region on mixed sequence q.
 
 No simulator/PPO gradient or historical on-policy replay is introduced. The
-Original-step is the unchanged V0.2 implementation. Sampling-TR reuses exactly
+Original-step keeps the V0.2 gradient and KL rule, with immutable Adam loads.
+Sampling-TR reuses exactly
 its pre-clipping gradient and Adam direction, restoring the same old Adam state
 before every candidate. The declared base LR is restored after an accepted step.
 """
-import copy,math
+import copy,math,contextlib
 from pathlib import Path
 import numpy as np
 import torch
@@ -49,6 +50,25 @@ def clone(teacher,state=None):
  if state is not None:result.load(copy.deepcopy(state))
  return result
 
+@contextlib.contextmanager
+def isolated_adam_loads(optimizer):
+ """CPU Optimizer.load_state_dict may alias snapshot tensors. Never reuse them.
+
+ The hook is local to this one isolated Teacher optimizer and removed before
+ cloning/checkpointing. It changes neither the gradient nor the first suggested
+ Adam direction, but prevents failed backtracks from advancing the old moments.
+ Historical source modules/checkpoints are not edited.
+ """
+ had_override='load_state_dict' in optimizer.__dict__
+ prior_override=optimizer.__dict__.get('load_state_dict')
+ native_load=optimizer.load_state_dict
+ def load_independent_snapshot(state):return native_load(copy.deepcopy(state))
+ optimizer.load_state_dict=load_independent_snapshot
+ try:yield
+ finally:
+  if had_override:optimizer.load_state_dict=prior_override
+  else:optimizer.__dict__.pop('load_state_dict',None)
+
 def construct_teachers(meta8,decision,scores,panel,tv_limit=.02,evidence_dir=None):
  """Construct A/B/C from one on-policy decision and its new real branch gains.
 
@@ -64,7 +84,13 @@ def construct_teachers(meta8,decision,scores,panel,tv_limit=.02,evidence_dir=Non
  # All three alternatives begin after the one shared exploration draw. Old
  # keeps Meta8 weights/Adam; it does not retain a different private RNG cursor.
  old=clone(meta8,decision['teacher']);original=clone(meta8,decision['teacher'])
- original_info=original.learn_pair(decision,*scores)
+ with isolated_adam_loads(original.optimizer):
+  original_info=original.learn_pair(decision,*scores)
+ old_adam_steps={str(k):int(v['step']) for k,v in decision['teacher']['optimizer']['state'].items()}
+ new_adam_steps={str(k):int(v['step']) for k,v in original.optimizer.state_dict()['state'].items()}
+ if original_info['step_rejected'] or original_info['zero_signal']:
+  assert tree_hash(original.optimizer.state_dict())==tree_hash(decision['teacher']['optimizer'])
+ else:assert all(new_adam_steps[k]==v+1 for k,v in old_adam_steps.items())
  old_q=panel_probabilities(old,panel);original_q=panel_probabilities(original,panel)
  original_changes=[dict(id=h['id'],**distribution_change(a,b)) for h,a,b in zip(panel,old_q,original_q)]
  maximum=max(x['tv'] for x in original_changes)
@@ -80,7 +106,7 @@ def construct_teachers(meta8,decision,scores,panel,tv_limit=.02,evidence_dir=Non
   audit=clone(meta8,decision['teacher']);base_state=audit.state()
   base_lrs=[x['lr'] for x in base_state['optimizer']['param_groups']]
   for index,record in enumerate(original_info['step_backtracking']):
-   audit.load(base_state);audit.optimizer.zero_grad(set_to_none=True);cursor=0
+   audit.load(copy.deepcopy(base_state));audit.optimizer.zero_grad(set_to_none=True);cursor=0
    for parameter in audit.net.parameters():
     size=parameter.numel();parameter.grad=torch.as_tensor(original_info['gradient_vector'][cursor:cursor+size].copy(),dtype=parameter.dtype).reshape(parameter.shape);cursor+=size
    torch.nn.utils.clip_grad_norm_(audit.net.parameters(),audit.config['gradient_clip'])
@@ -104,6 +130,7 @@ def construct_teachers(meta8,decision,scores,panel,tv_limit=.02,evidence_dir=Non
   original_optimizer=original.optimizer.state_dict();tr_optimizer=tr.optimizer.state_dict()
   return dict(tv_limit=tv_limit,mixed_uniform_mass=.2,reference_input_ids=[h['id'] for h in panel],
    original_max_tv=maximum,original_changes=original_changes,original_step=original_info,original_candidate_audit=original_candidate_audit,
+   adam_snapshot_isolation_fixed=True,old_adam_steps=old_adam_steps,new_adam_steps=new_adam_steps,
    constraint_intervention=intervention,original_sampling_tr_network_identical=state_hash(original.net.state_dict())==state_hash(tr.net.state_dict()),
    original_sampling_tr_full_state_identical=tree_hash(original.state())==tree_hash(tr.state()),
    accepted=accepted,attempts=attempts,accepted_changes=changes,max_accepted_tv=max(x['tv'] for x in changes),
