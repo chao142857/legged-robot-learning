@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "wall_seconds": 1.7434167861938477,
+  "full_tests": 54,
+  "gpu_used": false,
+  "optimizer_and_tr_tests_passed": true,
+  "lifecycle_ast_verified": true
+}
