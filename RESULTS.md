@@ -2,6 +2,19 @@
 
 All entries describe simulation or CPU diagnostics. No hardware result is included. Dates identify source snapshots, not new experiments performed during publication.
 
+## Corrected CleanMeta8 — completed 9 November 2026
+
+Public verification: 10 November 2026. A corrected V0.2 Teacher was trained from the original Fresh state with eight new matched-start three-arm experiments (2,400 new Student PPO updates), then frozen for two from-zero 10k transfers. Uniform/Fresh below are existing runs explicitly reused for this comparison.
+
+| Student seed | Uniform | Fresh | CleanMeta8 | vs Uniform | vs Fresh |
+|---:|---:|---:|---:|---:|---:|
+| 48 | 25.78% | 35.94% | **33.98%** | +8.20 pp | -1.95 pp |
+| 49 | 35.94% | 29.98% | **34.47%** | -1.46 pp | +4.49 pp |
+
+These are strict joint-success rates at the fixed CP10000, on the same 1,024-sequence test with mean actions and native 5cm/80% criteria. Both Student budgets are 983,040,000 training transitions. Seed 48 Fresh ran on RTX 3060 while Uniform/CleanMeta8 ran on RTX 5060 Laptop; all seed 49 methods ran on RTX 3060. One corrected Teacher is shared across the two Student seeds. The mixed final result does not establish stable superiority or isolate the causal performance effect of the fix.
+
+The [completed progress page](projects/sgs/cleanmeta8_20261109/README.md) includes every checkpoint, metric definitions, physical errors and budget boundaries; [machine-readable evidence](projects/sgs/cleanmeta8_20261109/evidence/completed_curves.json) includes hashes. Historical Meta8/16 used the audited old Adam implementation and are not corrected-algorithm evidence; see the [optimizer audit](https://github.com/chao142857/legged-robot-learning/blob/c43b36ea4cb3dbdaa3d0f72730c349188a6d5130/projects/sgs/teacher_adam_audit_20261109/REPORT.md). The older studies below retain their distinct protocols and dates.
+
 ## Z1 locomotion
 
 The October 10 CP5700 demonstration recorded 32/32 eight-riser, 10 cm upstairs traversals. Other scene demonstrations used CP2300, including downstairs trials with calf contact; these cannot be presented as one checkpoint passing every scene. Team-model videos remain private.

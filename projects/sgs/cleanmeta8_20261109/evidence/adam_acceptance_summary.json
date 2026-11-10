@@ -1,0 +1,318 @@
+{
+  "verified_date": "2026-11-10",
+  "passed": true,
+  "logical_updates": 8,
+  "accepted_optimizer_updates": 8,
+  "teacher_state_sha256": "57e5bdb5a2f7a737aaf9c2aee514f605cb03131616f716f4055870c1aa74e94b",
+  "source_teacher_checkpoint_sha256": "279ca925da28aeaa345fa01a0b532fbb72e0a4b74f10e95fb514f78e00ce55f0",
+  "installed_teacher_checkpoint_sha256": "3dd4db9f21662fcb53807dfde0beee50f6cba2e1c59c642aa6dc9fbea2b10e06",
+  "installed_teacher_state_sha256": "57e5bdb5a2f7a737aaf9c2aee514f605cb03131616f716f4055870c1aa74e94b",
+  "encoder_reused_exactly": true,
+  "actual_teacher_source_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+  "full_trace_files_retained_on_execution_hosts": true,
+  "source_snapshot": "https://github.com/chao142857/legged-robot-learning/tree/c43b36ea4cb3dbdaa3d0f72730c349188a6d5130/projects/sgs/teacher_adam_audit_20261109",
+  "points": [
+    {
+      "point": 0,
+      "source_student_seed": 43,
+      "source_update": 1000,
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 0,
+      "logical_after": 1,
+      "adam_steps_before": [],
+      "adam_steps_after": [
+        1
+      ],
+      "full_trace_sha256": "889885b70f78e12b046f22edaa60e9de1e976c9ab43433f102eaa48efb125f56",
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true,
+      "teacher_source_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.13324101060143945,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.03382996071977501,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "point": 1,
+      "source_student_seed": 44,
+      "source_update": 1000,
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 1,
+      "logical_after": 2,
+      "adam_steps_before": [
+        1
+      ],
+      "adam_steps_after": [
+        2
+      ],
+      "full_trace_sha256": "e906c34b20b8cac120afaa2e278632ee847ee82a7054b4dd42686b01bb2df107",
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true,
+      "teacher_source_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.12774464084758883,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.02929802817881272,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "point": 2,
+      "source_student_seed": 43,
+      "source_update": 3000,
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 2,
+      "logical_after": 3,
+      "adam_steps_before": [
+        2
+      ],
+      "adam_steps_after": [
+        3
+      ],
+      "full_trace_sha256": "2b133b3185be9cca1b07f1741c110ff9bac13145ce14c0f819a16c316128a05c",
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true,
+      "teacher_source_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.08636820576683803,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.01981598241016336,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "point": 3,
+      "source_student_seed": 44,
+      "source_update": 3000,
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 3,
+      "logical_after": 4,
+      "adam_steps_before": [
+        3
+      ],
+      "adam_steps_after": [
+        4
+      ],
+      "full_trace_sha256": "9e4d680cf829d78b2f44a845ebceda55ea23af63d575ef579237488e2b530157",
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true,
+      "teacher_source_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.08690422094102705,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.02004279873585664,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "point": 4,
+      "source_student_seed": 43,
+      "source_update": 6000,
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 4,
+      "logical_after": 5,
+      "adam_steps_before": [
+        4
+      ],
+      "adam_steps_after": [
+        5
+      ],
+      "full_trace_sha256": "dcc22ab85194394b19cd3b88837e65a1555f0548c3add26d26ea00ffa4b703e7",
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true,
+      "teacher_source_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.029764079212113582,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "point": 5,
+      "source_student_seed": 44,
+      "source_update": 6000,
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 5,
+      "logical_after": 6,
+      "adam_steps_before": [
+        5
+      ],
+      "adam_steps_after": [
+        6
+      ],
+      "full_trace_sha256": "06843f7eebb27ea579cdaad2e19951ee8ca3a7d921afff3db5f5f6de38d39cb0",
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true,
+      "teacher_source_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.01517199023069078,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "point": 6,
+      "source_student_seed": 43,
+      "source_update": 9000,
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 6,
+      "logical_after": 7,
+      "adam_steps_before": [
+        6
+      ],
+      "adam_steps_after": [
+        7
+      ],
+      "full_trace_sha256": "d408402f882df4a5ac5d6e3642d3ec8fc556818a648d2f702edc26ff62c09296",
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true,
+      "teacher_source_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.04038047886130511,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "point": 7,
+      "source_student_seed": 44,
+      "source_update": 9000,
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 7,
+      "logical_after": 8,
+      "adam_steps_before": [
+        7
+      ],
+      "adam_steps_after": [
+        8
+      ],
+      "full_trace_sha256": "29a9b695267cc1ff81156d2fdfe0f4958f7ca9ff1c372a5319edc68f8a5ac88c",
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true,
+      "teacher_source_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.03865685229848946,
+          "finite": true
+        }
+      ]
+    }
+  ],
+  "original_config_unchanged": true,
+  "all_new_real_branch_feedback": true,
+  "no_tv_constraint": true,
+  "original_fresh_full_state_identical": true
+}

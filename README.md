@@ -6,13 +6,24 @@ An independent research collection by [chao142857](https://github.com/chao142857
 
 **All reported robot experiments are simulation results. This release establishes no real-robot validation and no stable SGS advantage over Uniform sampling.**
 
-## Current Research: nSGS V0.2
+## Current research — corrected CleanMeta8 (10 November 2026)
 
-[**nSGS: state-conditioned neural task sampling for Go2–Piper whole-body control**](https://github.com/chao142857/legged-robot-learning/tree/research/nsgs-v02-20261106/projects/sgs/nsgs_v02_20261106)
+[**Completed reproduction and checkpoint curves**](projects/sgs/cleanmeta8_20261109/README.md) · [Machine-readable evidence](projects/sgs/cleanmeta8_20261109/evidence/completed_curves.json) · [Optimizer-fix audit](https://github.com/chao142857/legged-robot-learning/blob/c43b36ea4cb3dbdaa3d0f72730c349188a6d5130/projects/sgs/teacher_adam_audit_20261109/REPORT.md)
 
-This ongoing study asks whether a neural teacher can select training tasks that improve subsequent PPO learning. It includes a state-conditioned sampler, matched-start training comparisons, and teacher updates driven by subsequent learning gains.
+A 9 November audit identified Adam snapshot aliasing in V0.2 Teacher backtracking: rejected trial steps could alter the optimizer state intended for restoration. Historical Meta8/Meta16 artifacts remain archived as **legacy implementation results**. The corrected reproduction starts from the original Fresh Teacher state and collects **eight new three-arm experiments × 100 PPO updates = 2,400 new Student updates**; it does not replay old outcomes as new on-policy feedback.
 
-The **6 November 2026 public snapshot** records eight matched-start comparisons and eight Teacher updates; transfer evaluation is ongoing. No advantage over Uniform has been established. See the [method and implementation](https://github.com/chao142857/legged-robot-learning/tree/research/nsgs-v02-20261106/projects/sgs/nsgs_v02_20261106) and [experiment progress](https://github.com/chao142857/legged-robot-learning/blob/research/nsgs-v02-20261106/projects/sgs/nsgs_v02_20261106/PROGRESS.md). This work is maintained on its research branch; the earlier studies below retain their original protocols and results.
+**Both corrected frozen-Teacher transfers completed on 9 November:** WBC, 4,096 environments, rollout 24, seeds 48/49 from zero to **10,000 PPO updates each**. Final strict joint success uses the same 1,024-sequence mean-action test, 5 cm EE tolerance and 80% simultaneous tracking criterion. Uniform and Fresh below are the explicitly reused baselines.
+
+| Student seed | Uniform | Fresh | CleanMeta8 | vs Uniform | vs Fresh |
+|---:|---:|---:|---:|---:|---:|
+| 48 | 25.78% | 35.94% | **33.98%** | +8.20 pp | -1.95 pp |
+| 49 | 35.94% | 29.98% | **34.47%** | -1.46 pp | +4.49 pp |
+
+Seed 48 Uniform/CleanMeta8 ran on RTX 5060 Laptop; its Fresh baseline ran on RTX 3060. All seed 49 methods ran on RTX 3060. **The final-checkpoint advantage is mixed across the two Student seeds; neither a stable gain nor a causal performance benefit from the fix is established.** One corrected Teacher was shared by both transfers.
+
+![Corrected CleanMeta8 and reused baselines, evaluated every 1,000 PPO updates](docs/figures/cleanmeta8_learning_curves.svg)
+
+The [corrected implementation and executed queue revision](https://github.com/chao142857/legged-robot-learning/tree/b1b5cd5b092967678b9b5f315676da6f442bc9f4/projects/sgs/cleanmeta8_20261109) and [Adam regression tests](https://github.com/chao142857/legged-robot-learning/tree/c43b36ea4cb3dbdaa3d0f72730c349188a6d5130/projects/sgs/teacher_adam_audit_20261109/tests) remain on their research branches. The [6 November V0.2 snapshot](https://github.com/chao142857/legged-robot-learning/tree/da583b33b10351a8e5c9f19e61b75ba929ea026d/projects/sgs/nsgs_v02_20261106) is historical, not the current status. [CL1](https://github.com/chao142857/legged-robot-learning/tree/ab4532ea1af7ab7751136e95dd4187d386457ee5/projects/sgs/nsgs_cl1_20261109) is a separate follow-up protocol and is not pooled with these frozen-Teacher results.
 
 ## Research Overview
 
@@ -26,7 +37,7 @@ The projects retain their original framework generations and experimental identi
 |---|---|---|
 | [Z1 Locomotion](projects/z1_locomotion/README.md) | Training configurations, stairs curriculum, contact-aware rewards, standing sampling, height-reward A/B study, evaluation | Simulated traversal and contact diagnostics; strict downstairs safety remains unresolved |
 | [Go2 + Piper WBC](projects/go2_piper_wbc/README.md) | Native WBC baseline, fixed task suite, T1 scratch study, Recipe v1 and A+ preparation | Native learning demonstrated; formal Recipe v1 T1 gate remains false |
-| [SGS](projects/sgs/README.md) | Success Guided Sampling implementation, reset/feedback lifecycle, fixed evaluation isolation, historical pilot, factorial preparation | Tested sampler contracts; historical pilot gives no joint-success benefit |
+| [SGS / nSGS](projects/sgs/README.md) | Success-guided and neural task sampling, feedback lifecycle, optimizer integrity and controlled transfer studies | Corrected CleanMeta8: two completed 10k Student runs; mixed final results against reused Uniform/Fresh baselines |
 | [PPO Gradient Lab](projects/ppo_gradient_lab/README.md) | Frozen-policy gradients, component value probes, native GAE, KL, clipping, Adam and held-out surrogate diagnostics | CPU diagnostic evidence; no demonstrated control-performance improvement |
 
 ## Methods
@@ -46,7 +57,7 @@ The projects retain their original framework generations and experimental identi
 | SGS fixed-48-task pilot | Both methods: **40/48** joint success at initialization, **0/48** after 32, 64 and 128 updates | No observed SGS joint-success gain; degenerate success feedback limits the comparison |
 | PPO microscope | 120 distinct isolated candidates; smaller LR reduced held-out clipped-surrogate deviation in the main window | Surrogate evidence, not improved robot return or a proven cause of historical training failure |
 
-Native WBC errors use valid first-episode samples after the first second. Recipe values use equal averaging over three evaluation seeds. These are different aggregation rules and protocols. Each cited learning study has one training seed; evaluation seeds do not establish training-seed reproducibility. Full definitions and result links are in [RESULTS.md](RESULTS.md).
+Native WBC errors use valid first-episode samples after the first second. Recipe values use equal averaging over three evaluation seeds. These are different aggregation rules and protocols. The earlier studies in this table each have one training seed. The separate CleanMeta8 comparison above has two Student seeds sharing one corrected Teacher training run; evaluation resets do not add independent training replications. Full definitions and result links are in [RESULTS.md](RESULTS.md).
 
 ![Numerical simulation results from two separate protocols](docs/figures/simulation_results.svg)
 
@@ -72,7 +83,7 @@ The [source map](SOURCE_MAP.md), [publication audit](PUBLICATION_AUDIT.md), [per
 - The native WBC baseline and Recipe v1 retain distinct task domains and safety statistics; their error values are not a matched algorithm comparison.
 - SGS has no demonstrated stable gain here. B1/B2/B3 are preparation candidates, not trained or physically admitted baselines.
 - Recipe A+ has **0 additional completed updates** in the inspected snapshot; its planned continuation is not a result.
-- CPU smoke tests cover imports, numerical contracts, and entry-point checks. Isaac/PhysX/Newton execution and long GPU training were not rerun for publication.
+- Release CPU smoke tests cover imports, numerical contracts, and entry-point checks. CleanMeta8 GPU runs were executed in the recorded source environments; publication checks do not rerun those training budgets.
 - Selected numerical summaries are available; withheld raw trajectories, weights, and geometry limit independent end-to-end recomputation.
 
 ## Acknowledgements
@@ -80,3 +91,4 @@ The [source map](SOURCE_MAP.md), [publication audit](PUBLICATION_AUDIT.md), [per
 The experiments build on [IIT DLS Lab's basic-locomotion-isaaclab](https://github.com/iit-DLSLab/basic-locomotion-isaaclab), [LeggedManip_Lab](https://github.com/zzzJie-Robot/LeggedManip_Lab), [Isaac Lab](https://github.com/isaac-sim/IsaacLab), and [RSL-RL](https://github.com/leggedrobotics/rsl_rl). SGS is credited to its original authors. The collaborating team supplied the Z1 robot model; model ownership is distinct from the independent algorithm/training work presented here.
 
 Original contributions use Apache-2.0. Applicable upstream notices are retained in [NOTICE](NOTICE), [LICENSES](LICENSES/), and [THIRD_PARTY.md](THIRD_PARTY.md). Source-code licenses do not confer redistribution rights to excluded assets or policies.
+

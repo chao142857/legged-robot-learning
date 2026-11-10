@@ -43,13 +43,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 7827,
-      "sha256": "0fa7e9197eaa26ab3dfc26327c34643b9390c7f80ae08384267625917b26c496"
+      "bytes": 10800,
+      "sha256": "d7f28269175a18d91930e86c05a75317fcee9dcaf88607b0c7e5a3090c58009d"
     },
     {
       "path": "RESULTS.md",
-      "bytes": 8069,
-      "sha256": "379f9b327c9905d26cbc639d4a91c2b6db1d8cae9c6a02c961a8615fa3be0e08"
+      "bytes": 9770,
+      "sha256": "f182d3a74ead44aea881c3ffe8d770a59a1b4e83ebe024ffa40afb19faaaa059"
     },
     {
       "path": "SOURCE_MAP.md",
@@ -70,6 +70,11 @@
       "path": "docs/REPRODUCIBILITY.md",
       "bytes": 8950,
       "sha256": "1fd74fcce11b431cc1d2145ef0830f1f9c78d09938789aa11cc48255254768df"
+    },
+    {
+      "path": "docs/figures/cleanmeta8_learning_curves.svg",
+      "bytes": 35131,
+      "sha256": "e7e58af2fa4f1821704aa5f83f7912ebb37090a881cce8dd1cea1a653516dc22"
     },
     {
       "path": "docs/figures/simulation_results.svg",
@@ -573,8 +578,23 @@
     },
     {
       "path": "projects/sgs/README.md",
-      "bytes": 2174,
-      "sha256": "fd8b426f4304875215eeb18d152a7bfd7b427166e62f71752ab51a3b4bcdc46a"
+      "bytes": 3861,
+      "sha256": "4132b9f59d9cf8273cff7c4a0065614964d12c73cf536dd866f3d5233e7484a9"
+    },
+    {
+      "path": "projects/sgs/cleanmeta8_20261109/README.md",
+      "bytes": 8758,
+      "sha256": "55de28c00831277188b00e2b33a8ece1ce0c361a66d8672dc55a968865a9aa27"
+    },
+    {
+      "path": "projects/sgs/cleanmeta8_20261109/evidence/adam_acceptance_summary.json",
+      "bytes": 9431,
+      "sha256": "722414fbadb7989624f3d254c632fd4c16cc3570f0e2f7129bfdcda8232c449f"
+    },
+    {
+      "path": "projects/sgs/cleanmeta8_20261109/evidence/completed_curves.json",
+      "bytes": 137569,
+      "sha256": "ded124a550248937d07b4a52e49b3faca77d65cd485c97b944664ab19eb20e5e"
     },
     {
       "path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/integration/__init__.py",
@@ -1330,6 +1350,11 @@
       "path": "tools/cpu_smoke.py",
       "bytes": 3837,
       "sha256": "243e254a1c3798b1e55aed8254856968b56977c961d02e87a04f1fb78bd88e12"
+    },
+    {
+      "path": "tools/plot_cleanmeta8.py",
+      "bytes": 2865,
+      "sha256": "1110962d3a68e3b0bfacc1a54813c779d019a41eaf71f15823f8e06822f2bb28"
     },
     {
       "path": "tools/plot_results.py",
