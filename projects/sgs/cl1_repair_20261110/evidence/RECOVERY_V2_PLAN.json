@@ -1,0 +1,64 @@
+{
+  "version": "normal-both-indicators-v2",
+  "rule": {
+    "degradation": "delta_J <= -0.03 AND delta_EE >= 0.003m",
+    "normal": "delta_J > -0.03 AND delta_EE < 0.003m",
+    "ambiguous": "only one indicator triggers: excluded"
+  },
+  "selection": "Keep original degraded starts; nearest eligible nonoverlapping stage; original RNG seed20261109 breaks ties; no future performance input",
+  "from_teacher": "/data/go2_piper_nsgs_cl1_20261109/teachers/base/Base.pt",
+  "base_sha256": "2a7d5b0a13eaeadbd858ed629dc373611e81683af4f0424674379c9bb4d35dce",
+  "new_student_updates": 2000,
+  "legacy_recovery_retained": true,
+  "legacy_recovery_updates": 2000,
+  "fragments": [
+    {
+      "seed": 43,
+      "update": 6900,
+      "delta_j": -0.06397922863868338,
+      "delta_ee": 0.003640414643885523,
+      "eval_label": "base-seed43-to07000-06900-development",
+      "condition": "degradation",
+      "checkpoint": "/data/go2_piper_nsgs_cl1_20261109/runs/base-seed43-to07000/checkpoints/update_06900.pt",
+      "memory": "/data/go2_piper_nsgs_cl1_20261109/runs/base-seed43-to07000/teacher_requests/0069-complete.teacher_after.pt",
+      "checkpoint_sha256": "4db9b9fa39c60d5a70fdecbb464047895a625d1cd2185a37920731a030d37a35",
+      "memory_sha256": "3f5585a351b155e1ea4a1b407cfde3d671a91b96a0211ce73ea25feaf413bf1d"
+    },
+    {
+      "seed": 43,
+      "update": 6400,
+      "delta_j": 0.005741753963227736,
+      "delta_ee": 0.00011245896721463755,
+      "eval_label": "base-seed43-to06500-06400-development",
+      "condition": "normal",
+      "checkpoint": "/data/go2_piper_nsgs_cl1_20261109/runs/base-seed43-to06500/checkpoints/update_06400.pt",
+      "memory": "/data/go2_piper_nsgs_cl1_20261109/runs/base-seed43-to06500/teacher_requests/0064-complete.teacher_after.pt",
+      "checkpoint_sha256": "fa621ce9280cc53786f3a2466bac0c8aa2003b8629b31ab255b12517f5c8d4df",
+      "memory_sha256": "4890a26fbc40c295ddc2b71f5ba38169245b28abe798e8d28f833613509bdb36"
+    },
+    {
+      "seed": 44,
+      "update": 7300,
+      "delta_j": -0.04505705910956237,
+      "delta_ee": 0.003505613652951378,
+      "eval_label": "base-seed44-to07500-07300-development",
+      "condition": "degradation",
+      "checkpoint": "/data/go2_piper_nsgs_cl1_20261109/runs/base-seed44-to07500/checkpoints/update_07300.pt",
+      "memory": "/data/go2_piper_nsgs_cl1_20261109/runs/base-seed44-to07500/teacher_requests/0073-complete.teacher_after.pt",
+      "checkpoint_sha256": "5423ea2e1d85e9d02ad754d143f6437cd77ac7e75f673c96120820acd95b8a1a",
+      "memory_sha256": "5de94634256daf9d4a7af72d24d6257e7e49d577c0df8f9983cf8539c4e3d88c"
+    },
+    {
+      "seed": 44,
+      "update": 7800,
+      "delta_j": 0.007490356904583884,
+      "delta_ee": -0.0002834844726113464,
+      "eval_label": "base-seed44-to08000-07800-development",
+      "condition": "normal",
+      "checkpoint": "/data/go2_piper_nsgs_cl1_20261109/runs/base-seed44-to08000/checkpoints/update_07800.pt",
+      "memory": "/data/go2_piper_nsgs_cl1_20261109/runs/base-seed44-to08000/teacher_requests/0078-complete.teacher_after.pt",
+      "checkpoint_sha256": "83a827e20fe2c5f9d3a5b56ff18b0812e5520970191198b82a469bf907aa6501",
+      "memory_sha256": "b0e7703533e2e370169fc492813f033949e2a7ac10e74c25815dd3e7ad1caa8e"
+    }
+  ]
+}
