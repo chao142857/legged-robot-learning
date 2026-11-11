@@ -1,0 +1,30 @@
+{
+  "experiment": "SGS-E1",
+  "native_commit": "4e12109d1eccb1d9da2e4a35f189fabea3f13677",
+  "isaaclab_commit": "b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8",
+  "sgs_core_commit": "e67f5b000513f9f059afeac110179560a4d23af6",
+  "files": {
+    "adapter.py": "a643694f7747f3260702b35b32a29aeae28fab5ab239cc06dc6b1ae1be17ef05",
+    "commands.py": "c80a27b7c4bb5c27e55e5d7eb2c1d3883d0e0e8c5411b963d757b613ab13c946",
+    "common.py": "b88cc54cea82e09100c800503f0b8dd6dbce66be7e78b8562b21bf8b00058b0a",
+    "docker_job.py": "321ae353e05436f78723e3a7fba4abc39d6aee03bb3d6fa4ca9a4ecdf87ab97b",
+    "e1_adapter.py": "4112aadebefa86967a491a4faaa68a9038560718d0fcc6812095d40c2d5af674",
+    "e1_checks.py": "538ee110b9565ef21f83e501b5273922b397c3773812c0f90fd7a90249a8d65d",
+    "e1_metrics.py": "86dc0f064cb98815f574fc3873fca728789376dc36a6f8ace3fe2a676987f66a",
+    "e1_sampling.py": "3f5b493c4f8e8e59455560b443a935033fbb5d2beb8d9253f435af744ba37481",
+    "evaluation.py": "923f693ed04d2749c8b12d20e212ccc901890fc4ed6f9060fc24ded0c7c2792f",
+    "metrics.py": "fe09f4965806779f22ed23466d3c8de1645208449048641cbb1130e3e895add1",
+    "pipeline_e1.py": "ba3c22dc93dee9c25896981377966cdc19d768058c64800279a64fbe38ec0f66",
+    "prepare_e1.py": "1cd4c79cc65ce7a18617d82773b09bf3a51be272ec03ccd20f33437441e3d581",
+    "python.sh": "b9fcdfe7b220ffd8c752276eb74b962bb8a4a4f29ab8d54bf527d0f82a5cde97",
+    "report_e1.py": "a136db0c1420ce9bc87f97c2c96c37159091d788ba923c678191873eeed331c2",
+    "sampling.py": "6167547aae0911f691142873de52e8de58a3c69667184cf23ff029c4a0081e1c",
+    "start.sh": "b7cdc2723081d7175bd30c2099a567c62e15e75ea7445917ae3f3f87fa35adae",
+    "tmux.sh": "479dc5ef19645f4b4f75c8e7acee1bcc2367aa3e1881e7d5ec0030aecace528b",
+    "train_e1.py": "9a01cb15304a996d730a333bf651c56b2b5c08e1c82f527ce8c2a7061523df65",
+    "vendor_sampler.py": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93"
+  },
+  "integration_sha256": "f2b97d05033d71189dadaa02f358b3114f6882fc5684530384be9f57866506df",
+  "experiment_md_sha256": "86b27a0fb4a458360583bf735a2ba5b1363421f7655a85a7942f817acbcfa8f1",
+  "supplied_diagnostic_summary_sha256": "419681f674bf2c1c7f18fd4140d75df5fe74efab0d3de1b0b16dafbc310dc574"
+}

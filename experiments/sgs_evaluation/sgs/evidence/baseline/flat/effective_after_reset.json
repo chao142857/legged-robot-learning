@@ -1,0 +1,142 @@
+{
+  "ee_ranges": {
+    "pos_x": [
+      0.45,
+      0.7
+    ],
+    "pos_y": [
+      -0.35,
+      0.35
+    ],
+    "pos_z": [
+      -0.2,
+      0.5
+    ],
+    "roll": [
+      -0.0,
+      0.0
+    ],
+    "pitch": [
+      -0.0,
+      -0.0
+    ],
+    "yaw": [
+      -0.0,
+      -0.0
+    ]
+  },
+  "ee_limit_ranges": {
+    "pos_x": [
+      0.45,
+      0.7
+    ],
+    "pos_y": [
+      -0.35,
+      0.35
+    ],
+    "pos_z": [
+      -0.2,
+      0.5
+    ],
+    "roll": [
+      -0.0,
+      0.0
+    ],
+    "pitch": [
+      -0.0,
+      -0.0
+    ],
+    "yaw": [
+      -0.0,
+      -0.0
+    ]
+  },
+  "ee_curriculum": false,
+  "ee_resampling": [
+    8.0,
+    10.0
+  ],
+  "velocity_ranges": {
+    "lin_vel_x": [
+      -1.0,
+      1.0
+    ],
+    "lin_vel_y": [
+      -0.6,
+      0.6
+    ],
+    "ang_vel_z": [
+      -1.0,
+      1.0
+    ],
+    "heading": [
+      -0.0,
+      0.0
+    ]
+  },
+  "velocity_limit_ranges": {
+    "lin_vel_x": [
+      -1.0,
+      1.0
+    ],
+    "lin_vel_y": [
+      -0.6,
+      0.6
+    ],
+    "ang_vel_z": [
+      -1.0,
+      1.0
+    ],
+    "heading": [
+      -0.0,
+      0.0
+    ]
+  },
+  "velocity_curriculum": false,
+  "velocity_resampling": [
+    10.0,
+    10.0
+  ],
+  "rel_standing_envs": 0.1,
+  "heading_command": false,
+  "command_draws": {
+    "ee": {
+      "count": 1024,
+      "minimum": [
+        0.4503838121891022,
+        -0.3490028381347656,
+        -0.19989536702632904,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum": [
+        0.6998679637908936,
+        0.3492629826068878,
+        0.49996089935302734,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "velocity": {
+      "count": 1024,
+      "minimum": [
+        -0.9954303503036499,
+        -0.599601149559021,
+        -0.998785138130188
+      ],
+      "maximum": [
+        0.9995383024215698,
+        0.5969685316085815,
+        0.9942101240158081
+      ]
+    }
+  },
+  "standing_draws": 97,
+  "velocity_draws": 1024,
+  "pool_standing_prior": 0.1,
+  "observed_standing_draw_fraction": 0.0947265625
+}

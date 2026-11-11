@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "core_equivalence": true,
+  "history_and_rng_restore": true,
+  "duplicate_and_foreign_feedback_rejected": true,
+  "synthetic_weights": [
+    0.11065364043888413,
+    0.11065364043888413,
+    0.7786927191222316
+  ],
+  "synthetic_not_in_any_training_state": true
+}

@@ -1,0 +1,181 @@
+{
+  "checked_at": "2026-11-03T07:33:40.688794+08:00",
+  "completed": {
+    "state": "complete",
+    "formal_runs": 2,
+    "updates": 20000,
+    "formal_environment_transitions": 1966080000,
+    "finished_unix": 1793661835.2540967
+  },
+  "runs": [
+    {
+      "kind": "flat",
+      "task": "GO2-PIPER-Flat",
+      "updates": 10000,
+      "transitions": 983040000,
+      "loop_seconds": 16856.911420345306,
+      "evaluation_wait_seconds": 419.47446942329407,
+      "checkpoint": "/data/go2_piper_sgs_e1_20261102/runs/formal-flat-sgs-e1/policy/model_9999.pt",
+      "checkpoint_bytes": 48074997,
+      "checkpoint_sha256": "388118b2b364eb4ed013f500f2b72ee5047a61f214fe3c9359b1580e8ff3faf7",
+      "paired_final": {
+        "sgs": {
+          "both_success": 196,
+          "new_success_old_failure": 109,
+          "new_failure_old_success": 30,
+          "both_failure": 689
+        },
+        "uniform": {
+          "both_success": 236,
+          "new_success_old_failure": 69,
+          "new_failure_old_success": 90,
+          "both_failure": 629
+        }
+      },
+      "videos": [
+        {
+          "path": "/data/go2_piper_sgs_e1_20261102/replays/formal-flat-sgs-e1/videos/rl-video-step-0.mp4",
+          "bytes": 1643823,
+          "sha256": "dcd2de3ac4ae5fa3b028308d09071686ae070bf2642819e6d18253c50e6cbd03"
+        }
+      ],
+      "restoration": {
+        "passed": true,
+        "sampler_rng_draws_equal": 4096,
+        "shared_three_label_window_equal": true,
+        "task_ownership_equal": true,
+        "strict_shadow_compared_episodes": 996544,
+        "stage_crossing_episodes": 8192,
+        "stage_transitions": 2,
+        "restore_scope": "Sampler/metrics/command/RNG serialized. No assertion of PhysX solver bit-exact restore."
+      }
+    },
+    {
+      "kind": "wbc",
+      "task": "GO2-PIPER-WBC",
+      "updates": 10000,
+      "transitions": 983040000,
+      "loop_seconds": 17303.80625295639,
+      "evaluation_wait_seconds": 421.4708561897278,
+      "checkpoint": "/data/go2_piper_sgs_e1_20261102/runs/formal-wbc-sgs-e1/policy/model_9999.pt",
+      "checkpoint_bytes": 48786037,
+      "checkpoint_sha256": "066c1838c1262a22b6374c835d5a13ad01b9e32f022f2112b338e1b07384532e",
+      "paired_final": {
+        "sgs": {
+          "both_success": 270,
+          "new_success_old_failure": 72,
+          "new_failure_old_success": 93,
+          "both_failure": 589
+        },
+        "uniform": {
+          "both_success": 278,
+          "new_success_old_failure": 64,
+          "new_failure_old_success": 96,
+          "both_failure": 586
+        }
+      },
+      "videos": [
+        {
+          "path": "/data/go2_piper_sgs_e1_20261102/replays/formal-wbc-sgs-e1/videos/rl-video-step-0.mp4",
+          "bytes": 1348348,
+          "sha256": "a3ba5ddb8bab789b31bb4c6f7845e27d1a99c03258428e62aabd0b62867bbf67"
+        }
+      ],
+      "restoration": {
+        "passed": true,
+        "sampler_rng_draws_equal": 4096,
+        "shared_three_label_window_equal": true,
+        "task_ownership_equal": true,
+        "strict_shadow_compared_episodes": 1265287,
+        "stage_crossing_episodes": 8192,
+        "stage_transitions": 2,
+        "restore_scope": "Sampler/metrics/command/RNG serialized. No assertion of PhysX solver bit-exact restore."
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-flat-sgs-e1/all_native_scalars.csv",
+      "bytes": 32844004,
+      "sha256": "26333857808d4686caae3139dfb4494258d2c919d4a6d9f21236096a15802f35"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-flat-sgs-e1/native_curves_1.png",
+      "bytes": 397786,
+      "sha256": "ce159aa9228c0f69d05f2281b529fe3287d7a414f0965409ae60cee19040cf29"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-flat-sgs-e1/native_curves_2.png",
+      "bytes": 402055,
+      "sha256": "0fc1e10c3085daa4ac448048a2be83f1c8ca5b6a92fec60d0653ddfe687ee614"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-flat-sgs-e1/native_curves_3.png",
+      "bytes": 290422,
+      "sha256": "96d83f39b409396fd2e58f8a5b6847783dd935c4f20749dc5810603fc5869e22"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-flat-sgs-e1/native_curves_4.png",
+      "bytes": 185841,
+      "sha256": "5c9fe5aa669cecd35906f00e73dddece5e2193cd5282c705c28a7fcbe7c56559"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-flat-sgs-e1/result.json",
+      "bytes": 145681,
+      "sha256": "67b21ce3430a3f3a3da74e10f910b4e2e704d7f9d6bcba0cc8cd758c4f25b955"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-flat-sgs-e1/strict_comparison.png",
+      "bytes": 208270,
+      "sha256": "a37b8092384ddffeb45b454d0ce2333eed358e8225f34aaa0e57163283e42ec7"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-flat-sgs-e1/strict_evaluation_curve.csv",
+      "bytes": 1761,
+      "sha256": "4d2e2efc6975a5e163ab6e0576952cae81b98852059cff0995bca58a59183ea4"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-wbc-sgs-e1/all_native_scalars.csv",
+      "bytes": 33008256,
+      "sha256": "35eb403d5b2981feadaaae5d49570f7ebf11230b229837e33aeb905520da4cf5"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-wbc-sgs-e1/native_curves_1.png",
+      "bytes": 414532,
+      "sha256": "84bcd613ef1d54aa0b86ff84c3071eaaa9d8d0115ea98d2d946496b9b509f2a4"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-wbc-sgs-e1/native_curves_2.png",
+      "bytes": 438221,
+      "sha256": "b0b152ce6da12a6c6f8aaee2cdf83c4325eb421d76fbcd7e0d0d8e1e0f13b29e"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-wbc-sgs-e1/native_curves_3.png",
+      "bytes": 289101,
+      "sha256": "3cc35f24b2cd393d788b8ac864c74be2f7942c451e1fb11c3537cf3ea5fbff31"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-wbc-sgs-e1/native_curves_4.png",
+      "bytes": 198253,
+      "sha256": "ee5bb643261541ad8d36d3ecfd2c69841c3041296e7b9b397545f8853c03bff3"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-wbc-sgs-e1/result.json",
+      "bytes": 153280,
+      "sha256": "b219df4e646855026f54bb13863b54398314108b389e9e5d0605c778553238e7"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-wbc-sgs-e1/strict_comparison.png",
+      "bytes": 196190,
+      "sha256": "d2e0b39e7d7a90ab8e9bb50902007ef0bf91a5a672ef2225e6290ccb9df0f464"
+    },
+    {
+      "path": "/data/go2_piper_sgs_e1_20261102/delivery/formal-wbc-sgs-e1/strict_evaluation_curve.csv",
+      "bytes": 1778,
+      "sha256": "8987bc7556330c9631041f339cb8b0ec7b3c45be9020767a8a96fd4c3bc7ae05"
+    }
+  ],
+  "report": "E1 scheduled SGS sampling feedback; primary endpoint is CP10000 under original strict deterministic evaluation.\nOne training seed. Sequence pairing is not replication across training seeds. No attribution to individual schedule components.\nGO2-PIPER-Flat\n{'uniform': 0.318359375, 'sgs': 0.220703125, 'sgs-e1': 0.2978515625}\nPaired final counts {'sgs': {'both_success': 196, 'new_success_old_failure': 109, 'new_failure_old_success': 30, 'both_failure': 689}, 'uniform': {'both_success': 236, 'new_success_old_failure': 69, 'new_failure_old_success': 90, 'both_failure': 629}}\nCheckpoint /data/go2_piper_sgs_e1_20261102/runs/formal-flat-sgs-e1/policy/model_9999.pt\nUpdates 10000; transitions 983040000; training loop seconds 16856.911420345306\nGO2-PIPER-WBC\n{'uniform': 0.365234375, 'sgs': 0.3544921875, 'sgs-e1': 0.333984375}\nPaired final counts {'sgs': {'both_success': 270, 'new_success_old_failure': 72, 'new_failure_old_success': 93, 'both_failure': 589}, 'uniform': {'both_success': 278, 'new_success_old_failure': 64, 'new_failure_old_success': 96, 'both_failure': 586}}\nCheckpoint /data/go2_piper_sgs_e1_20261102/runs/formal-wbc-sgs-e1/policy/model_9999.pt\nUpdates 10000; transitions 983040000; training loop seconds 17303.80625295639\n",
+  "frozen_source_sha256": "f2b97d05033d71189dadaa02f358b3114f6882fc5684530384be9f57866506df",
+  "source_integrity_passed": true
+}

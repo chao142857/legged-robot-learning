@@ -1,0 +1,23 @@
+{
+  "checked_unix": 1793551753.6706443,
+  "results": [
+    {
+      "kind": "flat",
+      "train_sequences": 32768,
+      "eval_sequences": 1024,
+      "overlapping_sequences": 0,
+      "train_sha256": "f8109568e53dc17f29a78f943240c71656097920e4f58c240b5687036b00a307",
+      "eval_sha256": "77d57660c21bd9516e3874649844c259792705e5a7807aac959d99981d38af98",
+      "passed": true
+    },
+    {
+      "kind": "wbc",
+      "train_sequences": 32768,
+      "eval_sequences": 1024,
+      "overlapping_sequences": 0,
+      "train_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+      "eval_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "task": "flat",
+    "split": "train",
+    "sequences": 32768,
+    "seed": 721101,
+    "sha256": "f8109568e53dc17f29a78f943240c71656097920e4f58c240b5687036b00a307",
+    "shape_ee": [
+      32768,
+      4,
+      7
+    ],
+    "shape_velocity": [
+      32768,
+      4,
+      5
+    ],
+    "standing_input_fraction_by_event": [
+      0.098968505859375,
+      0.099578857421875,
+      0.100067138671875,
+      0.099822998046875
+    ],
+    "semantics": "Fixed independent U[0,1) random-input sequences; transform with actual live native ranges. EE interval 8+2*u seconds; velocity interval exactly10s; native Bernoulli standing input<=0.1; WBC quaternion computed at runtime from robot state and raw euler inputs. Four events per term cover native20s maximum episode."
+  },
+  {
+    "task": "flat",
+    "split": "evaluation",
+    "sequences": 1024,
+    "seed": 1721101,
+    "sha256": "77d57660c21bd9516e3874649844c259792705e5a7807aac959d99981d38af98",
+    "shape_ee": [
+      1024,
+      4,
+      7
+    ],
+    "shape_velocity": [
+      1024,
+      4,
+      5
+    ],
+    "standing_input_fraction_by_event": [
+      0.0947265625,
+      0.1162109375,
+      0.10546875,
+      0.1064453125
+    ],
+    "semantics": "Fixed independent U[0,1) random-input sequences; transform with actual live native ranges. EE interval 8+2*u seconds; velocity interval exactly10s; native Bernoulli standing input<=0.1; WBC quaternion computed at runtime from robot state and raw euler inputs. Four events per term cover native20s maximum episode."
+  },
+  {
+    "task": "wbc",
+    "split": "train",
+    "sequences": 32768,
+    "seed": 721102,
+    "sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+    "shape_ee": [
+      32768,
+      4,
+      7
+    ],
+    "shape_velocity": [
+      32768,
+      4,
+      5
+    ],
+    "standing_input_fraction_by_event": [
+      0.09857177734375,
+      0.101043701171875,
+      0.0970458984375,
+      0.1007080078125
+    ],
+    "semantics": "Fixed independent U[0,1) random-input sequences; transform with actual live native ranges. EE interval 8+2*u seconds; velocity interval exactly10s; native Bernoulli standing input<=0.1; WBC quaternion computed at runtime from robot state and raw euler inputs. Four events per term cover native20s maximum episode."
+  },
+  {
+    "task": "wbc",
+    "split": "evaluation",
+    "sequences": 1024,
+    "seed": 1721102,
+    "sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+    "shape_ee": [
+      1024,
+      4,
+      7
+    ],
+    "shape_velocity": [
+      1024,
+      4,
+      5
+    ],
+    "standing_input_fraction_by_event": [
+      0.1064453125,
+      0.0830078125,
+      0.099609375,
+      0.09375
+    ],
+    "semantics": "Fixed independent U[0,1) random-input sequences; transform with actual live native ranges. EE interval 8+2*u seconds; velocity interval exactly10s; native Bernoulli standing input<=0.1; WBC quaternion computed at runtime from robot state and raw euler inputs. Four events per term cover native20s maximum episode."
+  }
+]

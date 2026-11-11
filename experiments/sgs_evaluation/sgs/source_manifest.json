@@ -1,0 +1,24 @@
+{
+  "native_commit": "4e12109d1eccb1d9da2e4a35f189fabea3f13677",
+  "isaaclab_commit": "b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8",
+  "sgs_repository": "https://github.com/chao142857/legged-robot-learning",
+  "sgs_repository_commit": "e67f5b000513f9f059afeac110179560a4d23af6",
+  "sgs_core_path": "projects/sgs/factorial_20261025/go2_piper_b1_sgs_20261025_work/shared_sgs/vendor/sampler.py",
+  "files": {
+    "common.py": "b88cc54cea82e09100c800503f0b8dd6dbce66be7e78b8562b21bf8b00058b0a",
+    "vendor_sampler.py": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+    "sampling.py": "6167547aae0911f691142873de52e8de58a3c69667184cf23ff029c4a0081e1c",
+    "prepare.py": "2ac9a04306d2f7751564b0627f2fab09dcb71aa7b20f334e40a2dc6493cfda6b",
+    "commands.py": "c80a27b7c4bb5c27e55e5d7eb2c1d3883d0e0e8c5411b963d757b613ab13c946",
+    "metrics.py": "fe09f4965806779f22ed23466d3c8de1645208449048641cbb1130e3e895add1",
+    "adapter.py": "a643694f7747f3260702b35b32a29aeae28fab5ab239cc06dc6b1ae1be17ef05",
+    "job.py": "923f693ed04d2749c8b12d20e212ccc901890fc4ed6f9060fc24ded0c7c2792f",
+    "docker_job.py": "b7a643bc88d0360b8b83cec2e8ee8edeaf32d12e1e3d9f65faa503bb4c693ec1",
+    "pipeline.py": "479fa4820e6681d4a8f7e5b8417bf1142798d817890f19fdc53dcb80af6a2569",
+    "report.py": "f0d68b9f3a50f10d1eb08bddb3e2b98b6743dbcc53696cd202459917c336042a",
+    "python.sh": "b9fcdfe7b220ffd8c752276eb74b962bb8a4a4f29ab8d54bf527d0f82a5cde97",
+    "start.sh": "bebf68961afd31442da86ae62afd855ecf436c61cb5306df2a3441ffb3bd6eeb",
+    "tmux.sh": "479dc5ef19645f4b4f75c8e7acee1bcc2367aa3e1881e7d5ec0030aecace528b"
+  },
+  "integration_sha256": "1554d9612dd4329d01c709ae012d3315b1fd95a35ced5a9664a57ba923e10d1f"
+}

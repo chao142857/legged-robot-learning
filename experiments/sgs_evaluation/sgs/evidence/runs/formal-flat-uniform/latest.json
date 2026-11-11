@@ -1,0 +1,163 @@
+{
+  "completed_updates": 315,
+  "environment_transitions": 30965760,
+  "unix": 1793552345.5741136,
+  "summary": {
+    "pool_identity": "flat:train:f8109568e53dc17f29a78f943240c71656097920e4f58c240b5687036b00a307",
+    "mode": "uniform",
+    "episodes": 43915,
+    "successes": 0,
+    "native_failures": 18373,
+    "control_steps": 7560,
+    "environment_transitions": 30965760,
+    "feedback_accepted": 43915,
+    "active": 4096,
+    "history_samples": 43915,
+    "nonempty_histories": 24161,
+    "probability_min": 3.0517578125e-05,
+    "probability_max": 3.0517578125e-05,
+    "effective_sequences": 32768.0,
+    "effective_commands": {
+      "ee_ranges": {
+        "pos_x": [
+          0.45,
+          0.7
+        ],
+        "pos_y": [
+          -0.35,
+          0.35
+        ],
+        "pos_z": [
+          -0.2,
+          0.5
+        ],
+        "roll": [
+          -0.0,
+          0.0
+        ],
+        "pitch": [
+          -0.0,
+          -0.0
+        ],
+        "yaw": [
+          -0.0,
+          -0.0
+        ]
+      },
+      "ee_limit_ranges": {
+        "pos_x": [
+          0.45,
+          0.7
+        ],
+        "pos_y": [
+          -0.35,
+          0.35
+        ],
+        "pos_z": [
+          -0.2,
+          0.5
+        ],
+        "roll": [
+          -0.0,
+          0.0
+        ],
+        "pitch": [
+          -0.0,
+          -0.0
+        ],
+        "yaw": [
+          -0.0,
+          -0.0
+        ]
+      },
+      "ee_curriculum": false,
+      "ee_resampling": [
+        8.0,
+        10.0
+      ],
+      "velocity_ranges": {
+        "lin_vel_x": [
+          -1.0,
+          1.0
+        ],
+        "lin_vel_y": [
+          -0.6,
+          0.6
+        ],
+        "ang_vel_z": [
+          -1.0,
+          1.0
+        ],
+        "heading": [
+          -0.0,
+          0.0
+        ]
+      },
+      "velocity_limit_ranges": {
+        "lin_vel_x": [
+          -1.0,
+          1.0
+        ],
+        "lin_vel_y": [
+          -0.6,
+          0.6
+        ],
+        "ang_vel_z": [
+          -1.0,
+          1.0
+        ],
+        "heading": [
+          -0.0,
+          0.0
+        ]
+      },
+      "velocity_curriculum": false,
+      "velocity_resampling": [
+        10.0,
+        10.0
+      ],
+      "rel_standing_envs": 0.1,
+      "heading_command": false,
+      "command_draws": {
+        "ee": {
+          "count": 103559,
+          "minimum": [
+            0.4500005543231964,
+            -0.34999915957450867,
+            -0.19999341666698456,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maximum": [
+            0.6999995112419128,
+            0.34999188780784607,
+            0.49999672174453735,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "velocity": {
+          "count": 102431,
+          "minimum": [
+            -0.99998939037323,
+            -0.5999846458435059,
+            -0.9999356269836426
+          ],
+          "maximum": [
+            0.999997615814209,
+            0.5999715328216553,
+            0.9999291896820068
+          ]
+        }
+      },
+      "standing_draws": 10206,
+      "velocity_draws": 102431,
+      "pool_standing_prior": 0.1,
+      "observed_standing_draw_fraction": 0.09963780641555786
+    }
+  }
+}

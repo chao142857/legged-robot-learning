@@ -1,0 +1,184 @@
+{
+  "passed": true,
+  "role": "baseline",
+  "task": "GO2-PIPER-WBC",
+  "evaluation_seed": 922042,
+  "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+  "definition_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+  "checkpoint": "/native/LeggedManip_Lab/logs/rsl_rl/go2_piper_wbc/2026-11-01_10-16-30/model_9999.pt",
+  "checkpoint_sha256": "b11be38f513509f369c3f555ed0d7c9b51b1eb502aef9ca041ad432d8b33dbc1",
+  "episodes": 1024,
+  "joint_success_rate": 0.3681640625,
+  "native_failure_rate": 0.001953125,
+  "timeout_rate": 0.998046875,
+  "insufficient_window_rate": 0.0009765625,
+  "pooled_eligible_rmse": [
+    0.07766526856101687,
+    0.11226499099532661,
+    0.0518288013251469,
+    0.054754192060616186
+  ],
+  "rmse_columns": [
+    "velocity_xy_m_s",
+    "yaw_rate_rad_s",
+    "ee_position_m",
+    "ee_orientation_rad"
+  ],
+  "scored_control_samples": 685007,
+  "evaluation_environment_transitions": 1024000,
+  "train_history_updates": 0,
+  "effective_commands": {
+    "ee_ranges": {
+      "pos_x": [
+        0.45,
+        0.7
+      ],
+      "pos_y": [
+        -0.35,
+        0.35
+      ],
+      "pos_z": [
+        0.1,
+        0.8
+      ],
+      "roll": [
+        -1.0466666666666666,
+        1.0466666666666666
+      ],
+      "pitch": [
+        -0.785,
+        0.785
+      ],
+      "yaw": [
+        -0.5233333333333333,
+        0.5233333333333333
+      ]
+    },
+    "ee_limit_ranges": {
+      "pos_x": [
+        0.45,
+        0.7
+      ],
+      "pos_y": [
+        -0.35,
+        0.35
+      ],
+      "pos_z": [
+        0.1,
+        0.8
+      ],
+      "roll": [
+        -1.0466666666666666,
+        1.0466666666666666
+      ],
+      "pitch": [
+        -0.785,
+        0.785
+      ],
+      "yaw": [
+        -0.5233333333333333,
+        0.5233333333333333
+      ]
+    },
+    "ee_curriculum": false,
+    "ee_resampling": [
+      8.0,
+      10.0
+    ],
+    "velocity_ranges": {
+      "lin_vel_x": [
+        -1.0,
+        1.0
+      ],
+      "lin_vel_y": [
+        -0.6,
+        0.6
+      ],
+      "ang_vel_z": [
+        -1.0,
+        1.0
+      ],
+      "heading": [
+        -0.0,
+        0.0
+      ]
+    },
+    "velocity_limit_ranges": {
+      "lin_vel_x": [
+        -1.0,
+        1.0
+      ],
+      "lin_vel_y": [
+        -0.6,
+        0.6
+      ],
+      "ang_vel_z": [
+        -1.0,
+        1.0
+      ],
+      "heading": [
+        -0.0,
+        0.0
+      ]
+    },
+    "velocity_curriculum": false,
+    "velocity_resampling": [
+      10.0,
+      10.0
+    ],
+    "rel_standing_envs": 0.1,
+    "heading_command": false,
+    "command_draws": {
+      "ee": {
+        "count": 4095,
+        "minimum": [
+          0.45001542568206787,
+          -0.3489794433116913,
+          0.10002290457487106,
+          0.6481630802154541,
+          -0.46617451310157776,
+          -0.47694554924964905,
+          -0.46171772480010986
+        ],
+        "maximum": [
+          0.6999506950378418,
+          0.34951940178871155,
+          0.7998988032341003,
+          0.9998518824577332,
+          0.5458499789237976,
+          0.5485867261886597,
+          0.5490661859512329
+        ]
+      },
+      "velocity": {
+        "count": 3072,
+        "minimum": [
+          -0.9994953870773315,
+          -0.5989522933959961,
+          -0.9992454051971436
+        ],
+        "maximum": [
+          0.9999996423721313,
+          0.5998260974884033,
+          0.9996086359024048
+        ]
+      }
+    },
+    "standing_draws": 303,
+    "velocity_draws": 3072,
+    "pool_standing_prior": 0.1,
+    "observed_standing_draw_fraction": 0.0986328125
+  },
+  "metric_min": [
+    5.030217653256841e-05,
+    2.9802322387695312e-08,
+    0.0001638376561459154,
+    0.0004400616744533181
+  ],
+  "metric_max": [
+    1.9928905963897705,
+    2.795640230178833,
+    0.8616462349891663,
+    2.4051544666290283
+  ]
+}

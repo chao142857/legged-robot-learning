@@ -45,3 +45,5 @@ data/
 *.egg-info/
 build/
 dist/
+
+!assets/figures/*.png
