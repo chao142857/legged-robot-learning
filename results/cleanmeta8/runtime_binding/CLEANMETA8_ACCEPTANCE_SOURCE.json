@@ -1,0 +1,374 @@
+{
+  "passed": true,
+  "logical_updates": 8,
+  "accepted_optimizer_updates": 8,
+  "checkpoint_sha256": "279ca925da28aeaa345fa01a0b532fbb72e0a4b74f10e95fb514f78e00ce55f0",
+  "teacher_state_sha256": "57e5bdb5a2f7a737aaf9c2aee514f605cb03131616f716f4055870c1aa74e94b",
+  "updates": [
+    {
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 0,
+      "logical_after": 1,
+      "adam_steps_before": [],
+      "adam_steps_after": [
+        1
+      ],
+      "before_full_state_sha256": "fe1c23eaca85221ee6f76b52a14af7ed45054431622c0f1c21a099942bce41a9",
+      "after_full_state_sha256": "bc3ae3d9deea879f2baff4119d898b9efc4247a9fdcba47bf8ae9f60da76f863",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.13324101060143945,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.03382996071977501,
+          "finite": true
+        }
+      ],
+      "full_trace_sha256": "889885b70f78e12b046f22edaa60e9de1e976c9ab43433f102eaa48efb125f56",
+      "source_identity": {
+        "module_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "module_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+        "learn_pair_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "learn_pair_line": 244,
+        "teacher_ops_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_ops.py",
+        "teacher_ops_sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f",
+        "torch_version": "2.7.0+cu128",
+        "fixed_runtime": true
+      },
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true
+    },
+    {
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 1,
+      "logical_after": 2,
+      "adam_steps_before": [
+        1
+      ],
+      "adam_steps_after": [
+        2
+      ],
+      "before_full_state_sha256": "015afc5bf9d4e6bb2cdcc01ece8d07cde748e04efc6814a654e8531d28af0fc8",
+      "after_full_state_sha256": "30e5ae42579595f72bde4d9c23b5ee800a79a1cb03231c92dfcee6ad2283eb75",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.12774464084758883,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.02929802817881272,
+          "finite": true
+        }
+      ],
+      "full_trace_sha256": "e906c34b20b8cac120afaa2e278632ee847ee82a7054b4dd42686b01bb2df107",
+      "source_identity": {
+        "module_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "module_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+        "learn_pair_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "learn_pair_line": 244,
+        "teacher_ops_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_ops.py",
+        "teacher_ops_sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f",
+        "torch_version": "2.7.0+cu128",
+        "fixed_runtime": true
+      },
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true
+    },
+    {
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 2,
+      "logical_after": 3,
+      "adam_steps_before": [
+        2
+      ],
+      "adam_steps_after": [
+        3
+      ],
+      "before_full_state_sha256": "f1efe407a8c3b2ff1c40c0b683a62471e05eeeff255f89267ebbcbfcf95a7f03",
+      "after_full_state_sha256": "4775adeec031402520948f678c1fa9db7e03cd29d99877476308741d57627963",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.08636820576683803,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.01981598241016336,
+          "finite": true
+        }
+      ],
+      "full_trace_sha256": "2b133b3185be9cca1b07f1741c110ff9bac13145ce14c0f819a16c316128a05c",
+      "source_identity": {
+        "module_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "module_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+        "learn_pair_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "learn_pair_line": 244,
+        "teacher_ops_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_ops.py",
+        "teacher_ops_sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f",
+        "torch_version": "2.7.0+cu128",
+        "fixed_runtime": true
+      },
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true
+    },
+    {
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 3,
+      "logical_after": 4,
+      "adam_steps_before": [
+        3
+      ],
+      "adam_steps_after": [
+        4
+      ],
+      "before_full_state_sha256": "846383f99875794f5a06021d6e8cbc598d48e11efe0979213429e0622b3a3ff6",
+      "after_full_state_sha256": "dfd0212edb2a8ad084518b35e7abae63039b9bafbcf555e2f145d87fdeb3f5a7",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.08690422094102705,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.02004279873585664,
+          "finite": true
+        }
+      ],
+      "full_trace_sha256": "9e4d680cf829d78b2f44a845ebceda55ea23af63d575ef579237488e2b530157",
+      "source_identity": {
+        "module_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "module_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+        "learn_pair_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "learn_pair_line": 244,
+        "teacher_ops_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_ops.py",
+        "teacher_ops_sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f",
+        "torch_version": "2.7.0+cu128",
+        "fixed_runtime": true
+      },
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true
+    },
+    {
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 4,
+      "logical_after": 5,
+      "adam_steps_before": [
+        4
+      ],
+      "adam_steps_after": [
+        5
+      ],
+      "before_full_state_sha256": "9f01aca5de379f72894957504ca31ee9f6bc9ec64fa451e5689acfae48623d21",
+      "after_full_state_sha256": "3ed8d360fce1d6845c5ee9c2c1b4d82d4c4fe0e2a7a1321c91dab04f73204a0a",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.029764079212113582,
+          "finite": true
+        }
+      ],
+      "full_trace_sha256": "dcc22ab85194394b19cd3b88837e65a1555f0548c3add26d26ea00ffa4b703e7",
+      "source_identity": {
+        "module_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "module_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+        "learn_pair_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "learn_pair_line": 244,
+        "teacher_ops_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_ops.py",
+        "teacher_ops_sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f",
+        "torch_version": "2.7.0+cu128",
+        "fixed_runtime": true
+      },
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true
+    },
+    {
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 5,
+      "logical_after": 6,
+      "adam_steps_before": [
+        5
+      ],
+      "adam_steps_after": [
+        6
+      ],
+      "before_full_state_sha256": "bb9b5b2c626f196e73e0630af3a0c8f57ac9e9b2f662cbd4c443a5ce2c12c4c9",
+      "after_full_state_sha256": "a5227b712c57ccd7e70a0a79a1fc859de7a2eaa4c8bbb2b9491f252e78d93386",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.01517199023069078,
+          "finite": true
+        }
+      ],
+      "full_trace_sha256": "06843f7eebb27ea579cdaad2e19951ee8ca3a7d921afff3db5f5f6de38d39cb0",
+      "source_identity": {
+        "module_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "module_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+        "learn_pair_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "learn_pair_line": 244,
+        "teacher_ops_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_ops.py",
+        "teacher_ops_sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f",
+        "torch_version": "2.7.0+cu128",
+        "fixed_runtime": true
+      },
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true
+    },
+    {
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 6,
+      "logical_after": 7,
+      "adam_steps_before": [
+        6
+      ],
+      "adam_steps_after": [
+        7
+      ],
+      "before_full_state_sha256": "a5510805d2a183dd4b94b67e0a71b3ac39ac50eb9f023a61f3bbd6c69daa84f3",
+      "after_full_state_sha256": "490b30fc4b9069c96873cd07c7524ed2443908ea31606dc6ef2f26924e2998a4",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.04038047886130511,
+          "finite": true
+        }
+      ],
+      "full_trace_sha256": "d408402f882df4a5ac5d6e3642d3ec8fc556818a648d2f702edc26ff62c09296",
+      "source_identity": {
+        "module_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "module_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+        "learn_pair_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "learn_pair_line": 244,
+        "teacher_ops_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_ops.py",
+        "teacher_ops_sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f",
+        "torch_version": "2.7.0+cu128",
+        "fixed_runtime": true
+      },
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true
+    },
+    {
+      "passed": true,
+      "accepted": true,
+      "rejected": false,
+      "zero_signal": false,
+      "logical_before": 7,
+      "logical_after": 8,
+      "adam_steps_before": [
+        7
+      ],
+      "adam_steps_after": [
+        8
+      ],
+      "before_full_state_sha256": "e3d38cfefa1fe11f37107822bfa936e51ff931ad2c2ab17c2d2d8ea97586b2e1",
+      "after_full_state_sha256": "57e5bdb5a2f7a737aaf9c2aee514f605cb03131616f716f4055870c1aa74e94b",
+      "candidates": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.03865685229848946,
+          "finite": true
+        }
+      ],
+      "full_trace_sha256": "29a9b695267cc1ff81156d2fdfe0f4958f7ca9ff1c372a5319edc68f8a5ac88c",
+      "source_identity": {
+        "module_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "module_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+        "learn_pair_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_v02.py",
+        "learn_pair_line": 244,
+        "teacher_ops_file": "/home/alex/dog/go2_piper_cleanmeta8_20261109/code/teacher_ops.py",
+        "teacher_ops_sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f",
+        "torch_version": "2.7.0+cu128",
+        "fixed_runtime": true
+      },
+      "every_candidate_same_old_state": true,
+      "accepted_exactly_one_state_step": true,
+      "base_param_groups_restored": true
+    }
+  ],
+  "no_tv_constraint": true,
+  "original_config_unchanged": true,
+  "all_new_real_branch_feedback": true
+}

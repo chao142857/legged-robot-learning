@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "seed": 42,
+  "teacher_states": {
+    "Fresh.pt": "b312ce7657bb6a7497e4dfe0062fe996fff0c6c653bd4836cd929d74b47fe2c2",
+    "CleanMeta8.pt": "57e5bdb5a2f7a737aaf9c2aee514f605cb03131616f716f4055870c1aa74e94b"
+  },
+  "teacher_files": {
+    "Fresh.pt": "98c577bb969bbfd3362e5959f20a12cee61cbc2c4b8d2bdf529fecaa1c32cef2",
+    "CleanMeta8.pt": "279ca925da28aeaa345fa01a0b532fbb72e0a4b74f10e95fb514f78e00ce55f0"
+  },
+  "uniform_baseline_reused": true,
+  "expected_student_init": {
+    "actor_sha256": "f755363169762f3de318d06fdc46933663702f3f865f72fdb67a01a62288ce4c",
+    "critic_sha256": "cdece4b496bc1e88be4cfba1e456cb02f01007b400c4f99bd331d06c459e8acc",
+    "optimizer_empty": true,
+    "seed": 42,
+    "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+    "initial_sampler_uniform": true
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "actor_sha256": "d2e958f53f954185558f63f4d278d011387bb60a00a1933273930f2961a805d5",
-  "critic_sha256": "b1c24e34abf278bbcbcd3b9a0cf2789cce0e02445b01b201c94ece92941edca1",
-  "optimizer_empty": true,
-  "seed": 48,
-  "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
-  "initial_sampler_uniform": true
-}

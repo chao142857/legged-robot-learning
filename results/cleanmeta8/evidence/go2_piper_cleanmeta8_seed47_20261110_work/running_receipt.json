@@ -1,0 +1,37 @@
+{
+  "status": {
+    "phase": "training_CleanMeta8",
+    "unix": 1794297339.1002984,
+    "student_seed": 47,
+    "target": 10000,
+    "teacher_frozen": true,
+    "source_student_checkpoint": null
+  },
+  "latest": {
+    "completed_updates": 174,
+    "optimizer_calls": 3480,
+    "environment_transitions": 17104896,
+    "new_updates": 174,
+    "new_environment_transitions": 17104896,
+    "unix": 1794297399.4611876,
+    "branch": "clean-meta8",
+    "mode": "transfer",
+    "teacher_version": 2,
+    "mean_training_reward": 42.49868828684092,
+    "losses": {
+      "value": 0.09414346292614936,
+      "surrogate": -0.009403756160463673,
+      "entropy": 19.518602275848387
+    },
+    "learning_rate": 0.00033333333333333327,
+    "action_std": 0.7232834696769714,
+    "native_feedback_episodes": 248868
+  },
+  "initialization_matches": true,
+  "native_config_matches": true,
+  "tmux_alive": true,
+  "controller_attached.log": "",
+  "controller.log": "NSGS_JOB_START cpu-preflight\nNSGS_JOB_END cpu-preflight exit=0\nNSGS_JOB_START transfer-seed47-clean-meta8\nNSGS_JOB_START eval-transfer-seed47-clean-meta8-00000-development\nNSGS_JOB_END eval-transfer-seed47-clean-meta8-00000-development exit=0\nNSGS_JOB_START eval-transfer-seed47-clean-meta8-00100-development\nNSGS_JOB_END eval-transfer-seed47-clean-meta8-00100-development exit=0\n",
+  "pid_unchanged": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU, 4722 MiB, 64 %"
+}

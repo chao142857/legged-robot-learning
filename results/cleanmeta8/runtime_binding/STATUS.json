@@ -1,0 +1,12 @@
+{
+  "phase": "complete",
+  "seed": 42,
+  "target_per_arm": 10000,
+  "unix": 1794412063.3972058,
+  "finished_arms": [
+    "fresh",
+    "clean-meta8"
+  ],
+  "new_updates": 20000,
+  "new_environment_transitions": 1966080000
+}

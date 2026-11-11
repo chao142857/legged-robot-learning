@@ -1,0 +1,4498 @@
+{
+  "seed": 47,
+  "curves": {
+    "uniform": [
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 1000,
+        "checkpoint_sha256": "2e32b8c2efde8bf1ce7b6fee178cb71a0220446b975bd209112578dca7976f26",
+        "actor_sha256": "e257a09c2d93fd2edf4af4b39333ddb704245e656a8578753926c1defae5490c",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.00390625,
+        "native_failure_rate": 0.009765625,
+        "no_valid_window_rate": 0.0009765625,
+        "continuous_joint_score": 0.10922754385745477,
+        "longest_joint_good_seconds_mean": 0.355234375,
+        "loco_success_rate": 0.97265625,
+        "manipulation_rmse_pass_rate": 0.0205078125,
+        "pooled_rmse": {
+          "velocity_m_s": 0.1132144634406604,
+          "yaw_rad_s": 0.13506419786698198,
+          "ee_position_m": 0.10496603050482191,
+          "ee_orientation_rad": 0.1082811209717812
+        },
+        "wall_seconds": 34.93663836992346,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1019512,
+        "episode_results_sha256": "453d9b11e55e32e1daea94d08164ce0b9f53312ac8c29f2a9205001d1f9dfaab",
+        "safety": {
+          "native_failure_rate": 0.009765625,
+          "joint_soft_limit_step_fraction_mean": 0.34850389544568094,
+          "body_tilt_over_30deg_step_fraction_mean": 0.00047754069807280457,
+          "max_joint_soft_limit_excess_rad": 0.15704679489135742,
+          "max_body_tilt_rad": 1.0692777633666992,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 2000,
+        "checkpoint_sha256": "7637c7b7c971418dafedc6f752810b29f2cff79b5383df265740dcee6fabebce",
+        "actor_sha256": "40fdcb09782d45a724882c07cfabd9275a4872fc84375876f5dd9c4a565cc4fb",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.056640625,
+        "native_failure_rate": 0.0087890625,
+        "no_valid_window_rate": 0.00390625,
+        "continuous_joint_score": 0.3204123565561403,
+        "longest_joint_good_seconds_mean": 1.1089453125,
+        "loco_success_rate": 0.9892578125,
+        "manipulation_rmse_pass_rate": 0.1943359375,
+        "pooled_rmse": {
+          "velocity_m_s": 0.10348541575320458,
+          "yaw_rad_s": 0.12134518085225618,
+          "ee_position_m": 0.07200282178371206,
+          "ee_orientation_rad": 0.14496357181112654
+        },
+        "wall_seconds": 34.58287438401021,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1018319,
+        "episode_results_sha256": "4891b386f8d7f83d3766ef199275ed56ede9b059f8df98f6bbf35892d681a2e5",
+        "safety": {
+          "native_failure_rate": 0.0087890625,
+          "joint_soft_limit_step_fraction_mean": 0.46397927776153575,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0008988095110598431,
+          "max_joint_soft_limit_excess_rad": 0.15737414360046387,
+          "max_body_tilt_rad": 1.077749252319336,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 3000,
+        "checkpoint_sha256": "be5cfcc7aa1a827aae3293bdcd732a8ce37806398021b7860a0bcf8cd6751775",
+        "actor_sha256": "0574ce2cff67b3e8e33879f1086c679ad7f0f623584f7ae43355dc9c41f89a20",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.1279296875,
+        "native_failure_rate": 0.0078125,
+        "no_valid_window_rate": 0.00390625,
+        "continuous_joint_score": 0.43491870705831975,
+        "longest_joint_good_seconds_mean": 1.5822070312499998,
+        "loco_success_rate": 0.9921875,
+        "manipulation_rmse_pass_rate": 0.3125,
+        "pooled_rmse": {
+          "velocity_m_s": 0.09068747162590646,
+          "yaw_rad_s": 0.11869417407677112,
+          "ee_position_m": 0.06419753320692032,
+          "ee_orientation_rad": 0.09182823336152532
+        },
+        "wall_seconds": 34.871565389912575,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1018271,
+        "episode_results_sha256": "d4eeb443ee34a9087e8c62b8de1daadf62d77e5abf737e738d8284c49fad71c2",
+        "safety": {
+          "native_failure_rate": 0.0078125,
+          "joint_soft_limit_step_fraction_mean": 0.45992960930334675,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0006997249551953463,
+          "max_joint_soft_limit_excess_rad": 0.15764904022216797,
+          "max_body_tilt_rad": 1.1077667474746704,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 4000,
+        "checkpoint_sha256": "669bfa378d29502f004bf640eba4b7a6616f6b9aa400980c81e2819d8fc6359b",
+        "actor_sha256": "5b4e2be0a9ccbb5075adf6ed2cf4efbf093c19bac0c84d177831f90a03389ddb",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.1591796875,
+        "native_failure_rate": 0.0048828125,
+        "no_valid_window_rate": 0.0048828125,
+        "continuous_joint_score": 0.4796537315738503,
+        "longest_joint_good_seconds_mean": 1.71560546875,
+        "loco_success_rate": 0.9951171875,
+        "manipulation_rmse_pass_rate": 0.3759765625,
+        "pooled_rmse": {
+          "velocity_m_s": 0.08917221863730171,
+          "yaw_rad_s": 0.11671361408142257,
+          "ee_position_m": 0.06075571137649748,
+          "ee_orientation_rad": 0.07204330317420807
+        },
+        "wall_seconds": 34.559571970952675,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1019452,
+        "episode_results_sha256": "1512f50bf3bd15ef345533e354330cd9339d18bc241545ca06c5541c9d090fde",
+        "safety": {
+          "native_failure_rate": 0.0048828125,
+          "joint_soft_limit_step_fraction_mean": 0.43125334861540393,
+          "body_tilt_over_30deg_step_fraction_mean": 0.000604077126636886,
+          "max_joint_soft_limit_excess_rad": 0.15736603736877441,
+          "max_body_tilt_rad": 1.1074854135513306,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 5000,
+        "checkpoint_sha256": "20b8fa0d413551f7b59d328eeb9396c2564c0295f6d2fc8a105b21277762545c",
+        "actor_sha256": "a4bf687352ff521b9372006b1dfbc208cd15345a4bf4673e127a59b6e7af25c9",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.2275390625,
+        "native_failure_rate": 0.00390625,
+        "no_valid_window_rate": 0.0029296875,
+        "continuous_joint_score": 0.5495180056386211,
+        "longest_joint_good_seconds_mean": 2.11283203125,
+        "loco_success_rate": 0.99609375,
+        "manipulation_rmse_pass_rate": 0.462890625,
+        "pooled_rmse": {
+          "velocity_m_s": 0.081718350040076,
+          "yaw_rad_s": 0.11343374317594918,
+          "ee_position_m": 0.05691190328382852,
+          "ee_orientation_rad": 0.06700274877654123
+        },
+        "wall_seconds": 35.4217224419117,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1020873,
+        "episode_results_sha256": "3d058856f5dfbde51e20cfd742d89c5c5c7177b54e3d2f8682c86fc5fdab03d0",
+        "safety": {
+          "native_failure_rate": 0.00390625,
+          "joint_soft_limit_step_fraction_mean": 0.3792109086311799,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0008900621291138779,
+          "max_joint_soft_limit_excess_rad": 0.1573629379272461,
+          "max_body_tilt_rad": 1.0685168504714966,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 6000,
+        "checkpoint_sha256": "4335ef38ac3ead6fd5a2a2792a1d5c04320edce1c54d1e28ec1b179f5fa2cb8c",
+        "actor_sha256": "8d7e61b689d3bd60e21d2ae67a91bf8c2fb7dd5e343d63c02b8f3a9196e49caf",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.21484375,
+        "native_failure_rate": 0.005859375,
+        "no_valid_window_rate": 0.0029296875,
+        "continuous_joint_score": 0.539631204208826,
+        "longest_joint_good_seconds_mean": 2.04724609375,
+        "loco_success_rate": 0.994140625,
+        "manipulation_rmse_pass_rate": 0.4580078125,
+        "pooled_rmse": {
+          "velocity_m_s": 0.0810421516597476,
+          "yaw_rad_s": 0.11414294010745558,
+          "ee_position_m": 0.05622918165710916,
+          "ee_orientation_rad": 0.06605335489781049
+        },
+        "wall_seconds": 34.88250576797873,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1020631,
+        "episode_results_sha256": "350fe39bdd29e87a7c395d2aa3d00cc72eb0aadb692a35fa18e3ccdb081a979b",
+        "safety": {
+          "native_failure_rate": 0.005859375,
+          "joint_soft_limit_step_fraction_mean": 0.4126768970681891,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0012049416783093201,
+          "max_joint_soft_limit_excess_rad": 0.15726733207702637,
+          "max_body_tilt_rad": 1.0318611860275269,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 7000,
+        "checkpoint_sha256": "de2001c51475bdb10164e50c9e9b7960c83bc763d32d5af73b0c8ebe9c9b8424",
+        "actor_sha256": "81c390f2b4e04f5e4ebfdda9cf7c80bc5b7c7efceba06c12d5da9530c9822b29",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.220703125,
+        "native_failure_rate": 0.0048828125,
+        "no_valid_window_rate": 0.0029296875,
+        "continuous_joint_score": 0.5302413110395692,
+        "longest_joint_good_seconds_mean": 2.0947265625,
+        "loco_success_rate": 0.9951171875,
+        "manipulation_rmse_pass_rate": 0.44140625,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07755554688162379,
+          "yaw_rad_s": 0.11138736715441129,
+          "ee_position_m": 0.057266934538626954,
+          "ee_orientation_rad": 0.0595290234012644
+        },
+        "wall_seconds": 35.186014217091724,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1020381,
+        "episode_results_sha256": "b87feb6057225289bb373cb8658ed7b8f380df143bcfa69e57ccef7ca03bdb49",
+        "safety": {
+          "native_failure_rate": 0.0048828125,
+          "joint_soft_limit_step_fraction_mean": 0.39657865055030567,
+          "body_tilt_over_30deg_step_fraction_mean": 0.000903136521779495,
+          "max_joint_soft_limit_excess_rad": 0.15726590156555176,
+          "max_body_tilt_rad": 1.118895411491394,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 8000,
+        "checkpoint_sha256": "f55b3267e4766bce9a3a287e9008c4e16b5fc5509a9201e4df75e62670a188eb",
+        "actor_sha256": "b2d47b73d1ec804a23f6358b7baae89e4c976acd2a4f458ff79010603a88aea0",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.2607421875,
+        "native_failure_rate": 0.0068359375,
+        "no_valid_window_rate": 0.0048828125,
+        "continuous_joint_score": 0.5695072111836119,
+        "longest_joint_good_seconds_mean": 2.3940234375000005,
+        "loco_success_rate": 0.9931640625,
+        "manipulation_rmse_pass_rate": 0.482421875,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07740370823208176,
+          "yaw_rad_s": 0.1105454292107448,
+          "ee_position_m": 0.05536873044352931,
+          "ee_orientation_rad": 0.05962433100474685
+        },
+        "wall_seconds": 34.958591741044074,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1018762,
+        "episode_results_sha256": "a83b06a382f0f2002899548282a8b5683ac37600804931f2c502da253d879288",
+        "safety": {
+          "native_failure_rate": 0.0068359375,
+          "joint_soft_limit_step_fraction_mean": 0.36099031749696975,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0016020478635930557,
+          "max_joint_soft_limit_excess_rad": 0.15735316276550293,
+          "max_body_tilt_rad": 1.1170685291290283,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 9000,
+        "checkpoint_sha256": "44f6142c01c96e93849896fa46f51f9801381da7f0ccba73869c745dbf5b01bd",
+        "actor_sha256": "ef3b21ef626f157827a1bc5e5272498ca7712273a9f6fe3aaf3dfeb3320d7359",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.3046875,
+        "native_failure_rate": 0.0,
+        "no_valid_window_rate": 0.0,
+        "continuous_joint_score": 0.5981948297806385,
+        "longest_joint_good_seconds_mean": 2.69078125,
+        "loco_success_rate": 1.0,
+        "manipulation_rmse_pass_rate": 0.5458984375,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07535149066837533,
+          "yaw_rad_s": 0.10810710229000803,
+          "ee_position_m": 0.05349528772771068,
+          "ee_orientation_rad": 0.05805431882463352
+        },
+        "wall_seconds": 34.36853305995464,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1024000,
+        "episode_results_sha256": "cf0c5f3d2064399a84d52475a588f6aa84f6a4ccbcbb370273ec4cc6b22b4445",
+        "safety": {
+          "native_failure_rate": 0.0,
+          "joint_soft_limit_step_fraction_mean": 0.379158203125,
+          "body_tilt_over_30deg_step_fraction_mean": 7.421875000000001e-05,
+          "max_joint_soft_limit_excess_rad": 0.15725946426391602,
+          "max_body_tilt_rad": 0.5706117749214172,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 10000,
+        "checkpoint_sha256": "2588b6cd55570f95827a8ba363c3ba3fa0d5450e90281f39b86e8a01916e567f",
+        "actor_sha256": "87d5ab2cc004e87e32193cb9c346a0147ca9fbec83384438aba1453c6fcf9131",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.29296875,
+        "native_failure_rate": 0.001953125,
+        "no_valid_window_rate": 0.001953125,
+        "continuous_joint_score": 0.6018828254379563,
+        "longest_joint_good_seconds_mean": 2.681875,
+        "loco_success_rate": 0.998046875,
+        "manipulation_rmse_pass_rate": 0.53125,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07205649360700479,
+          "yaw_rad_s": 0.10849529025678753,
+          "ee_position_m": 0.05347310046169347,
+          "ee_orientation_rad": 0.05613660882327741
+        },
+        "wall_seconds": 35.22004627180286,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1022068,
+        "episode_results_sha256": "a1ae99efef1b2a247cb41eef118161d25e6b62537bda512811a683e7442c52da",
+        "safety": {
+          "native_failure_rate": 0.001953125,
+          "joint_soft_limit_step_fraction_mean": 0.36736546415441174,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0006724494485294118,
+          "max_joint_soft_limit_excess_rad": 0.15746498107910156,
+          "max_body_tilt_rad": 1.1190214157104492,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      }
+    ],
+    "fresh": [
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 1000,
+        "checkpoint_sha256": "a729eab50f926a7b7aea44e897c0fc14480124967da2e8e169739deef4befb40",
+        "actor_sha256": "f2111807ab8df078c4f0fcb1cafc9594e4fdb4a9a037f231b4420a18e82f8e59",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.0048828125,
+        "native_failure_rate": 0.013671875,
+        "no_valid_window_rate": 0.0048828125,
+        "continuous_joint_score": 0.12241535953421065,
+        "longest_joint_good_seconds_mean": 0.43603515625,
+        "loco_success_rate": 0.9208984375,
+        "manipulation_rmse_pass_rate": 0.03125,
+        "pooled_rmse": {
+          "velocity_m_s": 0.1366351808891346,
+          "yaw_rad_s": 0.13812832358849358,
+          "ee_position_m": 0.09949885117870694,
+          "ee_orientation_rad": 0.108893949703495
+        },
+        "wall_seconds": 35.03351791808382,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1015494,
+        "episode_results_sha256": "f0220f588838067889de47a106097b8019605ce00594268968f04445c80b6ab9",
+        "safety": {
+          "native_failure_rate": 0.013671875,
+          "joint_soft_limit_step_fraction_mean": 0.38008428010563056,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0008733562898919152,
+          "max_joint_soft_limit_excess_rad": 0.15770602226257324,
+          "max_body_tilt_rad": 1.0899888277053833,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 2000,
+        "checkpoint_sha256": "317e7fa0305f1a17831820873ec6a66068c2d49780405b0b47824e32822fe8b2",
+        "actor_sha256": "bc6664e395a01e2cdf9c118e774dbd5561a035b41bfbdc4f19642678c53f3a55",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.0771484375,
+        "native_failure_rate": 0.0029296875,
+        "no_valid_window_rate": 0.0009765625,
+        "continuous_joint_score": 0.34945537729407067,
+        "longest_joint_good_seconds_mean": 1.5046484374999998,
+        "loco_success_rate": 0.9951171875,
+        "manipulation_rmse_pass_rate": 0.2080078125,
+        "pooled_rmse": {
+          "velocity_m_s": 0.08909245162336589,
+          "yaw_rad_s": 0.12215070971848302,
+          "ee_position_m": 0.06935197146065065,
+          "ee_orientation_rad": 0.12684157300282142
+        },
+        "wall_seconds": 34.99378500180319,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1022206,
+        "episode_results_sha256": "4b5459927fb0bc708213493df0f421cfbf8378371585bd454265eac3382446af",
+        "safety": {
+          "native_failure_rate": 0.0029296875,
+          "joint_soft_limit_step_fraction_mean": 0.5064026068636807,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0005311693827467615,
+          "max_joint_soft_limit_excess_rad": 0.15817546844482422,
+          "max_body_tilt_rad": 1.018607497215271,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 3000,
+        "checkpoint_sha256": "71c3b58a50864580df0074fa5a9b625bd8f514ead1e04f55791c00bcf1d55927",
+        "actor_sha256": "d8e69596e547ae4843314d4e3703c75f53e1926ad8a855179567f40523fa421f",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.1591796875,
+        "native_failure_rate": 0.0029296875,
+        "no_valid_window_rate": 0.0,
+        "continuous_joint_score": 0.4530683054948593,
+        "longest_joint_good_seconds_mean": 2.004453125,
+        "loco_success_rate": 0.99609375,
+        "manipulation_rmse_pass_rate": 0.3310546875,
+        "pooled_rmse": {
+          "velocity_m_s": 0.08889022079935736,
+          "yaw_rad_s": 0.11951070086214023,
+          "ee_position_m": 0.06293909509758375,
+          "ee_orientation_rad": 0.08855275654605443
+        },
+        "wall_seconds": 34.62290000799112,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1023064,
+        "episode_results_sha256": "670f49453e60b843d720138e8e21de289cbd61906848b2f1e9d046114e9ff6bd",
+        "safety": {
+          "native_failure_rate": 0.0029296875,
+          "joint_soft_limit_step_fraction_mean": 0.4249270150061688,
+          "body_tilt_over_30deg_step_fraction_mean": 6.908408312421429e-05,
+          "max_joint_soft_limit_excess_rad": 0.15726995468139648,
+          "max_body_tilt_rad": 1.0981228351593018,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 4000,
+        "checkpoint_sha256": "aa90bcd12a25e5ce57c7b879505434a81fea20704b8ddc5c5a9d49b93979969d",
+        "actor_sha256": "93255bb4ea7f498297c1a0a6a66c2da4813f88afafb44769d95919dcaf8d6373",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.2841796875,
+        "native_failure_rate": 0.00390625,
+        "no_valid_window_rate": 0.0009765625,
+        "continuous_joint_score": 0.5693316836334952,
+        "longest_joint_good_seconds_mean": 2.8880078124999997,
+        "loco_success_rate": 0.99609375,
+        "manipulation_rmse_pass_rate": 0.5087890625,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07730072683826465,
+          "yaw_rad_s": 0.1145205321248408,
+          "ee_position_m": 0.05694210172995716,
+          "ee_orientation_rad": 0.07311597393028742
+        },
+        "wall_seconds": 35.03994403895922,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1021544,
+        "episode_results_sha256": "47f2318e334de5eb4cf5c5a623a4f19d15e8e62aa4a7c9e7805cd3b533e3193c",
+        "safety": {
+          "native_failure_rate": 0.00390625,
+          "joint_soft_limit_step_fraction_mean": 0.411962383121577,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0003463516298784758,
+          "max_joint_soft_limit_excess_rad": 0.1575157642364502,
+          "max_body_tilt_rad": 1.0881099700927734,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 5000,
+        "checkpoint_sha256": "9e838ba47ca0bc186fd6c327a2c3894343707e3f525b9b4a144b3c6655af3666",
+        "actor_sha256": "3553b72a5e889e69a9fa59b2f358b03cbe28d4831635ca034100c2f428dd27de",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.1640625,
+        "native_failure_rate": 0.001953125,
+        "no_valid_window_rate": 0.0009765625,
+        "continuous_joint_score": 0.4562947179814032,
+        "longest_joint_good_seconds_mean": 2.0257812499999996,
+        "loco_success_rate": 0.998046875,
+        "manipulation_rmse_pass_rate": 0.345703125,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07477994292860932,
+          "yaw_rad_s": 0.11513495231728425,
+          "ee_position_m": 0.06147822858739839,
+          "ee_orientation_rad": 0.06905358394608273
+        },
+        "wall_seconds": 34.59570698719472,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1022741,
+        "episode_results_sha256": "dcd5b969b999d09977f937111b9bf055fc9ebf24b04e1357510a0f3ada069e2d",
+        "safety": {
+          "native_failure_rate": 0.001953125,
+          "joint_soft_limit_step_fraction_mean": 0.40714787747414405,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0005457410172967189,
+          "max_joint_soft_limit_excess_rad": 0.15720272064208984,
+          "max_body_tilt_rad": 1.0500048398971558,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 6000,
+        "checkpoint_sha256": "e751bbd72fd0990cefe67e83c4147323f4460da63b496af6ed15621f7460b14a",
+        "actor_sha256": "ee13e2f7eb48ba0e71c35564fbd3987ca391490bc6476c3542ca0d978f1f5eff",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.3310546875,
+        "native_failure_rate": 0.005859375,
+        "no_valid_window_rate": 0.001953125,
+        "continuous_joint_score": 0.6011502025920996,
+        "longest_joint_good_seconds_mean": 3.051953125,
+        "loco_success_rate": 0.9931640625,
+        "manipulation_rmse_pass_rate": 0.541015625,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07923499722721743,
+          "yaw_rad_s": 0.11485819872403932,
+          "ee_position_m": 0.05270902078468448,
+          "ee_orientation_rad": 0.06319281065795349
+        },
+        "wall_seconds": 35.23549255495891,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1020431,
+        "episode_results_sha256": "5242b14ffc42d5c5cba81ae2055b5bc36064c84fe274e8116132b7b28cbd449b",
+        "safety": {
+          "native_failure_rate": 0.005859375,
+          "joint_soft_limit_step_fraction_mean": 0.4161377475639958,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0005813871659716678,
+          "max_joint_soft_limit_excess_rad": 0.15744328498840332,
+          "max_body_tilt_rad": 1.0198469161987305,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 7000,
+        "checkpoint_sha256": "b73df85faa36bd0b53d379b92a953ceb1002902db5f0f149a1c23a4113f83a83",
+        "actor_sha256": "ec836a507c54da5e5de63ac607075272aeabd39df52614013383bc3d2ad5e439",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.31640625,
+        "native_failure_rate": 0.0,
+        "no_valid_window_rate": 0.0,
+        "continuous_joint_score": 0.5977467034389489,
+        "longest_joint_good_seconds_mean": 3.0540624999999997,
+        "loco_success_rate": 1.0,
+        "manipulation_rmse_pass_rate": 0.5400390625,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07892592353477348,
+          "yaw_rad_s": 0.11050933924021514,
+          "ee_position_m": 0.0535494233248554,
+          "ee_orientation_rad": 0.059063349473233065
+        },
+        "wall_seconds": 34.790233940817416,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1024000,
+        "episode_results_sha256": "d02a83e2a063e921f7031c06ba9adf4fbe4c89c2483ef99cb3b5022ab76856b3",
+        "safety": {
+          "native_failure_rate": 0.0,
+          "joint_soft_limit_step_fraction_mean": 0.3883876953125,
+          "body_tilt_over_30deg_step_fraction_mean": 0.000224609375,
+          "max_joint_soft_limit_excess_rad": 0.15731406211853027,
+          "max_body_tilt_rad": 0.7095648050308228,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 8000,
+        "checkpoint_sha256": "3ddff4be2277455c3d959c8437169949758a7887520882b21a72ea4439900e45",
+        "actor_sha256": "ea690236fc495a6793e75b88108be123b0dba89f295c8c9032e7f38839459278",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.2978515625,
+        "native_failure_rate": 0.0009765625,
+        "no_valid_window_rate": 0.0009765625,
+        "continuous_joint_score": 0.5852974670745494,
+        "longest_joint_good_seconds_mean": 3.05435546875,
+        "loco_success_rate": 0.9990234375,
+        "manipulation_rmse_pass_rate": 0.525390625,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07804472710784126,
+          "yaw_rad_s": 0.10914919759399155,
+          "ee_position_m": 0.0542018017067147,
+          "ee_orientation_rad": 0.05590612547553198
+        },
+        "wall_seconds": 34.51361050712876,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1023033,
+        "episode_results_sha256": "a9a3ca83c3d6205803b7e02d9bfc1e945421ca3649050b18ff9ef349b9590be5",
+        "safety": {
+          "native_failure_rate": 0.0009765625,
+          "joint_soft_limit_step_fraction_mean": 0.3588052497632576,
+          "body_tilt_over_30deg_step_fraction_mean": 0.00020732717803030303,
+          "max_joint_soft_limit_excess_rad": 0.15748333930969238,
+          "max_body_tilt_rad": 0.6949600577354431,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 9000,
+        "checkpoint_sha256": "2afb5bd647347fe1a71dd4966bf06a03b69addb67a1b3085766b59393d825730",
+        "actor_sha256": "89cd16bc6676d2519ae8ba1af415e7d6170d02dfbbc3f0d34d5bca9fbc8158dd",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.33984375,
+        "native_failure_rate": 0.0009765625,
+        "no_valid_window_rate": 0.0,
+        "continuous_joint_score": 0.6087522266288252,
+        "longest_joint_good_seconds_mean": 3.0657421875,
+        "loco_success_rate": 0.9990234375,
+        "manipulation_rmse_pass_rate": 0.5634765625,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07579876599114882,
+          "yaw_rad_s": 0.11017694265084808,
+          "ee_position_m": 0.05247155930166022,
+          "ee_orientation_rad": 0.05646295079436365
+        },
+        "wall_seconds": 34.347202070988715,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1023517,
+        "episode_results_sha256": "288ba40491f2d22a71246b54e61cd582251423b8b085de402a1dfd16ab78cbc5",
+        "safety": {
+          "native_failure_rate": 0.0009765625,
+          "joint_soft_limit_step_fraction_mean": 0.3385048695901838,
+          "body_tilt_over_30deg_step_fraction_mean": 0.0001647821717843327,
+          "max_joint_soft_limit_excess_rad": 0.1573197841644287,
+          "max_body_tilt_rad": 0.614364743232727,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      },
+      {
+        "passed": true,
+        "kind": "test",
+        "update": 10000,
+        "checkpoint_sha256": "8b9ca6788037bd3b52ec81ef422b4b321e1b6f642cd59cd4d8e1886f885aee82",
+        "actor_sha256": "efc9b8b5c4dd6cd6d646c1e1814640ef8effc9cc52031f391fff463ba9c7fe8c",
+        "pool_sha256": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+        "initial_sha256": "12e5c899e7bc0e571bd417486dc6c52db064912f201d76f1fd05c5232cd3b102",
+        "seed": 922042,
+        "episodes": 1024,
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "training_history_updates": 0,
+        "model_weights_unchanged": true,
+        "joint_success_rate": 0.3154296875,
+        "native_failure_rate": 0.001953125,
+        "no_valid_window_rate": 0.0,
+        "continuous_joint_score": 0.5897443210012214,
+        "longest_joint_good_seconds_mean": 3.00923828125,
+        "loco_success_rate": 0.9970703125,
+        "manipulation_rmse_pass_rate": 0.51953125,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07656282931717534,
+          "yaw_rad_s": 0.10597731031037569,
+          "ee_position_m": 0.054314397067876795,
+          "ee_orientation_rad": 0.05532149361398845
+        },
+        "wall_seconds": 34.92638444388285,
+        "executed_environment_transitions": 1024000,
+        "first_episode_transitions": 1023164,
+        "episode_results_sha256": "5e84f9aa3f4c3093e6f570ca74c395a98aecb90b771bdaba3658e2b216af36d6",
+        "safety": {
+          "native_failure_rate": 0.001953125,
+          "joint_soft_limit_step_fraction_mean": 0.3369013933274312,
+          "body_tilt_over_30deg_step_fraction_mean": 0.00026217147591284424,
+          "max_joint_soft_limit_excess_rad": 0.1745011806488037,
+          "max_body_tilt_rad": 1.0204951763153076,
+          "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+        }
+      }
+    ]
+  },
+  "provenance": {
+    "uniform": {
+      "root": "/data/go2_piper_nsgs_v02_20261106",
+      "label": "transfer-seed47-uniform",
+      "host": "yanglab",
+      "gpu": "RTX3060",
+      "retrained": false,
+      "configuration_sha256": "ff07d3a5dcac8c22fce72c001c4a729890b23b0d14b8777e2ee445ae60795a6b"
+    },
+    "fresh": {
+      "root": "/data/go2_piper_nsgs_v02_20261106",
+      "label": "transfer-seed47-fresh",
+      "host": "yanglab",
+      "gpu": "RTX3060",
+      "retrained": false,
+      "configuration_sha256": "7196a05fa21926d5dc6f84ccea4b16f640aad08280f322b45816663f4275fc0a"
+    }
+  },
+  "initialization": {
+    "actor_sha256": "e64060ea60196e31609a4400af318af305642f5a39ceb72e6ae6fd97754143de",
+    "critic_sha256": "dff799fbc8daad7d0c8fa5c6946bd23e756d12773f6d30aeae55471c57648158",
+    "optimizer_empty": true,
+    "seed": 47,
+    "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+    "initial_sampler_uniform": true
+  },
+  "configurations": {
+    "uniform": {
+      "native_environment": {
+        "viewer": {
+          "eye": [
+            7.5,
+            7.5,
+            7.5
+          ],
+          "lookat": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "cam_prim_path": "/OmniverseKit_Persp",
+          "resolution": [
+            1280,
+            720
+          ],
+          "origin_type": "world",
+          "env_index": 0,
+          "asset_name": null,
+          "body_name": null
+        },
+        "sim": {
+          "physics_prim_path": "/physicsScene",
+          "device": "cuda:0",
+          "dt": 0.005,
+          "render_interval": 4,
+          "gravity": [
+            0.0,
+            0.0,
+            -9.81
+          ],
+          "enable_scene_query_support": false,
+          "use_fabric": true,
+          "physx": {
+            "solver_type": 1,
+            "solve_articulation_contact_last": false,
+            "min_position_iteration_count": 1,
+            "max_position_iteration_count": 255,
+            "min_velocity_iteration_count": 0,
+            "max_velocity_iteration_count": 255,
+            "enable_ccd": false,
+            "enable_stabilization": false,
+            "enable_external_forces_every_iteration": false,
+            "enable_enhanced_determinism": false,
+            "bounce_threshold_velocity": 0.5,
+            "friction_offset_threshold": 0.04,
+            "friction_correlation_distance": 0.025,
+            "gpu_max_rigid_contact_count": 8388608,
+            "gpu_max_rigid_patch_count": 327680,
+            "gpu_found_lost_pairs_capacity": 2097152,
+            "gpu_found_lost_aggregate_pairs_capacity": 33554432,
+            "gpu_total_aggregate_pairs_capacity": 2097152,
+            "gpu_collision_stack_size": 67108864,
+            "gpu_heap_capacity": 67108864,
+            "gpu_temp_buffer_capacity": 16777216,
+            "gpu_max_num_partitions": 8,
+            "gpu_max_soft_body_contacts": 1048576,
+            "gpu_max_particle_contacts": 1048576
+          },
+          "physics_material": {
+            "func": "isaaclab.sim.spawners.materials.physics_materials:spawn_rigid_body_material",
+            "static_friction": 1.0,
+            "dynamic_friction": 1.0,
+            "restitution": 1.0,
+            "friction_combine_mode": "multiply",
+            "restitution_combine_mode": "multiply",
+            "compliant_contact_stiffness": 0.0,
+            "compliant_contact_damping": 0.0
+          },
+          "render": {
+            "enable_translucency": null,
+            "enable_reflections": null,
+            "enable_global_illumination": null,
+            "antialiasing_mode": null,
+            "enable_dlssg": null,
+            "enable_dl_denoiser": null,
+            "dlss_mode": null,
+            "enable_direct_lighting": null,
+            "samples_per_pixel": null,
+            "enable_shadows": null,
+            "enable_ambient_occlusion": null,
+            "dome_light_upper_lower_strategy": null,
+            "carb_settings": null,
+            "rendering_mode": null
+          },
+          "create_stage_in_memory": false,
+          "logging_level": "WARNING",
+          "save_logs_to_file": true,
+          "log_dir": null
+        },
+        "ui_window_class_type": "isaaclab.envs.ui.manager_based_rl_env_window:ManagerBasedRLEnvWindow",
+        "seed": 47,
+        "decimation": 4,
+        "scene": {
+          "num_envs": 4096,
+          "env_spacing": 2.5,
+          "lazy_sensor_update": true,
+          "replicate_physics": true,
+          "filter_collisions": true,
+          "clone_in_fabric": false,
+          "robot": {
+            "class_type": "isaaclab.assets.articulation.articulation:Articulation",
+            "prim_path": "{ENV_REGEX_NS}/Robot",
+            "spawn": {
+              "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+              "visible": true,
+              "semantic_tags": null,
+              "copy_from_source": true,
+              "mass_props": null,
+              "deformable_props": null,
+              "rigid_props": {
+                "rigid_body_enabled": null,
+                "kinematic_enabled": null,
+                "disable_gravity": false,
+                "linear_damping": 0.0,
+                "angular_damping": 0.0,
+                "max_linear_velocity": 1000.0,
+                "max_angular_velocity": 1000.0,
+                "max_depenetration_velocity": 1.0,
+                "max_contact_impulse": null,
+                "enable_gyroscopic_forces": null,
+                "retain_accelerations": false,
+                "solver_position_iteration_count": null,
+                "solver_velocity_iteration_count": null,
+                "sleep_threshold": null,
+                "stabilization_threshold": null
+              },
+              "collision_props": null,
+              "activate_contact_sensors": true,
+              "scale": null,
+              "articulation_props": {
+                "articulation_enabled": null,
+                "enabled_self_collisions": false,
+                "solver_position_iteration_count": 4,
+                "solver_velocity_iteration_count": 0,
+                "sleep_threshold": null,
+                "stabilization_threshold": null,
+                "fix_root_link": null
+              },
+              "fixed_tendons_props": null,
+              "spatial_tendons_props": null,
+              "joint_drive_props": null,
+              "visual_material_path": "material",
+              "visual_material": null,
+              "usd_path": "/native/LeggedManip_Lab/source/LeggedManip_Lab/LeggedManip_Lab/assets/go2_piper/go2_piper.usd",
+              "variants": null
+            },
+            "init_state": {
+              "pos": [
+                0.0,
+                0.0,
+                0.35
+              ],
+              "rot": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "lin_vel": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "ang_vel": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "joint_pos": {
+                "FL_hip_joint": 0.1,
+                "FR_hip_joint": -0.1,
+                "RL_hip_joint": 0.1,
+                "RR_hip_joint": -0.1,
+                "FL_thigh_joint": 0.8,
+                "FR_thigh_joint": 0.8,
+                "RL_thigh_joint": 1.0,
+                "RR_thigh_joint": 1.0,
+                "FL_calf_joint": -1.5,
+                "FR_calf_joint": -1.5,
+                "RL_calf_joint": -1.5,
+                "RR_calf_joint": -1.5,
+                "joint.*": 0.0
+              },
+              "joint_vel": {
+                ".*": 0.0
+              }
+            },
+            "collision_group": 0,
+            "debug_vis": false,
+            "articulation_root_prim_path": null,
+            "soft_joint_pos_limit_factor": 0.9,
+            "actuators": {
+              "base_legs": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  ".*_hip_joint",
+                  ".*_thigh_joint",
+                  ".*_calf_joint"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 30.0,
+                "damping": 0.6,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint1": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint1"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 50.0,
+                "damping": 3.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint2": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint2"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 50.0,
+                "damping": 2.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint3": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint3"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 80.0,
+                "damping": 3.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint4": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint4"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 30.0,
+                "damping": 3.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint5": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint5"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 30.0,
+                "damping": 2.5,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint6": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint6"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 20.0,
+                "damping": 1.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              }
+            },
+            "actuator_value_resolution_debug_print": false
+          },
+          "terrain": {
+            "class_type": "isaaclab.terrains.terrain_importer:TerrainImporter",
+            "collision_group": -1,
+            "prim_path": "/World/ground",
+            "num_envs": 1,
+            "terrain_type": "plane",
+            "terrain_generator": null,
+            "usd_path": null,
+            "env_spacing": null,
+            "use_terrain_origins": true,
+            "visual_material": {
+              "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_from_mdl_file",
+              "mdl_path": "/node-assets/Isaac/IsaacLab/Materials/TilesMarbleSpiderWhiteBrickBondHoned/TilesMarbleSpiderWhiteBrickBondHoned.mdl",
+              "project_uvw": true,
+              "albedo_brightness": null,
+              "texture_scale": [
+                0.25,
+                0.25
+              ]
+            },
+            "physics_material": {
+              "func": "isaaclab.sim.spawners.materials.physics_materials:spawn_rigid_body_material",
+              "static_friction": 1.0,
+              "dynamic_friction": 1.0,
+              "restitution": 1.0,
+              "friction_combine_mode": "multiply",
+              "restitution_combine_mode": "multiply",
+              "compliant_contact_stiffness": 0.0,
+              "compliant_contact_damping": 0.0
+            },
+            "max_init_terrain_level": null,
+            "debug_vis": false
+          },
+          "contact_forces": {
+            "class_type": "isaaclab.sensors.contact_sensor.contact_sensor:ContactSensor",
+            "prim_path": "{ENV_REGEX_NS}/Robot/.*",
+            "update_period": 0.005,
+            "history_length": 3,
+            "debug_vis": false,
+            "track_pose": false,
+            "track_contact_points": false,
+            "track_friction_forces": false,
+            "max_contact_data_count_per_prim": 4,
+            "track_air_time": true,
+            "force_threshold": 1.0,
+            "filter_prim_paths_expr": [],
+            "visualizer_cfg": {
+              "prim_path": "/Visuals/ContactSensor",
+              "markers": {
+                "contact": {
+                  "func": "isaaclab.sim.spawners.shapes.shapes:spawn_sphere",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "physics_material_path": "material",
+                  "physics_material": null,
+                  "radius": 0.02
+                },
+                "no_contact": {
+                  "func": "isaaclab.sim.spawners.shapes.shapes:spawn_sphere",
+                  "visible": false,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "physics_material_path": "material",
+                  "physics_material": null,
+                  "radius": 0.02
+                }
+              }
+            }
+          },
+          "sky_light": {
+            "class_type": null,
+            "prim_path": "/World/skyLight",
+            "spawn": {
+              "func": "isaaclab.sim.spawners.lights.lights:spawn_light",
+              "visible": true,
+              "semantic_tags": null,
+              "copy_from_source": true,
+              "prim_type": "DomeLight",
+              "color": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "enable_color_temperature": false,
+              "color_temperature": 6500.0,
+              "normalize": false,
+              "exposure": 0.0,
+              "intensity": 750.0,
+              "texture_file": "/node-assets/Isaac/Materials/Textures/Skies/PolyHaven/kloofendal_43d_clear_puresky_4k.hdr",
+              "texture_format": "automatic",
+              "visible_in_primary_ray": true
+            },
+            "init_state": {
+              "pos": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rot": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "collision_group": 0,
+            "debug_vis": false
+          }
+        },
+        "recorders": {
+          "dataset_file_handler_class_type": "isaaclab.utils.datasets.hdf5_dataset_file_handler:HDF5DatasetFileHandler",
+          "dataset_export_dir_path": "/tmp/isaaclab/logs",
+          "dataset_filename": "dataset",
+          "dataset_export_mode": {
+            "_value_": 1,
+            "_name_": "EXPORT_ALL",
+            "_sort_order_": 1
+          },
+          "export_in_record_pre_reset": true,
+          "export_in_close": false
+        },
+        "observations": {
+          "policy": {
+            "concatenate_terms": true,
+            "concatenate_dim": -1,
+            "enable_corruption": true,
+            "history_length": 3,
+            "flatten_history_dim": true,
+            "base_ang_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:base_ang_vel",
+              "params": {},
+              "modifiers": null,
+              "noise": {
+                "func": "isaaclab.utils.noise.noise_model:uniform_noise",
+                "operation": "add",
+                "n_min": -0.2,
+                "n_max": 0.2
+              },
+              "clip": null,
+              "scale": 0.2,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "projected_gravity": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:projected_gravity",
+              "params": {},
+              "modifiers": null,
+              "noise": {
+                "func": "isaaclab.utils.noise.noise_model:uniform_noise",
+                "operation": "add",
+                "n_min": -0.05,
+                "n_max": 0.05
+              },
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_pos": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:joint_pos_rel",
+              "params": {},
+              "modifiers": null,
+              "noise": {
+                "func": "isaaclab.utils.noise.noise_model:uniform_noise",
+                "operation": "add",
+                "n_min": -0.01,
+                "n_max": 0.01
+              },
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:joint_vel_rel",
+              "params": {},
+              "modifiers": null,
+              "noise": {
+                "func": "isaaclab.utils.noise.noise_model:uniform_noise",
+                "operation": "add",
+                "n_min": -1.5,
+                "n_max": 1.5
+              },
+              "clip": null,
+              "scale": 0.05,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "actions": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:last_action",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "velocity_commands": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:generated_commands",
+              "params": {
+                "command_name": "base_velocity"
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "pos_commands": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:generated_commands",
+              "params": {
+                "command_name": "ee_pose"
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            }
+          },
+          "critic": {
+            "concatenate_terms": true,
+            "concatenate_dim": -1,
+            "enable_corruption": false,
+            "history_length": null,
+            "flatten_history_dim": true,
+            "base_lin_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:base_lin_vel",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": 2.0,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "base_ang_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:base_ang_vel",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": 0.2,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "projected_gravity": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:projected_gravity",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "velocity_commands": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:generated_commands",
+              "params": {
+                "command_name": "base_velocity"
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "pos_commands": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:generated_commands",
+              "params": {
+                "command_name": "ee_pose"
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_pos": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:joint_pos_rel",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:joint_vel_rel",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": 0.05,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "actions": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:last_action",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_torques": {
+              "func": "isaaclab.envs.mdp.observations:joint_effort",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": [
+                -100.0,
+                100.0
+              ],
+              "scale": 0.1,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "feet_contact": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:contact",
+              "params": {
+                "sensor_cfg": {
+                  "name": "contact_forces",
+                  "joint_names": null,
+                  "joint_ids": "slice(None, None, None)",
+                  "fixed_tendon_names": null,
+                  "fixed_tendon_ids": "slice(None, None, None)",
+                  "body_names": ".*_foot",
+                  "body_ids": "slice(None, None, None)",
+                  "object_collection_names": null,
+                  "object_collection_ids": "slice(None, None, None)",
+                  "preserve_order": false
+                }
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": [
+                0.0,
+                1.0
+              ],
+              "scale": 0.1,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "ee_link0_rel_pose": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:end_effector_link0_relative_pose",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            }
+          }
+        },
+        "actions": {
+          "joint_pos": {
+            "class_type": "isaaclab.envs.mdp.actions.joint_actions:JointPositionAction",
+            "asset_name": "robot",
+            "debug_vis": false,
+            "clip": {
+              ".*": [
+                -10.0,
+                10.0
+              ]
+            },
+            "joint_names": [
+              "FR_hip_joint",
+              "FR_thigh_joint",
+              "FR_calf_joint",
+              "FL_hip_joint",
+              "FL_thigh_joint",
+              "FL_calf_joint",
+              "RR_hip_joint",
+              "RR_thigh_joint",
+              "RR_calf_joint",
+              "RL_hip_joint",
+              "RL_thigh_joint",
+              "RL_calf_joint",
+              "joint.*"
+            ],
+            "scale": 0.25,
+            "offset": 0.0,
+            "preserve_order": true,
+            "use_default_offset": true
+          }
+        },
+        "events": {
+          "physics_material": {
+            "func": "isaaclab.envs.mdp.events:randomize_rigid_body_material",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "static_friction_range": [
+                0.5,
+                1.2
+              ],
+              "dynamic_friction_range": [
+                0.5,
+                1.2
+              ],
+              "restitution_range": [
+                0.0,
+                0.1
+              ],
+              "num_buckets": 64,
+              "make_consistent": true
+            },
+            "mode": "startup",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "add_mass": {
+            "func": "isaaclab.envs.mdp.events:randomize_rigid_body_mass",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "mass_distribution_params": [
+                0.9,
+                1.1
+              ],
+              "operation": "scale"
+            },
+            "mode": "startup",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "base_com": {
+            "func": "isaaclab.envs.mdp.events:randomize_rigid_body_com",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "base",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "com_range": {
+                "x": [
+                  -0.05,
+                  0.05
+                ],
+                "y": [
+                  -0.05,
+                  0.05
+                ],
+                "z": [
+                  -0.01,
+                  0.01
+                ]
+              }
+            },
+            "mode": "startup",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "randomize_actuator_gains": {
+            "func": "isaaclab.envs.mdp.events:randomize_actuator_gains",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": ".*",
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "stiffness_distribution_params": [
+                0.8,
+                1.2
+              ],
+              "damping_distribution_params": [
+                0.8,
+                1.2
+              ],
+              "operation": "scale"
+            },
+            "mode": "reset",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "randomize_rigid_body_inertia": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.events:randomize_rigid_body_inertia",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "inertia_distribution_params": [
+                0.8,
+                1.2
+              ],
+              "operation": "scale"
+            },
+            "mode": "startup",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "base_external_force_torque": {
+            "func": "isaaclab.envs.mdp.events:apply_external_force_torque",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "base",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "force_range": [
+                0.0,
+                0.0
+              ],
+              "torque_range": [
+                -0.0,
+                0.0
+              ]
+            },
+            "mode": "reset",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "reset_base": {
+            "func": "isaaclab.envs.mdp.events:reset_root_state_uniform",
+            "params": {
+              "pose_range": {
+                "x": [
+                  -0.5,
+                  0.5
+                ],
+                "y": [
+                  -0.5,
+                  0.5
+                ],
+                "yaw": [
+                  -3.14,
+                  3.14
+                ]
+              },
+              "velocity_range": {
+                "x": [
+                  -0.0,
+                  0.0
+                ],
+                "y": [
+                  -0.0,
+                  0.0
+                ],
+                "z": [
+                  -0.0,
+                  0.0
+                ],
+                "yaw": [
+                  -0.0,
+                  0.0
+                ],
+                "pitch": [
+                  -0.0,
+                  0.0
+                ],
+                "roll": [
+                  -0.0,
+                  0.0
+                ]
+              }
+            },
+            "mode": "reset",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "reset_robot_joints": {
+            "func": "isaaclab.envs.mdp.events:reset_joints_by_scale",
+            "params": {
+              "position_range": [
+                0.5,
+                1.5
+              ],
+              "velocity_range": [
+                0.0,
+                0.0
+              ]
+            },
+            "mode": "reset",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "push_robot": null
+        },
+        "rerender_on_reset": false,
+        "num_rerenders_on_reset": 0,
+        "wait_for_textures": true,
+        "xr": null,
+        "teleop_devices": {
+          "devices": {}
+        },
+        "export_io_descriptors": false,
+        "log_dir": "/workspace/runs/transfer-seed47-uniform/policy",
+        "is_finite_horizon": false,
+        "episode_length_s": 20.0,
+        "rewards": {
+          "end_effector_position_tracking_exp": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:position_command_error_exp",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "end_effector",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "command_name": "ee_pose",
+              "std": 0.31622776601683794
+            },
+            "weight": 4.5
+          },
+          "end_effector_orientation_tracking": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:orientation_command_error",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "end_effector",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "command_name": "ee_pose"
+            },
+            "weight": -4.0
+          },
+          "track_lin_vel_xy_exp": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:track_lin_vel_xy_exp",
+            "params": {
+              "command_name": "base_velocity",
+              "std": 0.5
+            },
+            "weight": 3.5
+          },
+          "track_ang_vel_z_exp": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:track_ang_vel_z_exp",
+            "params": {
+              "command_name": "base_velocity",
+              "std": 0.5
+            },
+            "weight": 2.5
+          },
+          "track_base_height_exp": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:base_height_tracking",
+            "params": {
+              "target_height": 0.28,
+              "std": 0.02
+            },
+            "weight": 0.25
+          },
+          "lin_vel_z_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:lin_vel_z_l2",
+            "params": {},
+            "weight": -2.0
+          },
+          "ang_vel_xy_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:ang_vel_xy_l2",
+            "params": {},
+            "weight": -0.05
+          },
+          "dof_torques_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_torques_l2",
+            "params": {},
+            "weight": -1e-05
+          },
+          "hip_torques_max": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_torques_max",
+            "params": {
+              "joint_names": ".*_hip_joint"
+            },
+            "weight": -8e-05
+          },
+          "thigh_torques_max": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_torques_max",
+            "params": {
+              "joint_names": ".*_thigh_joint"
+            },
+            "weight": -8e-05
+          },
+          "calf_torques_max": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_torques_max",
+            "params": {
+              "joint_names": ".*_calf_joint"
+            },
+            "weight": -2e-05
+          },
+          "dof_acc_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_acc_l2",
+            "params": {},
+            "weight": -2.5e-07
+          },
+          "action_rate_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:action_rate_l2",
+            "params": {},
+            "weight": -0.01
+          },
+          "joint_power": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_power",
+            "params": {},
+            "weight": -2e-05
+          },
+          "feet_slide": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:feet_slide",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -0.1
+          },
+          "hip_deviation": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_deviation_l1",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": [
+                  ".*_hip_joint"
+                ],
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -0.1
+          },
+          "joint_deviation": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_deviation_l1",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": [
+                  ".*_calf_joint",
+                  ".*_thigh_joint"
+                ],
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -0.02
+          },
+          "arm_deviation": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_deviation_l1",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": [
+                  "joint.*"
+                ],
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -0.1
+          },
+          "joint_mirror": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_mirror",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "mirror_joints": [
+                [
+                  "FR.*",
+                  "RL.*"
+                ],
+                [
+                  "FL.*",
+                  "RR.*"
+                ]
+              ]
+            },
+            "weight": -0.15
+          },
+          "feet_air_time": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:feet_air_time",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "command_name": "base_velocity",
+              "threshold": 0.5
+            },
+            "weight": 0.5
+          },
+          "feet_long_air": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:feet_long_air_penalty",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "max_air_time": 1.0
+            },
+            "weight": -1.0
+          },
+          "air_time_variance": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:air_time_variance_penalty",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -1.5
+          },
+          "flat_orientation_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:flat_orientation_l2",
+            "params": {},
+            "weight": -0.5
+          },
+          "dof_pos_limits": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_pos_limits",
+            "params": {},
+            "weight": -1.0
+          }
+        },
+        "terminations": {
+          "time_out": {
+            "func": "isaaclab.envs.mdp.terminations:time_out",
+            "params": {},
+            "time_out": true
+          },
+          "base_contact": {
+            "func": "isaaclab.envs.mdp.terminations:illegal_contact",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "base",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "threshold": 0.5
+            },
+            "time_out": false
+          },
+          "bad_orientation": {
+            "func": "isaaclab.envs.mdp.terminations:bad_orientation",
+            "params": {
+              "limit_angle": 1.0
+            },
+            "time_out": false
+          }
+        },
+        "curriculum": {
+          "lin_vel_cmd_levels": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.curriculums:lin_vel_cmd_levels",
+            "params": {}
+          },
+          "ang_vel_cmd_levels": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.curriculums:ang_vel_cmd_levels",
+            "params": {}
+          },
+          "pos_cmd_levels": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.curriculums:pos_cmd_levels",
+            "params": {}
+          }
+        },
+        "commands": {
+          "ee_pose": {
+            "class_type": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.pose_command_wbc:UniformPoseWBCCommand",
+            "resampling_time_range": [
+              8.0,
+              10.0
+            ],
+            "debug_vis": true,
+            "asset_name": "robot",
+            "body_name": "end_effector",
+            "make_quat_unique": false,
+            "ranges": {
+              "pos_x": [
+                0.4,
+                0.45
+              ],
+              "pos_y": [
+                -0.05,
+                0.05
+              ],
+              "pos_z": [
+                0.5,
+                0.5
+              ],
+              "roll": [
+                -0.0,
+                0.0
+              ],
+              "pitch": [
+                -0.0,
+                -0.0
+              ],
+              "yaw": [
+                -0.0,
+                -0.0
+              ]
+            },
+            "goal_pose_visualizer_cfg": {
+              "prim_path": "/Visuals/Command/goal_pose",
+              "markers": {
+                "frame": {
+                  "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "deformable_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "scale": [
+                    0.1,
+                    0.1,
+                    0.1
+                  ],
+                  "articulation_props": null,
+                  "fixed_tendons_props": null,
+                  "spatial_tendons_props": null,
+                  "joint_drive_props": null,
+                  "visual_material_path": "material",
+                  "visual_material": null,
+                  "usd_path": "/node-assets/Isaac/Props/UIElements/frame_prim.usd",
+                  "variants": null
+                },
+                "connecting_line": {
+                  "func": "isaaclab.sim.spawners.shapes.shapes:spawn_cylinder",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      1.0,
+                      1.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 1.0,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "physics_material_path": "material",
+                  "physics_material": null,
+                  "radius": 0.002,
+                  "height": 1.0,
+                  "axis": "Z"
+                }
+              }
+            },
+            "current_pose_visualizer_cfg": {
+              "prim_path": "/Visuals/Command/body_pose",
+              "markers": {
+                "frame": {
+                  "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "deformable_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "scale": [
+                    0.1,
+                    0.1,
+                    0.1
+                  ],
+                  "articulation_props": null,
+                  "fixed_tendons_props": null,
+                  "spatial_tendons_props": null,
+                  "joint_drive_props": null,
+                  "visual_material_path": "material",
+                  "visual_material": null,
+                  "usd_path": "/node-assets/Isaac/Props/UIElements/frame_prim.usd",
+                  "variants": null
+                },
+                "connecting_line": {
+                  "func": "isaaclab.sim.spawners.shapes.shapes:spawn_cylinder",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      1.0,
+                      1.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 1.0,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "physics_material_path": "material",
+                  "physics_material": null,
+                  "radius": 0.002,
+                  "height": 1.0,
+                  "axis": "Z"
+                }
+              }
+            },
+            "limit_ranges": {
+              "pos_x": [
+                0.45,
+                0.7
+              ],
+              "pos_y": [
+                -0.35,
+                0.35
+              ],
+              "pos_z": [
+                0.1,
+                0.8
+              ],
+              "roll": [
+                -1.0466666666666666,
+                1.0466666666666666
+              ],
+              "pitch": [
+                -0.785,
+                0.785
+              ],
+              "yaw": [
+                -0.5233333333333333,
+                0.5233333333333333
+              ]
+            },
+            "link_name": "link0",
+            "curriculum_enabled": false
+          },
+          "base_velocity": {
+            "class_type": "isaaclab.envs.mdp.commands.velocity_command:UniformVelocityCommand",
+            "resampling_time_range": [
+              10.0,
+              10.0
+            ],
+            "debug_vis": true,
+            "asset_name": "robot",
+            "heading_command": false,
+            "heading_control_stiffness": 1.0,
+            "rel_standing_envs": 0.1,
+            "rel_heading_envs": 1.0,
+            "ranges": {
+              "lin_vel_x": [
+                -0.2,
+                0.2
+              ],
+              "lin_vel_y": [
+                -0.2,
+                0.2
+              ],
+              "ang_vel_z": [
+                -0.2,
+                0.2
+              ],
+              "heading": [
+                -0.0,
+                0.0
+              ]
+            },
+            "goal_vel_visualizer_cfg": {
+              "prim_path": "/Visuals/Command/velocity_goal",
+              "markers": {
+                "arrow": {
+                  "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "deformable_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "scale": [
+                    0.5,
+                    0.5,
+                    0.5
+                  ],
+                  "articulation_props": null,
+                  "fixed_tendons_props": null,
+                  "spatial_tendons_props": null,
+                  "joint_drive_props": null,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "usd_path": "/node-assets/Isaac/Props/UIElements/arrow_x.usd",
+                  "variants": null
+                }
+              }
+            },
+            "current_vel_visualizer_cfg": {
+              "prim_path": "/Visuals/Command/velocity_current",
+              "markers": {
+                "arrow": {
+                  "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "deformable_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "scale": [
+                    0.5,
+                    0.5,
+                    0.5
+                  ],
+                  "articulation_props": null,
+                  "fixed_tendons_props": null,
+                  "spatial_tendons_props": null,
+                  "joint_drive_props": null,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "usd_path": "/node-assets/Isaac/Props/UIElements/arrow_x.usd",
+                  "variants": null
+                }
+              }
+            },
+            "limit_ranges": {
+              "lin_vel_x": [
+                -1.0,
+                1.0
+              ],
+              "lin_vel_y": [
+                -0.6,
+                0.6
+              ],
+              "ang_vel_z": [
+                -1.0,
+                1.0
+              ],
+              "heading": [
+                -0.0,
+                0.0
+              ]
+            },
+            "curriculum_enabled": false
+          }
+        }
+      },
+      "agent": {
+        "seed": 47,
+        "device": "cuda:0",
+        "num_steps_per_env": 24,
+        "max_iterations": 10000,
+        "empirical_normalization": {},
+        "obs_groups": {},
+        "clip_actions": null,
+        "check_for_nan": true,
+        "save_interval": 1000,
+        "experiment_name": "go2_piper_wbc",
+        "run_name": "",
+        "logger": "tensorboard",
+        "neptune_project": "isaaclab",
+        "wandb_project": "isaaclab",
+        "resume": false,
+        "load_run": ".*",
+        "load_checkpoint": "model_.*.pt",
+        "class_name": "OnPolicyRunner",
+        "actor": {
+          "class_name": "MLPModel",
+          "hidden_dims": [
+            512,
+            256,
+            128
+          ],
+          "activation": "elu",
+          "obs_normalization": false,
+          "distribution_cfg": {
+            "class_name": "GaussianDistribution",
+            "init_std": 1.0,
+            "std_type": "log"
+          }
+        },
+        "critic": {
+          "class_name": "MLPModel",
+          "hidden_dims": [
+            512,
+            256,
+            128
+          ],
+          "activation": "elu",
+          "obs_normalization": false,
+          "distribution_cfg": {
+            "class_name": "GaussianDistribution",
+            "init_std": 1.0,
+            "std_type": "log"
+          }
+        },
+        "algorithm": {
+          "class_name": "PPO",
+          "num_learning_epochs": 5,
+          "num_mini_batches": 4,
+          "learning_rate": 0.0005,
+          "schedule": "adaptive",
+          "gamma": 0.99,
+          "lam": 0.95,
+          "entropy_coef": 0.005,
+          "desired_kl": 0.01,
+          "max_grad_norm": 1.0,
+          "optimizer": "adam",
+          "value_loss_coef": 1.0,
+          "use_clipped_value_loss": true,
+          "clip_param": 0.2,
+          "normalize_advantage_per_mini_batch": false,
+          "share_cnn_encoders": false,
+          "rnd_cfg": null,
+          "symmetry_cfg": null
+        },
+        "policy": {}
+      },
+      "mode": "transfer",
+      "branch": "uniform",
+      "student_seed": 47,
+      "target": 10000,
+      "teacher_frozen": true,
+      "transfer_kind": "uniform",
+      "teacher_checkpoint": "/workspace/teachers/fresh.pt",
+      "probability_file": "None",
+      "source_checkpoint": "None",
+      "protocol": {
+        "version": "native-sequence-joint-v1",
+        "settle_seconds": 2.0,
+        "min_scored_steps": 100,
+        "joint_fraction": 0.8,
+        "thresholds": {
+          "velocity_xy_m_s": 0.2,
+          "yaw_rate_rad_s": 0.3,
+          "ee_position_m": 0.05,
+          "ee_orientation_rad": 0.2617993877991494
+        },
+        "rule": "No native failure termination; at least 100 joint-eligible control steps; >=80% simultaneous four-way tolerance compliance AND each eligible RMSE within its tolerance. Timeout alone is insufficient.",
+        "scoring": "Both velocity and EE command ages >=2 seconds; ages restart at every native command resample; terminal transition is included before autoreset.",
+        "scope": "Flat link0 pose; WBC native mixed xy-in-link0/z-in-world pose; native body-frame base velocity. Training reward unchanged."
+      },
+      "binding": {
+        "version": "nsgs-v02-counterfactual-20261106",
+        "config_sha256": "dffce5e8022fd3c08548916469c01fff72dc30435859c3c7fdc45ebf23bd6274",
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "train_pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+        "development_pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+        "command_features_sha256": "f1f45a63129338bffe7caa8be9a55dcd167c4b7b5c4539bf36b128d7f7620955",
+        "dynamic_fields": [
+          "feedback_observed",
+          "valid_error_observed",
+          "strict_success_history",
+          "velocity_rmse_scaled",
+          "yaw_rmse_scaled",
+          "position_rmse_scaled",
+          "orientation_rmse_scaled",
+          "good_fraction_ema",
+          "failure_ema",
+          "feedback_age_scaled",
+          "valid_error_age_scaled",
+          "log_sample_count",
+          "log_complete_count",
+          "log_transition_count",
+          "history_fill"
+        ],
+        "global_fields": [
+          "completed_fraction",
+          "lr_over_1e-3",
+          "action_std",
+          "value_loss",
+          "reward_over_200",
+          "feedback_coverage",
+          "mean_train_good_fraction",
+          "mean_train_failure",
+          "development_score",
+          "development_observed"
+        ],
+        "v02_config_sha256": "a9860a6add08c3662d3e48274f75b1ee8c10d320214163bb4d22453cc264cd67"
+      },
+      "num_envs": 4096,
+      "rollout": 24,
+      "smoke": false
+    },
+    "fresh": {
+      "native_environment": {
+        "viewer": {
+          "eye": [
+            7.5,
+            7.5,
+            7.5
+          ],
+          "lookat": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "cam_prim_path": "/OmniverseKit_Persp",
+          "resolution": [
+            1280,
+            720
+          ],
+          "origin_type": "world",
+          "env_index": 0,
+          "asset_name": null,
+          "body_name": null
+        },
+        "sim": {
+          "physics_prim_path": "/physicsScene",
+          "device": "cuda:0",
+          "dt": 0.005,
+          "render_interval": 4,
+          "gravity": [
+            0.0,
+            0.0,
+            -9.81
+          ],
+          "enable_scene_query_support": false,
+          "use_fabric": true,
+          "physx": {
+            "solver_type": 1,
+            "solve_articulation_contact_last": false,
+            "min_position_iteration_count": 1,
+            "max_position_iteration_count": 255,
+            "min_velocity_iteration_count": 0,
+            "max_velocity_iteration_count": 255,
+            "enable_ccd": false,
+            "enable_stabilization": false,
+            "enable_external_forces_every_iteration": false,
+            "enable_enhanced_determinism": false,
+            "bounce_threshold_velocity": 0.5,
+            "friction_offset_threshold": 0.04,
+            "friction_correlation_distance": 0.025,
+            "gpu_max_rigid_contact_count": 8388608,
+            "gpu_max_rigid_patch_count": 327680,
+            "gpu_found_lost_pairs_capacity": 2097152,
+            "gpu_found_lost_aggregate_pairs_capacity": 33554432,
+            "gpu_total_aggregate_pairs_capacity": 2097152,
+            "gpu_collision_stack_size": 67108864,
+            "gpu_heap_capacity": 67108864,
+            "gpu_temp_buffer_capacity": 16777216,
+            "gpu_max_num_partitions": 8,
+            "gpu_max_soft_body_contacts": 1048576,
+            "gpu_max_particle_contacts": 1048576
+          },
+          "physics_material": {
+            "func": "isaaclab.sim.spawners.materials.physics_materials:spawn_rigid_body_material",
+            "static_friction": 1.0,
+            "dynamic_friction": 1.0,
+            "restitution": 1.0,
+            "friction_combine_mode": "multiply",
+            "restitution_combine_mode": "multiply",
+            "compliant_contact_stiffness": 0.0,
+            "compliant_contact_damping": 0.0
+          },
+          "render": {
+            "enable_translucency": null,
+            "enable_reflections": null,
+            "enable_global_illumination": null,
+            "antialiasing_mode": null,
+            "enable_dlssg": null,
+            "enable_dl_denoiser": null,
+            "dlss_mode": null,
+            "enable_direct_lighting": null,
+            "samples_per_pixel": null,
+            "enable_shadows": null,
+            "enable_ambient_occlusion": null,
+            "dome_light_upper_lower_strategy": null,
+            "carb_settings": null,
+            "rendering_mode": null
+          },
+          "create_stage_in_memory": false,
+          "logging_level": "WARNING",
+          "save_logs_to_file": true,
+          "log_dir": null
+        },
+        "ui_window_class_type": "isaaclab.envs.ui.manager_based_rl_env_window:ManagerBasedRLEnvWindow",
+        "seed": 47,
+        "decimation": 4,
+        "scene": {
+          "num_envs": 4096,
+          "env_spacing": 2.5,
+          "lazy_sensor_update": true,
+          "replicate_physics": true,
+          "filter_collisions": true,
+          "clone_in_fabric": false,
+          "robot": {
+            "class_type": "isaaclab.assets.articulation.articulation:Articulation",
+            "prim_path": "{ENV_REGEX_NS}/Robot",
+            "spawn": {
+              "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+              "visible": true,
+              "semantic_tags": null,
+              "copy_from_source": true,
+              "mass_props": null,
+              "deformable_props": null,
+              "rigid_props": {
+                "rigid_body_enabled": null,
+                "kinematic_enabled": null,
+                "disable_gravity": false,
+                "linear_damping": 0.0,
+                "angular_damping": 0.0,
+                "max_linear_velocity": 1000.0,
+                "max_angular_velocity": 1000.0,
+                "max_depenetration_velocity": 1.0,
+                "max_contact_impulse": null,
+                "enable_gyroscopic_forces": null,
+                "retain_accelerations": false,
+                "solver_position_iteration_count": null,
+                "solver_velocity_iteration_count": null,
+                "sleep_threshold": null,
+                "stabilization_threshold": null
+              },
+              "collision_props": null,
+              "activate_contact_sensors": true,
+              "scale": null,
+              "articulation_props": {
+                "articulation_enabled": null,
+                "enabled_self_collisions": false,
+                "solver_position_iteration_count": 4,
+                "solver_velocity_iteration_count": 0,
+                "sleep_threshold": null,
+                "stabilization_threshold": null,
+                "fix_root_link": null
+              },
+              "fixed_tendons_props": null,
+              "spatial_tendons_props": null,
+              "joint_drive_props": null,
+              "visual_material_path": "material",
+              "visual_material": null,
+              "usd_path": "/native/LeggedManip_Lab/source/LeggedManip_Lab/LeggedManip_Lab/assets/go2_piper/go2_piper.usd",
+              "variants": null
+            },
+            "init_state": {
+              "pos": [
+                0.0,
+                0.0,
+                0.35
+              ],
+              "rot": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "lin_vel": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "ang_vel": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "joint_pos": {
+                "FL_hip_joint": 0.1,
+                "FR_hip_joint": -0.1,
+                "RL_hip_joint": 0.1,
+                "RR_hip_joint": -0.1,
+                "FL_thigh_joint": 0.8,
+                "FR_thigh_joint": 0.8,
+                "RL_thigh_joint": 1.0,
+                "RR_thigh_joint": 1.0,
+                "FL_calf_joint": -1.5,
+                "FR_calf_joint": -1.5,
+                "RL_calf_joint": -1.5,
+                "RR_calf_joint": -1.5,
+                "joint.*": 0.0
+              },
+              "joint_vel": {
+                ".*": 0.0
+              }
+            },
+            "collision_group": 0,
+            "debug_vis": false,
+            "articulation_root_prim_path": null,
+            "soft_joint_pos_limit_factor": 0.9,
+            "actuators": {
+              "base_legs": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  ".*_hip_joint",
+                  ".*_thigh_joint",
+                  ".*_calf_joint"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 30.0,
+                "damping": 0.6,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint1": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint1"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 50.0,
+                "damping": 3.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint2": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint2"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 50.0,
+                "damping": 2.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint3": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint3"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 80.0,
+                "damping": 3.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint4": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint4"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 30.0,
+                "damping": 3.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint5": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint5"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 30.0,
+                "damping": 2.5,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              },
+              "joint6": {
+                "class_type": "isaaclab.actuators.actuator_pd:DelayedPDActuator",
+                "joint_names_expr": [
+                  "joint6"
+                ],
+                "effort_limit": null,
+                "velocity_limit": null,
+                "effort_limit_sim": null,
+                "velocity_limit_sim": null,
+                "stiffness": 20.0,
+                "damping": 1.0,
+                "armature": 0.01,
+                "friction": 0.01,
+                "dynamic_friction": null,
+                "viscous_friction": null,
+                "min_delay": 0,
+                "max_delay": 4
+              }
+            },
+            "actuator_value_resolution_debug_print": false
+          },
+          "terrain": {
+            "class_type": "isaaclab.terrains.terrain_importer:TerrainImporter",
+            "collision_group": -1,
+            "prim_path": "/World/ground",
+            "num_envs": 1,
+            "terrain_type": "plane",
+            "terrain_generator": null,
+            "usd_path": null,
+            "env_spacing": null,
+            "use_terrain_origins": true,
+            "visual_material": {
+              "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_from_mdl_file",
+              "mdl_path": "/node-assets/Isaac/IsaacLab/Materials/TilesMarbleSpiderWhiteBrickBondHoned/TilesMarbleSpiderWhiteBrickBondHoned.mdl",
+              "project_uvw": true,
+              "albedo_brightness": null,
+              "texture_scale": [
+                0.25,
+                0.25
+              ]
+            },
+            "physics_material": {
+              "func": "isaaclab.sim.spawners.materials.physics_materials:spawn_rigid_body_material",
+              "static_friction": 1.0,
+              "dynamic_friction": 1.0,
+              "restitution": 1.0,
+              "friction_combine_mode": "multiply",
+              "restitution_combine_mode": "multiply",
+              "compliant_contact_stiffness": 0.0,
+              "compliant_contact_damping": 0.0
+            },
+            "max_init_terrain_level": null,
+            "debug_vis": false
+          },
+          "contact_forces": {
+            "class_type": "isaaclab.sensors.contact_sensor.contact_sensor:ContactSensor",
+            "prim_path": "{ENV_REGEX_NS}/Robot/.*",
+            "update_period": 0.005,
+            "history_length": 3,
+            "debug_vis": false,
+            "track_pose": false,
+            "track_contact_points": false,
+            "track_friction_forces": false,
+            "max_contact_data_count_per_prim": 4,
+            "track_air_time": true,
+            "force_threshold": 1.0,
+            "filter_prim_paths_expr": [],
+            "visualizer_cfg": {
+              "prim_path": "/Visuals/ContactSensor",
+              "markers": {
+                "contact": {
+                  "func": "isaaclab.sim.spawners.shapes.shapes:spawn_sphere",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "physics_material_path": "material",
+                  "physics_material": null,
+                  "radius": 0.02
+                },
+                "no_contact": {
+                  "func": "isaaclab.sim.spawners.shapes.shapes:spawn_sphere",
+                  "visible": false,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "physics_material_path": "material",
+                  "physics_material": null,
+                  "radius": 0.02
+                }
+              }
+            }
+          },
+          "sky_light": {
+            "class_type": null,
+            "prim_path": "/World/skyLight",
+            "spawn": {
+              "func": "isaaclab.sim.spawners.lights.lights:spawn_light",
+              "visible": true,
+              "semantic_tags": null,
+              "copy_from_source": true,
+              "prim_type": "DomeLight",
+              "color": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "enable_color_temperature": false,
+              "color_temperature": 6500.0,
+              "normalize": false,
+              "exposure": 0.0,
+              "intensity": 750.0,
+              "texture_file": "/node-assets/Isaac/Materials/Textures/Skies/PolyHaven/kloofendal_43d_clear_puresky_4k.hdr",
+              "texture_format": "automatic",
+              "visible_in_primary_ray": true
+            },
+            "init_state": {
+              "pos": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rot": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "collision_group": 0,
+            "debug_vis": false
+          }
+        },
+        "recorders": {
+          "dataset_file_handler_class_type": "isaaclab.utils.datasets.hdf5_dataset_file_handler:HDF5DatasetFileHandler",
+          "dataset_export_dir_path": "/tmp/isaaclab/logs",
+          "dataset_filename": "dataset",
+          "dataset_export_mode": {
+            "_value_": 1,
+            "_name_": "EXPORT_ALL",
+            "_sort_order_": 1
+          },
+          "export_in_record_pre_reset": true,
+          "export_in_close": false
+        },
+        "observations": {
+          "policy": {
+            "concatenate_terms": true,
+            "concatenate_dim": -1,
+            "enable_corruption": true,
+            "history_length": 3,
+            "flatten_history_dim": true,
+            "base_ang_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:base_ang_vel",
+              "params": {},
+              "modifiers": null,
+              "noise": {
+                "func": "isaaclab.utils.noise.noise_model:uniform_noise",
+                "operation": "add",
+                "n_min": -0.2,
+                "n_max": 0.2
+              },
+              "clip": null,
+              "scale": 0.2,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "projected_gravity": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:projected_gravity",
+              "params": {},
+              "modifiers": null,
+              "noise": {
+                "func": "isaaclab.utils.noise.noise_model:uniform_noise",
+                "operation": "add",
+                "n_min": -0.05,
+                "n_max": 0.05
+              },
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_pos": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:joint_pos_rel",
+              "params": {},
+              "modifiers": null,
+              "noise": {
+                "func": "isaaclab.utils.noise.noise_model:uniform_noise",
+                "operation": "add",
+                "n_min": -0.01,
+                "n_max": 0.01
+              },
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:joint_vel_rel",
+              "params": {},
+              "modifiers": null,
+              "noise": {
+                "func": "isaaclab.utils.noise.noise_model:uniform_noise",
+                "operation": "add",
+                "n_min": -1.5,
+                "n_max": 1.5
+              },
+              "clip": null,
+              "scale": 0.05,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "actions": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:last_action",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "velocity_commands": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:generated_commands",
+              "params": {
+                "command_name": "base_velocity"
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "pos_commands": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:generated_commands",
+              "params": {
+                "command_name": "ee_pose"
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            }
+          },
+          "critic": {
+            "concatenate_terms": true,
+            "concatenate_dim": -1,
+            "enable_corruption": false,
+            "history_length": null,
+            "flatten_history_dim": true,
+            "base_lin_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:base_lin_vel",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": 2.0,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "base_ang_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:base_ang_vel",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": 0.2,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "projected_gravity": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:projected_gravity",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "velocity_commands": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:generated_commands",
+              "params": {
+                "command_name": "base_velocity"
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "pos_commands": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:generated_commands",
+              "params": {
+                "command_name": "ee_pose"
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_pos": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:joint_pos_rel",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_vel": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:joint_vel_rel",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": 0.05,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "actions": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:last_action",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "joint_torques": {
+              "func": "isaaclab.envs.mdp.observations:joint_effort",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": [
+                -100.0,
+                100.0
+              ],
+              "scale": 0.1,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "feet_contact": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:contact",
+              "params": {
+                "sensor_cfg": {
+                  "name": "contact_forces",
+                  "joint_names": null,
+                  "joint_ids": "slice(None, None, None)",
+                  "fixed_tendon_names": null,
+                  "fixed_tendon_ids": "slice(None, None, None)",
+                  "body_names": ".*_foot",
+                  "body_ids": "slice(None, None, None)",
+                  "object_collection_names": null,
+                  "object_collection_ids": "slice(None, None, None)",
+                  "preserve_order": false
+                }
+              },
+              "modifiers": null,
+              "noise": null,
+              "clip": [
+                0.0,
+                1.0
+              ],
+              "scale": 0.1,
+              "history_length": 0,
+              "flatten_history_dim": true
+            },
+            "ee_link0_rel_pose": {
+              "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.observations:end_effector_link0_relative_pose",
+              "params": {},
+              "modifiers": null,
+              "noise": null,
+              "clip": null,
+              "scale": null,
+              "history_length": 0,
+              "flatten_history_dim": true
+            }
+          }
+        },
+        "actions": {
+          "joint_pos": {
+            "class_type": "isaaclab.envs.mdp.actions.joint_actions:JointPositionAction",
+            "asset_name": "robot",
+            "debug_vis": false,
+            "clip": {
+              ".*": [
+                -10.0,
+                10.0
+              ]
+            },
+            "joint_names": [
+              "FR_hip_joint",
+              "FR_thigh_joint",
+              "FR_calf_joint",
+              "FL_hip_joint",
+              "FL_thigh_joint",
+              "FL_calf_joint",
+              "RR_hip_joint",
+              "RR_thigh_joint",
+              "RR_calf_joint",
+              "RL_hip_joint",
+              "RL_thigh_joint",
+              "RL_calf_joint",
+              "joint.*"
+            ],
+            "scale": 0.25,
+            "offset": 0.0,
+            "preserve_order": true,
+            "use_default_offset": true
+          }
+        },
+        "events": {
+          "physics_material": {
+            "func": "isaaclab.envs.mdp.events:randomize_rigid_body_material",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "static_friction_range": [
+                0.5,
+                1.2
+              ],
+              "dynamic_friction_range": [
+                0.5,
+                1.2
+              ],
+              "restitution_range": [
+                0.0,
+                0.1
+              ],
+              "num_buckets": 64,
+              "make_consistent": true
+            },
+            "mode": "startup",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "add_mass": {
+            "func": "isaaclab.envs.mdp.events:randomize_rigid_body_mass",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "mass_distribution_params": [
+                0.9,
+                1.1
+              ],
+              "operation": "scale"
+            },
+            "mode": "startup",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "base_com": {
+            "func": "isaaclab.envs.mdp.events:randomize_rigid_body_com",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "base",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "com_range": {
+                "x": [
+                  -0.05,
+                  0.05
+                ],
+                "y": [
+                  -0.05,
+                  0.05
+                ],
+                "z": [
+                  -0.01,
+                  0.01
+                ]
+              }
+            },
+            "mode": "startup",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "randomize_actuator_gains": {
+            "func": "isaaclab.envs.mdp.events:randomize_actuator_gains",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": ".*",
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "stiffness_distribution_params": [
+                0.8,
+                1.2
+              ],
+              "damping_distribution_params": [
+                0.8,
+                1.2
+              ],
+              "operation": "scale"
+            },
+            "mode": "reset",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "randomize_rigid_body_inertia": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.events:randomize_rigid_body_inertia",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "inertia_distribution_params": [
+                0.8,
+                1.2
+              ],
+              "operation": "scale"
+            },
+            "mode": "startup",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "base_external_force_torque": {
+            "func": "isaaclab.envs.mdp.events:apply_external_force_torque",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "base",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "force_range": [
+                0.0,
+                0.0
+              ],
+              "torque_range": [
+                -0.0,
+                0.0
+              ]
+            },
+            "mode": "reset",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "reset_base": {
+            "func": "isaaclab.envs.mdp.events:reset_root_state_uniform",
+            "params": {
+              "pose_range": {
+                "x": [
+                  -0.5,
+                  0.5
+                ],
+                "y": [
+                  -0.5,
+                  0.5
+                ],
+                "yaw": [
+                  -3.14,
+                  3.14
+                ]
+              },
+              "velocity_range": {
+                "x": [
+                  -0.0,
+                  0.0
+                ],
+                "y": [
+                  -0.0,
+                  0.0
+                ],
+                "z": [
+                  -0.0,
+                  0.0
+                ],
+                "yaw": [
+                  -0.0,
+                  0.0
+                ],
+                "pitch": [
+                  -0.0,
+                  0.0
+                ],
+                "roll": [
+                  -0.0,
+                  0.0
+                ]
+              }
+            },
+            "mode": "reset",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "reset_robot_joints": {
+            "func": "isaaclab.envs.mdp.events:reset_joints_by_scale",
+            "params": {
+              "position_range": [
+                0.5,
+                1.5
+              ],
+              "velocity_range": [
+                0.0,
+                0.0
+              ]
+            },
+            "mode": "reset",
+            "interval_range_s": null,
+            "is_global_time": false,
+            "min_step_count_between_reset": 0
+          },
+          "push_robot": null
+        },
+        "rerender_on_reset": false,
+        "num_rerenders_on_reset": 0,
+        "wait_for_textures": true,
+        "xr": null,
+        "teleop_devices": {
+          "devices": {}
+        },
+        "export_io_descriptors": false,
+        "log_dir": "/workspace/runs/transfer-seed47-fresh/policy",
+        "is_finite_horizon": false,
+        "episode_length_s": 20.0,
+        "rewards": {
+          "end_effector_position_tracking_exp": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:position_command_error_exp",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "end_effector",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "command_name": "ee_pose",
+              "std": 0.31622776601683794
+            },
+            "weight": 4.5
+          },
+          "end_effector_orientation_tracking": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:orientation_command_error",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "end_effector",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "command_name": "ee_pose"
+            },
+            "weight": -4.0
+          },
+          "track_lin_vel_xy_exp": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:track_lin_vel_xy_exp",
+            "params": {
+              "command_name": "base_velocity",
+              "std": 0.5
+            },
+            "weight": 3.5
+          },
+          "track_ang_vel_z_exp": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:track_ang_vel_z_exp",
+            "params": {
+              "command_name": "base_velocity",
+              "std": 0.5
+            },
+            "weight": 2.5
+          },
+          "track_base_height_exp": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:base_height_tracking",
+            "params": {
+              "target_height": 0.28,
+              "std": 0.02
+            },
+            "weight": 0.25
+          },
+          "lin_vel_z_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:lin_vel_z_l2",
+            "params": {},
+            "weight": -2.0
+          },
+          "ang_vel_xy_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:ang_vel_xy_l2",
+            "params": {},
+            "weight": -0.05
+          },
+          "dof_torques_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_torques_l2",
+            "params": {},
+            "weight": -1e-05
+          },
+          "hip_torques_max": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_torques_max",
+            "params": {
+              "joint_names": ".*_hip_joint"
+            },
+            "weight": -8e-05
+          },
+          "thigh_torques_max": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_torques_max",
+            "params": {
+              "joint_names": ".*_thigh_joint"
+            },
+            "weight": -8e-05
+          },
+          "calf_torques_max": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_torques_max",
+            "params": {
+              "joint_names": ".*_calf_joint"
+            },
+            "weight": -2e-05
+          },
+          "dof_acc_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_acc_l2",
+            "params": {},
+            "weight": -2.5e-07
+          },
+          "action_rate_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:action_rate_l2",
+            "params": {},
+            "weight": -0.01
+          },
+          "joint_power": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_power",
+            "params": {},
+            "weight": -2e-05
+          },
+          "feet_slide": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:feet_slide",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -0.1
+          },
+          "hip_deviation": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_deviation_l1",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": [
+                  ".*_hip_joint"
+                ],
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -0.1
+          },
+          "joint_deviation": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_deviation_l1",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": [
+                  ".*_calf_joint",
+                  ".*_thigh_joint"
+                ],
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -0.02
+          },
+          "arm_deviation": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_deviation_l1",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": [
+                  "joint.*"
+                ],
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -0.1
+          },
+          "joint_mirror": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_mirror",
+            "params": {
+              "asset_cfg": {
+                "name": "robot",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": null,
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "mirror_joints": [
+                [
+                  "FR.*",
+                  "RL.*"
+                ],
+                [
+                  "FL.*",
+                  "RR.*"
+                ]
+              ]
+            },
+            "weight": -0.15
+          },
+          "feet_air_time": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:feet_air_time",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "command_name": "base_velocity",
+              "threshold": 0.5
+            },
+            "weight": 0.5
+          },
+          "feet_long_air": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:feet_long_air_penalty",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "max_air_time": 1.0
+            },
+            "weight": -1.0
+          },
+          "air_time_variance": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:air_time_variance_penalty",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": ".*_foot",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              }
+            },
+            "weight": -1.5
+          },
+          "flat_orientation_l2": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:flat_orientation_l2",
+            "params": {},
+            "weight": -0.5
+          },
+          "dof_pos_limits": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.rewards:joint_pos_limits",
+            "params": {},
+            "weight": -1.0
+          }
+        },
+        "terminations": {
+          "time_out": {
+            "func": "isaaclab.envs.mdp.terminations:time_out",
+            "params": {},
+            "time_out": true
+          },
+          "base_contact": {
+            "func": "isaaclab.envs.mdp.terminations:illegal_contact",
+            "params": {
+              "sensor_cfg": {
+                "name": "contact_forces",
+                "joint_names": null,
+                "joint_ids": "slice(None, None, None)",
+                "fixed_tendon_names": null,
+                "fixed_tendon_ids": "slice(None, None, None)",
+                "body_names": "base",
+                "body_ids": "slice(None, None, None)",
+                "object_collection_names": null,
+                "object_collection_ids": "slice(None, None, None)",
+                "preserve_order": false
+              },
+              "threshold": 0.5
+            },
+            "time_out": false
+          },
+          "bad_orientation": {
+            "func": "isaaclab.envs.mdp.terminations:bad_orientation",
+            "params": {
+              "limit_angle": 1.0
+            },
+            "time_out": false
+          }
+        },
+        "curriculum": {
+          "lin_vel_cmd_levels": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.curriculums:lin_vel_cmd_levels",
+            "params": {}
+          },
+          "ang_vel_cmd_levels": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.curriculums:ang_vel_cmd_levels",
+            "params": {}
+          },
+          "pos_cmd_levels": {
+            "func": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.curriculums:pos_cmd_levels",
+            "params": {}
+          }
+        },
+        "commands": {
+          "ee_pose": {
+            "class_type": "LeggedManip_Lab.tasks.manager_based.leggedmanip_lab.mdp.pose_command_wbc:UniformPoseWBCCommand",
+            "resampling_time_range": [
+              8.0,
+              10.0
+            ],
+            "debug_vis": true,
+            "asset_name": "robot",
+            "body_name": "end_effector",
+            "make_quat_unique": false,
+            "ranges": {
+              "pos_x": [
+                0.4,
+                0.45
+              ],
+              "pos_y": [
+                -0.05,
+                0.05
+              ],
+              "pos_z": [
+                0.5,
+                0.5
+              ],
+              "roll": [
+                -0.0,
+                0.0
+              ],
+              "pitch": [
+                -0.0,
+                -0.0
+              ],
+              "yaw": [
+                -0.0,
+                -0.0
+              ]
+            },
+            "goal_pose_visualizer_cfg": {
+              "prim_path": "/Visuals/Command/goal_pose",
+              "markers": {
+                "frame": {
+                  "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "deformable_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "scale": [
+                    0.1,
+                    0.1,
+                    0.1
+                  ],
+                  "articulation_props": null,
+                  "fixed_tendons_props": null,
+                  "spatial_tendons_props": null,
+                  "joint_drive_props": null,
+                  "visual_material_path": "material",
+                  "visual_material": null,
+                  "usd_path": "/node-assets/Isaac/Props/UIElements/frame_prim.usd",
+                  "variants": null
+                },
+                "connecting_line": {
+                  "func": "isaaclab.sim.spawners.shapes.shapes:spawn_cylinder",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      1.0,
+                      1.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 1.0,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "physics_material_path": "material",
+                  "physics_material": null,
+                  "radius": 0.002,
+                  "height": 1.0,
+                  "axis": "Z"
+                }
+              }
+            },
+            "current_pose_visualizer_cfg": {
+              "prim_path": "/Visuals/Command/body_pose",
+              "markers": {
+                "frame": {
+                  "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "deformable_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "scale": [
+                    0.1,
+                    0.1,
+                    0.1
+                  ],
+                  "articulation_props": null,
+                  "fixed_tendons_props": null,
+                  "spatial_tendons_props": null,
+                  "joint_drive_props": null,
+                  "visual_material_path": "material",
+                  "visual_material": null,
+                  "usd_path": "/node-assets/Isaac/Props/UIElements/frame_prim.usd",
+                  "variants": null
+                },
+                "connecting_line": {
+                  "func": "isaaclab.sim.spawners.shapes.shapes:spawn_cylinder",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      1.0,
+                      1.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 1.0,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "physics_material_path": "material",
+                  "physics_material": null,
+                  "radius": 0.002,
+                  "height": 1.0,
+                  "axis": "Z"
+                }
+              }
+            },
+            "limit_ranges": {
+              "pos_x": [
+                0.45,
+                0.7
+              ],
+              "pos_y": [
+                -0.35,
+                0.35
+              ],
+              "pos_z": [
+                0.1,
+                0.8
+              ],
+              "roll": [
+                -1.0466666666666666,
+                1.0466666666666666
+              ],
+              "pitch": [
+                -0.785,
+                0.785
+              ],
+              "yaw": [
+                -0.5233333333333333,
+                0.5233333333333333
+              ]
+            },
+            "link_name": "link0",
+            "curriculum_enabled": false
+          },
+          "base_velocity": {
+            "class_type": "isaaclab.envs.mdp.commands.velocity_command:UniformVelocityCommand",
+            "resampling_time_range": [
+              10.0,
+              10.0
+            ],
+            "debug_vis": true,
+            "asset_name": "robot",
+            "heading_command": false,
+            "heading_control_stiffness": 1.0,
+            "rel_standing_envs": 0.1,
+            "rel_heading_envs": 1.0,
+            "ranges": {
+              "lin_vel_x": [
+                -0.2,
+                0.2
+              ],
+              "lin_vel_y": [
+                -0.2,
+                0.2
+              ],
+              "ang_vel_z": [
+                -0.2,
+                0.2
+              ],
+              "heading": [
+                -0.0,
+                0.0
+              ]
+            },
+            "goal_vel_visualizer_cfg": {
+              "prim_path": "/Visuals/Command/velocity_goal",
+              "markers": {
+                "arrow": {
+                  "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "deformable_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "scale": [
+                    0.5,
+                    0.5,
+                    0.5
+                  ],
+                  "articulation_props": null,
+                  "fixed_tendons_props": null,
+                  "spatial_tendons_props": null,
+                  "joint_drive_props": null,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "usd_path": "/node-assets/Isaac/Props/UIElements/arrow_x.usd",
+                  "variants": null
+                }
+              }
+            },
+            "current_vel_visualizer_cfg": {
+              "prim_path": "/Visuals/Command/velocity_current",
+              "markers": {
+                "arrow": {
+                  "func": "isaaclab.sim.spawners.from_files.from_files:spawn_from_usd",
+                  "visible": true,
+                  "semantic_tags": null,
+                  "copy_from_source": true,
+                  "mass_props": null,
+                  "deformable_props": null,
+                  "rigid_props": null,
+                  "collision_props": null,
+                  "activate_contact_sensors": false,
+                  "scale": [
+                    0.5,
+                    0.5,
+                    0.5
+                  ],
+                  "articulation_props": null,
+                  "fixed_tendons_props": null,
+                  "spatial_tendons_props": null,
+                  "joint_drive_props": null,
+                  "visual_material_path": "material",
+                  "visual_material": {
+                    "func": "isaaclab.sim.spawners.materials.visual_materials:spawn_preview_surface",
+                    "diffuse_color": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "emissive_color": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "opacity": 1.0
+                  },
+                  "usd_path": "/node-assets/Isaac/Props/UIElements/arrow_x.usd",
+                  "variants": null
+                }
+              }
+            },
+            "limit_ranges": {
+              "lin_vel_x": [
+                -1.0,
+                1.0
+              ],
+              "lin_vel_y": [
+                -0.6,
+                0.6
+              ],
+              "ang_vel_z": [
+                -1.0,
+                1.0
+              ],
+              "heading": [
+                -0.0,
+                0.0
+              ]
+            },
+            "curriculum_enabled": false
+          }
+        }
+      },
+      "agent": {
+        "seed": 47,
+        "device": "cuda:0",
+        "num_steps_per_env": 24,
+        "max_iterations": 10000,
+        "empirical_normalization": {},
+        "obs_groups": {},
+        "clip_actions": null,
+        "check_for_nan": true,
+        "save_interval": 1000,
+        "experiment_name": "go2_piper_wbc",
+        "run_name": "",
+        "logger": "tensorboard",
+        "neptune_project": "isaaclab",
+        "wandb_project": "isaaclab",
+        "resume": false,
+        "load_run": ".*",
+        "load_checkpoint": "model_.*.pt",
+        "class_name": "OnPolicyRunner",
+        "actor": {
+          "class_name": "MLPModel",
+          "hidden_dims": [
+            512,
+            256,
+            128
+          ],
+          "activation": "elu",
+          "obs_normalization": false,
+          "distribution_cfg": {
+            "class_name": "GaussianDistribution",
+            "init_std": 1.0,
+            "std_type": "log"
+          }
+        },
+        "critic": {
+          "class_name": "MLPModel",
+          "hidden_dims": [
+            512,
+            256,
+            128
+          ],
+          "activation": "elu",
+          "obs_normalization": false,
+          "distribution_cfg": {
+            "class_name": "GaussianDistribution",
+            "init_std": 1.0,
+            "std_type": "log"
+          }
+        },
+        "algorithm": {
+          "class_name": "PPO",
+          "num_learning_epochs": 5,
+          "num_mini_batches": 4,
+          "learning_rate": 0.0005,
+          "schedule": "adaptive",
+          "gamma": 0.99,
+          "lam": 0.95,
+          "entropy_coef": 0.005,
+          "desired_kl": 0.01,
+          "max_grad_norm": 1.0,
+          "optimizer": "adam",
+          "value_loss_coef": 1.0,
+          "use_clipped_value_loss": true,
+          "clip_param": 0.2,
+          "normalize_advantage_per_mini_batch": false,
+          "share_cnn_encoders": false,
+          "rnd_cfg": null,
+          "symmetry_cfg": null
+        },
+        "policy": {}
+      },
+      "mode": "transfer",
+      "branch": "uniform",
+      "student_seed": 47,
+      "target": 10000,
+      "teacher_frozen": true,
+      "transfer_kind": "fresh",
+      "teacher_checkpoint": "/workspace/teachers/fresh.pt",
+      "probability_file": "None",
+      "source_checkpoint": "None",
+      "protocol": {
+        "version": "native-sequence-joint-v1",
+        "settle_seconds": 2.0,
+        "min_scored_steps": 100,
+        "joint_fraction": 0.8,
+        "thresholds": {
+          "velocity_xy_m_s": 0.2,
+          "yaw_rate_rad_s": 0.3,
+          "ee_position_m": 0.05,
+          "ee_orientation_rad": 0.2617993877991494
+        },
+        "rule": "No native failure termination; at least 100 joint-eligible control steps; >=80% simultaneous four-way tolerance compliance AND each eligible RMSE within its tolerance. Timeout alone is insufficient.",
+        "scoring": "Both velocity and EE command ages >=2 seconds; ages restart at every native command resample; terminal transition is included before autoreset.",
+        "scope": "Flat link0 pose; WBC native mixed xy-in-link0/z-in-world pose; native body-frame base velocity. Training reward unchanged."
+      },
+      "binding": {
+        "version": "nsgs-v02-counterfactual-20261106",
+        "config_sha256": "dffce5e8022fd3c08548916469c01fff72dc30435859c3c7fdc45ebf23bd6274",
+        "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+        "train_pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+        "development_pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+        "command_features_sha256": "f1f45a63129338bffe7caa8be9a55dcd167c4b7b5c4539bf36b128d7f7620955",
+        "dynamic_fields": [
+          "feedback_observed",
+          "valid_error_observed",
+          "strict_success_history",
+          "velocity_rmse_scaled",
+          "yaw_rmse_scaled",
+          "position_rmse_scaled",
+          "orientation_rmse_scaled",
+          "good_fraction_ema",
+          "failure_ema",
+          "feedback_age_scaled",
+          "valid_error_age_scaled",
+          "log_sample_count",
+          "log_complete_count",
+          "log_transition_count",
+          "history_fill"
+        ],
+        "global_fields": [
+          "completed_fraction",
+          "lr_over_1e-3",
+          "action_std",
+          "value_loss",
+          "reward_over_200",
+          "feedback_coverage",
+          "mean_train_good_fraction",
+          "mean_train_failure",
+          "development_score",
+          "development_observed"
+        ],
+        "v02_config_sha256": "a9860a6add08c3662d3e48274f75b1ee8c10d320214163bb4d22453cc264cd67"
+      },
+      "num_envs": 4096,
+      "rollout": 24,
+      "smoke": false
+    }
+  },
+  "reuse_authorization": "Current user requested an additional CleanMeta8 Student on a seed with existing Uniform/Fresh; seed47 selected because both are complete. Historical cancellation markers retained; no old job resumed."
+}

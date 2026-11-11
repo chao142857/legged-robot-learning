@@ -1,0 +1,233 @@
+{
+  "time_utc": "2026-11-10T15:23:28.337159+00:00",
+  "status": {
+    "phase": "resuming_CleanMeta8",
+    "student_seed": 47,
+    "resume_update": 400,
+    "target": 10000,
+    "unix": 1794300480.1253717,
+    "teacher_frozen": true,
+    "remaining_updates": 9600
+  },
+  "latest": {
+    "completed_updates": 9944,
+    "optimizer_calls": 198880,
+    "environment_transitions": 977534976,
+    "new_updates": 9944,
+    "new_environment_transitions": 977534976,
+    "unix": 1794324206.869841,
+    "branch": "clean-meta8",
+    "mode": "transfer",
+    "teacher_version": 100,
+    "mean_training_reward": 162.46012283325194,
+    "losses": {
+      "value": 0.04401095174252987,
+      "surrogate": -0.006253809558984358,
+      "entropy": 10.732408332824708
+    },
+    "learning_rate": 5.062500000000002e-05,
+    "action_std": 0.4503368139266968,
+    "native_feedback_episodes": 1213706
+  },
+  "tests": [
+    {
+      "update": 1000,
+      "joint_success_rate": 0.01171875,
+      "continuous_joint_score": 0.14418816385183983,
+      "pooled_rmse": {
+        "velocity_m_s": 0.13500902919574403,
+        "yaw_rad_s": 0.136013005014391,
+        "ee_position_m": 0.09981084121459104,
+        "ee_orientation_rad": 0.1131403971699079
+      },
+      "native_failure_rate": 0.0048828125
+    },
+    {
+      "update": 2000,
+      "joint_success_rate": 0.078125,
+      "continuous_joint_score": 0.36082282675828603,
+      "pooled_rmse": {
+        "velocity_m_s": 0.09511405276358145,
+        "yaw_rad_s": 0.1214402991747131,
+        "ee_position_m": 0.06999898393935663,
+        "ee_orientation_rad": 0.09448177332716444
+      },
+      "native_failure_rate": 0.00390625
+    },
+    {
+      "update": 3000,
+      "joint_success_rate": 0.197265625,
+      "continuous_joint_score": 0.48682604939825175,
+      "pooled_rmse": {
+        "velocity_m_s": 0.08181163132499682,
+        "yaw_rad_s": 0.11618960514953781,
+        "ee_position_m": 0.061210642681433385,
+        "ee_orientation_rad": 0.07686784399260135
+      },
+      "native_failure_rate": 0.00390625
+    },
+    {
+      "update": 4000,
+      "joint_success_rate": 0.2392578125,
+      "continuous_joint_score": 0.5390953293430266,
+      "pooled_rmse": {
+        "velocity_m_s": 0.07863996871170763,
+        "yaw_rad_s": 0.11537806064955639,
+        "ee_position_m": 0.05761331712527053,
+        "ee_orientation_rad": 0.07190548581275044
+      },
+      "native_failure_rate": 0.0029296875
+    },
+    {
+      "update": 5000,
+      "joint_success_rate": 0.1923828125,
+      "continuous_joint_score": 0.4834570252671364,
+      "pooled_rmse": {
+        "velocity_m_s": 0.07944734012567639,
+        "yaw_rad_s": 0.1131506579292878,
+        "ee_position_m": 0.060764770779668756,
+        "ee_orientation_rad": 0.06661500864126366
+      },
+      "native_failure_rate": 0.005859375
+    },
+    {
+      "update": 6000,
+      "joint_success_rate": 0.3017578125,
+      "continuous_joint_score": 0.5873451142706507,
+      "pooled_rmse": {
+        "velocity_m_s": 0.08087246916285315,
+        "yaw_rad_s": 0.11102483635109708,
+        "ee_position_m": 0.05477418983011575,
+        "ee_orientation_rad": 0.06386130889413377
+      },
+      "native_failure_rate": 0.0029296875
+    },
+    {
+      "update": 7000,
+      "joint_success_rate": 0.2939453125,
+      "continuous_joint_score": 0.5710799212325719,
+      "pooled_rmse": {
+        "velocity_m_s": 0.07673015878156106,
+        "yaw_rad_s": 0.10918197950344005,
+        "ee_position_m": 0.0559196604043378,
+        "ee_orientation_rad": 0.06123667980160742
+      },
+      "native_failure_rate": 0.0068359375
+    },
+    {
+      "update": 8000,
+      "joint_success_rate": 0.2958984375,
+      "continuous_joint_score": 0.5848798449476031,
+      "pooled_rmse": {
+        "velocity_m_s": 0.07672111072384484,
+        "yaw_rad_s": 0.11021135899366026,
+        "ee_position_m": 0.054007512211257144,
+        "ee_orientation_rad": 0.06171049882513977
+      },
+      "native_failure_rate": 0.0029296875
+    },
+    {
+      "update": 9000,
+      "joint_success_rate": 0.2900390625,
+      "continuous_joint_score": 0.5825368301412452,
+      "pooled_rmse": {
+        "velocity_m_s": 0.07269099793122329,
+        "yaw_rad_s": 0.10877789394758886,
+        "ee_position_m": 0.05405838054596914,
+        "ee_orientation_rad": 0.05419278453958348
+      },
+      "native_failure_rate": 0.00390625
+    }
+  ],
+  "faults": [],
+  "baseline_curves": {
+    "uniform": [
+      {
+        "update": 1000,
+        "joint_success_rate": 0.00390625
+      },
+      {
+        "update": 2000,
+        "joint_success_rate": 0.056640625
+      },
+      {
+        "update": 3000,
+        "joint_success_rate": 0.1279296875
+      },
+      {
+        "update": 4000,
+        "joint_success_rate": 0.1591796875
+      },
+      {
+        "update": 5000,
+        "joint_success_rate": 0.2275390625
+      },
+      {
+        "update": 6000,
+        "joint_success_rate": 0.21484375
+      },
+      {
+        "update": 7000,
+        "joint_success_rate": 0.220703125
+      },
+      {
+        "update": 8000,
+        "joint_success_rate": 0.2607421875
+      },
+      {
+        "update": 9000,
+        "joint_success_rate": 0.3046875
+      },
+      {
+        "update": 10000,
+        "joint_success_rate": 0.29296875
+      }
+    ],
+    "fresh": [
+      {
+        "update": 1000,
+        "joint_success_rate": 0.0048828125
+      },
+      {
+        "update": 2000,
+        "joint_success_rate": 0.0771484375
+      },
+      {
+        "update": 3000,
+        "joint_success_rate": 0.1591796875
+      },
+      {
+        "update": 4000,
+        "joint_success_rate": 0.2841796875
+      },
+      {
+        "update": 5000,
+        "joint_success_rate": 0.1640625
+      },
+      {
+        "update": 6000,
+        "joint_success_rate": 0.3310546875
+      },
+      {
+        "update": 7000,
+        "joint_success_rate": 0.31640625
+      },
+      {
+        "update": 8000,
+        "joint_success_rate": 0.2978515625
+      },
+      {
+        "update": 9000,
+        "joint_success_rate": 0.33984375
+      },
+      {
+        "update": 10000,
+        "joint_success_rate": 0.3154296875
+      }
+    ]
+  },
+  "last_committed_update": 9900,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU, 4603 MiB, 64 %, 52",
+  "tmux_alive": true,
+  "log_tail": "r-seed47-clean-meta8-resume00400-09300-development\nNSGS_JOB_END eval-transfer-seed47-clean-meta8-resume00400-09300-development exit=0\nNSGS_JOB_START eval-transfer-seed47-clean-meta8-resume00400-09400-development\nNSGS_JOB_END eval-transfer-seed47-clean-meta8-resume00400-09400-development exit=0\nNSGS_JOB_START eval-transfer-seed47-clean-meta8-resume00400-09500-development\nNSGS_JOB_END eval-transfer-seed47-clean-meta8-resume00400-09500-development exit=0\nNSGS_JOB_START eval-transfer-seed47-clean-meta8-resume00400-09600-development\nNSGS_JOB_END eval-transfer-seed47-clean-meta8-resume00400-09600-development exit=0\nNSGS_JOB_START eval-transfer-seed47-clean-meta8-resume00400-09700-development\nNSGS_JOB_END eval-transfer-seed47-clean-meta8-resume00400-09700-development exit=0\nNSGS_JOB_START eval-transfer-seed47-clean-meta8-resume00400-09800-development\nNSGS_JOB_END eval-transfer-seed47-clean-meta8-resume00400-09800-development exit=0\nNSGS_JOB_START eval-transfer-seed47-clean-meta8-resume00400-09900-development\nNSGS_JOB_END eval-transfer-seed47-clean-meta8-resume00400-09900-development exit=0\n"
+}

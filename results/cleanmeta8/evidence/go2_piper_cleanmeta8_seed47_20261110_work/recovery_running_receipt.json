@@ -1,0 +1,73 @@
+{
+  "status": {
+    "phase": "resuming_CleanMeta8",
+    "student_seed": 47,
+    "resume_update": 400,
+    "target": 10000,
+    "unix": 1794300480.1253717,
+    "teacher_frozen": true,
+    "remaining_updates": 9600
+  },
+  "latest": {
+    "completed_updates": 448,
+    "optimizer_calls": 8960,
+    "environment_transitions": 44040192,
+    "new_updates": 448,
+    "new_environment_transitions": 44040192,
+    "unix": 1794300600.9081607,
+    "branch": "clean-meta8",
+    "mode": "transfer",
+    "teacher_version": 5,
+    "mean_training_reward": 85.138914437294,
+    "losses": {
+      "value": 0.11008455380797386,
+      "surrogate": -0.005345975034288131,
+      "entropy": 15.014978075027466
+    },
+    "learning_rate": 0.00022222222222222218,
+    "action_std": 0.5704406499862671,
+    "native_feedback_episodes": 276985
+  },
+  "restore": {
+    "passed": true,
+    "completed_updates": 400,
+    "source_checkpoint_sha256": "95397366fddac3775aba3dcebff2fbfef031026c433fc23a2949530d989a5c2d",
+    "actor_sha256": "d60dc6faf556c2b1fe1a1a34cb2f9542f17545e8da7be013db435d3a67a2c4c6",
+    "critic_sha256": "fc462a1f69db8f1ed9b6303dc0061b073f033170b6ef8600f83e9265ae84c03a",
+    "optimizer_sha256": "6190655b16d5e9bd9ee843b5db5782f040d03f7372b46ce2479c54c0a3963a3a",
+    "global_rng_sha256": "6afca6698ff6511f471d68a5172b20e889bee1f278fed14d03592a61f968ca01",
+    "adapter_restored_sha256": "ce6eb7cc5ebadad60a46b6735f30b15f156662c16516706d3305d810c369730b",
+    "next_4096_sampler_draws_equal": true,
+    "first_action_sha256": "647843a802d7288d607f6186249d5e59eb76c515f18d520f97672760bb5fadf6",
+    "first_rollout_signatures": [
+      "c089f9032ee3c910c4a35f39f499b9e6eeee7bd0926830f13849e64e4ff522ce",
+      "b5b27f6167369fc35bb40e5bd2bb21aaa507cdf4a42df67521e4973e66ca9b61",
+      "f24a1c08c9eadce155a633e6d81df40656fab092bf0058511a17d4756b249878",
+      "bf25def099d722d7418a5afac964234f8eaec795de4bb538e447470bcc8938ee",
+      "5500c2b1836ba892f3352471f55a8c88ce72afc6634efdda0242bb44cb81e65e",
+      "bc10937b7dbbc144e83b1170e408cd7896d254746ae5c86bd7aacf6587a47174",
+      "4a718910c92e36ecc48181c5a5a58650519e50c215a26139eb198bd8b80afcff",
+      "49431cde4492c4a880c65b680e948f94dcfccf1675461de2cfe60d262531194a",
+      "63f7dd8cdb1db9bf72db8bbf94a9b9a065a4dd5fb5e14046e697b337fdd90eed",
+      "775ce8f891e8fbf61dc2fbba1cae6b0ad6373b00d4cea874589af93b6f6bb81b",
+      "aa75299801562134b70792db1f2ab447abbada4dac4f75a8b69f78bd5d708b43",
+      "60e8119203eaa28007a393a7ff1826ce944a32f8d35c191787a78106defedfd3",
+      "38910700327405d61d6426cae0a57263598b1100befa2645a2583e8fa29c585a",
+      "791bf41937dfeeb04e4016c0c5f9c0ea9b7995bca1625124fb3dd1e17fb2b51b",
+      "218df8d8175ecf7bc90e561a49d7511fd531fea35d1ea1843885a808f32c9c87",
+      "715533927f8e03c10cf2cd70cbe56aed79286d4c12e5997df6126375cdf3b3fe",
+      "41af3f60cb24be7bdb992f232d52409ffcf079839906f0830589ed874aea4ad4",
+      "c700d40156a4f942077eab63a7c41f3a8cc56f4461a24fd429697604879f049b",
+      "c2e015047673b709e27fd56cca4568656d541628e2831d47886108af68667feb",
+      "35a26a1eca63281fe00dc818222759b96e8ea14a7058650df83e1e25f34d99ca",
+      "24b8e2cc8d4d4404922fe636d89648277fcf6577e70c08aaf25e5ba259a5cd39",
+      "d18047c6301b1358f096c47029ac65b19cd24340d2f4c85b5fcec3f51add4286",
+      "086d0f0d2376cf9f5d061be8ff6d937876031d67d906a918f95839be71de4fcb",
+      "23b4d57e0ae36b07e9e9caf75cc654da5ec08355ef56422d8fffa772135a4d49"
+    ]
+  },
+  "tmux_alive": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU, 4658 MiB, 89 %",
+  "log": "NSGS_JOB_START cpu-resume-integrity\nNSGS_JOB_END cpu-resume-integrity exit=0\nNSGS_JOB_START eval-recovery-checkpoint00400-development\nNSGS_JOB_END eval-recovery-checkpoint00400-development exit=0\nNSGS_JOB_START transfer-seed47-clean-meta8-resume00400\n",
+  "student_log_tail": ": 0.222s \n                        Mean value loss: 0.1101\n                    Mean surrogate loss: -0.0053\n                      Mean entropy loss: 15.0150\n                            Mean reward: 85.14\n                    Mean episode length: 956.59\n                        Mean action std: 0.57\nEpisode_Reward/end_effector_position_tracking_exp: 1.0355\nEpisode_Reward/end_effector_orientation_tracking: -0.5847\n    Episode_Reward/track_lin_vel_xy_exp: 2.9356\n     Episode_Reward/track_ang_vel_z_exp: 1.9103\n   Episode_Reward/track_base_height_exp: 0.1510\n            Episode_Reward/lin_vel_z_l2: -0.0316\n           Episode_Reward/ang_vel_xy_l2: -0.0438\n          Episode_Reward/dof_torques_l2: -0.0147\n         Episode_Reward/hip_torques_max: -0.0106\n       Episode_Reward/thigh_torques_max: -0.0085\n        Episode_Reward/calf_torques_max: -0.0071\n              Episode_Reward/dof_acc_l2: -0.2110\n          Episode_Reward/action_rate_l2: -0.1770\n             Episode_Reward/joint_power: -0.0040\n              Episode_Reward/feet_slide: -0.1811\n           Episode_Reward/hip_deviation: -0.0455\n         Episode_Reward/joint_deviation: -0.0327\n           Episode_Reward/arm_deviation: -0.2462\n            Episode_Reward/joint_mirror: -0.0420\n           Episode_Reward/feet_air_time: -0.0583\n           Episode_Reward/feet_long_air: -0.0001\n       Episode_Reward/air_time_variance: -0.0286\n     Episode_Reward/flat_orientation_l2: -0.0035\n          Episode_Reward/dof_pos_limits: -0.0051\n          Curriculum/lin_vel_cmd_levels: -1.0000\n          Curriculum/ang_vel_cmd_levels: -1.0000\n              Curriculum/pos_cmd_levels: -1.0000\n         Metrics/ee_pose/position_error: 0.4279\n      Metrics/ee_pose/orientation_error: 0.1493\n     Metrics/base_velocity/error_vel_xy: 0.3307\n    Metrics/base_velocity/error_vel_yaw: 0.4228\n           Episode_Termination/time_out: 0.9691\n       Episode_Termination/base_contact: 0.0120\n    Episode_Termination/bad_orientation: 0.0189\n--------------------------------------------------------------------------------\n                         Iteration time: 1.71s\n                           Time elapsed: 00:13:38\n                                    ETA: 21:14:41\n\n"
+}

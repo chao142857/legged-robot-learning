@@ -1,4 +1,4 @@
-Legged Robot Learning
+nSGS (formerly Legged Robot Learning)
 Copyright (c) 2026 chao142857.
 
 Original research implementations, experiment protocols and results are distributed
@@ -18,4 +18,4 @@ of the underlying SGS method. No paper text or figures are redistributed.
 
 Publication adaptations: historical machine paths replaced by explicit external
 inputs; asset loading made opt-in; new launchers and documentation added.
-Original-to-publication SHA256 mapping is recorded in provenance/files.json.
+Migration source hashes are recorded in docs/source-map.json; historical mappings remain in archived commits.

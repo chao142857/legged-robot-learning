@@ -1,0 +1,128 @@
+{
+  "seed": 42,
+  "source": "/data/go2_piper_sgs_20261102/runs/formal-wbc-uniform",
+  "completed_updates": 10000,
+  "environment_transitions": 983040000,
+  "final_checkpoint_sha256": "c9a802431e444463570589bbda39e3cd4f34af378cc406456912883f8ed78395",
+  "transfer_initialization": {
+    "actor_sha256": "f755363169762f3de318d06fdc46933663702f3f865f72fdb67a01a62288ce4c",
+    "critic_sha256": "cdece4b496bc1e88be4cfba1e456cb02f01007b400c4f99bd331d06c459e8acc",
+    "optimizer_empty": true,
+    "seed": 42,
+    "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+    "initial_sampler_uniform": true
+  },
+  "points": [
+    {
+      "update": 1000,
+      "rate": 0.0107421875,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "8c9d88b6dc0ee3b3f3dc3b093599c4a82b6b4d4f9234c97497d2e43385026f2c",
+      "joint_success_rate": 0.0107421875
+    },
+    {
+      "update": 2000,
+      "rate": 0.08984375,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "6c579ac2faebedb69abae842c5a97b5fc269e0f37d8c7585b3b04b1e0dae9a94",
+      "joint_success_rate": 0.08984375
+    },
+    {
+      "update": 3000,
+      "rate": 0.181640625,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "043b177e27e84c7e9ec56e6b70c7d50d26e188d79b309f62e6f09bc6f327d202",
+      "joint_success_rate": 0.181640625
+    },
+    {
+      "update": 4000,
+      "rate": 0.2119140625,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "0941554b16a0ab24e490ae6951d5500ab3b9a9d43d830aaaaf2a4dc13ff51b14",
+      "joint_success_rate": 0.2119140625
+    },
+    {
+      "update": 5000,
+      "rate": 0.298828125,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "79822a6f403089c9b110b84cf7b5507f113a7efb4014189b3770b375827dfde6",
+      "joint_success_rate": 0.298828125
+    },
+    {
+      "update": 6000,
+      "rate": 0.25390625,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "accd492d7267e093096b4266a049bbd96aab61319c0217611b285a61c3569278",
+      "joint_success_rate": 0.25390625
+    },
+    {
+      "update": 7000,
+      "rate": 0.419921875,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "3050fc29cb0fb95261b8125722b6a866f3a707ac9ed051055cb2793b8a684ecc",
+      "joint_success_rate": 0.419921875
+    },
+    {
+      "update": 8000,
+      "rate": 0.2509765625,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "ae7bfc0706e5a8f6050a7dc29dd79e857e6b712d2bb27fb56511c792b6af2c63",
+      "joint_success_rate": 0.2509765625
+    },
+    {
+      "update": 9000,
+      "rate": 0.3603515625,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "7b1720e5698b3a28389a9b3f5e26e9a73c79c04c2f7e7d3926079c5e0bdce48e",
+      "joint_success_rate": 0.3603515625
+    },
+    {
+      "update": 10000,
+      "rate": 0.365234375,
+      "passed": true,
+      "episodes": 1024,
+      "pool": "d48b5850285e26b9cec447a0bb4bd6c84493afec5efa0c7725ddcbacbd714afa",
+      "protocol": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "seed": 922042,
+      "checkpoint_sha256": "ea46e65ce620c07136d73b470c8bfe9806b5f816ac8f53d4c6f5f27c1a9e771d",
+      "joint_success_rate": 0.365234375
+    }
+  ],
+  "audit": "Direct read-only YangLab verification: baseline native environment and PPO match the seed47 Uniform transfer except seed and output path. All ten legacy evaluation hashes and rates match the local series."
+}
