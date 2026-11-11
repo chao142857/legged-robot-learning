@@ -1,0 +1,74 @@
+{
+  "completed_utc": "2026-11-03T17:58:44.549973+00:00",
+  "decision": "NO-GO",
+  "formal_PPO_updates": 0,
+  "formal_PPO_started": false,
+  "conditional_training_permission_recorded": true,
+  "new_large_frozen_evaluation_executed": false,
+  "supplement_proposal_executed": false,
+  "extra_structure_trace_transitions": 48000,
+  "unit_tests_passed": 22,
+  "production_mapping_tests_passed": 4,
+  "baseline_15k_checkpoints_unchanged": [
+    {
+      "run": "flat-uniform",
+      "checkpoint_sha256": "ef56f18c21a198b307c5a17e43c9ebc201ef26a9b3b2d2794068e5b30114422b",
+      "unchanged": true
+    },
+    {
+      "run": "flat-sgs",
+      "checkpoint_sha256": "ca502a6ea9ce5fcfee4a86253df1617f402910e10654923d177d9716dd8ad6ba",
+      "unchanged": true
+    },
+    {
+      "run": "flat-sgs-e1",
+      "checkpoint_sha256": "6b6fc7021192a18adafda3ddb051523051a2fb85299bff3fe8fc722212a03a65",
+      "unchanged": true
+    },
+    {
+      "run": "wbc-uniform",
+      "checkpoint_sha256": "99374718e8bf94865732b20f716142df411e54a46414d0bb2b8da6f0c9399db9",
+      "unchanged": true
+    },
+    {
+      "run": "wbc-sgs",
+      "checkpoint_sha256": "a3c0cd9232a77390b7616d6001bbc4efe9e06cfbefddbabe504278cd7e04e086",
+      "unchanged": true
+    },
+    {
+      "run": "wbc-sgs-e1",
+      "checkpoint_sha256": "6ba8e218581b4524934da255fbc7a5bfb4023cbad1cafdb35826a5e95205aac1",
+      "unchanged": true
+    }
+  ],
+  "download_payload_members_verified": 48,
+  "mapping_size": "32768 -> 4096 x 8",
+  "random_mapping_seeds": [
+    20261104,
+    20261105,
+    20261106
+  ],
+  "primary_random_seed": 20261104,
+  "command_seed": 20261104,
+  "core_commit": "bc28815584adfe05c680908557a6f810ac4b351b",
+  "delivery_source_commit": "542b9e41668003822f0ea094aa57d0400d5020e9",
+  "source_bundle": "E2_grouped_sgs_source.bundle",
+  "pdf": {
+    "pages": 12,
+    "all_pages_visually_reviewed": true,
+    "text_and_footer_validation": true,
+    "sha256": "a31e0f536356356d95ba6b56b78b26a063654b100e160f6e81f3df400b69cc84"
+  },
+  "remote_root": "/data/go2_piper_sgs_e2_20261104",
+  "remote_tmux": "go2-sgs-e2",
+  "limitations": [
+    "No cluster-complete fixed-policy groups available in existing panels.",
+    "No 4096-environment grouped PPO smoke test or formal training was run.",
+    "Mixed-policy nonuniform feedback is not fixed-policy difficulty."
+  ],
+  "optional_remote_delivery_archive": {
+    "status": "not_uploaded_auto_review_rejected",
+    "reason": "Specific upload of private derived report/source artifacts was rejected for lacking separate upload authorization.",
+    "safe_alternative": "Complete local delivery; remote original results remain unchanged."
+  }
+}

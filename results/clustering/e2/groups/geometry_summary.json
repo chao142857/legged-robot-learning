@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "mapping": "random_20261104",
+      "pairs": 114688,
+      "mean_feature_distance": 1.3175208278095982,
+      "median_feature_distance": 1.3277413845062256,
+      "p95_feature_distance": 1.6508107781410215,
+      "mean_reference_SO3_geodesic_deg": 65.89050588841765,
+      "mean_normalized_position_abs_difference": 0.33338199437449856
+    },
+    {
+      "mapping": "random_20261105",
+      "pairs": 114688,
+      "mean_feature_distance": 1.3156363731543803,
+      "median_feature_distance": 1.3256896138191223,
+      "p95_feature_distance": 1.650289636850357,
+      "mean_reference_SO3_geodesic_deg": 65.95087773682904,
+      "mean_normalized_position_abs_difference": 0.3332943675840701
+    },
+    {
+      "mapping": "random_20261106",
+      "pairs": 114688,
+      "mean_feature_distance": 1.31714773380736,
+      "median_feature_distance": 1.327480971813202,
+      "p95_feature_distance": 1.6505522668361663,
+      "mean_reference_SO3_geodesic_deg": 65.97489189526125,
+      "mean_normalized_position_abs_difference": 0.33378505965365984
+    },
+    {
+      "mapping": "command",
+      "pairs": 114688,
+      "mean_feature_distance": 0.7594829106346879,
+      "median_feature_distance": 0.7588604390621185,
+      "p95_feature_distance": 0.9347663789987564,
+      "mean_reference_SO3_geodesic_deg": 51.68244367111112,
+      "mean_normalized_position_abs_difference": 0.2987681577506443
+    }
+  ],
+  "slot_usage": {
+    "EE_slot_exposure_steps": [
+      14722754,
+      14765754,
+      3279492,
+      0
+    ],
+    "velocity_slot_exposure_steps": [
+      16351232,
+      16384000,
+      32768,
+      0
+    ],
+    "standing_fraction_effective_slots": [
+      0.09857177734375,
+      0.101043701171875,
+      0.0970458984375
+    ],
+    "EE_switch_seconds_quantiles": [
+      [
+        8.0,
+        8.48,
+        8.98,
+        9.48,
+        9.98
+      ],
+      [
+        16.02,
+        17.42,
+        18.0,
+        18.580000000000002,
+        19.98
+      ]
+    ],
+    "native_trace_matched_samples": 32000,
+    "normal_full_episode_slots": {
+      "EE": [
+        0,
+        1,
+        2
+      ],
+      "velocity_initial": [
+        0,
+        1
+      ],
+      "velocity_autoreset": [
+        0,
+        1,
+        2
+      ]
+    },
+    "velocity_slot2_autoreset_steps": 1
+  },
+  "wall_seconds": 5.313226699829102,
+  "reference_rotation_limitation": "Reference SO3 target follows the exact native function at a fixed pre-policy reset state. Later state-dependent target rotations are not precomputed; perturbation SO3 descriptors retain their input dependence. No claim of full moving-state orientation equivalence."
+}

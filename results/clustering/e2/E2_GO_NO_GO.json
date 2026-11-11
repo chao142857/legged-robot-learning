@@ -1,0 +1,29 @@
+{
+  "decision": "NO-GO",
+  "formal_PPO_authorized_conditionally": true,
+  "formal_PPO_started": false,
+  "conditions": {
+    "engineering": true,
+    "command_geometry": true,
+    "frozen_control_consistency": false,
+    "chronological_estimator": true
+  },
+  "recommendation": "Defer formal PPO. Complete the fixed-policy cluster-complete supplement before reconsidering GO.",
+  "facts": [
+    "All32768 training sequences retained; all4 mappings4096x8; independent1024 evaluation pool excluded.",
+    "Exact native timing matched two16-env episodes, including one effective velocity-slot2 tail step after autoreset.",
+    "Grouped last100 histories are denser/fresher. Command grouping improves logged Uniform prequential Brier versus all3 Random maps in both late blocks.",
+    "Existing fixed-policy panels do not demonstrate robust lower within-group position/time dispersion under the predeclared criteria. No full8-member group is observed in those panels."
+  ],
+  "inference": "Command grouping is a plausible estimator improvement, but fixed-policy group homogeneity and new PPO learning benefit remain unverified.",
+  "missing": [
+    "Cluster-complete frozen measurements for current mappings; sufficiently precise per-sequence strict rates; current15k frozen consistency."
+  ],
+  "minimum_supplement_file": "/workspace/artifacts/minimal_frozen_supplement_proposal.json",
+  "protocol_sha256": "18a6b7371acad72a532e2ffb78d35f9b01b097975e583c51d5a3843e63afe7cb",
+  "strict_protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+  "mapping_manifest_sha256": "80d754fdb906e26ef0c57879565e63c582b4ba1c956ae559a10f4d43d44d5cb1",
+  "source_binding_checks_passed": true,
+  "no_threshold_or_reward_changes": true,
+  "unix": 1793727360.4349926
+}

@@ -1,0 +1,14 @@
+{
+  "mean": {
+    "partial_groups": 103,
+    "observed_success_span_at_least50pp": 51,
+    "observed_position_span_at_least10mm": 64,
+    "median_observed_position_span_mm": 12.52736397797971
+  },
+  "stochastic": {
+    "partial_groups": 103,
+    "observed_success_span_at_least50pp": 4,
+    "observed_position_span_at_least10mm": 55,
+    "median_observed_position_span_mm": 10.34533187582471
+  }
+}
