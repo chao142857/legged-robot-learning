@@ -1,5 +1,7 @@
 # Legged Robot Learning
 
+**English** · [<kbd>简体中文</kbd>](README.zh-CN.md)
+
 **Reinforcement Learning for Legged Locomotion and Whole-Body Control**
 
 An independent research collection by [chao142857](https://github.com/chao142857), covering quadruped locomotion, mobile manipulation, adaptive task sampling, and PPO update diagnostics. The research implementations, experiment design, and analyses are organized here with explicit upstream attribution and evidence boundaries.
