@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "cwd": "/tmp",
-  "repository_root_not_on_sys_path": true,
-  "original_wbc_registration_unchanged": true,
-  "original_command_timers_unchanged": true,
-  "original_horizon_s": 20.0
-}

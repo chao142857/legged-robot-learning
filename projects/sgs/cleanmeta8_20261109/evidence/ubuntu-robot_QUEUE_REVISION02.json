@@ -1,7 +1,0 @@
-{
-  "reason": "User removed duplicate baselines; seed48 Clean only; seed49 Clean on YangLab",
-  "teacher_and_student_algorithm_files_unchanged": true,
-  "handoff_after_teacher_complete": true,
-  "old_checker_sha256": "6cfc7cf03d04d9307b55b80478ec9f69135c93cc8c32e91d4a43bddff6b5387c",
-  "new_checker_sha256": "7c039a35ee4297f16fbc7148a729a2f7b632c8106f7e2e2ffc62b80abefeb22b"
-}

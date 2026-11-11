@@ -1,7 +1,0 @@
-test_trace_does_not_change_update_or_restore (__main__.TraceTests.test_trace_does_not_change_update_or_restore) ... ok
-test_trace_preserves_failure_evidence (__main__.TraceTests.test_trace_preserves_failure_evidence) ... ok
-
-----------------------------------------------------------------------
-Ran 2 tests in 1.434s
-
-OK

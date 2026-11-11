@@ -1,0 +1,11 @@
+{
+  "changes": [
+    "teacher.load(snapshot['teacher'])",
+    "phase = 'initialized'",
+    "latest_row = info.get('latest_row')",
+    "        if args.resume:\n            decision = new_decision(latest_row)",
+    "source_checkpoint_sha256=source_hash, latest_row=latest_row, teacher=teacher.state() if teacher else None,"
+  ],
+  "runner_sha256": "0418a12810d4730aa159de746b775924208a5c8f569e91bcfc983c971cdf0bcd",
+  "proxy_sha256": "5df26f1e41d8a79f51ce456c08280d61937351a0238bb7e90ed7c9af0b4838c8"
+}

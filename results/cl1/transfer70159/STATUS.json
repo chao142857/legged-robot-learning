@@ -1,0 +1,9 @@
+{
+  "phase": "training",
+  "unix": 1794413903.8688421,
+  "arm": "frozen-base",
+  "target": 9000,
+  "label": "frozen-base-seed70159-to09000-a01",
+  "source": "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/runs/frozen-base-seed70159-to08500-a01/checkpoints/update_08500.pt",
+  "seed": 70159
+}

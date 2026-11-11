@@ -1,0 +1,23 @@
+{
+  "source_sha256": "1583898ddf5943be8ae6a63035334e4002e4f88423e43ab6b782ec2f9f27ef6d",
+  "output_sha256": "b724293591d1c58465332929f887c3667dc66bbfcb4604928d434eedea030a6d",
+  "count_checked_replacements": [
+    "from teacher_v02 import Teacher",
+    "teacher = Teacher(static, binding)",
+    "phase = 'initialized'",
+    "source_checkpoint_sha256=source_hash, teacher=teacher.state() if teacher else None,",
+    "result = teacher.decide(dynamic, g, engine.version+1,",
+    "decision = info['decision']",
+    "        preserve_decision()\n        phase = 'ready'",
+    "                dev_before = dev_after",
+    "if not branch and (completed % 1000 == 0 or completed == args.target):",
+    "        def recorded_log(*a, **kw):\n            native_log",
+    "            emit(out/'updates.jsonl', row)",
+    "        if source:\n            source_hash",
+    "            receipt['installed_sampler_rng_sha256'] = tree_hash(adapter.owner.engine.rng.bit_generator.state)",
+    "        frozen_actor()\n        write(dataset/'run_manifest.json'",
+    "teacher_state_sha256=tree_hash(teacher.state()) if teacher else None,",
+    "base_update = int(info['base_update']) if args.resume else completed",
+    "evaluation_seconds, evaluation_steps = info['evaluation_seconds'], info['evaluation_steps']"
+  ]
+}
