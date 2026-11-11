@@ -26,7 +26,7 @@ The research line is linear: V0.2 → matched follow-up → TR0 → Adam audit �
 
 Long-term branches: `main`, `exp/sgs-evaluation`, `exp/clustering`, `exp/oldmeta`, `exp/cleanmeta8`, `exp/cl1-base-recovery`.
 
-Three original branches are temporarily retained because existing local worktrees bind them: `research/stage3b-dynamic-x-safety-20261101`, `research/nsgs-v02-matched-seed48-20261108`, and `fix/cl1-recovery-and-resume-20261110`. They are recovery/compatibility refs, not additional nSGS methods. Their worktrees were not detached, reset or edited. Other original branches can be removed only after the archive tags and scoped branches are verified remotely.
+Three original branches are temporarily retained because existing local worktrees bind them: `research/stage3b-dynamic-x-safety-20261101`, `research/nsgs-v02-matched-seed48-20261108`, and `fix/cl1-recovery-and-resume-20261110`. They are recovery/compatibility refs, not additional nSGS methods. Their worktrees were not detached, reset or edited. The other nine original branches were removed after all archive tags and scoped branches were verified remotely.
 
 ## Source layout
 

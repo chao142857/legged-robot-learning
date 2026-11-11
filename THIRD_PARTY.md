@@ -12,7 +12,7 @@ The repository license applies to original research contributions. Retained sour
 
 The `vendor/sampler.py` name denotes a frozen **local** SGS implementation reused across the author's snapshots; it is not a claim that the underlying method was invented here. Its SHA256 is tested against the original local implementation. The 0.5 unvisited prior is a local policy choice, distinct from the cited formula.
 
-`docs/source-map.json` identifies original source paths, original and publication hashes, and portability changes. Paths to execution machines were replaced by explicit environment inputs; source-binding keys were adapted to this new layout. These changes are not new algorithmic results.
+`docs/source-map.json` identifies original source paths, revisions and hashes. Execution snapshots preserve their original external mount contracts. Shared package imports and documentation links were adapted to the new layout; these are not new algorithmic results.
 
 PyTorch, NumPy, TensorDict, SciPy, Matplotlib, PyYAML, simulator packages, and other package dependencies are obtained separately under their own terms. Their binaries are not redistributed. NVIDIA simulator access/terms are not automatically accepted by the public launchers.
 
