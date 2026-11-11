@@ -1,0 +1,11 @@
+{
+  "unix": 1794204037.5514698,
+  "session": "cleanmeta8-seed49",
+  "seed": 49,
+  "target": 10000,
+  "phase": "waiting_verified_CleanMeta8",
+  "only_new_student_arm": "CleanMeta8",
+  "reuse_uniform_fresh": true,
+  "old_meta_not_resumed": true,
+  "meta24_paused": true
+}

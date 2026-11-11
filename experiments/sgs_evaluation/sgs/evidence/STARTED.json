@@ -1,0 +1,15 @@
+{
+  "unix": 1793550147.8563576,
+  "pid": 1555059,
+  "formal_order": [
+    "flat-uniform",
+    "flat-sgs",
+    "wbc-uniform",
+    "wbc-sgs"
+  ],
+  "updates_each": 10000,
+  "short_updates_each": 200,
+  "num_envs": 4096,
+  "seed": 42,
+  "image": "sha256:8ee9b2bb8e6aae08dace71ee1e2141a4d62bcc63e4cf0eac28b347111a486a87"
+}

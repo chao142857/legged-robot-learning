@@ -1,0 +1,31 @@
+{
+  "version": "frozen-transfer-repair-v2",
+  "seed": 70159,
+  "arms": [
+    "uniform",
+    "frozen-base",
+    "frozen-recovery"
+  ],
+  "updates_each": 10000,
+  "envs": 4096,
+  "rollout": 24,
+  "teacher_weights_frozen": true,
+  "teacher_action": "deterministic mean; Uniform overrides to exactly uniform",
+  "teacher_logprob": null,
+  "resume_uniform_from": null,
+  "source_root": "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110",
+  "recovery_teacher": "V2 from Base after normal-selection correction; no hyperparameter changes",
+  "test_not_teacher_input": true,
+  "paired_state_restore_required": true,
+  "failed_attempts_preserved": true,
+  "matched_restore_boundaries": [
+    500,
+    1000,
+    1400,
+    1500,
+    "then every500 to10000"
+  ],
+  "reason": "Match Uniform repair boundary for Base and Recovery; no extra student PPO updates",
+  "all_arms_from_zero": true,
+  "teacher_retrained": false
+}

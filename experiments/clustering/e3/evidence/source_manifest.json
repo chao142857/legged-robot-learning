@@ -1,0 +1,31 @@
+{
+  "integration_sha256": "20261104-e3",
+  "files": {
+    "host.py": "7132f874e571ea49eb85a3aeda64ab707c549b998ad9e9524e00c291411e9e9f",
+    "queue.py": "aa277a7d662d8b504682da6f731946ea9463a37e5d5a25f8a242014f8b082aac",
+    "code/._design.py": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "code/._e3_adapter.py": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "code/._evaluate.py": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "code/._fork_state.py": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "code/._journal.py": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "code/._prepare.py": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "code/._python.sh": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "code/._report.py": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "code/._train.py": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "code/design.py": "a1745d5599fd09eb99fcd9dd2942b8a63f918e8a62d92719cb4f0c81797a395b",
+    "code/e3_adapter.py": "c6260d6e3b984b34ab4d25d5a5f4c0c6a908fb3d5f864a392e51198e446c89b7",
+    "code/evaluate.py": "6660a71f8ea1e708fd0d0b9d4c6e88efdd3d4813017e1ec934f1e12c6499bd15",
+    "code/fork_state.py": "f5a10801a1b343e764d5db5c89077eef8dd38ab04345dd76c4ef5f9873dd1af0",
+    "code/journal.py": "bddb493ada56c84d462bef050811b32e91cc222a3cd9e5bdb5e73f4421e19b81",
+    "code/prepare.py": "e3d99521d612da689675a76499e8e1158887ea0e83dee091be54da7a52815cc0",
+    "code/python.sh": "f7b4be3782b14dae85c2145e18bd4a909133038e94900503b01969372ba9f2ce",
+    "code/report.py": "12674e6bb1232c35192629a54b597d45dbd7f49bb02be5fba4c7c081751dc729",
+    "code/train.py": "f917c3c0785646a4e7a2b36fd06d29be41e6a98419b7c6a0dd2248e729d8ea22",
+    "tests/._test_e3.py": "efc025e71c2636eedce85e916bdd7564073f7053df4533237374df7d032582e9",
+    "tests/test_e3.py": "a64f7afb91c6aef602869329e371743f464e92c72665a3c26c9a0dce177fa706"
+  },
+  "e2_source_manifest_sha256": "33f77b63567b5b60e8f500b849c004c1788d39413e9ba15ad714d07e1d6c3af5",
+  "native_commit": "4e12109d1eccb1d9da2e4a35f189fabea3f13677",
+  "isaaclab_commit": "b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8",
+  "maps_manifest_sha256": "a74ffc32a6a7e24cac2035115adfa4879ac63336c3158100c72924fc68c03551"
+}

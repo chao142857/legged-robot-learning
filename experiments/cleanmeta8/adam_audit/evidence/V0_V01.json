@@ -1,0 +1,1255 @@
+{
+  "cycles": [
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_000/teacher_after.pt",
+      "checkpoint_sha256": "6f573059c1e90c32752dd8c4ea2a3823f6f1cb4b29492082374d3a7c46f216ab",
+      "logical_before": 0,
+      "logical_after": 1,
+      "before_steps": [],
+      "after_steps": [
+        1
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_001/teacher_after.pt",
+      "checkpoint_sha256": "3dcc5541f05ffda606ebe52e59b7c285f937356ac397c328d1edaff078601bca",
+      "logical_before": 1,
+      "logical_after": 2,
+      "before_steps": [
+        1
+      ],
+      "after_steps": [
+        2
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_002/teacher_after.pt",
+      "checkpoint_sha256": "a237cb5a80cfbdcdb5c68e9cb064081cc2706ab54dcda2cf07be5d40226b9a2b",
+      "logical_before": 2,
+      "logical_after": 3,
+      "before_steps": [
+        2
+      ],
+      "after_steps": [
+        3
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_003/teacher_after.pt",
+      "checkpoint_sha256": "bd1a65090813a6a08533e26f9b8195b8d7c769ea62f6792faf782a2a33138cbb",
+      "logical_before": 3,
+      "logical_after": 4,
+      "before_steps": [
+        3
+      ],
+      "after_steps": [
+        4
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_004/teacher_after.pt",
+      "checkpoint_sha256": "036951fefd2aaa58ec5e48223655f8d4851329ea6d90881f36e08bd2f745de66",
+      "logical_before": 4,
+      "logical_after": 5,
+      "before_steps": [
+        4
+      ],
+      "after_steps": [
+        5
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_005/teacher_after.pt",
+      "checkpoint_sha256": "60867ba35ecbb294412f648d7a71c40cb376a3336e10162e23eca9e68558336d",
+      "logical_before": 5,
+      "logical_after": 6,
+      "before_steps": [
+        5
+      ],
+      "after_steps": [
+        6
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_006/teacher_after.pt",
+      "checkpoint_sha256": "85a8ba933fbc7808f94886f70d6b33cb895d28c0e7b3b0b7317b81272c7334de",
+      "logical_before": 6,
+      "logical_after": 7,
+      "before_steps": [
+        6
+      ],
+      "after_steps": [
+        7
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_007/teacher_after.pt",
+      "checkpoint_sha256": "c1db047bc8dc3922684226c64dd0c6bb645e76f106e42b06a223f4801476f08c",
+      "logical_before": 7,
+      "logical_after": 8,
+      "before_steps": [
+        7
+      ],
+      "after_steps": [
+        8
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_008/teacher_after.pt",
+      "checkpoint_sha256": "3e3b49f1851e18f84504596c51b870b659ab797716db9c4006f555c8e7e498d0",
+      "logical_before": 8,
+      "logical_after": 9,
+      "before_steps": [
+        8
+      ],
+      "after_steps": [
+        9
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_009/teacher_after.pt",
+      "checkpoint_sha256": "5493047da44f20221bd511bfbd765dd8fa98da181cec1b9d669da912987b281f",
+      "logical_before": 9,
+      "logical_after": 10,
+      "before_steps": [
+        9
+      ],
+      "after_steps": [
+        10
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_010/teacher_after.pt",
+      "checkpoint_sha256": "f54ad0aab9c00c355c381c07b97d461cbf7530c9e79a2fb9153eb2414594fece",
+      "logical_before": 10,
+      "logical_after": 11,
+      "before_steps": [
+        10
+      ],
+      "after_steps": [
+        11
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_011/teacher_after.pt",
+      "checkpoint_sha256": "d73da52a067953de164ab45930144cc53ae6d58da5f36bbc6bea3f7dc9b801d2",
+      "logical_before": 11,
+      "logical_after": 12,
+      "before_steps": [
+        11
+      ],
+      "after_steps": [
+        12
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_012/teacher_after.pt",
+      "checkpoint_sha256": "48905647ce8c4705e1733f8768aa796572ce5827ccc7081bc5e4d0e91cc0f606",
+      "logical_before": 12,
+      "logical_after": 13,
+      "before_steps": [
+        12
+      ],
+      "after_steps": [
+        13
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_013/teacher_after.pt",
+      "checkpoint_sha256": "e3fb26c329f142cf3f453d43b81798ca8985d525361d90e2a660642e0fb882c8",
+      "logical_before": 13,
+      "logical_after": 14,
+      "before_steps": [
+        13
+      ],
+      "after_steps": [
+        14
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_014/teacher_after.pt",
+      "checkpoint_sha256": "35c2bcf2f524e73bd303063a886d9f28b45e0b4fc3e19b879e77df692226c26e",
+      "logical_before": 14,
+      "logical_after": 15,
+      "before_steps": [
+        14
+      ],
+      "after_steps": [
+        15
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_015/teacher_after.pt",
+      "checkpoint_sha256": "efecf6a4ea67839cc27b7fefd9c9db326710d296437c99acd774b34724633898",
+      "logical_before": 15,
+      "logical_after": 16,
+      "before_steps": [
+        15
+      ],
+      "after_steps": [
+        16
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_016/teacher_after.pt",
+      "checkpoint_sha256": "91f62ab1e533d673bda448e35fb62062edcad57e08d28396125ca54f2872dadb",
+      "logical_before": 16,
+      "logical_after": 17,
+      "before_steps": [
+        16
+      ],
+      "after_steps": [
+        17
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_017/teacher_after.pt",
+      "checkpoint_sha256": "c5e9b2abc1e0b8597ba16d211dc282f051e1daaa3073e8dc1642f42efb51ad45",
+      "logical_before": 17,
+      "logical_after": 18,
+      "before_steps": [
+        17
+      ],
+      "after_steps": [
+        18
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_018/teacher_after.pt",
+      "checkpoint_sha256": "48f08cb14c5bd232ae2ac362571f22543a6dfb80847f9252a25988a28fd7ac3d",
+      "logical_before": 18,
+      "logical_after": 19,
+      "before_steps": [
+        18
+      ],
+      "after_steps": [
+        19
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_019/teacher_after.pt",
+      "checkpoint_sha256": "a6dd689e8c870863efda307aab5678d04e97faa79dee9d89e7bd12b068a774e0",
+      "logical_before": 19,
+      "logical_after": 20,
+      "before_steps": [
+        19
+      ],
+      "after_steps": [
+        20
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_020/teacher_after.pt",
+      "checkpoint_sha256": "cbc2d783adf778aa2b222f19831687d400d606a2ab0e5533c712229d9eafa96f",
+      "logical_before": 20,
+      "logical_after": 21,
+      "before_steps": [
+        20
+      ],
+      "after_steps": [
+        21
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_021/teacher_after.pt",
+      "checkpoint_sha256": "79fddbb7c039ce8dadda1020db63d9c90a6eab08cf84b323a415d0cd1e381178",
+      "logical_before": 21,
+      "logical_after": 22,
+      "before_steps": [
+        21
+      ],
+      "after_steps": [
+        22
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_022/teacher_after.pt",
+      "checkpoint_sha256": "0af735c0397878e6eedaac7a7bad54a8e6418822cdfc753951e237ea388101e0",
+      "logical_before": 22,
+      "logical_after": 23,
+      "before_steps": [
+        22
+      ],
+      "after_steps": [
+        23
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_023/teacher_after.pt",
+      "checkpoint_sha256": "fa90885991dd8c1fea6b61a35155c38c92cda923e6cf1a3d5049363b4ecd27ba",
+      "logical_before": 23,
+      "logical_after": 24,
+      "before_steps": [
+        23
+      ],
+      "after_steps": [
+        24
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_024/teacher_after.pt",
+      "checkpoint_sha256": "d28a54bafea75522938ff48b36bb477ebf3ef9fb36cc7b9432ee4ba69ded9a1a",
+      "logical_before": 24,
+      "logical_after": 25,
+      "before_steps": [
+        24
+      ],
+      "after_steps": [
+        25
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_025/teacher_after.pt",
+      "checkpoint_sha256": "3eb20ebc1ff341c1b811b8b8fa137905aaee4c9787426fd1497d994eece338e8",
+      "logical_before": 25,
+      "logical_after": 26,
+      "before_steps": [
+        25
+      ],
+      "after_steps": [
+        26
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_026/teacher_after.pt",
+      "checkpoint_sha256": "218860b461aa8ab2904a06fda14064d8f32b3b9b32189b9bd1667529e9fe83d0",
+      "logical_before": 26,
+      "logical_after": 27,
+      "before_steps": [
+        26
+      ],
+      "after_steps": [
+        27
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_027/teacher_after.pt",
+      "checkpoint_sha256": "d58416cb09bf69482ad4fcf5aa72f128bd0528318cfaf04a0f4a2c3a21ca4225",
+      "logical_before": 27,
+      "logical_after": 28,
+      "before_steps": [
+        27
+      ],
+      "after_steps": [
+        28
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_028/teacher_after.pt",
+      "checkpoint_sha256": "322150c3fe0dc10d0489f800dff1c56ae89e383091869eb1e16dcba6f214a105",
+      "logical_before": 28,
+      "logical_after": 29,
+      "before_steps": [
+        28
+      ],
+      "after_steps": [
+        29
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_029/teacher_after.pt",
+      "checkpoint_sha256": "81a1f1b6778aff72abfae9e686cf6623f489ee22967aa92efea1f3028fa4ebf2",
+      "logical_before": 29,
+      "logical_after": 30,
+      "before_steps": [
+        29
+      ],
+      "after_steps": [
+        30
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_030/teacher_after.pt",
+      "checkpoint_sha256": "63c79d4bdc541b38792831e94910dfaad0f7f2c7c19a18e519b24dde1f567e7b",
+      "logical_before": 30,
+      "logical_after": 31,
+      "before_steps": [
+        30
+      ],
+      "after_steps": [
+        31
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_031/teacher_after.pt",
+      "checkpoint_sha256": "6079169c3c24f5b693a6895f8a9d6dabb2cd86873d301f9e072adc1e6878a741",
+      "logical_before": 31,
+      "logical_after": 32,
+      "before_steps": [
+        31
+      ],
+      "after_steps": [
+        32
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-fresh-seed46/cycle_032/teacher_after.pt",
+      "checkpoint_sha256": "aa1816cc4bb577a16e450f09aa8bf445df9e3491f531473f1de844e5f3b97c23",
+      "logical_before": 32,
+      "logical_after": 33,
+      "before_steps": [
+        32
+      ],
+      "after_steps": [
+        33
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-smoke-v1-seed46/cycle_000/teacher_after.pt",
+      "checkpoint_sha256": "1d5c0e81fdfb93a61142c46eb9624190cff3f8cb521613a7c84a2cd2fe838ef4",
+      "logical_before": 0,
+      "logical_after": 1,
+      "before_steps": [],
+      "after_steps": [
+        1
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v0/nsgs-v0-20261106-smoke-v1-seed46/cycle_001/teacher_after.pt",
+      "checkpoint_sha256": "2547a000a26c19f7f51015323b3215db768b4bff8d123ad9a6d08f90ca43a67f",
+      "logical_before": 1,
+      "logical_after": 2,
+      "before_steps": [
+        1
+      ],
+      "after_steps": [
+        2
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-paired-r0-neural/cycle_055/teacher_after.pt",
+      "checkpoint_sha256": "49297b2316a081ef6515e221aecf29662693a0442e4c55316ecc384fcddd4ddb",
+      "logical_before": 20,
+      "logical_after": 20,
+      "before_steps": [
+        20
+      ],
+      "after_steps": [
+        20
+      ],
+      "rejected": false,
+      "teacher_frozen": true,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": true,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-paired-r0-neural-repeat/cycle_055/teacher_after.pt",
+      "checkpoint_sha256": "b0da7dd92cb91ea7bebd6f3ba684b42f4782439d9ca4b5d3fb9e981cb94432fc",
+      "logical_before": 20,
+      "logical_after": 20,
+      "before_steps": [
+        20
+      ],
+      "after_steps": [
+        20
+      ],
+      "rejected": false,
+      "teacher_frozen": true,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": true,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-paired-r0-shuffled/cycle_055/teacher_after.pt",
+      "checkpoint_sha256": "b0ab3e386f223dfe213edbb59f610262e82e9861fae5e18dc3c756f53fb7512e",
+      "logical_before": 20,
+      "logical_after": 20,
+      "before_steps": [
+        20
+      ],
+      "after_steps": [
+        20
+      ],
+      "rejected": false,
+      "teacher_frozen": true,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": true,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-paired-r0-uniform/cycle_055/teacher_after.pt",
+      "checkpoint_sha256": "2d749ef821c9451f13c8fa8435bedf5d27def2cd74bf48cc84cf4d38836b1a1f",
+      "logical_before": 20,
+      "logical_after": 20,
+      "before_steps": [
+        20
+      ],
+      "after_steps": [
+        20
+      ],
+      "rejected": false,
+      "teacher_frozen": true,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": true,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-paired-r1-neural/cycle_055/teacher_after.pt",
+      "checkpoint_sha256": "a55a55a0cedfb14bca6b0e333c27472db5d1628509de23afeada025e801cc70b",
+      "logical_before": 20,
+      "logical_after": 20,
+      "before_steps": [
+        20
+      ],
+      "after_steps": [
+        20
+      ],
+      "rejected": false,
+      "teacher_frozen": true,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": true,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-paired-r1-shuffled/cycle_055/teacher_after.pt",
+      "checkpoint_sha256": "7f3c1c04d19e64edf1ac6367c6b53e6e1081538cd662c67f53c1e4da409d8c9c",
+      "logical_before": 20,
+      "logical_after": 20,
+      "before_steps": [
+        20
+      ],
+      "after_steps": [
+        20
+      ],
+      "rejected": false,
+      "teacher_frozen": true,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": true,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-paired-r1-uniform/cycle_055/teacher_after.pt",
+      "checkpoint_sha256": "2ce5c8cefbd37a2620793d198c46490bc1f0a1a290c2628aa786c7dc745124d4",
+      "logical_before": 20,
+      "logical_after": 20,
+      "before_steps": [
+        20
+      ],
+      "after_steps": [
+        20
+      ],
+      "rejected": false,
+      "teacher_frozen": true,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": true,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_034/teacher_after.pt",
+      "checkpoint_sha256": "52da4b66b33a6505cb487e416614bdf954cc9623c3b4363b0f6bcfca63b86e1a",
+      "logical_before": 0,
+      "logical_after": 1,
+      "before_steps": [],
+      "after_steps": [
+        1
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_035/teacher_after.pt",
+      "checkpoint_sha256": "a2d566c4385ffb41d6fbdfddd8083c2614affbbf307bcd567a8a270135e5d267",
+      "logical_before": 1,
+      "logical_after": 2,
+      "before_steps": [
+        1
+      ],
+      "after_steps": [
+        2
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_036/teacher_after.pt",
+      "checkpoint_sha256": "4aadc864b0f772e04c949b6f48030a040bfa0a4448e3e6525168bbb148d926da",
+      "logical_before": 2,
+      "logical_after": 3,
+      "before_steps": [
+        2
+      ],
+      "after_steps": [
+        3
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_037/teacher_after.pt",
+      "checkpoint_sha256": "2308fde5fb25e0d6647d1d5327dd5ce823795db6f9984924be714a4ea44a5d79",
+      "logical_before": 3,
+      "logical_after": 4,
+      "before_steps": [
+        3
+      ],
+      "after_steps": [
+        4
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_038/teacher_after.pt",
+      "checkpoint_sha256": "00d64bb18e79a65db34f2bf38798716bd13d1e5f11a58f25d0be64563996e708",
+      "logical_before": 4,
+      "logical_after": 5,
+      "before_steps": [
+        4
+      ],
+      "after_steps": [
+        5
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_039/teacher_after.pt",
+      "checkpoint_sha256": "0d189f9026361c3c35a0610a7bedc8c954c24dde5aff1e50f7920111bceb122e",
+      "logical_before": 5,
+      "logical_after": 6,
+      "before_steps": [
+        5
+      ],
+      "after_steps": [
+        6
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_040/teacher_after.pt",
+      "checkpoint_sha256": "44c03888c38a678f57546494f1ff27b6a32f0148a2b35f4ed10d2eed1da665a6",
+      "logical_before": 6,
+      "logical_after": 7,
+      "before_steps": [
+        6
+      ],
+      "after_steps": [
+        7
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_041/teacher_after.pt",
+      "checkpoint_sha256": "9dbba80a5fcbe798e604bd1997182c004a50e9f4210ca6211abfc8c1a7ddf7d6",
+      "logical_before": 7,
+      "logical_after": 8,
+      "before_steps": [
+        7
+      ],
+      "after_steps": [
+        8
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_042/teacher_after.pt",
+      "checkpoint_sha256": "e3f29ab16627db181700e3ef4294b4fad0afa0195f0e1cc848451fa2610c3b74",
+      "logical_before": 8,
+      "logical_after": 9,
+      "before_steps": [
+        8
+      ],
+      "after_steps": [
+        9
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_043/teacher_after.pt",
+      "checkpoint_sha256": "2b80ecb187ec5fd8a09a892d35dd7129b14008c1fd2e983ed36b7fee8bd3b744",
+      "logical_before": 9,
+      "logical_after": 10,
+      "before_steps": [
+        9
+      ],
+      "after_steps": [
+        10
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_044/teacher_after.pt",
+      "checkpoint_sha256": "9affd6146d60c466a4e3d6e25f5e5237ec290611e47f82b3335e22fc50d48e64",
+      "logical_before": 10,
+      "logical_after": 11,
+      "before_steps": [
+        10
+      ],
+      "after_steps": [
+        11
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_045/teacher_after.pt",
+      "checkpoint_sha256": "6f584c319cb526750179f20bb67bac1d726dea470ac2069873249b2cfb2003f5",
+      "logical_before": 11,
+      "logical_after": 12,
+      "before_steps": [
+        11
+      ],
+      "after_steps": [
+        12
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_046/teacher_after.pt",
+      "checkpoint_sha256": "0bb616512f8a462a50b29507ef3ddf7fc5f7071d2e1378e5ef0c33df20464ebe",
+      "logical_before": 12,
+      "logical_after": 13,
+      "before_steps": [
+        12
+      ],
+      "after_steps": [
+        13
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_047/teacher_after.pt",
+      "checkpoint_sha256": "d71127fd5ecfdcefcf147c3fd94077bec600f83f04cf25b9f3d4b844848f38cb",
+      "logical_before": 13,
+      "logical_after": 14,
+      "before_steps": [
+        13
+      ],
+      "after_steps": [
+        14
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_048/teacher_after.pt",
+      "checkpoint_sha256": "18b1fe2660c905df3a73ec94b8bf076ea39a7590e0199c43dfe1c90eee8652e6",
+      "logical_before": 14,
+      "logical_after": 15,
+      "before_steps": [
+        14
+      ],
+      "after_steps": [
+        15
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_049/teacher_after.pt",
+      "checkpoint_sha256": "185dcc2b30f111f56b7a59c7ed22753843a11304bf00629d29d7fa85281f21f1",
+      "logical_before": 15,
+      "logical_after": 16,
+      "before_steps": [
+        15
+      ],
+      "after_steps": [
+        16
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_050/teacher_after.pt",
+      "checkpoint_sha256": "6b26e896a0ab44f7e9be2d5aedad3a8ec0ee4f117c25e80b99b2a8bfef5692e6",
+      "logical_before": 16,
+      "logical_after": 17,
+      "before_steps": [
+        16
+      ],
+      "after_steps": [
+        17
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_051/teacher_after.pt",
+      "checkpoint_sha256": "f308735bc6882b75f2ef7c3fbd623fdd2e0a6f47ff06edaff58d97e0a1b5a837",
+      "logical_before": 17,
+      "logical_after": 18,
+      "before_steps": [
+        17
+      ],
+      "after_steps": [
+        18
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_052/teacher_after.pt",
+      "checkpoint_sha256": "0bbc17aae1b12d6e818f6b5a37184d5bcb73bf9323eb8bb709f65de6ab9e9dba",
+      "logical_before": 18,
+      "logical_after": 19,
+      "before_steps": [
+        18
+      ],
+      "after_steps": [
+        19
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-pilot-seed46/cycle_053/teacher_after.pt",
+      "checkpoint_sha256": "1c3f90acad999788bba47e4c408064f50244c0c1e5dd7ac98ceab744df7686e5",
+      "logical_before": 19,
+      "logical_after": 20,
+      "before_steps": [
+        19
+      ],
+      "after_steps": [
+        20
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-smoke-seed46/cycle_034/teacher_after.pt",
+      "checkpoint_sha256": "a5d45eec7b92d7175a19140bf136c40e06b9b3500cfaf18ed2672c84734520b3",
+      "logical_before": 0,
+      "logical_after": 1,
+      "before_steps": [],
+      "after_steps": [
+        1
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    },
+    {
+      "path": "/home/alex/dog/nsgs_teacher_experience_v01_validation/v01-20261106-smoke-seed46/cycle_035/teacher_after.pt",
+      "checkpoint_sha256": "59f262853fe05739d737ea586f0f957a0cc523ec5e59a443e7e875cb68fac7f5",
+      "logical_before": 1,
+      "logical_after": 2,
+      "before_steps": [
+        1
+      ],
+      "after_steps": [
+        2
+      ],
+      "rejected": false,
+      "teacher_frozen": false,
+      "step_transition_correct": true,
+      "frozen_full_state_equal": null,
+      "rejected_full_optimizer_restored": null
+    }
+  ],
+  "all_transitions_correct": true,
+  "sources": [
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_seed46_20261106/code/neural_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_tr0_20261109/code/teacher_v02.py",
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_tr0_20261109/code/teacher_ops.py",
+      "sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_tr0_20261109/code/prepare_continual.py",
+      "sha256": "cb8a736a9882bf3f74c1bb55fae8d1d6126702c4300efddf53152ae402e2ab4d"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_tr0_20261109/code/prepare_matched.py",
+      "sha256": "68ba62acfe5629c59d324837c6e0137bbd0001044f213c771ed0dab6d8c59474"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_tr0_20261109/code/neural_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_tr0_20261109/code/v0_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_tr0_20261109/code/neural_v01.py",
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v01_validation_20261106/code/neural_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v01_validation_20261106/code/v0_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v01_validation_20261106/code/neural_v01.py",
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/code/teacher_v02.py",
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/code/teacher_ops.py",
+      "sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/code/prepare_continual.py",
+      "sha256": "cb8a736a9882bf3f74c1bb55fae8d1d6126702c4300efddf53152ae402e2ab4d"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/code/prepare_matched.py",
+      "sha256": "68ba62acfe5629c59d324837c6e0137bbd0001044f213c771ed0dab6d8c59474"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/code/neural_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/code/v0_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/code/neural_v01.py",
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/code/teacher_v02.py",
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/code/teacher_ops.py",
+      "sha256": "5de49641c3c79f8dda9c47738ec11669e17a1bc5996750b04ba76abb4fcdd1da"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/code/neural_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/code/v0_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/code/neural_v01.py",
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed49_meta_20261109/code/teacher_v02.py",
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed49_meta_20261109/code/teacher_ops.py",
+      "sha256": "bd2064911975e8c52a6612a56ca7d0b8a9a6cc2406bd1a4d4b60b6172cd6926f"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed49_meta_20261109/code/prepare_continual.py",
+      "sha256": "cb8a736a9882bf3f74c1bb55fae8d1d6126702c4300efddf53152ae402e2ab4d"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed49_meta_20261109/code/prepare_matched.py",
+      "sha256": "68ba62acfe5629c59d324837c6e0137bbd0001044f213c771ed0dab6d8c59474"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed49_meta_20261109/code/prepare_meta24.py",
+      "sha256": "ecd7fd01c1f58ab0c4ac0a6a0d7a2e5b19f3d996a8f6458f4039f067111de1f9"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed49_meta_20261109/code/neural_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed49_meta_20261109/code/v0_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed49_meta_20261109/code/neural_v01.py",
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/code/teacher_v02.py",
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/code/teacher_ops.py",
+      "sha256": "5de49641c3c79f8dda9c47738ec11669e17a1bc5996750b04ba76abb4fcdd1da"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/code/prepare_continual.py",
+      "sha256": "cb8a736a9882bf3f74c1bb55fae8d1d6126702c4300efddf53152ae402e2ab4d"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/code/neural_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/code/v0_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/code/neural_v01.py",
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_stage_probe_20261107/code/teacher_v02.py",
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_stage_probe_20261107/code/teacher_ops.py",
+      "sha256": "5de49641c3c79f8dda9c47738ec11669e17a1bc5996750b04ba76abb4fcdd1da"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_stage_probe_20261107/code/neural_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_stage_probe_20261107/code/v0_core.py",
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea"
+    },
+    {
+      "path": "/home/alex/dog/go2_piper_nsgs_stage_probe_20261107/code/neural_v01.py",
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2"
+    }
+  ]
+}

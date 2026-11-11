@@ -1,0 +1,1096 @@
+{
+  "observed_utc": "2026-11-11T16:35:33.550194+00:00",
+  "host": "yanglab",
+  "files": {
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/CODE_BINDING.json": {
+      "sha256": "20f7f6aaadaba823a2ee76b286581033c6107ff0f190cb5003d944de88d2c4aa",
+      "bytes": 5952
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/COMPARISON.json": {
+      "sha256": "4218089e89f6db7a8477ef7b676f1cf5d2236a9d2d2ae4a8032d96280f9e68ac",
+      "bytes": 140196
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/COSTS_FINAL.json": {
+      "sha256": "093e87d989d7cf54f76577bb9d9d321bc51b9f4c3b2d6c9f1eb851213ee7cff5",
+      "bytes": 157030
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/FIXED_ADAPTATION.json": {
+      "sha256": "652df0697eeed044627873ddb8d8983cda003926c026ca1bebc3fd2d4e530fe1",
+      "bytes": 501
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/INITIAL_LOCK.json": {
+      "sha256": "f9cd5b31a291e61806ec62b02165a3ab91ffdb6e64b122d7b5f21d6d7c847044",
+      "bytes": 1476
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/PHYSICAL_RESUME_ACCEPTANCE.json": {
+      "sha256": "8de9bbad6c674c347e80262cdb2c090914d2710707f2690bf582b3e309b5e461",
+      "bytes": 4024
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/PROTOCOL.json": {
+      "sha256": "d0cc35f763871149eebdc775107d8f9da43b8a0c87617d06c059688112ed2002",
+      "bytes": 846
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/RECOVERY_V2_LOCK.json": {
+      "sha256": "e53ae5288598e6bc3821d4f3156591a0c3eb6a403db1477638aa9051f3a4b10a",
+      "bytes": 361
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/STATUS.json": {
+      "sha256": "db67211a3348bb794e773b7f18f78b60a301e096da4d7116e65aefb29f4ff791",
+      "bytes": 109
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/adapter.py": {
+      "sha256": "a643694f7747f3260702b35b32a29aeae28fab5ab239cc06dc6b1ae1be17ef05",
+      "bytes": 7733
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/audit_point.py": {
+      "sha256": "48e2abbbd607d8e3671f2edef12d264175cac9fe619f1de63367832c4cee9dae",
+      "bytes": 11477
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/build_fixed_runner.py": {
+      "sha256": "25b5cee4f1b3a272bbe8991a99ae5d117fa7734e6e8629124db6b2c9843957e5",
+      "bytes": 2273
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/build_runner.py": {
+      "sha256": "a57ac00bb81f521740a4846a3bfdd4c32999275e21424de6af2149ffef8ce7d6",
+      "bytes": 3860
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/checkpoint_pair.py": {
+      "sha256": "b6b11e2e4a72510d05c556f66c9846d82eecc07a0ca99676707db0e52dee8348",
+      "bytes": 2618
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/checkpoint_v02.py": {
+      "sha256": "3cbb1c9406878b473f7465da58d995910181ad11d57e2e5bf9c5e73a2b8ef12f",
+      "bytes": 520
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/cl1_core.py": {
+      "sha256": "c77910121e7980e686020ab4b95882408cf4bea87219d045a68c080d1dbf0376",
+      "bytes": 8229
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/cl1_ops.py": {
+      "sha256": "8c563537f9dbc6c2389717235782d880531f638b06cbcf4fadd198ad34b57f4f",
+      "bytes": 117
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/cl1_proxy.py": {
+      "sha256": "5df26f1e41d8a79f51ce456c08280d61937351a0238bb7e90ed7c9af0b4838c8",
+      "bytes": 1909
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/cl1_proxy_legacy.py": {
+      "sha256": "530cca313b7b7e09d4766f4b254ce266a516889891397caeedde83099fd36284",
+      "bytes": 1372
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/command_check_math.py": {
+      "sha256": "9d6d4a9c8790d798046ab8d29f20edffb8831c750a52ebf4926c6c457dd4d839",
+      "bytes": 1404
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/command_features.py": {
+      "sha256": "f79306c2ade99381e7589e600edb919872a6361ff4ea31f1fc95c43c1e3317c3",
+      "bytes": 8189
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/commands.py": {
+      "sha256": "c80a27b7c4bb5c27e55e5d7eb2c1d3883d0e0e8c5411b963d757b613ab13c946",
+      "bytes": 4625
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/common.py": {
+      "sha256": "b88cc54cea82e09100c800503f0b8dd6dbce66be7e78b8562b21bf8b00058b0a",
+      "bytes": 3928
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/compact_teacher.py": {
+      "sha256": "5f0d2926e2d2ea2e76c2a24de532a74fe3100d459720c676ea53097c5e2071bc",
+      "bytes": 2328
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/comparison_reuse.py": {
+      "sha256": "1beb2dd612d0d69ce3e8dd398728434fbc49a4a74cb3df88914df893931132e8",
+      "bytes": 2180
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/cost_breakdown.py": {
+      "sha256": "b02782abc9bd8bafdae710b5b7f7b45147437ebcb459407dd00829b5e05d17de",
+      "bytes": 2252
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/cpu_hash.py": {
+      "sha256": "997122e7e5a977947af68a11bb1c38504a8d048063d520670d0ee4351e1f02ec",
+      "bytes": 998
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/cpu_preflight.py": {
+      "sha256": "58a9669478443da3a5c62d4ef081d618769c85a258fd21b2c7fe994fe740a78b",
+      "bytes": 1536
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/evaluate.py": {
+      "sha256": "acf9e57d145c56e3576960b09edc53a8c28fe81e53bc56338730ce74349b07b6",
+      "bytes": 9467
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/fixed_prepare.py": {
+      "sha256": "59da06725dfe1dddbe179b9df3cafa82246bedd1832ed860c54379de14d5241d",
+      "bytes": 3832
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/fork_state.py": {
+      "sha256": "f5a10801a1b343e764d5db5c89077eef8dd38ab04345dd76c4ef5f9873dd1af0",
+      "bytes": 8032
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/fork_v02.py": {
+      "sha256": "bb0d2987bfca3dc83101f813d71abb3deb67cad5862d1b4c65db987eb7a9c093",
+      "bytes": 9672
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/frozen_ops.py": {
+      "sha256": "ece12a77a079690206bf9b13cf9060f935953341be343496e3d4990fd3ff1120",
+      "bytes": 3921
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/gen_compare.py": {
+      "sha256": "616f3e68e7e06d57dde08a7dddddcaf59c7dad1548f2c736d618d4898d135784",
+      "bytes": 3963
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/gen_prepare.py": {
+      "sha256": "25e12db08c2f99f0913da20096146e83387b7fec9e856f775632958df6a4ea8b",
+      "bytes": 5578
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/gen_verify.py": {
+      "sha256": "e17f5eb78644cffade246c2c4e7b03648d9d5138973f5a98241d307159aaf431",
+      "bytes": 1935
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/metrics.py": {
+      "sha256": "fe09f4965806779f22ed23466d3c8de1645208449048641cbb1130e3e895add1",
+      "bytes": 3876
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/neural_adapter.py": {
+      "sha256": "6eb475f117f5f178f340519b9d2e730867bbf1c34d0f5bfa2a85d2bdc5c8c1a4",
+      "bytes": 4070
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/neural_core.py": {
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea",
+      "bytes": 13507
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/neural_owner.py": {
+      "sha256": "a199caa76360c6ff8c5c546e4bbf88f61844d2ed1797e1f660d202fc2e531636",
+      "bytes": 3767
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/neural_v01.py": {
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2",
+      "bytes": 16205
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/prepare_seed49.py": {
+      "sha256": "72870579d3155fbd1bb5ad1f6f973267c43718bb7c84957daf7dd5d66e60f4b9",
+      "bytes": 2085
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/prepare_split.py": {
+      "sha256": "508f78725eec73c6fd7fd72cecff44df5e2e818c4480921a4acb347026b257a2",
+      "bytes": 2661
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/prepare_v02.py": {
+      "sha256": "2c8518e883c1d732402bad242ca61b3ec663f4774eb305f752d81ca0f04884ca",
+      "bytes": 3293
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/protocol.py": {
+      "sha256": "a780033f0a2a18d387718f82b4b60e10be4cb29bd1dd875fc8e26253f8ba27f2",
+      "bytes": 2420
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/python.sh": {
+      "sha256": "f7b4be3782b14dae85c2145e18bd4a909133038e94900503b01969372ba9f2ce",
+      "bytes": 544
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/repair_prepare.py": {
+      "sha256": "1b9cbca419e63b42dd3888618049c95e361310dc67b0ce4569c56cecab960016",
+      "bytes": 2142
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/report_fixed.py": {
+      "sha256": "967855cc231f692261ed99ae7318d7b663f5d77bc7cc6920b8f225ea19b5cfe7",
+      "bytes": 2694
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/report_v02.py": {
+      "sha256": "75fb9065341163cfacc62531ce0f5deb318fd8a1c5a7488aacaa28e2cad34f4f",
+      "bytes": 28589
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/sampling.py": {
+      "sha256": "6167547aae0911f691142873de52e8de58a3c69667184cf23ff029c4a0081e1c",
+      "bytes": 4551
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/selection_fix.py": {
+      "sha256": "0c3bd6dd954c1523b34c5db881b7335e0d5daf7d6fb7f83bbf03b7ab246485d5",
+      "bytes": 1051
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/smoke_acceptance.py": {
+      "sha256": "2e302f4ee997c501ada0d2d7cd1d7286fe0acf55f3bb85bce4b124a33e3d0f47",
+      "bytes": 2990
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/teacher_ops.py": {
+      "sha256": "5de49641c3c79f8dda9c47738ec11669e17a1bc5996750b04ba76abb4fcdd1da",
+      "bytes": 7407
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/teacher_v02.py": {
+      "sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "bytes": 20315
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/train_cl1.py": {
+      "sha256": "0418a12810d4730aa159de746b775924208a5c8f569e91bcfc983c971cdf0bcd",
+      "bytes": 30248
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/train_cl1_legacy.py": {
+      "sha256": "b724293591d1c58465332929f887c3667dc66bbfcb4604928d434eedea030a6d",
+      "bytes": 29970
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/train_v02.py": {
+      "sha256": "1583898ddf5943be8ae6a63035334e4002e4f88423e43ab6b782ec2f9f27ef6d",
+      "bytes": 28885
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/v0_core.py": {
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea",
+      "bytes": 13507
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/validation.py": {
+      "sha256": "a86291b73fd08eff534cfe77d0f05fdbb8ffc918dfc712edb5f3d6fe1eaa37d0",
+      "bytes": 1873
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/vendor_sampler.py": {
+      "sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+      "bytes": 4514
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/verify_meta8.py": {
+      "sha256": "53ba066b55bb525d9dab04d135244d34d2cd872d32291e8bdc76b082306cd91f",
+      "bytes": 779
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/code/verify_probe.py": {
+      "sha256": "2f35e7578cb05c42220ae351d9d615d3b1b9e341b05ad8226d9775a5f7334f51",
+      "bytes": 1425
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/evaluation_identity_development.json": {
+      "sha256": "7f2db4c7c5d6927dfb28b4352dfa1901282884a67537a385c631da043cdd368c",
+      "bytes": 306
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/evaluation_identity_test.json": {
+      "sha256": "b38545ec3ddf45c7f6da05c95e048398f9a80501e50b663895d3d4a5150affa8",
+      "bytes": 303
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/evaluations/frozen-base-seed70158-to10000-a01-10000-test/result.json": {
+      "sha256": "372a989d224887c8bf8fcec715ddfe470c1f753a2786115d8ce7c04f3c54434b",
+      "bytes": 25659
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/evaluations/frozen-recovery-seed70158-to10000-a01-10000-test/result.json": {
+      "sha256": "754beac07968f4777d705f1c1ae0552c8d72d1877b01766e5a2b2c2ec06f9fd3",
+      "bytes": 25609
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/evaluations/uniform-seed70158-to10000-a01-10000-test/result.json": {
+      "sha256": "0f686cfb903c59c49e97f5c9ab8c8b1eb639c907824e3d578d6525fa07f6a73f",
+      "bytes": 25630
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/gen_fixed_controller.py": {
+      "sha256": "cf931c8f111f4abca9f80718a6ee6353081b447e6748be7909f6b9052eae4c8e",
+      "bytes": 5946
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/host.py": {
+      "sha256": "69d073e520bc850fef9b9ec5d9fb4e217b9856a71479239becb4b8ee171b5d21",
+      "bytes": 3079
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/install_recovery.py": {
+      "sha256": "c05c84450db1d579f747424dfd4c51f00ae1d2becabb5d452d52bba38f1fa878",
+      "bytes": 117
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/source_manifest.json": {
+      "sha256": "556f57abc005e3258a821776fd7a48c86b5576da2e46533818c53db6940b0764",
+      "bytes": 5402
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/tests/legacy_v02.py": {
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c",
+      "bytes": 19447
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/tests/test_adam_runtime.py": {
+      "sha256": "f9cffdd73c46b494d1e542b1e7352fe10331973ed66c840ee02057675e51329e",
+      "bytes": 7685
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/tests/test_cl1.py": {
+      "sha256": "9a665ea3e0779bf27d413c8162afd0103a420edc442c2b8959742673a20a8f16",
+      "bytes": 3775
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/tests/test_frozen_rpc.py": {
+      "sha256": "c8eab771fc9a71b99a84b5fcf57a7b631259bed876a54d6644420bba16632415",
+      "bytes": 2521
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/tests/test_repairs.py": {
+      "sha256": "a5e5aa19e3d92a25face0619e3ab9cbf7501f7e7f4aa7523806c2b2b0977a5db",
+      "bytes": 3058
+    },
+    "/data/go2_piper_cl1_repair_20261110/COSTS.json": {
+      "sha256": "e1b52a745063d6101c2239be6071a673ef1dd8b5c18d67356c46e6b9d2880b4e",
+      "bytes": 589
+    },
+    "/data/go2_piper_cl1_repair_20261110/COST_BREAKDOWN.json": {
+      "sha256": "d7b526319f9f46ad5ff8230cf0f71767054da67a826113e031af716fc0a0d8b1",
+      "bytes": 1691
+    },
+    "/data/go2_piper_cl1_repair_20261110/PREFLIGHT.json": {
+      "sha256": "e6cc221c69781d10df78990cc4aaa27d0b54c223f52dcb6afaa6adf8ffda9f6e",
+      "bytes": 187
+    },
+    "/data/go2_piper_cl1_repair_20261110/RECOVERY_V2_PLAN.json": {
+      "sha256": "d09965aaf43cfb52d66a85973d15efadb5a0e7295c5b0f4230fbe6910191a569",
+      "bytes": 3262
+    },
+    "/data/go2_piper_cl1_repair_20261110/REPAIR_RECOVERY_ACCEPTANCE.json": {
+      "sha256": "f03edc415c3f0db0255da05c09590b7dfe44fb2aeb77e855575ef40561158edd",
+      "bytes": 1878
+    },
+    "/data/go2_piper_cl1_repair_20261110/RESULTS_BEFORE_REPAIR.json": {
+      "sha256": "033cd174c09cfa7a79bfc9f31451f539e513ebee564d1275418ed92665e485a9",
+      "bytes": 23080
+    },
+    "/data/go2_piper_cl1_repair_20261110/STATUS.json": {
+      "sha256": "12dcc58ab82fa44ea9bb1312a9fbd3b4ef89c335dc28b00a3cf6a64f506fe93b",
+      "bytes": 123
+    },
+    "/data/go2_piper_cl1_repair_20261110/UNIFORM_RESUME_PAIR.json": {
+      "sha256": "70c5c4314ce18166063ff6623926ef84027ed3fbb431b097fddbfa42f920073e",
+      "bytes": 670
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/adapter.py": {
+      "sha256": "a643694f7747f3260702b35b32a29aeae28fab5ab239cc06dc6b1ae1be17ef05",
+      "bytes": 7733
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/audit_point.py": {
+      "sha256": "48e2abbbd607d8e3671f2edef12d264175cac9fe619f1de63367832c4cee9dae",
+      "bytes": 11477
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/build_runner.py": {
+      "sha256": "a57ac00bb81f521740a4846a3bfdd4c32999275e21424de6af2149ffef8ce7d6",
+      "bytes": 3860
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/checkpoint_pair.py": {
+      "sha256": "7765dbc6ed37577c4690beb515659d63004ec578940d3133312f30907ba4da15",
+      "bytes": 2499
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/checkpoint_v02.py": {
+      "sha256": "3cbb1c9406878b473f7465da58d995910181ad11d57e2e5bf9c5e73a2b8ef12f",
+      "bytes": 520
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/cl1_core.py": {
+      "sha256": "c77910121e7980e686020ab4b95882408cf4bea87219d045a68c080d1dbf0376",
+      "bytes": 8229
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/cl1_ops.py": {
+      "sha256": "38fa617969860eaccd916e0b065c3add5e759fe166b0865a529dc40cbd6f36a8",
+      "bytes": 6822
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/cl1_proxy.py": {
+      "sha256": "530cca313b7b7e09d4766f4b254ce266a516889891397caeedde83099fd36284",
+      "bytes": 1372
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/command_check_math.py": {
+      "sha256": "9d6d4a9c8790d798046ab8d29f20edffb8831c750a52ebf4926c6c457dd4d839",
+      "bytes": 1404
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/command_features.py": {
+      "sha256": "f79306c2ade99381e7589e600edb919872a6361ff4ea31f1fc95c43c1e3317c3",
+      "bytes": 8189
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/commands.py": {
+      "sha256": "c80a27b7c4bb5c27e55e5d7eb2c1d3883d0e0e8c5411b963d757b613ab13c946",
+      "bytes": 4625
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/common.py": {
+      "sha256": "b88cc54cea82e09100c800503f0b8dd6dbce66be7e78b8562b21bf8b00058b0a",
+      "bytes": 3928
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/compact_teacher.py": {
+      "sha256": "5f0d2926e2d2ea2e76c2a24de532a74fe3100d459720c676ea53097c5e2071bc",
+      "bytes": 2328
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/comparison_reuse.py": {
+      "sha256": "1beb2dd612d0d69ce3e8dd398728434fbc49a4a74cb3df88914df893931132e8",
+      "bytes": 2180
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/cost_breakdown.py": {
+      "sha256": "b02782abc9bd8bafdae710b5b7f7b45147437ebcb459407dd00829b5e05d17de",
+      "bytes": 2252
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/cpu_hash.py": {
+      "sha256": "997122e7e5a977947af68a11bb1c38504a8d048063d520670d0ee4351e1f02ec",
+      "bytes": 998
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/cpu_preflight.py": {
+      "sha256": "58a9669478443da3a5c62d4ef081d618769c85a258fd21b2c7fe994fe740a78b",
+      "bytes": 1536
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/evaluate.py": {
+      "sha256": "acf9e57d145c56e3576960b09edc53a8c28fe81e53bc56338730ce74349b07b6",
+      "bytes": 9467
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/fork_state.py": {
+      "sha256": "f5a10801a1b343e764d5db5c89077eef8dd38ab04345dd76c4ef5f9873dd1af0",
+      "bytes": 8032
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/fork_v02.py": {
+      "sha256": "bb0d2987bfca3dc83101f813d71abb3deb67cad5862d1b4c65db987eb7a9c093",
+      "bytes": 9672
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/metrics.py": {
+      "sha256": "fe09f4965806779f22ed23466d3c8de1645208449048641cbb1130e3e895add1",
+      "bytes": 3876
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/neural_adapter.py": {
+      "sha256": "6eb475f117f5f178f340519b9d2e730867bbf1c34d0f5bfa2a85d2bdc5c8c1a4",
+      "bytes": 4070
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/neural_core.py": {
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea",
+      "bytes": 13507
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/neural_owner.py": {
+      "sha256": "a199caa76360c6ff8c5c546e4bbf88f61844d2ed1797e1f660d202fc2e531636",
+      "bytes": 3767
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/neural_v01.py": {
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2",
+      "bytes": 16205
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/plot_summary.py": {
+      "sha256": "397b618af5b602ea6572dd748d2bd3f79890a2df7354978f61d8a3611b474f80",
+      "bytes": 1159
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/prepare_seed49.py": {
+      "sha256": "72870579d3155fbd1bb5ad1f6f973267c43718bb7c84957daf7dd5d66e60f4b9",
+      "bytes": 2085
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/prepare_split.py": {
+      "sha256": "508f78725eec73c6fd7fd72cecff44df5e2e818c4480921a4acb347026b257a2",
+      "bytes": 2661
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/prepare_v02.py": {
+      "sha256": "2c8518e883c1d732402bad242ca61b3ec663f4774eb305f752d81ca0f04884ca",
+      "bytes": 3293
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/protocol.py": {
+      "sha256": "a780033f0a2a18d387718f82b4b60e10be4cb29bd1dd875fc8e26253f8ba27f2",
+      "bytes": 2420
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/python.sh": {
+      "sha256": "f7b4be3782b14dae85c2145e18bd4a909133038e94900503b01969372ba9f2ce",
+      "bytes": 544
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/repair_prepare.py": {
+      "sha256": "1b9cbca419e63b42dd3888618049c95e361310dc67b0ce4569c56cecab960016",
+      "bytes": 2142
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/report_v02.py": {
+      "sha256": "75fb9065341163cfacc62531ce0f5deb318fd8a1c5a7488aacaa28e2cad34f4f",
+      "bytes": 28589
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/sampling.py": {
+      "sha256": "6167547aae0911f691142873de52e8de58a3c69667184cf23ff029c4a0081e1c",
+      "bytes": 4551
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/selection_fix.py": {
+      "sha256": "0c3bd6dd954c1523b34c5db881b7335e0d5daf7d6fb7f83bbf03b7ab246485d5",
+      "bytes": 1051
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/smoke_acceptance.py": {
+      "sha256": "2e302f4ee997c501ada0d2d7cd1d7286fe0acf55f3bb85bce4b124a33e3d0f47",
+      "bytes": 2990
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/teacher_ops.py": {
+      "sha256": "5de49641c3c79f8dda9c47738ec11669e17a1bc5996750b04ba76abb4fcdd1da",
+      "bytes": 7407
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/teacher_v02.py": {
+      "sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "bytes": 20315
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/train_cl1.py": {
+      "sha256": "b724293591d1c58465332929f887c3667dc66bbfcb4604928d434eedea030a6d",
+      "bytes": 29970
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/train_v02.py": {
+      "sha256": "1583898ddf5943be8ae6a63035334e4002e4f88423e43ab6b782ec2f9f27ef6d",
+      "bytes": 28885
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/v0_core.py": {
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea",
+      "bytes": 13507
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/validation.py": {
+      "sha256": "a86291b73fd08eff534cfe77d0f05fdbb8ffc918dfc712edb5f3d6fe1eaa37d0",
+      "bytes": 1873
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/vendor_sampler.py": {
+      "sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+      "bytes": 4514
+    },
+    "/data/go2_piper_cl1_repair_20261110/code/verify_meta8.py": {
+      "sha256": "53ba066b55bb525d9dab04d135244d34d2cd872d32291e8bdc76b082306cd91f",
+      "bytes": 779
+    },
+    "/data/go2_piper_cl1_repair_20261110/controller.py": {
+      "sha256": "1f8206d8e789232d8dd3f056916244725f71ea279877597affab56a18d321a87",
+      "bytes": 8529
+    },
+    "/data/go2_piper_cl1_repair_20261110/evaluation_identity_development.json": {
+      "sha256": "7f2db4c7c5d6927dfb28b4352dfa1901282884a67537a385c631da043cdd368c",
+      "bytes": 306
+    },
+    "/data/go2_piper_cl1_repair_20261110/evaluation_identity_test.json": {
+      "sha256": "b38545ec3ddf45c7f6da05c95e048398f9a80501e50b663895d3d4a5150affa8",
+      "bytes": 303
+    },
+    "/data/go2_piper_cl1_repair_20261110/host.py": {
+      "sha256": "69d073e520bc850fef9b9ec5d9fb4e217b9856a71479239becb4b8ee171b5d21",
+      "bytes": 3079
+    },
+    "/data/go2_piper_cl1_repair_20261110/master.py": {
+      "sha256": "f5e353e62d54593dc88ffd5af8322bea53cf43c5b4f60c40061096855ad19fe4",
+      "bytes": 2557
+    },
+    "/data/go2_piper_cl1_repair_20261110/source_manifest.json": {
+      "sha256": "1240c90553c213180849f8674f6eb417854bf5f90cf8dbf3f1726800edf04fc0",
+      "bytes": 4164
+    },
+    "/data/go2_piper_cl1_repair_20261110/tests/legacy_v02.py": {
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c",
+      "bytes": 19447
+    },
+    "/data/go2_piper_cl1_repair_20261110/tests/test_adam_runtime.py": {
+      "sha256": "f9cffdd73c46b494d1e542b1e7352fe10331973ed66c840ee02057675e51329e",
+      "bytes": 7685
+    },
+    "/data/go2_piper_cl1_repair_20261110/tests/test_cl1.py": {
+      "sha256": "9a665ea3e0779bf27d413c8162afd0103a420edc442c2b8959742673a20a8f16",
+      "bytes": 3775
+    },
+    "/data/go2_piper_cl1_repair_20261110/tests/test_repairs.py": {
+      "sha256": "a5e5aa19e3d92a25face0619e3ab9cbf7501f7e7f4aa7523806c2b2b0977a5db",
+      "bytes": 3058
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/BASE_ACCEPTANCE.json": {
+      "sha256": "73907d810c180846e6be6a51c5427fbf76fdfdc708c2dfd592cd6be702b0c79c",
+      "bytes": 187
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/CODE_BINDING.initial.json": {
+      "sha256": "f2bcec05eb667346265bed0677aebcaf4d3dd4ae250bd588ebdf23217cedad53",
+      "bytes": 4743
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/CODE_BINDING.json": {
+      "sha256": "c1bcf64b0cce331c4031ffd265997a7f2fda379b3687f9782a85b1ba14f6587d",
+      "bytes": 4920
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/COSTS.json": {
+      "sha256": "ff8c58b131cba68b9865cad25c1f704464de81caa49229d49bc606b8d32b832a",
+      "bytes": 1974
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/COST_BREAKDOWN.json": {
+      "sha256": "904892521634a43887a759d5b04d13d23da4d6416676723e3f5c25cab942f607",
+      "bytes": 1864
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/ENGINEERING_ACCEPTANCE.json": {
+      "sha256": "569db49d255a0cbc9a73d66e47c875e4f0617bbe54b50641bdcea236d5cd08b0",
+      "bytes": 6730
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/LAUNCH_RECEIPT.json": {
+      "sha256": "498950ff04acb8bf36a60fd28f9d44f8212f6a85aa58330dccdd3f9d576b3ae5",
+      "bytes": 2142
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/PROTOCOL.json": {
+      "sha256": "cf58dac3f75c893e25db3010ab179b84ef52b345f82ba4a91447f114c524c248",
+      "bytes": 893
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/RECOVERY_PLAN.json": {
+      "sha256": "75a5a3e0de35eeda602bc5cd124ef19ea418e4a053f26b11a41de71a4e7b129c",
+      "bytes": 42598
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/RUNNER_ADAPTATION.json": {
+      "sha256": "c1bbef28d2b6ba5f52cea6c189fd2f76e9bdc1bd771d9ca3bea878d56ba81537",
+      "bytes": 1305
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/SMOKE_ACCEPTANCE.json": {
+      "sha256": "7f66985e9c2f7a0ab688ed60a0cdcc5811fb3f614b45d47b7c8bb49fa19bd957",
+      "bytes": 191
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/STATUS.json": {
+      "sha256": "1354f285c5f6618b44a2183f476690c3792c9bf9eaf0b7b66271429a860a61b8",
+      "bytes": 156
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/adapter.py": {
+      "sha256": "a643694f7747f3260702b35b32a29aeae28fab5ab239cc06dc6b1ae1be17ef05",
+      "bytes": 7733
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/audit_point.py": {
+      "sha256": "48e2abbbd607d8e3671f2edef12d264175cac9fe619f1de63367832c4cee9dae",
+      "bytes": 11477
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/build_runner.py": {
+      "sha256": "a57ac00bb81f521740a4846a3bfdd4c32999275e21424de6af2149ffef8ce7d6",
+      "bytes": 3860
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/checkpoint_v02.py": {
+      "sha256": "3cbb1c9406878b473f7465da58d995910181ad11d57e2e5bf9c5e73a2b8ef12f",
+      "bytes": 520
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/cl1_core.py": {
+      "sha256": "c77910121e7980e686020ab4b95882408cf4bea87219d045a68c080d1dbf0376",
+      "bytes": 8229
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/cl1_ops.py": {
+      "sha256": "38fa617969860eaccd916e0b065c3add5e759fe166b0865a529dc40cbd6f36a8",
+      "bytes": 6822
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/cl1_proxy.py": {
+      "sha256": "530cca313b7b7e09d4766f4b254ce266a516889891397caeedde83099fd36284",
+      "bytes": 1372
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/command_check_math.py": {
+      "sha256": "9d6d4a9c8790d798046ab8d29f20edffb8831c750a52ebf4926c6c457dd4d839",
+      "bytes": 1404
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/command_features.py": {
+      "sha256": "f79306c2ade99381e7589e600edb919872a6361ff4ea31f1fc95c43c1e3317c3",
+      "bytes": 8189
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/commands.py": {
+      "sha256": "c80a27b7c4bb5c27e55e5d7eb2c1d3883d0e0e8c5411b963d757b613ab13c946",
+      "bytes": 4625
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/common.py": {
+      "sha256": "b88cc54cea82e09100c800503f0b8dd6dbce66be7e78b8562b21bf8b00058b0a",
+      "bytes": 3928
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/compact_teacher.py": {
+      "sha256": "5f0d2926e2d2ea2e76c2a24de532a74fe3100d459720c676ea53097c5e2071bc",
+      "bytes": 2328
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/comparison_reuse.py": {
+      "sha256": "1beb2dd612d0d69ce3e8dd398728434fbc49a4a74cb3df88914df893931132e8",
+      "bytes": 2180
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/cost_breakdown.py": {
+      "sha256": "b02782abc9bd8bafdae710b5b7f7b45147437ebcb459407dd00829b5e05d17de",
+      "bytes": 2252
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/cpu_hash.py": {
+      "sha256": "997122e7e5a977947af68a11bb1c38504a8d048063d520670d0ee4351e1f02ec",
+      "bytes": 998
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/cpu_preflight.py": {
+      "sha256": "58a9669478443da3a5c62d4ef081d618769c85a258fd21b2c7fe994fe740a78b",
+      "bytes": 1536
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/evaluate.py": {
+      "sha256": "acf9e57d145c56e3576960b09edc53a8c28fe81e53bc56338730ce74349b07b6",
+      "bytes": 9467
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/fork_state.py": {
+      "sha256": "f5a10801a1b343e764d5db5c89077eef8dd38ab04345dd76c4ef5f9873dd1af0",
+      "bytes": 8032
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/fork_v02.py": {
+      "sha256": "bb0d2987bfca3dc83101f813d71abb3deb67cad5862d1b4c65db987eb7a9c093",
+      "bytes": 9672
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/metrics.py": {
+      "sha256": "fe09f4965806779f22ed23466d3c8de1645208449048641cbb1130e3e895add1",
+      "bytes": 3876
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/neural_adapter.py": {
+      "sha256": "6eb475f117f5f178f340519b9d2e730867bbf1c34d0f5bfa2a85d2bdc5c8c1a4",
+      "bytes": 4070
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/neural_core.py": {
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea",
+      "bytes": 13507
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/neural_owner.py": {
+      "sha256": "a199caa76360c6ff8c5c546e4bbf88f61844d2ed1797e1f660d202fc2e531636",
+      "bytes": 3767
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/neural_v01.py": {
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2",
+      "bytes": 16205
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/prepare_seed49.py": {
+      "sha256": "72870579d3155fbd1bb5ad1f6f973267c43718bb7c84957daf7dd5d66e60f4b9",
+      "bytes": 2085
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/prepare_split.py": {
+      "sha256": "508f78725eec73c6fd7fd72cecff44df5e2e818c4480921a4acb347026b257a2",
+      "bytes": 2661
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/prepare_v02.py": {
+      "sha256": "2c8518e883c1d732402bad242ca61b3ec663f4774eb305f752d81ca0f04884ca",
+      "bytes": 3293
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/protocol.py": {
+      "sha256": "a780033f0a2a18d387718f82b4b60e10be4cb29bd1dd875fc8e26253f8ba27f2",
+      "bytes": 2420
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/python.sh": {
+      "sha256": "f7b4be3782b14dae85c2145e18bd4a909133038e94900503b01969372ba9f2ce",
+      "bytes": 544
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/report_v02.py": {
+      "sha256": "75fb9065341163cfacc62531ce0f5deb318fd8a1c5a7488aacaa28e2cad34f4f",
+      "bytes": 28589
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/sampling.py": {
+      "sha256": "6167547aae0911f691142873de52e8de58a3c69667184cf23ff029c4a0081e1c",
+      "bytes": 4551
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/smoke_acceptance.py": {
+      "sha256": "2e302f4ee997c501ada0d2d7cd1d7286fe0acf55f3bb85bce4b124a33e3d0f47",
+      "bytes": 2990
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/teacher_ops.py": {
+      "sha256": "5de49641c3c79f8dda9c47738ec11669e17a1bc5996750b04ba76abb4fcdd1da",
+      "bytes": 7407
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/teacher_v02.py": {
+      "sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "bytes": 20315
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/train_cl1.py": {
+      "sha256": "b724293591d1c58465332929f887c3667dc66bbfcb4604928d434eedea030a6d",
+      "bytes": 29970
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/train_v02.py": {
+      "sha256": "1583898ddf5943be8ae6a63035334e4002e4f88423e43ab6b782ec2f9f27ef6d",
+      "bytes": 28885
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/v0_core.py": {
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea",
+      "bytes": 13507
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/validation.py": {
+      "sha256": "a86291b73fd08eff534cfe77d0f05fdbb8ffc918dfc712edb5f3d6fe1eaa37d0",
+      "bytes": 1873
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/vendor_sampler.py": {
+      "sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+      "bytes": 4514
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/code/verify_meta8.py": {
+      "sha256": "53ba066b55bb525d9dab04d135244d34d2cd872d32291e8bdc76b082306cd91f",
+      "bytes": 779
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/controller.py": {
+      "sha256": "1f8206d8e789232d8dd3f056916244725f71ea279877597affab56a18d321a87",
+      "bytes": 8529
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/evaluation_identity_development.json": {
+      "sha256": "7f2db4c7c5d6927dfb28b4352dfa1901282884a67537a385c631da043cdd368c",
+      "bytes": 306
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/evaluation_identity_test.json": {
+      "sha256": "b38545ec3ddf45c7f6da05c95e048398f9a80501e50b663895d3d4a5150affa8",
+      "bytes": 303
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/evaluations/base-seed43-to10000-10000-test/result.json": {
+      "sha256": "b4a22d974bea1f23c20d3ab9d720fb9822036773244611d5aa4cb10eadebfacf",
+      "bytes": 25756
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/evaluations/base-seed44-to10000-10000-test/result.json": {
+      "sha256": "deea59a5a50b19cb909c7162b6a425a3fbe77f7cf9aad8d1080da35006bf9d9c",
+      "bytes": 25825
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/host.py": {
+      "sha256": "69d073e520bc850fef9b9ec5d9fb4e217b9856a71479239becb4b8ee171b5d21",
+      "bytes": 3079
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/source_manifest.json": {
+      "sha256": "1240c90553c213180849f8674f6eb417854bf5f90cf8dbf3f1726800edf04fc0",
+      "bytes": 4164
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/tests/legacy_v02.py": {
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c",
+      "bytes": 19447
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/tests/test_adam_runtime.py": {
+      "sha256": "f9cffdd73c46b494d1e542b1e7352fe10331973ed66c840ee02057675e51329e",
+      "bytes": 7685
+    },
+    "/data/go2_piper_nsgs_cl1_20261109/tests/test_cl1.py": {
+      "sha256": "9a665ea3e0779bf27d413c8162afd0103a420edc442c2b8959742673a20a8f16",
+      "bytes": 3775
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/CODE_BINDING.json": {
+      "sha256": "4c93643b3b7758dd28df46466ef48575cbe390cd91bab9f0e1f2510253efdfdc",
+      "bytes": 5935
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/INITIAL_LOCK.json": {
+      "sha256": "6ac548d0f6dd9d69e159493018d162a1196faf5e9d915ffbe34061f064c149fc",
+      "bytes": 1362
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/PHYSICAL_RESUME_ACCEPTANCE.json": {
+      "sha256": "b30ffc26f308e3a47bcea1423cdd93ea7fe79c2ac640e97efc676c7fc5720657",
+      "bytes": 4113
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/PROTOCOL.json": {
+      "sha256": "d384c32a7bf22fc882f95f6ba64c46f16311ecdfbee5512e22276d59a56ed3cf",
+      "bytes": 912
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/RECOVERY_V2_LOCK.json": {
+      "sha256": "e53ae5288598e6bc3821d4f3156591a0c3eb6a403db1477638aa9051f3a4b10a",
+      "bytes": 361
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/STATUS.json": {
+      "sha256": "fa418d0800aaa2a0ea334e911c1af96af694fa955a8356e33c44e62d86ad5d12",
+      "bytes": 293
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/adapter.py": {
+      "sha256": "a643694f7747f3260702b35b32a29aeae28fab5ab239cc06dc6b1ae1be17ef05",
+      "bytes": 7733
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/audit_point.py": {
+      "sha256": "48e2abbbd607d8e3671f2edef12d264175cac9fe619f1de63367832c4cee9dae",
+      "bytes": 11477
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/build_fixed_runner.py": {
+      "sha256": "25b5cee4f1b3a272bbe8991a99ae5d117fa7734e6e8629124db6b2c9843957e5",
+      "bytes": 2273
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/build_runner.py": {
+      "sha256": "a57ac00bb81f521740a4846a3bfdd4c32999275e21424de6af2149ffef8ce7d6",
+      "bytes": 3860
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/checkpoint_pair.py": {
+      "sha256": "9dbf093054c09320419c4c4713c82873b3dfa4290735d0e6d03e1f25c82fcf8a",
+      "bytes": 2618
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/checkpoint_v02.py": {
+      "sha256": "3cbb1c9406878b473f7465da58d995910181ad11d57e2e5bf9c5e73a2b8ef12f",
+      "bytes": 520
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/cl1_core.py": {
+      "sha256": "c77910121e7980e686020ab4b95882408cf4bea87219d045a68c080d1dbf0376",
+      "bytes": 8229
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/cl1_ops.py": {
+      "sha256": "8c563537f9dbc6c2389717235782d880531f638b06cbcf4fadd198ad34b57f4f",
+      "bytes": 117
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/cl1_proxy.py": {
+      "sha256": "5df26f1e41d8a79f51ce456c08280d61937351a0238bb7e90ed7c9af0b4838c8",
+      "bytes": 1909
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/cl1_proxy_legacy.py": {
+      "sha256": "530cca313b7b7e09d4766f4b254ce266a516889891397caeedde83099fd36284",
+      "bytes": 1372
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/command_check_math.py": {
+      "sha256": "9d6d4a9c8790d798046ab8d29f20edffb8831c750a52ebf4926c6c457dd4d839",
+      "bytes": 1404
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/command_features.py": {
+      "sha256": "f79306c2ade99381e7589e600edb919872a6361ff4ea31f1fc95c43c1e3317c3",
+      "bytes": 8189
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/commands.py": {
+      "sha256": "c80a27b7c4bb5c27e55e5d7eb2c1d3883d0e0e8c5411b963d757b613ab13c946",
+      "bytes": 4625
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/common.py": {
+      "sha256": "b88cc54cea82e09100c800503f0b8dd6dbce66be7e78b8562b21bf8b00058b0a",
+      "bytes": 3928
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/compact_teacher.py": {
+      "sha256": "5f0d2926e2d2ea2e76c2a24de532a74fe3100d459720c676ea53097c5e2071bc",
+      "bytes": 2328
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/comparison_reuse.py": {
+      "sha256": "1beb2dd612d0d69ce3e8dd398728434fbc49a4a74cb3df88914df893931132e8",
+      "bytes": 2180
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/cost_breakdown.py": {
+      "sha256": "b02782abc9bd8bafdae710b5b7f7b45147437ebcb459407dd00829b5e05d17de",
+      "bytes": 2252
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/cpu_hash.py": {
+      "sha256": "997122e7e5a977947af68a11bb1c38504a8d048063d520670d0ee4351e1f02ec",
+      "bytes": 998
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/cpu_preflight.py": {
+      "sha256": "58a9669478443da3a5c62d4ef081d618769c85a258fd21b2c7fe994fe740a78b",
+      "bytes": 1536
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/evaluate.py": {
+      "sha256": "acf9e57d145c56e3576960b09edc53a8c28fe81e53bc56338730ce74349b07b6",
+      "bytes": 9467
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/fixed_prepare.py": {
+      "sha256": "8656c14395b9e7db6ca39ebf97b078d8db661de80317189301348ec117bab8a9",
+      "bytes": 3832
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/fork_state.py": {
+      "sha256": "f5a10801a1b343e764d5db5c89077eef8dd38ab04345dd76c4ef5f9873dd1af0",
+      "bytes": 8032
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/fork_v02.py": {
+      "sha256": "bb0d2987bfca3dc83101f813d71abb3deb67cad5862d1b4c65db987eb7a9c093",
+      "bytes": 9672
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/frozen_ops.py": {
+      "sha256": "ece12a77a079690206bf9b13cf9060f935953341be343496e3d4990fd3ff1120",
+      "bytes": 3921
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/gen_compare.py": {
+      "sha256": "616f3e68e7e06d57dde08a7dddddcaf59c7dad1548f2c736d618d4898d135784",
+      "bytes": 3963
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/gen_prepare.py": {
+      "sha256": "25e12db08c2f99f0913da20096146e83387b7fec9e856f775632958df6a4ea8b",
+      "bytes": 5578
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/gen_verify.py": {
+      "sha256": "e17f5eb78644cffade246c2c4e7b03648d9d5138973f5a98241d307159aaf431",
+      "bytes": 1935
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/metrics.py": {
+      "sha256": "fe09f4965806779f22ed23466d3c8de1645208449048641cbb1130e3e895add1",
+      "bytes": 3876
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/neural_adapter.py": {
+      "sha256": "6eb475f117f5f178f340519b9d2e730867bbf1c34d0f5bfa2a85d2bdc5c8c1a4",
+      "bytes": 4070
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/neural_core.py": {
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea",
+      "bytes": 13507
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/neural_owner.py": {
+      "sha256": "a199caa76360c6ff8c5c546e4bbf88f61844d2ed1797e1f660d202fc2e531636",
+      "bytes": 3767
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/neural_v01.py": {
+      "sha256": "fa30d99154186caddedc921b43eb1553083afdcded356f18c9dc43f4ce1dd3b2",
+      "bytes": 16205
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/prepare_new_seed.py": {
+      "sha256": "46779433149c4f789bfcb1a08321d9bd7b944ced51b00222a4e9f3eb2874b9df",
+      "bytes": 755
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/prepare_seed49.py": {
+      "sha256": "72870579d3155fbd1bb5ad1f6f973267c43718bb7c84957daf7dd5d66e60f4b9",
+      "bytes": 2085
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/prepare_split.py": {
+      "sha256": "508f78725eec73c6fd7fd72cecff44df5e2e818c4480921a4acb347026b257a2",
+      "bytes": 2661
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/prepare_v02.py": {
+      "sha256": "2c8518e883c1d732402bad242ca61b3ec663f4774eb305f752d81ca0f04884ca",
+      "bytes": 3293
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/protocol.py": {
+      "sha256": "a780033f0a2a18d387718f82b4b60e10be4cb29bd1dd875fc8e26253f8ba27f2",
+      "bytes": 2420
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/python.sh": {
+      "sha256": "f7b4be3782b14dae85c2145e18bd4a909133038e94900503b01969372ba9f2ce",
+      "bytes": 544
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/repair_prepare.py": {
+      "sha256": "1b9cbca419e63b42dd3888618049c95e361310dc67b0ce4569c56cecab960016",
+      "bytes": 2142
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/report_fixed.py": {
+      "sha256": "5884eb6197508feed7fa2a4e10397957f65a5f251356ec841f844c968679821d",
+      "bytes": 2676
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/report_v02.py": {
+      "sha256": "75fb9065341163cfacc62531ce0f5deb318fd8a1c5a7488aacaa28e2cad34f4f",
+      "bytes": 28589
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/sampling.py": {
+      "sha256": "6167547aae0911f691142873de52e8de58a3c69667184cf23ff029c4a0081e1c",
+      "bytes": 4551
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/selection_fix.py": {
+      "sha256": "0c3bd6dd954c1523b34c5db881b7335e0d5daf7d6fb7f83bbf03b7ab246485d5",
+      "bytes": 1051
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/smoke_acceptance.py": {
+      "sha256": "2e302f4ee997c501ada0d2d7cd1d7286fe0acf55f3bb85bce4b124a33e3d0f47",
+      "bytes": 2990
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/teacher_ops.py": {
+      "sha256": "5de49641c3c79f8dda9c47738ec11669e17a1bc5996750b04ba76abb4fcdd1da",
+      "bytes": 7407
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/teacher_v02.py": {
+      "sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96",
+      "bytes": 20315
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/train_cl1.py": {
+      "sha256": "0418a12810d4730aa159de746b775924208a5c8f569e91bcfc983c971cdf0bcd",
+      "bytes": 30248
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/train_cl1_legacy.py": {
+      "sha256": "b724293591d1c58465332929f887c3667dc66bbfcb4604928d434eedea030a6d",
+      "bytes": 29970
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/train_v02.py": {
+      "sha256": "1583898ddf5943be8ae6a63035334e4002e4f88423e43ab6b782ec2f9f27ef6d",
+      "bytes": 28885
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/v0_core.py": {
+      "sha256": "4603d7697b8cb91f293b1ad357a32b241df648d50db5c0b3ccf49849d558c4ea",
+      "bytes": 13507
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/validation.py": {
+      "sha256": "a86291b73fd08eff534cfe77d0f05fdbb8ffc918dfc712edb5f3d6fe1eaa37d0",
+      "bytes": 1873
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/vendor_sampler.py": {
+      "sha256": "122b3e1a08e92d1ce815fa048fddfcf867bc1894123779c4d651d71d2d13df93",
+      "bytes": 4514
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/verify_meta8.py": {
+      "sha256": "53ba066b55bb525d9dab04d135244d34d2cd872d32291e8bdc76b082306cd91f",
+      "bytes": 779
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/code/verify_probe.py": {
+      "sha256": "2f35e7578cb05c42220ae351d9d615d3b1b9e341b05ad8226d9775a5f7334f51",
+      "bytes": 1425
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/evaluation_identity_development.json": {
+      "sha256": "7f2db4c7c5d6927dfb28b4352dfa1901282884a67537a385c631da043cdd368c",
+      "bytes": 306
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/evaluation_identity_test.json": {
+      "sha256": "b38545ec3ddf45c7f6da05c95e048398f9a80501e50b663895d3d4a5150affa8",
+      "bytes": 303
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/evaluations/uniform-seed70159-to10000-a01-10000-test/result.json": {
+      "sha256": "90faf531443a6ecc24b018553b0f17b6d396731865c21f36c6a2235613a09398",
+      "bytes": 25693
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/gen_fixed_controller.py": {
+      "sha256": "966fff0964d79619e48f2c5b3597d93bd81dbca2c69527236d62cd87d1c3636d",
+      "bytes": 5807
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/host.py": {
+      "sha256": "69d073e520bc850fef9b9ec5d9fb4e217b9856a71479239becb4b8ee171b5d21",
+      "bytes": 3079
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/launch_new_seed.py": {
+      "sha256": "aa1d2a3e4e90be138db327215acf7af7e30fdb4f24d191a1dd86c1884ae42fc0",
+      "bytes": 198
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/source_manifest.json": {
+      "sha256": "588f2338f3474b41cb90772f4094794f870d322dba2fa61f527ae75e648ef439",
+      "bytes": 5679
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/tests/legacy_v02.py": {
+      "sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c",
+      "bytes": 19447
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/tests/test_adam_runtime.py": {
+      "sha256": "f9cffdd73c46b494d1e542b1e7352fe10331973ed66c840ee02057675e51329e",
+      "bytes": 7685
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/tests/test_cl1.py": {
+      "sha256": "9a665ea3e0779bf27d413c8162afd0103a420edc442c2b8959742673a20a8f16",
+      "bytes": 3775
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/tests/test_frozen_rpc.py": {
+      "sha256": "c8eab771fc9a71b99a84b5fcf57a7b631259bed876a54d6644420bba16632415",
+      "bytes": 2521
+    },
+    "/data/go2_piper_nsgs_cl1_gen_seed70159_20261111/tests/test_repairs.py": {
+      "sha256": "a5e5aa19e3d92a25face0619e3ab9cbf7501f7e7f4aa7523806c2b2b0977a5db",
+      "bytes": 3058
+    }
+  },
+  "skipped_large_files": [],
+  "active_job": "seed70159 frozen-base; no run directories modified"
+}

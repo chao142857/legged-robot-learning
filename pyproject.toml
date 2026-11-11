@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nsgs"
+version = "0.1.0"
+description = "State-conditioned neural task sampling for whole-body control."
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24", "torch>=2.6"]
+license = "Apache-2.0"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,27 @@
+{
+  "seed": 70159,
+  "arms": {
+    "uniform": {
+      "source": "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/teachers/uniform/initial.pt",
+      "source_sha256": "e828c02d964a93be6ac796a8e45049d5afee059afa873b35461b098c4b86e505",
+      "network_sha256": "71c5babd49c54721f2fbc28618aac1098205680386f78c3d68490eebd27add57",
+      "optimizer_sha256": "d8c9ad28a49127d6bfb1aaec5304421fbd77994e5f50f7cf5a920d6cefecaded",
+      "version": 20
+    },
+    "frozen-base": {
+      "source": "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/teachers/frozen-base/initial.pt",
+      "source_sha256": "bbb982afdb281310e13e16ba25a1d11a929b8c5c6fdf796dce4e692e8476ea42",
+      "network_sha256": "71c5babd49c54721f2fbc28618aac1098205680386f78c3d68490eebd27add57",
+      "optimizer_sha256": "d8c9ad28a49127d6bfb1aaec5304421fbd77994e5f50f7cf5a920d6cefecaded",
+      "version": 20
+    },
+    "frozen-recovery": {
+      "source": "/data/go2_piper_nsgs_cl1_gen_seed70158_fixed_20261110/teachers/frozen-recovery/initial.pt",
+      "source_sha256": "e6c3f4f125ccfefe936eac591ac1c097c6cb6b58365d5fce3fd857a2d8bb33cd",
+      "network_sha256": "499c4fd4593da2fb537d19808bf4d13b7a00e0bd47832b4a77100fa280817dd1",
+      "optimizer_sha256": "d1a64d7e3c6a093912435c100c4ee84dd8ccd0b074364b39f42bb7ef9af91137",
+      "version": 21
+    }
+  },
+  "all_student_memory_empty": true
+}

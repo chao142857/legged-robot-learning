@@ -1,0 +1,34 @@
+{
+  "mappings": {
+    "random_20261104": {
+      "seed": 20261104,
+      "groups": 4096,
+      "capacity": 8,
+      "mapping_sha256": "eea8d510b1280a5ac80dbeded4dfbaddb2677afd8c4c9af4180ba27ad1193919"
+    },
+    "random_20261105": {
+      "seed": 20261105,
+      "groups": 4096,
+      "capacity": 8,
+      "mapping_sha256": "7187f6f779501811e3ed6ead81337786493a0e84b3617833ecb04b4d5be87bf3"
+    },
+    "random_20261106": {
+      "seed": 20261106,
+      "groups": 4096,
+      "capacity": 8,
+      "mapping_sha256": "a68331ab4a9995cb9b1e8315d7b7d80d04f5566773d036bb0ec4ffe539ad9243"
+    },
+    "command": {
+      "seed": 20261104,
+      "groups": 4096,
+      "capacity": 8,
+      "mapping_sha256": "7effb16ee9a3dbe37e78fe4aaf893f6f198bd100e47e714f01ceedb37fbb3cd7"
+    }
+  },
+  "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+  "features_sha256": "6b77b240f7dcb092dc7b89f397e8a75f5d451c97d0ea9515c9bf371d467dce14",
+  "train_only": true,
+  "evaluation_pool_not_loaded": true,
+  "algorithm": "Recursive principal-axis median partition; power_steps8; capacity8; command features normalized by native physical ranges; stable ID ties.",
+  "protocol_sha256": "18a6b7371acad72a532e2ffb78d35f9b01b097975e583c51d5a3843e63afe7cb"
+}

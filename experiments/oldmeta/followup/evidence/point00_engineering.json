@@ -1,0 +1,265 @@
+{
+  "passed": true,
+  "index": 0,
+  "seed": 43,
+  "start_update": 1000,
+  "source_checkpoint_sha256": "b86188fa18f49134dc2d9773ae1efd7d2a0ce38aaf5a7c040740eabf97799037",
+  "prepared_checkpoint_sha256": "b86188fa18f49134dc2d9773ae1efd7d2a0ce38aaf5a7c040740eabf97799037",
+  "decision_sha256": "34d12b613aa670f7fc966222cb4a00bb897a12bf7e0441f71f57b905db45ec6e",
+  "restorable_branch_inputs_equal": true,
+  "original_assets_unchanged": true,
+  "all_sampler_probabilities_verified": true,
+  "physically_executed_exposure_differs": true,
+  "planned_plus_minus_tv": 0.23465545234937613,
+  "arms": {
+    "uniform": {
+      "run_result_sha256": "8423661ff61c3e152afb3885576e42b038a9e57fad77fedddb6343a336df37b6",
+      "restore": {
+        "source_checkpoint_sha256": "b86188fa18f49134dc2d9773ae1efd7d2a0ce38aaf5a7c040740eabf97799037",
+        "actor_sha256": "b373bb7a20424f40c3020b33021dcac5984480e8894e08264f63a0bdc0440e66",
+        "critic_sha256": "3ead9c1d8dd9d0775a536c24688ca40ca631e6bce8fc1d5a36fcacd6955d245b",
+        "optimizer_sha256": "fef87eb67a3d44a2ecd8610c59832fd4781e18dbd0bd890853b7a0d2a81011b5",
+        "environment_sha256": "1f5ce1c57e3b9695a4dc1e35b6ba3667aad5bc673ac33c6fc2f33c436d582244",
+        "global_rng_sha256": "6ec2524360409fe0c82c8dfbe8a9826571dddd7ec138f6b0efb6074c75f2a63b",
+        "adapter_restored_sha256": "723b4a974da5029b1ffa08fcf9377134bf0f4f67c4d2af4245dd0efba2a678b2",
+        "installed_sampler_rng_sha256": "858ddac78be48720bc61da2ba901664c7cb7287dccedd1a65531d48e85ccd099",
+        "completed_updates": 1000,
+        "active_episodes": 4096
+      },
+      "sampling": {
+        "real_decisions": 9971,
+        "unique_selected_sequences": 8627,
+        "planned_probability_sha256": "90208aeefba8f96c45edb5d55c5c78000b0aab93ebb3e5b5cf28d7956fc49e15",
+        "planned_effective_sequences": 32768.0,
+        "empirical_sequence_tv_from_planned": 0.736724853515625,
+        "empirical_basis_mean": [
+          -0.0003899434991245371,
+          -0.0065804555193463435,
+          0.020424973769064436,
+          -0.011155414947921178,
+          0.013773993750822045,
+          0.0014469366499965846,
+          0.0018239595557778846,
+          -0.012590031507222942
+        ],
+        "expected_basis_mean": [
+          -3.3393426912553537e-16,
+          1.43982048506075e-16,
+          -1.0356732832450533e-14,
+          -3.4059127046459636e-15,
+          3.894887884436926e-15,
+          2.8343213193116057e-15,
+          -8.003580437287994e-16,
+          -7.177418381854039e-17
+        ],
+        "basis_mean_absolute_deviation": 0.00852321364990959,
+        "new_draw_exposure_steps": 7840076,
+        "conditioned_old_episode_exposure_steps": 1990324,
+        "zero_exposure_end_boundary_draws": 6,
+        "assignment_probability_exact": true,
+        "all_transitions_accounted": true,
+        "real_draws_sha256": "0ce37e5be0cc211f6dc9748c85c98dbec2a05c5a1e0eb8decb8921fdfa1a5a08"
+      },
+      "development": {
+        "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/evaluations/p00-seed43-cp01000-uniform-after/result.json",
+        "sha256": "7f7e7f1f537521332461d148db44cd5019e277dc7534010789aa0393f54cd57a"
+      },
+      "continuous_score": 0.12567073304934076,
+      "strict_success": 0.00390625,
+      "physical_errors": {
+        "velocity_m_s": 0.10214187681906965,
+        "yaw_rad_s": 0.1287881088922996,
+        "ee_position_m": 0.10173057353713563,
+        "ee_orientation_rad": 0.10990642041873477
+      },
+      "safety": {
+        "native_failure_rate": 0.001953125,
+        "joint_soft_limit_step_fraction_mean": 0.3995704290517631,
+        "body_tilt_over_30deg_step_fraction_mean": 0.00015445934109403254,
+        "max_joint_soft_limit_excess_rad": 0.15723800659179688,
+        "max_body_tilt_rad": 0.7451987862586975,
+        "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+      }
+    },
+    "plus": {
+      "run_result_sha256": "10a0bc30fc7f149795084b74a73c1889cea2fc0f3dcf3862395a0a9ac8d8f0b4",
+      "restore": {
+        "source_checkpoint_sha256": "b86188fa18f49134dc2d9773ae1efd7d2a0ce38aaf5a7c040740eabf97799037",
+        "actor_sha256": "b373bb7a20424f40c3020b33021dcac5984480e8894e08264f63a0bdc0440e66",
+        "critic_sha256": "3ead9c1d8dd9d0775a536c24688ca40ca631e6bce8fc1d5a36fcacd6955d245b",
+        "optimizer_sha256": "fef87eb67a3d44a2ecd8610c59832fd4781e18dbd0bd890853b7a0d2a81011b5",
+        "environment_sha256": "1f5ce1c57e3b9695a4dc1e35b6ba3667aad5bc673ac33c6fc2f33c436d582244",
+        "global_rng_sha256": "6ec2524360409fe0c82c8dfbe8a9826571dddd7ec138f6b0efb6074c75f2a63b",
+        "adapter_restored_sha256": "723b4a974da5029b1ffa08fcf9377134bf0f4f67c4d2af4245dd0efba2a678b2",
+        "installed_sampler_rng_sha256": "858ddac78be48720bc61da2ba901664c7cb7287dccedd1a65531d48e85ccd099",
+        "completed_updates": 1000,
+        "active_episodes": 4096
+      },
+      "sampling": {
+        "real_decisions": 9978,
+        "unique_selected_sequences": 8463,
+        "planned_probability_sha256": "2eecd391c31fedeaab17fda88bdb82716465533d37cc515bd1c34abab875349c",
+        "planned_effective_sequences": 28228.116732981194,
+        "empirical_sequence_tv_from_planned": 0.7088963648276756,
+        "empirical_basis_mean": [
+          -0.12141659182104685,
+          0.04775623234155639,
+          0.2177950469745012,
+          0.16670986869940685,
+          0.09690526822564025,
+          0.005223311830372161,
+          -0.05326511894891378,
+          -0.12169216439190285
+        ],
+        "expected_basis_mean": [
+          -0.11816933560666987,
+          0.060195087725978924,
+          0.22389079656716018,
+          0.1537984712927892,
+          0.11212701335755526,
+          0.009035332683071527,
+          -0.05560254681278477,
+          -0.11222537526803084
+        ],
+        "basis_mean_absolute_deviation": 0.008191405196304192,
+        "new_draw_exposure_steps": 7839843,
+        "conditioned_old_episode_exposure_steps": 1990557,
+        "zero_exposure_end_boundary_draws": 5,
+        "assignment_probability_exact": true,
+        "all_transitions_accounted": true,
+        "real_draws_sha256": "be764e497e08d9eec4b17afca31e06c96f13737480820c8b39acc6d6714a0df2"
+      },
+      "development": {
+        "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/evaluations/p00-seed43-cp01000-plus-after/result.json",
+        "sha256": "c55297b9f7d21febacac3d4e3b59e27f39d95f1d7d4dc2fecb351735e0c9202b"
+      },
+      "continuous_score": 0.11788946331388836,
+      "strict_success": 0.0078125,
+      "physical_errors": {
+        "velocity_m_s": 0.10356904387817022,
+        "yaw_rad_s": 0.13180466124504922,
+        "ee_position_m": 0.10328744194672161,
+        "ee_orientation_rad": 0.10953621047624622
+      },
+      "safety": {
+        "native_failure_rate": 0.00390625,
+        "joint_soft_limit_step_fraction_mean": 0.36908424766805015,
+        "body_tilt_over_30deg_step_fraction_mean": 7.926732275933195e-05,
+        "max_joint_soft_limit_excess_rad": 0.15744471549987793,
+        "max_body_tilt_rad": 1.0077896118164062,
+        "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+      }
+    },
+    "minus": {
+      "run_result_sha256": "af82b35128a47e6f32b5fd777f57ee085bad6fca08fb6b1312ed67b243a30d81",
+      "restore": {
+        "source_checkpoint_sha256": "b86188fa18f49134dc2d9773ae1efd7d2a0ce38aaf5a7c040740eabf97799037",
+        "actor_sha256": "b373bb7a20424f40c3020b33021dcac5984480e8894e08264f63a0bdc0440e66",
+        "critic_sha256": "3ead9c1d8dd9d0775a536c24688ca40ca631e6bce8fc1d5a36fcacd6955d245b",
+        "optimizer_sha256": "fef87eb67a3d44a2ecd8610c59832fd4781e18dbd0bd890853b7a0d2a81011b5",
+        "environment_sha256": "1f5ce1c57e3b9695a4dc1e35b6ba3667aad5bc673ac33c6fc2f33c436d582244",
+        "global_rng_sha256": "6ec2524360409fe0c82c8dfbe8a9826571dddd7ec138f6b0efb6074c75f2a63b",
+        "adapter_restored_sha256": "723b4a974da5029b1ffa08fcf9377134bf0f4f67c4d2af4245dd0efba2a678b2",
+        "installed_sampler_rng_sha256": "858ddac78be48720bc61da2ba901664c7cb7287dccedd1a65531d48e85ccd099",
+        "completed_updates": 1000,
+        "active_episodes": 4096
+      },
+      "sampling": {
+        "real_decisions": 9985,
+        "unique_selected_sequences": 8482,
+        "planned_probability_sha256": "4899a40f6ef1d163456cf9ebd18e45b2a2b972b081512cb431e587e2defa2cdb",
+        "planned_effective_sequences": 29544.888744999458,
+        "empirical_sequence_tv_from_planned": 0.7171818797260214,
+        "empirical_basis_mean": [
+          0.024160705817140027,
+          0.05423603607075267,
+          -0.11029437012964816,
+          -0.01319263021312795,
+          -0.07014118466286674,
+          0.04265426984810694,
+          -0.07989345307321294,
+          0.2916300383097846
+        ],
+        "expected_basis_mean": [
+          0.031919271467341824,
+          0.052732778731357496,
+          -0.10902693094019128,
+          -0.015693469884969127,
+          -0.050287475909708654,
+          0.02708583387207788,
+          -0.07175846986514468,
+          0.29225248909234675
+        ],
+        "basis_mean_absolute_deviation": 0.007151210071339069,
+        "new_draw_exposure_steps": 7843523,
+        "conditioned_old_episode_exposure_steps": 1986877,
+        "zero_exposure_end_boundary_draws": 6,
+        "assignment_probability_exact": true,
+        "all_transitions_accounted": true,
+        "real_draws_sha256": "3ab131e5a7553b5cc74768540841a4ea91e08fc2a374052214bb76cf23d3eaac"
+      },
+      "development": {
+        "path": "/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108/evaluations/p00-seed43-cp01000-minus-after/result.json",
+        "sha256": "2d54d4fae5aa024135fee7dac485494b4e8fe42bc1b08b366db4758545ca169b"
+      },
+      "continuous_score": 0.12617470391094182,
+      "strict_success": 0.00390625,
+      "physical_errors": {
+        "velocity_m_s": 0.09974029550720093,
+        "yaw_rad_s": 0.12671478160616398,
+        "ee_position_m": 0.1020551246932792,
+        "ee_orientation_rad": 0.10838001249676292
+      },
+      "safety": {
+        "native_failure_rate": 0.001953125,
+        "joint_soft_limit_step_fraction_mean": 0.39185725476270056,
+        "body_tilt_over_30deg_step_fraction_mean": 0.00014291234959893048,
+        "max_joint_soft_limit_excess_rad": 0.15707731246948242,
+        "max_body_tilt_rad": 1.032667875289917,
+        "scope": "Read-only pre-reset monitoring; does not change native termination, reward or success criteria."
+      }
+    }
+  },
+  "paired_development_comparisons": {
+    "plus_minus": {
+      "mean_difference": -0.008285240597053463,
+      "sequence_paired_mean_absolute_difference": 0.04567186427549476,
+      "sequence_paired_rms_difference": 0.0782212773890752,
+      "bootstrap95_sequence_interval": [
+        -0.018224803298850522,
+        0.000550934811714358
+      ],
+      "repeat_reset_mean_absolute_difference": 0.05047214917465487,
+      "changed_reset_count": 342,
+      "scope": "Finite development-sequence uncertainty only; does not quantify training-seed or repeated-PPO variance."
+    },
+    "plus_uniform": {
+      "mean_difference": -0.007781269735452401,
+      "sequence_paired_mean_absolute_difference": 0.045906629502300886,
+      "sequence_paired_rms_difference": 0.08065939284796232,
+      "bootstrap95_sequence_interval": [
+        -0.017430248572545944,
+        0.0023910495934721067
+      ],
+      "repeat_reset_mean_absolute_difference": 0.052571245055112986,
+      "changed_reset_count": 348,
+      "scope": "Finite development-sequence uncertainty only; does not quantify training-seed or repeated-PPO variance."
+    },
+    "minus_uniform": {
+      "mean_difference": 0.0005039708616010629,
+      "sequence_paired_mean_absolute_difference": 0.040585259720686946,
+      "sequence_paired_rms_difference": 0.07302076416780792,
+      "bootstrap95_sequence_interval": [
+        -0.008817986249044434,
+        0.009142467838421943
+      ],
+      "repeat_reset_mean_absolute_difference": 0.045946442098761475,
+      "changed_reset_count": 331,
+      "scope": "Finite development-sequence uncertainty only; does not quantify training-seed or repeated-PPO variance."
+    }
+  },
+  "noise": {},
+  "warnings": [],
+  "acceptance": "Only engineering correctness. No success, reward, improvement or statistical significance criterion.",
+  "interpretation": "Fixed source states were selected by seed and update, not outcomes. PhysX hidden caches remain non-bitwise. Empirical full-ID TV is sparse-sample biased; projected exposure and Uniform repeats are reported. Bootstrap intervals do not establish cross-student significance."
+}

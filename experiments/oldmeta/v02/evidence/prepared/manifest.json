@@ -1,0 +1,122 @@
+{
+  "binding": {
+    "version": "nsgs-v02-counterfactual-20261106",
+    "config_sha256": "dffce5e8022fd3c08548916469c01fff72dc30435859c3c7fdc45ebf23bd6274",
+    "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+    "train_pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+    "development_pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+    "command_features_sha256": "f1f45a63129338bffe7caa8be9a55dcd167c4b7b5c4539bf36b128d7f7620955",
+    "dynamic_fields": [
+      "feedback_observed",
+      "valid_error_observed",
+      "strict_success_history",
+      "velocity_rmse_scaled",
+      "yaw_rmse_scaled",
+      "position_rmse_scaled",
+      "orientation_rmse_scaled",
+      "good_fraction_ema",
+      "failure_ema",
+      "feedback_age_scaled",
+      "valid_error_age_scaled",
+      "log_sample_count",
+      "log_complete_count",
+      "log_transition_count",
+      "history_fill"
+    ],
+    "global_fields": [
+      "completed_fraction",
+      "lr_over_1e-3",
+      "action_std",
+      "value_loss",
+      "reward_over_200",
+      "feedback_coverage",
+      "mean_train_good_fraction",
+      "mean_train_failure",
+      "development_score",
+      "development_observed"
+    ],
+    "v02_config_sha256": "a9860a6add08c3662d3e48274f75b1ee8c10d320214163bb4d22453cc264cd67"
+  },
+  "parent_binding": {
+    "version": "nsgs-v0-20261106",
+    "config_sha256": "dffce5e8022fd3c08548916469c01fff72dc30435859c3c7fdc45ebf23bd6274",
+    "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+    "train_pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+    "development_pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+    "command_features_sha256": "f1f45a63129338bffe7caa8be9a55dcd167c4b7b5c4539bf36b128d7f7620955",
+    "dynamic_fields": [
+      "feedback_observed",
+      "valid_error_observed",
+      "strict_success_history",
+      "velocity_rmse_scaled",
+      "yaw_rmse_scaled",
+      "position_rmse_scaled",
+      "orientation_rmse_scaled",
+      "good_fraction_ema",
+      "failure_ema",
+      "feedback_age_scaled",
+      "valid_error_age_scaled",
+      "log_sample_count",
+      "log_complete_count",
+      "log_transition_count",
+      "history_fill"
+    ],
+    "global_fields": [
+      "completed_fraction",
+      "lr_over_1e-3",
+      "action_std",
+      "value_loss",
+      "reward_over_200",
+      "feedback_coverage",
+      "mean_train_good_fraction",
+      "mean_train_failure",
+      "development_score",
+      "development_observed"
+    ]
+  },
+  "parent_manifest_sha256": "e5b41b7dfc5a619620c8b0fa920ce467c45f250f717eb3d8e9d0585fef9484fb",
+  "fixed_development_pool_reused": true,
+  "formal_test_excluded_from_teacher": true,
+  "source_order": [
+    {
+      "seed": 43,
+      "updates": 1000,
+      "sha256": "0f7525c7848b889ed5a850599fe9ede6a6d5b0100e1809cacdd4a9edd7609018"
+    },
+    {
+      "seed": 44,
+      "updates": 1000,
+      "sha256": "7678952d1017ee7cdbb4a5f1254328202d4a9b896522e971e645a0f8ca39a934"
+    },
+    {
+      "seed": 43,
+      "updates": 3000,
+      "sha256": "959d4af0b4e7a07142bf7ebceb6ab86ca4a0fdf23f1737a14b462d021cb9236e"
+    },
+    {
+      "seed": 44,
+      "updates": 3000,
+      "sha256": "bdd6f69cfa7c92e2b10df400723d4a4e7e83a2e22ad89d64a8e78ebf58e4f8f4"
+    },
+    {
+      "seed": 43,
+      "updates": 6000,
+      "sha256": "51875cffaa5d69d660ef1d336fa0329c22de5724639377c99c364fba839b37d2"
+    },
+    {
+      "seed": 44,
+      "updates": 6000,
+      "sha256": "aa87f4ed8a3c3dc1de7c739f9d48705f9abf6118f9824c708bdcfa9ae6a95948"
+    },
+    {
+      "seed": 43,
+      "updates": 9000,
+      "sha256": "9c6e4a12cc9cbb3a97059e0ceb4dcaa5abf9ce7437a85e446d3db1be9922feff"
+    },
+    {
+      "seed": 44,
+      "updates": 9000,
+      "sha256": "128a21752d9b9cba2b1b40c168f9532bd458ce6ee8fb01e9686f211a08211e61"
+    }
+  ]
+}

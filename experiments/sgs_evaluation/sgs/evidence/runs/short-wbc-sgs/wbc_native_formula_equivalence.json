@@ -1,0 +1,7 @@
+{
+  "applicable": true,
+  "passed": true,
+  "samples": 128,
+  "max_absolute_error": 2.9802322387695312e-08,
+  "native_state_dependent_math_unchanged": true
+}

@@ -1,0 +1,206 @@
+{
+  "passed": true,
+  "engineering_only": true,
+  "stage": "short",
+  "task": "GO2-PIPER-WBC",
+  "mode": "sgs",
+  "completed_updates": 200,
+  "environment_transitions": 19660800,
+  "optimizer_calls": 4000,
+  "training_loop_seconds": 384.8518671989441,
+  "paused_evaluation_seconds": 44.02838921546936,
+  "transitions_per_second": 51086.66912050243,
+  "training_transitions_per_second_excluding_eval_wait": 57686.16679908794,
+  "checkpoint": "/workspace/runs/short-wbc-sgs/policy/model_199.pt",
+  "checkpoint_sha256": "9f6d9e2587e9c29d028d01cde17f8d477b8dd658373e80caed629e0715f00b24",
+  "adam_steps": [
+    4000,
+    4000
+  ],
+  "restoration": {
+    "passed": true,
+    "sampler_rng_draws_equal": 4096,
+    "task_ownership_equal": true,
+    "feedback_counter_consistent": true,
+    "command_cursors_equal": true,
+    "probability_span": 0.0,
+    "restore_scope": "Sampler/metrics/command/RNG serialized. No assertion of PhysX solver bit-exact restore."
+  },
+  "rng_roundtrip": true,
+  "summary": {
+    "pool_identity": "wbc:train:86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+    "mode": "sgs",
+    "episodes": 298342,
+    "successes": 0,
+    "native_failures": 289902,
+    "control_steps": 4800,
+    "environment_transitions": 19660800,
+    "feedback_accepted": 298342,
+    "active": 4096,
+    "history_samples": 298342,
+    "nonempty_histories": 32768,
+    "probability_min": 3.0517578125e-05,
+    "probability_max": 3.0517578125e-05,
+    "effective_sequences": 32768.0,
+    "effective_commands": {
+      "ee_ranges": {
+        "pos_x": [
+          0.45,
+          0.7
+        ],
+        "pos_y": [
+          -0.35,
+          0.35
+        ],
+        "pos_z": [
+          0.1,
+          0.8
+        ],
+        "roll": [
+          -1.0466666666666666,
+          1.0466666666666666
+        ],
+        "pitch": [
+          -0.785,
+          0.785
+        ],
+        "yaw": [
+          -0.5233333333333333,
+          0.5233333333333333
+        ]
+      },
+      "ee_limit_ranges": {
+        "pos_x": [
+          0.45,
+          0.7
+        ],
+        "pos_y": [
+          -0.35,
+          0.35
+        ],
+        "pos_z": [
+          0.1,
+          0.8
+        ],
+        "roll": [
+          -1.0466666666666666,
+          1.0466666666666666
+        ],
+        "pitch": [
+          -0.785,
+          0.785
+        ],
+        "yaw": [
+          -0.5233333333333333,
+          0.5233333333333333
+        ]
+      },
+      "ee_curriculum": false,
+      "ee_resampling": [
+        8.0,
+        10.0
+      ],
+      "velocity_ranges": {
+        "lin_vel_x": [
+          -1.0,
+          1.0
+        ],
+        "lin_vel_y": [
+          -0.6,
+          0.6
+        ],
+        "ang_vel_z": [
+          -1.0,
+          1.0
+        ],
+        "heading": [
+          -0.0,
+          0.0
+        ]
+      },
+      "velocity_limit_ranges": {
+        "lin_vel_x": [
+          -1.0,
+          1.0
+        ],
+        "lin_vel_y": [
+          -0.6,
+          0.6
+        ],
+        "ang_vel_z": [
+          -1.0,
+          1.0
+        ],
+        "heading": [
+          -0.0,
+          0.0
+        ]
+      },
+      "velocity_curriculum": false,
+      "velocity_resampling": [
+        10.0,
+        10.0
+      ],
+      "rel_standing_envs": 0.1,
+      "heading_command": false,
+      "command_draws": {
+        "ee": {
+          "count": 324882,
+          "minimum": [
+            0.4500002861022949,
+            -0.34996527433395386,
+            0.10000287741422653,
+            0.6218258142471313,
+            -0.5069499015808105,
+            -0.4827362298965454,
+            -0.5075743198394775
+          ],
+          "maximum": [
+            0.6999967098236084,
+            0.34999117255210876,
+            0.799999475479126,
+            0.9999207854270935,
+            0.5610203742980957,
+            0.5891454219818115,
+            0.562526285648346
+          ]
+        },
+        "velocity": {
+          "count": 323653,
+          "minimum": [
+            -0.9999780654907227,
+            -0.5999715328216553,
+            -0.9999868869781494
+          ],
+          "maximum": [
+            0.9998747110366821,
+            0.5999773740768433,
+            0.999809741973877
+          ]
+        }
+      },
+      "standing_draws": 31971,
+      "velocity_draws": 323653,
+      "pool_standing_prior": 0.1,
+      "observed_standing_draw_fraction": 0.09878171980381012
+    }
+  },
+  "initialization": {
+    "actor_sha256": "f755363169762f3de318d06fdc46933663702f3f865f72fdb67a01a62288ce4c",
+    "critic_sha256": "cdece4b496bc1e88be4cfba1e456cb02f01007b400c4f99bd331d06c459e8acc",
+    "optimizer_state_empty": true,
+    "history_empty": true,
+    "seed": 42,
+    "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+    "observation_shapes": {
+      "policy": [
+        210
+      ],
+      "critic": [
+        102
+      ]
+    },
+    "actions": 18
+  },
+  "finished_unix": 1793551817.6660569
+}

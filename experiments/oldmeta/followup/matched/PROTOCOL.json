@@ -1,0 +1,48 @@
+{
+  "version": "nsgs-v02-matched-oldmeta-seed48-20261108",
+  "host": "ubuntu-robot",
+  "student_seed": 48,
+  "teacher": "Inherited V0.2 final8 network+Adam+private RNG; 8 new on-policy antithetic counterfactual updates, versions8..15; frozen during all transfer10k students.",
+  "source_student_seed": null,
+  "source_updates": [
+    1000,
+    3000,
+    6000,
+    9000
+  ],
+  "source_selection": "User fixed original old-Meta sources, not outcome selected; all prior outcomes retained.",
+  "new_counterfactual_updates": 2400,
+  "engineering_updates": 4,
+  "transfer_arms": [
+    "matched-meta"
+  ],
+  "transfer_updates_each": 10000,
+  "transfer_total_updates": 10000,
+  "envs": 4096,
+  "rollout": 24,
+  "uniform_mix": 0.2,
+  "teacher_config_unchanged": true,
+  "development_sequences": 256,
+  "development_repeats": 2,
+  "development_seed": 2026110602,
+  "test_sequences": 1024,
+  "test_seed": 922042,
+  "strict": "Native four thresholds incl EE5cm; joint80%; failures/invalid windows score zero.",
+  "teacher_objective": "Continuous simultaneous four-tolerance fraction on fixed development; no formal test input.",
+  "formal_test_interval": 1000,
+  "development_interval": 100,
+  "paired_initial_student_weights": true,
+  "performance_gate": false,
+  "new_data_only_for_score_function_updates": true,
+  "old_experience_kept_as_provenance": true,
+  "old_baseline_data_never_overwritten": true,
+  "extra_oldmeta_group_explicitly_user_approved": false,
+  "source_student_seeds": [
+    43,
+    44
+  ],
+  "source_order": "phase first, then seed43/44; exact same old-Meta prepared states",
+  "student48_previously_observed": true,
+  "teacher_initial_state": "Exact old8 Meta network, Adam, private RNG; not previous seed46-continued NewMeta",
+  "hardware": "ubuntu-robot RTX5060 Laptop, including 24 new branch runs and final10k"
+}

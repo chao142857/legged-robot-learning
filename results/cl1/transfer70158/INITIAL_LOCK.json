@@ -1,0 +1,33 @@
+{
+  "seed": 70158,
+  "arms": {
+    "uniform": {
+      "network_sha256": "71c5babd49c54721f2fbc28618aac1098205680386f78c3d68490eebd27add57",
+      "optimizer_sha256": "d8c9ad28a49127d6bfb1aaec5304421fbd77994e5f50f7cf5a920d6cefecaded",
+      "version": 20
+    },
+    "probe": {
+      "network_sha256": "71c5babd49c54721f2fbc28618aac1098205680386f78c3d68490eebd27add57",
+      "optimizer_sha256": "d8c9ad28a49127d6bfb1aaec5304421fbd77994e5f50f7cf5a920d6cefecaded",
+      "version": 20
+    },
+    "frozen-base": {
+      "network_sha256": "71c5babd49c54721f2fbc28618aac1098205680386f78c3d68490eebd27add57",
+      "optimizer_sha256": "d8c9ad28a49127d6bfb1aaec5304421fbd77994e5f50f7cf5a920d6cefecaded",
+      "version": 20
+    }
+  },
+  "paired_resume": {
+    "student_path": "/data/go2_piper_nsgs_cl1_gen_seed70158_20261110/runs/uniform-seed70158-to01500/checkpoints/update_01400.pt",
+    "student_sha256": "f627a41d70900a4f6019e9ee1c9277bc24f10baf10e174971e15a084429010a3",
+    "teacher_path": "/data/go2_piper_nsgs_cl1_gen_seed70158_20261110/runs/uniform-seed70158-to01500/teacher_requests/0015-decide.teacher_after.pt",
+    "teacher_sha256": "ff30d1dd45f95baf7fbdd01c1ed89703c84d67317cb8d162e00e830a462a3cc2",
+    "completed_updates": 1400,
+    "pending": true,
+    "seed": 70158,
+    "teacher_network_sha256": "71c5babd49c54721f2fbc28618aac1098205680386f78c3d68490eebd27add57",
+    "preserved_pending_decision": true,
+    "passed": true
+  },
+  "legacy_prefix_max_update": 1400
+}

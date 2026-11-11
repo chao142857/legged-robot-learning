@@ -1,0 +1,30 @@
+{
+  "version": "CL1-20261109",
+  "source_seeds": [
+    43,
+    44
+  ],
+  "updates_each": 10000,
+  "native_envs": 4096,
+  "rollout": 24,
+  "macro_updates": 100,
+  "outer_updates_per_student": 500,
+  "outer_samples": 10,
+  "sigma": 0.2,
+  "learn_sigma": false,
+  "teacher_seed": 20261109,
+  "outer_lr": 0.0001,
+  "outer_clip": 0.2,
+  "outer_gamma": 0.99,
+  "outer_gae_lambda": 0.95,
+  "outer_value_coef": 0.5,
+  "outer_entropy_coef": 0,
+  "outer_epochs": 2,
+  "outer_max_grad_norm": 0.5,
+  "outer_target_kl": 0.01,
+  "recovery_max_updates": 4000,
+  "smoke_budget": 500,
+  "formal_test_input": false,
+  "resume_scope": "Full exposed simulator, student optimizer, sampler, episode and RNG state; PhysX hidden contact cache is not serialized. No bitwise determinism claim.",
+  "scheduling": "Single GPU resident student; 500-update process blocks, full-state restore; startup overhead recorded."
+}

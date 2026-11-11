@@ -1,0 +1,8 @@
+{
+  "checked_unix": 1793551428.6453938,
+  "gpu": "NVIDIA GeForce RTX 3060, GPU-e9fcdcdf-a49a-7ab3-20fd-7ae73ac0d84d, 535.230.02, 12288 MiB",
+  "isaaclab_commit": "b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8",
+  "existing_packaging_patch": "diff --git a/source/isaaclab/setup.py b/source/isaaclab/setup.py\nindex 2210c4c..edc9c74 100644\n--- a/source/isaaclab/setup.py\n+++ b/source/isaaclab/setup.py\n@@ -37,7 +37,8 @@ INSTALL_REQUIRES = [\n     # make sure this is consistent with isaac sim version\n     \"pillow==11.3.0\",\n     # livestream\n-    \"starlette==0.49.1\",\n+    # Sim 5.1 pins FastAPI 0.115.7, which requires Starlette <0.46.\n+    \"starlette==0.45.3\",\n     # testing\n     \"pytest\",\n     \"pytest-mock\",\n",
+  "setup_py_mtime": 1792990740.8540936,
+  "setup_py_sha256": "a73842e9c8ed3210b47d68c270e76bd32e37f45792f908c32496a07eeddf7be2"
+}

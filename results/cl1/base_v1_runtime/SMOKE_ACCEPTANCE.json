@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "student_updates": 500,
+  "macro_samples_outer_update": 4,
+  "real_two_students": true,
+  "outer_update": true,
+  "physical_resume": true,
+  "performance_gate": false
+}

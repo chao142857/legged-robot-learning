@@ -1,0 +1,1 @@
+{"seed": 42, "root": "/home/alex/dog/go2_piper_cleanmeta8_seed42_20261111", "session": "cleanmeta8-seed42", "order": ["fresh", "clean-meta8"], "updates_each": 10000, "num_envs": 4096, "rollout": 24, "from_zero": true, "teacher_frozen": true, "teacher_training_student_seeds": [43, 44], "uniform_reused": true, "launched_unix": 1794365393.4971194}

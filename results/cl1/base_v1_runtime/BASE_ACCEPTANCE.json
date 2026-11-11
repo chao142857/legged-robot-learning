@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "updates_each": 10000,
+  "teacher_transitions": 200,
+  "outer_batches": 20,
+  "teacher_sha256": "2a7d5b0a13eaeadbd858ed629dc373611e81683af4f0424674379c9bb4d35dce"
+}

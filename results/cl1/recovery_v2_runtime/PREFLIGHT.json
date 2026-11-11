@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "uniform_recoverable_at": 1400,
+  "new_recovery_budget": 2000,
+  "source_fixed_runtime_sha256": "734721a9acb59651388b73b112fb0365dab8a593f00e107f4f79b715a3596f96"
+}

@@ -1,0 +1,16 @@
+{
+  "actual_updates_by_segment": {
+    "recovery-v2-f2-seed44-from07300": 500,
+    "recovery-v2-f0-seed43-from06900": 500,
+    "recovery-v2-f3-seed44-from07800": 500,
+    "recovery-v2-f1-seed43-from06400": 500
+  },
+  "actual_updates": 2000,
+  "training_transitions": 196608000,
+  "evaluation_transitions": 12288000,
+  "job_wall_seconds": 5693.723809480667,
+  "gpu_job_wall_seconds": 5460.856492519379,
+  "note": "GPU parent wall includes evaluation waits; summing nested GPU walls is allocated job time, not disjoint device elapsed time.",
+  "evaluations": 22,
+  "completed_segments": 4
+}

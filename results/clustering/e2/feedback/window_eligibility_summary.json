@@ -1,0 +1,170 @@
+{
+  "rows": [
+    {
+      "run": "uniform",
+      "mapping": "sequence",
+      "checkpoint": 15000,
+      "retained_real_episodes": 1767207,
+      "insufficient_window_fraction": 0.16615314448165946,
+      "native_failure_fraction": 0.17645018382113697,
+      "mature_nonfailure_fraction": 0.8232397223415253,
+      "feedback_end_before4000_fraction": 0.3869241124554169,
+      "strict_success_fraction": 0.06268422431554424
+    },
+    {
+      "run": "uniform",
+      "mapping": "command",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.00050537109375,
+      "native_failure_fraction": 0.00471923828125,
+      "mature_nonfailure_fraction": 0.99528076171875,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.224375
+    },
+    {
+      "run": "uniform",
+      "mapping": "random_20261104",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.000498046875,
+      "native_failure_fraction": 0.004736328125,
+      "mature_nonfailure_fraction": 0.995263671875,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.22434326171875
+    },
+    {
+      "run": "uniform",
+      "mapping": "random_20261105",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.00051025390625,
+      "native_failure_fraction": 0.00477783203125,
+      "mature_nonfailure_fraction": 0.99522216796875,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.22467041015625
+    },
+    {
+      "run": "uniform",
+      "mapping": "random_20261106",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.00050048828125,
+      "native_failure_fraction": 0.0046923828125,
+      "mature_nonfailure_fraction": 0.9953076171875,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.22448486328125
+    },
+    {
+      "run": "sgs",
+      "mapping": "sequence",
+      "checkpoint": 15000,
+      "retained_real_episodes": 1728050,
+      "insufficient_window_fraction": 0.15791209745088394,
+      "native_failure_fraction": 0.16705535140765604,
+      "mature_nonfailure_fraction": 0.8326414166256764,
+      "feedback_end_before4000_fraction": 0.3780197332253118,
+      "strict_success_fraction": 0.12391828940134834
+    },
+    {
+      "run": "sgs",
+      "mapping": "command",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.00033447265625,
+      "native_failure_fraction": 0.0040380859375,
+      "mature_nonfailure_fraction": 0.9959619140625,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.3770654296875
+    },
+    {
+      "run": "sgs",
+      "mapping": "random_20261104",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.00033203125,
+      "native_failure_fraction": 0.003828125,
+      "mature_nonfailure_fraction": 0.996171875,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.3824755859375
+    },
+    {
+      "run": "sgs",
+      "mapping": "random_20261105",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.000322265625,
+      "native_failure_fraction": 0.00382568359375,
+      "mature_nonfailure_fraction": 0.99617431640625,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.3809130859375
+    },
+    {
+      "run": "sgs",
+      "mapping": "random_20261106",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.00034423828125,
+      "native_failure_fraction": 0.00396484375,
+      "mature_nonfailure_fraction": 0.99603515625,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.3806640625
+    },
+    {
+      "run": "sgs-e1",
+      "mapping": "sequence",
+      "checkpoint": 15000,
+      "retained_real_episodes": 1734803,
+      "insufficient_window_fraction": 0.1560926514422675,
+      "native_failure_fraction": 0.16493111898008017,
+      "mature_nonfailure_fraction": 0.8347691351698147,
+      "feedback_end_before4000_fraction": 0.37590377697064165,
+      "strict_success_fraction": 0.12689567633904253
+    },
+    {
+      "run": "sgs-e1",
+      "mapping": "command",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.0004345703125,
+      "native_failure_fraction": 0.0039453125,
+      "mature_nonfailure_fraction": 0.9960546875,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.38844970703125
+    },
+    {
+      "run": "sgs-e1",
+      "mapping": "random_20261104",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.00037841796875,
+      "native_failure_fraction": 0.00376220703125,
+      "mature_nonfailure_fraction": 0.99623779296875,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.3927099609375
+    },
+    {
+      "run": "sgs-e1",
+      "mapping": "random_20261105",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.000419921875,
+      "native_failure_fraction": 0.0038525390625,
+      "mature_nonfailure_fraction": 0.9961474609375,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.39275146484375
+    },
+    {
+      "run": "sgs-e1",
+      "mapping": "random_20261106",
+      "checkpoint": 15000,
+      "retained_real_episodes": 409600,
+      "insufficient_window_fraction": 0.00041015625,
+      "native_failure_fraction": 0.00385986328125,
+      "mature_nonfailure_fraction": 0.99614013671875,
+      "feedback_end_before4000_fraction": 0.0,
+      "strict_success_fraction": 0.3918359375
+    }
+  ],
+  "note": "Diagnostic only; unsuccessful/unscorable episodes are not removed from any sampler window. All strict labels stay unchanged."
+}

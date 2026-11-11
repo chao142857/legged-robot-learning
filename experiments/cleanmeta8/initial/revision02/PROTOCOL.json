@@ -1,0 +1,33 @@
+{
+  "revision": 2,
+  "meta_training_unchanged": true,
+  "teacher_shared": "same verified CleanMeta8",
+  "new_students": [
+    {
+      "host": "ubuntu-robot",
+      "seed": 48,
+      "updates": 10000
+    },
+    {
+      "host": "yanglab",
+      "seed": 49,
+      "updates": 10000
+    }
+  ],
+  "reuse": [
+    "Uniform",
+    "Fresh",
+    "existing legacy Meta8 evaluation points"
+  ],
+  "no_oldmeta_restart": true,
+  "no_baseline_reruns": true,
+  "no_uniform_fallback": true,
+  "seed49_legacy_meta8_updates": 2632,
+  "seed49_legacy_formal_points": [
+    1000,
+    2000
+  ],
+  "transfer": "authenticated fixed <256KiB delta over existing encrypted Tailnet; exact cached encoder; full-state SHA checked",
+  "schedule_change": "CPU acceptance boundary handoff; live PPO never interrupted",
+  "tv_and_meta24_paused": true
+}

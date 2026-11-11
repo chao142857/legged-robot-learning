@@ -1,0 +1,46 @@
+{
+  "groups": {
+    "smoke": {
+      "student_updates": 500,
+      "training_transitions": 49152000,
+      "development_transitions": 3584000,
+      "test_transitions": 0,
+      "development_job_seconds": 276.78843235969543,
+      "test_job_seconds": 0.0,
+      "student_job_seconds": 1374.6148743629456,
+      "startup_to_ready_seconds": 54.87967343092896,
+      "exposed_restore_seconds": 22.68865018012002,
+      "segments": 3
+    },
+    "base": {
+      "student_updates": 20000,
+      "training_transitions": 1966080000,
+      "development_transitions": 103424000,
+      "test_transitions": 20480000,
+      "development_job_seconds": 7725.25589799881,
+      "test_job_seconds": 846.3995616436005,
+      "student_job_seconds": 46630.09373116493,
+      "startup_to_ready_seconds": 1410.2304216227494,
+      "exposed_restore_seconds": 426.57076491508633,
+      "segments": 40
+    },
+    "recovery": {
+      "student_updates": 2000,
+      "training_transitions": 196608000,
+      "development_transitions": 10240000,
+      "test_transitions": 2048000,
+      "development_job_seconds": 762.3161389827728,
+      "test_job_seconds": 85.59316992759705,
+      "student_job_seconds": 4620.386842489243,
+      "startup_to_ready_seconds": 134.89338146406226,
+      "exposed_restore_seconds": 40.90805286751129,
+      "segments": 4
+    }
+  },
+  "notes": [
+    "Student job wall includes nested dev/test and Teacher RPC waits; never add nested evaluation walls to it as disjoint GPU device time.",
+    "Startup-to-ready excludes initial dev evaluation and includes restoration; exposed restore seconds are a subset, not additional cost.",
+    "First smoke segment predates startup timing instrumentation; its complete parent job wall and raw console remain available.",
+    "PhysX hidden cache cannot be serialized; restore equality refers to captured exposed state."
+  ]
+}

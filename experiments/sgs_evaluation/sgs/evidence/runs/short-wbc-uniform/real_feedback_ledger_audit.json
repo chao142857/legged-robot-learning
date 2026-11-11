@@ -1,0 +1,10 @@
+{
+  "run": "short-wbc-uniform",
+  "passed": true,
+  "real_terminal_feedback_records": 307895,
+  "all_ownership_tokens_match": true,
+  "no_duplicate_generations": true,
+  "complete_counts_and_success_counts_match_checkpoint": true,
+  "last100_history_per_sequence_matches_raw_ledger": true,
+  "environment_transitions": 19660800
+}

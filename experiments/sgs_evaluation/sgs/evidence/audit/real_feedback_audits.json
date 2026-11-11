@@ -1,0 +1,45 @@
+{
+  "audited_unix": 1793552115.5488713,
+  "results": [
+    {
+      "run": "short-flat-sgs",
+      "passed": true,
+      "real_terminal_feedback_records": 32043,
+      "all_ownership_tokens_match": true,
+      "no_duplicate_generations": true,
+      "complete_counts_and_success_counts_match_checkpoint": true,
+      "last100_history_per_sequence_matches_raw_ledger": true,
+      "environment_transitions": 19660800
+    },
+    {
+      "run": "short-flat-uniform",
+      "passed": true,
+      "real_terminal_feedback_records": 32691,
+      "all_ownership_tokens_match": true,
+      "no_duplicate_generations": true,
+      "complete_counts_and_success_counts_match_checkpoint": true,
+      "last100_history_per_sequence_matches_raw_ledger": true,
+      "environment_transitions": 19660800
+    },
+    {
+      "run": "short-wbc-sgs",
+      "passed": true,
+      "real_terminal_feedback_records": 298342,
+      "all_ownership_tokens_match": true,
+      "no_duplicate_generations": true,
+      "complete_counts_and_success_counts_match_checkpoint": true,
+      "last100_history_per_sequence_matches_raw_ledger": true,
+      "environment_transitions": 19660800
+    },
+    {
+      "run": "short-wbc-uniform",
+      "passed": true,
+      "real_terminal_feedback_records": 307895,
+      "all_ownership_tokens_match": true,
+      "no_duplicate_generations": true,
+      "complete_counts_and_success_counts_match_checkpoint": true,
+      "last100_history_per_sequence_matches_raw_ledger": true,
+      "environment_transitions": 19660800
+    }
+  ]
+}

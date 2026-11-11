@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "allowed_differences": [
+    "log directory",
+    "explicit student seed"
+  ],
+  "original_full_comparison_sha256": "ab8fbdf625bf469d594e732513da44b527cb767711dd6acca52b9cab3b0dcd39",
+  "expected_environment_sha256": "4da9f19b31ebe4bf2b99bba5ce6203fa42bbb5ca83787437a6880b0dc513e1c5",
+  "actual_environment_sha256": "4da9f19b31ebe4bf2b99bba5ce6203fa42bbb5ca83787437a6880b0dc513e1c5",
+  "scope": "Compact receipt; full environment dictionaries remain at original completed-run paths. Hash serialization: sorted compact JSON."
+}

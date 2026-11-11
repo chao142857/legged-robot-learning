@@ -1,0 +1,7 @@
+{
+  "paused": true,
+  "reason": "User requested Adam audit; no new Meta Teacher",
+  "unix": 1794200864.012948,
+  "prior_phase": "waiting_yanglab_meta8",
+  "historical_assets_unchanged": true
+}

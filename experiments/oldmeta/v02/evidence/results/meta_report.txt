@@ -1,0 +1,37 @@
+nSGS V0.2 meta report
+Created UTC: 20261106T122046_902807Z
+Completed Teacher updates: 8/8
+New logged Student updates: meta/noise/smoke 2604/2604; transfer 0/30000
+New training transitions: 255,983,616
+Extra evaluation transitions: 21,504,000
+GPU allocation interval union: 1.951 h (not active kernel time)
+
+Fixed-start counterfactual results (continuous development score, percentage points):
+  seed 43 CP1000: q+−Uniform +0.845; q−−Uniform +1.318
+    Uniform restore/retrain repeat difference +0.000 pp; mean absolute paired reset difference 0.000 pp.
+  seed 44 CP1000: q+−Uniform -2.096; q−−Uniform -1.509
+    Uniform restore/retrain repeat difference +0.000 pp; mean absolute paired reset difference 0.000 pp.
+  seed 43 CP3000: q+−Uniform -0.345; q−−Uniform -6.253
+  seed 44 CP3000: q+−Uniform -6.853; q−−Uniform -6.643
+  seed 43 CP6000: q+−Uniform -6.810; q−−Uniform +1.372
+  seed 44 CP6000: q+−Uniform -2.293; q−−Uniform +1.138
+  seed 43 CP9000: q+−Uniform +0.344; q−−Uniform -0.343
+  seed 44 CP9000: q+−Uniform -1.279; q−−Uniform +3.228
+
+Frozen Teacher transfer, new Student seed47:
+  uniform: no formal evaluation yet; frozen-state validation None.
+  fresh: no formal evaluation yet; frozen-state validation None.
+  meta: no formal evaluation yet; frozen-state validation None.
+
+Interpretation and limits:
+  Eight chosen starting states from two existing Student seeds train one Teacher; this is a feasibility study, not a multi-Teacher statistical comparison.
+  A single antithetic pair at each starting state is noisy. Same-policy restore/retrain and repeated development evaluations quantify different noise sources; PhysX hidden caches are not serialized.
+  The development pool supplies Teacher feedback and state. Its learning curve is not an independent generalization estimate. Fixed formal-test results never train or select Teacher parameters.
+  The transfer comparison uses one previously unseen Student seed47, identical initial actor/critic/optimizer and equal 10k budgets; both Teachers remain frozen. Any superiority claim needs additional held-out seeds.
+  Command/state projection to eight dimensions is fixed and lossy. Missing feedback remains explicitly masked; it does not become a synthetic success or failure.
+  Finite episode draws across32768 sequences create large empirical distribution noise even under Uniform. Proposal probabilities, realized draws and carried-over physical exposure are reported separately.
+  Physical RMSEs are pooled over eligible measured steps; failures and invalid windows remain zero in the primary continuous development score. Safety rates are diagnostic native observations, not new reward terms.
+  All recorded checkpoints remain preserved; report generation performs no training, policy selection, or modification of earlier experiments.
+
+Warnings:
+  1 preserved simulator fault receipt(s) found, including any failed attempts later superseded by successful retries. Container exit0 does not override a fault receipt; see cost.simulator_faults.

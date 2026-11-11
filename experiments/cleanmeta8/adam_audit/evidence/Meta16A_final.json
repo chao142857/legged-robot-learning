@@ -1,0 +1,604 @@
+{
+  "name": "Meta16A",
+  "root": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107",
+  "rows": [
+    {
+      "name": "Meta16A",
+      "point": "point_00",
+      "version": 8,
+      "logical_before": 8,
+      "logical_after": 9,
+      "step_before": [
+        15
+      ],
+      "step_after": [
+        15
+      ],
+      "corrected_local_step_after": [
+        15
+      ],
+      "attempts": 0,
+      "rejected": false,
+      "zero_signal": true,
+      "original_attempts": [],
+      "fixed_attempts": [],
+      "corrected_local_rejected": false,
+      "saved_old_network_reproduces": true,
+      "saved_old_optimizer_reproduces": true,
+      "old_fixed_network_equal": true,
+      "old_fixed_full_state_equal": true,
+      "saved_old_full_state_reproduces": true,
+      "local_mixed_probability_tv": 0.0,
+      "old_fixed_optimizer_equal": true,
+      "network_difference_l2": 0.0,
+      "decision_sha256": "adaf623c675e55a8d5a1ae5f5f68cd2ce59b912b6d406fcba4b8129a8505ed70",
+      "checkpoint_sha256": "23a0af43924d5af3bf1b486baaf74c75d29dace6ecc3fea6d57d3d9ab62eeda5",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_00/teacher_after.pt",
+      "before_network_sha256": "e741c2caf605707ec895ae9f990efd59bf9737dba974ca1eec936e6472a2fedf",
+      "after_network_sha256": "e741c2caf605707ec895ae9f990efd59bf9737dba974ca1eec936e6472a2fedf",
+      "before_optimizer_sha256": "021a265d0c2a32d9a2ec50e4743f37824cc045d144444b8577485d6c890b1f70",
+      "after_optimizer_sha256": "021a265d0c2a32d9a2ec50e4743f37824cc045d144444b8577485d6c890b1f70",
+      "note": "One isolated update from its actual historical state. NOT a corrected causal retraining chain."
+    },
+    {
+      "name": "Meta16A",
+      "point": "point_01",
+      "version": 9,
+      "logical_before": 9,
+      "logical_after": 10,
+      "step_before": [
+        15
+      ],
+      "step_after": [
+        17
+      ],
+      "corrected_local_step_after": [
+        16
+      ],
+      "attempts": 2,
+      "rejected": false,
+      "zero_signal": false,
+      "original_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.07225387838400069,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.014094211126880014,
+          "finite": true
+        }
+      ],
+      "fixed_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.07225387838400069,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.017192945967685162,
+          "finite": true
+        }
+      ],
+      "corrected_local_rejected": false,
+      "saved_old_network_reproduces": true,
+      "saved_old_optimizer_reproduces": true,
+      "old_fixed_network_equal": false,
+      "old_fixed_full_state_equal": false,
+      "saved_old_full_state_reproduces": true,
+      "local_mixed_probability_tv": 0.0017758514406396911,
+      "old_fixed_optimizer_equal": false,
+      "network_difference_l2": 0.010212197382093441,
+      "decision_sha256": "b50ce933a582aef7b78eadf92f4694d531766bf2320077ba4a6ae76f4a8820b8",
+      "checkpoint_sha256": "c05dc1080a11589850056c151b01976785415dd1b61d68ed7f4366ef5afd870c",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_01/teacher_after.pt",
+      "before_network_sha256": "e741c2caf605707ec895ae9f990efd59bf9737dba974ca1eec936e6472a2fedf",
+      "after_network_sha256": "484f436775e7210906cdf7fbcff2e1c4da8bbaa215aeff2c732d6b2f3ebc9228",
+      "before_optimizer_sha256": "021a265d0c2a32d9a2ec50e4743f37824cc045d144444b8577485d6c890b1f70",
+      "after_optimizer_sha256": "c2bdca472bfced6c92e0c67bebc6dc10f1879fef92a0a47586525dbfd2c1a110",
+      "note": "One isolated update from its actual historical state. NOT a corrected causal retraining chain."
+    },
+    {
+      "name": "Meta16A",
+      "point": "point_02",
+      "version": 10,
+      "logical_before": 10,
+      "logical_after": 11,
+      "step_before": [
+        17
+      ],
+      "step_after": [
+        19
+      ],
+      "corrected_local_step_after": [
+        18
+      ],
+      "attempts": 2,
+      "rejected": false,
+      "zero_signal": false,
+      "original_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.06107672366334854,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.01418780405766629,
+          "finite": true
+        }
+      ],
+      "fixed_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.06107672366334854,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.014721925536670462,
+          "finite": true
+        }
+      ],
+      "corrected_local_rejected": false,
+      "saved_old_network_reproduces": true,
+      "saved_old_optimizer_reproduces": true,
+      "old_fixed_network_equal": false,
+      "old_fixed_full_state_equal": false,
+      "saved_old_full_state_reproduces": true,
+      "local_mixed_probability_tv": 0.0014044951369165956,
+      "old_fixed_optimizer_equal": false,
+      "network_difference_l2": 0.00786940554566011,
+      "decision_sha256": "58d979606966aea86f855bc86d51de80af9da943a25bb441377293bd4c83aacc",
+      "checkpoint_sha256": "b04a049cf79f1fee3d4dfb88bb0ab53d66e856b787ceea5b7df144a143d7297b",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_02/teacher_after.pt",
+      "before_network_sha256": "484f436775e7210906cdf7fbcff2e1c4da8bbaa215aeff2c732d6b2f3ebc9228",
+      "after_network_sha256": "79058a5e85781f96d0ab5f151ef62f9ae370d613e5746fbc7e071a01f196a34d",
+      "before_optimizer_sha256": "c2bdca472bfced6c92e0c67bebc6dc10f1879fef92a0a47586525dbfd2c1a110",
+      "after_optimizer_sha256": "f1316b27f297d456b14c011f79160307a1619f519dd13e4a03b654f1d15e0c38",
+      "note": "One isolated update from its actual historical state. NOT a corrected causal retraining chain."
+    },
+    {
+      "name": "Meta16A",
+      "point": "point_03",
+      "version": 11,
+      "logical_before": 11,
+      "logical_after": 12,
+      "step_before": [
+        19
+      ],
+      "step_after": [
+        21
+      ],
+      "corrected_local_step_after": [
+        20
+      ],
+      "attempts": 2,
+      "rejected": false,
+      "zero_signal": false,
+      "original_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.09550021539249179,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.03199600030518708,
+          "finite": true
+        }
+      ],
+      "fixed_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.09550021539249179,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.02303005361508522,
+          "finite": true
+        }
+      ],
+      "corrected_local_rejected": false,
+      "saved_old_network_reproduces": true,
+      "saved_old_optimizer_reproduces": true,
+      "old_fixed_network_equal": false,
+      "old_fixed_full_state_equal": false,
+      "saved_old_full_state_reproduces": true,
+      "local_mixed_probability_tv": 0.003166182545689555,
+      "old_fixed_optimizer_equal": false,
+      "network_difference_l2": 0.012531588471674793,
+      "decision_sha256": "669325f53db5bfc2bf3c9cab9f55018a5a42607a2b7bb632dd2f3a97baebe559",
+      "checkpoint_sha256": "04d4aebb2aa2922d7c3a3558ee59b652ccff040a78b90e52cbcaae1c69e7836d",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_03/teacher_after.pt",
+      "before_network_sha256": "79058a5e85781f96d0ab5f151ef62f9ae370d613e5746fbc7e071a01f196a34d",
+      "after_network_sha256": "74b656132da0c61efbad0f3be38cd8a6dba0fd8adbc09fec27265ab72e32b499",
+      "before_optimizer_sha256": "f1316b27f297d456b14c011f79160307a1619f519dd13e4a03b654f1d15e0c38",
+      "after_optimizer_sha256": "ed8e00796a77d38e429b8093e2d055564003d4c3127058bb8d89dc15fe707232",
+      "note": "One isolated update from its actual historical state. NOT a corrected causal retraining chain."
+    },
+    {
+      "name": "Meta16A",
+      "point": "point_04",
+      "version": 12,
+      "logical_before": 12,
+      "logical_after": 13,
+      "step_before": [
+        21
+      ],
+      "step_after": [
+        23
+      ],
+      "corrected_local_step_after": [
+        22
+      ],
+      "attempts": 2,
+      "rejected": false,
+      "zero_signal": false,
+      "original_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.15876409279970732,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.04205581605864902,
+          "finite": true
+        }
+      ],
+      "fixed_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.15876409279970732,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.03823370311799251,
+          "finite": true
+        }
+      ],
+      "corrected_local_rejected": false,
+      "saved_old_network_reproduces": true,
+      "saved_old_optimizer_reproduces": true,
+      "old_fixed_network_equal": false,
+      "old_fixed_full_state_equal": false,
+      "saved_old_full_state_reproduces": true,
+      "local_mixed_probability_tv": 0.0025834705903636894,
+      "old_fixed_optimizer_equal": false,
+      "network_difference_l2": 0.00942678175355962,
+      "decision_sha256": "d72d155f2600b4497beb022dad2e1c641c98baa6fe7db6888a186765719b488d",
+      "checkpoint_sha256": "1837e028e515234db1a0b7ebf11dd43355e33dd89fa3305d041586f2d09eadad",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_04/teacher_after.pt",
+      "before_network_sha256": "74b656132da0c61efbad0f3be38cd8a6dba0fd8adbc09fec27265ab72e32b499",
+      "after_network_sha256": "0ae4666896d56b2b05088473f647f5705e2dbe2f19aca2ab79443670e7c23ec9",
+      "before_optimizer_sha256": "ed8e00796a77d38e429b8093e2d055564003d4c3127058bb8d89dc15fe707232",
+      "after_optimizer_sha256": "b74c6c585d17c2f1b2bd25e70a3fce3357834a712b7f3b54574d9b8528d353ac",
+      "note": "One isolated update from its actual historical state. NOT a corrected causal retraining chain."
+    },
+    {
+      "name": "Meta16A",
+      "point": "point_05",
+      "version": 13,
+      "logical_before": 13,
+      "logical_after": 14,
+      "step_before": [
+        23
+      ],
+      "step_after": [
+        26
+      ],
+      "corrected_local_step_after": [
+        24
+      ],
+      "attempts": 3,
+      "rejected": false,
+      "zero_signal": false,
+      "original_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.21083319305820594,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.05945164923536445,
+          "finite": true
+        },
+        {
+          "backtracks": 2,
+          "learning_rate_multiplier": 0.25,
+          "attempted_learning_rates": [
+            0.0025
+          ],
+          "preference_kl": 0.016822917274730148,
+          "finite": true
+        }
+      ],
+      "fixed_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.21083319305820594,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.05100153868616086,
+          "finite": true
+        },
+        {
+          "backtracks": 2,
+          "learning_rate_multiplier": 0.25,
+          "attempted_learning_rates": [
+            0.0025
+          ],
+          "preference_kl": 0.012514734775158173,
+          "finite": true
+        }
+      ],
+      "corrected_local_rejected": false,
+      "saved_old_network_reproduces": true,
+      "saved_old_optimizer_reproduces": true,
+      "old_fixed_network_equal": false,
+      "old_fixed_full_state_equal": false,
+      "saved_old_full_state_reproduces": true,
+      "local_mixed_probability_tv": 0.0026737463882913265,
+      "old_fixed_optimizer_equal": false,
+      "network_difference_l2": 0.010142401645071094,
+      "decision_sha256": "055bdbfe6c32ed22d746f9c5d693022e157d251a2cbf6b886b79d27a4ff60e47",
+      "checkpoint_sha256": "d353055ffc356d7f873a53ef24ba150ba0554d6ea28a70ff794c97389d84adde",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_05/teacher_after.pt",
+      "before_network_sha256": "0ae4666896d56b2b05088473f647f5705e2dbe2f19aca2ab79443670e7c23ec9",
+      "after_network_sha256": "d7cca6b0232fa045f7849535737773011958c34858cfd517c24af740b7e2aeb0",
+      "before_optimizer_sha256": "b74c6c585d17c2f1b2bd25e70a3fce3357834a712b7f3b54574d9b8528d353ac",
+      "after_optimizer_sha256": "5c1840d8b5abe904e0f0012515a449f56fc228a8f72a9c899d7e7813dd37d6d5",
+      "note": "One isolated update from its actual historical state. NOT a corrected causal retraining chain."
+    },
+    {
+      "name": "Meta16A",
+      "point": "point_06",
+      "version": 14,
+      "logical_before": 14,
+      "logical_after": 15,
+      "step_before": [
+        26
+      ],
+      "step_after": [
+        28
+      ],
+      "corrected_local_step_after": [
+        27
+      ],
+      "attempts": 2,
+      "rejected": false,
+      "zero_signal": false,
+      "original_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.23975014592041644,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.046102051578189515,
+          "finite": true
+        }
+      ],
+      "fixed_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.23975014592041644,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.058095976287298456,
+          "finite": true
+        },
+        {
+          "backtracks": 2,
+          "learning_rate_multiplier": 0.25,
+          "attempted_learning_rates": [
+            0.0025
+          ],
+          "preference_kl": 0.014270095444245484,
+          "finite": true
+        }
+      ],
+      "corrected_local_rejected": false,
+      "saved_old_network_reproduces": true,
+      "saved_old_optimizer_reproduces": true,
+      "old_fixed_network_equal": false,
+      "old_fixed_full_state_equal": false,
+      "saved_old_full_state_reproduces": true,
+      "local_mixed_probability_tv": 0.007355324490112641,
+      "old_fixed_optimizer_equal": false,
+      "network_difference_l2": 0.03709088040925029,
+      "decision_sha256": "1a0a684ec6bab838e793fe9da87187b0407dc08bc76f0fa6660b5dafac565ec5",
+      "checkpoint_sha256": "6ed9f4a7cc429788728c57b6bca142b513adc186ccbe6dd59546891d28724709",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_06/teacher_after.pt",
+      "before_network_sha256": "d7cca6b0232fa045f7849535737773011958c34858cfd517c24af740b7e2aeb0",
+      "after_network_sha256": "cc5357377bee9051f6f1564e62af04b65a295f0fdebaf7b94c11bb28bae799f8",
+      "before_optimizer_sha256": "5c1840d8b5abe904e0f0012515a449f56fc228a8f72a9c899d7e7813dd37d6d5",
+      "after_optimizer_sha256": "39daf0ae1840474e81d401a2aa3c254cb0a2d7ce03be490c5a4be777d601590c",
+      "note": "One isolated update from its actual historical state. NOT a corrected causal retraining chain."
+    },
+    {
+      "name": "Meta16A",
+      "point": "point_07",
+      "version": 15,
+      "logical_before": 15,
+      "logical_after": 16,
+      "step_before": [
+        28
+      ],
+      "step_after": [
+        30
+      ],
+      "corrected_local_step_after": [
+        29
+      ],
+      "attempts": 2,
+      "rejected": false,
+      "zero_signal": false,
+      "original_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.1829135985963271,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.043587679726477556,
+          "finite": true
+        }
+      ],
+      "fixed_attempts": [
+        {
+          "backtracks": 0,
+          "learning_rate_multiplier": 1.0,
+          "attempted_learning_rates": [
+            0.01
+          ],
+          "preference_kl": 0.1829135985963271,
+          "finite": true
+        },
+        {
+          "backtracks": 1,
+          "learning_rate_multiplier": 0.5,
+          "attempted_learning_rates": [
+            0.005
+          ],
+          "preference_kl": 0.04487569251896356,
+          "finite": true
+        }
+      ],
+      "corrected_local_rejected": false,
+      "saved_old_network_reproduces": true,
+      "saved_old_optimizer_reproduces": true,
+      "old_fixed_network_equal": false,
+      "old_fixed_full_state_equal": false,
+      "saved_old_full_state_reproduces": true,
+      "local_mixed_probability_tv": 0.0025774775715623017,
+      "old_fixed_optimizer_equal": false,
+      "network_difference_l2": 0.01127994026873292,
+      "decision_sha256": "1541c22d01c6728ee9eeaef91881392a85611f2ba794659c104eb3efc51c2781",
+      "checkpoint_sha256": "803eb25da1fb3ed31c4a03c5b103aa4f24d57dd5c4f73f7f8d3645d507ec5968",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_07/teacher_after.pt",
+      "before_network_sha256": "cc5357377bee9051f6f1564e62af04b65a295f0fdebaf7b94c11bb28bae799f8",
+      "after_network_sha256": "d62a809e66392684fa55dc969511e91fd9683ace2fcb0b7b1b0183027156e451",
+      "before_optimizer_sha256": "39daf0ae1840474e81d401a2aa3c254cb0a2d7ce03be490c5a4be777d601590c",
+      "after_optimizer_sha256": "157adc8b64581388cecf1c3737f4d5d153cb874253e1c0149049d0846ecdcb84",
+      "note": "One isolated update from its actual historical state. NOT a corrected causal retraining chain."
+    }
+  ],
+  "source_code_sha256": "c83b3943dd4fb509094a94eaa404ddf4a715635394f85c9009771fbad78a794c"
+}

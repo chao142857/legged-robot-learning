@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "mapping": "mapping_command.npy",
+      "mapping_sha256": "7effb16ee9a3dbe37e78fe4aaf893f6f198bd100e47e714f01ceedb37fbb3cd7",
+      "passed": true,
+      "torch_checkpoint_sha256": "02f524b2dad6b760ee6153e62f745bebd4ce1e043b6133b7fa63349636fbb98c",
+      "sampler_next4096_equal": true,
+      "ownership_exact": true,
+      "formula_normalized": true,
+      "sample4096_seconds": 0.004756971960887313,
+      "synthetic_state_separate_from_training": true
+    },
+    {
+      "mapping": "mapping_random_20261104.npy",
+      "mapping_sha256": "eea8d510b1280a5ac80dbeded4dfbaddb2677afd8c4c9af4180ba27ad1193919",
+      "passed": true,
+      "torch_checkpoint_sha256": "230f90634a68a173205e69b21784228b3fa47d4c48f91711c281c244a562ad08",
+      "sampler_next4096_equal": true,
+      "ownership_exact": true,
+      "formula_normalized": true,
+      "sample4096_seconds": 0.0028924690559506416,
+      "synthetic_state_separate_from_training": true
+    },
+    {
+      "mapping": "mapping_random_20261105.npy",
+      "mapping_sha256": "7187f6f779501811e3ed6ead81337786493a0e84b3617833ecb04b4d5be87bf3",
+      "passed": true,
+      "torch_checkpoint_sha256": "3d968b986f0e61f2197a94152e25a99c24c4949892b0ddbd77d7b8a96458c0c2",
+      "sampler_next4096_equal": true,
+      "ownership_exact": true,
+      "formula_normalized": true,
+      "sample4096_seconds": 0.002861522836610675,
+      "synthetic_state_separate_from_training": true
+    },
+    {
+      "mapping": "mapping_random_20261106.npy",
+      "mapping_sha256": "a68331ab4a9995cb9b1e8315d7b7d80d04f5566773d036bb0ec4ffe539ad9243",
+      "passed": true,
+      "torch_checkpoint_sha256": "6326bcb21233b8dfdcd9d7f12af372477ffc270e065d36a52c34d71d924bff44",
+      "sampler_next4096_equal": true,
+      "ownership_exact": true,
+      "formula_normalized": true,
+      "sample4096_seconds": 0.0028621971141546965,
+      "synthetic_state_separate_from_training": true
+    }
+  ],
+  "baseline_checkpoints": [
+    {
+      "run": "flat-uniform",
+      "checkpoint_sha256": "ef56f18c21a198b307c5a17e43c9ebc201ef26a9b3b2d2794068e5b30114422b",
+      "unchanged": true
+    },
+    {
+      "run": "flat-sgs",
+      "checkpoint_sha256": "ca502a6ea9ce5fcfee4a86253df1617f402910e10654923d177d9716dd8ad6ba",
+      "unchanged": true
+    },
+    {
+      "run": "flat-sgs-e1",
+      "checkpoint_sha256": "6b6fc7021192a18adafda3ddb051523051a2fb85299bff3fe8fc722212a03a65",
+      "unchanged": true
+    },
+    {
+      "run": "wbc-uniform",
+      "checkpoint_sha256": "99374718e8bf94865732b20f716142df411e54a46414d0bb2b8da6f0c9399db9",
+      "unchanged": true
+    },
+    {
+      "run": "wbc-sgs",
+      "checkpoint_sha256": "a3c0cd9232a77390b7616d6001bbc4efe9e06cfbefddbabe504278cd7e04e086",
+      "unchanged": true
+    },
+    {
+      "run": "wbc-sgs-e1",
+      "checkpoint_sha256": "6ba8e218581b4524934da255fbc7a5bfb4023cbad1cafdb35826a5e95205aac1",
+      "unchanged": true
+    }
+  ],
+  "base_sources_unchanged": true,
+  "strict_protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+  "versions": {
+    "numpy": "1.26.0",
+    "torch": "2.7.0+cu128",
+    "isaaclab": "0.54.4",
+    "isaacsim": "5.1.0.0",
+    "rsl-rl-lib": "5.0.1"
+  },
+  "PPO_updates": 0,
+  "engineering_checkpoint_scope": "CPU serialization and4096-env ownership simulation, not PhysX or a PPO training smoke test."
+}

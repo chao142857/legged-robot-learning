@@ -1,0 +1,145 @@
+{
+  "host": "ubuntu-robot",
+  "files": [
+    {
+      "path": "evidence/single_seed46_continuation/point_00_update.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_00/update.json",
+      "bytes": 4184,
+      "sha256": "bbeb7fa59abcc9a6b2f428c7a14b67fef7d733f2dba293fefe782b80a8b246ff"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/point_01_update.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_01/update.json",
+      "bytes": 5009,
+      "sha256": "1cc85043a1182df31d1cdb35ce5eef9e1db380a1b9a5ba111c73adec74635b80"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/point_02_update.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_02/update.json",
+      "bytes": 5001,
+      "sha256": "e65b1a2ffeeb231705889b54dca4dce749f2fd333c4ec7ceacb5758e188a6d5f"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/point_03_update.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_03/update.json",
+      "bytes": 5003,
+      "sha256": "7284a8bd758392a71df8148a6b4dfbe530dac7b2c20c3fae5b1fd3ed80da4683"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/point_04_update.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_04/update.json",
+      "bytes": 4982,
+      "sha256": "ed15dea7cf0a2012a5b60d172f711a174d01be84ca30f9204289e0a15449b7d8"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/point_05_update.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_05/update.json",
+      "bytes": 5204,
+      "sha256": "ff24dd619cafd0d30aa713e095c83fe8fb92260a156af51613ab0b65ce26e51f"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/point_06_update.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_06/update.json",
+      "bytes": 4958,
+      "sha256": "a2d201e33f6985e86dbec8932e3523fe68e35cddf3976ac59a4ce58028d5f947"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/point_07_update.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/experience/meta-eight-starts/point_07/update.json",
+      "bytes": 4970,
+      "sha256": "7c16bbc31a11aa18d121bd0b7e9f28e76ebc0658b20b7ad2eacc07754d8d7750"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/sources.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/sources.json",
+      "bytes": 4899,
+      "sha256": "e7a640fc573ec7953afce8a3a3932b9269f594a0585e8c4fb984686bdd8ab6eb"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/PROTOCOL.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/PROTOCOL.json",
+      "bytes": 1583,
+      "sha256": "4ef68ca53e38138290a2c2eca617d011116656e788a21835125fc366b5ab2536"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/inheritance.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/teachers/inheritance.json",
+      "bytes": 718,
+      "sha256": "955a491997617d1da160c6941a25b24b0d035249ae247bb3bdb057dd75507a68"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/extended_teacher.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/results/extended_teacher.json",
+      "bytes": 43886,
+      "sha256": "293d01353a1f6beb12b6d726e8a5c55a47db29fbe05d5eb3deda9bfe9539bbca"
+    },
+    {
+      "path": "evidence/single_seed46_continuation/GPU_SMOKE_ACCEPTANCE.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/GPU_SMOKE_ACCEPTANCE.json",
+      "bytes": 127,
+      "sha256": "7a8b05a8d80ed5ad2b25744a9e80d2242b3f945f1005cbccd012adbee67fd914"
+    },
+    {
+      "path": "evidence/completed_runs/seed47_old-meta_result.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/runs/transfer-seed47-meta-resume7700/result.json",
+      "bytes": 4424,
+      "sha256": "f3abf5084b506e69d825af9c26f707c24516bbbc899f999eee29a67085e74442"
+    },
+    {
+      "path": "evidence/completed_runs/seed47_old-meta_initialization.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/runs/transfer-seed47-meta-resume7700/initialization.json",
+      "bytes": 337,
+      "sha256": "4b7015de31aeefc80f2cbe5c3084a3475d03faff7f650e701b7127ef8790c3ff"
+    },
+    {
+      "path": "evidence/completed_runs/seed47_old-meta_native_comparison.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/runs/transfer-seed47-meta-resume7700/native_comparison.json",
+      "bytes": 109315,
+      "sha256": "f9945c76e4e3e2c2a85a386823eb0a4183c558f50fa89096c649345c762a2ecb"
+    },
+    {
+      "path": "evidence/completed_runs/seed48_uniform_result.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/runs/transfer-seed48-uniform/result.json",
+      "bytes": 4345,
+      "sha256": "e872ab4feb58607e644e20ee574de40c7298769984eedd838323e0ac5bf2f8ff"
+    },
+    {
+      "path": "evidence/completed_runs/seed48_uniform_initialization.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/runs/transfer-seed48-uniform/initialization.json",
+      "bytes": 337,
+      "sha256": "b79659b6723d56242200312c1fccbc6e5d419833655fdf32afac85f799470384"
+    },
+    {
+      "path": "evidence/completed_runs/seed48_uniform_native_comparison.json",
+      "source_path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/runs/transfer-seed48-uniform/native_comparison.json",
+      "bytes": 109201,
+      "sha256": "c9b2b8e38ca0f90feb673e88441f2205146fd9b43ed0c4a5cb50d0a303ff714d"
+    }
+  ],
+  "completed": [
+    {
+      "seed": 47,
+      "arm": "old-meta",
+      "host": "ubuntu-robot",
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/runs/transfer-seed47-meta-resume7700",
+      "result_sha256": "f3abf5084b506e69d825af9c26f707c24516bbbc899f999eee29a67085e74442",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107/runs/transfer-seed47-meta-resume7700/checkpoints/update_10000.pt",
+      "checkpoint_sha256": "a8d594200f17ef1951665b98254a1956807d2a5072bf9c0fcbe723cbe2152b1e",
+      "environment_transitions": 983040000,
+      "wall_seconds": 4947.025570479993,
+      "wall_scope": "Resume segment only"
+    },
+    {
+      "seed": 48,
+      "arm": "uniform",
+      "host": "ubuntu-robot",
+      "path": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/runs/transfer-seed48-uniform",
+      "result_sha256": "e872ab4feb58607e644e20ee574de40c7298769984eedd838323e0ac5bf2f8ff",
+      "checkpoint": "/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107/runs/transfer-seed48-uniform/checkpoints/update_10000.pt",
+      "checkpoint_sha256": "b34f1ee62594b1cd16e2662ca99601d5744b5dc5d0c33c46c63389b6070994d9",
+      "environment_transitions": 983040000,
+      "wall_seconds": 21655.721164157003,
+      "wall_scope": "As recorded by this run; evaluations may be included"
+    }
+  ]
+}

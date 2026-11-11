@@ -1,0 +1,436 @@
+{
+  "seed": 49,
+  "curves": {
+    "uniform": [
+      {
+        "update": 1000,
+        "joint_success_rate": 0.0107421875,
+        "continuous_joint_score": 0.12949508064704895,
+        "pooled_rmse": {
+          "velocity_m_s": 0.09831224814119145,
+          "yaw_rad_s": 0.13290608154127367,
+          "ee_position_m": 0.10373425922278598,
+          "ee_orientation_rad": 0.11802173187964791
+        }
+      },
+      {
+        "update": 2000,
+        "joint_success_rate": 0.07421875,
+        "continuous_joint_score": 0.33945513165231983,
+        "pooled_rmse": {
+          "velocity_m_s": 0.0857405052532117,
+          "yaw_rad_s": 0.11945183590486956,
+          "ee_position_m": 0.0699321257565076,
+          "ee_orientation_rad": 0.1450348422514448
+        }
+      },
+      {
+        "update": 3000,
+        "joint_success_rate": 0.1533203125,
+        "continuous_joint_score": 0.43653799720244957,
+        "pooled_rmse": {
+          "velocity_m_s": 0.08086756675218287,
+          "yaw_rad_s": 0.11498207255956906,
+          "ee_position_m": 0.06506625884340507,
+          "ee_orientation_rad": 0.09238557508445723
+        }
+      },
+      {
+        "update": 4000,
+        "joint_success_rate": 0.20703125,
+        "continuous_joint_score": 0.5031514951257379,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07755301749665462,
+          "yaw_rad_s": 0.11472942365131086,
+          "ee_position_m": 0.058954087861995186,
+          "ee_orientation_rad": 0.07358684716539529
+        }
+      },
+      {
+        "update": 5000,
+        "joint_success_rate": 0.2509765625,
+        "continuous_joint_score": 0.5522113837036008,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07905096865714753,
+          "yaw_rad_s": 0.11168637969151299,
+          "ee_position_m": 0.0572638066501884,
+          "ee_orientation_rad": 0.06714242360489757
+        }
+      },
+      {
+        "update": 6000,
+        "joint_success_rate": 0.2294921875,
+        "continuous_joint_score": 0.5311380309736986,
+        "pooled_rmse": {
+          "velocity_m_s": 0.0820458612275425,
+          "yaw_rad_s": 0.11151302247849136,
+          "ee_position_m": 0.056380913232669666,
+          "ee_orientation_rad": 0.061947445500341945
+        }
+      },
+      {
+        "update": 7000,
+        "joint_success_rate": 0.306640625,
+        "continuous_joint_score": 0.5941933388778576,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07507261598971735,
+          "yaw_rad_s": 0.11051725406865878,
+          "ee_position_m": 0.053973956510025956,
+          "ee_orientation_rad": 0.06054505112722359
+        }
+      },
+      {
+        "update": 8000,
+        "joint_success_rate": 0.3193359375,
+        "continuous_joint_score": 0.6016742263121565,
+        "pooled_rmse": {
+          "velocity_m_s": 0.0731963015940126,
+          "yaw_rad_s": 0.10851578573370232,
+          "ee_position_m": 0.052981779942156304,
+          "ee_orientation_rad": 0.05592761769974214
+        }
+      },
+      {
+        "update": 9000,
+        "joint_success_rate": 0.41015625,
+        "continuous_joint_score": 0.6655869247245843,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07520783995227433,
+          "yaw_rad_s": 0.10945599600895353,
+          "ee_position_m": 0.04987076968961494,
+          "ee_orientation_rad": 0.057116748054310926
+        }
+      },
+      {
+        "update": 10000,
+        "joint_success_rate": 0.359375,
+        "continuous_joint_score": 0.6322170054703595,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07299494319501577,
+          "yaw_rad_s": 0.10623815678501713,
+          "ee_position_m": 0.05116092461648514,
+          "ee_orientation_rad": 0.05507069461158949
+        }
+      }
+    ],
+    "fresh": [
+      {
+        "update": 1000,
+        "joint_success_rate": 0.0029296875,
+        "continuous_joint_score": 0.11703626327636105,
+        "pooled_rmse": {
+          "velocity_m_s": 0.13745699927598623,
+          "yaw_rad_s": 0.13732129640666066,
+          "ee_position_m": 0.10380074703967455,
+          "ee_orientation_rad": 0.12461296774035403
+        }
+      },
+      {
+        "update": 2000,
+        "joint_success_rate": 0.03125,
+        "continuous_joint_score": 0.2515499094815774,
+        "pooled_rmse": {
+          "velocity_m_s": 0.10335191427700635,
+          "yaw_rad_s": 0.12493184263419119,
+          "ee_position_m": 0.07573742324651972,
+          "ee_orientation_rad": 0.13704243720587492
+        }
+      },
+      {
+        "update": 3000,
+        "joint_success_rate": 0.0615234375,
+        "continuous_joint_score": 0.32620461307890936,
+        "pooled_rmse": {
+          "velocity_m_s": 0.09751841181558599,
+          "yaw_rad_s": 0.12267972664015488,
+          "ee_position_m": 0.07043778672140558,
+          "ee_orientation_rad": 0.09222320777094965
+        }
+      },
+      {
+        "update": 4000,
+        "joint_success_rate": 0.1279296875,
+        "continuous_joint_score": 0.4331799156677112,
+        "pooled_rmse": {
+          "velocity_m_s": 0.09260391187759491,
+          "yaw_rad_s": 0.11977767081584002,
+          "ee_position_m": 0.06298966587873643,
+          "ee_orientation_rad": 0.0731309762353265
+        }
+      },
+      {
+        "update": 5000,
+        "joint_success_rate": 0.259765625,
+        "continuous_joint_score": 0.5630588323115482,
+        "pooled_rmse": {
+          "velocity_m_s": 0.08424812161904259,
+          "yaw_rad_s": 0.11701557799176616,
+          "ee_position_m": 0.056788299002980366,
+          "ee_orientation_rad": 0.06797665456864825
+        }
+      },
+      {
+        "update": 6000,
+        "joint_success_rate": 0.248046875,
+        "continuous_joint_score": 0.5509819405516312,
+        "pooled_rmse": {
+          "velocity_m_s": 0.08181042978951292,
+          "yaw_rad_s": 0.1149023703466764,
+          "ee_position_m": 0.05744803583308774,
+          "ee_orientation_rad": 0.0629118365559328
+        }
+      },
+      {
+        "update": 7000,
+        "joint_success_rate": 0.2587890625,
+        "continuous_joint_score": 0.5605617052073099,
+        "pooled_rmse": {
+          "velocity_m_s": 0.08051154313746056,
+          "yaw_rad_s": 0.11467154508581766,
+          "ee_position_m": 0.05544822866324941,
+          "ee_orientation_rad": 0.061870380811741815
+        }
+      },
+      {
+        "update": 8000,
+        "joint_success_rate": 0.3271484375,
+        "continuous_joint_score": 0.6082587783118139,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07945712187528653,
+          "yaw_rad_s": 0.11103821494219909,
+          "ee_position_m": 0.052899452442767746,
+          "ee_orientation_rad": 0.06044075495929954
+        }
+      },
+      {
+        "update": 9000,
+        "joint_success_rate": 0.25,
+        "continuous_joint_score": 0.5582647663974871,
+        "pooled_rmse": {
+          "velocity_m_s": 0.07448045146623102,
+          "yaw_rad_s": 0.10742870893393014,
+          "ee_position_m": 0.05660783385582507,
+          "ee_orientation_rad": 0.055904675887065707
+        }
+      },
+      {
+        "update": 10000,
+        "joint_success_rate": 0.2998046875,
+        "continuous_joint_score": 0.5968447848098632,
+        "pooled_rmse": {
+          "velocity_m_s": 0.08077879540942161,
+          "yaw_rad_s": 0.10825174078262646,
+          "ee_position_m": 0.05313381119155586,
+          "ee_orientation_rad": 0.05346133443012258
+        }
+      }
+    ],
+    "old-meta8": [
+      {
+        "update": 1000,
+        "joint_success_rate": 0.01171875,
+        "continuous_joint_score": 0.141061348442184,
+        "pooled_rmse": {
+          "velocity_m_s": 0.12597234097838414,
+          "yaw_rad_s": 0.1394237167536972,
+          "ee_position_m": 0.10308528052125249,
+          "ee_orientation_rad": 0.11566261380808018
+        }
+      },
+      {
+        "update": 2000,
+        "joint_success_rate": 0.0625,
+        "continuous_joint_score": 0.32706576697745754,
+        "pooled_rmse": {
+          "velocity_m_s": 0.09854021833032117,
+          "yaw_rad_s": 0.12790198538232841,
+          "ee_position_m": 0.06990322703399705,
+          "ee_orientation_rad": 0.13447024404528699
+        }
+      }
+    ]
+  },
+  "provenance": {
+    "uniform": {
+      "root": "/data/go2_piper_nsgs_v02_seed49_yanglab_20261108",
+      "label": "transfer-seed49-uniform",
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000,
+        6000,
+        7000,
+        8000,
+        9000,
+        10000
+      ],
+      "legacy_teacher": false
+    },
+    "fresh": {
+      "root": "/data/go2_piper_nsgs_v02_seed49_yanglab_20261108",
+      "label": "transfer-seed49-fresh",
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000,
+        6000,
+        7000,
+        8000,
+        9000,
+        10000
+      ],
+      "legacy_teacher": false
+    },
+    "old-meta8": {
+      "root": "/data/go2_piper_nsgs_v02_seed49_yanglab_20261108",
+      "label": "transfer-seed49-meta8",
+      "updates": [
+        1000,
+        2000
+      ],
+      "legacy_teacher": true
+    }
+  },
+  "initialization": {
+    "actor_sha256": "efe697a902c8f58734ba9313b409bf008cea01f68596129efe503179c10db789",
+    "critic_sha256": "f7bb8d49048e27b2ad4cd1371a5bc87e0a8b2d3e432416a214d126477c7afae9",
+    "optimizer_empty": true,
+    "seed": 49,
+    "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+    "initial_sampler_uniform": true
+  },
+  "configuration": {
+    "agent": {
+      "seed": 49,
+      "device": "cuda:0",
+      "num_steps_per_env": 24,
+      "max_iterations": 10000,
+      "empirical_normalization": {},
+      "obs_groups": {},
+      "clip_actions": null,
+      "check_for_nan": true,
+      "save_interval": 1000,
+      "experiment_name": "go2_piper_wbc",
+      "run_name": "",
+      "logger": "tensorboard",
+      "neptune_project": "isaaclab",
+      "wandb_project": "isaaclab",
+      "resume": false,
+      "load_run": ".*",
+      "load_checkpoint": "model_.*.pt",
+      "class_name": "OnPolicyRunner",
+      "actor": {
+        "class_name": "MLPModel",
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "activation": "elu",
+        "obs_normalization": false,
+        "distribution_cfg": {
+          "class_name": "GaussianDistribution",
+          "init_std": 1.0,
+          "std_type": "log"
+        }
+      },
+      "critic": {
+        "class_name": "MLPModel",
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "activation": "elu",
+        "obs_normalization": false,
+        "distribution_cfg": {
+          "class_name": "GaussianDistribution",
+          "init_std": 1.0,
+          "std_type": "log"
+        }
+      },
+      "algorithm": {
+        "class_name": "PPO",
+        "num_learning_epochs": 5,
+        "num_mini_batches": 4,
+        "learning_rate": 0.0005,
+        "schedule": "adaptive",
+        "gamma": 0.99,
+        "lam": 0.95,
+        "entropy_coef": 0.005,
+        "desired_kl": 0.01,
+        "max_grad_norm": 1.0,
+        "optimizer": "adam",
+        "value_loss_coef": 1.0,
+        "use_clipped_value_loss": true,
+        "clip_param": 0.2,
+        "normalize_advantage_per_mini_batch": false,
+        "share_cnn_encoders": false,
+        "rnd_cfg": null,
+        "symmetry_cfg": null
+      },
+      "policy": {}
+    },
+    "protocol": {
+      "version": "native-sequence-joint-v1",
+      "settle_seconds": 2.0,
+      "min_scored_steps": 100,
+      "joint_fraction": 0.8,
+      "thresholds": {
+        "velocity_xy_m_s": 0.2,
+        "yaw_rate_rad_s": 0.3,
+        "ee_position_m": 0.05,
+        "ee_orientation_rad": 0.2617993877991494
+      },
+      "rule": "No native failure termination; at least 100 joint-eligible control steps; >=80% simultaneous four-way tolerance compliance AND each eligible RMSE within its tolerance. Timeout alone is insufficient.",
+      "scoring": "Both velocity and EE command ages >=2 seconds; ages restart at every native command resample; terminal transition is included before autoreset.",
+      "scope": "Flat link0 pose; WBC native mixed xy-in-link0/z-in-world pose; native body-frame base velocity. Training reward unchanged."
+    },
+    "binding": {
+      "version": "nsgs-v02-counterfactual-20261106",
+      "config_sha256": "dffce5e8022fd3c08548916469c01fff72dc30435859c3c7fdc45ebf23bd6274",
+      "protocol_sha256": "93067793642c17e12618129548914f7b440edce267ad20d4df34b8a19c855fad",
+      "train_pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+      "development_pool_sha256": "726a1f7c4e880df20a0722f293284e2b90f5ccdc6a4fcd97b2dc7b4fd9fec149",
+      "command_features_sha256": "f1f45a63129338bffe7caa8be9a55dcd167c4b7b5c4539bf36b128d7f7620955",
+      "dynamic_fields": [
+        "feedback_observed",
+        "valid_error_observed",
+        "strict_success_history",
+        "velocity_rmse_scaled",
+        "yaw_rmse_scaled",
+        "position_rmse_scaled",
+        "orientation_rmse_scaled",
+        "good_fraction_ema",
+        "failure_ema",
+        "feedback_age_scaled",
+        "valid_error_age_scaled",
+        "log_sample_count",
+        "log_complete_count",
+        "log_transition_count",
+        "history_fill"
+      ],
+      "global_fields": [
+        "completed_fraction",
+        "lr_over_1e-3",
+        "action_std",
+        "value_loss",
+        "reward_over_200",
+        "feedback_coverage",
+        "mean_train_good_fraction",
+        "mean_train_failure",
+        "development_score",
+        "development_observed"
+      ],
+      "v02_config_sha256": "a9860a6add08c3662d3e48274f75b1ee8c10d320214163bb4d22453cc264cd67"
+    },
+    "num_envs": 4096,
+    "rollout": 24,
+    "student_seed": 49
+  },
+  "reuse_authorization": "Current user explicitly requested reuse of existing Uniform/Fresh; prior withdrawal markers preserved. No old job restarted."
+}

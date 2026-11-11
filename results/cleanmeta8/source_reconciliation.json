@@ -1,0 +1,29 @@
+[
+  {
+    "original": {
+      "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_cleanmeta8_mean_seed47_48_49_20261110/curve_data.json",
+      "sha256": "78fb35a2338681eb1936bb537d5bcedb405e0773c1bdb8087dcc87207a0dede0"
+    },
+    "recovered_path": "/Users/tangchao/Desktop/资料/dog/go2_piper_cleanmeta8_mean_seed47_48_49_20261110/curve_data.json",
+    "actual_sha256": "78fb35a2338681eb1936bb537d5bcedb405e0773c1bdb8087dcc87207a0dede0",
+    "original_hash_matches": true
+  },
+  {
+    "original": {
+      "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_cleanmeta8_seed42_20261111_work/completion_verified_pending.json",
+      "sha256": "b9c58f4bf87a3a044b6e1284580d1f952d6708c43954fdf941b7bee5759068e1"
+    },
+    "recovered_path": "/Users/tangchao/Desktop/资料/dog/go2_piper_cleanmeta8_seed42_20261111_work/completion_verified.json",
+    "actual_sha256": "b9c58f4bf87a3a044b6e1284580d1f952d6708c43954fdf941b7bee5759068e1",
+    "original_hash_matches": true
+  },
+  {
+    "original": {
+      "path": "/Users/tangchao/Desktop/资料/dog/go2_piper_cleanmeta8_seed42_20261111_work/uniform_baseline.json",
+      "sha256": "60d1a8600abc537e20fd762e63590a44ca43463147bfcfcc8e5dcc54be296516"
+    },
+    "recovered_path": "/Users/tangchao/Desktop/资料/dog/go2_piper_cleanmeta8_seed42_20261111_work/uniform_baseline.json",
+    "actual_sha256": "60d1a8600abc537e20fd762e63590a44ca43463147bfcfcc8e5dcc54be296516",
+    "original_hash_matches": true
+  }
+]

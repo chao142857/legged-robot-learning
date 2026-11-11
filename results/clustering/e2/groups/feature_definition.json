@@ -1,0 +1,41 @@
+{
+  "dimensions": 1080,
+  "block_dimensions": {
+    "position_time": 120,
+    "velocity_time": 120,
+    "standing_time": 40,
+    "reference_SO3_time": 360,
+    "perturbation_SO3_time": 360,
+    "EE_switch_times": 2,
+    "initial_reset_standing_pulse": 3,
+    "EE_exact_dwell": 63,
+    "velocity_exact_dwell": 12
+  },
+  "normalization": "Fixed native physical ranges; equal time-averaged position/velocity/standing blocks; SO3 native-reference and perturbation rotations split total orientation weight.",
+  "reference": {
+    "height": 0.41999995708465576,
+    "quaternion": [
+      0.9772183895111084,
+      6.023574883329275e-08,
+      -4.482071602751603e-08,
+      -0.21223555505275726
+    ]
+  },
+  "primary_lifecycle": "Regular native autoreset, including one compute on reset frame",
+  "initial_reset_sensitivity": "One-control-step offset; explicit initial reset raw standing velocity lasts one step, regular autoreset applies zero mask before first action.",
+  "excluded": [
+    "all EE slot3 fields",
+    "all velocity slot3 fields",
+    "EE slot2 timer",
+    "all velocity timer inputs (constant10s)",
+    "raw standing uniforms beyond their boolean marker",
+    "raw velocity values when standing in regular episodes (initial-reset slot0 pulse is retained separately)"
+  ],
+  "rotation_limitation": "Reference SO3 target follows the exact native function at a fixed pre-policy reset state. Later state-dependent target rotations are not precomputed; perturbation SO3 descriptors retain their input dependence. No claim of full moving-state orientation equivalence.",
+  "inputs": [
+    "/workspace/pools/wbc_train.npz",
+    "/workspace/artifacts/structure_v2/reset_reference_states.json"
+  ],
+  "no_feedback_or_eval_inputs": true,
+  "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db"
+}

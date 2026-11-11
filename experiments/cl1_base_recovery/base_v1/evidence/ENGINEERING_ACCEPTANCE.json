@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "student_updates": 500,
+  "training_transitions": 49152000,
+  "cpu_tests": 21,
+  "source_initializations": {
+    "43": {
+      "actor_sha256": "b8dac848707920d12b87887c2da05cd10a69d88bc3c581221937ae5f37b75437",
+      "critic_sha256": "eaed838408eeaca90147e66c34da9a31161b9c5a80664a882ec029dbd8cd915d",
+      "optimizer_empty": true,
+      "seed": 43,
+      "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+      "initial_sampler_uniform": true
+    },
+    "44": {
+      "actor_sha256": "895231f8b0ebf26607908e2fefc4a55f166ed940ce7607546cbe17a3acaf9df2",
+      "critic_sha256": "4afb7a73efde5e7eb6443095c40a51775e8072ec85f320eaf6ee256a22df320d",
+      "optimizer_empty": true,
+      "seed": 44,
+      "pool_sha256": "86f39ce6b71d17d84c47681fe5e44d0fd7efac605ef366c3d8e91916b3eb56db",
+      "initial_sampler_uniform": true
+    }
+  },
+  "frozen_teacher_hash": "88ae1737f659bf1dc50286322ce63b8d17a77881770e9360127394f831374f79",
+  "distributions": [
+    {
+      "seed": 43,
+      "macro_version": 1,
+      "statistics": {
+        "entropy": 10.384417096462617,
+        "effective_sequences": 31940.483129542543,
+        "min": 1.587747544560345e-05,
+        "max": 5.580064973389195e-05,
+        "tv_uniform": 0.06363479291263655,
+        "top10_mass": 0.13093637204277261
+      }
+    },
+    {
+      "seed": 43,
+      "macro_version": 2,
+      "statistics": {
+        "entropy": 10.390437055049947,
+        "effective_sequences": 32330.24236127026,
+        "min": 1.848914665890846e-05,
+        "max": 4.912218881319155e-05,
+        "tv_uniform": 0.04639694695097134,
+        "top10_mass": 0.12108863252170025
+      }
+    },
+    {
+      "seed": 44,
+      "macro_version": 1,
+      "statistics": {
+        "entropy": 10.388988682066483,
+        "effective_sequences": 32235.73310229652,
+        "min": 1.7270734087024507e-05,
+        "max": 5.361528319813208e-05,
+        "tv_uniform": 0.05116557519510467,
+        "top10_mass": 0.12385135897312838
+      }
+    },
+    {
+      "seed": 44,
+      "macro_version": 2,
+      "statistics": {
+        "entropy": 10.382259962002756,
+        "effective_sequences": 31793.184453868143,
+        "min": 1.6946192976137914e-05,
+        "max": 6.15844944312379e-05,
+        "tv_uniform": 0.06879630773930547,
+        "top10_mass": 0.13497882687033275
+      }
+    }
+  ],
+  "outer_update": {
+    "version": 1,
+    "macro_samples": 4,
+    "epochs": [
+      {
+        "epoch": 0,
+        "early_stop": false,
+        "behavior_kl": 0.0,
+        "loss": 0.0015060302725892363,
+        "policy_loss": -0.0,
+        "value_loss": 0.0030120605451784727,
+        "gradient_norm": 10.494039065457825,
+        "clip_fraction": 0.0,
+        "value_explained_variance": -9.290308698934084
+      },
+      {
+        "epoch": 1,
+        "early_stop": false,
+        "behavior_kl": 2.470368848630733e-05,
+        "loss": -0.009080780152678786,
+        "policy_loss": -0.01042538805320542,
+        "value_loss": 0.002689215801053269,
+        "gradient_norm": 10.525537986565153,
+        "clip_fraction": 0.0,
+        "value_explained_variance": -10.492647881338867
+      }
+    ],
+    "parameter_delta": 0.02422736447943099,
+    "final_behavior_kl": 9.970083432635438e-05,
+    "max_behavior_kl": 0.00015934818120484244,
+    "entropy": -1.523995033835421,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "restore_receipt": {
+    "passed": true,
+    "source_checkpoint": "/workspace/runs/smoke-seed43-to00200/checkpoints/update_00200.pt",
+    "source_checkpoint_sha256": "1684f2c1cf2aa40c34f10efa8f0743733b06a70cc416a64f3b86893cd4eb1bef",
+    "actor_sha256": "a855d39d75aa30ce4d678ef408dcc6151b5b3c1d55dd42d2f613c51065630431",
+    "critic_sha256": "68eff2824fc24537c49b81056f0f4dc1c7b03ffffa46f26cce112dbc3a3a2156",
+    "optimizer_sha256": "db52c80e64ad333106787985d7b23b88e951a8ecebed067b879b08e899b89185",
+    "environment_sha256": "5d9738fa38de01d3fda37dad29075eaf2e871c5b5df1c1f25e3cb51d3348a89e",
+    "global_rng_sha256": "4203623ca65c643da07b37a7860195b15fe9f6b43be11bf96ecd83c1e2878117",
+    "adapter_restored_sha256": "82d3dcb15a40310042a561d9a3c879a7da73b64a989de7f4c1f80ee58d577c1e",
+    "original_preparation": null,
+    "completed_updates": 200,
+    "active_episodes": 4096,
+    "scope": "Exact exposed tensors, manager/observation history, PPO/optimizer/global RNG restore. PhysX hidden solver caches are not serializable.",
+    "next_4096_sampler_draws_equal": true,
+    "installed_sampler_rng_sha256": "2241724900f8fdc2b72228b3834f83fc0d30b1e86ea874b051aa61ae7cfacb09",
+    "exposed_state_restore_seconds": 22.68865018012002,
+    "first_rollout_signatures": [
+      "e262dec9183022081e2d47880920655ced0bd42137a85c1c4b02352d2edc123b",
+      "c95b81745ffc54c4f24e1cff671203addee6fcdaae2e3153d64375b800a9f005",
+      "25fb21b083f4a4122730c24a49c7f67f6830e3a2ddf18dc625336f95a0ab0be3",
+      "b339d50b94a691ec77e13674058d91e44ce8dfa060ca5d8f2c5e8977c55d412c",
+      "7f10addec47a7f1c9bf617bc5f6db024faede692fe9ae1d04e818f6f0ba8cb44",
+      "81c20f7faf2de59f2ac572d879e8bb6a86ee32a038ce4476a14a6a0016adad22",
+      "9bef2f2c70482098924258e519a877d7b3cc93bc4ba24b76a78f08be48f14e9d",
+      "b3e971646e9f90b9efade50236fc1edbe400e2ba755c031532db0aab0554b18d",
+      "f7c796d59b3e41000827c24507cafa82c35ab564f2af688c566fb130e2b79f52",
+      "65414406a8b26c0ced58d9b321b6b1c8e83d5b350f6a16413ff8b60babce8f3f",
+      "beb6f37f4a7d5addaed20a6be40fad67e3f8ea09b96533cf16cef2e34eb484a4",
+      "705752e1e04b365575ce25db3bb7dff61341b6d3289edd6ab02caa49b0423f34",
+      "a404d09391469bcb181c0d598bd5d147b3aeeaadf8023c42d70470242457deea",
+      "d14e9bde506816a233d42493a69f423fa910ab6f824277ca91810f282dacfc5e",
+      "b9f45f06478cdcd2f1d06a8b8bfd85968037a96c1186e584c18a1d5989fe4ba7",
+      "8f3e09a8fab63883480041244c560610a50b25dcf55800a2d204665e0abaf1f7",
+      "78db2d19ee8851c7f88855a7af49097870bb6ebee06c4e54cd4e5f1c1b89b49d",
+      "5d693409aa851e844f2876fd7f7db6fd1a96fd46ea54168f9619b4ccccbe0fab",
+      "411cd5320ffe2d703b88d6b079ae18963b816788724f95132b4182cf5db5e393",
+      "ac64d7f44337d3dc01f1c637e27aea17c3154d79610101c604b2fecd23aedc0e",
+      "24aca5cfa39eb0e2f0bf7052698c39731f1bef78e87ce5a19b407e23d5e05b88",
+      "82448bfa8bf96819115814bee5a6a586416e5c25e86be636146218075d04a97c",
+      "cd1526adf595849059c258531b681c20639a654d3bdceea9de76aadfeb452e64",
+      "48a56b804726c5e5fbd1d89234433c6e77ccaa8f1a04899c6fc03c8c628b611f"
+    ],
+    "first_action_sha256": "ff5ad74ee0c7e765ad0a624c5230d7bc01921728a204f9b7d301e393ce4554e7"
+  },
+  "teacher_new_version_used": true,
+  "real_rewards": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "performance_not_a_gate": true,
+  "formal_students_and_teacher_reinitialized": true
+}

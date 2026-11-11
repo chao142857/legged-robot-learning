@@ -1,0 +1,25 @@
+﻿run,first_update,last_update,mapping,metric,mean_within_group_variance
+uniform logged policies; NOT frozen,10001,12500,command,success,0.07169313326026865
+uniform logged policies; NOT frozen,10001,12500,command,position,0.0001945318934221627
+uniform logged policies; NOT frozen,10001,12500,command,joint_fraction,0.04245835592688093
+uniform logged policies; NOT frozen,10001,12500,random_20261104,success,0.07323739373854055
+uniform logged policies; NOT frozen,10001,12500,random_20261104,position,0.00020049681111178254
+uniform logged policies; NOT frozen,10001,12500,random_20261104,joint_fraction,0.04380440894402973
+uniform logged policies; NOT frozen,10001,12500,random_20261105,success,0.07274781436352712
+uniform logged policies; NOT frozen,10001,12500,random_20261105,position,0.0001991015659613061
+uniform logged policies; NOT frozen,10001,12500,random_20261105,joint_fraction,0.043479101563296596
+uniform logged policies; NOT frozen,10001,12500,random_20261106,success,0.07311186726961758
+uniform logged policies; NOT frozen,10001,12500,random_20261106,position,0.0001989728964530012
+uniform logged policies; NOT frozen,10001,12500,random_20261106,joint_fraction,0.04357750675271968
+uniform logged policies; NOT frozen,12501,15000,command,success,0.08573177276255031
+uniform logged policies; NOT frozen,12501,15000,command,position,0.00019373467215645404
+uniform logged policies; NOT frozen,12501,15000,command,joint_fraction,0.04317730335185563
+uniform logged policies; NOT frozen,12501,15000,random_20261104,success,0.08766962641256987
+uniform logged policies; NOT frozen,12501,15000,random_20261104,position,0.00020007856857330434
+uniform logged policies; NOT frozen,12501,15000,random_20261104,joint_fraction,0.04462920090286285
+uniform logged policies; NOT frozen,12501,15000,random_20261105,success,0.08703741045158028
+uniform logged policies; NOT frozen,12501,15000,random_20261105,position,0.00019857192749629708
+uniform logged policies; NOT frozen,12501,15000,random_20261105,joint_fraction,0.044241868758999284
+uniform logged policies; NOT frozen,12501,15000,random_20261106,success,0.08724540555699029
+uniform logged policies; NOT frozen,12501,15000,random_20261106,position,0.0001987795017534238
+uniform logged policies; NOT frozen,12501,15000,random_20261106,joint_fraction,0.04445016858306031

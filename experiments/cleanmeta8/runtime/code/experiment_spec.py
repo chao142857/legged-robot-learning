@@ -1,0 +1,36 @@
+"""Predeclared source selection; no performance-based candidate/state search."""
+from pathlib import Path
+BASE=Path('/home/alex/dog/go2_piper_nsgs_v02_matched_seed48_20261108')
+SINGLE46=Path('/home/alex/dog/go2_piper_nsgs_v02_seed48_20261107')
+RESUME47=Path('/home/alex/dog/go2_piper_nsgs_v02_resume_ubuntu_20261107')
+META8_SHA='8929d0a13c4aaa7b98c70acf584d04390711bbc9ea6df8b61f3bcb556cdbd3b9'
+SOURCES=[
+ dict(id='gradient-seed43-cp01000',role='gradient',seed=43,update=1000,
+      checkpoint=str(BASE/'starts/seed43-cp01000/prepared.pt'),row_file=str(BASE/'starts/seed43-cp01000/progress_row.json')),
+ dict(id='validation-seed44-cp03000',role='validation',seed=44,update=3000,
+      checkpoint=str(BASE/'starts/seed44-cp03000/prepared.pt'),row_file=str(BASE/'starts/seed44-cp03000/progress_row.json')),
+ dict(id='validation-seed46-cp03000',role='validation',seed=46,update=3000,
+      checkpoint=str(SINGLE46/'starts/seed46-cp03000/prepared.pt'),row_decision=str(SINGLE46/'experience/meta-eight-starts/point_04/decision.pt')),
+ dict(id='validation-seed47-cp08000',role='validation',seed=47,update=8000,
+      checkpoint=str(RESUME47/'runs/transfer-seed47-meta-resume7700/checkpoints/update_08000.pt'),
+      row_log=str(RESUME47/'runs/transfer-seed47-meta-resume7700/updates.jsonl')),
+ dict(id='validation-seed48-cp03000',role='validation',seed=48,update=3000,
+      checkpoint=str(SINGLE46/'runs/transfer-seed48-uniform/checkpoints/update_03000.pt'),
+      row_log=str(SINGLE46/'runs/transfer-seed48-uniform/updates.jsonl')),
+]
+SPEC=dict(version='nsgs-tr0-local12k-20261109',host='ubuntu-robot',gpu='RTX5060 Laptop',task='GO2-PIPER-WBC',
+ envs=4096,rollout=24,student_updates_per_branch=500,validation_points=4,paired_repeats=2,teachers=['old','original','sampling-tr'],
+ validation_total_updates=12000,validation_total_environment_transitions=1179648000,
+ fresh_direction_source='gradient-seed43-cp01000',fresh_direction_arms=['uniform','plus','minus'],fresh_direction_updates_per_arm=100,
+ fresh_direction_total_updates=300,exploration_sigma=.5,teacher_uniform_mix=.2,tv_limit=.02,
+ existing_preference_kl_limit=.05,max_step_backtracks=8,base_teacher_learning_rate=.01,
+ candidate_selection='First new on-policy pair from exact Meta8 at one predeclared source. No candidate search, sign/scale selection or historical gradient replay.',
+ reference_panel='Eight historical command/feedback snapshots (43/44 x1k/3k/6k/9k), actual four validation starts and the current gradient start. No formal-test inputs.',
+ validation_source_selection='Four distinct available Student seeds44/46/47/48; stages3k/3k/8k/3k fixed before new outcomes. Different parent samplers/stages are reported, not treated as identical populations.',
+ sampler_seed_rule='32000000 + seed*100 + source_update; paired across teachers',
+ repeat_seed_rule='Repeat0 preserves source global RNG. Repeat1: 42000000+seed*100+source_update, paired across teachers; sampler RNG uses repeat_seed+1000.',
+ evaluation_offsets=[100,300,500],primary_endpoint='+500 development continuous joint-score gain against the fixed source baseline; paired contrasts vs Old and Original',
+ secondary=['strict5cm/80%','EE/velocity/yaw/orientation RMSE','native failure','safety'],
+ teacher_frozen_during_validation=True,refresh_distribution_every=100,formal_test_used=False,
+ no_intervention_rule='If Original-step satisfies max_panel_TV<=.02, Sampling-TR must equal Original exactly; do not launch12k.',
+ new_10k_student_training=False,sources=SOURCES)

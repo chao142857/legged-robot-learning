@@ -1,0 +1,4 @@
+{
+  "reason": "Exact autoreset lifecycle adds one effective final control step of velocity slot2. Include it using exact dwell weighting, verified in second-episode trace. V1 mappings/analyses archived and excluded from final GO decision. No outcome-driven hyperparameter tuning.",
+  "unix": 1793726208.348147
+}
