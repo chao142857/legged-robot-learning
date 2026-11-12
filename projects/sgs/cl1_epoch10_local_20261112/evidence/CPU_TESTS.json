@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "original_epoch2_exact_state_match": true,
+  "fixed_targets_and_behavior_immutable": true,
+  "checkpoint_restore_exact": true,
+  "KL_early_stop_preserved": true,
+  "exception_full_Adam_rollback": true,
+  "synthetic_samples_never_used_for_real_training": true,
+  "epoch10_test_executed": 10
+}
